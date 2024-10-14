@@ -8,10 +8,7 @@ export const Footer = () => {
     <footer className='w-full bg-main-bg py-[40px] text-[14px] leading-[1.2] tablet:py-[60px] desktop:text-[18px] desktop:leading-[1.1]'>
       <Container className='flex flex-col gap-[40px] tablet:gap-[40px] desktop:gap-[88px]'>
         <div className='flex w-full flex-col gap-[60px] desktop:flex-row desktop:items-center desktop:justify-between'>
-          <Link href='/'>
-            <LightMainLogo className='h-[54px] w-[auto] tablet:h-[71px] desktop:h-[60px]' />
-          </Link>
-          <ul className='flex flex-col gap-[20px] tablet:flex-row tablet:gap-[44px]'>
+          <ul className='flex-col gap-[20px] tablet:flex-row tablet:gap-[44px]'>
             {menuListLayer.map((item) => (
               <li key={item.id}>
                 <Link
@@ -23,7 +20,10 @@ export const Footer = () => {
               </li>
             ))}
           </ul>
-          <div className='flex flex-col gap-[12px]'>
+          <div className='flex flex-col items-start gap-[12px]'>
+            <Link href='/'>
+              <LightMainLogo className='h-[54px] w-[auto] tablet:h-[71px] desktop:h-[60px]' />
+            </Link>
             <Link
               href='mailto:access@thebrightbyte.com'
               className='font-proxima text-[26px] font-bold text-white'

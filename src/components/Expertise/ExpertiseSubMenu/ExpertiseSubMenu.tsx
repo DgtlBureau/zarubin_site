@@ -30,17 +30,17 @@ export const ExpertiseSubMenu = ({
   };
 
   return (
-    <div className='mx-auto my-0 flex w-full max-w-[900px] items-stretch gap-[40px] px-[60px] py-[10px]'>
+    <div className='mx-auto my-0 flex w-full max-w-[900px] items-start gap-[40px] py-[20px]'>
       {expertiseSubMenu.map((item) => (
         <div
           key={item.name}
-          className={`flex flex-col p-[5px] ${dark ? 'text-white' : 'text-main-bg'}`}
+          className={`flex flex-col border-neutral-700 p-[5px] first:border-r-[1px] first:pr-[40px] ${dark ? 'text-white' : 'text-main-bg'}`}
         >
-          <p className='flex-1 font-unbound text-[22px] font-bold uppercase'>
+          <p className='h-fit flex-1 font-unbound text-[22px] font-bold uppercase'>
             {formatMenuItem(item.name)}
           </p>
           <div className='mt-[40px] flex-1'>
-            <ul className='grid grid-flow-col grid-rows-4 gap-x-[40px] gap-y-[20px]'>
+            <ul className='grid grid-flow-col grid-rows-4 gap-x-[40px] gap-y-[2px]'>
               {item.folderItems.map((el) => (
                 <li
                   key={el.nameItem}
