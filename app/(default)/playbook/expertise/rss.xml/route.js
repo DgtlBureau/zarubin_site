@@ -9,7 +9,7 @@ export async function GET() {
     title: 'Bright Byte Expertise',
     description: 'Latest expertise from Bright Byte',
     site_url: 'https://thebrightbyte.com',
-    feed_url: `https://thebrightbyte.com/expertise/rss.xml`,
+    feed_url: `https://thebrightbyte.com/playbook/expertise/rss.xml`,
     copyright: `${new Date().getFullYear()} Bright Byte Expertise`,
     language: 'en-us',
     pubDate: new Date().toUTCString(),
@@ -22,8 +22,8 @@ export async function GET() {
     feed.item({
       title: String(expertise.title),
       description: String(expertise.description),
-      guid: `https://thebrightbyte.com/expertise/${expertise.slug}`,
-      url: `https://thebrightbyte.com/expertise/${expertise.slug}`,
+      guid: `https://thebrightbyte.com/playbook/expertise/${expertise.slug}`,
+      url: `https://thebrightbyte.com/playbook/expertise/${expertise.slug}`,
       date: formattedDate,
     });
   });

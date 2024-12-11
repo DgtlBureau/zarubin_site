@@ -38,8 +38,8 @@ export async function GET() {
     feed.item({
       title: item.title,
       description: item.description,
-      url: `https://thebrightbyte.com/${item.dirName}/${item.slug}`,
-      guid: `https://thebrightbyte.com/${item.dirName}/${item.slug}`,
+      url: `https://thebrightbyte.com/playbook/${item.dirName}/${item.slug}`,
+      guid: `https://thebrightbyte.com/playbook/${item.dirName}/${item.slug}`,
       date: formattedDate,
     });
   });

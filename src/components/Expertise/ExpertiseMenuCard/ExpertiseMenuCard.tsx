@@ -21,7 +21,7 @@ export const ExpertiseMenuCard = ({
 }: Props) => {
   return (
     <Link
-      href={`/expertise/${slug}`}
+      href={`/playbook/expertise/${slug}`}
       onClick={onClick}
       className='flex w-full flex-col'
     >

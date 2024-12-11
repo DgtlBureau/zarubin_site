@@ -16,13 +16,15 @@ const config = {
             '/about',
             '/career',
             '/comparison',
-            '/expertise',
-            '/insights',
+            '/playbook',
+            '/playbook/expertise',
+            '/playbook/insights',
             '/solutions',
             '/policy',
             '/investments',
-            '/brief'
-
+            '/brief',
+            '/playbook/expertise/rss.xml',
+            '/playbook/insights/rss.xml',
         ]
 
         const getAllMarkdownFiles = (dirPath, arrayOfFiles = []) => {
@@ -45,7 +47,7 @@ const config = {
 
         const dynamicExpertisePages = expertiseFiles.map((file) => {
             const fileName = path.basename(file, '.md')
-            return `/expertise/${fileName}`
+            return `/playbook/expertise/${fileName}`
         })
 
         const blogDir = path.join(process.cwd(), 'src/posts')
@@ -53,7 +55,7 @@ const config = {
 
         const dynamicBlogPages = blogFiles.map((file) => {
             const fileName = path.basename(file, '.md')
-            return `/insights/${fileName}`
+            return `/playbook/insights/${fileName}`
         })
 
         const solutionsDir = path.join(process.cwd(), 'src/cases')
@@ -90,7 +92,7 @@ const config = {
         return allPaths
     },
 
-    exclude: ['/assets/*', '/_next/*', '/tpost/*', '/products/*', '/services/*', '/search/*', '/lander/*', '/collections/*'],
+    exclude: ['/assets/*', '/_next/*', '/tpost/*', '/products/*', '/services/*', '/search/*', '/lander/*', '/collections/*', '/expertise*', '/insights*'],
     robotsTxtOptions: {
         policies: [
             {
