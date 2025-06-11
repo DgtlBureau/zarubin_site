@@ -1,14 +1,14 @@
 ---
-title: "Top 5 Best CRM Systems for Sport Clubs and Stadiums"
-description: "Top 5 CRM systems for sports clubs and stadiums with examination of key features, integrations, pricing, and specialized tools that help organizations effectively manage fan relationships, ticket sales, sponsorships, and venue operations.RetryClaude can make mistakes. Please double-check responses."
-image: "/assets/images/expertise/cover.webp"
-date: "09-06-2025"
-readingTime: "8 minutes"
-category: "Expertise"
-subCategory: "Sport"
-tag: "CRM, Sport, Fan Engagement, Stadium Management, Operations, Sport Business, Marketing Automation, Venue Management"
-authorName: "Vitaliy Zarubin"
-authorImage: "/assets/images/author/avatar.png"
+title: 'Top 5 Best CRM Systems for Sport Clubs and Stadiums'
+description: 'Top 5 CRM systems for sports clubs and stadiums with examination of key features, integrations, pricing, and specialized tools that help organizations effectively manage fan relationships, ticket sales, sponsorships, and venue operations.RetryClaude can make mistakes. Please double-check responses.'
+image: '/assets/images/expertise/sport/cover.webp'
+date: '09-06-2025'
+readingTime: '8 minutes'
+category: 'Expertise'
+subCategory: 'Sport'
+tag: 'CRM, Sport, Fan Engagement, Stadium Management, Operations, Sport Business, Marketing Automation, Venue Management'
+authorName: 'Vitaliy Zarubin'
+authorImage: '/assets/images/author/avatar.png'
 ---
 
 # Why Sports Clubs and Stadiums Need CRM
@@ -22,7 +22,7 @@ For **sports organizations CRM** is especially important, because they solve spe
 - **Working with sponsors and partners**
 - **Analyzing stadium occupancy and fan behavior.**
 
-![dashboard](/assets/images/expertise/cover.webp)
+![dashboard](/assets/images/expertise/sport/cover.webp)
 
 ---
 
