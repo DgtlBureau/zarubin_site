@@ -30,6 +30,8 @@ For **sports organizations CRM** is especially important, because they solve spe
 
 The developers of this CRM have taken into account the experience of creators and users of other systems. Unlike universal solutions, the platform is designed specifically for sports clubs and arenas. It initially takes into account the peculiarities of the industry: season tickets, events, passes, communications, marketing and loyalty. Virazh integrates perfectly with various systems and provides users with a powerful analytical tool based on artificial intelligence.
 
+![dashboard](/assets/images/expertise/sport/crm-virazh.webp)
+
 ### Advantages
 
 - **Specialization: CRM takes into account the specifics of sports business, contains templates for different sports and ready-made solutions for clubs and stadiums**
@@ -51,6 +53,8 @@ The developers of this CRM have taken into account the experience of creators an
 
 Best suited for small to mid-sized sports clubs that need a flexible CRM with good automation. CRM will be convenient for organizations that already use Zoho products and companies with limited budget but need a scalable solution.
 
+![dashboard](/assets/images/expertise/sport/crm-zoho.webp)
+
 ### Advantages
 
 - **Flexibility and scalability: you can start with basic functionality and gradually add modules. For example, marketing, analytics and support**
@@ -68,6 +72,8 @@ Best suited for small to mid-sized sports clubs that need a flexible CRM with go
 
 This CRM is great for large sports franchises with complex business processes and clubs that need analytics and forecasting. It also integrates well with Power B, Azure and other Microsoft products.
 
+![dashboard](/assets/images/expertise/sport/crm-microsoft-dynamics.webp)
+
 ### Advantages
 
 - **Powerful analytics and AI: the system predicts sales, analyzes fan behavior and supports complex business processes**
@@ -82,9 +88,9 @@ This CRM is great for large sports franchises with complex business processes an
 
 ---
 
-![dashboard](/assets/images/expertise/другой)
-
 ## 4. HubSpot
+
+![dashboard](/assets/images/expertise/sport/crm-hubspot.webp)
 
 A handy solution for sports marketers focused on sales funnels and fan engagement, as well as clubs emphasizing mailing lists and social media. Bonus - free plan for startups and small teams.
 
@@ -104,6 +110,8 @@ A handy solution for sports marketers focused on sales funnels and fan engagemen
 
 ## 5. Teamwork
 
+![dashboard](/assets/images/expertise/sport/crm-teamwork.webp)
+
 CRM is good for internal coordination of stadium managers and administrators, and is convenient for project management: for example, for organizing matches or events. Teamwork is especially suitable for teams for which integration with Slack, Google Worksapce and other services is important.
 
 ### Advantages
@@ -119,8 +127,6 @@ CRM is good for internal coordination of stadium managers and administrators, an
 - **Limited marketing capabilities: does not support complex sales funnels**
 
 ---
-
-![dashboard](/assets/images/expertise/desctop-phone.webp)
 
 ## Conclusion
 
