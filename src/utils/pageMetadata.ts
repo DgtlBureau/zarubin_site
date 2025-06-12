@@ -7,12 +7,12 @@ export const pageMetadata = {
     keywords: [
       'Product Studio',
       'Startup investment',
-      'Sport software'
+      'Sport software',
       'Custom Software Advisory',
       'Technology Consulting',
       'Startup Support',
       'Digital Product Design',
-      'BrightByte',
+      'BrightByte'
     ],
   },
   playbook: {
@@ -26,7 +26,7 @@ export const pageMetadata = {
       'Design Process',
       'Startup Guidance',
       'Project Playbook',
-      'Audit Tips',
+      'Audit Tips'
     ],
   },
   expertise: {
@@ -40,7 +40,7 @@ export const pageMetadata = {
       'Vendor Selection',
       'Technical Audit',
       'Design Support',
-      'Development Strategy',
+      'Development Strategy'
     ],
   },
   solutions: {
@@ -53,7 +53,7 @@ export const pageMetadata = {
       'Product Discovery',
       'Development Consulting',
       'Digital Advisory',
-      'Risk Reduction',
+      'Risk Reduction'
     ],
   },
   insights: {
@@ -66,7 +66,7 @@ export const pageMetadata = {
       'Startup Learnings',
       'Design Reflections',
       'Development Notes',
-      'Consulting Lessons',
+      'Consulting Lessons'
     ],
   },
   career: {
@@ -79,7 +79,7 @@ export const pageMetadata = {
       'Product Studio',
       'Design Jobs',
       'Engineering Roles',
-      'Remote Team',
+      'Remote Team'
     ],
   },
   comparison: {
@@ -91,7 +91,7 @@ export const pageMetadata = {
       'Agency Comparison',
       'Independent Studio',
       'Product Consultancy',
-      'Digital Teams',
+      'Digital Teams'
     ],
   },
   about: {
@@ -106,7 +106,7 @@ export const pageMetadata = {
       'Enterprise Transformation',
       'Engineering',
       'Innovations',
-      'Cases',
+      'Cases'
     ],
   },
   privacyPolicy: {
@@ -120,7 +120,7 @@ export const pageMetadata = {
       'IT Strategy',
       'Engineering',
       'Innovations',
-      'Cases',
+      'Cases'
     ],
   },
   investments: {
