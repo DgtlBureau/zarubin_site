@@ -1,7 +1,7 @@
 export const pageMetadata = {
   main: {
     title:
-      'The BrightByte – Investment Product Studio & Custom Software Advisory | Raleigh, NC',
+      'The BrightByte – Sport development and Custom software consulting | Raleigh, NC',
     description:
       'The BrightByte is an independent studio focused on building modern digital products and guiding businesses through early-stage decisions, audits, and development.',
     keywords: [
@@ -17,9 +17,9 @@ export const pageMetadata = {
   },
   playbook: {
     title:
-      'The BrightByte Playbook – Lessons from Real Projects in Design, Tech, and Product Strategy',
+      'Playbook – Lessons from Real Projects in Design, Tech, and Product Strategy',
     description:
-      'Explore tools, mental models, and decision frameworks we’ve refined through building real products. The BrightByte Playbook is where practical experience meets clear structure.',
+      'Explore tools, mental models, and decision frameworks we’ve refined through building real products.',
     keywords: [
       'Product Frameworks',
       'Technology Advice',
@@ -31,9 +31,9 @@ export const pageMetadata = {
   },
   expertise: {
     title:
-      'The BrightByte – Practical Expertise in Product Thinking & Lean Digital Development',
+      'Practical Expertise in Product Thinking & Lean Digital Development',
     description:
-      'We help clients navigate product planning, vendor selection, and lean implementation strategies. The BrightByte combines years of development and business experience to cut waste and build clarity.',
+      'We help clients navigate product planning, vendor selection, and lean implementation strategies.',
     keywords: [
       'Lean Development',
       'Product Thinking',
@@ -45,9 +45,9 @@ export const pageMetadata = {
   },
   solutions: {
     title:
-      'Work Smarter with The BrightByte — Development Reviews, Product Planning & Digital Guidance',
+      'Development Reviews, Product Planning & Digital Guidance',
     description:
-      'We assist teams in validating ideas, improving product design, running technical reviews, and avoiding common traps. Our goal is to help you make better decisions, earlier.',
+      'We assist teams in validating ideas, improving product design, running technical reviews, and avoiding common traps.',
     keywords: [
       'Product Audits',
       'Product Discovery',
@@ -58,7 +58,7 @@ export const pageMetadata = {
   },
   insights: {
     title:
-      'The BrightByte Insights – Real-World Notes on Building Better Digital Products',
+      'Real-World Notes on Building Better Digital Products',
     description:
       'Simple reflections and insights from our journey building digital solutions, working with startups, and helping teams make clearer, calmer decisions in tech.',
     keywords: [
@@ -71,7 +71,7 @@ export const pageMetadata = {
   },
   career: {
     title:
-      'Join The BrightByte – A Quiet Studio for Builders, Thinkers, and Explorers',
+      'A Quiet Studio for Builders, Thinkers, and Explorers',
     description:
       'We’re a small team that values independence, clarity, and depth. If you enjoy real work more than buzzwords, BrightByte might be the right fit.',
     keywords: [
@@ -84,9 +84,9 @@ export const pageMetadata = {
   },
   comparison: {
     title:
-      'The BrightByte vs Traditional Agencies – A Different Approach to Building',
+      'A Different Approach to Building',
     description:
-      'Unlike typical agencies, The BrightByte blends ownership thinking with a consultative approach. We’re not here to sell time — we’re here to reduce noise and build better.',
+      'Unlike typical agencies, The BrightByte blends ownership thinking with a consultative approach.',
     keywords: [
       'Agency Comparison',
       'Independent Studio',
@@ -125,7 +125,7 @@ export const pageMetadata = {
   },
   investments: {
     title:
-      'Strategic Investments by The BrightByte – Driving Technological and Business Impact',
+      'Strategic Investments – Driving Technological and Business Impact',
     description:
       'From Miami to Luxembourg, The BrightByte strategically invests in visionary technologies and organizations to build a smarter future.',
     keywords: [
