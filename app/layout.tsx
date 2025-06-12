@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     types: {
       'application/rss+xml': [
         {
-          title: 'Bright Byte Expertise and Insights',
+          title: 'BrightByte Expertise and Insights',
           url: `${BASE_URL}/rss`,
         },
       ],
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    siteName: 'BrightByte.com',
+    siteName: 'BrightByte',
     ...openGraphImage,
     title,
     description,
