@@ -14,10 +14,10 @@ export const Hero = () => {
           Freelancers, Custom Development,
         </span>
         <br />
-        Bright Byte
+        The BrightByte
       </h1>
       <p className='z-[5] max-w-[900px] font-proxima text-[16px] font-normal leading-[1.2] tablet:text-[20px] desktop:text-[20px] desktop-hard:text-[20px]'>
-        Bright Byte is an excellent alternative to a traditional development
+        The BrightByte is an excellent alternative to a traditional development
         studio and, even more so, to freelancers. We are often asked about the
         differences in approaches. Below is a comparative table.
       </p>
