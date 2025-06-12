@@ -122,7 +122,6 @@ const config = {
           '/account/',
           '*.md',
           '*.md$',
-          '/*.webp',
           '/main/',
           '/blog',
         ],
