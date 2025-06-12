@@ -114,7 +114,7 @@ export async function generateMetadata({
     openGraph: {
       type: 'article',
       locale: 'en_US',
-      siteName: 'BrightByte.com',
+      siteName: 'BrightByte',
       images: ogImage,
       title,
       description,
