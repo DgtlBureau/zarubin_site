@@ -6,11 +6,11 @@ const allInsights = getInsightsMetadata();
 
 export async function GET() {
   const feed = new RSS({
-    title: 'Bright Byte Insights',
-    description: 'Latest insights from Bright Byte',
+    title: 'The BrightByte Insights',
+    description: 'Latest insights from the BrightByte',
     site_url: 'https://thebrightbyte.com',
     feed_url: `https://thebrightbyte.com/playbook/insights/rss.xml`,
-    copyright: `${new Date().getFullYear()} Bright Byte Insights`,
+    copyright: `${new Date().getFullYear()} The BrightByte Insights`,
     language: 'en-us',
     pubDate: new Date().toUTCString(),
   });
