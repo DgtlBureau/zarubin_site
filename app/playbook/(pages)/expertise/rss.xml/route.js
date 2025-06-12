@@ -6,11 +6,11 @@ const allExpertise = getExpertiseMetadata('src/expertise');
 
 export async function GET() {
   const feed = new RSS({
-    title: 'Bright Byte Expertise',
-    description: 'Latest expertise from Bright Byte',
+    title: 'The BrightByte Expertise',
+    description: 'Latest expertise from The BrightByte',
     site_url: 'https://thebrightbyte.com',
     feed_url: `https://thebrightbyte.com/playbook/expertise/rss.xml`,
-    copyright: `${new Date().getFullYear()} Bright Byte Expertise`,
+    copyright: `${new Date().getFullYear()} The BrightByte Expertise`,
     language: 'en-us',
     pubDate: new Date().toUTCString(),
   });
