@@ -27,7 +27,7 @@ export const Products = ({ products }: IProducts) => {
           Investments
         </h1>
         <p className='mt-[21px] font-proxima text-[16px] leading-[1.25] text-text-dark tablet:mt-[24px] tablet:text-[20px] desktop:mt-[20px]'>
-          At Bright Byte, our portfolio includes innovative projects in sports
+          At The BrightByte, our portfolio includes innovative projects in sports
           and niche industries, crafted in collaboration with top companies and
           forward-thinking investors. From Miami to Luxembourg and San Marino,
           our initiatives are driving progress and community growth. Every
