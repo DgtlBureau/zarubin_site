@@ -12,7 +12,7 @@ export default function Table() {
                 Freelancers/Indians
               </th>
               <th className='px-[20px] py-[27.5px] text-start font-proxima text-[18px] font-bold leading-[1.2] text-[#013EDF] tablet:text-[20px] desktop:text-[36px]'>
-                Bright Byte
+                The BrightByte
               </th>
               <th className='px-[20px] py-[27.5px] text-start font-proxima text-[18px] font-bold leading-[1.2] tablet:text-[20px] desktop:text-[36px]'>
                 Development Studio
