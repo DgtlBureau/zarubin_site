@@ -1,3 +1,4 @@
+import { BASE_URL } from '@/src/utils/alias';
 import { getInsightsMetadata } from '@/src/utils/getInsightsMetadata';
 import { DateTime } from 'luxon';
 import RSS from 'rss';
