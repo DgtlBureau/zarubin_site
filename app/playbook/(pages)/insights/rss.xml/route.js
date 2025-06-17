@@ -8,8 +8,8 @@ export async function GET() {
   const feed = new RSS({
     title: 'The BrightByte Insights',
     description: 'Latest insights from the BrightByte',
-    site_url: 'https://thebrightbyte.com',
-    feed_url: `https://thebrightbyte.com/playbook/insights/rss.xml`,
+    site_url: `${BASE_URL}`,
+    feed_url: `${BASE_URL}/playbook/insights/rss.xml`,
     copyright: `${new Date().getFullYear()} The BrightByte Insights`,
     language: 'en-us',
     pubDate: new Date().toUTCString(),
@@ -22,8 +22,8 @@ export async function GET() {
     feed.item({
       title: String(insight.title),
       description: String(insight.description),
-      guid: `https://thebrightbyte.com/playbook/insights/${insight.slug}`,
-      url: `https://thebrightbyte.com/playbook/insights/${insight.slug}`,
+      guid: `${BASE_URL}/playbook/insights/${insight.slug}`,
+      url: `${BASE_URL}/playbook/insights/${insight.slug}`,
       date: formattedDate,
     });
   });

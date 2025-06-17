@@ -4,7 +4,12 @@ import { Insights } from '@/src/components/Main/Insights/Insights';
 import { Container } from '@/src/components/shared/Container/Container';
 import { ScrollAnimationWrapper } from '@/src/components/shared/ScrollAminationWrapper/ScrollAnimationWrapper';
 import { Section } from '@/src/components/shared/Section/Section';
-import { BASE_URL } from '@/src/utils/alias';
+import {
+    BASE_URL,
+    SEO_DESCRIPTION_SIZE,
+    SEO_TITLE_SIZE,
+    SITE_NAME
+} from '@/src/utils/alias';
 import { contentTrimming } from '@/src/utils/contentTrimming';
 import {
     InstrumentIcons,
@@ -50,8 +55,11 @@ export async function generateMetadata({
       description: 'This page does not exist',
     };
   }
-  const title = contentTrimming(post.data.title, 85);
-  const description = contentTrimming(post.data.description, 155);
+  const title = contentTrimming(post.data.title, SEO_TITLE_SIZE);
+  const description = contentTrimming(
+    post.data.description,
+    SEO_DESCRIPTION_SIZE,
+  );
   const slug = params.slug;
 
   return {
@@ -63,7 +71,7 @@ export async function generateMetadata({
     openGraph: {
       type: 'website',
       locale: 'en_US',
-      siteName: 'BrightByte',
+      siteName: SITE_NAME,
       ...openGraphImage,
       title,
       description,

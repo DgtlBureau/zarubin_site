@@ -12,7 +12,7 @@ export const pageMetadata = {
       'Technology Consulting',
       'Startup Support',
       'Digital Product Design',
-      'BrightByte'
+      'BrightByte',
     ],
   },
   playbook: {
@@ -26,12 +26,11 @@ export const pageMetadata = {
       'Design Process',
       'Startup Guidance',
       'Project Playbook',
-      'Audit Tips'
+      'Audit Tips',
     ],
   },
   expertise: {
-    title:
-      'Practical Expertise in Product Thinking & Lean Digital Development',
+    title: 'Practical Expertise in Product Thinking & Lean Digital Development',
     description:
       'We help clients navigate product planning, vendor selection, and lean implementation strategies.',
     keywords: [
@@ -40,12 +39,11 @@ export const pageMetadata = {
       'Vendor Selection',
       'Technical Audit',
       'Design Support',
-      'Development Strategy'
+      'Development Strategy',
     ],
   },
   solutions: {
-    title:
-      'Development Reviews, Product Planning & Digital Guidance',
+    title: 'Development Reviews, Product Planning & Digital Guidance',
     description:
       'We assist teams in validating ideas, improving product design, running technical reviews, and avoiding common traps.',
     keywords: [
@@ -53,12 +51,11 @@ export const pageMetadata = {
       'Product Discovery',
       'Development Consulting',
       'Digital Advisory',
-      'Risk Reduction'
+      'Risk Reduction',
     ],
   },
   insights: {
-    title:
-      'Real-World Notes on Building Better Digital Products',
+    title: 'Real-World Notes on Building Better Digital Products',
     description:
       'Simple reflections and insights from our journey building digital solutions, working with startups, and helping teams make clearer, calmer decisions in tech.',
     keywords: [
@@ -66,12 +63,11 @@ export const pageMetadata = {
       'Startup Learnings',
       'Design Reflections',
       'Development Notes',
-      'Consulting Lessons'
+      'Consulting Lessons',
     ],
   },
   career: {
-    title:
-      'A Quiet Studio for Builders, Thinkers, and Explorers',
+    title: 'A Quiet Studio for Builders, Thinkers, and Explorers',
     description:
       'We’re a small team that values independence, clarity, and depth. If you enjoy real work more than buzzwords, BrightByte might be the right fit.',
     keywords: [
@@ -79,19 +75,18 @@ export const pageMetadata = {
       'Product Studio',
       'Design Jobs',
       'Engineering Roles',
-      'Remote Team'
+      'Remote Team',
     ],
   },
   comparison: {
-    title:
-      'A Different Approach to Building',
+    title: 'A Different Approach to Building',
     description:
       'Unlike typical agencies, The BrightByte blends ownership thinking with a consultative approach.',
     keywords: [
       'Agency Comparison',
       'Independent Studio',
       'Product Consultancy',
-      'Digital Teams'
+      'Digital Teams',
     ],
   },
   about: {
@@ -106,7 +101,7 @@ export const pageMetadata = {
       'Enterprise Transformation',
       'Engineering',
       'Innovations',
-      'Cases'
+      'Cases',
     ],
   },
   privacyPolicy: {
@@ -120,12 +115,11 @@ export const pageMetadata = {
       'IT Strategy',
       'Engineering',
       'Innovations',
-      'Cases'
+      'Cases',
     ],
   },
   investments: {
-    title:
-      'Strategic Investments – Driving Technological and Business Impact',
+    title: 'Strategic Investments – Driving Technological and Business Impact',
     description:
       'From Miami to Luxembourg, The BrightByte strategically invests in visionary technologies and organizations to build a smarter future.',
     keywords: [
@@ -135,7 +129,7 @@ export const pageMetadata = {
       'Global Innovation',
       'The BrightByte Capital',
       'PersoniWay',
-      'The BrightByte'
+      'The BrightByte',
     ],
   },
 };

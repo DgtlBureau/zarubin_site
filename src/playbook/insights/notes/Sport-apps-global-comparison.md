@@ -28,6 +28,7 @@ For example, the **NHL (National Hockey League)** app embodies a **minimalist, d
 The NHL app reflects a data-heavy approach that prioritises **efficiency and multimedia consumption**, catering to users who value quick access to information over in-depth storytelling.
 
 ![nhl](https://imgur.com/ARhdiTZ.jpg)
+
 ### Design philosophy and tools
 
 North American applications such as the NHL typically use a **clean design with muted colours**, allowing data and media elements to stand out. Tools like **AWS or Google Cloud Platform** are often used to support high traffic, especially on game days, with additional services like **New Relic for monitoring** and **Kubernetes for auto-scaling**. This infrastructure ensures stability during peak usage times, improving the user experience.
@@ -39,10 +40,11 @@ European sports apps tend to strike a balance between data-driven functionality 
 For example, football and rugby apps in countries such as the UK, France and Germany:
 
 - **Community and social features**: European apps often include social features that encourage users to share content and engage with each other. This is in line with Europe's community culture, where sport is a shared experience.
-- Ease of navigation**: European apps prioritise simple navigation, avoiding excessive customisation options but providing essential features that appeal to a broad audience.
+- Ease of navigation\*\*: European apps prioritise simple navigation, avoiding excessive customisation options but providing essential features that appeal to a broad audience.
 - Comprehensive match coverage: European apps tend to offer comprehensive coverage, not only of major teams but also of lower league teams, reflecting a more inclusive approach to sport.
 
 ![scooters](https://imgur.com/T3k8f6k.jpg)
+
 ### Design philosophy and tools
 
 In Europe, UX/UI design is often **functional and accessible**, using colour schemes that represent team or league branding without overwhelming the interface. European sports apps may use **CDNs (Content Delivery Networks)** to ensure consistent content delivery across regions. Platforms such as **Azure** are popular for supporting multi-lingual and multi-regional audiences, as they offer extensive language support and compliance with European data regulations.
@@ -55,9 +57,10 @@ For example, in the **KHL (Kontinental Hockey League)**, apps such as **Avangard
 
 - **Team branding and personalisation**: Russian sports apps use vibrant colours, team logos and visual themes that reflect each team's identity. This personalisation fosters a sense of loyalty and pride among users.
 - **Storytelling Elements**: Russian sports apps often include storytelling elements such as exclusive player interviews, fan content and behind-the-scenes videos. This helps fans feel connected to the team beyond the match data.
-- Gamification and engagement features**: KHL apps often include features such as polls, live voting and fan games. These elements tap into the communal spirit of Russian fans and make the app a hub for ongoing engagement and loyalty building.
+- Gamification and engagement features\*\*: KHL apps often include features such as polls, live voting and fan games. These elements tap into the communal spirit of Russian fans and make the app a hub for ongoing engagement and loyalty building.
 
 ![Avangard Hockey Club](https://imgur.com/pVpO2I5.jpg)
+
 ### Design philosophy and tools
 
 Russian sports apps tend to have **visually rich interfaces** that are immersive and brand-focused. Tools such as **Yandex Cloud** and **Mail.ru Cloud Solutions** are commonly used to meet local data requirements and optimise for the Russian internet infrastructure. In addition, **DevOps practices** such as frequent updates and real-time monitoring are essential to keep up with the demands of an engaged fan base, especially during major games or events.
@@ -76,4 +79,4 @@ The design differences between sports apps in North America, Europe and Russia u
 
 ## Need help with your design project?
 
-If you're looking to develop a sports app or other digital solution with a tailored and effective UX/UI design, Bright Byte can help. Our team specialises in creating user-centred designs that resonate with diverse audiences, increasing engagement and usability. With expertise across multiple geographies and markets, Bright Byte is ready to bring your project to life with industry-leading design and development practices. Contact us to find out how we can support your design needs.
+If you're looking to develop a sports app or other digital solution with a tailored and effective UX/UI design, The Bright Byte can help. Our team specialises in creating user-centred designs that resonate with diverse audiences, increasing engagement and usability. With expertise across multiple geographies and markets, The Bright Byte is ready to bring your project to life with industry-leading design and development practices. Contact us to find out how we can support your design needs.

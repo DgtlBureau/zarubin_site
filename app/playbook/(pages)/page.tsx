@@ -1,37 +1,27 @@
 import { PlaybookClient } from '@/src/components/PlaybookClient/PlaybookClient';
-import { BASE_URL } from '@/src/utils/alias';
+import { SEO_DESCRIPTION_SIZE } from '@/src/utils/alias';
 import { contentTrimming } from '@/src/utils/contentTrimming';
 import { getAllArticles } from '@/src/utils/getAllArticles';
-import { openGraphImage } from '@/src/utils/openGraphParams';
 import { pageMetadata } from '@/src/utils/pageMetadata';
-import { Metadata } from 'next';
+import { Seo } from '@/src/utils/Seo/Seo';
 import { Suspense } from 'react';
 
 const title = pageMetadata.playbook.title;
-const description = contentTrimming(pageMetadata.playbook.description, 155);
+const description = contentTrimming(
+  pageMetadata.playbook.description,
+  SEO_DESCRIPTION_SIZE,
+);
 const keywords = pageMetadata.playbook.keywords;
 
-export const metadata: Metadata = {
-  title,
-  description,
-  metadataBase: new URL(BASE_URL),
-  icons: {
-    icon: '/assets/images/info/main_meta.png',
-  },
-  alternates: {
-    canonical: new URL(`${BASE_URL}/playbook`),
-  },
-  openGraph: {
-    type: 'article',
-    locale: 'en_US',
-    siteName: 'BrightByte',
-    ...openGraphImage,
+export async function generateMetadata() {
+  return Seo({
     title,
     description,
-    url: `${BASE_URL}/playbook`,
-  },
-  keywords,
-};
+    keywords,
+    ogUrlPath: 'playbook',
+    ogType: 'article',
+  });
+}
 
 const data = getAllArticles();
 

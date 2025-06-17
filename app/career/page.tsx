@@ -6,11 +6,10 @@ import { Team } from '@/src/components/Career/Team/Team';
 import { Container } from '@/src/components/shared/Container/Container';
 import { ScrollAnimationWrapper } from '@/src/components/shared/ScrollAminationWrapper/ScrollAnimationWrapper';
 import { Section } from '@/src/components/shared/Section/Section';
-import { BASE_URL } from '@/src/utils/alias';
+import { SEO_DESCRIPTION_SIZE } from '@/src/utils/alias';
 import { contentTrimming } from '@/src/utils/contentTrimming';
-import { openGraphImage } from '@/src/utils/openGraphParams';
 import { pageMetadata } from '@/src/utils/pageMetadata';
-import { Metadata } from 'next';
+import { Seo } from '@/src/utils/Seo/Seo';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import styles from './Career.module.css';
@@ -25,30 +24,20 @@ const DynamicVacancies = dynamic(() =>
 );
 
 const title = pageMetadata.career.title;
-const description = contentTrimming(pageMetadata.career.description, 155);
+const description = contentTrimming(
+  pageMetadata.career.description,
+  SEO_DESCRIPTION_SIZE,
+);
 const keywords = pageMetadata.career.keywords;
 
-export const metadata: Metadata = {
-  title,
-  description,
-  metadataBase: new URL(BASE_URL),
-  icons: {
-    icon: '/assets/images/info/main_meta.png',
-  },
-  alternates: {
-    canonical: new URL(`${BASE_URL}/career`),
-  },
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    siteName: 'BrightByte',
-    ...openGraphImage,
+export async function generateMetadata() {
+  return Seo({
     title,
     description,
-    url: `${BASE_URL}/career`,
-  },
-  keywords,
-};
+    keywords,
+    ogUrlPath: 'career',
+  });
+}
 
 export default async function CareerPage() {
   return (

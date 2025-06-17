@@ -5,13 +5,12 @@ import { ContactForm } from '@/src/components/Main/ContactForm/ContactForm';
 import { Container } from '@/src/components/shared/Container/Container';
 import { ScrollAnimationWrapper } from '@/src/components/shared/ScrollAminationWrapper/ScrollAnimationWrapper';
 import { Section } from '@/src/components/shared/Section/Section';
-import { BASE_URL } from '@/src/utils/alias';
+import { SEO_DESCRIPTION_SIZE } from '@/src/utils/alias';
 import { contentTrimming } from '@/src/utils/contentTrimming';
 import { getCaseMetadata } from '@/src/utils/getCaseMetadata';
-import { openGraphImage } from '@/src/utils/openGraphParams';
 import { pageMetadata } from '@/src/utils/pageMetadata';
+import { Seo } from '@/src/utils/Seo/Seo';
 import { DateTime } from 'luxon';
-import { Metadata } from 'next';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import { Suspense } from 'react';
@@ -21,30 +20,20 @@ const DynamicInsights = dynamic(() =>
 );
 
 const title = pageMetadata.solutions.title;
-const description = contentTrimming(pageMetadata.solutions.description, 155);
+const description = contentTrimming(
+  pageMetadata.solutions.description,
+  SEO_DESCRIPTION_SIZE,
+);
 const keywords = pageMetadata.solutions.keywords;
 
-export const metadata: Metadata = {
-  title,
-  description,
-  metadataBase: new URL(BASE_URL),
-  icons: {
-    icon: '/assets/images/info/main_meta.png',
-  },
-  alternates: {
-    canonical: new URL(`${BASE_URL}/solutions`),
-  },
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    siteName: 'BrightByte',
-    ...openGraphImage,
+export async function generateMetadata() {
+  return Seo({
     title,
     description,
-    url: `${BASE_URL}/solutions`,
-  },
-  keywords,
-};
+    keywords,
+    ogUrlPath: 'solutions',
+  });
+}
 
 export default async function BusinessObjectivesPage() {
   const casesMetadata = getCaseMetadata('src/cases');

@@ -1,56 +1,43 @@
+import { CookieConsent } from '@/src/components/CookieConsent/CookieConsent';
 import { Footer } from '@/src/components/Footer/Footer';
 import { Header } from '@/src/components/Header/Header';
-import { BASE_URL } from '@/src/utils/alias';
+import { SEO_DESCRIPTION_SIZE } from '@/src/utils/alias';
 import { getArticlesList } from '@/src/utils/articlesMenu';
 import { contentTrimming } from '@/src/utils/contentTrimming';
 import { getAllArticles } from '@/src/utils/getAllArticles';
-import { openGraphImage } from '@/src/utils/openGraphParams';
 import { pageMetadata } from '@/src/utils/pageMetadata';
+import { Seo } from '@/src/utils/Seo/Seo';
 import classNames from 'classnames';
-import { Metadata } from 'next';
 import localFont from 'next/font/local';
 import Script from 'next/script';
 import React from 'react';
 import 'swiper/css';
 import './globals.css';
-import { CookieConsent } from '@/src/components/CookieConsent/CookieConsent';
 
 const expertiseSubMenu = getArticlesList('expertise');
 const playbookMetaData = getAllArticles();
 
 const title = pageMetadata.main.title;
-const description = contentTrimming(pageMetadata.main.description, 155);
+const description = contentTrimming(
+  pageMetadata.main.description,
+  SEO_DESCRIPTION_SIZE,
+);
 const keywords = pageMetadata.main.keywords;
 
-export const metadata: Metadata = {
-  title,
-  description,
-  metadataBase: new URL(BASE_URL),
-  icons: {
-    icon: '/assets/images/info/main_meta.png',
-  },
-  alternates: {
-    canonical: new URL(BASE_URL),
-    types: {
-      'application/rss+xml': [
-        {
-          title: 'BrightByte Expertise and Insights',
-          url: `${BASE_URL}/rss`,
-        },
-      ],
-    },
-  },
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    siteName: 'BrightByte',
-    ...openGraphImage,
+export async function generateMetadata({
+  params,
+}: {
+  params: { category: string; slug: string };
+}) {
+  return Seo({
     title,
     description,
-    url: BASE_URL,
-  },
-  keywords,
-};
+    keywords,
+    canonicalPath: params.category,
+    ogUrlPath: params.category,
+    ogType: 'article',
+  });
+}
 
 const Unbound = localFont({
   src: [

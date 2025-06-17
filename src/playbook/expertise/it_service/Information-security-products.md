@@ -97,6 +97,6 @@ In the age of data breaches and cyber-attacks, the cost of a security failure ca
 
 ---
 
-Bright Byte specialises in developing custom digital products with a focus on security-first practices. Our team of experts ensures that every product we deliver meets the highest security standards, from infrastructure setup to secure data handling.
+The Bright Byte specialises in developing custom digital products with a focus on security-first practices. Our team of experts ensures that every product we deliver meets the highest security standards, from infrastructure setup to secure data handling.
 
 Contact us today to discuss how we can help you build a secure, custom digital product that protects your data and your business.
