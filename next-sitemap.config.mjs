@@ -125,6 +125,10 @@ const config = {
           '/main/',
           '/blog',
           '/about',
+          '/_next/static/media/',
+          '/assets/video/',
+          '/*?target_origin=',
+          '/*checkout_version=',
         ],
       },
 
