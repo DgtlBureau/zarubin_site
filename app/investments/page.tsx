@@ -2,11 +2,9 @@ import { ContactForm } from '@/src/components/Main/ContactForm/ContactForm';
 import { Products } from '@/src/components/NewProducts/Products/Products';
 import { Container } from '@/src/components/shared/Container/Container';
 import { Section } from '@/src/components/shared/Section/Section';
-import { BASE_URL } from '@/src/utils/alias';
 import { getProductsMetadata } from '@/src/utils/getProductsMetadata';
-import { openGraphImage } from '@/src/utils/openGraphParams';
 import { pageMetadata } from '@/src/utils/pageMetadata';
-import { Metadata } from 'next';
+import { Seo } from '@/src/utils/Seo/Seo';
 
 const products = getProductsMetadata();
 
@@ -14,27 +12,14 @@ const title = pageMetadata.investments.title;
 const description = pageMetadata.investments.title;
 const keywords = pageMetadata.investments.keywords;
 
-export const metadata: Metadata = {
-  title,
-  description,
-  metadataBase: new URL(BASE_URL),
-  icons: {
-    icon: '/assets/images/info/main_meta.png',
-  },
-  alternates: {
-    canonical: new URL(`${BASE_URL}/investments`),
-  },
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    siteName: 'BrightByte',
-    ...openGraphImage,
+export async function generateMetadata() {
+  return Seo({
     title,
     description,
-    url: `${BASE_URL}/investments`,
-  },
-  keywords,
-};
+    keywords,
+    ogUrlPath: 'investments',
+  });
+}
 
 export default function NewProductsPage() {
   return (

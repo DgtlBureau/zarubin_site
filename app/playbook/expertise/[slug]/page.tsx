@@ -4,7 +4,12 @@ import { SocialFollow } from '@/src/components/SocialFollow/SocialFollow';
 import { AuthorInfo } from '@/src/ui-kit/AuthorInfo/AuthorInfo';
 import { DownloadLink } from '@/src/ui-kit/DownloadLink/DownloadLink';
 import { GoBackLink } from '@/src/ui-kit/GoBackLink/GoBackLink';
-import { BASE_URL } from '@/src/utils/alias';
+import {
+    BASE_URL,
+    SEO_DESCRIPTION_SIZE,
+    SEO_TITLE_SIZE,
+    SITE_NAME
+} from '@/src/utils/alias';
 import { cleanMetaTitle } from '@/src/utils/cleanMetaTitle';
 import { contentTrimming } from '@/src/utils/contentTrimming';
 import { formattedDate } from '@/src/utils/formattedDate';
@@ -88,22 +93,16 @@ export async function generateMetadata({
   const { tag, image } = post.data;
   const keywords = tag.split(',');
 
-  const title = contentTrimming(cleanTitle, 85);
-  const description = contentTrimming(post.data.description, 155);
+  const title = contentTrimming(cleanTitle, SEO_TITLE_SIZE);
+  const description = contentTrimming(
+    post.data.description,
+    SEO_DESCRIPTION_SIZE,
+  );
 
   const publishedDateISO = DateTime.fromFormat(
     post.data.date,
     'dd-MM-yyyy',
   ).toISO();
-
-  const ogImage = image
-    ? [
-        {
-          url: image,
-          alt: cleanTitle,
-        },
-      ]
-    : openGraphImage.images;
 
   return {
     title,
@@ -114,16 +113,14 @@ export async function generateMetadata({
     openGraph: {
       type: 'article',
       locale: 'en_US',
-      siteName: 'BrightByte',
-      images: ogImage,
+      siteName: SITE_NAME,
+      ...openGraphImage(image),
       title,
       description,
       url: `${BASE_URL}/playbook/expertise/${slug}`,
-      article: {
-        publishedTime: publishedDateISO,
-        modifiedTime: publishedDateISO,
-        AuthorInfo: post.data.authorImage ? [post.data.authorImage] : null,
-      },
+      modifiedTime: publishedDateISO,
+      publishedTime: publishedDateISO,
+      authors: post.data.authorImage ? [post.data.authorImage] : null,
     },
     keywords,
   };

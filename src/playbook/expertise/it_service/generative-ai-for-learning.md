@@ -13,7 +13,7 @@ authorImage: '/assets/images/author/maria.webp'
 
 # Generative AI in education: How learning and predicting events is revolutionising educational institutions
 
-*It is now well known that generative AI trends have spread to the field of education. Value is added by generative AI's ability to process large amounts of data, create content, adapt learning models, speed up administrative work and improve prediction.*
+_It is now well known that generative AI trends have spread to the field of education. Value is added by generative AI's ability to process large amounts of data, create content, adapt learning models, speed up administrative work and improve prediction._
 
 ## Applications of generative AI in education
 
@@ -34,23 +34,26 @@ AI that can generate output by using patterns it has learned from input is known
 Now that we have two real-life examples of what implementing generative AI might look like, let's think more deeply about the possibilities and uses of generative AI in education. Let's look at the problem theoretically and practically.
 
 ### AI event prediction in schools
-Of all the use cases discussed for generative AI in education, event prediction could be considered the most effective. Predictive AI for schools means that an institution will be able to predict the occurrence of certain events in order to use available resources efficiently. For example:
-- **Predicting Attendance**
-Schools can use AI to identify the risk of absenteeism during key periods such as exams or school holidays. This can also help administrators plan and schedule staffing and the physical infrastructure provided to different departments.
 
-*Example*: An example of an AI model could predict lower attendance during flu season, allowing schools to better plan for things like cleaning or homework.
+Of all the use cases discussed for generative AI in education, event prediction could be considered the most effective. Predictive AI for schools means that an institution will be able to predict the occurrence of certain events in order to use available resources efficiently. For example:
+
+- **Predicting Attendance**
+  Schools can use AI to identify the risk of absenteeism during key periods such as exams or school holidays. This can also help administrators plan and schedule staffing and the physical infrastructure provided to different departments.
+
+_Example_: An example of an AI model could predict lower attendance during flu season, allowing schools to better plan for things like cleaning or homework.
 
 - **Resource Utilisation**
-Generative AI can use statistics to estimate peak loads for libraries, labs, and canteens. The knowledge gained from this helps to manage traffic and improve the student experience.
+  Generative AI can use statistics to estimate peak loads for libraries, labs, and canteens. The knowledge gained from this helps to manage traffic and improve the student experience.
 
-*Example*: During exams, predictive AI could recommend extending library hours based on estimated demand.
+_Example_: During exams, predictive AI could recommend extending library hours based on estimated demand.
 
 - **Event Planning**
-Schools, colleges, and universities can use AI to select the right times for everything from seminars and parent-teacher meetings to other events.
+  Schools, colleges, and universities can use AI to select the right times for everything from seminars and parent-teacher meetings to other events.
 
-*Example*: AI could be used to decide the right day of the week for a parent-teacher meeting, based on parents' schedules and records of past meetings.
+_Example_: AI could be used to decide the right day of the week for a parent-teacher meeting, based on parents' schedules and records of past meetings.
 
 ### Personalised learning and AI-driven adaptive learning
+
 In the current generation, generative AI is being used in education to develop personal learning maps and virtual teaching tools. These tools tend to take into account the needs of each learner and participant, thereby improving overall participation and outcomes.
 
 1. **Personalised Learning Tracks**: AI takes into account a student's performance, special skills and learning difficulties to recommend unique learning plans. Example: A maths student with a weakness in algebra might be presented with numerical problems and video demonstrations of how to solve them, as well as text on how to solve algebra problems, while a maths student with a strong background in geometry might be presented with geometric examples and text on how to solve geometric problems.
@@ -71,19 +74,23 @@ Another application is the use of generative AI to generate educational content,
 1. **Automated grading**: Automated scripts can grade essays and assignments in the first instance, freeing up teachers' time to teach and ensuring that grades are fair. For example: An AI tool can correct essays for grammar, structure and strength of argument, and provide a primary grade and advice to students.
 
 2. **Material generation**: Teachers can use AI to create quizzes, flashcards and lessons with unique focuses. For example: A biology teacher could create sets of flashcards on human anatomy in minutes, saving valuable time for classroom interaction.
-Of course, you shouldn't use the tool blindly. Human control is necessary because the AI doesn't have emotional intelligence and can't take into account the mental state of the students and what kind of feedback is optimal. You also need to think about fact-checking, checking each time how fair and accurate the AI is in its conclusions and suggestions.
-## Benefits of Generative AI in learning
-The key benefits are as follows:
-1. **Acceleration of the content creation process**: Generative AI significantly reduces the time it takes to develop relevant content for educational distribution. Educators are able to create entire lessons or segments of lessons with very little effort, which means they can focus most of their efforts on delivering good lessons. For instance, a history teacher teaching a unit on the Second World War can use AI to create summaries, timelines and visuals in a matter of hours.
+   Of course, you shouldn't use the tool blindly. Human control is necessary because the AI doesn't have emotional intelligence and can't take into account the mental state of the students and what kind of feedback is optimal. You also need to think about fact-checking, checking each time how fair and accurate the AI is in its conclusions and suggestions.
 
+## Benefits of Generative AI in learning
+
+The key benefits are as follows:
+
+1. **Acceleration of the content creation process**: Generative AI significantly reduces the time it takes to develop relevant content for educational distribution. Educators are able to create entire lessons or segments of lessons with very little effort, which means they can focus most of their efforts on delivering good lessons. For instance, a history teacher teaching a unit on the Second World War can use AI to create summaries, timelines and visuals in a matter of hours.
 
 2. **Simplifying routine tasks**, such as document processing, is a highly effective use of technology in many organisations. AI solves organisational tasks that are mundane and repetitive, such as scheduling, tracking attendance, and creating and managing progress reports. This freeing up of time allows educators and administrators to focus their time on worthwhile endeavours. For example: An AI solution could generate a semester's schedule based on potential teacher availability, number of sections, and enrollment for specific courses.
 
 3. **Improve personalisation**: Because of its ability to identify individual learning patterns, AI is able to provide customised resources and suggestions to students, increasing student engagement and performance. For example: A weak student can be assigned fun-based experiments, while a better science student is guided through challenging readings.
 
 ## Challenges and risks of generative AI in education
+
 Like any tool, AI is an invaluable assistant in skilled hands, but if you do not understand its limitations and do not take into account the specifics, do not think about training and do not carefully and thoroughly write prompts, constantly refining them, then it is difficult to expect any good results. However, even taking into account careful work with AI, it has a number of limitations, like any other tool.
-- **Privacy Concerns**:  It is well known that educational institutions deal with a lot of sensitive information, including learners' performance and other noteworthy characteristics. Unfortunately, this information may not be well protected by strong security measures. For example: Educational institutions using AI to monitor student behaviour should work within the confines of data protection laws to address the ethical and legal issues.
+
+- **Privacy Concerns**: It is well known that educational institutions deal with a lot of sensitive information, including learners' performance and other noteworthy characteristics. Unfortunately, this information may not be well protected by strong security measures. For example: Educational institutions using AI to monitor student behaviour should work within the confines of data protection laws to address the ethical and legal issues.
 - **Ethical issues**: This is the most common criticism of AI systems, that they are biased depending on the data fed into the system. In particular, a bias-trained AI grading system might give low grades to students from certain regions or stigmatised groups, if this is the initial condition.
 - **Developing appropriate infrastructure and training** are some of the challenges facing institutions across the country. The problem with AI adoption is that many institutions are still lagging behind in terms of both infrastructure and staff to support the use of AI solutions. This can lead to under-utilised technologies and wasted resources. An example is a school where the leadership buys AI tools without providing the necessary training to teachers, thus not maximising the benefits they should bring.
 
@@ -96,7 +103,9 @@ Like any tool, AI is an invaluable assistant in skilled hands, but if you do not
 3. **Collaborate with stakeholders**: Collaboration with technology companies will also stimulate the adoption and development of AI. For example, collaborating with an AI vendor could provide existing and potential opportunities to get some sought-after offerings and features at lower prices than the market, or to be the first to try out the new tools. The Bright Byte platform, for example, is closely linked to generative intelligence through its focus on using artificial intelligence (AI) to drive innovation in various fields. [For example](https://thebrightbyte.com/), the platform has explored how AI is revolutionising sport, particularly [women's sport](https://thebrightbyte.com/insights/revolution-in-womens-sports), through the use of data analytics, virtual and augmented reality, and personalised training programmes. These technologies are forms of AI that rely on generative models and machine learning to create tailored solutions and interactive experiences.
 
 Generative AI for education is a trend that will be accompanied in the future by a framework of laws and regulations that define its permissible boundaries. However, it is already clear that this is a useful tool that will allow educators to automate routine tasks and provide students with adaptive educational solutions.
+
 ### Sources
+
 - [Apex Learning - Houston Grad Labs Efficacy Brief](https://cdn.apexlearning.com/al/houston-grad-labs-efficacy-brief.pdf)
 - [NSF - Enabling Partnerships to Increase Innovation Capacity (EPIIC)](https://new.nsf.gov/funding/opportunities/epiic-enabling-partnerships-increase-innovation-capacity)
 - [UK Government - Generative AI in Education: Educator and Expert Views](https://www.gov.uk/government/publications/generative-ai-in-education-educator-and-expert-views)

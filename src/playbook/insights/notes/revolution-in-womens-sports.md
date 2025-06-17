@@ -78,4 +78,4 @@ Artificial Intelligence is becoming an integral part of the development of women
 
 It is important to note that the use of AI in women's sports also presents its challenges and requires ensuring transparency, ethics, and data protection. However, the correct use of artificial intelligence in women's sports can create a favorable and innovative environment for the development and improvement of women's sports achievements. AI can help develop inclusive and gender-neutral products.
 
-We at Bright Byte are inspired by the advancement of technology in sports. 🌟
+We at The Bright Byte are inspired by the advancement of technology in sports. 🌟

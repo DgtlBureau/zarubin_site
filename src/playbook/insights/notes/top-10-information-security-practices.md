@@ -90,6 +90,6 @@ We develop numerous projects every year, and along the way, we’ve encountered 
 
 ---
 
-**Bright Byte** specializes in developing custom digital products with a focus on **security-first practices**. From secure infrastructure setup to proper data handling and encryption, our team ensures that every product meets the highest security standards.
+**The Bright Byte** specializes in developing custom digital products with a focus on **security-first practices**. From secure infrastructure setup to proper data handling and encryption, our team ensures that every product meets the highest security standards.
 
 **Contact us today** to discuss how we can help you build a secure, custom digital product that protects both your data and your business.

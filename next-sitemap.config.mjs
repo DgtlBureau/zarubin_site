@@ -13,7 +13,6 @@ const config = {
   additionalPaths: async () => {
     const staticPages = [
       '/',
-      '/about',
       '/career',
       '/comparison',
       '/playbook',
@@ -101,6 +100,7 @@ const config = {
     '/lander/*',
     '/collections/*',
     '/main/*',
+    '/about',
     '*.md',
     '/404',
   ],
@@ -124,6 +124,7 @@ const config = {
           '*.md$',
           '/main/',
           '/blog',
+          '/about',
         ],
       },
 

@@ -1,46 +1,26 @@
 import { PlaybookClient } from '@/src/components/PlaybookClient/PlaybookClient';
-import { BASE_URL } from '@/src/utils/alias';
 import { contentTrimming } from '@/src/utils/contentTrimming';
 import { getInsightsMetadata } from '@/src/utils/getInsightsMetadata';
-import { openGraphImage } from '@/src/utils/openGraphParams';
 import { pageMetadata } from '@/src/utils/pageMetadata';
 import { postsSorting } from '@/src/utils/postsSorting';
-import { Metadata } from 'next';
+import { Seo } from '@/src/utils/Seo/Seo';
 import { Suspense } from 'react';
 
 const title = pageMetadata.insights.title;
 const description = contentTrimming(pageMetadata.insights.description, 155);
 const keywords = pageMetadata.insights.keywords;
 
-export const metadata: Metadata = {
-  title,
-  description,
-  metadataBase: new URL(BASE_URL),
-  icons: {
-    icon: '/assets/images/info/main_meta.png',
-  },
-  alternates: {
-    canonical: new URL(`${BASE_URL}/playbook/insights`),
-    types: {
-      'application/rss+xml': [
-        {
-          title: 'The BrightByte Insights',
-          url: `${BASE_URL}/playbook/insights/rss`,
-        },
-      ],
-    },
-  },
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    siteName: 'BrightByte',
-    ...openGraphImage,
+export async function generateMetadata() {
+  return Seo({
     title,
     description,
-    url: `${BASE_URL}/playbook/insights`,
-  },
-  keywords,
-};
+    keywords,
+    rssPath: 'playbook/insights/rss',
+    alternatesTitle: 'The BrightByte Insights',
+    ogUrlPath: 'playbook/insights',
+    ogType: 'article',
+  });
+}
 
 const insightsArticles = getInsightsMetadata();
 const sortedInsightsArticles = postsSorting(insightsArticles);

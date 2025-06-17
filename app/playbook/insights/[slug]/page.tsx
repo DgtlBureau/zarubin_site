@@ -3,7 +3,7 @@ import { SocialFollow } from '@/src/components/SocialFollow/SocialFollow';
 import { AuthorInfo } from '@/src/ui-kit/AuthorInfo/AuthorInfo';
 import { DownloadLink } from '@/src/ui-kit/DownloadLink/DownloadLink';
 import { GoBackLink } from '@/src/ui-kit/GoBackLink/GoBackLink';
-import { BASE_URL } from '@/src/utils/alias';
+import { BASE_URL, SITE_NAME } from '@/src/utils/alias';
 import { cleanMetaTitle } from '@/src/utils/cleanMetaTitle';
 import { contentTrimming } from '@/src/utils/contentTrimming';
 import { formattedDate } from '@/src/utils/formattedDate';
@@ -79,7 +79,8 @@ export async function generateMetadata({
   }
 
   const cleanTitle = cleanMetaTitle(post.data.title);
-  const { tag } = post.data;
+  const slug = params.slug || '';
+  const { tag, image } = post.data;
   const keywords = tag.split(',');
 
   const title = contentTrimming(cleanTitle, 105);
@@ -94,21 +95,19 @@ export async function generateMetadata({
     title,
     description,
     alternates: {
-      canonical: `${BASE_URL}/playbook/insights/${params.slug}`,
+      canonical: `${BASE_URL}/playbook/insights/${slug}`,
     },
     openGraph: {
       type: 'article',
       locale: 'en_US',
-      siteName: 'BrightByte',
-      ...openGraphImage,
+      siteName: SITE_NAME,
+      ...openGraphImage(image),
       title,
       description,
-      url: `${BASE_URL}/playbook/insights/${params.slug}`,
-      article: {
-        publishedTime: publishedDateISO,
-        modifiedTime: publishedDateISO,
-        AuthorInfo: post.data.authorImage ? [post.data.authorImage] : null,
-      },
+      url: `${BASE_URL}/playbook/insights/${slug}`,
+      modifiedTime: publishedDateISO,
+      publishedTime: publishedDateISO,
+      authors: post.data.authorImage ? [post.data.authorImage] : null,
     },
     keywords,
   };
