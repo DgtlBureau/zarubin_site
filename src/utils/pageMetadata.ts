@@ -132,4 +132,10 @@ export const pageMetadata = {
       'The BrightByte',
     ],
   },
+  bonuse: {
+    title: 'Download 100+ Colleges Offering Scholarships',
+    description:
+      'Get a free PDF with schools, divisions, visa types, and eligibility for students from over 20 countries.',
+    keywords: [],
+  },
 };

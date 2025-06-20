@@ -35,10 +35,13 @@ const config: Config = {
           'linear-gradient(175deg,rgba(1, 12, 44, 0) -3.51%,#00030c 85.29%)',
         'radial-primary':
           'radial-gradient(circle, rgba(0, 0, 0, 0), var(--primary) 80%)',
+        'radial-white':
+          'radial-gradient(circle, rgba(250, 250, 250, 0), var(--main-white) 80%)',
         'mobile-banner': "url('/assets/images/banner/mobile_main_banner.png')",
         'tablet-banner': "url('/assets/images/banner/tablet_main_banner.png')",
         'desktop-banner':
           "url('/assets/images/banner/desktop_main_banner.png')",
+        radial: 'radial-gradient(var(--tw-gradient-stops))',
       },
       typography: ({ theme }: { theme: PluginAPI['theme'] }) => ({
         DEFAULT: {
@@ -103,6 +106,7 @@ const config: Config = {
         'second-gray': '#494949',
         'light-gray': '#AEAEAE',
         'gray-placeholder': 'A5A5A5',
+        modal: '#20202099',
       },
     },
     screens: {

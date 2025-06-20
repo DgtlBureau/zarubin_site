@@ -24,6 +24,7 @@ const config = {
       '/brief',
       '/playbook/expertise/rss.xml',
       '/playbook/insights/rss.xml',
+      '/bonuses',
     ];
 
     const getAllMarkdownFiles = (dirPath, arrayOfFiles = []) => {
