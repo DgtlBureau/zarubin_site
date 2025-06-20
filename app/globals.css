@@ -34,6 +34,64 @@
   font-display: swap;
 }
 
+@layer components {
+  body {
+    --primary: #00030c;
+    --bg-color: #010c2c;
+    --second-bg-color: #f7f7f7;
+    --text-color: #94a3b8;
+    --main-gray: #dcddeb;
+    --text-dark: #010c2c;
+    --accent-col: #a854fd;
+    --main-white: #ffffff;
+    --main-blue: #013edf;
+    --dark-blue: #000a25;
+    --second-blue: #001450;
+    --light-blue: #00248b;
+    --blue-hover: #1858fd;
+    --pagination-col: #eceffa;
+    --main-orange: '#F8AE3C';
+    --orange-light: '#FFCC47';
+  }
+
+  .backImage {
+    overflow: hidden;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-color: var(--main-white);
+    background-image: url('/assets/images/banner/main_banner.png');
+  }
+
+  .mainContainer {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, var(--main-white) 150px);
+  }
+
+  @media (min-width: 768px) {
+    .mainContainer {
+      background: linear-gradient(rgba(0, 0, 0, 0) 0%, var(--main-white) 200px);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .mainContainer {
+      background: linear-gradient(rgba(0, 0, 0, 0) 0%, var(--main-white) 250px);
+    }
+  }
+
+  .paginationBtn {
+    padding: 12px 8px;
+    border-radius: 8px;
+    background-color: var(--pagination-col);
+  }
+
+  .manifesto-list {
+    @apply prose-p:m-[0] prose-ol:flex prose-ol:flex-col prose-ol:gap-[40px] prose-li:m-0 prose-li:pl-[20px] tablet:prose-li:pl-[40px];
+  }
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -135,6 +193,42 @@ input:-webkit-autofill:active {
     );
     z-index: 1;
     pointer-events: none;
+  }
+
+  .gradient-box-bonuse {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .gradient-box-bonuse::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 3, 12, 0.8);
+    z-index: -2;
+    pointer-events: none;
+  }
+
+  @media (min-width: 1440) {
+    .gradient-box-bonuse::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: -25%;
+      width: 70%;
+      height: 100%;
+      filter: blur(80px);
+      background: radial-gradient(
+        rgba(255, 204, 71, 0.8) 20%,
+        rgba(211, 25, 0, 0.8) 60%,
+        rgba(151, 71, 255, 0.8) 30%
+      );
+      z-index: -1;
+      pointer-events: none;
+    }
   }
 
   .lineadBg {
@@ -269,60 +363,22 @@ input:-webkit-autofill:active {
     background-color: #ffffff;
     z-index: 1;
   }
-}
 
-@layer components {
-  body {
-    --primary: #00030c;
-    --bg-color: #010c2c;
-    --second-bg-color: #f7f7f7;
-    --text-color: #94a3b8;
-    --main-gray: #dcddeb;
-    --text-dark: #010c2c;
-    --accent-col: #a854fd;
-    --main-white: #ffffff;
-    --main-blue: #013edf;
-    --dark-blue: #000a25;
-    --second-blue: #001450;
-    --light-blue: #00248b;
-    --blue-hover: #1858fd;
-    --pagination-col: #eceffa;
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: #ffcc47;
+    animation: spin 1s ease infinite;
   }
 
-  .backImage {
-    overflow: hidden;
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    background-color: var(--main-white);
-    background-image: url('/assets/images/banner/main_banner.png');
-  }
-
-  .mainContainer {
-    position: relative;
-    background: linear-gradient(rgba(0, 0, 0, 0) 0%, var(--main-white) 150px);
-  }
-
-  @media (min-width: 768px) {
-    .mainContainer {
-      background: linear-gradient(rgba(0, 0, 0, 0) 0%, var(--main-white) 200px);
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
     }
-  }
-
-  @media (min-width: 1200px) {
-    .mainContainer {
-      background: linear-gradient(rgba(0, 0, 0, 0) 0%, var(--main-white) 250px);
+    100% {
+      transform: rotate(360deg);
     }
-  }
-
-  .paginationBtn {
-    padding: 12px 8px;
-    border-radius: 8px;
-    background-color: var(--pagination-col);
-  }
-
-  .manifesto-list {
-    @apply prose-p:m-[0] prose-ol:flex prose-ol:flex-col prose-ol:gap-[40px] prose-li:m-0 prose-li:pl-[20px] tablet:prose-li:pl-[40px];
   }
 }

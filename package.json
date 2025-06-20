@@ -31,6 +31,7 @@
     "react-dropzone": "^14.2.3",
     "react-indiana-drag-scroll": "^2.2.0",
     "react-scroll-parallax": "^3.4.5",
+    "react-toastify": "^11.0.5",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
     "resend": "^4.0.0",

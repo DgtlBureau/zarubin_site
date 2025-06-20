@@ -1,8 +1,8 @@
 export const sendEmail = async (
   name: string,
   email: string,
-  phone: string,
-  description: string,
+  phone?: string,
+  description?: string,
   cv?: File,
 ) => {
   try {
@@ -14,8 +14,8 @@ export const sendEmail = async (
       body: JSON.stringify({
         name,
         email,
-        phone,
-        description,
+        ...(phone ? { phone } : {}),
+        ...(description ? { description } : {}),
         ...(cv ? { cv } : {}),
       }),
     });

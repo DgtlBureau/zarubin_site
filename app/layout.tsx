@@ -11,6 +11,7 @@ import classNames from 'classnames';
 import localFont from 'next/font/local';
 import Script from 'next/script';
 import React from 'react';
+import { ToastContainer } from 'react-toastify';
 import 'swiper/css';
 import './globals.css';
 
@@ -84,6 +85,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const bodyClassname = classNames(Unbound.variable, Proxima.variable);
+
   return (
     <html lang='en'>
       <head>
@@ -116,6 +118,7 @@ export default function RootLayout({
         <main className='flex flex-col gap-[60px] overflow-hidden'>
           {children}
         </main>
+        <ToastContainer />
         <CookieConsent />
         <Footer />
         <Script id='replain'>
