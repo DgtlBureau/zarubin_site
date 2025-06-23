@@ -1,4 +1,3 @@
-import { CookieConsent } from '@/src/components/CookieConsent/CookieConsent';
 import { Footer } from '@/src/components/Footer/Footer';
 import { Header } from '@/src/components/Header/Header';
 import { SEO_DESCRIPTION_SIZE } from '@/src/utils/alias';
@@ -119,7 +118,6 @@ export default function RootLayout({
           {children}
         </main>
         <ToastContainer />
-        <CookieConsent />
         <Footer />
         <Script id='replain'>
           {`window.replainSettings = { id: '07c36061-dbc9-4cb8-85cb-9e69876b9d34' };

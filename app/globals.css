@@ -54,6 +54,10 @@
     --orange-light: '#FFCC47';
   }
 
+  *{
+    box-sizing: border-box;
+  }
+
   .backImage {
     overflow: hidden;
     position: relative;

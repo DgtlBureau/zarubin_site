@@ -15,7 +15,7 @@ export const CookieConsent = () => {
   }, []);
 
   const acceptCookies = () => {
-    localStorage.setItem('cookie_consent', 'true'); // Постоянное согласие
+    localStorage.setItem('cookie_consent', 'true');
     setVisible(false);
 
     const script = document.createElement('script');
@@ -41,7 +41,7 @@ export const CookieConsent = () => {
   if (!visible) return null;
 
   return (
-    <div className='sticky bottom-0 z-50 flex flex-col items-center gap-[12px] bg-white p-[20px_20px] tablet:gap-[20px] laptop:flex-row desktop:justify-between desktop:p-[20px_80px]'>
+    <div className='z-20 flex flex-col items-center gap-[12px] bg-white p-[20px_20px] tablet:gap-[20px] laptop:flex-row desktop:justify-between desktop:p-[20px_80px]'>
       <p className='text-[12px] text-text-dark desktop:text-[14px] desktop-big:text-[16px]'>
         {
           'By clicking “Accept”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.'

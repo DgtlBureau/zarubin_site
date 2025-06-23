@@ -7,7 +7,6 @@ import { BonusesDownloadBtn } from '@/src/ui-kit/BonusesDownloadBtn/BonusesDownl
 import { Modal } from '@/src/ui-kit/Modal/Modal';
 import { Spinner } from '@/src/ui-kit/Spinner/Spinner';
 import { IBonuse } from '@/src/utils/filesMetadata/getBonuseMetadata';
-import useMediaQuery from '@/src/utils/useMediaQuery';
 import { DateTime } from 'luxon';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
@@ -34,8 +33,6 @@ export const Bonuses = ({ data }: IBonuseProps) => {
     window.location.reload();
   };
 
-  const isDesktop = useMediaQuery('>=desktop');
-
   useEffect(() => {
     const isSeded = localStorage.getItem('isEmailSended');
     setIsEmailSended(isSeded ? JSON.parse(isSeded) : false);
@@ -55,7 +52,7 @@ export const Bonuses = ({ data }: IBonuseProps) => {
             <Container
               className={`mt-[100px] flex flex-col items-center gap-[40px] desktop:flex-row`}
             >
-              <div className={`desktop:p-[87px_0]`}>
+              <div className={`w-fit desktop:p-[87px_0]`}>
                 <h1
                   className={`font-unbound text-[32px] font-bold uppercase leading-[1.1] desktop:text-[60px]`}
                 >
@@ -90,14 +87,14 @@ export const Bonuses = ({ data }: IBonuseProps) => {
                   )}
                 </div>
               </div>
-              <div className='flex w-[37%] flex-col items-center justify-center'>
+              <div className='flex w-[30%] flex-col items-start justify-center'>
                 <Image
                   src={firstData.image}
                   width={530}
                   height={682}
                   alt='book'
                   quality={90}
-                  className='h-full w-full'
+                  className='h-auto w-full'
                 />
               </div>
             </Container>
@@ -105,7 +102,7 @@ export const Bonuses = ({ data }: IBonuseProps) => {
           {!isEmailSended && (
             <Section light className='p-0 tablet:p-0 desktop:p-0'>
               <div className='flex h-fit flex-col desktop:flex-row'>
-                <Container className='desktop:ml-auto'>
+                <Container className='flex flex-col gap-0 desktop:flex-row desktop:gap-[40px]'>
                   <div className='flex flex-col desktop:flex-row desktop:gap-[40px]'>
                     <div className='relative flex flex-col gap-[20px] p-[40px_0] desktop:p-[75px_0]'>
                       <h2 className='font-unbound text-[28px] font-bold uppercase leading-[1.14] text-main-bg desktop:text-[38px]'>
@@ -127,22 +124,17 @@ export const Bonuses = ({ data }: IBonuseProps) => {
                       </div>
                     </div>
                   </div>
-                  {!isDesktop && (
-                    <div>
-                      <Image
-                        src={scholarshipImage}
-                        width={700}
-                        height={550}
-                        alt=''
-                        quality={90}
-                        className='h-auto w-full'
-                      />
-                    </div>
-                  )}
+                  <div className='relative h-full overflow-hidden desktop:w-[500px]'>
+                    <Image
+                      src={scholarshipImage}
+                      width={700}
+                      height={550}
+                      alt=''
+                      quality={90}
+                      className={`right-0 top-0 object-cover desktop:absolute desktop:h-full desktop:w-auto`}
+                    />
+                  </div>
                 </Container>
-                {isDesktop && (
-                  <div className='relative min-h-[144px] bg-[url(/assets/images/bonuses/scholarship.webp)]  bg-cover bg-center bg-no-repeat desktop:w-[35%]' />
-                )}
               </div>
               <Container className='py-[40px]'>
                 <TrustUs whiteBg />
