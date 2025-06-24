@@ -1,6 +1,7 @@
 import defaultImg from '@/public/assets/images/banner/default_insights.webp';
 import { NextLinePreposition } from '@/src/components/NextLinePreposition/NextLinePreposition';
 import { DownloadLink } from '@/src/ui-kit/DownloadLink/DownloadLink';
+import { formattedDate } from '@/src/utils/formattedDate';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -77,7 +78,11 @@ export const NewInsightsCard = ({
             text={description}
             className='mt-[19px] line-clamp-3 overflow-hidden font-proxima text-[16px] leading-[1.25] text-text-dark/60 tablet:text-[20px]'
           />
-          {date && <span className='mt-[14px] text-text-dark/60'>{date}</span>}
+          {date && (
+            <span className='mt-[14px] text-text-dark/60'>
+              {formattedDate(date)}
+            </span>
+          )}
           {subCategory === 'Research' && downloadLink && (
             <div className='mt-[25px]'>
               <DownloadLink link={downloadLink} />

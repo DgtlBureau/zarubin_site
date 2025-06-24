@@ -3,8 +3,8 @@
 import defaultImg from '@/public/assets/images/banner/default_insights.webp';
 import { formattedDate } from '@/src/utils/formattedDate';
 import {
-    underscopeFormatter,
-    underscopeReverter
+  underscopeFormatter,
+  underscopeReverter,
 } from '@/src/utils/formatter/underscopeFormatter';
 import { Post } from '@/src/utils/types';
 import Image from 'next/image';
@@ -58,7 +58,7 @@ export const PlaybookCard = ({ data }: IArticleProps) => {
         </p>
         <div className='flex w-full flex-col-reverse items-start gap-[20px] '>
           <span className='whitespace-nowrap font-proxima text-[14px] text-text-dark/60'>
-            {formatedDate.toUpperCase()}
+            {formatedDate}
           </span>
           {tags && tags.length !== 0 && (
             <ul className='flex flex-wrap gap-[8px] desktop:gap-[24px]'>

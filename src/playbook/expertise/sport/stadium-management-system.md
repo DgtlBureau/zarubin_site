@@ -1,7 +1,7 @@
 ---
 title: 'All about Stadium Management Systems'
 description: 'Why arenas are turning into businesses, and how integrated systems help reduce losses, improve communication with fans, and increase revenue. A clear and structured look at what modern stadiums really need to stay efficient.'
-image: '/assets/images/expertise/it_service/shibas.png'
+image: '/assets/images/expertise/it_service/shibas.webp'
 date: '07-04-2025'
 readingTime: '8 min read'
 category: 'Expertise'
@@ -84,4 +84,3 @@ Step six: connect finances. Without costs, you can’t measure event ROI. The ca
 Final step: prepare to scale. A good architecture works beyond one club. Concert venues. Hybrid arenas. City spaces. Same logic: UUID, connected systems, shared calendar, CRM + finance core.
 
 When it all connects, clubs make money not only on match days. Marketing becomes precise. Operations become predictable. And every game proves the system works.
-

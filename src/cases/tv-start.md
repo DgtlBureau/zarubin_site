@@ -7,7 +7,7 @@ instruments: ['php', 'react']
 logo: '/assets/images/case/svg/tv-start.svg'
 bannerImage: '/assets/images/case/banner/tv-start.webp'
 images:
-  ['/assets/images/case/tv-start-1.webp', '/assets/images/case/tv-start-2.webp']
+  ['/assets/images/case/tv-start.webp', '/assets/images/case/tv-start-2.webp']
 date: '21-04-2025'
 ---
 

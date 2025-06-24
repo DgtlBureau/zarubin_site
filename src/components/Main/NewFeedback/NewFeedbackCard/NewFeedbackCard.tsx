@@ -1,3 +1,4 @@
+import { formattedDate } from '@/src/utils/formattedDate';
 import { IImage } from '@/src/utils/types';
 import Image from 'next/image';
 
@@ -52,9 +53,11 @@ export const NewFeedbackCard = ({ data }: Props) => {
           className='max-h-[50px] w-fit'
           loading='lazy'
         />
-        <span className='font-proxima text-text-dark opacity-50 mobile-big:text-[16px] tablet:text-[20px]'>
-          {data.date}
-        </span>
+        {data?.date && (
+          <span className='font-proxima text-text-dark opacity-50 mobile-big:text-[16px] tablet:text-[20px]'>
+            {formattedDate(data.date)}
+          </span>
+        )}
       </div>
     </div>
   );
