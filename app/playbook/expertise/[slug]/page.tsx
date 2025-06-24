@@ -144,7 +144,6 @@ export default function ExpertisePostPage(props: { params: { slug: string } }) {
 
   const hashtagRegex = /#[A-Za-z_]+/g;
   const regexFont = /<font color='(.+?)'>(.+?)<\/font>/g;
-  const regexImage = /!\[[^\]]*\]\((.*?)\s*("(?:.*[^"])")?\s*\)/g;
 
   const ideaRegx = /\[\[(.*?)\]\]/g;
   const ideaMatches = post.content.match(ideaRegx);
