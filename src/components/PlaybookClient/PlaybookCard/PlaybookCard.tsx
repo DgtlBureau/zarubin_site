@@ -3,8 +3,8 @@
 import defaultImg from '@/public/assets/images/banner/default_insights.webp';
 import { formattedDate } from '@/src/utils/formattedDate';
 import {
-  underscopeFormatter,
-  underscopeReverter,
+    underscopeFormatter,
+    underscopeReverter
 } from '@/src/utils/formatter/underscopeFormatter';
 import { Post } from '@/src/utils/types';
 import Image from 'next/image';

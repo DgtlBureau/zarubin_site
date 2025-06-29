@@ -4,11 +4,12 @@ import { SocialFollow } from '@/src/components/SocialFollow/SocialFollow';
 import { AuthorInfo } from '@/src/ui-kit/AuthorInfo/AuthorInfo';
 import { DownloadLink } from '@/src/ui-kit/DownloadLink/DownloadLink';
 import { GoBackLink } from '@/src/ui-kit/GoBackLink/GoBackLink';
+import { ReadingProgressBar } from '@/src/ui-kit/ReadingProgressBar/ReadingProgressBar';
 import {
-  BASE_URL,
-  SEO_DESCRIPTION_SIZE,
-  SEO_TITLE_SIZE,
-  SITE_NAME,
+    BASE_URL,
+    SEO_DESCRIPTION_SIZE,
+    SEO_TITLE_SIZE,
+    SITE_NAME
 } from '@/src/utils/alias';
 import { cleanMetaTitle } from '@/src/utils/cleanMetaTitle';
 import { contentTrimming } from '@/src/utils/contentTrimming';
@@ -23,7 +24,6 @@ import { DateTime } from 'luxon';
 import Markdown from 'markdown-to-jsx';
 import path from 'path';
 import styles from './Post.module.css';
-import { ReadingProgressBar } from '@/src/ui-kit/ReadingProgressBar/ReadingProgressBar';
 
 type Slug = {
   slug: string;

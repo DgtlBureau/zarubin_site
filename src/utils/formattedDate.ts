@@ -1,7 +1,7 @@
 import { DateTime } from 'luxon';
 
 export const formattedDate = (date: string) => {
-  const newDate = DateTime.fromFormat(date, 'dd-mm-yyyy');
+  const newDate = DateTime.fromFormat(date, 'dd-MM-yyyy');
   const formattedDate = newDate.setLocale('en-US').toLocaleString({
     day: '2-digit',
     month: 'short',
