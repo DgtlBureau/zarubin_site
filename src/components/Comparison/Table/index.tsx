@@ -6,10 +6,10 @@ export default function Table() {
           <thead className='border-b border-b-white '>
             <tr>
               <th className='px-[20px] py-[27.5px] text-start font-unbound text-[16px] font-bold leading-[1.2] tablet:text-[22px] desktop:text-[28px]'>
-                Designing
+                Task
               </th>
               <th className='px-[20px] py-[27.5px] text-start font-proxima text-[18px] font-bold leading-[1.2] tablet:text-[20px] desktop:text-[36px]'>
-                Freelancers/Indians
+                Freelancers
               </th>
               <th className='px-[20px] py-[27.5px] text-start font-proxima text-[18px] font-bold leading-[1.2] text-[#013EDF] tablet:text-[20px] desktop:text-[36px]'>
                 The BrightByte
@@ -315,13 +315,13 @@ export default function Table() {
                 Product Team Cost / month
               </td>
               <td className='w-[25%] p-[20px] font-proxima text-[12px] font-normal leading-[1.2] text-white/60 tablet:text-[16px] desktop:text-[20px]'>
-                Up to 5k$
+                Up to 3k$
               </td>
               <td className='w-[25%] p-[20px] font-proxima text-[12px] font-normal leading-[1.2] text-white tablet:text-[16px] desktop:text-[20px]'>
-                Up to 20k$
+                Up to 8k$
               </td>
               <td className='w-[25%] p-[20px] font-proxima text-[12px] font-normal leading-[1.2] text-white/60 tablet:text-[16px] desktop:text-[20px]'>
-                Up to 50k$
+                Up to 30k$
               </td>
             </tr>
             <tr className='bg-[#F2F5FF1A]/10'>
@@ -329,10 +329,10 @@ export default function Table() {
                 Mobile Team / month
               </td>
               <td className='w-[25%] p-[20px] font-proxima text-[12px] font-normal leading-[1.2] text-white/60 tablet:text-[16px] desktop:text-[20px]'>
-                Up to 3k$
+                Up to 5k$
               </td>
               <td className='w-[25%] p-[20px] font-proxima text-[12px] font-normal leading-[1.2] text-white tablet:text-[16px] desktop:text-[20px]'>
-                Up to 12k$
+                Up to 10k$
               </td>
               <td className='w-[25%] p-[20px] font-proxima text-[12px] font-normal leading-[1.2] text-white/60 tablet:text-[16px] desktop:text-[20px]'>
                 Up to 30k$
