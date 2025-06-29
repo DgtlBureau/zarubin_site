@@ -9,7 +9,7 @@ export default function Table() {
                 Task
               </th>
               <th className='px-[20px] py-[27.5px] text-start font-proxima text-[18px] font-bold leading-[1.2] tablet:text-[20px] desktop:text-[36px]'>
-                Freelancers
+                Freelancer
               </th>
               <th className='px-[20px] py-[27.5px] text-start font-proxima text-[18px] font-bold leading-[1.2] text-[#013EDF] tablet:text-[20px] desktop:text-[36px]'>
                 The BrightByte
