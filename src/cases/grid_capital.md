@@ -1,9 +1,9 @@
 ---
 title: 'Within Three Weeks, We Managed to Establish a Working Process'
 description: 'Grid Capital faced an issue where the previous team had been working on development for over six months without delivering a final product.'
-industries: ['Financial Technology', 'Business Process Management']
+industries: ['Finance', 'Web development', 'IT Consulting']
 tag: 'Grid Capital'
-instruments: []
+instruments: ['next', 'laravel']
 logo: '/assets/images/case/svg/grid-capital.svg'
 bannerImage: '/assets/images/case/banner/gridcapital-case.webp'
 images: ['/assets/images/case/grid_capital-1.webp']
