@@ -1,5 +1,5 @@
 ---
-title: 'Flexible infrastructure for seamless digital payments'
+title: 'AI powered bot with CRM (Finance/AI/Python)'
 description: 'The goal of the project was to create a secure and customizable payment gateway with dashboard, wallet, and API support for merchants'
 industries: ['Finance', 'Flutter']
 tag: 'Jedipay'
