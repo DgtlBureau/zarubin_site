@@ -1,9 +1,9 @@
 ---
-title: 'We Conducted a Technical and Process Audit in Their IT Department'
+title: 'AI Audit of business processes and api integrations (Oil&Gas/Python)'
 description: 'The key IT system, within which the business process was to be built, was called "On Our Way." As part of the loyalty program, users stop at a gas station, order food, and receive cashback on their card.'
-industries: ['Oil', 'Business Process Management']
+industries: ['Oil & Gas', 'IT Consulting']
 tag: 'NIS'
-instruments: []
+instruments: ['next','python']
 logo: '/assets/images/case/svg/nis.svg'
 bannerImage: '/assets/images/case/banner/nis-case.webp'
 images: ['/assets/images/case/nis-1.webp']
