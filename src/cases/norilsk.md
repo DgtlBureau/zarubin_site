@@ -1,9 +1,9 @@
 ---
-title: 'Web Development for HC "Norilsk"'
+title: 'Website with integrations for hockey club (Sports/Laravel/Next.js)"'
 description: 'The Norilsk Hockey Club competes in the VHL division. They have a coaching staff, active players, and fans.'
-industries: ['Sports and Entertainment', 'Custom Development']
+industries: ['Sports', 'Web development', 'API Integrations']
 tag: 'HC Norilsk'
-instruments: ['php', 'react', 'figma']
+instruments: ['next', 'laravel']
 logo: '/assets/images/case/svg/norilsk.svg'
 bannerImage: '/assets/images/case/banner/norilsk-case.webp'
 images:
