@@ -1,10 +1,10 @@
 ---
-title: 'Simplified interaction on shifts for employees'
+title: 'IT System for industrial downstream company (Oil&Gas, Flutter, Laravel)'
 description: 'The goal of the project was to integrate all social services for shift workers into a mobile application.'
 industries:
-  ['Service and Hospitality', 'Quality Improvement', 'Custom Development']
+  ['Oil & Gas', 'CRM', 'Mobile development']
 tag: 'OAZIS'
-instruments: ['flutter', 'php', 'go', 'react', 'figma']
+instruments: ['flutter', 'laravel']
 logo: '/assets/images/case/svg/oazis.svg'
 bannerImage: '/assets/images/case/banner/oasis-case.webp'
 images: ['/assets/images/case/oazis-1.webp', '/assets/images/case/oazis-2.webp']
