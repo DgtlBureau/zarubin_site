@@ -1,9 +1,9 @@
 ---
-title: 'Street football and brand development'
+title: 'Api-integrated website for sports soccer event (Sports/Laravel)'
 description: 'The project to develop the website for Street Football League on the Tilda platform with ticketing system integration has become a successful example of how to effectively combine sporting events with business goals.'
-industries: ['Sport & EntertainmentOil', 'Custom Development']
+industries: ['Sports', 'Web development', 'API Development']
 tag: 't-bank'
-instruments: ['tilda', 'php', 'react']
+instruments: ['next', 'laravel']
 logo: '/assets/images/case/svg/t-bank.svg'
 bannerImage: '/assets/images/case/banner/t-bank-case.webp'
 images: ['/assets/images/case/tbank-1.webp', '/assets/images/case/tbank-2.webp']
