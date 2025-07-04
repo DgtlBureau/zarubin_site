@@ -1,9 +1,9 @@
 ---
-title: 'Cross-platform solution for sports streaming'
+title: 'Smart TV App for Entertaiment channel (Sports/Flutter/Laravel)'
 description: 'The goal of the project was to build a unified platform for broadcasting sports events across mobile, Smart TV, and web'
-industries: ['Entertainment', 'Flutter', 'SmartTV']
+industries: ['Sports', 'SmartTV', 'Mobile development']
 tag: 'TV start'
-instruments: ['php', 'react']
+instruments: ['flutter', 'laravel']
 logo: '/assets/images/case/svg/tv-start.svg'
 bannerImage: '/assets/images/case/banner/tv-start.webp'
 images:
