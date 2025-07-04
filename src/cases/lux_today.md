@@ -1,9 +1,9 @@
 ---
-title: 'We organized the development process'
+title: 'Web development for relocation startup (Hospitality/Laravel)'
 description: ''
-industries: ['Business', 'Custom Development']
+industries: ['Service and Hospitality', 'Web development', 'IT Consulting']
 tag: 'Lux Today'
-instruments: ['php', react]
+instruments: ['next', 'laravel']
 logo: '/assets/images/case/svg/luxToday.svg'
 bannerImage: '/assets/images/case/banner/luxtoday-case.webp'
 images: ['/assets/images/case/luxToday-1.webp']
