@@ -1,9 +1,9 @@
 ---
-title: 'Digital Transformation from 7 Disparate Websites to a Unified System'
+title: 'Mobile app for hockey club (Sports/Flutter/Python)'
 description: "The hockey club has a large vertical structure, starting with a children's academy, youth team, women's team, senior team, and a team from the Continental Hockey League."
 industries: ['Sports', 'CRM', 'Mobile development']
 tag: 'Avangard'
-instruments: ['php', 'flutter']
+instruments: ['flutter', 'python']
 logo: '/assets/images/case/svg/avangard.svg'
 bannerImage: '/assets/images/case/banner/avangard-case.webp'
 images: ['/assets/images/case/avangard-1.webp']
