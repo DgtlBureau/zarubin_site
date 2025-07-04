@@ -1,9 +1,9 @@
 ---
-title: 'How Design Transforms the Style of a Football Club'
+title: 'Integration on backend for sports soccer club (Sports/Laravel)'
 description: 'Like any leading football club, the goal of FCDM is to attract not only fans but also sponsors.'
-industries: ['Sports and Entertainment', 'Custom Development']
+industries: ['Sports', 'Web development', 'API Development']
 tag: 'FCDM'
-instruments: ['figma']
+instruments: ['next', 'laravel']
 logo: '/assets/images/case/svg/dinamika.svg'
 logo_hover: '/assets/images/case/svg/dinamika_hover.svg'
 bannerImage: '/assets/images/case/banner/dinamika-case.webp'
