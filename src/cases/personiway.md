@@ -1,9 +1,9 @@
 ---
-title: 'AI-powered assistant for on-site technical support'
+title: 'AI-powered assistant for on-site technical support (HVACR/AI/Python)'
 description: 'The goal of the project was to help field technicians resolve service issues faster using an AI assistant and a connected ticketing system'
-industries: ['FieldOps', 'HVAC']
+industries: ['HVAC', 'API Development', 'AI & Data Science']
 tag: 'Personiway'
-instruments: ['php', 'react']
+instruments: ['next', 'python']
 logo: '/assets/images/case/svg/personi.svg'
 bannerImage: '/assets/images/case/banner/personiway.webp'
 images:
