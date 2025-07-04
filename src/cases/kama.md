@@ -1,9 +1,9 @@
 ---
-title: 'Mobile Application Mounted on Car Steering Wheel'
+title: 'Software and Game Stand on Unity for automotive industry (Automotive/Go)'
 description: 'The release of new cars always involves numerous UX/UI and A/B tests. Consequently, to conduct these tests, it is necessary to create a car simulator through which testers can verify various hypotheses.'
-industries: ['Automotive Industry', 'Cars']
+industries: ['Automotive', 'Mobile development']
 tag: 'Atom'
-instruments: ['flutter']
+instruments: ['flutter', 'go']
 logo: '/assets/images/case/svg/atom.svg'
 bannerImage: '/assets/images/case/banner/atom-case.webp'
 images: ['/assets/images/case/kama-1.webp', '/assets/images/case/kama-2.webp']
