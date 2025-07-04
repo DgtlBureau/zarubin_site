@@ -1,9 +1,9 @@
 ---
-title: 'How the fashion industry depends on e-commerce stores'
+title: 'Mobile application for retail grocery store (Retail/Flutter)'
 description: 'An overwhelming shift of e-commerce into online platforms has eliminated offline boutiques entirely.'
-industries: ['Custom Development']
+industries: ['Retail','Mobile development']
 tag: 'Our Gold'
-instruments: ['flutter', 'figma']
+instruments: ['flutter', 'laravel']
 logo: '/assets/images/case/svg/nasheZoloto.svg'
 bannerImage: '/assets/images/case/banner/nashe-zoloto-case.webp'
 images: ['/assets/images/case/nashe_zoloto-1.webp']
