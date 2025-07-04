@@ -1,9 +1,9 @@
 ---
 title: 'AI powered bot with CRM (Finance/AI/Python)'
 description: 'The goal of the project was to create a secure and customizable payment gateway with dashboard, wallet, and API support for merchants'
-industries: ['Finance', 'Flutter']
+industries: ['Finance', 'Web development', 'AI & Data Science']
 tag: 'Jedipay'
-instruments: ['php', 'react']
+instruments: ['next', 'python']
 logo: '/assets/images/case/svg/default-case-logo.svg'
 bannerImage: '/assets/images/case/banner/jedipay.webp'
 images: ['/assets/images/case/jedi-1.webp']
