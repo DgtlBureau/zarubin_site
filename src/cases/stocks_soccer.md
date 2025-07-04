@@ -1,9 +1,9 @@
 ---
-title: 'What if we view football players as stocks and combine them into portfolios?'
+title: 'Fantasy-style startup for soccer audience (Sports/Python)?'
 description: 'We have tournament and player screens. The system retrieves data from TransferMarket, which stores information about player values and portfolios, and displays it on the front end.'
-industries: ['Sports and Entertainment', 'Custom Development']
+industries: ['Sports', 'Web development', 'API Development']
 tag: 'STOCKS SOCCER'
-instruments: ['ruby', 'react', 'figma']
+instruments: ['next', 'python']
 logo: '/assets/images/case/svg/stocksSoccer.svg'
 bannerImage: '/assets/images/case/banner/stock-socker-case.webp'
 images: ['/assets/images/case/stocks_soccer-1.webp']
