@@ -1,5 +1,5 @@
 ---
-title: 'Within Three Weeks, We Managed to Establish a Working Process'
+title: 'IT Consulting for FinTech Startup in LA (Finance/Consulting/Web)'
 description: 'Grid Capital faced an issue where the previous team had been working on development for over six months without delivering a final product.'
 industries: ['Finance', 'Web development', 'IT Consulting']
 tag: 'Grid Capital'
