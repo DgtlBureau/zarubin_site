@@ -4,7 +4,7 @@ description: "Hockey Club Torpedo, one of Russia's most storied hockey franchise
 industries: ['Sports', 'CRM', 'Mobile development']
 tag: 'Avangard'
 instruments: ['flutter', 'laravel']
-logo: '/assets/images/case/svg/torpedo.svg'
+logo: '/assets/images/case/svg/default-case-logo.svg'
 bannerImage: '/assets/images/case/banner/torpedo-case.webp'
 images: ['/assets/images/case/torpedo-1.webp']
 date: '01-01-2025'
