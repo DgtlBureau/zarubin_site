@@ -2,7 +2,7 @@
 title: 'HC Torpedo - API Integrations for fans engagement (CRM, Flutter)'
 description: "Hockey Club Torpedo, one of Russia's most storied hockey franchises, sought to modernize their fan engagement and operational efficiency."
 industries: ['Sports', 'CRM', 'Mobile development']
-tag: 'Avangard'
+tag: 'HC Torpedo'
 instruments: ['flutter', 'laravel']
 logo: '/assets/images/case/svg/default-case-logo.svg'
 bannerImage: '/assets/images/case/banner/torpedo-case.webp'
