@@ -1,14 +1,23 @@
-# HC Torpedo - API Integrations for fans engagement (CRM, Flutter)
-
-## **ABOUT**
+---
+title: 'HC Torpedo - API Integrations for fans engagement (CRM, Flutter)'
+description: "Hockey Club Torpedo, one of Russia's most storied hockey franchises, sought to modernize their fan engagement and operational efficiency."
+industries: ['Sports', 'CRM', 'Mobile development']
+tag: 'Avangard'
+instruments: ['flutter', 'laravel']
+logo: '/assets/images/case/svg/torpedo.svg'
+bannerImage: '/assets/images/case/banner/torpedo-case.webp'
+images: ['/assets/images/case/torpedo-1.webp']
+date: '01-01-2025'
+---
+## About
 
 Hockey Club Torpedo, one of Russia's most storied hockey franchises, sought to modernize their fan engagement and operational efficiency. To attract not only passionate fans but also corporate sponsors, it's essential to create integrated digital solutions that harmonize both the main brand of the hockey club and potential partners interested in collaborating with this legendary team.
 
-## **PROBLEM**
+## Problem
 
 Hockey Club Torpedo's existing digital infrastructure faced several critical challenges related to outdated systems and fragmented fan engagement, leading to decreased operational efficiency and loss of potential revenue streams. These issues became decisive factors in the club's decision to implement a comprehensive digital transformation.
 
-## **SCOPE OF WORK**
+## Scope of Work
 
 ### **CRM System Implementation and Configuration:**
 - **System Architecture**: Designing and implementing a robust CRM solution tailored for professional sports organizations
