@@ -18,7 +18,6 @@ Hockey Club Torpedo, one of Russia's most storied hockey franchises, sought to m
 Hockey Club Torpedo's existing digital infrastructure faced several critical challenges related to outdated systems and fragmented fan engagement, leading to decreased operational efficiency and loss of potential revenue streams. These issues became decisive factors in the club's decision to implement a comprehensive digital transformation.
 
 ## Scope of Work
-
 ### **CRM System Implementation and Configuration:**
 - **System Architecture**: Designing and implementing a robust CRM solution tailored for professional sports organizations
 - **Data Integration**: Seamlessly connecting fan databases, ticket sales, merchandise tracking, and sponsor management systems
