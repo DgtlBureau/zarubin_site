@@ -1,5 +1,6 @@
 import { PlaybookClient } from '@/src/components/PlaybookClient/PlaybookClient';
 import { contentTrimming } from '@/src/utils/contentTrimming';
+import { MenuItems } from '@/src/utils/enums';
 import { getInsightsMetadata } from '@/src/utils/getInsightsMetadata';
 import { pageMetadata } from '@/src/utils/pageMetadata';
 import { postsSorting } from '@/src/utils/postsSorting';
@@ -15,9 +16,9 @@ export async function generateMetadata() {
     title,
     description,
     keywords,
-    rssPath: 'playbook/insights/rss',
+    rssPath: `${MenuItems.PLAYBOOK.toLowerCase()}/insights/rss`,
     alternatesTitle: 'The BrightByte Insights',
-    ogUrlPath: 'playbook/insights',
+    ogUrlPath: `${MenuItems.PLAYBOOK.toLowerCase()}/insights`,
     ogType: 'article',
   });
 }

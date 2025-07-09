@@ -18,7 +18,7 @@ const config = {
       '/playbook',
       '/playbook/expertise',
       '/playbook/insights',
-      '/solutions',
+      '/cases',
       '/policy',
       '/investments',
       '/brief',
@@ -63,7 +63,7 @@ const config = {
 
     const dynamicSolutionsPages = solutionsFiles.map((file) => {
       const fileName = path.basename(file, '.md');
-      return `/solutions/${fileName}`;
+      return `/cases/${fileName}`;
     });
 
     const allPaths = [
@@ -103,6 +103,7 @@ const config = {
     '/main/*',
     '/about',
     '*.md',
+    '/soltions',
     '/404',
   ],
   robotsTxtOptions: {

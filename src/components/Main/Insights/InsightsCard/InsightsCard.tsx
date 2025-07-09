@@ -1,6 +1,7 @@
 import defaultImg from '@/public/assets/images/banner/default_insights.webp';
 import { NextLinePreposition } from '@/src/components/NextLinePreposition/NextLinePreposition';
 import { DownloadLink } from '@/src/ui-kit/DownloadLink/DownloadLink';
+import { MenuItems } from '@/src/utils/enums';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -26,7 +27,10 @@ export const InsightsCard = ({
   const tags = tag?.split(',');
 
   return (
-    <Link href={`/playbook/insights/${slug}`} className='flex h-full flex-col'>
+    <Link
+      href={`/${MenuItems.PLAYBOOK.toLowerCase()}/insights/${slug}`}
+      className='flex h-full flex-col'
+    >
       <div className='relative aspect-[16/9] w-full overflow-hidden'>
         {image ? (
           <Image

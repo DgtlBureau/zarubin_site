@@ -1,3 +1,4 @@
+import { MenuItems } from '@/src/utils/enums';
 import Link from 'next/link';
 
 export const DynamicSolutionNotFound = ({ slug }: { slug: string }) => {
@@ -11,8 +12,11 @@ export const DynamicSolutionNotFound = ({ slug }: { slug: string }) => {
       </p>
       <p className='text-[18px] tablet:text-[24px] desktop:text-[28px]'>
         Back to{' '}
-        <Link className='underline hover:text-main-blue' href={'/solutions'}>
-          solutions
+        <Link
+          className='underline hover:text-main-blue'
+          href={`/${MenuItems.CASES.toLowerCase()}`}
+        >
+          {MenuItems.CASES.toLowerCase()}
         </Link>
       </p>
       <p className='text-[18px] tablet:text-[24px] desktop:text-[28px]'>

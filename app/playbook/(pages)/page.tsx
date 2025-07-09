@@ -1,6 +1,7 @@
 import { PlaybookClient } from '@/src/components/PlaybookClient/PlaybookClient';
 import { SEO_DESCRIPTION_SIZE } from '@/src/utils/alias';
 import { contentTrimming } from '@/src/utils/contentTrimming';
+import { MenuItems } from '@/src/utils/enums';
 import { getAllArticles } from '@/src/utils/getAllArticles';
 import { pageMetadata } from '@/src/utils/pageMetadata';
 import { Seo } from '@/src/utils/Seo/Seo';
@@ -18,7 +19,7 @@ export async function generateMetadata() {
     title,
     description,
     keywords,
-    ogUrlPath: 'playbook',
+    ogUrlPath: `${MenuItems.PLAYBOOK.toLowerCase()}`,
     ogType: 'article',
   });
 }

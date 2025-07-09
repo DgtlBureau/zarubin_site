@@ -17,6 +17,7 @@ import { DateTime } from 'luxon';
 import Markdown from 'markdown-to-jsx';
 import path from 'path';
 import styles from './Post.module.css';
+import { MenuItems } from '@/src/utils/enums';
 
 const URL = process.env.NODE_ENV === 'production' ? BASE_URL : '';
 
@@ -36,7 +37,7 @@ const findMarkdownFile = (dir: string, slug: string): string | null => {
 };
 
 const getPostContent = (slug: string) => {
-  const folder = 'src/playbook/insights/';
+  const folder = `src/${MenuItems.PLAYBOOK.toLowerCase()}/insights/`;
   const file = findMarkdownFile(folder, slug);
 
   if (file) {
@@ -95,7 +96,7 @@ export async function generateMetadata({
     title,
     description,
     alternates: {
-      canonical: `${BASE_URL}/playbook/insights/${slug}`,
+      canonical: `${BASE_URL}/${MenuItems.PLAYBOOK.toLowerCase()}/insights/${slug}`,
     },
     openGraph: {
       type: 'article',
@@ -104,7 +105,7 @@ export async function generateMetadata({
       ...openGraphImage(image),
       title,
       description,
-      url: `${BASE_URL}/playbook/insights/${slug}`,
+      url: `${BASE_URL}/${MenuItems.PLAYBOOK.toLowerCase()}/insights/${slug}`,
       modifiedTime: publishedDateISO,
       publishedTime: publishedDateISO,
       authors: post.data.authorImage ? [post.data.authorImage] : null,

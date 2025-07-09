@@ -1,4 +1,5 @@
 import { BASE_URL } from '@/src/utils/alias';
+import { MenuItems } from '@/src/utils/enums';
 import { getExpertiseMetadata } from '@/src/utils/getExpertiseMetadata';
 import { getInsightsMetadata } from '@/src/utils/getInsightsMetadata';
 import { DateTime } from 'luxon';
@@ -39,8 +40,8 @@ export async function GET() {
     feed.item({
       title: item.title,
       description: item.description,
-      url: `${BASE_URL}/rss/playbook/${item.dirName}/${item.slug}`,
-      guid: `${BASE_URL}/rss/playbook/${item.dirName}/${item.slug}`,
+      url: `${BASE_URL}/rss/${MenuItems.PLAYBOOK.toLowerCase()}/${item.dirName}/${item.slug}`,
+      guid: `${BASE_URL}/rss/${MenuItems.PLAYBOOK.toLowerCase()}/${item.dirName}/${item.slug}`,
       date: formattedDate,
     });
   });

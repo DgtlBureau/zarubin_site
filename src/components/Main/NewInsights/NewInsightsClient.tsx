@@ -9,6 +9,7 @@ import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { Container } from '../../shared/Container/Container';
 import { Section } from '../../shared/Section/Section';
 import { NewInsightsCard } from './NewInsightsCard/NewInsightsCard';
+import { MenuItems } from '@/src/utils/enums';
 
 interface Props {
   posts: Post[];
@@ -29,7 +30,7 @@ export const NewInsightsClient = ({ posts }: Props) => {
           <div className='flex items-start justify-between desktop:items-center'>
             <div className='flex flex-col gap-[15px]'>
               <h2 className='desktop-light::text-[50px] font-unbound text-[28px] font-bold uppercase text-main-bg tablet:text-[40px] desktop:text-[45px]'>
-                playbook
+                {MenuItems.PLAYBOOK.toLowerCase()}
               </h2>
               <p className='font-proxima text-[18px] font-bold leading-[1.1] text-light-gray tablet:text-[20px] desktop:leading-[1]'>
                 {`${sectionsTitle['main']['insights'].descripton}`}

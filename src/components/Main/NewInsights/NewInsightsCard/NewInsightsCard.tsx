@@ -1,6 +1,7 @@
 import defaultImg from '@/public/assets/images/banner/default_insights.webp';
 import { NextLinePreposition } from '@/src/components/NextLinePreposition/NextLinePreposition';
 import { DownloadLink } from '@/src/ui-kit/DownloadLink/DownloadLink';
+import { MenuItems } from '@/src/utils/enums';
 import { formattedDate } from '@/src/utils/formattedDate';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -32,7 +33,7 @@ export const NewInsightsCard = ({
 
   return (
     <Link
-      href={`/playbook/${category.toLowerCase()}/${slug}`}
+      href={`/${MenuItems.PLAYBOOK.toLowerCase()}/${category.toLowerCase()}/${slug}`}
       className='group flex h-full flex-col pr-[10px]'
     >
       <div className='hover:shadow-lg'>

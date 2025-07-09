@@ -1,6 +1,7 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import path from 'path';
+import { MenuItems } from './enums';
 
 export const formatMenuItem = (menuItem: string) => {
   const newMenuItem = menuItem
@@ -16,7 +17,7 @@ export const finalLink = (str: string) => {
 };
 
 export const getArticlesList = (articlePath: string) => {
-  const folder = `src/playbook/${articlePath}`;
+  const folder = `src/${MenuItems.PLAYBOOK.toLowerCase()}/${articlePath}`;
   const directories = fs
     .readdirSync(folder, { withFileTypes: true })
     .filter((direct) => direct.isDirectory())

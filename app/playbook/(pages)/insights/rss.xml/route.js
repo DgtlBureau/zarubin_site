@@ -1,4 +1,5 @@
 import { BASE_URL } from '@/src/utils/alias';
+import { MenuItems } from '@/src/utils/enums';
 import { getInsightsMetadata } from '@/src/utils/getInsightsMetadata';
 import { DateTime } from 'luxon';
 import RSS from 'rss';
@@ -10,7 +11,7 @@ export async function GET() {
     title: 'The BrightByte Insights',
     description: 'Latest insights from the BrightByte',
     site_url: `${BASE_URL}`,
-    feed_url: `${BASE_URL}/playbook/insights/rss.xml`,
+    feed_url: `${BASE_URL}/${MenuItems.PLAYBOOK.toLowerCase()}/insights/rss.xml`,
     copyright: `${new Date().getFullYear()} The BrightByte Insights`,
     language: 'en-us',
     pubDate: new Date().toUTCString(),
@@ -23,8 +24,8 @@ export async function GET() {
     feed.item({
       title: String(insight.title),
       description: String(insight.description),
-      guid: `${BASE_URL}/playbook/insights/${insight.slug}`,
-      url: `${BASE_URL}/playbook/insights/${insight.slug}`,
+      guid: `${BASE_URL}/${MenuItems.PLAYBOOK.toLowerCase()}/insights/${insight.slug}`,
+      url: `${BASE_URL}/${MenuItems.PLAYBOOK.toLowerCase()}/insights/${insight.slug}`,
       date: formattedDate,
     });
   });

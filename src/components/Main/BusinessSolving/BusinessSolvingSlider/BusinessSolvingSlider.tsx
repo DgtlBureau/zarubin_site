@@ -9,6 +9,7 @@ import useMediaQuery from '@/src/utils/useMediaQuery';
 import { useState } from 'react';
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { BusinessSolvingCard } from '../BusinessSolvingCard/BusinessSolvingCard';
+import { MenuItems } from '@/src/utils/enums';
 
 interface IData {
   data: Case[];
@@ -57,7 +58,7 @@ export const BusinessSolvingSlider = ({ data }: IData) => {
                 industries={item.industries}
                 tag={item.tag}
                 description={item.description}
-                link={`solutions/${item.slug}`}
+                link={`${MenuItems.CASES.toLowerCase()}/${item.slug}`}
                 image={idx % 2 !== 0 ? imageTwo : imageOne}
               />
             </SwiperSlide>

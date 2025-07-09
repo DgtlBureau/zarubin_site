@@ -3,6 +3,7 @@ import useMediaQuery from '@/src/utils/useMediaQuery';
 import { DateTime } from 'luxon';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { ExpertiseMenuCard } from '../../ExpertiseMenuCard/ExpertiseMenuCard';
+import { MenuItems } from '@/src/utils/enums';
 
 interface IData {
   data: Post[];
@@ -23,7 +24,7 @@ export const ExpertiseSubmenuArticles = ({ data, onClick }: IData) => {
     <div className='flex w-full flex-col gap-[20px]'>
       <div className='group flex items-center justify-between'>
         <p className='font-unbound text-[20px] font-bold uppercase leading-[1.4] text-white'>
-          The latest in Playbook
+          The latest in {MenuItems.PLAYBOOK}
         </p>
       </div>
       <div className='mx-0 flex w-full px-0'>

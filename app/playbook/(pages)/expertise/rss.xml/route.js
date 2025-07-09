@@ -1,4 +1,5 @@
 import { BASE_URL } from '@/src/utils/alias';
+import { MenuItems } from '@/src/utils/enums';
 import { getExpertiseMetadata } from '@/src/utils/getExpertiseMetadata';
 import { DateTime } from 'luxon';
 import RSS from 'rss';
@@ -10,7 +11,7 @@ export async function GET() {
     title: 'The BrightByte Expertise',
     description: 'Latest expertise from The BrightByte',
     site_url: `${BASE_URL}`,
-    feed_url: `${BASE_URL}/playbook/expertise/rss.xml`,
+    feed_url: `${BASE_URL}/${MenuItems.PLAYBOOK.toLowerCase()}/expertise/rss.xml`,
     copyright: `${new Date().getFullYear()} The BrightByte Expertise`,
     language: 'en-us',
     pubDate: new Date().toUTCString(),
@@ -23,8 +24,8 @@ export async function GET() {
     feed.item({
       title: String(expertise.title),
       description: String(expertise.description),
-      guid: `${BASE_URL}/playbook/expertise/${expertise.slug}`,
-      url: `${BASE_URL}/playbook/expertise/${expertise.slug}`,
+      guid: `${BASE_URL}/${MenuItems.PLAYBOOK.toLowerCase()}/expertise/${expertise.slug}`,
+      url: `${BASE_URL}/${MenuItems.PLAYBOOK.toLowerCase()}/expertise/${expertise.slug}`,
       date: formattedDate,
     });
   });

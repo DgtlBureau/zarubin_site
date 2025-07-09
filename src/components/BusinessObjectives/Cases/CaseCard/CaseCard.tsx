@@ -7,6 +7,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import styles from './CasesCard.module.css';
+import { MenuItems } from '@/src/utils/enums';
 
 export const CaseCard = ({ data }: { data: Case }) => {
   const [logo, setLogo] = useState(data.logo);
@@ -22,7 +23,7 @@ export const CaseCard = ({ data }: { data: Case }) => {
 
   return (
     <Link
-      href={`/solutions/${data.slug}`}
+      href={`/${MenuItems.CASES.toLowerCase()}/${data.slug}`}
       className={styles.mainContainer}
       style={{
         backgroundImage: `url(${data.bannerImage})`,

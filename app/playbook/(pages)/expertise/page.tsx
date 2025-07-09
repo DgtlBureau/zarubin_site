@@ -1,5 +1,6 @@
 import { PlaybookClient } from '@/src/components/PlaybookClient/PlaybookClient';
 import { contentTrimming } from '@/src/utils/contentTrimming';
+import { MenuItems } from '@/src/utils/enums';
 import { getExpertiseMetadata } from '@/src/utils/getExpertiseMetadata';
 import { pageMetadata } from '@/src/utils/pageMetadata';
 import { postsSorting } from '@/src/utils/postsSorting';
@@ -15,9 +16,9 @@ export async function generateMetadata() {
     title,
     description,
     alternatesTitle: 'Bright Byte Expertise',
-    rssPath: 'playbook/expertise/rss',
+    rssPath: `${MenuItems.PLAYBOOK.toLowerCase()}/expertise/rss`,
     keywords,
-    ogUrlPath: 'playbook/expertise',
+    ogUrlPath: `${MenuItems.PLAYBOOK.toLowerCase()}/expertise`,
     ogType: 'article',
   });
 }

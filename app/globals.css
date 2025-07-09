@@ -70,7 +70,7 @@
 
   .mainContainer {
     position: relative;
-    background: linear-gradient(rgba(0, 0, 0, 0) 0%, var(--main-white) 150px);
+    /* background: linear-gradient(rgba(0, 0, 0, 0) 0%, var(--main-white) 150px); */
   }
 
   @media (min-width: 768px) {

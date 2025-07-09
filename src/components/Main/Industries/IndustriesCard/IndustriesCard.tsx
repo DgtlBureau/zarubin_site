@@ -1,6 +1,7 @@
 import Arrow from '@/public/assets/images/icons/link_arrow.svg';
 import TriangeIcon from '@/public/assets/images/icons/triangle.svg';
 import { NextLinePreposition } from '@/src/components/NextLinePreposition/NextLinePreposition';
+import { MenuItems } from '@/src/utils/enums';
 import Link from 'next/link';
 
 interface Props {
@@ -43,7 +44,7 @@ export const IndustriesCard = ({ title, data, link }: Props) => {
         href={link}
         className='ml-[5px] flex w-fit items-center justify-center gap-[10px] rounded-[5px] bg-main-blue p-[13px_15px] font-proxima text-[20px] font-bold text-white transition hover:bg-main-blue-hover tablet:mt-[92px] tablet:h-[112px] tablet:min-w-[407px] tablet:text-[40px] desktop:mt-[20px]'
       >
-        {`${btnTitle} solutions`}
+        {`${btnTitle} ${MenuItems.CASES.toLowerCase()}`}
         <Arrow className='h-[24px] w-[24px] tablet:h-[auto] tablet:w-[44px]' />
       </Link>
     </div>
