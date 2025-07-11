@@ -20,7 +20,6 @@ Hockey Club Torpedo's existing digital infrastructure faced several critical cha
 ## Scope of Work
 **CRM System Implementation and Configuration:**
 <br>
-<br>
 - **System Architecture**: Designing and implementing a robust CRM solution tailored for professional sports organizations
 - **Data Integration**: Seamlessly connecting fan databases, ticket sales, merchandise tracking, and sponsor management systems
 - **Workflow Optimization**: Creating automated processes for fan communication, season ticket renewals, and corporate partnership management
