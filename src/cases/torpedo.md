@@ -7,7 +7,7 @@ instruments: ['flutter', 'laravel']
 logo: '/assets/images/case/svg/torpedo.svg'
 bannerImage: '/assets/images/case/banner/torpedo-case.webp'
 images: ['/assets/images/case/torpedo-1.webp']
-date: '01-01-2025'
+date: '11-07-2025'
 ---
 ## About
 
