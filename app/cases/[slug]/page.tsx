@@ -137,8 +137,6 @@ export default async function CasePage(props: { params: { slug: string } }) {
       content: '## ' + p.replace(regexImage, '').replace(/(^[ \t]*\n)/gm, ''),
     }));
 
-  console.log(paragraphs);
-
   return (
     <>
       <Section id='hero' className='relative py-0 tablet:py-0 desktop:pb-0'>

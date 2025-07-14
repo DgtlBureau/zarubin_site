@@ -30,8 +30,6 @@ type Slug = {
   slug: string;
 };
 
-const URL = process.env.NODE_ENV === 'production' ? BASE_URL : '';
-
 const getAllPosts = () => {
   const postMetadata = getExpertiseMetadata();
   return postsSorting(postMetadata);
@@ -139,9 +137,6 @@ export default function ExpertisePostPage(props: { params: { slug: string } }) {
 
   const { tag, title, authorName, authorImage, downloadLink, readingTime } =
     post.data;
-  const image = post.data.image
-    ? post.data.image
-    : '/assets/images/banner/default_img.webp';
 
   const hashtagRegex = /#[A-Za-z_]+/g;
   const regexFont = /<font color='(.+?)'>(.+?)<\/font>/g;
@@ -180,17 +175,9 @@ export default function ExpertisePostPage(props: { params: { slug: string } }) {
   return (
     <>
       <ReadingProgressBar />
-      <div className='mainContainer w-full px-[10px] pb-[30px] tablet:px-[40px] tablet:pb-[40px] desktop:pb-[60px]'>
-        {/* <div
-          className='absolute left-0 top-0 h-[150px] w-full bg-cover bg-center bg-no-repeat opacity-[40%] tablet:h-[302px] laptop:h-[342px]'
-          style={{
-            backgroundImage: `url(${URL + image})`,
-            zIndex: '-1',
-          }}
-        ></div> */}
+      <div className='relative w-full bg-white px-[10px] pb-[30px] tablet:px-[40px] tablet:pb-[40px] desktop:pb-[60px]'>
         <GoBackLink />
         <div className='mx-[auto] max-w-[896px] pb-[30px]'>
-          {/* <div className='relative flex w-full items-center justify-center'></div> */}
           <div className='mt-[60px]'>
             {readingTime && (
               <span className='mb-[10px] block font-proxima text-[16px] leading-[1.25] text-text-dark opacity-[50%]'>

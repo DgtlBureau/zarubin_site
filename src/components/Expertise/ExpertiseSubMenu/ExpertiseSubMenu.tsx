@@ -14,7 +14,7 @@ export const ExpertiseSubMenu = ({
   expertiseMetadata,
 }: IExpertiseProps) => {
   return (
-    <div className='mx-auto my-0 flex w-full items-stretch gap-[40px] p-[40px]'>
+    <div className='z-20 mx-auto my-0 flex w-full items-stretch gap-[40px] p-[40px]'>
       <ExpertiseSubMenuList data={expertiseSubMenu} onClick={onClick} />
       <div className='flex w-[630px] flex-col gap-[20px]'>
         <div className='mx-0 flex w-full px-0'>

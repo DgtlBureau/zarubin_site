@@ -23,9 +23,9 @@ export const ReadingProgressBar = () => {
   }, []);
 
   return (
-    <div className='fixed left-0 top-[100px] -z-10 z-50 h-[8px] w-full bg-white'>
+    <div className='fixed left-0 top-[100px] z-10 h-[8px] w-full bg-white'>
       <div
-        className='from-yellow-light-rgb to-orange-light-rgb h-full bg-gradient-to-r transition-all duration-150'
+        className='h-full bg-gradient-to-r from-yellow-light-rgb to-orange-light-rgb transition-all duration-150'
         style={{ width: `${scrollTop}%` }}
       />
     </div>

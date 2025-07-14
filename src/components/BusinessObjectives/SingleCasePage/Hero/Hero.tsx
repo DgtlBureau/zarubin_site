@@ -15,9 +15,10 @@ export const Hero = ({
 }) => {
   const BREADCRUMBS: Breadcrumb[] = [
     { title: 'Main', link: '/' },
-    { title: MenuItems.CASES, link: `${MenuItems.CASES.toLowerCase()}` },
+    { title: MenuItems.CASES, link: `/${MenuItems.CASES.toLowerCase()}` },
     { title: tag },
   ];
+
   return (
     <div className='flex flex-col gap-[30px] pb-[60px]'>
       <div className='flex flex-col gap-[20px] break-words'>
