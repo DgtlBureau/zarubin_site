@@ -1,4 +1,5 @@
 import Arrow from '@/public/assets/images/icons/arrow.svg';
+import { MenuItems } from '@/src/utils/enums';
 import classNames from 'classnames';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -29,7 +30,7 @@ export const MainList = ({
       {list.map((item) => (
         <li
           onMouseEnter={
-            item.name.toLowerCase() === 'playbook'
+            item.name.toLowerCase() === `${MenuItems.PLAYBOOK.toLowerCase()}`
               ? () => onMenuItemHover(true)
               : () => onMenuItemHover(false)
           }

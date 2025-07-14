@@ -59,7 +59,7 @@ export const Header = ({
       className={`${isBonusePage ? 'absolute' : 'sticky bg-main-bg'} top-0 z-50 mx-auto h-[100px] w-full`}
     >
       <Container
-        className={`relative flex h-full items-center overflow-hidden ${isBonusePage ? '' : 'bg-main-bg'} `}
+        className={`relative z-50 flex h-full items-center overflow-hidden ${isBonusePage ? '' : 'bg-main-bg'} `}
       >
         <Logo />
         {!isBonusePage && (
@@ -89,7 +89,7 @@ export const Header = ({
 
       {!isBonusePage && (
         <div
-          className={`scrollbar-thin relative z-[-1] mx-[auto] max-h-[600px] w-fit transform overflow-y-scroll bg-main-bg px-[20px] transition-all duration-300 ease-in-out ${
+          className={`scrollbar-thin relative z-20 mx-[auto] max-h-[600px] w-fit transform overflow-y-scroll bg-main-bg px-[20px] transition-all duration-300 ease-in-out ${
             activeSubmenu ? 'translate-y-0' : '-translate-y-full'
           } ${isMobile ? 'hidden' : 'visible'}`}
         >

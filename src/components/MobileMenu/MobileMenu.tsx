@@ -8,6 +8,7 @@ import { ExpertiseSubmenuArticles } from '../Expertise/ExpertiseSubMenu/Expertis
 import { ExpertiseSubMenuList } from '../Expertise/ExpertiseSubMenu/ExpertiseSubmenuArticles/ExpertiseSubMenuList';
 import { ContactWrapper } from './ContactWrapper/ContactWrapper';
 import styles from './MobileMenu.module.css';
+import { MenuItems } from '@/src/utils/enums';
 
 interface Props {
   isOpen: boolean;
@@ -53,7 +54,8 @@ export const MobileMenu = ({
             {menuListLayer.map((item) => (
               <li key={item.id} className='flex flex-col'>
                 <div className='w-100 flex items-center justify-between gap-[10px]'>
-                  {item.name.toLowerCase() !== 'playbook' ? (
+                  {item.name.toLowerCase() !==
+                  `${MenuItems.PLAYBOOK.toLowerCase()}` ? (
                     <Link
                       href={item.link}
                       className={`${styles.menuLink} ${styles.dark} font-proxima`}

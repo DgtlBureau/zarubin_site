@@ -17,6 +17,8 @@ import { DateTime } from 'luxon';
 import Markdown from 'markdown-to-jsx';
 import path from 'path';
 import styles from './Post.module.css';
+import { MenuItems } from '@/src/utils/enums';
+import { ReadingProgressBar } from '@/src/ui-kit/ReadingProgressBar/ReadingProgressBar';
 
 const URL = process.env.NODE_ENV === 'production' ? BASE_URL : '';
 
@@ -36,7 +38,7 @@ const findMarkdownFile = (dir: string, slug: string): string | null => {
 };
 
 const getPostContent = (slug: string) => {
-  const folder = 'src/playbook/insights/';
+  const folder = `src/${MenuItems.PLAYBOOK.toLowerCase()}/insights/`;
   const file = findMarkdownFile(folder, slug);
 
   if (file) {
@@ -95,7 +97,7 @@ export async function generateMetadata({
     title,
     description,
     alternates: {
-      canonical: `${BASE_URL}/playbook/insights/${slug}`,
+      canonical: `${BASE_URL}/${MenuItems.PLAYBOOK.toLowerCase()}/insights/${slug}`,
     },
     openGraph: {
       type: 'article',
@@ -104,7 +106,7 @@ export async function generateMetadata({
       ...openGraphImage(image),
       title,
       description,
-      url: `${BASE_URL}/playbook/insights/${slug}`,
+      url: `${BASE_URL}/${MenuItems.PLAYBOOK.toLowerCase()}/insights/${slug}`,
       modifiedTime: publishedDateISO,
       publishedTime: publishedDateISO,
       authors: post.data.authorImage ? [post.data.authorImage] : null,
@@ -165,7 +167,8 @@ export default function InsightsPostPage(props: { params: { slug: string } }) {
     });
 
   return (
-    <div className='mainContainer w-full px-[10px] pb-[30px] tablet:px-[40px] tablet:pb-[40px] desktop:pb-[60px]'>
+    <div className='relative w-full bg-white px-[10px] pb-[30px] tablet:px-[40px] tablet:pb-[40px] desktop:pb-[60px]'>
+      <ReadingProgressBar />
       <div
         className='absolute left-0 top-0 h-[150px] w-full bg-cover bg-center bg-no-repeat opacity-[40%] tablet:h-[302px] laptop:h-[342px]'
         style={{

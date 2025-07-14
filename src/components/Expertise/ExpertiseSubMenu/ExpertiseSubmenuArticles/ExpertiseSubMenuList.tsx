@@ -1,8 +1,9 @@
 import LinkArrow from '@/public/assets/images/icons/link_arrow.svg';
+import { MenuItems } from '@/src/utils/enums';
 import {
-    formatLink,
-    formatMenuItem,
-    formatMenuTitle
+  formatLink,
+  formatMenuItem,
+  formatMenuTitle,
 } from '@/src/utils/formattedMenuItem';
 import { ISubmenu } from '@/src/utils/types';
 import { DateTime } from 'luxon';
@@ -46,7 +47,7 @@ export const ExpertiseSubMenuList = ({ data, onClick }: IProps) => {
                         >
                           <Link
                             className='relative w-full border-b-[2px] border-solid border-transparent py-[5px] font-proxima text-[16px] leading-[1.1] hover:border-main-blue'
-                            href={`/playbook/expertise${formatLink(el.link)}`}
+                            href={`/${MenuItems.PLAYBOOK.toLowerCase()}/expertise${formatLink(el.link)}`}
                           >
                             {formatMenuItem(formatLink(el.nameItem))}
                           </Link>
@@ -56,7 +57,7 @@ export const ExpertiseSubMenuList = ({ data, onClick }: IProps) => {
                 </ul>
               </div>
               <Link
-                href={`/playbook/expertise?sub-category=${item.name}`}
+                href={`/${MenuItems.PLAYBOOK.toLowerCase()}/expertise?sub-category=${item.name}`}
                 onClick={onClick}
                 className='group mt-[12px] flex items-center gap-[10px] whitespace-nowrap font-proxima text-[20px] font-bold leading-[1] text-main-blue hover:text-main-blue-hover laptop-big:mt-[20px]'
               >

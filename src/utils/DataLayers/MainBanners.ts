@@ -3,6 +3,7 @@ import conference from '@/public/assets/images/main/heroSlide/conference-room.we
 import hockey from '@/public/assets/images/main/heroSlide/hockey.webp';
 import street from '@/public/assets/images/main/heroSlide/street.webp';
 import { StaticImageData } from 'next/image';
+import { MenuItems } from '../enums';
 
 interface IMainBanners {
   id: number;
@@ -21,8 +22,8 @@ export const mainBanners: IMainBanners[] = [
     description: '',
     image: hockey,
     date: '14-03-2025',
-    link: '/solutions',
-    linkName: 'Solutions',
+    link: `/${MenuItems.CASES.toLowerCase()}`,
+    linkName: MenuItems.CASES,
   },
   {
     id: 2,
@@ -30,7 +31,7 @@ export const mainBanners: IMainBanners[] = [
     description: '',
     image: buildings,
     date: '15-03-2025',
-    link: '/playbook/expertise',
+    link: `/${MenuItems.CASES.toLowerCase()}/expertise`,
     linkName: 'Learn more',
   },
   {
@@ -39,8 +40,8 @@ export const mainBanners: IMainBanners[] = [
     description: '',
     image: conference,
     date: '13-03-2025',
-    link: '/playbook/expertise',
-    linkName: 'Playbook',
+    link: `/${MenuItems.CASES.toLowerCase()}/expertise`,
+    linkName: MenuItems.PLAYBOOK,
   },
   {
     id: 4,
@@ -48,7 +49,7 @@ export const mainBanners: IMainBanners[] = [
     description: '',
     image: street,
     date: '12-03-2025',
-    link: '/playbook/insights',
+    link: `/${MenuItems.CASES.toLowerCase()}/insights`,
     linkName: 'Insights',
   },
 ];

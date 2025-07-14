@@ -1,5 +1,6 @@
 'use client';
 
+import { MenuItems } from '@/src/utils/enums';
 import { underscopeReverter } from '@/src/utils/formatter/underscopeFormatter';
 import { usePathname, useSearchParams } from 'next/navigation';
 
@@ -10,7 +11,10 @@ export const PlaybookHeading = () => {
   const tag = searchParams.get('tag');
 
   const pathnameArr = pathname.split('/').filter((item) => item !== '');
-  const pathTitle = pathnameArr.length < 2 ? 'playbook' : pathnameArr[1];
+  const pathTitle =
+    pathnameArr.length < 2
+      ? `${MenuItems.PLAYBOOK.toLowerCase()}`
+      : pathnameArr[1];
 
   return (
     <div>

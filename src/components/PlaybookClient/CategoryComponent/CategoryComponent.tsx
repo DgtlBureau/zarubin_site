@@ -7,6 +7,7 @@ import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { Suspense, useEffect, useMemo, useState } from 'react';
 import { PlaybookCategory } from '../PlaybookCategory/PlaybookCategory';
 import { PlaybookCategoryDropDown } from '../PlaybookCategoryDropDown/PlaybookCategoryDropDown';
+import { MenuItems } from '@/src/utils/enums';
 
 const getUniqueArticlesSubCategory = (array: Post[], word: string) => {
   const category = array.filter((item) => item.category.toLowerCase() === word);
@@ -51,7 +52,7 @@ export const CategoryComponent = ({ category }: ICategory) => {
       return;
     }
     query.set('search-query', inputValue);
-    router.push(`/playbook?${query.toString()}`);
+    router.push(`/${MenuItems.PLAYBOOK.toLowerCase()}?${query.toString()}`);
   }, [inputValue, router]);
 
   useEffect(() => {

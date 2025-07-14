@@ -106,6 +106,8 @@ const config: Config = {
         'second-gray': '#494949',
         'light-gray': '#AEAEAE',
         'gray-placeholder': 'A5A5A5',
+        'yellow-light-rgb': 'rgba(248, 174, 60, 0.4)',
+        'orange-light-rgb': 'rgba(211, 25, 0, 0.4)',
         modal: '#20202099',
       },
     },

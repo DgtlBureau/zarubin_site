@@ -1,4 +1,5 @@
 import defaultImg from '@/public/assets/images/banner/default_insights.webp';
+import { MenuItems } from '@/src/utils/enums';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -23,7 +24,7 @@ export const ExpertiseMenuCard = ({
 }: Props) => {
   return (
     <Link
-      href={`/playbook/${category?.toLowerCase()}/${slug}`}
+      href={`/${MenuItems.PLAYBOOK.toLowerCase()}/${category?.toLowerCase()}/${slug}`}
       onClick={onClick}
       className='flex w-full flex-col'
     >

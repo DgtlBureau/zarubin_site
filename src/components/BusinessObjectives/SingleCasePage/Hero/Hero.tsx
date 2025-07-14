@@ -1,7 +1,8 @@
 import {
-    Breadcrumb,
-    Breadcrumbs
+  Breadcrumb,
+  Breadcrumbs,
 } from '@/src/components/shared/Breadcrumbs/Breadcrumbs';
+import { MenuItems } from '@/src/utils/enums';
 
 export const Hero = ({
   title,
@@ -14,9 +15,10 @@ export const Hero = ({
 }) => {
   const BREADCRUMBS: Breadcrumb[] = [
     { title: 'Main', link: '/' },
-    { title: 'Solutions', link: '/solutions' },
+    { title: MenuItems.CASES, link: `/${MenuItems.CASES.toLowerCase()}` },
     { title: tag },
   ];
+
   return (
     <div className='flex flex-col gap-[30px] pb-[60px]'>
       <div className='flex flex-col gap-[20px] break-words'>

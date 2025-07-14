@@ -7,6 +7,7 @@ import { ScrollAnimationWrapper } from '@/src/components/shared/ScrollAminationW
 import { Section } from '@/src/components/shared/Section/Section';
 import { SEO_DESCRIPTION_SIZE } from '@/src/utils/alias';
 import { contentTrimming } from '@/src/utils/contentTrimming';
+import { MenuItems } from '@/src/utils/enums';
 import { getCaseMetadata } from '@/src/utils/getCaseMetadata';
 import { pageMetadata } from '@/src/utils/pageMetadata';
 import { Seo } from '@/src/utils/Seo/Seo';
@@ -31,7 +32,7 @@ export async function generateMetadata() {
     title,
     description,
     keywords,
-    ogUrlPath: 'solutions',
+    ogUrlPath: MenuItems.CASES.toLowerCase(),
   });
 }
 

@@ -1,9 +1,10 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import path from 'path';
+import { MenuItems } from './enums';
 
 export const getArticlesCategory = () => {
-  const folder = `src/playbook/`;
+  const folder = `src/${MenuItems.PLAYBOOK.toLowerCase()}/`;
 
   const categories = fs
     .readdirSync(folder, { withFileTypes: true })

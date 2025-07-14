@@ -9,6 +9,7 @@ import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { Container } from '../../shared/Container/Container';
 import { Section } from '../../shared/Section/Section';
+import { MenuItems } from '@/src/utils/enums';
 
 export const NewHero = () => {
   const [swiper, setSwiper] = useState<SwiperClass | null>(null);
@@ -20,7 +21,7 @@ export const NewHero = () => {
       const dateB = DateTime.fromFormat(b.date, 'dd-MM-yyyy');
       return dateB.toMillis() - dateA.toMillis();
     });
-  }, [mainBanners]);
+  }, []);
 
   useEffect(() => {
     if (swiper) {
@@ -82,13 +83,13 @@ export const NewHero = () => {
           href={
             sortedBanners[slideIndex].link
               ? sortedBanners[slideIndex].link
-              : '/solutions'
+              : `/${MenuItems.CASES.toLowerCase()}`
           }
           className='z-30 rounded-[6px] bg-main-orange p-[5px_31px] font-proxima text-[20px] font-bold leading-[2] text-text-dark duration-300 hover:bg-main-orange-hover'
         >
           {sortedBanners[slideIndex].linkName
             ? sortedBanners[slideIndex].linkName
-            : 'solutions'}
+            : `/${MenuItems.CASES.toLowerCase()}`}
         </Link>
         <div className='z-30 flex w-full gap-[20px] tablet:max-w-[402px] desktop:max-w-[482px]'>
           {sortedBanners.map((_, idx) => (
