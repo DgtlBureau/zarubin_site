@@ -9,6 +9,7 @@ export interface Case {
   link?: string | undefined;
   linkTitle?: string | undefined;
   type?: string | undefined;
+  image: string | undefined | null
 }
 
 export const getExpertiseAreasMetadata = () => {
@@ -28,6 +29,7 @@ export const getExpertiseAreasMetadata = () => {
       link: matterResult.data.link,
       linkTitle: matterResult.data.linkTitle,
       type: matterResult.data.type,
+      image: matterResult.data.image
     };
   });
 

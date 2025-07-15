@@ -15,6 +15,7 @@ interface IData {
     link?: string | undefined;
     linkTitle?: string | undefined;
     type?: string | undefined;
+    image: string | undefined | null;
   }[];
 }
 
