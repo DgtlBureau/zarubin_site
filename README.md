@@ -233,7 +233,7 @@ Thu Apr 25 20:15:54 UTC 2024
 
 3. Сео данные находятся на данной странице, под названием ключа "bonuse" [seo](https://github.com/DgtlBureau/zarubin_site/blob/main/src/utils/pageMetadata.ts)
 
-## Инструкция по добавлению/изменению  названий тегов/статей + ссылок изменение/добавление ссылок в подвале сайта:
+## Инструкция по добавлению/изменению названий тегов/статей, также добавление и изменение ссылок к ним в Подвале сайте:
 
 1. Для редактирования данных необходимо перейти в данный файл zarubin_site/blob/main/src/utils/footerLinks/footerLinks.tsx [ссылка на файл](https://github.com/DgtlBureau/zarubin_site/blob/main/src/utils/footerLinks/footerLinks.tsx)
 
