@@ -6,7 +6,7 @@ date: '21-07-2025'
 readingTime: '5 minutes'
 category: 'Expertise'
 subCategory: 'Sport'
-tag: 'Football Event software , Tournament Management, Team Management, Youth Soccer'
+tag: 'Sport , League, Team Management, Youth Soccer'
 authorName: 'Vitaliy Zarubin'
 authorImage: '/assets/images/author/avatar.png'
 ---
