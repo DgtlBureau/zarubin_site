@@ -22,7 +22,7 @@ export const ExpertiseSubMenuList = ({ data, onClick }: IProps) => {
           if (item.folderItems.length === 0) return null;
           return (
             <div key={item.name} className={`flex flex-col p-[5px] text-white`}>
-              <h3 className='flex w-full flex-1 items-center justify-between text-left font-proxima text-[20px] font-bold'>
+              <h3 className='flex w-full flex-1 items-center justify-between text-left font-unbound text-[20px] font-bold uppercase'>
                 {formatMenuTitle(item.name)}
               </h3>
               <div
@@ -46,7 +46,7 @@ export const ExpertiseSubMenuList = ({ data, onClick }: IProps) => {
                           onClick={onClick}
                         >
                           <Link
-                            className='relative w-full border-b-[2px] border-solid border-transparent py-[5px] font-proxima text-[16px] leading-[1.1] hover:border-main-blue'
+                            className='relative w-full border-b-[2px] border-solid border-transparent py-[5px] font-proxima text-[16px] leading-[1.1] text-link-gray hover:text-white'
                             href={`/${MenuItems.PLAYBOOK.toLowerCase()}/expertise${formatLink(el.link)}`}
                           >
                             {formatMenuItem(formatLink(el.nameItem))}
@@ -59,10 +59,10 @@ export const ExpertiseSubMenuList = ({ data, onClick }: IProps) => {
               <Link
                 href={`/${MenuItems.PLAYBOOK.toLowerCase()}/expertise?sub-category=${item.name}`}
                 onClick={onClick}
-                className='group mt-[12px] flex items-center gap-[10px] whitespace-nowrap font-proxima text-[20px] font-bold leading-[1] text-main-blue hover:text-main-blue-hover laptop-big:mt-[20px]'
+                className='group mt-[12px] flex items-center gap-[10px] whitespace-nowrap font-proxima text-[20px] font-bold leading-[1] text-link-gray hover:text-white laptop-big:mt-[20px]'
               >
                 Go to {formatMenuTitle(item.name)}
-                <LinkArrow className='h-[auto] w-[24px] fill-main-blue group-hover:fill-main-blue-hover' />
+                <LinkArrow className='h-[auto] w-[24px] fill-link-gray group-hover:fill-white' />
               </Link>
             </div>
           );

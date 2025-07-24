@@ -2,7 +2,6 @@ import { Featured } from '@/src/components/Featured/Featured';
 import { SocialFollow } from '@/src/components/SocialFollow/SocialFollow';
 import { AuthorInfo } from '@/src/ui-kit/AuthorInfo/AuthorInfo';
 import { DownloadLink } from '@/src/ui-kit/DownloadLink/DownloadLink';
-import { GoBackLink } from '@/src/ui-kit/GoBackLink/GoBackLink';
 import { BASE_URL, SITE_NAME } from '@/src/utils/alias';
 import { cleanMetaTitle } from '@/src/utils/cleanMetaTitle';
 import { contentTrimming } from '@/src/utils/contentTrimming';
@@ -19,8 +18,9 @@ import path from 'path';
 import styles from './Post.module.css';
 import { MenuItems } from '@/src/utils/enums';
 import { ReadingProgressBar } from '@/src/ui-kit/ReadingProgressBar/ReadingProgressBar';
-
-const URL = process.env.NODE_ENV === 'production' ? BASE_URL : '';
+import { PostAnchors } from '@/src/ui-kit/PostAnchors/PostAnchors';
+import { AnchorHamburger } from '@/src/ui-kit/PostAnchors/AnchorHamburger';
+import { generateParagraphs } from '@/src/utils/postAnchors/postAnchors';
 
 const findMarkdownFile = (dir: string, slug: string): string | null => {
   const files = fs.readdirSync(dir);
@@ -127,9 +127,6 @@ export default function InsightsPostPage(props: { params: { slug: string } }) {
 
   const { tag, title, authorName, authorImage, downloadLink, readingTime } =
     post.data;
-  const image = post.data.image
-    ? post.data.image
-    : '/assets/images/banner/default_img.webp';
 
   const hashtagRegex = /#[A-Za-z_]+/g;
   const regexFont = /<font color='(.+?)'>(.+?)<\/font>/g;
@@ -166,52 +163,58 @@ export default function InsightsPostPage(props: { params: { slug: string } }) {
       return '';
     });
 
+  const paragraphs = generateParagraphs(allPosts);
+
+  const mainAnchorData = {
+    title,
+    anchor: 'title',
+  };
+
   return (
     <div className='relative w-full bg-white px-[10px] pb-[30px] tablet:px-[40px] tablet:pb-[40px] desktop:pb-[60px]'>
       <ReadingProgressBar />
-      <div
-        className='absolute left-0 top-0 h-[150px] w-full bg-cover bg-center bg-no-repeat opacity-[40%] tablet:h-[302px] laptop:h-[342px]'
-        style={{
-          backgroundImage: `url(${URL + image})`,
-          zIndex: '-1',
-        }}
-      ></div>
-      <GoBackLink />
-      <div className='mx-[auto] max-w-[896px] pb-[30px]'>
-        <div className='relative flex w-full items-center justify-center'></div>
-        <div className='mt-[60px]'>
-          {readingTime && (
-            <span className='mb-[10px] block font-proxima text-[16px] leading-[1.25] text-text-dark opacity-[50%]'>
-              Reading time: {readingTime}
-            </span>
-          )}
-          <h1
-            className={`font-proxima text-[28px] font-bold leading-[1.1] text-text-dark`}
-          >
-            {title}
-          </h1>
-          <div className='flex flex-col tablet:flex-col-reverse'>
-            {downloadLink && tag === 'Research' && (
-              <DownloadLink link={downloadLink} />
+      <div className='flex'>
+        <div className='relative w-full flex-1 pr-[20px]'>
+          <PostAnchors data={paragraphs} mainAnchorData={mainAnchorData} />
+        </div>
+        <div className='mx-[auto] max-w-[869px] pb-[30px]'>
+          <div className='mt-[60px]'>
+            {readingTime && (
+              <span className='mb-[10px] block font-proxima text-[16px] leading-[1.25] text-text-dark opacity-[50%]'>
+                Reading time: {readingTime}
+              </span>
             )}
-            <div
-              className={`mb-[10px] mt-[20px] flex flex-col tablet:mt-[40px] tablet:flex-row tablet:justify-between desktop:mb-[40px] desktop:mt-[20px]`}
+            <h1
+              id={'title'}
+              className={`font-proxima text-[28px] font-bold leading-[1.1] text-text-dark`}
             >
-              <AuthorInfo image={authorImage} name={authorName} date={date} />
+              {title}
+            </h1>
+            <div className='flex flex-col tablet:flex-col-reverse'>
+              {downloadLink && tag === 'Research' && (
+                <DownloadLink link={downloadLink} />
+              )}
+              <div
+                className={`mb-[10px] mt-[20px] flex flex-col tablet:mt-[40px] tablet:flex-row tablet:justify-between desktop:mb-[40px] desktop:mt-[20px]`}
+              >
+                <AuthorInfo image={authorImage} name={authorName} date={date} />
+              </div>
             </div>
           </div>
+          <article
+            className={`prose w-full max-w-[100%] pb-[30px] text-white prose-p:text-[16px] prose-p:text-text-dark/80 prose-li:text-[16px] prose-li:text-text-dark/80 tablet:pb-[40px] desktop:pb-[60px]`}
+          >
+            <Markdown className={`${styles.markdown} z-20 w-full font-proxima`}>
+              {allPosts}
+            </Markdown>
+          </article>
+          <SocialFollow />
+          <div className='desktop:bp-0 relative z-[5] mt-[60px] pb-[20px]'>
+            <Featured slug={slug} posts={getAllPosts()} />
+          </div>
+          <AnchorHamburger data={paragraphs} mainAnchorData={mainAnchorData} />
         </div>
-        <article
-          className={`prose w-full max-w-[100%] pb-[30px] text-white prose-p:text-[16px] prose-p:text-text-dark/80 prose-li:text-[16px] prose-li:text-text-dark/80 tablet:pb-[40px] desktop:pb-[60px]`}
-        >
-          <Markdown className={`${styles.markdown} z-20 w-full font-proxima`}>
-            {allPosts}
-          </Markdown>
-        </article>
-        <SocialFollow />
-        <div className='desktop:bp-0 relative z-[5] mt-[60px] pb-[20px]'>
-          <Featured slug={slug} posts={getAllPosts()} />
-        </div>
+        <div className='flex-1'></div>
       </div>
     </div>
   );
