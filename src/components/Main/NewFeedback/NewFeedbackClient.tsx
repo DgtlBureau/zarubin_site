@@ -34,7 +34,7 @@ export const NewFeedbackClient = ({ feedback }: Props) => {
   }, [feedback]);
 
   return (
-    <div className='flex flex-col gap-[30px]'>
+    <div className='flex flex-col gap-[30px] overflow-hidden'>
       <Container className='w-full'>
         <div className='relative flex w-full items-start justify-between desktop:items-center'>
           <div className='flex flex-col gap-[16px]'>

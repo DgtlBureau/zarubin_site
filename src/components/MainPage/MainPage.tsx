@@ -10,7 +10,7 @@ const data = getExpertiseAreasMetadata();
 
 export const MainPageComponent = () => {
   return (
-    <div className='flex flex-col'>
+    <div className='oveflow-hidden flex flex-col'>
       <NewHero />
       <NewExpertise data={data} />
       <NewInsights />

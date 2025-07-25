@@ -14,6 +14,7 @@ const config: Config = {
     extend: {
       boxShadow: {
         button: '0px 1px 1px #a6ffdd',
+        anchor: '0px 4px 10px rgba(145, 145, 145, 0.25)',
       },
       animation: {
         scroll: 'scroll 10s linear infinite',
@@ -109,6 +110,9 @@ const config: Config = {
         'yellow-light-rgb': 'rgba(248, 174, 60, 0.4)',
         'orange-light-rgb': 'rgba(211, 25, 0, 0.4)',
         modal: '#20202099',
+        'link-gray': '#DCDCDC',
+        'anchor-gray': 'rgba(0, 0, 0, 0.2)',
+        'hamburger-anchor': 'rgba(201, 201, 201, 0.25)',
       },
     },
     screens: {
