@@ -27,6 +27,7 @@ import { MenuItems } from '@/src/utils/enums';
 import { PostAnchors } from '@/src/ui-kit/PostAnchors/PostAnchors';
 import { AnchorHamburger } from '@/src/ui-kit/PostAnchors/AnchorHamburger';
 import { generateParagraphs } from '@/src/utils/postAnchors/postAnchors';
+import { GoBackLink } from '@/src/ui-kit/GoBackLink/GoBackLink';
 
 type Slug = {
   slug: string;
@@ -181,13 +182,14 @@ export default function ExpertisePostPage(props: { params: { slug: string } }) {
   };
 
   return (
-    <div className='bg-white'>
+    <div className='relative w-full bg-white px-[10px] pb-[30px] tablet:px-[40px] tablet:pb-[40px] desktop:pb-[60px]'>
       <ReadingProgressBar />
-      <div className='relative flex w-full bg-white px-[10px] pb-[30px] tablet:px-[40px] tablet:pb-[40px] desktop:pb-[60px]'>
-        <div className='relative flex w-full flex-1 pr-[20px]'>
+      <div className='flex'>
+        <div className='relative flex-1 pr-[20px]'>
           <PostAnchors data={paragraphs} mainAnchorData={mainAnchorData} />
+          <GoBackLink />
         </div>
-        <div className='relative mx-[auto] max-w-[869px] pb-[30px]'>
+        <div className='relative mx-[auto] max-w-[869px] overflow-hidden pb-[30px]'>
           <div className='mt-[60px]'>
             {readingTime && (
               <span className='mb-[10px] block font-proxima text-[16px] leading-[1.25] text-text-dark opacity-[50%]'>
@@ -222,10 +224,10 @@ export default function ExpertisePostPage(props: { params: { slug: string } }) {
           <div className='desktop:bp-0 relative z-[5] mt-[60px] pb-[20px]'>
             <Featured slug={slug} posts={getAllPosts()} />
           </div>
-          <AnchorHamburger data={paragraphs} mainAnchorData={mainAnchorData} />
         </div>
         <div className='flex-1'></div>
       </div>
+      <AnchorHamburger data={paragraphs} mainAnchorData={mainAnchorData} />
     </div>
   );
 }

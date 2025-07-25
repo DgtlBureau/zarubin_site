@@ -16,7 +16,7 @@ export const AnchorHamburger = ({ data, mainAnchorData }: IPostAnchorProps) => {
   }
 
   return (
-    <div className='sticky bottom-[50px] flex w-fit flex-col gap-[20px]'>
+    <div className='sticky bottom-[50px] z-20 flex w-fit flex-col gap-[20px]'>
       {isOpen && <AnchorList data={data} mainAnchorData={mainAnchorData} />}
       <div className='w-fit overflow-hidden rounded-[8px] bg-white'>
         <button

@@ -114,9 +114,7 @@ export default function RootLayout({
           expertiseSubmenu={expertiseSubMenu}
           expertiseMetadata={playbookMetaData}
         />
-        <main className='flex flex-col gap-[60px] overflow-hidden'>
-          {children}
-        </main>
+        <main className='flex flex-col gap-[60px]'>{children}</main>
         <ToastContainer />
         <Footer />
         <Script id='replain'>

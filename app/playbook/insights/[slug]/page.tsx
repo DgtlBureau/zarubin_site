@@ -21,6 +21,7 @@ import { ReadingProgressBar } from '@/src/ui-kit/ReadingProgressBar/ReadingProgr
 import { PostAnchors } from '@/src/ui-kit/PostAnchors/PostAnchors';
 import { AnchorHamburger } from '@/src/ui-kit/PostAnchors/AnchorHamburger';
 import { generateParagraphs } from '@/src/utils/postAnchors/postAnchors';
+import { GoBackLink } from '@/src/ui-kit/GoBackLink/GoBackLink';
 
 const findMarkdownFile = (dir: string, slug: string): string | null => {
   const files = fs.readdirSync(dir);
@@ -174,10 +175,11 @@ export default function InsightsPostPage(props: { params: { slug: string } }) {
     <div className='relative w-full bg-white px-[10px] pb-[30px] tablet:px-[40px] tablet:pb-[40px] desktop:pb-[60px]'>
       <ReadingProgressBar />
       <div className='flex'>
-        <div className='relative w-full flex-1 pr-[20px]'>
+        <div className='relative flex-1 pr-[20px]'>
           <PostAnchors data={paragraphs} mainAnchorData={mainAnchorData} />
+          <GoBackLink />
         </div>
-        <div className='mx-[auto] max-w-[869px] pb-[30px]'>
+        <div className='mx-[auto] h-auto max-w-[869px] overflow-hidden pb-[30px]'>
           <div className='mt-[60px]'>
             {readingTime && (
               <span className='mb-[10px] block font-proxima text-[16px] leading-[1.25] text-text-dark opacity-[50%]'>
@@ -212,10 +214,10 @@ export default function InsightsPostPage(props: { params: { slug: string } }) {
           <div className='desktop:bp-0 relative z-[5] mt-[60px] pb-[20px]'>
             <Featured slug={slug} posts={getAllPosts()} />
           </div>
-          <AnchorHamburger data={paragraphs} mainAnchorData={mainAnchorData} />
         </div>
         <div className='flex-1'></div>
       </div>
+      <AnchorHamburger data={paragraphs} mainAnchorData={mainAnchorData} />
     </div>
   );
 }

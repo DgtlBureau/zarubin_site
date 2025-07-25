@@ -2,7 +2,6 @@
 
 import useMediaQuery from '@/src/utils/useMediaQuery';
 import { AnchorList } from './AnchorList';
-import { GoBackLink } from '../GoBackLink/GoBackLink';
 
 export interface IPostAnchorProps {
   data: {
@@ -23,9 +22,8 @@ export const PostAnchors = ({ data, mainAnchorData }: IPostAnchorProps) => {
   }
 
   return (
-    <div className='sticky top-[75px] z-30 h-fit'>
+    <div className='sticky top-[150px] z-30 mb-[50px] flex flex-col'>
       <AnchorList data={data} mainAnchorData={mainAnchorData} />
-      <GoBackLink />
     </div>
   );
 };
