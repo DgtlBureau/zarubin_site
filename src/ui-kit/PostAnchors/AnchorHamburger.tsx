@@ -1,10 +1,10 @@
 'use client';
 
 import AnchorHamburgerIcon from '@/public/assets/images/icons/anchor-hamburger.svg';
+import useMediaQuery from '@/src/utils/useMediaQuery';
 import { useState } from 'react';
 import { AnchorList } from './AnchorList';
 import { IPostAnchorProps } from './PostAnchors';
-import useMediaQuery from '@/src/utils/useMediaQuery';
 
 export const AnchorHamburger = ({ data, mainAnchorData }: IPostAnchorProps) => {
   const [isOpen, setIsOpen] = useState(false);

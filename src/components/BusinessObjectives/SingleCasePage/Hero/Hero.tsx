@@ -1,6 +1,6 @@
 import {
-  Breadcrumb,
-  Breadcrumbs,
+    Breadcrumb,
+    Breadcrumbs
 } from '@/src/components/shared/Breadcrumbs/Breadcrumbs';
 import { MenuItems } from '@/src/utils/enums';
 

@@ -14,7 +14,7 @@ import { MainList } from '../NavList/MainList';
 import { Container } from '../shared/Container/Container';
 
 enum Hide {
-  BONUSES = 'bonuses',
+  BONUSES = '/bonuses',
 }
 
 const DynamicExpertiseMenu = dynamic(() =>
@@ -36,7 +36,7 @@ export const Header = ({
   const [activeSubmenu, setActiveSubmenu] = useState(false);
   const pathname = usePathname();
 
-  const isBonusePage = pathname.includes(Hide.BONUSES);
+  const isBonusePage = pathname === Hide.BONUSES;
 
   const handleChangeActiveMenu = (isActive: boolean) => {
     setActiveSubmenu(isActive);

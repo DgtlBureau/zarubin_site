@@ -1,9 +1,9 @@
+import { MenuItems } from '@/src/utils/enums';
 import { Post } from '@/src/utils/types';
 import useMediaQuery from '@/src/utils/useMediaQuery';
 import { DateTime } from 'luxon';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { ExpertiseMenuCard } from '../../ExpertiseMenuCard/ExpertiseMenuCard';
-import { MenuItems } from '@/src/utils/enums';
 
 interface IData {
   data: Post[];

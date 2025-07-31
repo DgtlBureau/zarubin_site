@@ -1,8 +1,8 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import path from 'path';
-import { Post } from './types';
 import { MenuItems } from './enums';
+import { Post } from './types';
 
 export interface Case {
   title: string;
@@ -34,7 +34,9 @@ const getMarkdownFiles = (dir: string): string[] => {
 };
 
 export const getInsightsMetadata = (): Post[] => {
-  const markdownFiles = getMarkdownFiles(`src/${MenuItems.PLAYBOOK.toLowerCase()}/insights`);
+  const markdownFiles = getMarkdownFiles(
+    `src/${MenuItems.PLAYBOOK.toLowerCase()}/insights`,
+  );
 
   const posts = markdownFiles.map((filePath: string): Post => {
     const fileContent = fs.readFileSync(filePath, 'utf8');

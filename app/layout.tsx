@@ -89,7 +89,12 @@ export default function RootLayout({
     <html lang='en'>
       <head>
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-        <link rel='icon' href='/assets/images/icons/favicon.svg' sizes='any' />
+        <link rel='icon' href='/favicon.ico' />
+        <link
+          rel='icon'
+          type='image/svg+xml'
+          href='/assets/images/icons/favicon.svg'
+        />
         <style>
           {`* {
                 box-sizing: border-box;

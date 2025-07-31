@@ -3,19 +3,24 @@ import { Featured } from '@/src/components/Featured/Featured';
 import { SocialFollow } from '@/src/components/SocialFollow/SocialFollow';
 import { AuthorInfo } from '@/src/ui-kit/AuthorInfo/AuthorInfo';
 import { DownloadLink } from '@/src/ui-kit/DownloadLink/DownloadLink';
+import { GoBackLink } from '@/src/ui-kit/GoBackLink/GoBackLink';
+import { AnchorHamburger } from '@/src/ui-kit/PostAnchors/AnchorHamburger';
+import { PostAnchors } from '@/src/ui-kit/PostAnchors/PostAnchors';
 import { ReadingProgressBar } from '@/src/ui-kit/ReadingProgressBar/ReadingProgressBar';
 import {
-  BASE_URL,
-  SEO_DESCRIPTION_SIZE,
-  SEO_TITLE_SIZE,
-  SITE_NAME,
+    BASE_URL,
+    SEO_DESCRIPTION_SIZE,
+    SEO_TITLE_SIZE,
+    SITE_NAME
 } from '@/src/utils/alias';
 import { cleanMetaTitle } from '@/src/utils/cleanMetaTitle';
 import { contentTrimming } from '@/src/utils/contentTrimming';
+import { MenuItems } from '@/src/utils/enums';
 import { formattedDate } from '@/src/utils/formattedDate';
 import { getExpertiseMetadata } from '@/src/utils/getExpertiseMetadata';
 import { ideaMarking } from '@/src/utils/IdeaMarking/ideaMarking';
 import { openGraphImage } from '@/src/utils/openGraphParams';
+import { generateParagraphs } from '@/src/utils/postAnchors/postAnchors';
 import { postsSorting } from '@/src/utils/postsSorting';
 import fs from 'fs';
 import matter from 'gray-matter';
@@ -23,11 +28,6 @@ import { DateTime } from 'luxon';
 import Markdown from 'markdown-to-jsx';
 import path from 'path';
 import styles from './Post.module.css';
-import { MenuItems } from '@/src/utils/enums';
-import { PostAnchors } from '@/src/ui-kit/PostAnchors/PostAnchors';
-import { AnchorHamburger } from '@/src/ui-kit/PostAnchors/AnchorHamburger';
-import { generateParagraphs } from '@/src/utils/postAnchors/postAnchors';
-import { GoBackLink } from '@/src/ui-kit/GoBackLink/GoBackLink';
 
 type Slug = {
   slug: string;

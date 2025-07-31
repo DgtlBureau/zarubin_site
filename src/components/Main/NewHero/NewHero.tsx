@@ -1,6 +1,7 @@
 'use client';
 
 import { mainBanners } from '@/src/utils/DataLayers/MainBanners';
+import { MenuItems } from '@/src/utils/enums';
 import { DateTime } from 'luxon';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -9,7 +10,6 @@ import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { Container } from '../../shared/Container/Container';
 import { Section } from '../../shared/Section/Section';
-import { MenuItems } from '@/src/utils/enums';
 
 export const NewHero = () => {
   const [swiper, setSwiper] = useState<SwiperClass | null>(null);
@@ -51,7 +51,7 @@ export const NewHero = () => {
         }}
         loop={true}
       >
-        {sortedBanners.map((item) => (
+        {sortedBanners?.map((item) => (
           <SwiperSlide key={item.title}>
             <div
               className={`gradient-box h-[380px] duration-500 tablet:h-[465px] desktop:h-[589px] ${slideIndex === 0 || slideIndex % 2 === 0 ? 'after:left-0' : 'after:right-0'} after:duration-500`}
@@ -92,7 +92,7 @@ export const NewHero = () => {
             : `/${MenuItems.CASES.toLowerCase()}`}
         </Link>
         <div className='z-30 flex w-full gap-[20px] tablet:max-w-[402px] desktop:max-w-[482px]'>
-          {sortedBanners.map((_, idx) => (
+          {sortedBanners?.map((_, idx) => (
             <button
               key={idx}
               type='button'

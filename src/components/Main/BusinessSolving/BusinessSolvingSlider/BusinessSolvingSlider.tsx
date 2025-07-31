@@ -4,12 +4,12 @@ import imageOne from '@/public/assets/images/main/bussiness_1.webp';
 import imageTwo from '@/public/assets/images/main/bussines_2.webp';
 import { Container } from '@/src/components/shared/Container/Container';
 import { NextPrevBtn } from '@/src/ui-kit/NextPrevBtn/NextPrevBtn';
+import { MenuItems } from '@/src/utils/enums';
 import { Case } from '@/src/utils/getCaseMetadata';
 import useMediaQuery from '@/src/utils/useMediaQuery';
 import { useState } from 'react';
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { BusinessSolvingCard } from '../BusinessSolvingCard/BusinessSolvingCard';
-import { MenuItems } from '@/src/utils/enums';
 
 interface IData {
   data: Case[];

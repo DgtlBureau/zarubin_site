@@ -1,10 +1,10 @@
 'use client';
 
+import Arrow from '@/public/assets/images/icons/arrow.svg';
 import { footerLinks } from '@/src/utils/footerLinks/footerLinks';
+import { AnimatePresence, motion } from 'framer-motion';
 import Link from 'next/link';
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import Arrow from '@/public/assets/images/icons/arrow.svg';
 
 export const FooterLinks = () => {
   const [expandedItems, setExpandedItems] = useState<{
@@ -31,9 +31,9 @@ export const FooterLinks = () => {
             <li key={item.id}>
               <p className='font-proxima text-[20px] font-bold'>{item.title}</p>
               <ul className='mt-[20px] flex flex-col gap-[12px]'>
-                {firstLinks.map((el) => (
+                {firstLinks.map((el, idx) => (
                   <>
-                    <li key={el.name}>
+                    <li key={idx}>
                       {el.link ? (
                         <Link
                           href={el.link}
@@ -61,8 +61,8 @@ export const FooterLinks = () => {
                     className='m-0 overflow-hidden p-0'
                   >
                     <ul className='mt-[12px] flex flex-col gap-[12px]'>
-                      {remainingLinks.map((el) => (
-                        <li key={el.name}>
+                      {remainingLinks.map((el, index) => (
+                        <li key={index}>
                           {el.link ? (
                             <Link
                               href={el.link}

@@ -5,16 +5,17 @@ import { Container } from '@/src/components/shared/Container/Container';
 import { ScrollAnimationWrapper } from '@/src/components/shared/ScrollAminationWrapper/ScrollAnimationWrapper';
 import { Section } from '@/src/components/shared/Section/Section';
 import {
-  BASE_URL,
-  SEO_DESCRIPTION_SIZE,
-  SEO_TITLE_SIZE,
-  SITE_NAME,
+    BASE_URL,
+    SEO_DESCRIPTION_SIZE,
+    SEO_TITLE_SIZE,
+    SITE_NAME
 } from '@/src/utils/alias';
 import { contentTrimming } from '@/src/utils/contentTrimming';
 import {
-  InstrumentIcons,
-  InstrumentIconsType,
+    InstrumentIcons,
+    InstrumentIconsType
 } from '@/src/utils/DataLayers/InstrumentsIcon';
+import { MenuItems } from '@/src/utils/enums';
 import { getCaseMetadata } from '@/src/utils/getCaseMetadata';
 import { openGraphImage } from '@/src/utils/openGraphParams';
 import fs from 'fs';
@@ -23,7 +24,6 @@ import Markdown from 'markdown-to-jsx';
 import Image from 'next/image';
 import NotFoundPage from '../not-found';
 import styles from './Case.module.css';
-import { MenuItems } from '@/src/utils/enums';
 
 const getCaseContent = (slug: string) => {
   const folder = 'src/cases/';

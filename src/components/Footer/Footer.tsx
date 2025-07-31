@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { CookieConsent } from '../CookieConsent/CookieConsent';
 import { Container } from '../shared/Container/Container';
-import { FooterLinksInfo } from './FooterLinksInfo/FooterLinksInfo';
 import { FooterLinks } from './FooterLinks/FooterLinks';
+import { FooterLinksInfo } from './FooterLinksInfo/FooterLinksInfo';
 
 export const Footer = () => {
   return (

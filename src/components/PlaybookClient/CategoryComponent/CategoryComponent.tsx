@@ -1,13 +1,13 @@
 'use client';
 
 import SearchImage from '@/public/assets/images/icons/search.svg';
+import { MenuItems } from '@/src/utils/enums';
 import { Post } from '@/src/utils/types';
 import useMediaQuery from '@/src/utils/useMediaQuery';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { Suspense, useEffect, useMemo, useState } from 'react';
 import { PlaybookCategory } from '../PlaybookCategory/PlaybookCategory';
 import { PlaybookCategoryDropDown } from '../PlaybookCategoryDropDown/PlaybookCategoryDropDown';
-import { MenuItems } from '@/src/utils/enums';
 
 const getUniqueArticlesSubCategory = (array: Post[], word: string) => {
   const category = array.filter((item) => item.category.toLowerCase() === word);

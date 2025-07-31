@@ -11,9 +11,9 @@ export const AnchorList = ({ data, mainAnchorData }: IPostAnchorProps) => {
   };
 
   return (
-    <div className='shadow-anchor h-fit max-w-[320px] rounded-[8px] bg-white p-[20px] text-black'>
+    <div className='h-fit max-w-[320px] rounded-[8px] bg-white p-[20px] text-black shadow-anchor'>
       <ul className='flex flex-col gap-[12px]'>
-        <li className='flex items-center gap-[12px]'>
+        <li key='title' className='flex items-center gap-[12px]'>
           {activeAnchor === mainAnchorData?.anchor && (
             <span className='mb-auto mt-auto block h-[2px] w-[18px] bg-main-blue' />
           )}

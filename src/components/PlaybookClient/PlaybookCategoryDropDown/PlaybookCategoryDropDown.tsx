@@ -2,8 +2,8 @@
 
 import { MenuItems } from '@/src/utils/enums';
 import {
-  underscopeFormatter,
-  underscopeReverter,
+    underscopeFormatter,
+    underscopeReverter
 } from '@/src/utils/formatter/underscopeFormatter';
 import Link from 'next/link';
 import { usePathname, useSearchParams } from 'next/navigation';

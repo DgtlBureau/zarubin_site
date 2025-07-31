@@ -2,12 +2,12 @@
 
 import defaultLogo from '@/public/assets/images/case/svg/default-case-logo.svg';
 import { NextLinePreposition } from '@/src/components/NextLinePreposition/NextLinePreposition';
+import { MenuItems } from '@/src/utils/enums';
 import { Case } from '@/src/utils/getCaseMetadata';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import styles from './CasesCard.module.css';
-import { MenuItems } from '@/src/utils/enums';
 
 export const CaseCard = ({ data }: { data: Case }) => {
   const [logo, setLogo] = useState(data.logo);

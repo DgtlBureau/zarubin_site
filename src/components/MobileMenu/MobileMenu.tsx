@@ -1,4 +1,5 @@
 import Arrow from '@/public/assets/images/icons/arrow.svg';
+import { MenuItems } from '@/src/utils/enums';
 import { menuListLayer } from '@/src/utils/menuListLayer';
 import { ISubmenu, Post } from '@/src/utils/types';
 import classNames from 'classnames';
@@ -8,7 +9,6 @@ import { ExpertiseSubmenuArticles } from '../Expertise/ExpertiseSubMenu/Expertis
 import { ExpertiseSubMenuList } from '../Expertise/ExpertiseSubMenu/ExpertiseSubmenuArticles/ExpertiseSubMenuList';
 import { ContactWrapper } from './ContactWrapper/ContactWrapper';
 import styles from './MobileMenu.module.css';
-import { MenuItems } from '@/src/utils/enums';
 
 interface Props {
   isOpen: boolean;

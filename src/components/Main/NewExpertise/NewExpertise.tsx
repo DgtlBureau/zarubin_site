@@ -20,8 +20,10 @@ interface IData {
 }
 
 export const NewExpertise = ({ data }: IData) => {
-  const cardsData = data.filter((item) => item.type === 'card');
-  const mainCard = data.find((item) => item.type === 'main');
+  if (!data) return null;
+
+  const cardsData = data?.filter((item) => item.type === 'card');
+  const mainCard = data?.find((item) => item.type === 'main');
 
   return (
     <Section light>
