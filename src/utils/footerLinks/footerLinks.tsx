@@ -172,6 +172,10 @@ export const footerLinks: IFooters[] = [
     title: 'IT Service Insights',
     links: [
       {
+        name: 'CRM "Virage" for Fast Business Solutions',
+        link: 'https://thebrightbyte.com/playbook/expertise/How-to-use-data-from-the-Virazh-sports-CRM',
+      },
+      {
         name: 'AI Powered HVAC Ticketing',
         link: 'https://thebrightbyte.com/playbook/expertise/AI-Powered-HVAC-Ticketing',
       },
