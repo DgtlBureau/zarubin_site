@@ -1,5 +1,5 @@
 ---
-title: 'CRM "Virage" for Fast Business Solutions'
+title: 'CRM "Virazh" for Fast Business Solutions'
 description: 'CRM „Virazh“ in Sport: Wie man im Jahr 2025 Daten über Fans zusammenführt, die Kommunikation personalisiert und die Einnahmen des Vereins steigert.'
 image: '/assets/images/expertise/it_service/cmr_virazh_in_sport.webp'
 date: '18-08-2025'
@@ -11,7 +11,7 @@ authorName: 'Vitaliy Zarubin'
 authorImage: '/assets/images/author/avatar.png'
 ---
 
-# CRM "Virage" for Fast Business Solutions
+# CRM "Virazh" for Fast Business Solutions
 
 ![dashboard](/assets/images/expertise/it_service/cmr_virazh_in_sport.webp)
 
