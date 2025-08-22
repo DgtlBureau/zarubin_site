@@ -1,11 +1,11 @@
 ---
 title: 'CRM "Tribune" for Fast Business Solutions'
 description: 'CRM „Tribune“ in Sport: Wie man im Jahr 2025 Daten über Fans zusammenführt, die Kommunikation personalisiert und die Einnahmen des Vereins steigert.'
-image: '/assets/images/expertise/it_service/cmr_tribune_in_sport.webp'
+image: '/assets/images/expertise/sport/cmr_tribune_in_sport.webp'
 date: '18-08-2025'
 readingTime: '4 minutes'
 category: 'Expertise'
-subCategory: 'It Service'
+subCategory: 'Sport'
 tag: 'CRM, Sport, Sport Business, Marketing Automation'
 authorName: 'Vitaliy Zarubin'
 authorImage: '/assets/images/author/avatar.png'
@@ -13,7 +13,7 @@ authorImage: '/assets/images/author/avatar.png'
 
 # CRM "Tribune" for Fast Business Solutions
 
-![dashboard](/assets/images/expertise/it_service/cmr_tribune_in_sport.webp)
+![dashboard](/assets/images/expertise/sport/cmr_tribune_in_sport.webp)
 
 Every CRM is primarily designed to monetize a sports organization. Often, however, CRMs fail to fulfill their main purpose. Today, we will examine the standard functions of a CRM and see how a sports club fan management system expands loyalty programs and solves related problems in 2025.
 
@@ -33,7 +33,7 @@ Sports CRM also conducts behavioral analytics of fans, studying, for example, li
 
 As a result, the club sees an increase in repeat purchases and average check size, a higher share of revenue from personalized campaigns, and a clear division of revenue by segment. 
 
-![dashboard](/assets/images/expertise/it_service/cmr_tribune_in_sport_one.webp)
+![dashboard](/assets/images/expertise/sport/cmr_tribune_in_sport_one.webp)
 
 ## Mechanics for promotional campaigns
 
@@ -59,7 +59,7 @@ Here is a small case study of how the system works with derbies. Situation: ther
 
 The next steps are simple: we see if ticket and merchandise sales have increased, pay attention to repeat visits within a 30-day window, and if growth is evident, we add the mechanism to the template library. 
 
-![dashboard](/assets/images/expertise/it_service/cmr_tribune_in_sport_two.webp)
+![dashboard](/assets/images/expertise/sport/cmr_tribune_in_sport_two.webp)
 
 ## Checklist: What to do in 30 days?
 
