@@ -128,6 +128,10 @@ export const footerLinks: IFooters[] = [
     title: 'Sport Insights',
     links: [
       {
+        name: 'CRM "Tribune" for Fast Business Solutions',
+        link: 'https://thebrightbyte.com/playbook/expertise/How-to-use-data-from-the-Tribune-sports-CRM',
+      },
+      {
         name: 'Top 5 Best CRM Systems for Sport Clubs and Stadiums',
         link: 'https://thebrightbyte.com/playbook/expertise/The-best-CRM',
       },
@@ -171,10 +175,6 @@ export const footerLinks: IFooters[] = [
     id: 6,
     title: 'IT Service Insights',
     links: [
-      {
-        name: 'CRM "Virage" for Fast Business Solutions',
-        link: 'https://thebrightbyte.com/playbook/expertise/How-to-use-data-from-the-Virazh-sports-CRM',
-      },
       {
         name: 'AI Powered HVAC Ticketing',
         link: 'https://thebrightbyte.com/playbook/expertise/AI-Powered-HVAC-Ticketing',
