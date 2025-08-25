@@ -1,5 +1,5 @@
 ---
-title: 'How to choose a CRM for a sports club: a checklist of features'
+title: 'Choosing a CRM for Your Sports Club: The Essential Checklist.'
 description: 'How a sports club can choose the right CRM: basic functions — unified database, communications, loyalty, analytics. We compare solutions, explain the difference between CRM and CDP using the example of Tribune, and provide a checklist for quick assessment.
 '
 image: '/assets/images/expertise/sport/crm_for_a_sports.webp'
