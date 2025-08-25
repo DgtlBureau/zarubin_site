@@ -11,8 +11,6 @@ authorName: 'Vitaliy Zarubin'
 authorImage: '/assets/images/author/avatar.png'
 ---
 
-# CRM "Tribune" for Fast Business Solutions
-
 ![dashboard](/assets/images/expertise/sport/cmr_tribune_in_sport.webp)
 
 Every CRM is primarily designed to monetize a sports organization. Often, however, CRMs fail to fulfill their main purpose. Today, we will examine the standard functions of a CRM and see how a sports club fan management system expands loyalty programs and solves related problems in 2025.
