@@ -40,7 +40,7 @@ At the same time, ticket sales are often linked to the calendar, namely to the b
 
 The same goes for holidays—clubs continue to focus on the competitive aspect, on “strong opponents,” when they could simply organize a themed match with a good show for Valentine's Day, March 8, and so on. Everyone will go for it. And CRM will really help increase sales when you build this strategy into it, taking into account all the specifics and forming priority and regular purchases — both tickets and season tickets. And don't forget about promotions and discounts. 
 
-![dashboard](/assets/images/expertise/sport/how_crm_helps_one_two.webp)
+![dashboard](/assets/images/expertise/sport/how_crm_helps_two.webp)
 
 ## Key CRM tasks for increasing sales
 
