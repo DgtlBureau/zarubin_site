@@ -127,6 +127,10 @@ export const footerLinks: IFooters[] = [
     id: 4,
     title: 'Sport Insights',
     links: [
+      {
+        name: 'Top 5 mistakes when implementing CRM in a sports organization',
+        link: 'https://thebrightbyte.com/playbook/expertise/Top_5_mistakes_when_implementing_CRM',
+      },
        {
         name: 'Choosing a CRM for Your Sports Club: The Essential Checklist',
         link: 'https://thebrightbyte.com/playbook/expertise/How_to_choose_a_CRM_for_a_sports_club',
