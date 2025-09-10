@@ -127,6 +127,10 @@ export const footerLinks: IFooters[] = [
     id: 4,
     title: 'Sport Insights',
     links: [
+       {
+        name: 'How CRM helps increase ticket and season ticket sales',
+        link: 'https://thebrightbyte.com/playbook/expertise/How_CRM_helps_increase_ticket',
+      },
       {
         name: 'Top 5 mistakes when implementing CRM in a sports organization',
         link: 'https://thebrightbyte.com/playbook/expertise/Top_5_mistakes_when_implementing_CRM',
