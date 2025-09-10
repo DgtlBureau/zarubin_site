@@ -12,8 +12,6 @@ authorName: 'Vitaliy Zarubin'
 authorImage: '/assets/images/author/avatar.png'
 ---
 
-![dashboard](/assets/images/expertise/sport/how_crm_helps.webp)
-
 Although CRM is not a panacea that can solve all the problems of sports clubs on its own, it can be used to increase ticket and season ticket sales. Let's take a look at how this can be done in the Tribune CRM system, what problems may arise, and how the process of selling season tickets and tickets in sports clubs works in principle. 
 
 ## Ticket sales process
@@ -26,7 +24,7 @@ At this point, CRM is needed to track those who buy season tickets, write reques
 
 CRM is also necessary to assess the market situation: who is currently attending the stadium, what is its capacity. Based on this, a plan for the next season can be developed. However, this requires a database, a person to manage it, as well as an understanding of how to sell tickets and for how much, what the dynamic price is, what promotions will be offered, and so on. After that, you can form a ticket content plan and quotas — this will give you an understanding of what to expect in the coming season. But while some develop a full-fledged strategy, others use a simple Excel spreadsheet, which is a very common option.
 
-![dashboard](/assets/images/expertise/sport/how_crm_helps_one.webp)
+![Hurricanes](https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2021%2F0520%2Fr856865_2_1296x729_16%2D9.jpg&w=920&h=518&scale=crop&cquality=80&location=origin&format=jpg)
 
 ## Problems and their solutions
 
