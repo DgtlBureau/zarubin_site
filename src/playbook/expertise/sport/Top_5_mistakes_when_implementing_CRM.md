@@ -12,8 +12,6 @@ authorName: 'Vitaliy Zarubin'
 authorImage: '/assets/images/author/avatar.png'
 ---
 
-![dashboard](/assets/images/expertise/sport/cmr_in_a_sports_organization.webp)
-
 Simply implementing a CRM system into a sports club's operations will not solve all existing problems on its own. A comprehensive approach is needed to ensure that all services interact correctly with each other and that business processes run smoothly. Let's take a look at the problems clubs encounter when working with CRM, and highlight the top 5 mistakes that management can make when interacting with the system.
 
 ## Global issues
@@ -28,7 +26,8 @@ The fourth problem is low staff qualifications. When a club has no money, it tur
 
 The fifth point is the most unexpected—people's reactions. As soon as you start doing something, there is outrage, and there is no support where it is really needed. For example, you create a new team in the region, and you are required to promote children's sports. And what does it even mean to promote children's sports? No one can say.
 
-![dashboard](/assets/images/expertise/sport/cmr_in_a_sports_organization_one.webp)
+![NC](https://images.sidearmdev.com/resize?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Func.sidearmsports.com%2Fimages%2F2023%2F9%2F9%2Ffans.students.app.2234.jpg&height=1100&type=webp)
+
 
 ## Top 5 major mistakes
 
@@ -40,7 +39,7 @@ The fourth mistake is the clubs' excessive focus on achievements. It doesn't mat
 
 And lastly, there is no staff training. In America, employees undergo annual professional development, either online or offline. In Russia, this does not exist, despite the fact that a club is a large, complex structure that requires a great deal of knowledge and a highly developed staff.
 
-![dashboard](/assets/images/expertise/sport/cmr_in_a_sports_organization_two.webp)
+![dashboard](/assets/images/expertise/sport/cmr_in_a_sports_organization_one.webp)
 
 ## Results
 
