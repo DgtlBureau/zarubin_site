@@ -8,9 +8,9 @@ const BREADCRUMBS: Breadcrumb[] = [
 
 export const Hero = () => {
   return (
-    <div className='flex flex-col gap-[20px] break-words pb-[60px]'>
+    <div className='flex flex-col gap-[20px] break-words'>
       <Breadcrumbs breadcrumbs={BREADCRUMBS} />
-      <h1 className='z-[5] font-unbound text-[40px] font-bold uppercase leading-[1.1] tablet:text-[60px] desktop:text-[80px] desktop:font-black desktop-hard:text-[100px] desktop-hard:text-[100px]'>
+      <h1 className='page-headings z-[5] font-unbound font-bold uppercase leading-[1.1] desktop:font-black'>
         {MenuItems.CASES}
       </h1>
     </div>

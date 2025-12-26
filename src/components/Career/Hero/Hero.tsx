@@ -10,10 +10,10 @@ export const Hero = () => {
   return (
     <div className={`flex flex-col gap-[20px] break-words pb-[60px]`}>
       <Breadcrumbs breadcrumbs={BREADCRUMBS} />
-      <h1 className='z-[5] font-unbound text-[32px] font-bold uppercase leading-[1.14] mobile-big:text-[45px] tablet:text-[60px] desktop:text-[80px] desktop:font-black desktop-hard:text-[100px]'>
+      <h1 className='page-headings z-[5] font-unbound font-bold uppercase leading-[1.14] desktop:font-black'>
         <NextLinePreposition tag='span' text='Become a part' className='' />
         <br />
-        <span className='text-stroke desktop:leading-[1.22] desktop-hard:text-[100px]'>
+        <span className='text-stroke page-headings desktop:leading-[1.22]'>
           of the research team
         </span>
       </h1>

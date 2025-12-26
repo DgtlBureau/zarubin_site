@@ -12,7 +12,7 @@
   font-family: Unbounded;
   display: flex;
   align-items: center;
-  font-size: 45px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.11;
   text-transform: uppercase;
@@ -88,7 +88,7 @@
   }
 
   .markdown h2 {
-    font-size: 50px;
+    font-size: 30px;
   }
 
   .research.markdown h2::before {
@@ -117,7 +117,7 @@
   }
 
   .markdown h2 {
-    font-size: 70px;
+    font-size: 35px;
   }
 
   .research.markdown h2::before {

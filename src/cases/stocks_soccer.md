@@ -1,9 +1,10 @@
 ---
-title: 'Fantasy-style startup for soccer audience (Sports/Python)?'
+title: 'Fantasy Sports Gaming Platform'
+name: 'Soccer Stock'
 description: 'We have tournament and player screens. The system retrieves data from TransferMarket, which stores information about player values and portfolios, and displays it on the front end.'
 industries: ['Sports', 'Web development', 'API Development']
 tag: 'STOCKS SOCCER'
-instruments: ['next', 'python']
+instruments: ['next', 'python', 'ml']
 logo: '/assets/images/case/svg/stocksSoccer.svg'
 bannerImage: '/assets/images/case/banner/stock-socker-case.webp'
 images: ['/assets/images/case/stocks_soccer-1.webp']
@@ -12,7 +13,9 @@ date: '01-01-2025'
 
 ## About
 
-We have tournament and player screens. The system retrieves data from TransferMarket, which stores information about player values and portfolios, and displays it on the front end. Users are required to build player portfolios and compete against each other based on these portfolios. After assembling a portfolio, users can make substitutions on each match day, thereby changing the value of their portfolio.
+Web-based fantasy sports startup allowing users to trade
+virtual shares of soccer players based on real-time
+performance data.
 
 ## Problem
 

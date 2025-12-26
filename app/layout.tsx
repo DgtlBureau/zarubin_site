@@ -119,7 +119,7 @@ export default function RootLayout({
           expertiseSubmenu={expertiseSubMenu}
           expertiseMetadata={playbookMetaData}
         />
-        <main className='flex flex-col gap-[60px]'>{children}</main>
+        <main className='flex flex-col gap-[40px]'>{children}</main>
         <ToastContainer />
         <Footer />
         <Script id='replain'>

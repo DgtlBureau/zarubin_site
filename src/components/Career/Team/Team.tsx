@@ -33,7 +33,7 @@ export const Team = () => {
       <NextLinePreposition
         tag='h2'
         text='a team of experienced pro`s, charged with results'
-        className='break-words font-unbound text-[32px] font-bold uppercase leading-[1] mobile-big:text-[45px] tablet:text-[50px] tablet:leading-[1.3] desktop:text-[70px] desktop:leading-[1.1]'
+        className='section-headings break-words font-unbound font-bold uppercase leading-[1] tablet:leading-[1.3] desktop:leading-[1.1]'
       />
       <div className='grid grid-cols-1 gap-10 desktop:grid-cols-3'>
         {TEAM_CARDS.map((teamCard) => (
@@ -55,7 +55,7 @@ const TeamCard = ({ data }: { data: TeamCard }) => {
       <NextLinePreposition
         tag='h4'
         text={data.title}
-        className='font-unbound text-[32px] font-bold uppercase tablet:text-[44px]'
+        className='font-unbound text-[24px] font-bold uppercase tablet:text-[30px]'
       />
       <NextLinePreposition
         tag='p'

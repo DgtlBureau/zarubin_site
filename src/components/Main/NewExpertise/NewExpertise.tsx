@@ -32,7 +32,7 @@ export const NewExpertise = ({ data }: IData) => {
           text={`${sectionsTitle['main']['expertise'].title}`}
           tag={'h2'}
           className={
-            'z-50 font-unbound text-[28px] font-bold uppercase leading-[1.25] text-main-bg tablet:text-[40px] desktop:text-[45px]'
+            'section-headings z-50 font-unbound font-bold uppercase leading-[1.25] text-main-bg'
           }
         />
         <p className='mt-[15px] font-proxima text-[18px] font-bold leading-[1.1] text-light-gray tablet:text-[20px]'>
@@ -48,7 +48,7 @@ export const NewExpertise = ({ data }: IData) => {
             <div
               className={`z-20 mt-auto flex w-full flex-col gap-[24px] tablet:flex-row tablet:justify-between tablet:gap-0 laptop:items-end`}
             >
-              <h3 className='font-unbound text-[20px] font-bold uppercase leading-[1.1] text-white tablet:max-w-[302px] laptop:max-w-[652px] desktop:text-[24px]'>
+              <h3 className='font-unbound text-[18px] font-bold uppercase leading-[1.1] text-white tablet:max-w-[302px] laptop:max-w-[652px] desktop:text-[20px]'>
                 {mainCard?.title}
               </h3>
               <Link

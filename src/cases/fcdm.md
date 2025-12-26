@@ -1,9 +1,10 @@
 ---
-title: 'Integration on backend for sports soccer club (Sports/Laravel)'
+title: 'High-Load Backend & Integrations'
+name: 'Soccer Club «Dynamo»'
 description: 'Like any leading football club, the goal of FCDM is to attract not only fans but also sponsors.'
 industries: ['Sports', 'Web development', 'API Development']
 tag: 'FCDM'
-instruments: ['next', 'laravel']
+instruments: ['react', 'laravel', 'tribloom', 'ml']
 logo: '/assets/images/case/svg/dinamika.svg'
 logo_hover: '/assets/images/case/svg/dinamika_hover.svg'
 bannerImage: '/assets/images/case/banner/dinamika-case.webp'
@@ -13,7 +14,8 @@ date: '01-01-2025'
 
 ## About
 
-Like any leading football club, the goal of FCDM is to attract not only fans but also sponsors. To attract sponsors, it's essential to create product lines that harmonize with both the main brand of the football club "Dynamo" and potential partners interested in collaborating.
+Scalable API and integration platform ensuring stability for club
+digital services.
 
 ## Problem
 

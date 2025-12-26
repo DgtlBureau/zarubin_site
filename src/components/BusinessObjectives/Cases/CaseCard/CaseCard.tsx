@@ -49,22 +49,25 @@ export const CaseCard = ({ data }: { data: Case }) => {
               />
             </div>
             <span
-              className={`${styles.tag} inline-flex items-center justify-center self-stretch rounded-[5px] p-[10px] text-center font-proxima text-[16px] font-bold uppercase leading-[18px] text-white backdrop-blur-[20px] desktop-big:text-[21px]`}
+              className={`${styles.tag} inline-flex items-center justify-center self-stretch rounded-[5px] p-[10px] text-center font-proxima text-[14px] font-bold uppercase leading-[18px] text-white backdrop-blur-[20px]`}
             >
               {data.tag}
             </span>
           </div>
+          <p className='font-unbound text-[18px] font-bold uppercase leading-[1.15] text-white'>
+            {data.name}
+          </p>
           <NextLinePreposition
             tag='h2'
             text={data.title}
-            className='font-unbound text-[22px] font-bold uppercase leading-[1.15] text-white desktop-big:text-[38px]'
+            className='font-unbound text-[18px] font-bold uppercase leading-[1.15] text-white'
           />
         </div>
         <div className='flex flex-col gap-[8px]'>
           {data.industries.map((item, idx) => (
             <span
               key={idx}
-              className='w-fit rounded-sm bg-white p-2.5 font-unbound text-[16px] font-bold uppercase leading-7 text-slate-900 desktop-big:text-[24px]'
+              className='leading-1 w-fit rounded-sm bg-white p-2.5 font-unbound text-[14px] font-bold uppercase text-slate-900'
             >
               {item}
             </span>

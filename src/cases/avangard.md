@@ -1,9 +1,10 @@
 ---
-title: 'Mobile app for hockey club (Sports/Flutter/Python)'
+title: 'Mobile App & Fan Reward program'
+name: 'Hockey Club «Avangard»'
 description: "The hockey club has a large vertical structure, starting with a children's academy, youth team, women's team, senior team, and a team from the Continental Hockey League."
 industries: ['Sports', 'CRM', 'Mobile development']
 tag: 'Avangard'
-instruments: ['flutter', 'python']
+instruments: ['flutter', 'laravel', 'triboom', 'react']
 logo: '/assets/images/case/svg/avangard.svg'
 bannerImage: '/assets/images/case/banner/avangard-case.webp'
 images: ['/assets/images/case/avangard-1.webp']
@@ -12,7 +13,9 @@ date: '01-01-2025'
 
 ## About
 
-The hockey club has a large vertical structure, starting with a children's academy, youth team, women's team, senior team, and a team from the Continental Hockey League. Within this vertical, the hockey club has a large number of websites. It is recommended to develop these sites to be on a single platform. Additionally, this includes ticket sales and merchandise both online and offline. To ensure that a customer coming to the stadium can buy a scarf, receive tickets, and gain loyalty program bonuses, a close integration between all these systems is necessary.
+Native mobile application integrated with a CRM system to
+enhance fan experience, streamline ticketing, and manage
+loyalty rewards.
 
 ## Problem
 

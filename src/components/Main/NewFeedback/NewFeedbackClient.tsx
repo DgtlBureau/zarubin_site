@@ -38,7 +38,7 @@ export const NewFeedbackClient = ({ feedback }: Props) => {
       <Container className='w-full'>
         <div className='relative flex w-full items-start justify-between desktop:items-center'>
           <div className='flex flex-col gap-[16px]'>
-            <h2 className='font-unbound text-[28px] font-bold uppercase leading-[1.25] tablet:text-[40px] tablet:leading-[1.2] desktop:text-[45px] desktop:leading-[1.1]'>
+            <h2 className='section-headings font-unbound font-bold uppercase  leading-[1.25] tablet:leading-[1.2] desktop:leading-[1.1]'>
               {`${sectionsTitle['main']['feedback'].title}`}
             </h2>
             <p className='font-proxima text-[18px] font-bold leading-[1.1] text-light-gray tablet:text-[20px] tablet:leading-[1.2] desktop:leading-[1]'>

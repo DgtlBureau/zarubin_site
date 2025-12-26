@@ -94,6 +94,13 @@
   .manifesto-list {
     @apply prose-p:m-[0] prose-ol:flex prose-ol:flex-col prose-ol:gap-[40px] prose-li:m-0 prose-li:pl-[20px] tablet:prose-li:pl-[40px];
   }
+
+  .page-headings {
+    @apply mobile:text-[25px] tablet:text-[35px] desktop:text-[45px];
+  }
+  .section-headings {
+    @apply mobile:text-[25px] tablet:text-[30px] desktop:text-[35px];
+  }
 }
 
 input:-webkit-autofill,

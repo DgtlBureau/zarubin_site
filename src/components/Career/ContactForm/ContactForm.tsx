@@ -5,9 +5,9 @@ import { Form } from './Form/Form';
 
 export const ContactForm = () => {
   return (
-    <div className='flex flex-col gap-[72px] desktop:flex-row'>
-      <div className='flex flex-col gap-[40px]'>
-        <h2 className='font-unbound text-[32px] font-black uppercase leading-[1.1] mobile-big:text-[50px] tablet:text-[70px]  tablet:leading-[1.3]'>
+    <div className='flex flex-col justify-between gap-[72px] desktop:flex-row'>
+      <div className='flex flex-col justify-between gap-[40px]'>
+        <h2 className='section-headings font-unbound font-black uppercase leading-[1.1] tablet:leading-[1.3]'>
           We are Always <br />
           keep moving
         </h2>

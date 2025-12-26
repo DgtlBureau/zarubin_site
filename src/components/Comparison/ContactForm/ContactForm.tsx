@@ -8,7 +8,7 @@ export const ContactForm = () => {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.content}>
-        <h2 className={styles.title}>
+        <h2 className={`${styles.title} section-headings`}>
           We are Always <br />
           keep moving
         </h2>

@@ -46,9 +46,10 @@ export const NewHero = () => {
         slidesPerView={1}
         onSwiper={setSwiper}
         autoplay={{
-          delay: 3000,
+          delay: 10000,
           disableOnInteraction: false,
         }}
+        speed={1000}
         loop={true}
       >
         {sortedBanners?.map((item) => (
@@ -65,7 +66,7 @@ export const NewHero = () => {
                 className='-z-10 grayscale'
               />
               <Container className='flex h-full w-full flex-col justify-end pt-[40px] text-text-dark tablet:pt-[50px] desktop:z-50 desktop:pt-[67px]'>
-                <h2 className='z-50 font-unbound text-[28px] font-bold uppercase leading-[1.16] tablet:text-[50px] tablet:leading-[1.1] desktop:text-[60px]'>
+                <h2 className='z-50 font-unbound text-[28px] font-bold uppercase leading-[1.16] tablet:text-[40px] tablet:leading-[1.1] desktop:text-[45px]'>
                   {item.title}
                 </h2>
                 {item?.description && (
@@ -100,7 +101,7 @@ export const NewHero = () => {
               className='h-[3px] w-full bg-main-silver'
             >
               <span
-                className={`block h-full bg-main-orange ${idx === slideIndex ? 'w-full transition-[width] duration-[3000ms] ease-linear' : 'w-0'}`}
+                className={`block h-full bg-main-orange ${idx === slideIndex ? 'w-full transition-[width] duration-[10000ms] ease-linear' : 'w-0'}`}
               />
             </button>
           ))}
