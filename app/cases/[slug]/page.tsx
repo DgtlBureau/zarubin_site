@@ -98,8 +98,8 @@ export default async function CasePage(props: { params: { slug: string } }) {
           const { icon: Icon, name } = InstrumentIcons[item];
           if (!Icon) return null;
           return (
-            <div title={name}>
-              <Icon key={idx} width={30} height={30} />
+            <div key={idx} title={name}>
+              <Icon width={30} height={30} />
             </div>
           );
         })}
