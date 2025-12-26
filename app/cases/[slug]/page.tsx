@@ -13,7 +13,7 @@ import {
 import { contentTrimming } from '@/src/utils/contentTrimming';
 import {
   InstrumentIcons,
-  InstrumentIconsType,
+  InstrumentKey,
 } from '@/src/utils/DataLayers/InstrumentsIcon';
 import { MenuItems } from '@/src/utils/enums';
 import { getCaseMetadata } from '@/src/utils/getCaseMetadata';
@@ -91,11 +91,7 @@ export default async function CasePage(props: { params: { slug: string } }) {
 
   const { industries, title, tag, images, instruments } = post.data;
 
-  const Instruments = ({
-    instruments,
-  }: {
-    instruments: (keyof InstrumentIconsType)[];
-  }) => {
+  const Instruments = ({ instruments }: { instruments: InstrumentKey[] }) => {
     return (
       <div className='flex gap-4'>
         {instruments.map((item) => {
