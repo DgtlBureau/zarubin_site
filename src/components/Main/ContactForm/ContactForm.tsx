@@ -9,7 +9,7 @@ export const ContactForm = () => {
         <NextLinePreposition
           tag='h2'
           text=' We are always glad to have new partners and ambitious tasks.'
-          className='font-unbound text-[32px] font-bold uppercase leading-[1.11] text-slate-900 tablet:text-[50px] desktop-hard:text-[70px]'
+          className='section-headings font-unbound font-bold uppercase leading-[1.1] text-slate-900'
         />
       }
     >

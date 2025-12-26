@@ -4,6 +4,7 @@ import matter from 'gray-matter';
 export interface Case {
   industries: string[];
   title: string;
+  name: string;
   description: string;
   tag: string;
   slug: string;
@@ -24,6 +25,7 @@ export const getCaseMetadata = (basePath: string) => {
     const matterResult = matter(fileContent);
     return {
       title: matterResult.data.title,
+      name: matterResult.data.name,
       description: matterResult.data.description,
       industries: matterResult.data.industries,
       tag: matterResult.data.tag,

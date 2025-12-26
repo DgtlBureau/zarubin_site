@@ -36,7 +36,7 @@ const VALUES_ITEMS = [
 export const Values = () => {
   return (
     <div className='flex flex-col gap-[40px] tablet:gap-[98px]'>
-      <h2 className='font-unbound text-[45px] font-bold uppercase leading-[1] tablet:text-[50px] tablet:leading-[1.3] desktop:text-[70px] desktop:leading-[1.1]'>
+      <h2 className='section-headings font-unbound font-bold uppercase leading-[1] tablet:leading-[1.3] desktop:leading-[1.1]'>
         values that help achieve results
       </h2>
       <div className='hidden h-auto desktop:block'>

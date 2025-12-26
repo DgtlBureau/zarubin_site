@@ -5,15 +5,15 @@ import { Container } from '@/src/components/shared/Container/Container';
 import { ScrollAnimationWrapper } from '@/src/components/shared/ScrollAminationWrapper/ScrollAnimationWrapper';
 import { Section } from '@/src/components/shared/Section/Section';
 import {
-    BASE_URL,
-    SEO_DESCRIPTION_SIZE,
-    SEO_TITLE_SIZE,
-    SITE_NAME
+  BASE_URL,
+  SEO_DESCRIPTION_SIZE,
+  SEO_TITLE_SIZE,
+  SITE_NAME,
 } from '@/src/utils/alias';
 import { contentTrimming } from '@/src/utils/contentTrimming';
 import {
-    InstrumentIcons,
-    InstrumentIconsType
+  InstrumentIcons,
+  InstrumentIconsType,
 } from '@/src/utils/DataLayers/InstrumentsIcon';
 import { MenuItems } from '@/src/utils/enums';
 import { getCaseMetadata } from '@/src/utils/getCaseMetadata';
@@ -99,11 +99,13 @@ export default async function CasePage(props: { params: { slug: string } }) {
     return (
       <div className='flex gap-4'>
         {instruments.map((item) => {
-          const IconComponent = InstrumentIcons[item];
-          if (!IconComponent) {
-            return null;
-          }
-          return <IconComponent key={item} width={60} height={60} />;
+          const { icon: Icon, name } = InstrumentIcons[item];
+          if (!Icon) return null;
+          return (
+            <div title={name}>
+              <Icon key={item} width={30} height={30} />
+            </div>
+          );
         })}
       </div>
     );

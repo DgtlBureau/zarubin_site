@@ -1,9 +1,10 @@
 ---
-title: 'Api-integrated website for sports soccer event (Sports/Laravel)'
+title: 'High-Load Backend & Integrations'
+name: 'Sports Event Digital Platform'
 description: 'The project to develop the website for Street Football League on the Tilda platform with ticketing system integration has become a successful example of how to effectively combine sporting events with business goals.'
 industries: ['Sports', 'Web development', 'API Development']
 tag: 't-bank'
-instruments: ['next', 'laravel']
+instruments: ['laravel', 'react', 'ml']
 logo: '/assets/images/case/svg/t-bank.svg'
 bannerImage: '/assets/images/case/banner/t-bank-case.webp'
 images: ['/assets/images/case/tbank-1.webp', '/assets/images/case/tbank-2.webp']
@@ -12,7 +13,8 @@ date: '01-01-2025'
 
 ## About
 
-The project to develop the website for Street Football League on the Tilda platform with ticketing system integration has become a successful example of how to effectively combine sporting events with business goals. The new website not only improved the user experience but also helped achieve T-Bank's marketing objectives. In the future, continued work on the site and its features could include adding new integrations and functions to further enhance audience engagement.
+PI-integrated web platform for a major street football event to
+drive user engagement.
 
 ## Main Goals
 

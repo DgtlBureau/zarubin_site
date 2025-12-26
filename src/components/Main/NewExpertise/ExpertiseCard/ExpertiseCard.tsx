@@ -32,7 +32,7 @@ export const ExpertiseCard = ({ data, idx }: IExpertiseCard) => {
         <GenerateIcon path={logo} color='rgba(105, 105, 105, 1)' />
       </div>
       <div className='mt-auto flex flex-col gap-[24px]'>
-        <h3 className='font-unbound text-[20px] font-bold uppercase leading-[1.1] text-main-bg desktop:text-[24px]'>
+        <h3 className='font-unbound text-[18px] font-bold uppercase leading-[1.1] text-main-bg desktop:text-[20px]'>
           {title}
         </h3>
         {description && (

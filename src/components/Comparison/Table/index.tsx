@@ -5,16 +5,16 @@ export default function Table() {
         <table>
           <thead className='border-b border-b-white '>
             <tr>
-              <th className='px-[20px] py-[27.5px] text-start font-unbound text-[16px] font-bold leading-[1.2] tablet:text-[22px] desktop:text-[28px]'>
+              <th className='px-[20px] py-[27.5px] text-start font-unbound text-[16px] font-bold leading-[1.2] tablet:text-[20px] desktop:text-[24px]'>
                 Task
               </th>
-              <th className='px-[20px] py-[27.5px] text-start font-proxima text-[18px] font-bold leading-[1.2] tablet:text-[20px] desktop:text-[36px]'>
+              <th className='px-[20px] py-[27.5px] text-start font-proxima text-[18px] font-bold leading-[1.2] tablet:text-[20px] desktop:text-[24px]'>
                 Freelancer
               </th>
-              <th className='px-[20px] py-[27.5px] text-start font-proxima text-[18px] font-bold leading-[1.2] text-[#013EDF] tablet:text-[20px] desktop:text-[36px]'>
+              <th className='px-[20px] py-[27.5px] text-start font-proxima text-[18px] font-bold leading-[1.2] text-[#013EDF] tablet:text-[20px] desktop:text-[24px]'>
                 The BrightByte
               </th>
-              <th className='px-[20px] py-[27.5px] text-start font-proxima text-[18px] font-bold leading-[1.2] tablet:text-[20px] desktop:text-[36px]'>
+              <th className='px-[20px] py-[27.5px] text-start font-proxima text-[18px] font-bold leading-[1.2] tablet:text-[20px] desktop:text-[24px]'>
                 Development Studio
               </th>
             </tr>
@@ -97,7 +97,7 @@ export default function Table() {
         <table className='w-full'>
           <thead className='border-b border-b-white '>
             <tr>
-              <th className='px-[20px] py-[27.5px] pt-[67.5px] text-start font-unbound text-[16px] font-bold leading-[1.2] tablet:text-[22px] desktop:text-[28px]'>
+              <th className='px-[20px] py-[27.5px] pt-[67.5px] text-start font-unbound text-[16px] font-bold leading-[1.2] tablet:text-[22px] desktop:text-[24px]'>
                 Development
               </th>
             </tr>
@@ -139,7 +139,7 @@ export default function Table() {
         <table className='w-full'>
           <thead className='border-b border-b-white '>
             <tr>
-              <th className='px-[20px] py-[27.5px] pt-[67.5px] text-start font-unbound text-[16px] font-bold leading-[1.2] tablet:text-[22px] desktop:text-[28px]'>
+              <th className='px-[20px] py-[27.5px] pt-[67.5px] text-start font-unbound text-[16px] font-bold leading-[1.2] tablet:text-[20px] desktop:text-[24px]'>
                 Testing
               </th>
             </tr>
@@ -180,7 +180,7 @@ export default function Table() {
         <table className='w-full'>
           <thead className='border-b border-b-white '>
             <tr>
-              <th className='px-[20px] py-[27.5px] pt-[67.5px] text-start font-unbound text-[16px] font-bold leading-[1.2] tablet:text-[22px] desktop:text-[28px]'>
+              <th className='px-[20px] py-[27.5px] pt-[67.5px] text-start font-unbound text-[16px] font-bold leading-[1.2] tablet:text-[20px] desktop:text-[24px]'>
                 Support and Maintenance
               </th>
             </tr>
@@ -221,7 +221,7 @@ export default function Table() {
         <table className='w-full'>
           <thead className='border-b border-b-white '>
             <tr>
-              <th className='px-[20px] py-[27.5px] pt-[67.5px] text-start font-unbound text-[16px] font-bold leading-[1.2] tablet:text-[22px] desktop:text-[28px]'>
+              <th className='px-[20px] py-[27.5px] pt-[67.5px] text-start font-unbound text-[16px] font-bold leading-[1.2] tablet:text-[20px] desktop:text-[24px]'>
                 Project Management
               </th>
             </tr>
@@ -276,7 +276,7 @@ export default function Table() {
         <table className='w-full'>
           <thead className='border-b border-b-white '>
             <tr>
-              <th className='px-[20px] py-[27.5px] pt-[67.5px] text-start font-unbound text-[16px] font-bold leading-[1.2] tablet:text-[22px] desktop:text-[28px]'>
+              <th className='px-[20px] py-[27.5px] pt-[67.5px] text-start font-unbound text-[16px] font-bold leading-[1.2] tablet:text-[20px] desktop:text-[24px]'>
                 Total
               </th>
             </tr>
@@ -356,7 +356,7 @@ export default function Table() {
               <td className='w-[25%] p-[20px] font-proxima text-[12px] font-bold leading-[1.2] text-white tablet:text-[16px] desktop:text-[20px]'></td>
               <td className='w-[25%] p-[20px] font-proxima text-[12px] font-normal leading-[1.2] text-white/60 tablet:text-[16px] desktop:text-[20px]'></td>
               <td className='w-[25%] p-[20px] font-proxima text-[12px] font-normal leading-[1.2] text-white tablet:text-[16px] desktop:text-[20px]'>
-                <span className='font-proxima text-[18px] font-bold leading-[1.2] text-[#013EDF] tablet:text-[20px] desktop:text-[36px]'>
+                <span className='font-proxima text-[18px] font-bold leading-[1.2] text-[#013EDF] tablet:text-[20px] desktop:text-[28px]'>
                   Clients Choice
                 </span>
               </td>

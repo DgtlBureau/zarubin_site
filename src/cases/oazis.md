@@ -1,10 +1,10 @@
 ---
-title: 'IT System for industrial downstream company (Oil&Gas, Flutter, Laravel)'
+title: 'Workforce Management Ecosystem'
+name: 'OAZIS'
 description: 'The goal of the project was to integrate all social services for shift workers into a mobile application.'
-industries:
-  ['Oil & Gas', 'CRM', 'Mobile development']
+industries: ['Oil & Gas', 'CRM', 'Mobile development']
 tag: 'OAZIS'
-instruments: ['flutter', 'laravel']
+instruments: ['flutter', 'laravel', 'react', 'claude']
 logo: '/assets/images/case/svg/oazis.svg'
 bannerImage: '/assets/images/case/banner/oasis-case.webp'
 images: ['/assets/images/case/oazis-1.webp', '/assets/images/case/oazis-2.webp']
@@ -13,7 +13,8 @@ date: '01-01-2025'
 
 ## About
 
-The goal of the project was to integrate all social services for shift workers into a mobile application. Additionally, it aimed to provide management capabilities for services at the management site. Consequently, the project was divided into two parts: a mobile application for shift workers and the development of an administrative panel for management site employees.
+Corporate system for managing rotational workers,
+accommodation, and catering.
 
 ## Problem
 

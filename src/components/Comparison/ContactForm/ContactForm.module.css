@@ -22,7 +22,6 @@
 
 .title {
   font-family: 'Unbounded';
-  font-size: 32px;
   font-weight: 900;
   line-height: 1.1;
 }
@@ -63,7 +62,6 @@
 
 @media (min-width: 768px) {
   .title {
-    font-size: 100px;
     line-height: 1.3;
   }
 

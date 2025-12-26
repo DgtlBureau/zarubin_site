@@ -1,9 +1,10 @@
 ---
-title: 'AI-powered assistant for on-site technical support (HVACR/AI/Python)'
+title: 'AI-Powered Field Service & Ticketing'
+name: 'PersoniWay'
 description: 'The goal of the project was to help field technicians resolve service issues faster using an AI assistant and a connected ticketing system'
 industries: ['HVAC', 'API Development', 'AI & Data Science']
 tag: 'Personiway'
-instruments: ['next', 'python']
+instruments: ['python', 'react', 'cloude']
 logo: '/assets/images/case/svg/personi.svg'
 bannerImage: '/assets/images/case/banner/personiway.webp'
 images:
@@ -13,7 +14,9 @@ date: '21-04-2025'
 
 ## About
 
-PersoniWay is an AI-powered support platform designed specifically for field technicians in industries like HVAC, electrical, and equipment servicing. The product consists of a smart assistant chatbot, a ticketing and knowledge system, and an admin dashboard for service company managers. Its goal is to streamline troubleshooting, reduce time on site, and standardize support workflows through intelligent automation.
+Smart ecosystem for field techs featuring AI schema
+recognition, audio calls, and tracking to drastically reduce
+problem detection time.
 
 ## Problem
 
