@@ -4,7 +4,7 @@ name: 'PersoniWay'
 description: 'The goal of the project was to help field technicians resolve service issues faster using an AI assistant and a connected ticketing system'
 industries: ['HVAC', 'API Development', 'AI & Data Science']
 tag: 'Personiway'
-instruments: ['python', 'react', 'cloude']
+instruments: ['python', 'react', 'claude']
 logo: '/assets/images/case/svg/personi.svg'
 bannerImage: '/assets/images/case/banner/personiway.webp'
 images:
