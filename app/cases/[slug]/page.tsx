@@ -94,11 +94,17 @@ export default async function CasePage(props: { params: { slug: string } }) {
   const Instruments = ({ instruments }: { instruments: InstrumentKey[] }) => {
     return (
       <div className='flex gap-4'>
-        {instruments.map((item, idx) => {
-          const { icon: Icon, name } = InstrumentIcons[item];
-          if (!Icon) return null;
+        {instruments.map((item) => {
+          const iconData = InstrumentIcons[item];
+
+          if (!iconData || !iconData.icon) {
+            return null;
+          }
+
+          const { icon: Icon, name } = iconData;
+
           return (
-            <div key={idx} title={name}>
+            <div key={item} title={name}>
               <Icon width={30} height={30} />
             </div>
           );
