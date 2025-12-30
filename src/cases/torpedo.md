@@ -1,8 +1,9 @@
 ---
 title: 'Digital Ecosystem for Fan Engagement'
 name: 'Hockey Club «Torpedo»'
-description: "Hockey Club Torpedo, one of Russia's most storied hockey franchises, sought to modernize their fan engagement and operational efficiency."
+description: 'Comprehensive digital ecosystem including a mobile app and CRM to modernize fan interaction, ticket sales, and loyalty programs.'
 industries: ['Sports', 'CRM', 'Mobile development']
+type: 'SPORTS'
 tag: 'HC Torpedo'
 instruments: ['flutter', 'laravel', 'next', 'triboom', 'ml', 'claude']
 logo: '/assets/images/case/svg/torpedo.svg'
@@ -10,6 +11,7 @@ bannerImage: '/assets/images/case/banner/torpedo-case.webp'
 images:
   ['/assets/images/case/torpedo-1.webp', '/assets/images/case/torpedo-2.webp']
 date: '11-07-2025'
+link: 'https://apps.apple.com/ru/app/%D1%85%D0%BA-%D1%82%D0%BE%D1%80%D0%BF%D0%B5%D0%B4%D0%BE/id6742787618'
 ---
 
 ## About

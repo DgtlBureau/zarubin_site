@@ -13,6 +13,8 @@ export interface Case {
   instruments: string[] | [];
   bannerImage: string;
   date: string | undefined;
+  type: string;
+  link: string;
 }
 
 export const getCaseMetadata = (basePath: string) => {
@@ -35,6 +37,8 @@ export const getCaseMetadata = (basePath: string) => {
       logo_hover: matterResult.data.logo_hover,
       instruments: matterResult.data.instruments,
       date: matterResult.data.date,
+      type: matterResult.data.type,
+      link: matterResult.data.link,
     };
   });
 

@@ -1,13 +1,16 @@
 ---
 title: 'Web development for relocation startup (Hospitality/Laravel)'
+name: 'LuxToday'
 description: ''
-industries: ['Service and Hospitality', 'Web development', 'IT Consulting']
+industries: ['Service', 'Hospitality', 'Web development', 'IT Consulting']
+type: 'Service'
 tag: 'Lux Today'
 instruments: ['next', 'laravel']
 logo: '/assets/images/case/svg/luxToday.svg'
 bannerImage: '/assets/images/case/banner/luxtoday-case.webp'
 images: ['/assets/images/case/luxToday-1.webp']
 date: '01-01-2025'
+link: ''
 ---
 
 ## About

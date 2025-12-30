@@ -1,8 +1,9 @@
 ---
 title: 'High-Load Backend & Integrations'
 name: 'Soccer Club «Dynamo»'
-description: 'Like any leading football club, the goal of FCDM is to attract not only fans but also sponsors.'
+description: 'Scalable API and integration platform ensuring stability for club digital services.'
 industries: ['Sports', 'Web development', 'API Development']
+type: 'SPORTS'
 tag: 'FCDM'
 instruments: ['react', 'laravel', 'tribloom', 'ml']
 logo: '/assets/images/case/svg/dinamika.svg'
@@ -10,6 +11,7 @@ logo_hover: '/assets/images/case/svg/dinamika_hover.svg'
 bannerImage: '/assets/images/case/banner/dinamika-case.webp'
 images: ['/assets/images/case/fcdm-1.webp', '/assets/images/case/fcdm-2.webp']
 date: '01-01-2025'
+link: ''
 ---
 
 ## About

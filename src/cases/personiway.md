@@ -1,8 +1,9 @@
 ---
 title: 'AI-Powered Field Service & Ticketing'
 name: 'PersoniWay'
-description: 'The goal of the project was to help field technicians resolve service issues faster using an AI assistant and a connected ticketing system'
+description: 'Smart ecosystem for field techs featuring AI schema recognition, audio calls, and tracking to drastically reduce problem detection time.'
 industries: ['HVAC', 'API Development', 'AI & Data Science']
+type: 'HVACR'
 tag: 'Personiway'
 instruments: ['python', 'react', 'claude']
 logo: '/assets/images/case/svg/personi.svg'
@@ -10,6 +11,7 @@ bannerImage: '/assets/images/case/banner/personiway.webp'
 images:
   ['/assets/images/case/personi-1.webp', '/assets/images/case/personi-2.webp']
 date: '21-04-2025'
+link: ''
 ---
 
 ## About

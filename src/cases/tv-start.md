@@ -1,7 +1,9 @@
 ---
 title: 'Smart TV App for Entertaiment channel (Sports/Flutter/Laravel)'
+name: 'TV start'
 description: 'The goal of the project was to build a unified platform for broadcasting sports events across mobile, Smart TV, and web'
 industries: ['Sports', 'SmartTV', 'Mobile development']
+type: 'Sports'
 tag: 'TV start'
 instruments: ['flutter', 'laravel']
 logo: '/assets/images/case/svg/tv-start.svg'
@@ -9,6 +11,7 @@ bannerImage: '/assets/images/case/banner/tv-start.webp'
 images:
   ['/assets/images/case/tv-start.webp', '/assets/images/case/tv-start-2.webp']
 date: '21-04-2025'
+link: ''
 ---
 
 ## About

@@ -1,14 +1,16 @@
 ---
 title: 'Mobile App & Fan Reward program'
 name: 'Hockey Club «Avangard»'
-description: "The hockey club has a large vertical structure, starting with a children's academy, youth team, women's team, senior team, and a team from the Continental Hockey League."
+description: 'Native mobile application integrated with a CRM system to enhance fan experience, streamline ticketing, and manage loyalty rewards.'
 industries: ['Sports', 'CRM', 'Mobile development']
+type: 'SPORTS'
 tag: 'Avangard'
 instruments: ['flutter', 'laravel', 'triboom', 'react']
 logo: '/assets/images/case/svg/avangard.svg'
 bannerImage: '/assets/images/case/banner/avangard-case.webp'
 images: ['/assets/images/case/avangard-1.webp']
 date: '01-01-2025'
+link: ''
 ---
 
 ## About

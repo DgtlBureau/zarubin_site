@@ -89,11 +89,20 @@ export default async function CasePage(props: { params: { slug: string } }) {
     return <NotFoundPage slug={slug} />;
   }
 
-  const { industries, title, tag, images, instruments } = post.data;
+  const {
+    industries,
+    title,
+    tag,
+    images,
+    instruments,
+    type,
+    link,
+    description,
+  } = post.data;
 
   const Instruments = ({ instruments }: { instruments: InstrumentKey[] }) => {
     return (
-      <div className='flex gap-4'>
+      <div className='flex gap-6'>
         {instruments.map((item) => {
           const iconData = InstrumentIcons[item];
 
@@ -104,8 +113,15 @@ export default async function CasePage(props: { params: { slug: string } }) {
           const { icon: Icon, name } = iconData;
 
           return (
-            <div key={item} title={name}>
-              <Icon width={30} height={30} />
+            <div
+              key={item}
+              title={name}
+              className='flex items-center gap-[4px]'
+            >
+              <Icon width={30} height={30} />{' '}
+              <span className='font-proxima text-[14px] font-semibold'>
+                {name}
+              </span>
             </div>
           );
         })}
@@ -145,39 +161,56 @@ export default async function CasePage(props: { params: { slug: string } }) {
     <>
       <Section id='hero' className='relative py-0 tablet:py-0 desktop:pb-0'>
         <Container>
-          <Hero title={title} tag={tag} industries={industries} />
+          <Hero
+            title={title}
+            tag={tag}
+            industries={industries}
+            type={type}
+            link={link}
+          />
         </Container>
       </Section>
       <Section light>
         <Container className='grid grid-cols-1 gap-[40px] desktop:grid-cols-2'>
-          <div className='flex flex-col gap-[60px]'>
-            {paragraphs.map((p, index) => (
-              <ScrollAnimationWrapper key={index} showOnLoad={index === 0}>
-                <Markdown
-                  className={`${styles.markdown} flex w-full flex-col gap-[20px] font-proxima`}
-                >
-                  {p.content}
-                </Markdown>
-              </ScrollAnimationWrapper>
-            ))}
-            <ScrollAnimationWrapper>
+          <div className='flex flex-col gap-[30px]'>
+            <ScrollAnimationWrapper showOnLoad>
               <div>
                 <Instruments instruments={instruments} />
               </div>
             </ScrollAnimationWrapper>
+            <ScrollAnimationWrapper showOnLoad>
+              <p className='font-proxima text-[16px] text-text-dark'>
+                {description}
+              </p>
+            </ScrollAnimationWrapper>
+            <ScrollAnimationWrapper
+              showOnLoad={true}
+              className='flex flex-col gap-[40px]'
+            >
+              {paragraphs.slice(1).map((p, index) => (
+                <Markdown
+                  key={index}
+                  className={`${styles.markdown} flex w-full flex-col gap-[20px] font-proxima`}
+                >
+                  {p.content}
+                </Markdown>
+              ))}
+            </ScrollAnimationWrapper>
           </div>
           <div className='flex flex-col gap-[40px]'>
-            {images.map((image: string, idx: number) => (
-              <Image
-                key={idx}
-                src={image}
-                width={700}
-                height={900}
-                quality={80}
-                alt={`${slug} project image`}
-                className='h-[auto] w-full'
-              />
-            ))}
+            <ScrollAnimationWrapper showOnLoad={true}>
+              {images.map((image: string, idx: number) => (
+                <Image
+                  key={idx}
+                  src={image}
+                  width={700}
+                  height={900}
+                  quality={80}
+                  alt={`${slug} project image`}
+                  className='h-[auto] w-full'
+                />
+              ))}
+            </ScrollAnimationWrapper>
           </div>
         </Container>
       </Section>

@@ -1,14 +1,16 @@
 ---
 title: 'Telegram Chat bot Native Wallet & Virtual Cards'
 name: 'Jedi Pay'
-description: 'The goal of the project was to create a secure and customizable payment gateway with dashboard, wallet, and API support for merchants'
-industries: ['Finance', 'Web development', 'AI & Data Science']
+description: 'Fintech ecosystem built on Telegram, allowing users to issue virtual cards, conduct instant P2P transactions, and pay for online services directly within the messenger.'
+industries: ['FinTech', 'Web development', 'AI & Data Science']
+type: 'FinTech'
 tag: 'Jedipay'
 instruments: ['unity', 'python', 'ml']
 logo: '/assets/images/case/svg/default-case-logo.svg'
 bannerImage: '/assets/images/case/banner/jedipay.webp'
 images: ['/assets/images/case/jedi-1.webp']
 date: '21-04-2025'
+link: ''
 ---
 
 ## About

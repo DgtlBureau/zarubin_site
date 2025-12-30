@@ -48,10 +48,12 @@
     --dark-blue: #000a25;
     --second-blue: #001450;
     --light-blue: #00248b;
-    --blue-hover: #1858fd;
+    --blue-hover: hsl(223, 98%, 54%);
     --pagination-col: #eceffa;
     --main-orange: '#F8AE3C';
     --orange-light: '#FFCC47';
+    --blue-hover-50: hsla(223, 98%, 54%, 0.418);
+    --blue-hover-dark: hsl(223, 87%, 26%);
   }
 
   * {
@@ -96,10 +98,10 @@
   }
 
   .page-headings {
-    @apply mobile:text-[25px] tablet:text-[35px] desktop:text-[45px];
+    @apply mobile:text-[18px] tablet:text-[25px] desktop:text-[30px];
   }
   .section-headings {
-    @apply mobile:text-[25px] tablet:text-[30px] desktop:text-[35px];
+    @apply mobile:text-[16px] tablet:text-[20px] desktop:text-[25px];
   }
 }
 

@@ -1,14 +1,16 @@
 ---
 title: 'FinTech Investment Platform'
 name: 'Grid Capital'
-description: 'Grid Capital faced an issue where the previous team had been working on development for over six months without delivering a final product.'
-industries: ['Finance', 'Web development', 'IT Consulting']
+description: 'Scalable architecture design and development for a US-based financial investment startup.'
+industries: ['FinTech', 'Web development', 'IT Consulting']
+type: 'FinTech'
 tag: 'Grid Capital'
 instruments: ['next', 'python', 'ml']
 logo: '/assets/images/case/svg/grid-capital.svg'
 bannerImage: '/assets/images/case/banner/gridcapital-case.webp'
 images: ['/assets/images/case/grid_capital-1.webp']
 date: '01-01-2025'
+link: ''
 ---
 
 ## Problem

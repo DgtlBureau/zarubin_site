@@ -1,8 +1,9 @@
 ---
 title: 'Official Web Platform & Integrations'
 name: 'Hockey Club «Norilsk»'
-description: 'The Norilsk Hockey Club competes in the VHL division. They have a coaching staff, active players, and fans.'
+description: 'Development of the official club website with complex backend integrations for real-time stats, media content, and ticketing systems.'
 industries: ['Sports', 'Web development', 'API Integrations']
+type: 'SPORTS'
 tag: 'HC Norilsk'
 instruments: ['next', 'laravel']
 logo: '/assets/images/case/svg/norilsk.svg'
@@ -10,6 +11,7 @@ bannerImage: '/assets/images/case/banner/norilsk-case.webp'
 images:
   ['/assets/images/case/norilsk-1.webp', '/assets/images/case/norilsk-2.webp']
 date: '01-01-2025'
+link: 'https://hcnorilsk.com'
 ---
 
 ## About

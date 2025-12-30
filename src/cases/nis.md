@@ -1,14 +1,16 @@
 ---
 title: 'AI Audit & Process Automation'
 name: 'NIS'
-description: 'The key IT system, within which the business process was to be built, was called "On Our Way." As part of the loyalty program, users stop at a gas station, order food, and receive cashback on their card.'
-industries: ['Oil & Gas', 'IT Consulting']
+description: 'Intelligent optimization of business processes and infrastructure using AI tools.'
+industries: ['OpsTech', 'IT Consulting']
+type: 'OpsTech'
 tag: 'NIS'
 instruments: ['react', 'python']
 logo: '/assets/images/case/svg/nis.svg'
 bannerImage: '/assets/images/case/banner/nis-case.webp'
 images: ['/assets/images/case/nis-1.webp']
 date: '01-01-2025'
+link: ''
 ---
 
 ## About

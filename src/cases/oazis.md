@@ -1,14 +1,16 @@
 ---
 title: 'Workforce Management Ecosystem'
 name: 'OAZIS'
-description: 'The goal of the project was to integrate all social services for shift workers into a mobile application.'
-industries: ['Oil & Gas', 'CRM', 'Mobile development']
+description: 'Corporate system for managing rotational workers, accommodation, and catering'
+industries: ['OpsTech', 'CRM', 'Mobile development']
+type: 'OpsTech'
 tag: 'OAZIS'
 instruments: ['flutter', 'laravel', 'react', 'claude']
 logo: '/assets/images/case/svg/oazis.svg'
 bannerImage: '/assets/images/case/banner/oasis-case.webp'
 images: ['/assets/images/case/oazis-1.webp', '/assets/images/case/oazis-2.webp']
 date: '01-01-2025'
+link: ''
 ---
 
 ## About

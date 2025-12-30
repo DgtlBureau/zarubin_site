@@ -3,6 +3,7 @@ import Link from 'next/link';
 interface IBreadProps {
   breadcrumbs: Breadcrumb[];
   light?: boolean;
+  lastLink?: string;
 }
 
 export type Breadcrumb = {
@@ -10,7 +11,11 @@ export type Breadcrumb = {
   link?: string;
 };
 
-export const Breadcrumbs = ({ breadcrumbs, light = false }: IBreadProps) => {
+export const Breadcrumbs = ({
+  breadcrumbs,
+  light = false,
+  lastLink,
+}: IBreadProps) => {
   return (
     <div
       className={`z-10 flex flex-wrap items-center gap-x-[20px] gap-y-[10px] font-proxima text-[20px]  ${light ? 'text-text-dark' : 'text-white'}`}
@@ -32,6 +37,14 @@ export const Breadcrumbs = ({ breadcrumbs, light = false }: IBreadProps) => {
           )}
         </>
       ))}
+      {lastLink && (
+        <div className='flex gap-[20px]'>
+          <span>/</span>
+          <Link href={lastLink} className='text-teal-300'>
+            Watch online
+          </Link>
+        </div>
+      )}
     </div>
   );
 };

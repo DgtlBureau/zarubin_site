@@ -1,13 +1,16 @@
 ---
 title: 'Mobile application for retail grocery store (Retail/Flutter)'
+name: 'Our Gold'
 description: 'An overwhelming shift of e-commerce into online platforms has eliminated offline boutiques entirely.'
-industries: ['Retail','Mobile development']
+industries: ['Retail', 'Mobile development']
+type: 'Retail'
 tag: 'Our Gold'
 instruments: ['flutter', 'laravel']
 logo: '/assets/images/case/svg/nasheZoloto.svg'
 bannerImage: '/assets/images/case/banner/nashe-zoloto-case.webp'
 images: ['/assets/images/case/nashe_zoloto-1.webp']
 date: '01-01-2025'
+link: ''
 ---
 
 ## Problem

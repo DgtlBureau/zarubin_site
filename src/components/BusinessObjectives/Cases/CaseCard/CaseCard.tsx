@@ -8,6 +8,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import styles from './CasesCard.module.css';
+import { CaseTag } from './CaseTag/CaseTag';
 
 export const CaseCard = ({ data }: { data: Case }) => {
   const [logo, setLogo] = useState(data.logo);
@@ -39,40 +40,35 @@ export const CaseCard = ({ data }: { data: Case }) => {
       >
         <div className='flex flex-col gap-[19px]'>
           <div className='flex items-center justify-between'>
-            <div className='h-[35px] w-[auto]'>
+            <p className='font-unbound text-[22px] font-bold leading-[1.15] text-white'>
+              {data.name}
+            </p>
+            <div className='h-[50px] w-[auto]'>
               <Image
                 src={logo ? logo : defaultLogo}
                 alt={`${data.tag} logo`}
-                height={35}
+                height={50}
                 width={120}
                 className='h-full w-[auto]'
               />
             </div>
-            <span
-              className={`${styles.tag} inline-flex items-center justify-center self-stretch rounded-[5px] p-[10px] text-center font-proxima text-[14px] font-bold uppercase leading-[18px] text-white backdrop-blur-[20px]`}
-            >
-              {data.tag}
-            </span>
           </div>
-          <p className='font-unbound text-[18px] font-bold uppercase leading-[1.15] text-white'>
-            {data.name}
-          </p>
           <NextLinePreposition
             tag='h2'
             text={data.title}
-            className='font-unbound text-[18px] font-bold uppercase leading-[1.15] text-white'
+            className='font-unbound text-[18px] font-bold leading-[1.15] text-gray-400'
           />
+          <p className='leading-1 font-proxima text-[16px]'>
+            {data.description}
+          </p>
         </div>
-        <div className='flex flex-col gap-[8px]'>
+        <ul className='flex flex-wrap gap-[8px]'>
           {data.industries.map((item, idx) => (
-            <span
-              key={idx}
-              className='leading-1 w-fit rounded-sm bg-white p-2.5 font-unbound text-[14px] font-bold uppercase text-slate-900'
-            >
-              {item}
-            </span>
+            <li key={idx} className='relative w-fit'>
+              <CaseTag tag={item} />
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </Link>
   );

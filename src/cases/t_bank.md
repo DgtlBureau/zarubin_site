@@ -1,14 +1,16 @@
 ---
 title: 'High-Load Backend & Integrations'
 name: 'Sports Event Digital Platform'
-description: 'The project to develop the website for Street Football League on the Tilda platform with ticketing system integration has become a successful example of how to effectively combine sporting events with business goals.'
+description: 'PI-integrated web platform for a major street football event to drive user engagement.'
 industries: ['Sports', 'Web development', 'API Development']
+type: 'SPORTS'
 tag: 't-bank'
 instruments: ['laravel', 'react', 'ml']
 logo: '/assets/images/case/svg/t-bank.svg'
 bannerImage: '/assets/images/case/banner/t-bank-case.webp'
 images: ['/assets/images/case/tbank-1.webp', '/assets/images/case/tbank-2.webp']
 date: '01-01-2025'
+link: ''
 ---
 
 ## About

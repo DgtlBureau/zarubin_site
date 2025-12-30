@@ -4,7 +4,7 @@
 }
 
 .markdown h1 {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -12,7 +12,7 @@
   font-family: Unbounded;
   display: flex;
   align-items: center;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 1.11;
   text-transform: uppercase;
@@ -84,11 +84,11 @@
 
 @media (min-width: 768px) {
   .markdown h1 {
-    font-size: 36px;
+    font-size: 26px;
   }
 
   .markdown h2 {
-    font-size: 30px;
+    font-size: 22px;
   }
 
   .research.markdown h2::before {
@@ -113,11 +113,11 @@
 
 @media (min-width: 1440px) {
   .markdown h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .markdown h2 {
-    font-size: 35px;
+    font-size: 26px;
   }
 
   .research.markdown h2::before {

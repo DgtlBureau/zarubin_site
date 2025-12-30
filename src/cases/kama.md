@@ -1,14 +1,16 @@
 ---
 title: 'Interactive 3D Stand for Automotive'
 name: 'Kama'
-description: 'The release of new cars always involves numerous UX/UI and A/B tests. Consequently, to conduct these tests, it is necessary to create a car simulator through which testers can verify various hypotheses.'
+description: 'Stand for Automotive Gamified Unity-based software to showcase electric vehicle technologies at exhibitions.'
 industries: ['Automotive', 'Mobile development']
+type: 'Automotive'
 tag: 'Atom'
 instruments: ['python', 'unity']
 logo: '/assets/images/case/svg/atom.svg'
 bannerImage: '/assets/images/case/banner/atom-case.webp'
 images: ['/assets/images/case/kama-1.webp', '/assets/images/case/kama-2.webp']
 date: '01-01-2025'
+link: ''
 ---
 
 ## Problem

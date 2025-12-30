@@ -49,5 +49,5 @@ export const InstrumentIcons: InstrumentIconsType = {
   claude: { name: 'Claude', icon: Claude },
   unity: { name: 'Unity', icon: Unity },
   ml: { name: 'TensorFlow', icon: Ml },
-  triboom: { name: '', icon: null },
+  triboom: { name: 'Triboom', icon: null },
 };
