@@ -4,13 +4,11 @@ import {
 } from '@/src/components/shared/Breadcrumbs/Breadcrumbs';
 import { MenuItems } from '@/src/utils/enums';
 import { CaseTag } from '../../Cases/CaseCard/CaseTag/CaseTag';
-import Link from 'next/link';
 
 export const Hero = ({
   title,
   industries,
   tag,
-  type,
   link,
 }: {
   title: string;
