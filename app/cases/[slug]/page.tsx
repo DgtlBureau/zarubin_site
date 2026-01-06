@@ -98,6 +98,7 @@ export default async function CasePage(props: { params: { slug: string } }) {
     type,
     link,
     description,
+    metriks,
   } = post.data;
 
   const Instruments = ({ instruments }: { instruments: InstrumentKey[] }) => {
@@ -160,7 +161,7 @@ export default async function CasePage(props: { params: { slug: string } }) {
   return (
     <>
       <Section id='hero' className='relative py-0 tablet:py-0 desktop:pb-0'>
-        <Container>
+        <Container className='flex flex-col gap-[12px]'>
           <Hero
             title={title}
             tag={tag}
@@ -174,7 +175,10 @@ export default async function CasePage(props: { params: { slug: string } }) {
         <Container className='grid grid-cols-1 gap-[40px] desktop:grid-cols-2'>
           <div className='flex flex-col gap-[30px]'>
             <ScrollAnimationWrapper showOnLoad>
-              <div>
+              <div className='flex flex-col gap-[16px]'>
+                <p className='font-unbound text-[14px] text-teal-400'>
+                  {metriks}
+                </p>
                 <Instruments instruments={instruments} />
               </div>
             </ScrollAnimationWrapper>

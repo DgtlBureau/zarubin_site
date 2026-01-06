@@ -10,6 +10,7 @@ logo: '/assets/images/case/svg/oazis.svg'
 bannerImage: '/assets/images/case/banner/oasis-case.webp'
 images: ['/assets/images/case/oazis-1.webp', '/assets/images/case/oazis-2.webp']
 date: '01-01-2025'
+metriks: '🚀 NPS, Loyalty Engagement, Employee turnover'
 link: ''
 ---
 

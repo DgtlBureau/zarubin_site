@@ -10,6 +10,7 @@ logo: '/assets/images/case/svg/nasheZoloto.svg'
 bannerImage: '/assets/images/case/banner/nashe-zoloto-case.webp'
 images: ['/assets/images/case/nashe_zoloto-1.webp']
 date: '01-01-2025'
+metriks: ''
 link: ''
 ---
 

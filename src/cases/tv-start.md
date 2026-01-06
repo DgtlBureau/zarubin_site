@@ -11,6 +11,7 @@ bannerImage: '/assets/images/case/banner/tv-start.webp'
 images:
   ['/assets/images/case/tv-start.webp', '/assets/images/case/tv-start-2.webp']
 date: '21-04-2025'
+metriks: ''
 link: ''
 ---
 

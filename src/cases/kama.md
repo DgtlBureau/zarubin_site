@@ -10,6 +10,7 @@ logo: '/assets/images/case/svg/atom.svg'
 bannerImage: '/assets/images/case/banner/atom-case.webp'
 images: ['/assets/images/case/kama-1.webp', '/assets/images/case/kama-2.webp']
 date: '01-01-2025'
+metriks: ''
 link: ''
 ---
 

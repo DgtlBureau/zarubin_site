@@ -4,6 +4,7 @@ interface IBreadProps {
   breadcrumbs: Breadcrumb[];
   light?: boolean;
   lastLink?: string;
+  underlineLastLink?: boolean;
 }
 
 export type Breadcrumb = {
@@ -15,6 +16,7 @@ export const Breadcrumbs = ({
   breadcrumbs,
   light = false,
   lastLink,
+  underlineLastLink = false,
 }: IBreadProps) => {
   return (
     <div
@@ -40,7 +42,10 @@ export const Breadcrumbs = ({
       {lastLink && (
         <div className='flex gap-[20px]'>
           <span>/</span>
-          <Link href={lastLink} className='text-teal-300'>
+          <Link
+            href={lastLink}
+            className={`text-teal-300 ${underlineLastLink ? 'underline' : ''}`}
+          >
             Watch online
           </Link>
         </div>

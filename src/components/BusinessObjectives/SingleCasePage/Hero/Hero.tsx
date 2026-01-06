@@ -28,7 +28,11 @@ export const Hero = ({
   return (
     <div className='flex flex-col gap-[30px]'>
       <div className='flex flex-col gap-[20px] break-words'>
-        <Breadcrumbs breadcrumbs={BREADCRUMBS} lastLink={link} />
+        <Breadcrumbs
+          breadcrumbs={BREADCRUMBS}
+          lastLink={link}
+          underlineLastLink
+        />
         <h1 className='page-headings z-[5] font-unbound font-bold uppercase leading-[1.1]  desktop:font-black'>
           {title}
         </h1>

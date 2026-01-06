@@ -11,6 +11,7 @@ bannerImage: '/assets/images/case/banner/torpedo-case.webp'
 images:
   ['/assets/images/case/torpedo-1.webp', '/assets/images/case/torpedo-2.webp']
 date: '11-07-2025'
+metriks: '🚀 User Retention Rate, Matchday vs Non MD Retention, LTV'
 link: 'https://apps.apple.com/ru/app/%D1%85%D0%BA-%D1%82%D0%BE%D1%80%D0%BF%D0%B5%D0%B4%D0%BE/id6742787618'
 ---
 

@@ -10,6 +10,7 @@ logo: '/assets/images/case/svg/luxToday.svg'
 bannerImage: '/assets/images/case/banner/luxtoday-case.webp'
 images: ['/assets/images/case/luxToday-1.webp']
 date: '01-01-2025'
+metriks: ''
 link: ''
 ---
 

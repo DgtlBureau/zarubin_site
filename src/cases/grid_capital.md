@@ -10,6 +10,7 @@ logo: '/assets/images/case/svg/grid-capital.svg'
 bannerImage: '/assets/images/case/banner/gridcapital-case.webp'
 images: ['/assets/images/case/grid_capital-1.webp']
 date: '01-01-2025'
+metriks: ''
 link: ''
 ---
 

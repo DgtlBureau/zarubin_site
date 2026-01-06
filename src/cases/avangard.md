@@ -10,6 +10,7 @@ logo: '/assets/images/case/svg/avangard.svg'
 bannerImage: '/assets/images/case/banner/avangard-case.webp'
 images: ['/assets/images/case/avangard-1.webp']
 date: '01-01-2025'
+metriks: '🚀 ER, MAU, LTV, ARPU'
 link: ''
 ---
 

@@ -10,6 +10,7 @@ logo: '/assets/images/case/svg/default-case-logo.svg'
 bannerImage: '/assets/images/case/banner/jedipay.webp'
 images: ['/assets/images/case/jedi-1.webp']
 date: '21-04-2025'
+metriks: '🚀  MAU, Convertations, Balance top-up, Time-to-1st transaction'
 link: ''
 ---
 

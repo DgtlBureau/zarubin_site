@@ -11,6 +11,7 @@ bannerImage: '/assets/images/case/banner/personiway.webp'
 images:
   ['/assets/images/case/personi-1.webp', '/assets/images/case/personi-2.webp']
 date: '21-04-2025'
+metriks: ''
 link: ''
 ---
 

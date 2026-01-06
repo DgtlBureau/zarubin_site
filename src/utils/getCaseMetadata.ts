@@ -15,6 +15,7 @@ export interface Case {
   date: string | undefined;
   type: string;
   link: string;
+  metriks: string;
 }
 
 export const getCaseMetadata = (basePath: string) => {
@@ -39,6 +40,7 @@ export const getCaseMetadata = (basePath: string) => {
       date: matterResult.data.date,
       type: matterResult.data.type,
       link: matterResult.data.link,
+      metriks: matterResult.data.link,
     };
   });
 

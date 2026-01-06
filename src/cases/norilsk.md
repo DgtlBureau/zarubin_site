@@ -11,6 +11,7 @@ bannerImage: '/assets/images/case/banner/norilsk-case.webp'
 images:
   ['/assets/images/case/norilsk-1.webp', '/assets/images/case/norilsk-2.webp']
 date: '01-01-2025'
+metriks: ''
 link: 'https://hcnorilsk.com'
 ---
 
