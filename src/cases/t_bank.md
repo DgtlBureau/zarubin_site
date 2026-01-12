@@ -11,7 +11,7 @@ bannerImage: '/assets/images/case/banner/t-bank-case.webp'
 images: ['/assets/images/case/tbank-1.webp', '/assets/images/case/tbank-2.webp']
 date: '01-01-2025'
 metriks: '🚀 Loyalty engagement, ER, Ticketing'
-link: ''
+link: 'https://mfl.life'
 ---
 
 ## About

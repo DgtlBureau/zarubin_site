@@ -11,7 +11,7 @@ bannerImage: '/assets/images/case/banner/stock-socker-case.webp'
 images: ['/assets/images/case/stocks_soccer-1.webp']
 date: '01-01-2025'
 metriks: '🚀 MAU, Engagement'
-link: ''
+link: 'https://www.figma.com/proto/9uhzt9IWkJEexMTOhYN7Yi/Fantasy-Game?page-id=0%3A1&type=design&node-id=179-33582&viewport=570%2C-191%2C0.14&t=2yzxtcDHId5VRxbw-1&scaling=scale-down&starting-point-node-id=179%3A33582&show-proto-sidebar=1'
 ---
 
 ## About

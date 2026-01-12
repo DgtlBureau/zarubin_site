@@ -11,7 +11,7 @@ bannerImage: '/assets/images/case/banner/avangard-case.webp'
 images: ['/assets/images/case/avangard-1.webp']
 date: '01-01-2025'
 metriks: '🚀 ER, MAU, LTV, ARPU'
-link: ''
+link: 'https://play.google.com/store/apps/details?id=ru.hawk.app&hl=en_US'
 ---
 
 ## About
