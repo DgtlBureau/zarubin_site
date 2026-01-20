@@ -58,7 +58,7 @@ export const Form = () => {
 
   const onDrop = useCallback((acceptedFiles: File[]) => {
     formik.setFieldValue('cv', acceptedFiles[0]);
-  }, []);
+  }, [formik]);
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
     multiple: false,
