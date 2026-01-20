@@ -1,10 +1,36 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { IPostAnchorProps } from './PostAnchors';
 
 export const AnchorList = ({ data, mainAnchorData }: IPostAnchorProps) => {
   const [activeAnchor, setActiveAnchor] = useState('title');
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveAnchor(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: '-100px 0px -66% 0px' }
+    );
+
+    // Observe the main title
+    const mainElement = document.getElementById(mainAnchorData.anchor);
+    if (mainElement) observer.observe(mainElement);
+
+    // Observe all section headings
+    data.forEach((item) => {
+      const element = document.getElementById(item.anchor);
+      if (element) observer.observe(element);
+    });
+
+    return () => observer.disconnect();
+  }, [data, mainAnchorData.anchor]);
+
   const handleSetHush = (value: string) => {
     setActiveAnchor(value);
     window.location.hash = `#${value}`;

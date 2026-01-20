@@ -25,7 +25,7 @@ export const InsightsClient = ({ posts }: Props) => {
     <div className='h-600 relative z-10 flex flex-col gap-[40px] pb-20'>
       <Container className='desktop-hard:px-[80px]'>
         <div className='flex items-center justify-between'>
-          <h2 className='font-proxima text-[14px] font-semibold uppercase tracking-[0.1em] text-text-dark tablet:text-[15px]'>
+          <h2 className='font-proxima text-[14px] font-semibold uppercase tracking-[0.1em] text-white tablet:text-[15px]'>
             Insights
           </h2>
           <div className='hidden tablet:block'>

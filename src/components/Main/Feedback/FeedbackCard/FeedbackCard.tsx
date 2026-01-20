@@ -49,7 +49,7 @@ export const FeedbackCard = ({ data }: Props) => {
           src={data.logo}
           quality={80}
           alt='Logo'
-          className='max-h-[50px] w-fit'
+          className='h-auto max-h-[50px] max-w-[120px] w-auto object-contain'
           loading='lazy'
         />
         <span className='font-proxima text-text-dark opacity-50 mobile-big:text-[16px] tablet:text-[20px]'>

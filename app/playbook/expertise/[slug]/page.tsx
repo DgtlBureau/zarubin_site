@@ -16,6 +16,7 @@ import {
 import { cleanMetaTitle } from '@/src/utils/cleanMetaTitle';
 import { contentTrimming } from '@/src/utils/contentTrimming';
 import { MenuItems } from '@/src/utils/enums';
+import { generateFAQSchema, generateArticleSchema } from '@/src/utils/faqSchema';
 import { formattedDate } from '@/src/utils/formattedDate';
 import { getExpertiseMetadata } from '@/src/utils/getExpertiseMetadata';
 import { ideaMarking } from '@/src/utils/IdeaMarking/ideaMarking';
@@ -26,6 +27,7 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import { DateTime } from 'luxon';
 import Markdown from 'markdown-to-jsx';
+import Script from 'next/script';
 import path from 'path';
 import styles from './Post.module.css';
 
@@ -138,8 +140,23 @@ export default function ExpertisePostPage(props: { params: { slug: string } }) {
   }
   const date = formattedDate(post.data.date);
 
-  const { tag, title, authorName, authorImage, downloadLink, readingTime } =
+  const { tag, title, authorName, authorImage, downloadLink, readingTime, faq, image } =
     post.data;
+
+  // Generate structured data for SEO
+  const publishedDateISO = DateTime.fromFormat(post.data.date, 'dd-MM-yyyy').toISO() || '';
+  const articleUrl = `${BASE_URL}/${MenuItems.PLAYBOOK.toLowerCase()}/expertise/${slug}`;
+
+  const articleSchemaJson = generateArticleSchema({
+    title,
+    description: post.data.description,
+    image,
+    datePublished: publishedDateISO,
+    authorName,
+    url: articleUrl,
+  });
+
+  const faqSchemaJson = faq ? generateFAQSchema(faq) : null;
 
   const hashtagRegex = /#[A-Za-z_]+/g;
   const regexFont = /<font color='(.+?)'>(.+?)<\/font>/g;
@@ -228,6 +245,20 @@ export default function ExpertisePostPage(props: { params: { slug: string } }) {
         <div className='flex-1'></div>
       </div>
       <AnchorHamburger data={paragraphs} mainAnchorData={mainAnchorData} />
+
+      {/* Structured data for SEO */}
+      <Script
+        id="article-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: articleSchemaJson }}
+      />
+      {faqSchemaJson && (
+        <Script
+          id="faq-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: faqSchemaJson }}
+        />
+      )}
     </div>
   );
 }

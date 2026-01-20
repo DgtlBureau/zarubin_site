@@ -9,18 +9,22 @@ interface ISectionsTitle {
 
 export const sectionsTitle: ISectionsTitle = {
   main: {
+    successStories: {
+      title: 'Success Stories',
+      descripton: 'Real results from AI-powered projects we delivered',
+    },
     expertise: {
       title: 'Expertise',
-      descripton: 'Designing tech that drives growth, not overhead',
+      descripton: 'AI-powered solutions that transform operations and drive measurable results',
     },
     insights: {
       title: 'Insights',
       descripton:
-        'Explore how modern IT reshapes performance, operations, and strategy in fast-paced industries',
+        'Explore how AI and ML reshape performance, operations, and strategy across industries',
     },
     feedback: {
       title: 'Feedback',
-      descripton: 'Honest words of our partners about cooperation',
+      descripton: 'What our partners say about working with us',
     },
   },
 };

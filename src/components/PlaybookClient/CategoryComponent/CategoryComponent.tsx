@@ -9,12 +9,32 @@ import { Suspense, useEffect, useMemo, useState } from 'react';
 import { PlaybookCategory } from '../PlaybookCategory/PlaybookCategory';
 import { PlaybookCategoryDropDown } from '../PlaybookCategoryDropDown/PlaybookCategoryDropDown';
 
+const normalizeSubCategory = (value: string | null | undefined): string => {
+  if (!value) return '';
+  // Normalize common variations (e.g., 'It Service' -> 'IT Service')
+  return value
+    .split(' ')
+    .map((word) => {
+      const lower = word.toLowerCase();
+      // Handle known acronyms that should be uppercase
+      if (lower === 'it') return 'IT';
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    })
+    .join(' ');
+};
+
 const getUniqueArticlesSubCategory = (array: Post[], word: string) => {
   const category = array.filter((item) => item.category.toLowerCase() === word);
-  const subCategory = category.map((item) => item.subCategory);
-  const uniqueSubCategory = subCategory.filter(
-    (value, idx, arr) => arr.indexOf(value) === idx,
-  );
+  const subCategory = category.map((item) => normalizeSubCategory(item.subCategory));
+  // Deduplicate using case-insensitive comparison
+  const seen = new Map<string, string>();
+  subCategory.forEach((value) => {
+    const key = value.toLowerCase();
+    if (!seen.has(key)) {
+      seen.set(key, value);
+    }
+  });
+  const uniqueSubCategory = Array.from(seen.values());
 
   return {
     category: word,

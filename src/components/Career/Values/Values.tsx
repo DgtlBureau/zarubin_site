@@ -30,7 +30,7 @@ const VALUES_ITEMS = [
   {
     title: 'Care',
     description:
-      "We care about what's happening on the project and with our clients. We always think about how to make the world around us better. At The Bright Byte, we encourage initiative.",
+      "We care about what's happening on the project and with our clients. We always think about how to make the world around us better. At The BrightByte, we encourage initiative.",
   },
 ];
 export const Values = () => {

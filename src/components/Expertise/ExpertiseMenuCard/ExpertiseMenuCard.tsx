@@ -38,11 +38,11 @@ export const ExpertiseMenuCard = ({
           quality={80}
         />
       </div>
-      <div className='flex h-full w-full flex-1 flex-col items-stretch rounded-b-[5px] bg-white p-[25px]'>
-        <h3 className='line-clamp-3 overflow-hidden font-unbound text-[12px] font-bold uppercase leading-[1.4] text-text-dark'>
+      <div className='flex h-full w-full flex-1 flex-col items-stretch rounded-b-[5px] bg-white p-[16px]'>
+        <h3 className='line-clamp-3 overflow-hidden font-unbound text-[11px] font-bold uppercase leading-[1.4] text-text-dark'>
           {title}
         </h3>
-        <p className='mt-[12px] line-clamp-3 overflow-hidden font-proxima text-[16px] leading-[1.25] text-text-dark/70'>
+        <p className='mt-[8px] line-clamp-3 overflow-hidden font-proxima text-[13px] leading-[1.35] text-text-dark/70'>
           {description}
         </p>
       </div>

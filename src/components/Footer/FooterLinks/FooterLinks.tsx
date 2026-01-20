@@ -32,22 +32,20 @@ export const FooterLinks = () => {
               <p className='font-proxima text-[20px] font-bold'>{item.title}</p>
               <ul className='mt-[20px] flex flex-col gap-[12px]'>
                 {firstLinks.map((el, idx) => (
-                  <>
-                    <li key={idx}>
-                      {el.link ? (
-                        <Link
-                          href={el.link}
-                          className={`font-regular font-proxima text-[16px] leading-[1.2] text-white/60 duration-300 hover:text-white`}
-                        >
-                          {el.name}
-                        </Link>
-                      ) : (
-                        <p className='font-regular font-proxima text-[16px] leading-[1.2] text-white/20'>
-                          {el.name}
-                        </p>
-                      )}
-                    </li>
-                  </>
+                  <li key={`${item.id}-${idx}`}>
+                    {el.link ? (
+                      <Link
+                        href={el.link}
+                        className={`font-regular font-proxima text-[16px] leading-[1.2] text-white/60 duration-300 hover:text-white`}
+                      >
+                        {el.name}
+                      </Link>
+                    ) : (
+                      <p className='font-regular font-proxima text-[16px] leading-[1.2] text-white/20'>
+                        {el.name}
+                      </p>
+                    )}
+                  </li>
                 ))}
               </ul>
               <AnimatePresence initial={false}>

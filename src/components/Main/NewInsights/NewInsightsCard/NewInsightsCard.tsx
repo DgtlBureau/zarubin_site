@@ -61,26 +61,26 @@ export const NewInsightsCard = ({
             {tags?.slice(0, 2).map((item, idx) => (
               <span
                 key={idx}
-                className={`w-fit rounded-[5px] p-[6px_10px] font-proxima text-[16px] font-bold uppercase text-text-dark ${idx === 0 ? 'bg-main-orange' : 'bg-white'}`}
+                className={`w-fit rounded-[5px] p-[4px_8px] font-proxima text-[12px] font-bold uppercase text-text-dark ${idx === 0 ? 'bg-main-orange' : 'bg-white'}`}
               >
                 {item}
               </span>
             ))}
           </div>
         </div>
-        <div className='flex h-full w-full flex-1 flex-col items-stretch rounded-b-[5px] bg-card-bg px-[20px] py-[40px] tablet:px-[40px]'>
+        <div className='flex h-full w-full flex-1 flex-col items-stretch rounded-b-[5px] bg-card-bg px-[16px] py-[20px] tablet:px-[24px]'>
           <NextLinePreposition
             tag='h3'
             text={title}
-            className='mt-[25px] line-clamp-3 overflow-hidden font-unbound text-[18px] font-bold uppercase leading-[1] text-text-dark duration-300 group-hover:underline tablet:text-[24px] tablet:leading-[1.16]'
+            className='mt-[12px] line-clamp-3 overflow-hidden font-unbound text-[13px] font-bold uppercase leading-[1.2] text-text-dark duration-300 group-hover:underline tablet:text-[14px] tablet:leading-[1.16]'
           />
           <NextLinePreposition
             tag='p'
             text={description}
-            className='mt-[19px] line-clamp-3 overflow-hidden font-proxima text-[16px] leading-[1.25] text-text-dark/60 tablet:text-[20px]'
+            className='mt-[8px] line-clamp-3 overflow-hidden font-proxima text-[12px] leading-[1.4] text-text-dark/60 tablet:text-[13px]'
           />
           {date && (
-            <span className='mt-[14px] text-text-dark/60'>
+            <span className='mt-[8px] text-[12px] text-text-dark/60'>
               {formattedDate(date)}
             </span>
           )}

@@ -20,28 +20,28 @@ interface Props {
 
 export const NewFeedbackCard = ({ data }: Props) => {
   return (
-    <div className='flex h-full flex-col justify-between gap-[10px] rounded-t-[5px] bg-white px-[10px] py-[20px] mobile-big:px-[20px] mobile-big:py-[20px] tablet:p-[40px]'>
+    <div className='flex h-full flex-col justify-between gap-[10px] rounded-t-[5px] bg-white px-[10px] py-[16px] mobile-big:px-[16px] mobile-big:py-[16px] tablet:p-[24px]'>
       <div>
-        <div className='flex gap-[20px] tablet:gap-[40px]'>
+        <div className='flex gap-[16px] tablet:gap-[24px]'>
           <Image
             src={data.image}
             quality={80}
             alt={data.name}
-            className='h-[86px] w-[86px] rounded-full object-cover transition-opacity duration-500 mobile-big:h-[168px] mobile-big:w-[168px]'
+            className='h-[60px] w-[60px] rounded-full object-cover transition-opacity duration-500 mobile-big:h-[80px] mobile-big:w-[80px]'
             loading='lazy'
           />
           <div className='relative '>
             <div className='flex h-full flex-col items-center justify-center gap-[6px] transition-opacity duration-500'>
-              <h3 className='font-proxima text-[24px] font-bold text-text-dark'>
+              <h3 className='font-proxima text-[16px] font-bold text-text-dark'>
                 {data.name}
               </h3>
-              <span className='font-proxima text-[16px] text-text-dark mobile-big:text-[20px]'>
+              <span className='font-proxima text-[12px] text-text-dark mobile-big:text-[13px]'>
                 {data.job}
               </span>
             </div>
           </div>
         </div>
-        <p className='mt-[40px] font-proxima text-[16px] leading-[24px] text-text-dark'>
+        <p className='mt-[16px] font-proxima text-[13px] leading-[1.5] text-text-dark'>
           {data.feedback}
         </p>
       </div>
@@ -50,11 +50,11 @@ export const NewFeedbackCard = ({ data }: Props) => {
           src={data.logo}
           quality={80}
           alt='Logo'
-          className='max-h-[50px] w-fit'
+          className='h-auto max-h-[50px] max-w-[120px] w-auto object-contain'
           loading='lazy'
         />
         {data?.date && (
-          <span className='font-proxima text-text-dark opacity-50 mobile-big:text-[16px] tablet:text-[20px]'>
+          <span className='font-proxima text-[13px] text-text-dark opacity-50 mobile-big:text-[14px] tablet:text-[14px]'>
             {formattedDate(data.date)}
           </span>
         )}

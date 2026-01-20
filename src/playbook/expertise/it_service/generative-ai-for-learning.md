@@ -5,7 +5,7 @@ image: '/assets/images/expertise/it_service/AI_education.webp'
 date: '11-12-2024'
 readingTime: ''
 category: 'Expertise'
-subCategory: 'It Service'
+subCategory: 'IT Service'
 tag: 'generative AI, AI in education, AI event prediction, predictive AI for schools, AI in educational institutions'
 authorName: 'Maria Ovseytseva'
 authorImage: '/assets/images/author/maria.webp'
@@ -100,7 +100,7 @@ Like any tool, AI is an invaluable assistant in skilled hands, but if you do not
 
 2. **Train faculty and staff**: Providing training helps ensure that educators are able to make the most of available AI tools. For instance, a workshop on using AI for grading and feedback with students could help increase adoption rates among academics. It is important to teach a collective the principles of learning to the AI system itself, and to talk about the importance of working carefully with prompts.
 
-3. **Collaborate with stakeholders**: Collaboration with technology companies will also stimulate the adoption and development of AI. For example, collaborating with an AI vendor could provide existing and potential opportunities to get some sought-after offerings and features at lower prices than the market, or to be the first to try out the new tools. The Bright Byte platform, for example, is closely linked to generative intelligence through its focus on using artificial intelligence (AI) to drive innovation in various fields. [For example](https://thebrightbyte.com/), the platform has explored how AI is revolutionising sport, particularly [women's sport](https://thebrightbyte.com/insights/revolution-in-womens-sports), through the use of data analytics, virtual and augmented reality, and personalised training programmes. These technologies are forms of AI that rely on generative models and machine learning to create tailored solutions and interactive experiences.
+3. **Collaborate with stakeholders**: Collaboration with technology companies will also stimulate the adoption and development of AI. For example, collaborating with an AI vendor could provide existing and potential opportunities to get some sought-after offerings and features at lower prices than the market, or to be the first to try out the new tools. The BrightByte platform, for example, is closely linked to generative intelligence through its focus on using artificial intelligence (AI) to drive innovation in various fields. [For example](https://thebrightbyte.com/), the platform has explored how AI is revolutionising sport, particularly [women's sport](https://thebrightbyte.com/insights/revolution-in-womens-sports), through the use of data analytics, virtual and augmented reality, and personalised training programmes. These technologies are forms of AI that rely on generative models and machine learning to create tailored solutions and interactive experiences.
 
 Generative AI for education is a trend that will be accompanied in the future by a framework of laws and regulations that define its permissible boundaries. However, it is already clear that this is a useful tool that will allow educators to automate routine tasks and provide students with adaptive educational solutions.
 

@@ -1,8 +1,8 @@
 ---
-title: 'Mobile application for retail grocery store (Retail/Flutter)'
+title: 'AI-Enhanced Fashion E-Commerce App'
 name: 'Our Gold'
-description: 'An overwhelming shift of e-commerce into online platforms has eliminated offline boutiques entirely.'
-industries: ['Retail', 'Mobile development']
+description: 'Flutter-based fashion e-commerce app with AI-powered product visualization and intelligent customer journey mapping.'
+industries: ['Retail', 'Mobile development', 'AI & Data Science']
 type: 'Retail'
 tag: 'Our Gold'
 instruments: ['flutter', 'laravel']

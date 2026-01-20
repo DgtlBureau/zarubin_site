@@ -24,11 +24,11 @@ const allData = [...expertiseData, ...insightsData];
 
 export async function GET() {
   const feed = new RSS({
-    title: 'The Bright Byte Expertise and Insights',
-    description: 'Latest expertise and insights from The Bright Byte',
+    title: 'The BrightByte Expertise and Insights',
+    description: 'Latest expertise and insights from The BrightByte',
     site_url: `${BASE_URL}`,
     feed_url: `${BASE_URL}/rss`,
-    copyright: `${new Date().getFullYear()} The Bright Byte Expertise`,
+    copyright: `${new Date().getFullYear()} The BrightByte Expertise`,
     language: 'en-us',
     pubDate: new Date().toUTCString(),
   });

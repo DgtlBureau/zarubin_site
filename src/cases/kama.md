@@ -1,8 +1,8 @@
 ---
-title: 'Interactive 3D Stand for Automotive'
+title: 'AI-Enhanced Automotive Showroom Experience'
 name: 'Kama'
-description: 'Stand for Automotive Gamified Unity-based software to showcase electric vehicle technologies at exhibitions.'
-industries: ['Automotive', 'Mobile development']
+description: 'Gamified Unity-based software with intelligent UX adaptation to showcase electric vehicle technologies at exhibitions.'
+industries: ['Automotive', 'Mobile development', 'AI & Data Science']
 type: 'Automotive'
 tag: 'Atom'
 instruments: ['python', 'unity']

@@ -1,7 +1,7 @@
 ---
-title: 'High-Load Backend & Integrations'
+title: 'Smart Fan Engagement Platform'
 name: 'Sports Event Digital Platform'
-description: 'PI-integrated web platform for a major street football event to drive user engagement.'
+description: 'API-integrated web platform with ML analytics for street football events, driving intelligent user engagement and loyalty.'
 industries: ['Sports', 'Web development', 'API Development']
 type: 'SPORTS'
 tag: 't-bank'

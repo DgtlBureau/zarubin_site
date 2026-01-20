@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cases Showcase - 3 Scenarios</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f8f9fa;
+      color: #1a1a2e;
+      line-height: 1.5;
+    }
+
+    .scenario {
+      padding: 60px 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .scenario:nth-child(even) {
+      background: #fff;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .scenario-label {
+      display: inline-block;
+      background: #6366f1;
+      color: white;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .scenario-title {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .scenario-desc {
+      color: #6b7280;
+      margin-bottom: 40px;
+      max-width: 600px;
+    }
+
+    /* ========================================
+       SCENARIO 1: Featured Case Banner
+       ======================================== */
+    .featured-case {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .featured-case-image {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 16/10;
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    }
+
+    .featured-case-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.8;
+    }
+
+    .featured-case-badge {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #f59e0b;
+      color: #1a1a2e;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 6px;
+      text-transform: uppercase;
+    }
+
+    .featured-case-content h3 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .featured-case-content p {
+      color: #6b7280;
+      font-size: 16px;
+      margin-bottom: 24px;
+      line-height: 1.7;
+    }
+
+    .featured-case-stats {
+      display: flex;
+      gap: 32px;
+      margin-bottom: 28px;
+    }
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stat-value {
+      font-size: 28px;
+      font-weight: 700;
+      color: #6366f1;
+    }
+
+    .stat-label {
+      font-size: 13px;
+      color: #9ca3af;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #1a1a2e;
+      color: white;
+      padding: 14px 24px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .btn-primary:hover {
+      background: #2d2d44;
+      transform: translateY(-2px);
+    }
+
+    /* ========================================
+       SCENARIO 2: Cases Grid with Filters
+       ======================================== */
+    .cases-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+
+    .cases-header h2 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .filter-tabs {
+      display: flex;
+      gap: 8px;
+    }
+
+    .filter-tab {
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 500;
+      background: transparent;
+      border: 1px solid #e5e7eb;
+      color: #6b7280;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .filter-tab.active {
+      background: #1a1a2e;
+      border-color: #1a1a2e;
+      color: white;
+    }
+
+    .filter-tab:hover:not(.active) {
+      border-color: #9ca3af;
+    }
+
+    .cases-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .case-card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid #e5e7eb;
+      transition: all 0.3s;
+    }
+
+    .case-card:hover {
+      box-shadow: 0 20px 40px -12px rgba(0,0,0,0.1);
+      transform: translateY(-4px);
+      border-color: transparent;
+    }
+
+    .case-card-image {
+      height: 180px;
+      background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .case-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .case-card-tag {
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      background: rgba(255,255,255,0.95);
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      color: #1a1a2e;
+    }
+
+    .case-card-content {
+      padding: 20px;
+    }
+
+    .case-card-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .case-card-excerpt {
+      font-size: 13px;
+      color: #6b7280;
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+
+    .case-card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .case-card-client {
+      font-size: 12px;
+      color: #9ca3af;
+    }
+
+    .case-card-link {
+      font-size: 13px;
+      font-weight: 600;
+      color: #6366f1;
+      text-decoration: none;
+    }
+
+    .case-card-link:hover {
+      text-decoration: underline;
+    }
+
+    /* ========================================
+       SCENARIO 3: Horizontal Scrolling Cases
+       ======================================== */
+    .cases-scroll-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 32px;
+    }
+
+    .cases-scroll-header h2 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .cases-scroll-header p {
+      color: #6b7280;
+      font-size: 14px;
+      margin-top: 4px;
+    }
+
+    .scroll-nav {
+      display: flex;
+      gap: 8px;
+    }
+
+    .scroll-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+      background: white;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      transition: all 0.2s;
+    }
+
+    .scroll-btn:hover {
+      background: #f3f4f6;
+      border-color: #d1d5db;
+    }
+
+    .cases-scroll-container {
+      display: flex;
+      gap: 24px;
+      overflow-x: auto;
+      padding-bottom: 20px;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .cases-scroll-container::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .cases-scroll-container::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 3px;
+    }
+
+    .cases-scroll-container::-webkit-scrollbar-thumb {
+      background: #c4c4c4;
+      border-radius: 3px;
+    }
+
+    .scroll-case-card {
+      flex: 0 0 380px;
+      scroll-snap-align: start;
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid #e5e7eb;
+      transition: all 0.3s;
+    }
+
+    .scroll-case-card:hover {
+      box-shadow: 0 12px 32px -8px rgba(0,0,0,0.1);
+    }
+
+    .scroll-case-image {
+      height: 200px;
+      background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+      position: relative;
+    }
+
+    .scroll-case-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .scroll-case-logo {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 48px;
+      height: 48px;
+      background: white;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 14px;
+      color: #1a1a2e;
+    }
+
+    .scroll-case-content {
+      padding: 24px;
+    }
+
+    .scroll-case-industry {
+      font-size: 11px;
+      font-weight: 600;
+      color: #6366f1;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+
+    .scroll-case-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    .scroll-case-result {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px;
+      background: #f8fafc;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+
+    .result-icon {
+      width: 36px;
+      height: 36px;
+      background: #dcfce7;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #16a34a;
+      font-size: 18px;
+    }
+
+    .result-text {
+      font-size: 13px;
+      color: #374151;
+    }
+
+    .result-text strong {
+      color: #16a34a;
+    }
+
+    .scroll-case-link {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #1a1a2e;
+      text-decoration: none;
+    }
+
+    .scroll-case-link:hover {
+      color: #6366f1;
+    }
+
+    /* ========================================
+       SCENARIO 4 (BONUS): Logo Wall + CTA
+       ======================================== */
+    .clients-section {
+      text-align: center;
+    }
+
+    .clients-section h2 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .clients-section > p {
+      color: #6b7280;
+      margin-bottom: 40px;
+    }
+
+    .logo-wall {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-bottom: 40px;
+      opacity: 0.6;
+    }
+
+    .logo-wall .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: #9ca3af;
+    }
+
+    .clients-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+      color: white;
+      padding: 16px 32px;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .clients-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px -8px rgba(99, 102, 241, 0.4);
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .featured-case {
+        grid-template-columns: 1fr;
+      }
+
+      .cases-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .cases-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .filter-tabs {
+        overflow-x: auto;
+        padding-bottom: 8px;
+      }
+
+      .scroll-case-card {
+        flex: 0 0 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SCENARIO 1: Featured Case Banner -->
+  <section class="scenario">
+    <div class="container">
+      <span class="scenario-label">Scenario 1</span>
+      <h1 class="scenario-title">Featured Case Banner</h1>
+      <p class="scenario-desc">Highlight your best case with full details, stats, and a prominent CTA. Place below hero or expertise section.</p>
+
+      <div class="featured-case">
+        <div class="featured-case-image">
+          <div class="featured-case-badge">Featured Case</div>
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800" alt="Dashboard">
+        </div>
+        <div class="featured-case-content">
+          <h3>ML-Powered Fan Engagement Platform for FC Dynamo</h3>
+          <p>We built a comprehensive CRM and engagement system that transformed how FC Dynamo connects with their 2M+ fanbase. The platform uses predictive analytics to personalize content and offers.</p>
+
+          <div class="featured-case-stats">
+            <div class="stat">
+              <span class="stat-value">+340%</span>
+              <span class="stat-label">Fan engagement</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">2.1M</span>
+              <span class="stat-label">Active users</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">+89%</span>
+              <span class="stat-label">Ticket sales</span>
+            </div>
+          </div>
+
+          <a href="#" class="btn-primary">
+            View Full Case Study
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCENARIO 2: Cases Grid with Filters -->
+  <section class="scenario">
+    <div class="container">
+      <span class="scenario-label">Scenario 2</span>
+      <h1 class="scenario-title">Cases Grid with Industry Filters</h1>
+      <p class="scenario-desc">Show multiple cases organized by industry. Users can filter to find relevant examples.</p>
+
+      <div class="cases-header">
+        <h2>Our Work</h2>
+        <div class="filter-tabs">
+          <button class="filter-tab active">All</button>
+          <button class="filter-tab">Sports</button>
+          <button class="filter-tab">Fintech</button>
+          <button class="filter-tab">Enterprise</button>
+          <button class="filter-tab">Healthcare</button>
+        </div>
+      </div>
+
+      <div class="cases-grid">
+        <div class="case-card">
+          <div class="case-card-image">
+            <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600" alt="Sports">
+            <span class="case-card-tag">Sports Tech</span>
+          </div>
+          <div class="case-card-content">
+            <h3 class="case-card-title">FC Dynamo Fan Engagement Platform</h3>
+            <p class="case-card-excerpt">ML-powered CRM with predictive analytics for personalized fan experiences.</p>
+            <div class="case-card-meta">
+              <span class="case-card-client">FC Dynamo Moscow</span>
+              <a href="#" class="case-card-link">View case &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-card">
+          <div class="case-card-image">
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600" alt="Fintech">
+            <span class="case-card-tag">Fintech</span>
+          </div>
+          <div class="case-card-content">
+            <h3 class="case-card-title">JediPay Payment Processing System</h3>
+            <p class="case-card-excerpt">High-load payment gateway handling 50K+ transactions per minute.</p>
+            <div class="case-card-meta">
+              <span class="case-card-client">JediPay</span>
+              <a href="#" class="case-card-link">View case &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-card">
+          <div class="case-card-image">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600" alt="Enterprise">
+            <span class="case-card-tag">Enterprise</span>
+          </div>
+          <div class="case-card-content">
+            <h3 class="case-card-title">Grid Capital Trading Platform</h3>
+            <p class="case-card-excerpt">Real-time analytics dashboard for investment portfolio management.</p>
+            <div class="case-card-meta">
+              <span class="case-card-client">Grid Capital</span>
+              <a href="#" class="case-card-link">View case &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCENARIO 3: Horizontal Scrolling Cases -->
+  <section class="scenario">
+    <div class="container">
+      <span class="scenario-label">Scenario 3</span>
+      <h1 class="scenario-title">Horizontal Scroll with Results</h1>
+      <p class="scenario-desc">Showcase cases with key results highlighted. Great for social proof and quick scanning.</p>
+
+      <div class="cases-scroll-header">
+        <div>
+          <h2>Success Stories</h2>
+          <p>Real results from real projects</p>
+        </div>
+        <div class="scroll-nav">
+          <button class="scroll-btn">&larr;</button>
+          <button class="scroll-btn">&rarr;</button>
+        </div>
+      </div>
+
+      <div class="cases-scroll-container">
+        <div class="scroll-case-card">
+          <div class="scroll-case-image">
+            <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600" alt="Sports">
+            <div class="scroll-case-logo">FCD</div>
+          </div>
+          <div class="scroll-case-content">
+            <div class="scroll-case-industry">Sports Tech</div>
+            <h3 class="scroll-case-title">Fan Engagement Platform for FC Dynamo</h3>
+            <div class="scroll-case-result">
+              <div class="result-icon">&#8593;</div>
+              <div class="result-text"><strong>+340%</strong> increase in fan engagement within 6 months</div>
+            </div>
+            <a href="#" class="scroll-case-link">
+              Read case study <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="scroll-case-card">
+          <div class="scroll-case-image">
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600" alt="Fintech">
+            <div class="scroll-case-logo">JP</div>
+          </div>
+          <div class="scroll-case-content">
+            <div class="scroll-case-industry">Fintech</div>
+            <h3 class="scroll-case-title">High-Load Payment Gateway</h3>
+            <div class="scroll-case-result">
+              <div class="result-icon">&#8593;</div>
+              <div class="result-text"><strong>50K TPS</strong> processed with 99.99% uptime</div>
+            </div>
+            <a href="#" class="scroll-case-link">
+              Read case study <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="scroll-case-card">
+          <div class="scroll-case-image">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600" alt="Enterprise">
+            <div class="scroll-case-logo">GC</div>
+          </div>
+          <div class="scroll-case-content">
+            <div class="scroll-case-industry">Enterprise</div>
+            <h3 class="scroll-case-title">Real-Time Trading Dashboard</h3>
+            <div class="scroll-case-result">
+              <div class="result-icon">&#8593;</div>
+              <div class="result-text"><strong>-65%</strong> decision-making time reduced</div>
+            </div>
+            <a href="#" class="scroll-case-link">
+              Read case study <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="scroll-case-card">
+          <div class="scroll-case-image">
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600" alt="Healthcare">
+            <div class="scroll-case-logo">OZ</div>
+          </div>
+          <div class="scroll-case-content">
+            <div class="scroll-case-industry">Healthcare</div>
+            <h3 class="scroll-case-title">AI-Powered Medical Scheduling</h3>
+            <div class="scroll-case-result">
+              <div class="result-icon">&#8593;</div>
+              <div class="result-text"><strong>+45%</strong> appointment efficiency improved</div>
+            </div>
+            <a href="#" class="scroll-case-link">
+              Read case study <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCENARIO 4 (BONUS): Logo Wall + CTA -->
+  <section class="scenario">
+    <div class="container">
+      <span class="scenario-label">Bonus: Scenario 4</span>
+      <h1 class="scenario-title">Client Logo Wall + CTA</h1>
+      <p class="scenario-desc">Simple social proof with client logos and a strong call-to-action to view all cases.</p>
+
+      <div class="clients-section">
+        <h2>Trusted by Industry Leaders</h2>
+        <p>We've helped companies across sports, fintech, and enterprise achieve measurable results</p>
+
+        <div class="logo-wall">
+          <span class="logo">FC Dynamo</span>
+          <span class="logo">JediPay</span>
+          <span class="logo">Grid Capital</span>
+          <span class="logo">T-Bank</span>
+          <span class="logo">Oasis</span>
+          <span class="logo">Torpedo</span>
+        </div>
+
+        <a href="#" class="clients-cta">
+          View All Case Studies
+          <span>&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

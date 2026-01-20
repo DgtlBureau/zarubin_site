@@ -12,68 +12,31 @@ interface IFooters {
 export const footerLinks: IFooters[] = [
   {
     id: 1,
-    title: 'Instruments',
+    title: 'Directions',
     links: [
       {
-        name: 'API integrations',
-        link: 'https://thebrightbyte.com/playbook/expertise/zappier-vs-uipath',
+        name: 'CRM Development',
+        link: '/playbook/expertise/The-best-CRM',
       },
       {
-        name: 'API development',
-        link: 'https://thebrightbyte.com/playbook/expertise/AI-Powered-HVAC-Ticketing',
+        name: 'Mobile App Development',
+        link: '/playbook/expertise/flutter-vs-react-native',
       },
       {
-        name: 'Workflow management',
-        link: 'https://thebrightbyte.com/playbook/expertise/shift-planning-and-staff-scheduling',
+        name: 'RAG Systems',
+        link: '/playbook/expertise/AI-Powered-HVAC-Ticketing',
       },
       {
-        name: 'CRM software',
-        link: 'https://thebrightbyte.com/playbook/expertise/The-best-CRM',
+        name: 'AI Agents',
+        link: '/playbook/expertise/regfo-ai-compliance-automation',
       },
       {
-        name: 'CRM Integrations',
-        link: 'https://thebrightbyte.com/playbook/expertise/SAP-vs-Manzana',
+        name: 'Fine-tuning & ML',
+        link: '/playbook/expertise/generative-ai-for-learning',
       },
       {
-        name: 'CDP software',
-        link: 'https://thebrightbyte.com/playbook/expertise/stadium-management-system',
-      },
-      {
-        name: 'Zoho CRM',
-        link: 'https://thebrightbyte.com/playbook/expertise/The-best-CRM',
-      },
-      { name: 'Bitrix24 CRM', link: '' },
-      {
-        name: 'HubSpot CRM',
-        link: 'https://thebrightbyte.com/playbook/expertise/The-best-CRM',
-      },
-      {
-        name: 'GoHighLevel CRM',
-        link: 'https://thebrightbyte.com/playbook/insights/how-to-choose-a-crm',
-      },
-      {
-        name: 'Mobile app development',
-        link: 'https://thebrightbyte.com/playbook/expertise/flutter-vs-react-native',
-      },
-      {
-        name: 'Backend development',
-        link: 'https://thebrightbyte.com/playbook/expertise/All-fintech-is-about-c-sharp',
-      },
-      {
-        name: 'Flutter development',
-        link: 'https://thebrightbyte.com/playbook/expertise/flutter-app-taxi',
-      },
-      {
-        name: 'IT Consulting',
-        link: 'https://thebrightbyte.com/playbook/expertise/Developers-Rates-2024',
-      },
-      {
-        name: 'DevOps services',
-        link: 'https://thebrightbyte.com/playbook/expertise/Why-do-we-need-Dev-Ops',
-      },
-      {
-        name: 'AI Development',
-        link: 'https://thebrightbyte.com/playbook/expertise/AI-Powered-HVAC-Ticketing',
+        name: 'API Integrations',
+        link: '/playbook/expertise/zappier-vs-uipath',
       },
     ],
   },
@@ -81,131 +44,114 @@ export const footerLinks: IFooters[] = [
     id: 2,
     title: 'Industries',
     links: [
-      { name: 'Finance', link: 'https://thebrightbyte.com/cases/jedipay' },
-      { name: 'HVAC', link: 'https://thebrightbyte.com/cases/personiway' },
-      {
-        name: 'Sports & Entertainment',
-        link: 'https://thebrightbyte.com/cases/avangard',
-      },
-      { name: 'Automotive', link: 'https://thebrightbyte.com/cases/kama' },
-      {
-        name: 'Business',
-        link: 'https://thebrightbyte.com/cases/nashe_zoloto',
-      },
-      { name: 'Oil&Gas', link: 'https://thebrightbyte.com/cases/nis' },
-      {
-        name: 'Service and Hospitality',
-        link: 'https://thebrightbyte.com/cases/lux_today',
-      },
+      { name: 'Finance & Fintech', link: '/cases/jedipay' },
+      { name: 'HVAC & Field Service', link: '/cases/personiway' },
+      { name: 'Sports & Entertainment', link: '/cases/avangard' },
+      { name: 'Automotive', link: '/cases/kama' },
+      { name: 'Enterprise & B2B', link: '/cases/oazis' },
+      { name: 'Oil & Gas', link: '/cases/nis' },
+      { name: 'Hospitality', link: '/cases/lux_today' },
     ],
   },
   {
     id: 3,
     title: 'Cases',
     links: [
-      { name: 'FieldOps', link: 'https://thebrightbyte.com/cases/personiway' },
-      { name: 'SmartTV', link: 'https://thebrightbyte.com/cases/tv-start' },
-      {
-        name: 'Custom Development',
-        link: 'https://thebrightbyte.com/cases/fcdm',
-      },
-      {
-        name: 'Business Process Management',
-        link: 'https://thebrightbyte.com/cases/oazis',
-      },
-      {
-        name: 'Mobile App',
-        link: 'https://thebrightbyte.com/cases/stocks_soccer',
-      },
-      {
-        name: 'IT Consulting',
-        link: 'https://thebrightbyte.com/cases/grid_capital',
-      },
+      { name: 'AI Workforce Management', link: '/cases/oazis' },
+      { name: 'RAG-Powered Field Ops', link: '/cases/personiway' },
+      { name: 'Sports CRM Platform', link: '/cases/avangard' },
+      { name: 'Custom Development', link: '/cases/fcdm' },
+      { name: 'Mobile App', link: '/cases/stocks_soccer' },
+      { name: 'IT Consulting', link: '/cases/grid_capital' },
     ],
   },
   {
     id: 4,
-    title: 'Sport Insights',
+    title: 'Latest Articles',
     links: [
-       {
-        name: 'How CRM helps increase ticket and season ticket sales',
-        link: 'https://thebrightbyte.com/playbook/expertise/How_CRM_helps_increase_ticket',
+      {
+        name: 'Why Your CTO Is Lying About AI',
+        link: '/playbook/insights/why-your-cto-is-lying-about-ai',
       },
       {
-        name: 'Top 5 mistakes when implementing CRM in a sports organization',
-        link: 'https://thebrightbyte.com/playbook/expertise/Top_5_mistakes_when_implementing_CRM',
-      },
-       {
-        name: 'Choosing a CRM for Your Sports Club: The Essential Checklist',
-        link: 'https://thebrightbyte.com/playbook/expertise/How_to_choose_a_CRM_for_a_sports_club',
+        name: 'AI Models War 2026',
+        link: '/playbook/insights/ai-models-war-2025-who-is-winning',
       },
       {
-        name: 'CRM "Tribune" for Fast Business Solutions',
-        link: 'https://thebrightbyte.com/playbook/expertise/How-to-use-data-from-the-Tribune-sports-CRM',
+        name: 'AI for Real-Time Coaching',
+        link: '/playbook/expertise/ai-transforming-real-time-coaching',
       },
       {
-        name: 'Top 5 Best CRM Systems for Sport Clubs and Stadiums',
-        link: 'https://thebrightbyte.com/playbook/expertise/The-best-CRM',
+        name: 'Why Low-Code Became a Trap',
+        link: '/playbook/expertise/why-low-code-became-a-trap-2025',
       },
       {
-        name: 'All about Stadium Management Systems',
-        link: 'https://thebrightbyte.com/playbook/expertise/stadium-management-system',
+        name: 'Building Projects That Scale',
+        link: '/playbook/expertise/building-projects-that-scale',
       },
       {
-        name: 'SAP vs. Manzana',
-        link: 'https://thebrightbyte.com/playbook/expertise/SAP-vs-Manzana',
-      },
-      {
-        name: 'Loyalty programmes in NHL club mobile apps',
-        link: 'https://thebrightbyte.com/playbook/expertise/loyalty-programmes-in-nhl-club-mobile-apps',
+        name: 'Regfo: AI Compliance Automation',
+        link: '/playbook/expertise/regfo-ai-compliance-automation',
       },
     ],
   },
   {
     id: 5,
-    title: 'Administrative Insights',
+    title: 'Sport CRM',
     links: [
       {
-        name: 'The Future of Field Service: AI, Drawings, and a Changing Workforce',
-        link: 'https://thebrightbyte.com/playbook/expertise/Future-of-FieldOps-PersoniWay',
+        name: 'CRM for Ticket Sales',
+        link: '/playbook/expertise/How_CRM_helps_increase_ticket',
       },
       {
-        name: 'Revolutionizing HVAC Troubleshooting with AI-Assistants',
-        link: 'https://thebrightbyte.com/playbook/expertise/Revolutionizing-HVAC-Troubleshooting-with-AI-Assistants',
+        name: 'CRM Implementation Mistakes',
+        link: '/playbook/expertise/Top_5_mistakes_when_implementing_CRM',
       },
       {
-        name: 'Food Services and Facility Management System',
-        link: 'https://thebrightbyte.com/playbook/expertise/food-services-and-facility-management-system',
+        name: 'Choosing Club CRM',
+        link: '/playbook/expertise/How_to_choose_a_CRM_for_a_sports_club',
       },
       {
-        name: 'Shift planning and staff scheduling',
-        link: 'https://thebrightbyte.com/playbook/expertise/shift-planning-and-staff-scheduling',
+        name: 'Best CRM Systems',
+        link: '/playbook/expertise/The-best-CRM',
+      },
+      {
+        name: 'Stadium Management',
+        link: '/playbook/expertise/stadium-management-system',
+      },
+      {
+        name: 'NHL App Loyalty',
+        link: '/playbook/expertise/loyalty-programmes-in-nhl-club-mobile-apps',
       },
     ],
   },
   {
     id: 6,
-    title: 'IT Service Insights',
+    title: 'AI & Development',
     links: [
       {
-        name: 'AI Powered HVAC Ticketing',
-        link: 'https://thebrightbyte.com/playbook/expertise/AI-Powered-HVAC-Ticketing',
+        name: 'AI-Powered Ticketing',
+        link: '/playbook/expertise/AI-Powered-HVAC-Ticketing',
       },
       {
-        name: 'Flutter Vs React Native',
-        link: 'https://thebrightbyte.com/playbook/expertise/flutter-vs-react-native',
+        name: 'Flutter vs React Native',
+        link: '/playbook/expertise/flutter-vs-react-native',
       },
       {
-        name: 'Why Do We Need Dev Ops',
-        link: 'https://thebrightbyte.com/playbook/expertise/Why-do-we-need-Dev-Ops',
+        name: 'DevOps Services',
+        link: '/playbook/expertise/Why-do-we-need-Dev-Ops',
       },
       {
-        name: 'Generative AI For Learning',
-        link: 'https://thebrightbyte.com/playbook/expertise/generative-ai-for-learning',
+        name: 'AI for Learning',
+        link: '/playbook/expertise/generative-ai-for-learning',
       },
       {
-        name: 'Developers Rates 2024',
-        link: 'https://thebrightbyte.com/playbook/expertise/Developers-Rates-2024',
+        name: 'Developer Rates 2024',
+        link: '/playbook/expertise/Developers-Rates-2024',
+      },
+      {
+        name: 'C# for Fintech',
+        link: '/playbook/expertise/All-fintech-is-about-c-sharp',
       },
     ],
   },

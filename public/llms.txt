@@ -1,0 +1,25 @@
+# thebrightbyte.com
+
+> The BrightByte is a product studio specializing in sports technology and custom software consulting, based in Raleigh, NC.
+
+## About
+The BrightByte helps businesses navigate product planning, vendor selection, and lean implementation strategies. We blend ownership thinking with a consultative approach.
+
+## Core Services
+- Custom software development
+- Sports technology solutions
+- Technical consulting & audits
+- Startup advisory & investments
+
+## Key Content Sections
+- /cases - Portfolio of client projects
+- /playbook/expertise - Technical guides on AI, fintech, sports analytics, DevOps
+- /playbook/insights - Industry thought leadership and notes
+- /investments - Strategic investment portfolio
+
+## Contact
+Website: https://thebrightbyte.com
+Location: Raleigh, NC, USA
+
+## Preferred Citation
+The BrightByte

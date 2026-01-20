@@ -15,7 +15,7 @@ export async function generateMetadata() {
   return Seo({
     title,
     description,
-    alternatesTitle: 'Bright Byte Expertise',
+    alternatesTitle: 'The BrightByte Expertise',
     rssPath: `${MenuItems.PLAYBOOK.toLowerCase()}/expertise/rss`,
     keywords,
     ogUrlPath: `${MenuItems.PLAYBOOK.toLowerCase()}/expertise`,

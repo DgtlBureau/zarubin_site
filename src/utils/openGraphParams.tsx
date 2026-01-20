@@ -3,7 +3,7 @@ export const openGraphImage = (
   alt?: string | undefined,
 ) => {
   return {
-    images: [{ url: imagePath || '/assets/images/info/default_logo.png' }],
+    images: [{ url: imagePath || '/assets/images/info/default_image.jpg' }],
     alt: alt || 'The BrightByte - Consulting and advisory',
   };
 };

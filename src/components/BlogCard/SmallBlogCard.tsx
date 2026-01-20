@@ -55,16 +55,16 @@ export const SmallBlogCard = ({
             ))}
           </div>
         </div>
-        <div className='flex h-[360px] w-full flex-1 flex-col items-stretch rounded-b-[5px] bg-card-bg px-[20px] py-[40px] tablet:px-[40px]'>
+        <div className='flex h-[260px] w-full flex-1 flex-col items-stretch rounded-b-[5px] bg-card-bg px-[20px] py-[24px] tablet:px-[30px] tablet:py-[28px]'>
           <NextLinePreposition
             tag='h3'
             text={title}
-            className='mt-[25px] line-clamp-3 overflow-hidden font-unbound text-[18px] font-bold uppercase leading-[1] text-text-dark duration-300 group-hover:underline tablet:text-[24px] tablet:leading-[1.16]'
+            className='mt-[12px] line-clamp-3 overflow-hidden font-proxima text-[16px] font-bold leading-[1.25] text-text-dark duration-300 group-hover:underline tablet:text-[18px]'
           />
           <NextLinePreposition
             tag='p'
             text={description}
-            className='mb-auto mt-[19px] line-clamp-3 overflow-hidden overflow-hidden font-proxima text-[16px] leading-[1.25] text-text-dark/60 tablet:text-[20px]'
+            className='mb-auto mt-[12px] line-clamp-2 overflow-hidden font-proxima text-[14px] leading-[1.4] text-text-dark/60 tablet:text-[16px]'
           />
           {date && (
             <span className='mt-[14px] text-text-dark/60'>{formatDate}</span>

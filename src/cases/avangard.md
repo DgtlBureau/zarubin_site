@@ -1,8 +1,8 @@
 ---
-title: 'Mobile App & Fan Reward program'
+title: 'AI-Enhanced Fan Engagement Platform'
 name: 'Hockey Club «Avangard»'
-description: 'Native mobile application integrated with a CRM system to enhance fan experience, streamline ticketing, and manage loyalty rewards.'
-industries: ['Sports', 'CRM', 'Mobile development']
+description: 'Native mobile application with ML-powered recommendations, CRM integration, and intelligent loyalty rewards for personalized fan experience.'
+industries: ['Sports', 'CRM', 'Mobile development', 'AI & Data Science']
 type: 'SPORTS'
 tag: 'Avangard'
 instruments: ['flutter', 'laravel', 'triboom', 'react']

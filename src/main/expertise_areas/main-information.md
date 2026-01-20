@@ -1,5 +1,5 @@
 ---
-title: 'BrightByte provides consulting services, outsourced development, IT audits, and information security expertise.'
+title: 'The BrightByte delivers AI-powered solutions, ML integrations, RAG systems, and intelligent automation for enterprise.'
 description: ''
 logo: ''
 link: 'cases'

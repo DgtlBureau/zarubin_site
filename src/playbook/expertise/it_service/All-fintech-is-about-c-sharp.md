@@ -5,7 +5,7 @@ image: '/assets/images/expertise/it_service/terminal-banner.webp'
 date: '28-10-2024'
 readingTime: '10 min'
 category: 'Expertise'
-subCategory: 'It Service'
+subCategory: 'IT Service'
 tag: 'fintech trading terminals, c# development, c# in fintech, trading software c#'
 authorName: 'Vitaliy Zarubin'
 authorImage: '/assets/images/author/avatar.png'
@@ -73,4 +73,4 @@ The popularity of C# in fintech has fostered a large community of developers spe
 
 In the fintech industry, where speed, reliability and scalability are non-negotiable, C# development has emerged as the leading choice for building trading terminals. Its performance, cross-platform capabilities, scalability, and robust security features make it an ideal language for developing the complex software that powers financial trading platforms. As fintech continues to evolve, C# is likely to remain an option for creating high performance, secure and scalable trading solutions.
 
-The Bright Byte is a company of modern developers and architects, recognised for our excellence in IT and with extensive experience in enterprise systems. We specialise in creating robust, scalable business processes through automation. Let us guide you through the complexities of automation services such as UIPath and Zapier to ensure your workflows are efficient, scalable and tailored to your specific needs.
+The BrightByte is a company of modern developers and architects, recognised for our excellence in IT and with extensive experience in enterprise systems. We specialise in creating robust, scalable business processes through automation. Let us guide you through the complexities of automation services such as UIPath and Zapier to ensure your workflows are efficient, scalable and tailored to your specific needs.

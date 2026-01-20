@@ -41,7 +41,7 @@ export const NewFeedbackClient = ({ feedback }: Props) => {
             <h2 className='section-headings font-unbound font-bold uppercase  leading-[1.25] tablet:leading-[1.2] desktop:leading-[1.1]'>
               {`${sectionsTitle['main']['feedback'].title}`}
             </h2>
-            <p className='font-proxima text-[18px] font-bold leading-[1.1] text-light-gray tablet:text-[20px] tablet:leading-[1.2] desktop:leading-[1]'>
+            <p className='font-proxima text-[14px] font-bold leading-[1.2] text-light-gray tablet:text-[16px] tablet:leading-[1.2] desktop:leading-[1]'>
               {`${sectionsTitle['main']['feedback'].descripton}`}
             </p>
           </div>
