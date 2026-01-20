@@ -277,10 +277,10 @@ const FeedbackForm = () => {
     <div className="bg-gradient-to-br from-regfo-primary to-regfo-secondary rounded-xl p-6 md:p-8 text-white">
       <div className="max-w-2xl mx-auto">
         <h3 className="typo-h2 text-white mb-2 text-center">
-          Your journey to compliance friendly software starts here
+          Build Compliance-Ready Software with Expert Guidance
         </h3>
         <p className="typo-body text-white/80 mb-6 text-center">
-          Get expert guidance on SOC 2 certification and GDPR compliance from our team of specialists
+          Our team helps fast-moving companies implement practical SOC 2 and GDPR compliance systems that scale with your business
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -336,7 +336,7 @@ const FeedbackForm = () => {
               'Sending...'
             ) : (
               <>
-                Get Expert Help
+                Schedule a Free Consultation
                 <Send className="w-5 h-5" />
               </>
             )}
@@ -344,7 +344,7 @@ const FeedbackForm = () => {
         </form>
 
         <p className="typo-caption text-white/60 text-center mt-4">
-          No spam. We&apos;ll only reach out about your compliance assessment.
+          Free consultation. No commitment required.
         </p>
       </div>
     </div>

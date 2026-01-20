@@ -232,6 +232,7 @@ export default function AssessmentPage() {
   const [showHelp, setShowHelp] = useState(false);
   const [stage, setStage] = useState<'quick' | 'preview' | 'full'>('quick');
   const [quickResult, setQuickResult] = useState<QuickResult | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   // Get current question based on stage
   const getCurrentQuestions = () => {
@@ -342,6 +343,7 @@ export default function AssessmentPage() {
 
   // View quick results
   const handleViewQuickResults = () => {
+    setIsLoading(true);
     const result = calculateAssessmentResult(answers, true);
     localStorage.setItem('complianceAssessmentResult', JSON.stringify(result));
     localStorage.setItem(
@@ -353,6 +355,7 @@ export default function AssessmentPage() {
 
   // Complete full assessment
   const handleComplete = () => {
+    setIsLoading(true);
     const result = calculateAssessmentResult(answers, false);
     localStorage.setItem('complianceAssessmentResult', JSON.stringify(result));
     localStorage.setItem(
@@ -377,6 +380,19 @@ export default function AssessmentPage() {
         return 'border-slate-200 bg-white hover:bg-slate-50';
     }
   };
+
+  // Loading overlay
+  if (isLoading) {
+    return (
+      <div className="fixed inset-0 bg-white/90 backdrop-blur-sm z-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="w-16 h-16 border-4 border-regfo-primary border-t-transparent rounded-full animate-spin mx-auto mb-4" />
+          <p className="typo-h4 text-regfo-dark mb-2">Preparing Your Results</p>
+          <p className="typo-body-sm text-slate-500">Analyzing your compliance readiness...</p>
+        </div>
+      </div>
+    );
+  }
 
   // Show preview screen
   if (stage === 'preview' && quickResult) {
