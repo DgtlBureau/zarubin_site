@@ -4,9 +4,9 @@
 
 500+ agencies claim "AI development." They all have the same website. Same buzzwords. Same vague promises about "transforming your business with AI."
 
-Here's what they actually deliver: ChatGPT wrappers, $50K consulting decks, and projects that fail audits.
+Here's what they actually deliver: ChatGPT wrappers, $50K consulting decks, and systems that collapse under first compliance audit.
 
-We do something different. We build AI that passes compliance checks. RAG systems with cryptographic evidence trails. Field service bots that actually reduce call volume by 40%.
+We do something different. We build compliance-friendly AI. KYC automation that regulators approve. Onboarding flows with proper identity verification. Secure infrastructure that handles sensitive data without leaking it.
 
 This SEO strategy exists to make that difference visible.
 
@@ -23,10 +23,10 @@ This SEO strategy exists to make that difference visible.
 
 ## What We're Doing Instead
 
-✅ Owning "compliance-grade AI" (regulatory tech, audit-ready systems)
-✅ Specific keywords: RAG, LLM integration, AI agents, compliance automation
+✅ Owning "compliance-friendly AI" (KYC, onboarding, regulated industries)
+✅ Specific keywords: KYC automation, secure infrastructure, compliance AI
 ✅ Honest tagging (AI only where AI exists)
-✅ Skeptical voice that cuts through industry BS
+✅ Focus on security and data protection
 
 ---
 
@@ -39,41 +39,51 @@ This SEO strategy exists to make that difference visible.
 Title: "The BrightByte – Sport development and Custom software consulting | Raleigh, NC"
 ```
 
-Sport software. That's the lead. In 2026. When we build RAG systems.
+Sport software. That's the lead. In 2026. When we build KYC systems and compliance AI.
 
 ### Proposed (Right)
+
+**Option A:**
 ```
-Title: "The BrightByte | AI That Passes Audits | Raleigh, NC"
+Title: "The BrightByte | Compliance-Friendly AI & Secure Infrastructure"
 ```
 
-Or more specific:
+**Option B:**
 ```
-Title: "The BrightByte | RAG Systems & Compliance AI | Custom Development"
+Title: "The BrightByte | KYC, Onboarding & AI for Regulated Industries"
+```
+
+**Option C:**
+```
+Title: "The BrightByte | Secure AI Systems for FinTech & Enterprise"
 ```
 
 ### Meta Description
 **Current:** Generic studio description. Says nothing.
 
 **Proposed:**
-> "We build AI systems that survive compliance audits. RAG, LLM integration, regulatory automation. Not wrappers. Not slide decks. Working software."
+> "Compliance-friendly AI for regulated industries. KYC automation, secure onboarding, enterprise infrastructure built for audits. FinTech, healthcare, legal tech."
 
-55 words → 150 characters. Direct. Specific. Different.
+150 characters. Direct. Specific. Different.
 
 ### Keywords
 ```typescript
 keywords: [
-  // What we actually do (verified by projects)
-  'RAG system development',
-  'Compliance AI',
-  'LLM integration services',
-  'AI agent development',
+  // Compliance & KYC
+  'Compliance-friendly AI',
+  'KYC automation',
+  'Identity verification systems',
+  'Onboarding automation',
 
-  // How we're different
-  'Audit-ready AI systems',
-  'Regulatory technology',
+  // Security & Infrastructure
+  'Secure AI infrastructure',
+  'Enterprise security systems',
+  'PCI DSS compliant development',
 
-  // Geographic
-  'AI consulting Raleigh NC',
+  // Industries
+  'FinTech AI development',
+  'RegTech solutions',
+  'Legal tech AI',
 
   // Brand
   'The BrightByte',
@@ -83,19 +93,19 @@ keywords: [
 ### Hero Message Options
 
 **Option A - Compliance Focus:**
-> "AI That Passes Audits"
+> "Compliance-Friendly AI"
 >
-> RAG systems. Compliance automation. Enterprise software that regulators actually approve.
+> KYC automation. Secure onboarding. Enterprise systems built for regulated industries.
 
-**Option B - Anti-Hype:**
-> "Not Another AI Agency"
+**Option B - Security Focus:**
+> "AI Built for Audits"
 >
-> We don't build ChatGPT wrappers. We build systems with evidence trails, vector databases, and audit logs.
+> Secure infrastructure. Identity verification. Systems that regulators actually approve.
 
-**Option C - Specific:**
-> "RAG. Agents. Compliance."
+**Option C - Industry Focus:**
+> "FinTech. RegTech. Legal Tech."
 >
-> Three things we build. Everything else is consulting theater.
+> We build AI for industries where security isn't optional.
 
 ---
 
@@ -106,32 +116,33 @@ No specific SEO. Generic case listing. 11/15 tagged "AI & Data Science" when onl
 
 ### Proposed
 ```
-Title: "AI & Software Case Studies | RAG, Compliance, CRM | The BrightByte"
-Description: "Real projects. Real metrics. PersoniWay: RAG-powered field service. Jedipay: PCI-compliant payments. No vaporware."
+Title: "Case Studies | KYC, Payments & Secure Enterprise Systems | The BrightByte"
+Description: "Real projects. Jedipay: PCI-compliant payment gateway. PersoniWay: AI field service with compliance. Enterprise CRM systems."
 ```
 
 ### Keywords
 ```
-AI case studies
-RAG implementation examples
-Compliance automation case study
-CRM implementation portfolio
-Enterprise software projects
+KYC implementation case study
+PCI DSS compliant development
+Secure payment systems
+Enterprise CRM projects
+Compliance automation examples
 ```
 
 ### Tag Restructure
 
 **Kill these tags:**
 - "AI & Data Science" (meaningless, overused)
-- "Sports" (too narrow, not differentiating)
+- Keep "Sports" only where relevant
 
-**Keep/Add:**
-- AI & RAG (only for PersoniWay)
-- CRM & Loyalty
-- API & Integrations
-- FinTech
-- Operations
-- Mobile Apps
+**New Tags (focused on compliance/security angle):**
+- **Compliance AI** (PersoniWay, Regfo-related)
+- **KYC & Payments** (Jedipay, Grid Capital)
+- **Secure Infrastructure** (high-load, PCI DSS)
+- **CRM & Loyalty** (Avangard, FCDM, Torpedo)
+- **API & Integrations**
+- **Mobile Apps**
+- **Operations & ERP** (OAZIS, NIS)
 
 ---
 
@@ -146,17 +157,17 @@ Title: "Practical Expertise in Product Thinking & Lean Digital Development"
 
 ### Proposed
 ```
-Title: "AI Development Guides | RAG, Agents, Compliance | The BrightByte"
-Description: "Technical guides from actual projects. RAG architecture. AI agent patterns. Compliance automation that works. No theory."
+Title: "Technical Guides | KYC, Compliance AI, Secure Systems | The BrightByte"
+Description: "Implementation guides for regulated industries. KYC automation, compliance AI, secure infrastructure. From actual projects."
 ```
 
 ### Keywords
 ```
-RAG development guide
-AI agent architecture
-Compliance AI implementation
-LLM integration patterns
-Vector database selection
+KYC implementation guide
+Compliance AI development
+Secure infrastructure patterns
+FinTech development guide
+RegTech implementation
 ```
 
 ---
@@ -170,17 +181,17 @@ Title: "Real-World Notes on Building Better Digital Products"
 
 ### Proposed
 ```
-Title: "AI Industry Analysis | Honest Perspectives | The BrightByte"
-Description: "We call out AI bullshit. Model comparisons, vendor red flags, and what actually works in production."
+Title: "Tech Insights | FinTech, Compliance, Security | The BrightByte"
+Description: "Honest analysis of AI in regulated industries. What works, what doesn't, and how to avoid expensive mistakes."
 ```
 
 ### Keywords
 ```
-AI industry analysis
-AI hype vs reality
-CTO AI guidance
-AI vendor evaluation
-Tech consulting insights
+FinTech insights
+Compliance technology analysis
+AI security best practices
+RegTech industry trends
+Enterprise tech perspectives
 ```
 
 ---
@@ -196,16 +207,16 @@ Poetic. But doesn't rank for anything.
 
 ### Proposed
 ```
-Title: "AI Engineering Jobs | The BrightByte | Remote-Friendly"
-Description: "Build RAG systems and compliance AI. Not slide decks. We ship working software for regulated industries."
+Title: "Engineering Jobs | FinTech & Compliance Systems | The BrightByte"
+Description: "Build KYC systems, compliance AI, secure infrastructure. For engineers who care about security and doing things right."
 ```
 
 ### Keywords
 ```
-AI engineering jobs
-RAG developer jobs
-LLM engineer careers
-Remote AI jobs
+FinTech engineering jobs
+Compliance software developer
+Security-focused developer jobs
+Remote engineering positions
 ```
 
 ---
@@ -219,8 +230,8 @@ Title: "A Different Approach to Building"
 
 ### Proposed
 ```
-Title: "The BrightByte vs AI Agencies | Why We're Different"
-Description: "Most AI agencies ship wrappers. We ship systems that pass audits. Here's the actual difference."
+Title: "The BrightByte vs Typical Agencies | Security-First Development"
+Description: "Most agencies cut corners on security. We build for audits from day one. Here's the difference."
 ```
 
 ---
@@ -233,11 +244,12 @@ These are what buyers search. Low volume, high conversion.
 
 | Keyword | Monthly Searches | Competition | Our Angle |
 |---------|-----------------|-------------|-----------|
-| RAG development company | ~320 | Low | We have PersoniWay |
-| Compliance AI solutions | ~210 | Low | We have Regfo expertise |
-| AI agent development services | ~480 | Medium | PersoniWay agents |
-| LLM integration consulting | ~720 | Medium | Claude integration experience |
-| Regulatory technology consulting | ~390 | Low | Regfo article + expertise |
+| KYC automation software | ~880 | Medium | Jedipay, FinTech experience |
+| Compliance AI solutions | ~210 | Low | Regfo expertise |
+| PCI DSS development | ~390 | Low | Jedipay payment gateway |
+| Secure onboarding system | ~260 | Low | Multiple projects |
+| FinTech software development | ~1,200 | Medium | Jedipay, Grid Capital |
+| Identity verification system | ~720 | Medium | KYC implementations |
 
 ## Tier 2: Expertise Keywords (Research Intent)
 
@@ -245,11 +257,11 @@ These build authority. Higher volume, longer conversion.
 
 | Keyword | Monthly Searches | Content Needed |
 |---------|-----------------|----------------|
-| RAG vs fine-tuning | ~1,200 | New article |
-| How to build AI agents | ~880 | New article |
+| KYC implementation best practices | ~640 | New article |
 | AI compliance automation | ~640 | Exists (Regfo) |
-| Vector database comparison | ~520 | New article |
-| LLM security best practices | ~390 | New article |
+| Secure infrastructure architecture | ~480 | New article |
+| FinTech security requirements | ~520 | New article |
+| Onboarding flow optimization | ~390 | New article |
 
 ## Tier 3: Differentiator Keywords (Brand Building)
 
@@ -257,11 +269,11 @@ Nobody owns these yet. We can.
 
 | Keyword | Why It's Ours |
 |---------|---------------|
-| Audit-ready AI | Regfo expertise |
-| Compliance-grade LLM | Unique positioning |
-| AI that passes audits | Nobody says this |
-| RAG for regulated industries | Specific niche |
-| AI vendor due diligence | Skeptical voice |
+| Compliance-friendly AI | Unique positioning |
+| KYC with AI automation | Specific niche |
+| Audit-ready infrastructure | Security focus |
+| FinTech-grade security | Enterprise angle |
+| Secure AI for regulated industries | Nobody says this well |
 
 ---
 
@@ -273,17 +285,17 @@ Nobody owns these yet. We can.
 
 ## What We Say
 
-> "We build RAG systems for field service. Compliance automation that FDA auditors accept. AI agents with evidence trails. No wrappers. No slide decks."
+> "We build compliance-friendly AI. KYC systems that pass audits. Onboarding that doesn't leak data. Secure infrastructure for FinTech, healthcare, and legal tech."
 
 ## The Voice
 
-**Skeptical.** We've seen AI projects fail. We know which ones work.
+**Security-first.** Every system we build assumes it will be audited.
 
-**Specific.** Not "AI solutions." RAG. Agents. Compliance automation.
+**Specific.** Not "AI solutions." KYC automation. PCI DSS compliance. Identity verification.
 
-**Honest.** Only 1 of our cases has real AI. We don't pretend otherwise.
+**Honest.** Only projects with real compliance work get compliance tags.
 
-**Technical but accessible.** CTOs should forward our content to their CEOs.
+**Technical but accessible.** CTOs should forward our content to their compliance officers.
 
 ---
 
@@ -293,19 +305,20 @@ Nobody owns these yet. We can.
 
 | Article | Target Keyword | Why |
 |---------|---------------|-----|
-| "RAG vs Fine-Tuning: When to Use Each" | RAG vs fine-tuning | High search, we have expertise |
-| "AI Agent Development: A Practical Guide" | AI agent development | PersoniWay proves capability |
-| "The AI Vendor Audit Checklist" | AI vendor evaluation | Matches our skeptical voice |
-| "Compliance AI That Actually Works" | Compliance AI solutions | Regfo + regulatory focus |
-| "Vector Databases: The Real Comparison" | Vector database comparison | Technical credibility |
+| "KYC Implementation: What Actually Works" | KYC automation | Jedipay experience |
+| "Building Secure Onboarding Flows" | Secure onboarding | Multiple projects |
+| "PCI DSS for Developers: The Real Guide" | PCI DSS development | Payment gateway expertise |
+| "Compliance AI That Auditors Accept" | Compliance AI solutions | Regfo + regulatory focus |
+| "FinTech Security Architecture" | FinTech security | Technical credibility |
+| "Identity Verification Systems: Build vs Buy" | Identity verification | Practical guidance |
 
 ## Existing Content to Optimize
 
 | Article | Current State | Optimization |
 |---------|--------------|--------------|
-| Regfo compliance automation | Great content | Add internal links, case connection |
-| "Why Your CTO Is Lying About AI" | Strong voice | Add AI audit checklist |
-| HVAC AI ticketing | Good technical | Link to PersoniWay case |
+| Regfo compliance automation | Great content | Add KYC keywords, link to Jedipay |
+| Essential KYC for mobile fintech apps | Good foundation | Expand, add implementation details |
+| "Why Your CTO Is Lying About AI" | Strong voice | Add compliance audit checklist |
 
 ---
 
@@ -315,26 +328,26 @@ Nobody owns these yet. We can.
 
 | Page | Title | Description |
 |------|-------|-------------|
-| **Home** | The BrightByte \| AI That Passes Audits \| Raleigh, NC | We build AI systems that survive compliance audits. RAG, LLM integration, regulatory automation. Working software, not slide decks. |
-| **Cases** | AI & Software Case Studies \| RAG, Compliance, CRM | Real projects with real metrics. RAG-powered field service, PCI-compliant payments, enterprise CRM systems. |
-| **Expertise** | AI Development Guides \| RAG, Agents, Compliance | Technical guides from actual projects. RAG architecture, AI agent patterns, compliance automation. |
-| **Insights** | AI Industry Analysis \| Honest Tech Perspectives | We call out AI bullshit. Model comparisons, vendor red flags, and what actually works. |
-| **Career** | AI Engineering Jobs \| The BrightByte \| Remote | Build RAG systems and compliance AI. Not slide decks. Working software for regulated industries. |
-| **Comparison** | The BrightByte vs AI Agencies \| Why We're Different | Most agencies ship wrappers. We ship systems that pass audits. |
+| **Home** | The BrightByte \| Compliance-Friendly AI & Secure Infrastructure | KYC automation, secure onboarding, enterprise systems for regulated industries. FinTech, healthcare, legal tech. |
+| **Cases** | Case Studies \| KYC, Payments & Secure Systems | Real projects. PCI-compliant payment gateways, KYC automation, enterprise CRM with proper security. |
+| **Expertise** | Technical Guides \| KYC, Compliance AI, Secure Systems | Implementation guides for regulated industries. From actual projects, not theory. |
+| **Insights** | Tech Insights \| FinTech, Compliance, Security | Honest analysis for regulated industries. What works, what fails audits, how to build right. |
+| **Career** | Engineering Jobs \| FinTech & Compliance Systems | Build KYC systems and secure infrastructure. For engineers who care about doing things right. |
+| **Comparison** | The BrightByte vs Typical Agencies \| Security-First | Most agencies cut corners on security. We build for audits from day one. |
 
 ---
 
 # WHAT MAKES THIS DIFFERENT
 
-1. **Honesty over hype.** We removed fake AI tags from 10 cases.
+1. **Compliance-first positioning.** Nobody owns "compliance-friendly AI." We can.
 
-2. **Specific over generic.** "RAG development" not "AI solutions."
+2. **KYC/Onboarding focus.** Specific, high-value niche that FinTech actually needs.
 
-3. **Compliance angle.** Nobody owns "audit-ready AI." We can.
+3. **Security as differentiator.** "Secure infrastructure" sounds boring but buyers need it.
 
-4. **Skeptical voice.** Matches our content. Builds trust with burned buyers.
+4. **Regulated industries.** FinTech, healthcare, legal tech — they pay more for compliance.
 
-5. **Technical proof.** PersoniWay has real RAG. Regfo article has real depth.
+5. **Honest tagging.** Only real compliance work gets compliance tags.
 
 ---
 
@@ -342,10 +355,10 @@ Nobody owns these yet. We can.
 
 **Your approval needed on:**
 
-1. ✅ or ❌ Homepage title direction
-2. ✅ or ❌ Keyword focus (RAG, compliance, agents)
-3. ✅ or ❌ Tag restructuring approach
-4. ✅ or ❌ Voice/positioning ("AI that passes audits")
+1. ✅ or ❌ Homepage title: "Compliance-Friendly AI & Secure Infrastructure"
+2. ✅ or ❌ Keyword focus: KYC, onboarding, secure infrastructure, compliance AI
+3. ✅ or ❌ Tag restructuring: Compliance AI, KYC & Payments, Secure Infrastructure
+4. ✅ or ❌ Industry focus: FinTech, RegTech, Legal Tech
 
 Once approved, I'll implement:
 - `pageMetadata.ts` updates
@@ -355,4 +368,4 @@ Once approved, I'll implement:
 
 ---
 
-*This strategy cuts through the noise. 500 agencies say "AI." We say "RAG systems that pass FDA audits." That's the difference.*
+*500 agencies say "AI development." We say "KYC automation that passes audits." That's the difference.*
