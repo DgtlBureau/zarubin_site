@@ -18,4 +18,10 @@ export const menuListLayer = [
     name: MenuItems.COMPARISON,
     link: `/${MenuItems.COMPARISON.toLowerCase()}`,
   },
+  {
+    id: 6,
+    name: MenuItems.SOC2_ASSESSMENT,
+    link: '/regfo',
+    isHighlighted: true,
+  },
 ];

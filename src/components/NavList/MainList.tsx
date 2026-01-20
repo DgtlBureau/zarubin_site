@@ -15,6 +15,7 @@ interface List {
   id: number;
   name: string;
   link: string;
+  isHighlighted?: boolean;
 }
 
 export const MainList = ({
@@ -37,23 +38,32 @@ export const MainList = ({
           key={item.id}
           className='flex items-center justify-center gap-[10px]'
         >
-          <Link
-            href={item.link}
-            className={classNames(
-              `group relative border-b-[2px] border-transparent font-proxima leading-[1.87]`,
-              dark
-                ? 'text-[16px] text-white desktop:text-[16px]'
-                : 'text-[16px] text-[black]',
-              {
-                'border-b-[2px] !border-main-blue': pathname.startsWith(
-                  item.link,
-                ),
-              },
-            )}
-          >
-            {item.name}
-            <div className='absolute h-[2px] w-0 bg-main-blue transition-all duration-200 group-hover:w-full' />
-          </Link>
+          {item.isHighlighted ? (
+            <Link
+              href={item.link}
+              className='rounded-lg bg-gradient-to-r from-regfo-secondary to-regfo-accent px-4 py-2 font-proxima text-[14px] font-medium text-white transition-all duration-200 hover:opacity-90 hover:shadow-lg hover:shadow-regfo-secondary/25'
+            >
+              {item.name}
+            </Link>
+          ) : (
+            <Link
+              href={item.link}
+              className={classNames(
+                `group relative border-b-[2px] border-transparent font-proxima leading-[1.87]`,
+                dark
+                  ? 'text-[16px] text-white desktop:text-[16px]'
+                  : 'text-[16px] text-[black]',
+                {
+                  'border-b-[2px] !border-main-blue': pathname.startsWith(
+                    item.link,
+                  ),
+                },
+              )}
+            >
+              {item.name}
+              <div className='absolute h-[2px] w-0 bg-main-blue transition-all duration-200 group-hover:w-full' />
+            </Link>
+          )}
 
           {item.name.toLowerCase() === 'expertise' && (
             <div className='h-fit w-fit'>

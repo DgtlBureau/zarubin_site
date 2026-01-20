@@ -2,6 +2,7 @@
 
 import { DropzoneIcon } from '@/src/components/svg/DropzoneIcon';
 import { sendEmail } from '@/src/utils/sendEmail';
+import { sendTelegram, sendTelegramDocument } from '@/src/utils/sendTelegram';
 import classNames from 'classnames';
 import { useFormik } from 'formik';
 import { useCallback } from 'react';
@@ -27,30 +28,20 @@ export const Form = () => {
       await sendEmail(values.name, values.email, values.phone, '');
       resetForm();
 
-      const telegramFormData = new FormData();
-      telegramFormData.append('chat_id', '199942509');
-      telegramFormData.append(
-        'caption',
-        `Name: ${values.name}\nEmail: ${values.email}\nPhone: ${values.phone}`,
-      );
+      const caption = `Name: ${values.name}\nEmail: ${values.email}\nPhone: ${values.phone}`;
 
+      let telegramSuccess: boolean;
       if (values.cv) {
-        telegramFormData.append('document', values.cv, values.cv.name);
+        telegramSuccess = await sendTelegramDocument(values.cv, caption);
+      } else {
+        telegramSuccess = await sendTelegram(caption);
       }
 
-      const telegramResponse = await fetch(
-        'https://api.telegram.org/bot6992822983:AAHWVJuwqeVl5kscHuZwcPx5W-IPXJ7mpkk/sendDocument',
-        {
-          method: 'POST',
-          body: telegramFormData,
-        },
-      ).then((r) => r.json());
-
-      if (telegramResponse.ok) {
+      if (telegramSuccess) {
         resetForm();
         alert('Thank you! We will contact you soon');
       } else {
-        console.error('Error sending document to Telegram:', telegramResponse);
+        console.error('Error sending to Telegram');
       }
     },
   });

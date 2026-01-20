@@ -22,6 +22,8 @@ const config = {
       '/policy',
       '/investments',
       '/brief',
+      '/regfo',
+      '/regfo/assessment',
       '/playbook/expertise/rss.xml',
       '/playbook/insights/rss.xml',
       '/bonuses',

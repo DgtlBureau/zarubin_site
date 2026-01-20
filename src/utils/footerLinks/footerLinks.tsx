@@ -155,4 +155,13 @@ export const footerLinks: IFooters[] = [
       },
     ],
   },
+  {
+    id: 7,
+    title: 'Company Size',
+    links: [
+      { name: 'Startup', link: '/regfo?size=startup' },
+      { name: 'Mid-Market', link: '/regfo?size=mid-market' },
+      { name: 'Enterprise', link: '/regfo?size=enterprise' },
+    ],
+  },
 ];

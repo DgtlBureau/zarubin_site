@@ -2,6 +2,7 @@
 
 import { NextLinePreposition } from '@/src/components/NextLinePreposition/NextLinePreposition';
 import { sendEmail } from '@/src/utils/sendEmail';
+import { sendTelegram } from '@/src/utils/sendTelegram';
 import { InputMask } from '@react-input/mask';
 import { useFormik } from 'formik';
 import Link from 'next/link';
@@ -20,27 +21,15 @@ export const NewForm = () => {
       await sendEmail(values.name, values.email, values.phone, values.details);
       resetForm();
 
-      const telegramResponse = await fetch(
-        'https://api.telegram.org/bot6992822983:AAHWVJuwqeVl5kscHuZwcPx5W-IPXJ7mpkk/sendMessage',
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            chat_id: '199942509',
-            text: `
-              Name: ${values.name}\nEmail: ${values.email}\nPhone: ${values.phone}\nDetails: ${values.details}
-            `,
-          }),
-        },
-      ).then((r) => r.json());
+      const telegramSuccess = await sendTelegram(
+        `Name: ${values.name}\nEmail: ${values.email}\nPhone: ${values.phone}\nDetails: ${values.details}`
+      );
 
-      if (telegramResponse.ok) {
+      if (telegramSuccess) {
         resetForm();
         alert('Thank you! We will contact you soon');
       } else {
-        console.error('Error sending message to Telegram:', telegramResponse);
+        console.error('Error sending message to Telegram');
       }
     },
   });

@@ -51,7 +51,7 @@ export const mainBanners: IMainBanners[] = [
     tag: 'Sports Tech',
     title: 'Sport Systems and Marketing for clubs',
     description: 'Fan engagement platforms, CRM systems, and digital marketing solutions for sports organizations',
-    image: '/assets/images/info/nelson-ndongala-j9a3Y1Vd9hc-unsplash.jpg',
+    image: '/assets/images/info/nelson-ndongala-j9a3Y1Vd9hc-unsplash.webp',
     date: '14-03-2025',
     link: `/${MenuItems.CASES.toLowerCase()}`,
     linkName: MenuItems.CASES,

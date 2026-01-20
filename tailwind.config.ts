@@ -79,6 +79,14 @@ const config: Config = {
         proxima: ['var(--font-inter)', 'Inter', 'Proxima Nova', 'sans-serif'],
       },
       colors: {
+        // Regfo brand colors (compliance checker subproject)
+        regfo: {
+          primary: '#1e3a5f',
+          secondary: '#3b82f6',
+          accent: '#06b6d4',
+          light: '#f0f9ff',
+          dark: '#0f172a',
+        },
         'main-beige': '#F7F7F7',
         'main-bg': '#00030C',
         'main-blue': '#013EDF',

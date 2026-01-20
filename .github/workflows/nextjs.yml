@@ -47,6 +47,8 @@ jobs:
           cat .env.example | envsubst > .env
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       - name: Detect package manager
         id: detect-package-manager
         run: |
