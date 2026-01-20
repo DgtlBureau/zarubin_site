@@ -72,10 +72,11 @@ const config: Config = {
         },
       }),
       fontFamily: {
+        inter: ['var(--font-inter)', 'Inter', 'sans-serif'],
         manrope: ['Manrope', 'sans-serif'],
         bebas: ['Bebas Neue', 'sans-serif'],
         unbound: ['Unbounded', 'sans-serif'],
-        proxima: ['Proxima Nova', 'sans-serif'],
+        proxima: ['var(--font-inter)', 'Inter', 'Proxima Nova', 'sans-serif'],
       },
       colors: {
         'main-beige': '#F7F7F7',

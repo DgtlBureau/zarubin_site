@@ -1,12 +1,13 @@
 'use client';
 
+import { ArticleCard } from '@/src/ui-kit/ArticleCard/ArticleCard';
 import { NextPrevBtn } from '@/src/ui-kit/NextPrevBtn/NextPrevBtn';
+import { MenuItems } from '@/src/utils/enums';
 import { Post } from '@/src/utils/types';
 import useMediaQuery from '@/src/utils/useMediaQuery';
 import { useState } from 'react';
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { Container } from '../../shared/Container/Container';
-import { InsightsCard } from './InsightsCard/InsightsCard';
 
 interface Props {
   posts: Post[];
@@ -24,7 +25,7 @@ export const InsightsClient = ({ posts }: Props) => {
     <div className='h-600 relative z-10 flex flex-col gap-[40px] pb-20'>
       <Container className='desktop-hard:px-[80px]'>
         <div className='flex items-center justify-between'>
-          <h2 className='section-headings font-unbound font-bold uppercase'>
+          <h2 className='font-proxima text-[14px] font-semibold uppercase tracking-[0.1em] text-text-dark tablet:text-[15px]'>
             Insights
           </h2>
           <div className='hidden tablet:block'>
@@ -43,14 +44,16 @@ export const InsightsClient = ({ posts }: Props) => {
         >
           {posts.slice(0, 6).map((post, idx) => (
             <SwiperSlide key={idx}>
-              <InsightsCard
+              <ArticleCard
+                href={`/${MenuItems.PLAYBOOK.toLowerCase()}/insights/${post.slug}`}
                 title={post.title}
                 description={post.description}
                 tag={post.tag}
-                slug={post.slug}
-                subCategory={post.subCategory}
                 image={post.image}
                 downloadLink={post.downloadLink}
+                showDownloadLink={post.subCategory === 'Research'}
+                size='md'
+                showTagsOverlay={false}
               />
             </SwiperSlide>
           ))}

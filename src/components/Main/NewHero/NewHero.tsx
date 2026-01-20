@@ -2,10 +2,9 @@
 
 import { mainBanners } from '@/src/utils/DataLayers/MainBanners';
 import { MenuItems } from '@/src/utils/enums';
-import { DateTime } from 'luxon';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { Container } from '../../shared/Container/Container';
@@ -13,100 +12,80 @@ import { Section } from '../../shared/Section/Section';
 
 export const NewHero = () => {
   const [swiper, setSwiper] = useState<SwiperClass | null>(null);
-  const [slideIndex, setActiveSlideIndex] = useState<number>(0);
-
-  const sortedBanners = useMemo(() => {
-    return [...mainBanners].sort((a, b) => {
-      const dateA = DateTime.fromFormat(a.date, 'dd-MM-yyyy');
-      const dateB = DateTime.fromFormat(b.date, 'dd-MM-yyyy');
-      return dateB.toMillis() - dateA.toMillis();
-    });
-  }, []);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     if (swiper) {
-      const handleSlideChange = () => {
-        setActiveSlideIndex(swiper.realIndex);
-      };
+      const handleSlideChange = () => setActiveIndex(swiper.realIndex);
       swiper.on('slideChange', handleSlideChange);
-      return () => {
-        swiper.off('slideChange', handleSlideChange);
-      };
+      return () => swiper.off('slideChange', handleSlideChange);
     }
   }, [swiper]);
 
   return (
-    <Section
-      light
-      className={`relative bg-black p-0 pb-[40px] tablet:p-0 tablet:pb-[40px] desktop:p-0 desktop:pb-[60px]`}
-    >
+    <Section light className='relative bg-black p-0 tablet:p-0 desktop:p-0'>
       <Swiper
         modules={[Autoplay]}
-        spaceBetween={0}
         slidesPerView={1}
         onSwiper={setSwiper}
-        autoplay={{
-          delay: 10000,
-          disableOnInteraction: false,
-        }}
-        speed={1000}
+        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        speed={600}
         loop={true}
       >
-        {sortedBanners?.map((item) => (
-          <SwiperSlide key={item.title}>
-            <div
-              className={`gradient-box h-[380px] duration-500 tablet:h-[465px] desktop:h-[589px] ${slideIndex === 0 || slideIndex % 2 === 0 ? 'after:left-0' : 'after:right-0'} after:duration-500`}
-            >
+        {mainBanners.map((hero, index) => (
+          <SwiperSlide key={hero.id}>
+            <div className='relative h-[280px] mobile-big:h-[260px] tablet:h-[340px] desktop:h-[380px]'>
               <Image
-                src={item.image}
+                src={hero.image}
                 fill
-                objectFit='cover'
-                objectPosition='center'
-                alt=''
-                className='-z-10 grayscale'
+                sizes='100vw'
+                priority={index === 0}
+                alt={hero.title}
+                className='object-cover object-center'
               />
-              <Container className='flex h-full w-full flex-col justify-end pt-[40px] text-text-dark tablet:pt-[50px] desktop:z-50 desktop:pt-[67px]'>
-                <h2 className='z-50 font-unbound text-[28px] font-bold uppercase leading-[1.16] tablet:text-[40px] tablet:leading-[1.1] desktop:text-[45px]'>
-                  {item.title}
-                </h2>
-                {item?.description && (
-                  <p className='z-50 font-proxima text-[20px] font-bold'>
-                    {item.description}
+              <div className='absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/30' />
+
+              <Container className='relative z-10 flex h-full w-full flex-col justify-center'>
+                {hero.tag && (
+                  <span className='mb-[12px] w-fit rounded-full border border-white/20 bg-white/10 px-[12px] py-[5px] font-inter text-[10px] font-medium text-white/90 backdrop-blur-sm tablet:text-[11px]'>
+                    {hero.tag}
+                  </span>
+                )}
+                <h1 className='max-w-[90%] font-inter text-[22px] font-semibold leading-[1.2] tracking-[-0.02em] text-white mobile-big:max-w-[500px] mobile-big:text-[24px] tablet:max-w-[600px] tablet:text-[32px] desktop:max-w-[700px] desktop:text-[38px]'>
+                  {hero.title}
+                </h1>
+                {hero?.description && (
+                  <p className='mt-[10px] max-w-[90%] font-inter text-[13px] leading-[1.5] text-white/70 mobile-big:max-w-[400px] tablet:mt-[12px] tablet:max-w-[480px] tablet:text-[14px]'>
+                    {hero.description}
                   </p>
                 )}
+                <Link
+                  href={hero.link || `/${MenuItems.CASES.toLowerCase()}`}
+                  className='mt-[18px] w-fit rounded-[6px] bg-white px-[16px] py-[8px] font-inter text-[12px] font-semibold text-gray-900 transition-all duration-200 hover:bg-white/90 tablet:mt-[20px] tablet:px-[20px] tablet:py-[10px] tablet:text-[13px]'
+                >
+                  {hero.linkName || MenuItems.CASES}
+                </Link>
+
+                {/* Dots below button, aligned left */}
+                <div className='mt-[14px] flex gap-[6px]'>
+                  {mainBanners.map((_, idx) => (
+                    <button
+                      key={idx}
+                      type='button'
+                      onClick={() => swiper?.slideTo(idx)}
+                      className={`h-[6px] rounded-full transition-all duration-300 ${
+                        idx === activeIndex
+                          ? 'w-[20px] bg-white'
+                          : 'w-[6px] bg-white/40 hover:bg-white/60'
+                      }`}
+                    />
+                  ))}
+                </div>
               </Container>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-      <Container className='mt-[20px] flex flex-col items-start justify-between gap-[35px] tablet:mt-[30px] tablet:flex-row tablet:items-center desktop:mt-[40px]'>
-        <Link
-          href={
-            sortedBanners[slideIndex].link
-              ? sortedBanners[slideIndex].link
-              : `/${MenuItems.CASES.toLowerCase()}`
-          }
-          className='z-30 rounded-[6px] bg-main-orange p-[5px_31px] font-proxima text-[20px] font-bold leading-[2] text-text-dark duration-300 hover:bg-main-orange-hover'
-        >
-          {sortedBanners[slideIndex].linkName
-            ? sortedBanners[slideIndex].linkName
-            : `/${MenuItems.CASES.toLowerCase()}`}
-        </Link>
-        <div className='z-30 flex w-full gap-[20px] tablet:max-w-[402px] desktop:max-w-[482px]'>
-          {sortedBanners?.map((_, idx) => (
-            <button
-              key={idx}
-              type='button'
-              onClick={() => swiper?.slideTo(idx)}
-              className='h-[3px] w-full bg-main-silver'
-            >
-              <span
-                className={`block h-full bg-main-orange ${idx === slideIndex ? 'w-full transition-[width] duration-[10000ms] ease-linear' : 'w-0'}`}
-              />
-            </button>
-          ))}
-        </div>
-      </Container>
     </Section>
   );
 };

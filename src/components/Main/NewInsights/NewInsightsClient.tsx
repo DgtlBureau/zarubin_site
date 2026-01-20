@@ -1,5 +1,6 @@
 'use client';
 
+import { ArticleCard } from '@/src/ui-kit/ArticleCard/ArticleCard';
 import { NextPrevBtn } from '@/src/ui-kit/NextPrevBtn/NextPrevBtn';
 import { MenuItems } from '@/src/utils/enums';
 import { sectionsTitle } from '@/src/utils/sectionsTitle/sectionsTitle';
@@ -9,7 +10,6 @@ import { useState } from 'react';
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { Container } from '../../shared/Container/Container';
 import { Section } from '../../shared/Section/Section';
-import { NewInsightsCard } from './NewInsightsCard/NewInsightsCard';
 
 interface Props {
   posts: Post[];
@@ -28,11 +28,11 @@ export const NewInsightsClient = ({ posts }: Props) => {
       <div className='h-600 relative z-10 flex flex-col gap-[40px] pb-20'>
         <Container className=''>
           <div className='flex items-start justify-between desktop:items-center'>
-            <div className='flex flex-col gap-[15px]'>
-              <h2 className='desktop-light::text-[50px] section-headings font-unbound font-bold uppercase text-main-bg'>
+            <div className='flex flex-col gap-[12px]'>
+              <h2 className='font-proxima text-[13px] font-semibold uppercase tracking-[0.1em] text-text-muted tablet:text-[14px]'>
                 {MenuItems.PLAYBOOK.toLowerCase()}
               </h2>
-              <p className='font-proxima text-[18px] font-bold leading-[1.1] text-light-gray tablet:text-[20px] desktop:leading-[1]'>
+              <p className='font-proxima text-[14px] leading-[1.5] text-light-gray tablet:text-[15px]'>
                 {`${sectionsTitle['main']['insights'].descripton}`}
               </p>
             </div>
@@ -53,16 +53,17 @@ export const NewInsightsClient = ({ posts }: Props) => {
           >
             {posts.map((post, idx) => (
               <SwiperSlide key={idx}>
-                <NewInsightsCard
+                <ArticleCard
+                  href={`/${MenuItems.PLAYBOOK.toLowerCase()}/${post.category?.toLowerCase()}/${post.slug}`}
                   title={post.title}
                   description={post.description}
                   tag={post.tag}
-                  slug={post.slug}
-                  subCategory={post.subCategory}
                   image={post.image}
-                  downloadLink={post.downloadLink}
                   date={post.date}
-                  category={post.category}
+                  downloadLink={post.downloadLink}
+                  showDownloadLink={post.subCategory === 'Research'}
+                  size='sm'
+                  showTagsOverlay={true}
                 />
               </SwiperSlide>
             ))}
