@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'SOC 2 & GDPR Compliance Checker | BrightByte',
+  title: 'SOC 2 & GDPR Compliance Checker | The BrightByte',
   description:
     'Free assessment tool to evaluate your organization\'s compliance with SOC 2 Type II and GDPR requirements. Get instant results with actionable recommendations.',
   keywords: [

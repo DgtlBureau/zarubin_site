@@ -5,9 +5,9 @@ import { Section } from '@/src/components/shared/Section/Section';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Project Brief | Start Your Software Development Journey | BrightByte',
+  title: 'Project Brief | Start Your Software Development Journey | The BrightByte',
   description:
-    'Share your project idea and business goals with BrightByte. Get a personalized consultation and expert guidance for your software development needs.',
+    'Share your project idea and business goals with The BrightByte. Get a personalized consultation and expert guidance for your software development needs.',
   keywords: [
     'project brief',
     'software development consultation',
@@ -19,13 +19,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Project Brief | Start Your Software Development Journey',
     description:
-      'Share your project idea and business goals with BrightByte. Get a personalized consultation and expert guidance for your software development needs.',
+      'Share your project idea and business goals with The BrightByte. Get a personalized consultation and expert guidance for your software development needs.',
     type: 'website',
     url: 'https://thebrightbyte.com/brief',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Project Brief | BrightByte',
+    title: 'Project Brief | The BrightByte',
     description:
       'Share your project idea and get expert guidance for your software development needs.',
   },

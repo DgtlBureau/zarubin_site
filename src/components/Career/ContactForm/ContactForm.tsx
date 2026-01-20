@@ -1,7 +1,7 @@
+import { ContactForm as UnifiedContactForm } from '@/src/components/forms/ContactForm';
 import author from '@/public/assets/images/main/author.webp';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Form } from './Form/Form';
 
 export const ContactForm = () => {
   return (
@@ -41,7 +41,14 @@ export const ContactForm = () => {
         </div>
       </div>
       <div className='w-auto desktop:max-w-[710px]'>
-        <Form />
+        <UnifiedContactForm
+          variant='dark'
+          showCV={true}
+          showDetails={false}
+          showPrivacyCheckbox={false}
+          title='Fill out the form and click the blue button to get in touch with you!'
+          submitText='Blue button'
+        />
       </div>
     </div>
   );

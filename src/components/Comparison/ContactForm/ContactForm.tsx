@@ -1,14 +1,13 @@
+import { ContactForm as UnifiedContactForm } from '@/src/components/forms/ContactForm';
 import author from '@/public/assets/images/main/author.png';
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from './ContactForm.module.css';
-import { Form } from './Form/Form';
 
 export const ContactForm = () => {
   return (
-    <div className={styles.mainContainer}>
-      <div className={styles.content}>
-        <h2 className={`${styles.title} section-headings`}>
+    <div className='flex flex-col justify-between gap-[72px] bg-white text-text-dark desktop:flex-row'>
+      <div className='flex flex-col justify-between gap-[40px]'>
+        <h2 className='section-headings font-unbound font-black leading-[1.1] tablet:leading-[1.3]'>
           We are Always <br />
           keep moving
         </h2>
@@ -42,7 +41,14 @@ export const ContactForm = () => {
         </div>
       </div>
       <div className='w-full shrink-0 desktop:w-[710px]'>
-        <Form />
+        <UnifiedContactForm
+          variant='dark'
+          showCV={true}
+          showDetails={false}
+          showPrivacyCheckbox={false}
+          title='Fill out the form and click the blue button to get in touch with you!'
+          submitText='Blue button'
+        />
       </div>
     </div>
   );

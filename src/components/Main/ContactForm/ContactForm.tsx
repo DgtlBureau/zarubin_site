@@ -1,6 +1,6 @@
+import { ContactForm as UnifiedContactForm } from '../../forms/ContactForm';
 import { NextLinePreposition } from '../../NextLinePreposition/NextLinePreposition';
 import { ContractFormTemplate } from '../../shared/ContactFormTemplate/ContractFormTemplate';
-import { Form } from './Form/Form';
 
 export const ContactForm = () => {
   return (
@@ -13,7 +13,13 @@ export const ContactForm = () => {
         />
       }
     >
-      <Form />
+      <UnifiedContactForm
+        variant='dark'
+        showDetails={true}
+        showPrivacyCheckbox={false}
+        title='Fill out the form and click the blue button to get in touch with you!'
+        submitText='Blue button'
+      />
     </ContractFormTemplate>
   );
 };

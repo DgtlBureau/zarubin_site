@@ -1,5 +1,6 @@
 import { Footer } from '@/src/components/Footer/Footer';
 import { Header } from '@/src/components/Header/Header';
+import { ToastProvider } from '@/src/components/ToastProvider';
 import { SEO_DESCRIPTION_SIZE } from '@/src/utils/alias';
 import { getArticlesList } from '@/src/utils/articlesMenu';
 import { contentTrimming } from '@/src/utils/contentTrimming';
@@ -11,7 +12,6 @@ import { Inter } from 'next/font/google';
 import localFont from 'next/font/local';
 import Script from 'next/script';
 import React from 'react';
-import { ToastContainer } from 'react-toastify';
 import 'swiper/css';
 import './globals.css';
 
@@ -127,7 +127,7 @@ export default function RootLayout({
           expertiseMetadata={playbookMetaData}
         />
         <main className='flex flex-col'>{children}</main>
-        <ToastContainer />
+        <ToastProvider />
         <Footer />
         <Script id='replain'>
           {`window.replainSettings = { id: '07c36061-dbc9-4cb8-85cb-9e69876b9d34' };

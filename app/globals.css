@@ -2,6 +2,93 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ============================================
+   SHADCN/UI CSS VARIABLES
+   Mapped to existing design tokens
+   ============================================ */
+@layer base {
+  :root {
+    /* Background & Foreground */
+    --background: 0 0% 100%;
+    --foreground: 224 96% 9%;
+
+    /* Primary - main-blue (#013EDF) */
+    --primary: 229 99% 44%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - main-orange (#F8AE3C) */
+    --secondary: 37 93% 60%;
+    --secondary-foreground: 224 96% 9%;
+
+    /* Destructive - main-red (#D31900) */
+    --destructive: 9 100% 41%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Muted */
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    /* Accent */
+    --accent: 270 100% 64%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Card */
+    --card: 0 0% 96%;
+    --card-foreground: 224 96% 9%;
+
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 96% 9%;
+
+    /* Border & Input & Ring */
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 229 99% 44%;
+
+    /* Border Radius */
+    --radius: 0.375rem;
+  }
+
+  .dark {
+    /* Background - main-bg (#00030C) */
+    --background: 225 67% 2%;
+    --foreground: 0 0% 100%;
+
+    /* Primary - main-blue (#013EDF) */
+    --primary: 229 99% 44%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - main-orange (#F8AE3C) */
+    --secondary: 37 93% 60%;
+    --secondary-foreground: 224 96% 9%;
+
+    /* Destructive */
+    --destructive: 9 100% 41%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Muted */
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    /* Accent */
+    --accent: 270 100% 64%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Card - dark-blue (#000A25) */
+    --card: 225 100% 7%;
+    --card-foreground: 0 0% 100%;
+
+    /* Popover */
+    --popover: 225 67% 2%;
+    --popover-foreground: 0 0% 100%;
+
+    /* Border & Input & Ring */
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 229 99% 44%;
+  }
+}
+
 @font-face {
   font-family: 'Unbounded';
   src: url(/fonts/unbounded/Unbounded-SemiBold.ttf);
