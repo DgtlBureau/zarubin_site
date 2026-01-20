@@ -41,27 +41,30 @@ export const CookieConsent = () => {
   if (!visible) return null;
 
   return (
-    <div className='z-20 flex flex-col items-center gap-[12px] bg-white p-[20px_20px] tablet:gap-[20px] laptop:flex-row desktop:justify-between desktop:p-[20px_80px]'>
-      <p className='text-[12px] text-text-dark desktop:text-[14px] desktop-big:text-[16px]'>
-        {
-          'By clicking “Accept”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.'
-        }
-      </p>
-      <div className='flex flex-row gap-[12px]'>
-        <button
-          type='button'
-          onClick={rejectCookies}
-          className='h-[36px] w-[160px] rounded-[6px] font-proxima text-[18px] font-bold text-main-orange text-main-orange duration-300 hover:bg-main-orange hover:text-text-dark tablet:h-[46px] tablet:w-[220px] desktop-big:h-[54px] desktop-big:w-[263px] desktop-big:text-[24px]'
-        >
-          Cancel
-        </button>
-        <button
-          type='button'
-          onClick={acceptCookies}
-          className='h-[36px] w-[160px] rounded-[6px] bg-main-orange font-proxima text-[18px] font-bold text-text-dark hover:bg-main-orange-hover tablet:h-[46px] tablet:w-[220px] desktop-big:h-[54px] desktop-big:w-[263px] desktop-big:text-[24px]'
-        >
-          Accept
-        </button>
+    <div className='fixed bottom-4 left-4 z-50 max-w-[320px] rounded-2xl border border-white/10 bg-header-bg/95 p-4 shadow-2xl backdrop-blur-xl'>
+      <div className='flex items-start gap-3'>
+        <span className='text-2xl'>🍪</span>
+        <div className='flex-1'>
+          <p className='mb-3 font-proxima text-sm text-white/80'>
+            This site uses cookies to improve your experience.
+          </p>
+          <div className='flex gap-2'>
+            <button
+              type='button'
+              onClick={acceptCookies}
+              className='rounded-lg bg-main-orange px-4 py-1.5 font-proxima text-xs font-semibold text-text-dark transition-all hover:bg-main-orange-hover'
+            >
+              Accept
+            </button>
+            <button
+              type='button'
+              onClick={rejectCookies}
+              className='rounded-lg border border-white/20 px-4 py-1.5 font-proxima text-xs font-medium text-white/70 transition-all hover:bg-white/5'
+            >
+              Decline
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

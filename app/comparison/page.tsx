@@ -1,7 +1,7 @@
 import HeroBg from '@/public/assets/images/comparison/hero_banner.webp';
-import { ContactForm } from '@/src/components/Comparison/ContactForm/ContactForm';
 import { Hero } from '@/src/components/Comparison/Hero/Hero';
 import Table from '@/src/components/Comparison/Table';
+import { NewContactForm } from '@/src/components/Main/NewContactForm/NewContactForm';
 import { Container } from '@/src/components/shared/Container/Container';
 import { Section } from '@/src/components/shared/Section/Section';
 import { SEO_DESCRIPTION_SIZE } from '@/src/utils/alias';
@@ -48,17 +48,13 @@ export default async function ComparisonPage() {
       <Container>
         <Table />
       </Container>
-      <div>
-        <Section
-          id='contacts'
-          className='py-[80px] tablet:py-[80px] desktop:py-[80px]'
-          light
-        >
-          <Container>
-            <ContactForm />
-          </Container>
-        </Section>
-      </div>
+      <Section
+        id='contacts'
+        light
+        className='px-0 py-0 tablet:px-0 tablet:py-0 desktop:px-0 desktop:py-0'
+      >
+        <NewContactForm />
+      </Section>
     </>
   );
 }
