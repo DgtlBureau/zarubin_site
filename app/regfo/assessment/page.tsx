@@ -384,11 +384,27 @@ export default function AssessmentPage() {
   // Loading overlay
   if (isLoading) {
     return (
-      <div className="fixed inset-0 bg-white/90 backdrop-blur-sm z-50 flex items-center justify-center">
+      <div className="fixed inset-0 bg-gradient-to-br from-slate-50 to-blue-50 z-50 flex items-center justify-center">
         <div className="text-center">
-          <div className="w-16 h-16 border-4 border-regfo-primary border-t-transparent rounded-full animate-spin mx-auto mb-4" />
-          <p className="typo-h4 text-regfo-dark mb-2">Preparing Your Results</p>
-          <p className="typo-body-sm text-slate-500">Analyzing your compliance readiness...</p>
+          {/* Animated circles */}
+          <div className="relative w-24 h-24 mx-auto mb-6">
+            <div className="absolute inset-0 border-4 border-regfo-primary/20 rounded-full" />
+            <div className="absolute inset-0 border-4 border-transparent border-t-regfo-primary rounded-full animate-spin" />
+            <div className="absolute inset-2 border-4 border-transparent border-t-regfo-secondary rounded-full animate-spin" style={{ animationDirection: 'reverse', animationDuration: '0.8s' }} />
+            <div className="absolute inset-4 border-4 border-transparent border-t-regfo-accent rounded-full animate-spin" style={{ animationDuration: '1.2s' }} />
+            {/* Center icon */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <Shield className="w-8 h-8 text-regfo-primary animate-pulse" />
+            </div>
+          </div>
+          <p className="typo-h3 text-regfo-dark mb-2">Preparing Your Results</p>
+          <p className="typo-body text-slate-500 mb-4">Analyzing your compliance readiness...</p>
+          {/* Progress dots */}
+          <div className="flex justify-center gap-2">
+            <div className="w-2 h-2 bg-regfo-primary rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
+            <div className="w-2 h-2 bg-regfo-primary rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
+            <div className="w-2 h-2 bg-regfo-primary rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
+          </div>
         </div>
       </div>
     );
