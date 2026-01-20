@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import {
@@ -233,6 +233,11 @@ export default function AssessmentPage() {
   const [stage, setStage] = useState<'quick' | 'preview' | 'full'>('quick');
   const [quickResult, setQuickResult] = useState<QuickResult | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+
+  // Prefetch results page for faster navigation
+  useEffect(() => {
+    router.prefetch('/regfo/results');
+  }, [router]);
 
   // Get current question based on stage
   const getCurrentQuestions = () => {

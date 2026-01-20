@@ -1,6 +1,5 @@
 'use client';
 
-import { NextLinePreposition } from '@/src/components/NextLinePreposition/NextLinePreposition';
 import { sendEmail } from '@/src/utils/sendEmail';
 import { InputMask } from '@react-input/mask';
 import { useFormik } from 'formik';
@@ -44,18 +43,18 @@ export const NewForm = () => {
   return (
     <div
       id='contact-form'
-      className='w-full scroll-mt-[100px] rounded-[12px] bg-main-bg px-[20px] py-[24px] mobile-big:px-[30px] mobile-big:py-[30px] laptop-big:max-w-[1009px]'
+      className='w-full scroll-mt-[100px] rounded-[12px] bg-gradient-to-br from-[#1e40af] to-[#6366f1] px-[20px] py-[24px] mobile-big:px-[30px] mobile-big:py-[30px] laptop-big:max-w-[1009px]'
     >
-      <NextLinePreposition
-        tag='h3'
-        text='We are always glad to have new partners and ambitious tasks'
-        className='font-unbound text-[18px] font-semibold uppercase leading-[1.25] text-white tablet:text-[20px] tablet:leading-[1.15]'
-      />
-      <NextLinePreposition
-        tag='p'
-        text='Fill out the form and click the blue button to get in touch with you!'
-        className='mt-[12px] font-proxima text-[14px] font-semibold leading-[1.2] text-light-gray tablet:text-[16px] tablet:leading-[1.2] desktop:leading-[1]'
-      />
+      <h3
+        className='font-proxima text-[22px] font-bold leading-[1.25] text-white tablet:text-[26px] tablet:leading-[1.15] text-center'
+      >
+        Build Your Next Project with Expert Guidance
+      </h3>
+      <p
+        className='mt-[12px] font-proxima text-[14px] font-normal leading-[1.4] text-white/80 tablet:text-[16px] tablet:leading-[1.4] text-center'
+      >
+        Our team helps ambitious companies implement scalable software solutions that drive business growth
+      </p>
       <form
         className='mt-[20px] flex flex-col gap-[12px] overflow-hidden tablet:mt-[24px] tablet:gap-[16px] desktop:mt-[20px] desktop:gap-[14px]'
         onSubmit={formik.handleSubmit}
@@ -66,7 +65,7 @@ export const NewForm = () => {
           placeholder='Name'
           value={formik.values.name}
           required
-          className='w-full resize-none rounded-[6px] border-[1px] border-white/20 bg-white/20 p-[8px_16px] font-proxima text-[14px] leading-[1.8] text-white placeholder-gray-placeholder outline-none focus:border-main-orange tablet:leading-[1.8] desktop:leading-[1.7]'
+          className='w-full resize-none rounded-[6px] border-[1px] border-white/30 bg-white/10 p-[8px_16px] font-proxima text-[14px] leading-[1.8] text-white placeholder-white/60 outline-none focus:border-white/60 focus:bg-white/20 tablet:leading-[1.8] desktop:leading-[1.7]'
           onChange={formik.handleChange}
         />
         <input
@@ -74,7 +73,7 @@ export const NewForm = () => {
           name='email'
           value={formik.values.email}
           placeholder='E-mail'
-          className='w-full resize-none rounded-[6px] border-[1px] border-white/20 bg-white/20 p-[8px_16px] font-proxima text-[14px] leading-[1.8] text-white placeholder-gray-placeholder outline-none focus:border-main-orange tablet:leading-[1.8] desktop:leading-[1.7]'
+          className='w-full resize-none rounded-[6px] border-[1px] border-white/30 bg-white/10 p-[8px_16px] font-proxima text-[14px] leading-[1.8] text-white placeholder-white/60 outline-none focus:border-white/60 focus:bg-white/20 tablet:leading-[1.8] desktop:leading-[1.7]'
           required
           onChange={formik.handleChange}
         />
@@ -87,47 +86,54 @@ export const NewForm = () => {
           }}
           value={formik.values.phone}
           placeholder='Phone'
-          className='w-full resize-none rounded-[6px] border-[1px] border-white/20 bg-white/20 p-[8px_16px] font-proxima text-[14px] leading-[1.8] text-white placeholder-gray-placeholder outline-none focus:border-main-orange tablet:leading-[1.8] desktop:leading-[1.7]'
+          className='w-full resize-none rounded-[6px] border-[1px] border-white/30 bg-white/10 p-[8px_16px] font-proxima text-[14px] leading-[1.8] text-white placeholder-white/60 outline-none focus:border-white/60 focus:bg-white/20 tablet:leading-[1.8] desktop:leading-[1.7]'
           required
           onChange={formik.handleChange}
         />
         <textarea
           name='details'
           value={formik.values.details}
-          placeholder='Request'
-          className='w-full resize-none rounded-[6px] border-[1px] border-white/20 bg-white/20 p-[8px_16px] font-proxima text-[14px] leading-[1.8] text-white placeholder-gray-placeholder outline-none focus:border-main-orange tablet:leading-[1.8] desktop:leading-[1.7]'
+          placeholder='Tell us about your project'
+          className='w-full resize-none rounded-[6px] border-[1px] border-white/30 bg-white/10 p-[8px_16px] font-proxima text-[14px] leading-[1.8] text-white placeholder-white/60 outline-none focus:border-white/60 focus:bg-white/20 tablet:leading-[1.8] desktop:leading-[1.7]'
           rows={1}
           onChange={formik.handleChange}
           required
         />
-        <label className='flex w-fit items-center gap-[8px] font-proxima text-[14px] font-bold text-white'>
+        <label className='flex w-fit items-center gap-[8px] font-proxima text-[14px] font-normal text-white/90'>
           <input
             type='checkbox'
             checked={isChecked}
             onChange={(e) => setIsChecked(e.target.checked)}
-            className='peer hidden h-[16px] w-[16px] rounded-[2px] border-white accent-main-orange'
+            className='peer hidden h-[16px] w-[16px] rounded-[2px] border-white accent-white'
           />
           <div
-            className={`relative h-[16px] w-[16px] rounded-[4px] border border-[1px] border-white ${isChecked ? 'bg-main-orange' : ''}`}
+            className={`relative h-[16px] w-[16px] rounded-[4px] border border-[1px] border-white/60 ${isChecked ? 'bg-white' : 'bg-white/10'}`}
           >
             <span
-              className={`absolute left-1/2 top-1/2 block translate-x-[-50%] translate-y-[-50%] text-[14px] font-bold text-text-dark ${isChecked ? 'block' : 'hidden'}`}
+              className={`absolute left-1/2 top-1/2 block translate-x-[-50%] translate-y-[-50%] text-[14px] font-bold text-[#1e40af] ${isChecked ? 'block' : 'hidden'}`}
             >
               &#10004;
             </span>
           </div>
           I agree with{' '}
-          <Link href={'policy'} className='text-main-orange' target='_blank'>
+          <Link href={'policy'} className='text-white underline hover:text-white/80' target='_blank'>
             the privacy policy
           </Link>
         </label>
         <button
           type='submit'
           disabled={!isChecked}
-          className={`w-full transform rounded-[6px] px-[15px] py-[12px] text-[14px] font-bold text-text-dark transition duration-200 ease-in-out tablet:text-[16px] desktop:text-[16px] ${isChecked ? 'bg-main-orange hover:scale-[0.99] hover:bg-main-orange-hover' : 'bg-main-orange/60'}`}
+          className={`w-full transform rounded-[10px] px-[15px] py-[14px] text-[14px] font-semibold transition duration-200 ease-in-out tablet:text-[16px] desktop:text-[16px] flex items-center justify-center gap-2 ${isChecked ? 'bg-white text-[#1e3a5f] hover:bg-white/90' : 'bg-white/60 text-[#1e3a5f]/60 cursor-not-allowed'}`}
         >
-          Send the request
+          Schedule a Free Consultation
+          <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M22 2L11 13" />
+            <path d="M22 2L15 22L11 13L2 9L22 2Z" />
+          </svg>
         </button>
+        <p className="text-center text-white/70 text-[13px] font-proxima mt-3">
+          Free consultation. No commitment required.
+        </p>
       </form>
     </div>
   );
