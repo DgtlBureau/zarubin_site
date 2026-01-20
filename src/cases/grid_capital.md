@@ -1,8 +1,8 @@
 ---
-title: 'AI-Driven Investment Platform Architecture'
+title: 'Investment Platform Architecture'
 name: 'Grid Capital'
-description: 'Scalable ML-powered architecture design and IT consulting for a US-based financial investment startup with predictive analytics.'
-industries: ['FinTech', 'Web development', 'IT Consulting', 'AI & Data Science']
+description: 'Scalable architecture design and IT consulting for a US-based financial investment startup.'
+industries: ['FinTech', 'API Workflow']
 type: 'FinTech'
 tag: 'Grid Capital'
 instruments: ['next', 'python', 'ml']

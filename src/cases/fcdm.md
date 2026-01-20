@@ -1,8 +1,8 @@
 ---
-title: 'Scalable API & ML-Powered Analytics'
+title: 'Sports Club Digital Platform & API'
 name: 'Soccer Club «Dynamo»'
-description: 'High-load backend with ML-powered analytics and integrations ensuring stability and insights for club digital services.'
-industries: ['Sports', 'Web development', 'API Development', 'AI & Data Science']
+description: 'High-load backend with analytics and integrations ensuring stability for club digital services.'
+industries: ['Sports', 'CRM Integration', 'API Workflow']
 type: 'SPORTS'
 tag: 'FCDM'
 instruments: ['react', 'laravel', 'tribloom', 'ml']

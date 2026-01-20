@@ -1,8 +1,8 @@
 ---
-title: 'Multi-Platform Sports Streaming Ecosystem'
+title: 'Multi-Platform Sports Streaming'
 name: 'TV start'
-description: 'Unified digital ecosystem for sports broadcasting with intelligent content delivery across mobile, Smart TV, and web platforms.'
-industries: ['Sports', 'SmartTV', 'Mobile development']
+description: 'Digital ecosystem for sports broadcasting across mobile, Smart TV, and web platforms.'
+industries: ['Sports', 'Mobile Apps', 'Web']
 type: 'Sports'
 tag: 'TV start'
 instruments: ['flutter', 'laravel']

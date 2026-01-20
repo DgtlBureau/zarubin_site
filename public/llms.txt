@@ -1,21 +1,33 @@
 # thebrightbyte.com
 
-> The BrightByte is a product studio specializing in sports technology and custom software consulting, based in Raleigh, NC.
-
-## About
-The BrightByte helps businesses navigate product planning, vendor selection, and lean implementation strategies. We blend ownership thinking with a consultative approach.
+> The BrightByte builds compliance-friendly AI agents, fine-tuned models, and automated workflows for regulated industries.
 
 ## Core Services
-- Custom software development
-- Sports technology solutions
-- Technical consulting & audits
-- Startup advisory & investments
+- AI Agent Development (agentic AI, orchestration)
+- LLM Fine-Tuning (custom models, SLMs)
+- RAG Systems (vector DB, knowledge retrieval)
+- Compliance AI Automation (SOC2, HIPAA)
+
+## Industries
+- FinTech (payments, KYC, fraud detection)
+- HealthTech (HIPAA, clinical AI)
+- LawTech (document automation, contracts)
+- RegTech (regulatory reporting, compliance)
+- InsurTech (claims, underwriting)
+- GovTech (public sector, FedRAMP)
+
+## Technical Capabilities
+- CRM AI Integration (Salesforce, HubSpot)
+- ERP AI Automation (SAP, Oracle)
+- API Workflow Orchestration
+- No-Code AI Solutions
+- Multi-Agent AI Architecture
 
 ## Key Content Sections
-- /cases - Portfolio of client projects
-- /playbook/expertise - Technical guides on AI, fintech, sports analytics, DevOps
-- /playbook/insights - Industry thought leadership and notes
-- /investments - Strategic investment portfolio
+- /cases - AI agent implementations, compliance automation projects
+- /playbook/expertise - Technical guides on AI agents, fine-tuning, RAG systems
+- /playbook/insights - AI compliance, industry trends, and analysis
+- /investments - Strategic investments in AI and RegTech
 
 ## Contact
 Website: https://thebrightbyte.com

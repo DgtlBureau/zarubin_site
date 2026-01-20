@@ -2,7 +2,7 @@
 title: 'AI-Powered Field Service & Ticketing'
 name: 'PersoniWay'
 description: 'Smart ecosystem for field techs featuring AI schema recognition, audio calls, and tracking to drastically reduce problem detection time.'
-industries: ['HVAC', 'API Development', 'AI & Data Science']
+industries: ['Compliant AI', 'AI Agents', 'RAG Systems', 'API Workflow']
 type: 'HVACR'
 tag: 'Personiway'
 instruments: ['python', 'react', 'claude']

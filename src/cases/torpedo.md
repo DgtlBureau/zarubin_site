@@ -1,8 +1,8 @@
 ---
-title: 'AI-Powered Digital Ecosystem for Fan Engagement'
+title: 'Digital Fan Engagement Ecosystem'
 name: 'Hockey Club «Torpedo»'
-description: 'AI-enhanced digital ecosystem with mobile app, CRM, and ML-powered analytics for fan interaction, ticket sales, and loyalty programs.'
-industries: ['Sports', 'CRM', 'Mobile development', 'AI & Data Science']
+description: 'Digital ecosystem with mobile app, CRM, and analytics for fan interaction, ticket sales, and loyalty programs.'
+industries: ['Sports', 'CRM Integration', 'Mobile Apps']
 type: 'SPORTS'
 tag: 'HC Torpedo'
 instruments: ['flutter', 'laravel', 'next', 'triboom', 'ml', 'claude']

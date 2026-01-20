@@ -1,8 +1,8 @@
 ---
-title: 'ML-Powered Fantasy Sports Platform'
+title: 'Fantasy Sports Platform'
 name: 'Soccer Stock'
-description: 'Web-based fantasy sports with ML-driven player valuation, real-time performance analytics, and intelligent engagement mechanics.'
-industries: ['Sports', 'Web development', 'API Development', 'AI & Data Science']
+description: 'Web-based fantasy sports with player valuation, real-time performance analytics, and engagement mechanics.'
+industries: ['Sports', 'Web', 'API Workflow']
 type: 'SPORTS'
 tag: 'STOCKS SOCCER'
 instruments: ['next', 'python', 'ml']

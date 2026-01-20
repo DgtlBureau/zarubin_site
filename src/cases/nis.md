@@ -1,8 +1,8 @@
 ---
-title: 'AI Audit & Process Automation'
+title: 'Business Process Consulting'
 name: 'NIS'
-description: 'Intelligent optimization of business processes and infrastructure using AI tools.'
-industries: ['OpsTech', 'IT Consulting']
+description: 'Optimization of business processes and infrastructure consulting.'
+industries: ['ERP Automation', 'AI Orchestration']
 type: 'OpsTech'
 tag: 'NIS'
 instruments: ['react', 'python']

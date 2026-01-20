@@ -1,8 +1,8 @@
 ---
-title: 'Smart Fan Engagement Platform'
+title: 'Street Football Event Platform'
 name: 'Sports Event Digital Platform'
-description: 'API-integrated web platform with ML analytics for street football events, driving intelligent user engagement and loyalty.'
-industries: ['Sports', 'Web development', 'API Development']
+description: 'API-integrated web platform for street football events with user engagement and loyalty features.'
+industries: ['Sports', 'Web', 'API Workflow']
 type: 'SPORTS'
 tag: 't-bank'
 instruments: ['laravel', 'react', 'ml']

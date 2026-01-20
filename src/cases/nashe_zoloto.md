@@ -1,8 +1,8 @@
 ---
-title: 'AI-Enhanced Fashion E-Commerce App'
+title: 'Fashion E-Commerce Mobile App'
 name: 'Our Gold'
-description: 'Flutter-based fashion e-commerce app with AI-powered product visualization and intelligent customer journey mapping.'
-industries: ['Retail', 'Mobile development', 'AI & Data Science']
+description: 'Flutter-based fashion e-commerce app with product visualization and customer journey mapping.'
+industries: ['Retail', 'Mobile Apps']
 type: 'Retail'
 tag: 'Our Gold'
 instruments: ['flutter', 'laravel']

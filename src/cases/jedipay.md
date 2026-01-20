@@ -1,8 +1,8 @@
 ---
-title: 'AI-Powered Fintech Wallet & Virtual Cards'
+title: 'FinTech Payment Gateway & Virtual Cards'
 name: 'Jedi Pay'
-description: 'AI-driven fintech ecosystem on Telegram with ML fraud detection, virtual cards, instant P2P transactions, and intelligent payment processing.'
-industries: ['FinTech', 'Web development', 'AI & Data Science']
+description: 'Secure fintech ecosystem with PCI DSS compliance, virtual cards, instant P2P transactions, and fraud detection.'
+industries: ['FinTech', 'Compliant AI', 'API Workflow']
 type: 'FinTech'
 tag: 'Jedipay'
 instruments: ['unity', 'python', 'ml']

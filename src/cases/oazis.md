@@ -1,8 +1,8 @@
 ---
-title: 'AI-Driven Workforce Management'
+title: 'Workforce Management Platform'
 name: 'OAZIS'
-description: 'AI-powered corporate system for managing rotational workers, accommodation, and catering with predictive analytics'
-industries: ['OpsTech', 'CRM', 'Mobile development', 'AI & Data Science']
+description: 'Corporate system for managing rotational workers, accommodation, and catering services.'
+industries: ['ERP Automation', 'CRM Integration', 'Mobile Apps']
 type: 'OpsTech'
 tag: 'OAZIS'
 instruments: ['flutter', 'laravel', 'react', 'claude']

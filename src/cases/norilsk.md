@@ -1,8 +1,8 @@
 ---
-title: 'Smart Sports Media Platform & Real-Time Integrations'
+title: 'Sports Club Website & Integrations'
 name: 'Hockey Club «Norilsk»'
-description: 'Official club website with intelligent backend integrations for real-time stats, automated media content, and smart ticketing systems.'
-industries: ['Sports', 'Web development', 'API Integrations']
+description: 'Official club website with backend integrations for real-time stats, media content, and ticketing systems.'
+industries: ['Sports', 'Web', 'API Workflow']
 type: 'SPORTS'
 tag: 'HC Norilsk'
 instruments: ['next', 'laravel']

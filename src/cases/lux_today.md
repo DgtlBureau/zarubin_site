@@ -1,8 +1,8 @@
 ---
-title: 'Rapid MVP Development for Relocation Platform'
+title: 'Relocation Platform MVP'
 name: 'LuxToday'
-description: 'Full-cycle web development for emigration startup - from requirements to launch in 4 weeks with integrated immigration resources.'
-industries: ['Service', 'Hospitality', 'Web development', 'IT Consulting']
+description: 'Full-cycle web development for emigration startup - from requirements to launch in 4 weeks.'
+industries: ['Web', 'ERP Automation']
 type: 'Service'
 tag: 'Lux Today'
 instruments: ['next', 'laravel']
