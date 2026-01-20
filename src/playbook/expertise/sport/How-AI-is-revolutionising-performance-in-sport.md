@@ -129,7 +129,7 @@ As an athlete-turned-manager, I've seen some old-school coaches dismiss analytic
 
 The adoption of digital tools in sports isn’t a fad — it’s the future. Whether it’s improving player performance, engaging fans, or boosting revenues, the benefits are undeniable. Sure, not everyone’s on board yet, but as the industry evolves, the holdouts will find it harder to ignore the numbers.
 
-If you’re curious about how analytics is reshaping sports culture, check out how experts at [The Bright Byte](https://thebrightbyte.com/expertise/How-sports-analytics-works) are bringing cutting-edge tools to high schools and colleges. The U.S. sports scene might still have room for improvement, but with innovations like these, it’s clear that digital is the way forward.
+If you’re curious about how analytics is reshaping sports culture, check out how experts at [The BrightByte](https://thebrightbyte.com/expertise/How-sports-analytics-works) are bringing cutting-edge tools to high schools and colleges. The U.S. sports scene might still have room for improvement, but with innovations like these, it’s clear that digital is the way forward.
 
 ### Source
 

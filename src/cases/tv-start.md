@@ -1,7 +1,7 @@
 ---
-title: 'Smart TV App for Entertaiment channel (Sports/Flutter/Laravel)'
+title: 'Multi-Platform Sports Streaming Ecosystem'
 name: 'TV start'
-description: 'The goal of the project was to build a unified platform for broadcasting sports events across mobile, Smart TV, and web'
+description: 'Unified digital ecosystem for sports broadcasting with intelligent content delivery across mobile, Smart TV, and web platforms.'
 industries: ['Sports', 'SmartTV', 'Mobile development']
 type: 'Sports'
 tag: 'TV start'

@@ -5,4 +5,4 @@ export const SEO_DESCRIPTION_SIZE = 155;
 
 export const DEFAULT_SEO_ALTERNATES_TITLE = '';
 
-export const SITE_NAME = 'BrightByte';
+export const SITE_NAME = 'The BrightByte';

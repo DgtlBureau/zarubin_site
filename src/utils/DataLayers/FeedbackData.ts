@@ -28,7 +28,7 @@ export const FeedbackDataMain = [
     logo: tig1,
     date: '15-04-2025',
     feedback:
-      'We hired BrightByte to build PersoniWay — an AI-based assistant for field technicians. I was impressed with how quickly they understood our domain and got things moving. The scope was clear, the execution fast, and my own involvement minimal. They operated independently, asked smart questions when needed, and delivered consistently — without bloated timelines or inflated budgets. It is rare to find a team thats both technically sharp and business-savvy. Highly recommend if you need traction without friction.',
+      'We hired The BrightByte to build PersoniWay — an AI-based assistant for field technicians. I was impressed with how quickly they understood our domain and got things moving. The scope was clear, the execution fast, and my own involvement minimal. They operated independently, asked smart questions when needed, and delivered consistently — without bloated timelines or inflated budgets. It is rare to find a team thats both technically sharp and business-savvy. Highly recommend if you need traction without friction.',
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ export const FeedbackDataMain = [
     logo: gw,
     date: '15-04-2025',
     feedback:
-      'Working with BrightByte and his team was a turning point for us. They built an AI assistant tailored to our HVAC service workflows — we cut response time by half and improved field accuracy. Reliable, sharp, and proactive.',
+      'Working with The BrightByte and his team was a turning point for us. They built an AI assistant tailored to our HVAC service workflows — we cut response time by half and improved field accuracy. Reliable, sharp, and proactive.',
   },
   {
     id: 3,
@@ -48,7 +48,7 @@ export const FeedbackDataMain = [
     logo: sports,
     date: '12-10-2023',
     feedback:
-      'We are working with BrightByte on a sports publication website with a relatively simple tech stack that involves integrations. Previous developers consistently delivered an incomplete product full of bugs and were unresponsive when issues were pointed out. BrightByte team has shown a high level of professionalism, adhering to a clear business process and a systematic approach at every stage. I highly recommend working with them.',
+      'We are working with The BrightByte on a sports publication website with a relatively simple tech stack that involves integrations. Previous developers consistently delivered an incomplete product full of bugs and were unresponsive when issues were pointed out. The BrightByte team has shown a high level of professionalism, adhering to a clear business process and a systematic approach at every stage. I highly recommend working with them.',
   },
   {
     id: 4,
@@ -58,7 +58,7 @@ export const FeedbackDataMain = [
     logo: oazis,
     date: '12-02-2025',
     feedback:
-      'We have been working with BrightByte for two years, during which time we have actively developed our project. BrightByte impresses with their attention to detail: the team provides comprehensive API documentation, every new feature is meticulously described in a dedicated document, and they constantly offer suggestions for improvement. At the same time, they help us avoid unnecessary actions if our plans go beyond what is required.',
+      'We have been working with The BrightByte for two years, during which time we have actively developed our project. The BrightByte impresses with their attention to detail: the team provides comprehensive API documentation, every new feature is meticulously described in a dedicated document, and they constantly offer suggestions for improvement. At the same time, they help us avoid unnecessary actions if our plans go beyond what is required.',
   },
   {
     id: 5,
@@ -88,7 +88,7 @@ export const FeedbackDataMain = [
     logo: tractor,
     date: '05-07-2024',
     feedback:
-      'We have a very conservative market. That is cool when such young and energetic guys like BrightByte and his team show up. Just rocked it! Their solution helped automate our internal ops and gave us fresh insights into how we can grow the brand and engage more with our fanbase.',
+      'We have a very conservative market. That is cool when such young and energetic guys like The BrightByte and his team show up. Just rocked it! Their solution helped automate our internal ops and gave us fresh insights into how we can grow the brand and engage more with our fanbase.',
   },
   {
     id: 8,
@@ -118,6 +118,6 @@ export const FeedbackDataMain = [
     logo: dinamo,
     date: '07-11-2022',
     feedback:
-      'The guys from BrightByte helped to pack the idea into the final product. They provided professional assistance at all stages and were all about achieving results!',
+      'The guys from The BrightByte helped to pack the idea into the final product. They provided professional assistance at all stages and were all about achieving results!',
   },
 ];

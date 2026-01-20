@@ -11,15 +11,15 @@ export const Hero = () => {
       <Breadcrumbs breadcrumbs={BREADCRUMBS} />
       <h1 className='page-headings z-[5] font-unbound font-bold uppercase leading-[1.14] desktop:font-black'>
         <span className='text-stroke desktop:leading-[1.22] desktop-hard:text-[100px]'>
-          Freelancers, Custom Development,
+          How We Compare
         </span>
         <br />
         The BrightByte
       </h1>
       <p className='z-[5] max-w-[900px] font-proxima text-[16px] font-normal leading-[1.2] tablet:text-[20px] desktop:text-[20px] desktop-hard:text-[20px]'>
-        The BrightByte is an excellent alternative to a traditional development
-        studio and, even more so, to freelancers. We are often asked about the
-        differences in approaches. Below is a comparative table.
+        We deliver Big 4 consultancy expertise with the speed and efficiency
+        of a dedicated in-house team — without the overhead of either.
+        See how The BrightByte stands apart.
       </p>
     </div>
   );

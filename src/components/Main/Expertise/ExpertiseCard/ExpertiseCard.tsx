@@ -56,7 +56,7 @@ export const ExpertiseCard = ({
         <Image
           src={image}
           fill
-          sizes='100%'
+          sizes='(max-width: 768px) 100vw, 50vw'
           alt={`image ${title}`}
           className='absolute left-0 top-0 object-cover'
           loading='lazy'

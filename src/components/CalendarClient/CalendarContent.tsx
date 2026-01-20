@@ -28,7 +28,7 @@ export const CalendarContent = () => {
           Vitaly Z.
         </p>
         <span className='mt-[4px] text-center text-[16px] leading-[1.2]'>
-          CEO The Bright Byte
+          CEO The BrightByte
         </span>
       </div>
     </div>

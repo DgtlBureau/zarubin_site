@@ -5,7 +5,7 @@ image: '/assets/images/expertise/it_service/generative-ai-services-hero-banner.w
 date: '01-11-2024'
 readingTime: '5 minutes'
 category: 'Expertise'
-subCategory: 'It Service'
+subCategory: 'IT Service'
 tag: 'Flutter, php, Sports, IT Consultancy, risk management, quality vs cost, AI, Copilot'
 authorName: 'Vitaliy Zarubin'
 authorImage: '/assets/images/author/avatar.png'
@@ -145,4 +145,4 @@ In software development, it’s tempting to go for the lowest bid. However, as t
 
 A focus on quality, expertise, and reliability will always yield better results than trying to cut corners on cost. The next time you’re faced with the decision of hiring a development team, remember: **investing in experience saves money in the long run.**
 
-[The Bright Byte](https://thebrightbyte.com) is a company of modern developers and architects, recognised for our excellence in IT and with extensive experience in enterprise systems. We specialise in creating robust, scalable business processes through automation. Let us guide you through the complexities of automation services such as UIPath and Zapier to ensure your workflows are efficient, scalable and tailored to your specific needs.
+[The BrightByte](https://thebrightbyte.com) is a company of modern developers and architects, recognised for our excellence in IT and with extensive experience in enterprise systems. We specialise in creating robust, scalable business processes through automation. Let us guide you through the complexities of automation services such as UIPath and Zapier to ensure your workflows are efficient, scalable and tailored to your specific needs.

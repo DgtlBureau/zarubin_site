@@ -62,16 +62,16 @@ Technological innovations have pushed mobile loyalty apps beyond simple rewards 
 
 ## Strategies for entrepreneurs to leverage loyalty programmes
 
-Business owners can learn from NHL teams to create loyalty programmes that improve customer engagement. By leveraging expertise in digital transformation and customer analytics, businesses can design programs that resonate with their audiences. For example, companies like The Bright Byte specialise in developing loyalty systems that integrate seamlessly with mobile apps, offering tailored solutions to increase customer engagement and drive revenue growth.
+Business owners can learn from NHL teams to create loyalty programmes that improve customer engagement. By leveraging expertise in digital transformation and customer analytics, businesses can design programs that resonate with their audiences. For example, companies like The BrightByte specialise in developing loyalty systems that integrate seamlessly with mobile apps, offering tailored solutions to increase customer engagement and drive revenue growth.
 
 ### Steps to building an effective loyalty programme
 
-- **Understand your audience**: Focus on the frequency of customers and their needs and wants to create interesting promotional programmes. Analyse customer preferences and habits to design compelling rewards. The Bright Byte's data analytics expertise helps companies identify these preferences through robust customer insights.
-- **Develop a mobile app**: Ensure the app is easy to use and includes interactive features such as notifications and gamification. The Bright Byte offers UX/UI design and app development services to make this process efficient and tailored to the target audience.
+- **Understand your audience**: Focus on the frequency of customers and their needs and wants to create interesting promotional programmes. Analyse customer preferences and habits to design compelling rewards. The BrightByte's data analytics expertise helps companies identify these preferences through robust customer insights.
+- **Develop a mobile app**: Ensure the app is easy to use and includes interactive features such as notifications and gamification. The BrightByte offers UX/UI design and app development services to make this process efficient and tailored to the target audience.
 - **Create valuable partnerships**: Partner with local businesses to offer discounts and perks that benefit both fans and community stakeholders.
-- **Monitor and adapt**: Use app analytics to refine rewards and engagement strategies. The Bright Byte's AI-driven solutions help companies continuously optimise programme performance.
+- **Monitor and adapt**: Use app analytics to refine rewards and engagement strategies. The BrightByte's AI-driven solutions help companies continuously optimise programme performance.
 
-By leveraging tools and services like those offered by The Bright Byte, companies can implement loyalty programmes that drive customer engagement, provide meaningful rewards, and foster long-term relationships with their audiences.
+By leveraging tools and services like those offered by The BrightByte, companies can implement loyalty programmes that drive customer engagement, provide meaningful rewards, and foster long-term relationships with their audiences.
 
 ## Case Study: Club 1909 - Montreal Canadiens
 

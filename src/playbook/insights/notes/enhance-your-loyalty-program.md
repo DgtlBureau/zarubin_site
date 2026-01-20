@@ -1,6 +1,6 @@
 ---
 title: 'Enhance Your Loyalty Program: The Power of Gamification'
-description: "The Bright Byte advocates for the transformative power of gamification in loyalty programs. Engaging and retaining people's attention can be achieved through three strategic pillars that play a crucial role in deep interaction."
+description: "The BrightByte advocates for the transformative power of gamification in loyalty programs. Engaging and retaining people's attention can be achieved through three strategic pillars that play a crucial role in deep interaction."
 image: ''
 date: '22-03-2024'
 readingTime: ''
@@ -11,7 +11,7 @@ authorName: 'Vitaliy Zarubin'
 authorImage: '/assets/images/author/avatar.png'
 ---
 
-The Bright Byte advocates for the transformative power of gamification in loyalty programs. Engaging and retaining people's attention can be achieved through three strategic pillars that play a crucial role in deep interaction. They are as follows:
+The BrightByte advocates for the transformative power of gamification in loyalty programs. Engaging and retaining people's attention can be achieved through three strategic pillars that play a crucial role in deep interaction. They are as follows:
 
 ### Personalization: The Foundation of Engagement
 

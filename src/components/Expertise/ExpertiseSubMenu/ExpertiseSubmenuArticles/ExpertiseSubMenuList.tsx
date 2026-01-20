@@ -17,19 +17,19 @@ interface IProps {
 export const ExpertiseSubMenuList = ({ data, onClick }: IProps) => {
   return (
     <div>
-      <div className='flex w-full flex-col gap-[20px] laptop-big:w-[464px]'>
+      <div className='flex w-full flex-col gap-[16px] laptop-big:w-[560px]'>
         {data.map((item) => {
           if (item.folderItems.length === 0) return null;
           return (
             <div key={item.name} className={`flex flex-col p-[5px] text-white`}>
-              <h3 className='flex w-full flex-1 items-center justify-between text-left font-unbound text-[20px] font-bold uppercase'>
+              <h3 className='flex w-full flex-1 items-center justify-between text-left font-unbound text-[16px] font-bold uppercase'>
                 {formatMenuTitle(item.name)}
               </h3>
               <div
-                className={`relative mt-[10px] flex w-full transform gap-x-[20px] gap-y-[20px] overflow-hidden bg-dark-blue p-[20px] px-[20px]`}
+                className={`relative mt-[8px] flex w-full transform gap-x-[16px] gap-y-[16px] overflow-hidden bg-dark-blue p-[16px] px-[16px]`}
               >
                 <ul
-                  className={`relative grid w-full grid-cols-1 gap-x-[40px] gap-y-[12px] tablet:grid-cols-2 laptop:gap-x-[80px]`}
+                  className={`relative grid w-full grid-cols-1 gap-x-[32px] gap-y-[8px] tablet:grid-cols-2 laptop:gap-x-[48px]`}
                 >
                   {item.folderItems.length !== 0 &&
                     item.folderItems
@@ -42,12 +42,13 @@ export const ExpertiseSubMenuList = ({ data, onClick }: IProps) => {
                       .map((el) => (
                         <li
                           key={el.nameItem}
-                          className='w-full font-proxima leading-[1.87]'
+                          className='w-full overflow-hidden font-proxima leading-[1.4]'
                           onClick={onClick}
                         >
                           <Link
-                            className='relative w-full border-b-[2px] border-solid border-transparent py-[5px] font-proxima text-[16px] leading-[1.1] text-link-gray hover:text-white'
+                            className='block truncate border-b-[2px] border-solid border-transparent py-[4px] font-proxima text-[14px] leading-[1.2] text-link-gray hover:text-white'
                             href={`/${MenuItems.PLAYBOOK.toLowerCase()}/expertise${formatLink(el.link)}`}
+                            title={formatMenuItem(formatLink(el.nameItem))}
                           >
                             {formatMenuItem(formatLink(el.nameItem))}
                           </Link>
@@ -59,10 +60,10 @@ export const ExpertiseSubMenuList = ({ data, onClick }: IProps) => {
               <Link
                 href={`/${MenuItems.PLAYBOOK.toLowerCase()}/expertise?sub-category=${item.name}`}
                 onClick={onClick}
-                className='group mt-[12px] flex items-center gap-[10px] whitespace-nowrap font-proxima text-[20px] font-bold leading-[1] text-link-gray hover:text-white laptop-big:mt-[20px]'
+                className='group mt-[10px] flex items-center gap-[8px] whitespace-nowrap font-proxima text-[14px] font-bold leading-[1] text-link-gray hover:text-white laptop-big:mt-[12px]'
               >
                 Go to {formatMenuTitle(item.name)}
-                <LinkArrow className='h-[auto] w-[24px] fill-link-gray group-hover:fill-white' />
+                <LinkArrow className='h-[auto] w-[18px] fill-link-gray group-hover:fill-white' />
               </Link>
             </div>
           );

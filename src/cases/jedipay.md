@@ -1,7 +1,7 @@
 ---
-title: 'Telegram Chat bot Native Wallet & Virtual Cards'
+title: 'AI-Powered Fintech Wallet & Virtual Cards'
 name: 'Jedi Pay'
-description: 'Fintech ecosystem built on Telegram, allowing users to issue virtual cards, conduct instant P2P transactions, and pay for online services directly within the messenger.'
+description: 'AI-driven fintech ecosystem on Telegram with ML fraud detection, virtual cards, instant P2P transactions, and intelligent payment processing.'
 industries: ['FinTech', 'Web development', 'AI & Data Science']
 type: 'FinTech'
 tag: 'Jedipay'

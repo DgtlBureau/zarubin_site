@@ -101,7 +101,65 @@
     @apply mobile:text-[18px] tablet:text-[25px] desktop:text-[30px];
   }
   .section-headings {
-    @apply mobile:text-[16px] tablet:text-[20px] desktop:text-[25px];
+    @apply mobile:text-[14px] tablet:text-[16px] desktop:text-[20px];
+  }
+
+  /* Typography System - Consistent sizing across the site */
+  /* Based on article page styling the user prefers */
+
+  /* Headings */
+  .typo-h1 {
+    @apply font-proxima text-[24px] font-bold leading-[1.1] tablet:text-[28px] desktop:text-[32px];
+  }
+  .typo-h2 {
+    @apply font-proxima text-[18px] font-bold leading-[1.2] tablet:text-[20px] desktop:text-[24px];
+  }
+  .typo-h3 {
+    @apply font-proxima text-[16px] font-bold leading-[1.2] tablet:text-[18px] desktop:text-[20px];
+  }
+  .typo-h4 {
+    @apply font-proxima text-[14px] font-bold leading-[1.3] tablet:text-[16px] desktop:text-[18px];
+  }
+  .typo-h5 {
+    @apply font-proxima text-[13px] font-bold leading-[1.3] tablet:text-[14px] desktop:text-[16px];
+  }
+  .typo-h6 {
+    @apply font-proxima text-[12px] font-bold leading-[1.4] tablet:text-[13px] desktop:text-[14px];
+  }
+
+  /* Body text */
+  .typo-body {
+    @apply font-proxima text-[14px] leading-[1.6] tablet:text-[15px] desktop:text-[16px];
+  }
+  .typo-body-sm {
+    @apply font-proxima text-[12px] leading-[1.5] tablet:text-[13px] desktop:text-[14px];
+  }
+  .typo-body-lg {
+    @apply font-proxima text-[16px] leading-[1.6] tablet:text-[17px] desktop:text-[18px];
+  }
+
+  /* Labels & captions */
+  .typo-label {
+    @apply font-proxima text-[11px] font-bold uppercase leading-[1.2] tracking-wide tablet:text-[12px] desktop:text-[13px];
+  }
+  .typo-caption {
+    @apply font-proxima text-[11px] leading-[1.4] tablet:text-[12px] desktop:text-[13px];
+  }
+
+  /* Menu & navigation */
+  .typo-menu {
+    @apply font-unbound text-[14px] font-bold uppercase tablet:text-[15px] desktop:text-[16px];
+  }
+  .typo-menu-sm {
+    @apply font-unbound text-[12px] font-bold uppercase tablet:text-[13px] desktop:text-[14px];
+  }
+
+  /* Links */
+  .typo-link {
+    @apply font-proxima text-[14px] leading-[1.4] tablet:text-[15px] desktop:text-[16px];
+  }
+  .typo-link-sm {
+    @apply font-proxima text-[12px] leading-[1.3] tablet:text-[13px] desktop:text-[14px];
   }
 }
 

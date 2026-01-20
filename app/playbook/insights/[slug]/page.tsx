@@ -10,6 +10,7 @@ import { BASE_URL, SITE_NAME } from '@/src/utils/alias';
 import { cleanMetaTitle } from '@/src/utils/cleanMetaTitle';
 import { contentTrimming } from '@/src/utils/contentTrimming';
 import { MenuItems } from '@/src/utils/enums';
+import { generateFAQSchema, generateArticleSchema } from '@/src/utils/faqSchema';
 import { formattedDate } from '@/src/utils/formattedDate';
 import { getInsightsMetadata } from '@/src/utils/getInsightsMetadata';
 import { ideaMarking } from '@/src/utils/IdeaMarking/ideaMarking';
@@ -21,6 +22,7 @@ import matter from 'gray-matter';
 import { DateTime } from 'luxon';
 import Markdown from 'markdown-to-jsx';
 import path from 'path';
+import Script from 'next/script';
 import styles from './Post.module.css';
 
 const findMarkdownFile = (dir: string, slug: string): string | null => {
@@ -126,8 +128,23 @@ export default function InsightsPostPage(props: { params: { slug: string } }) {
 
   const date = formattedDate(post.data.date);
 
-  const { tag, title, authorName, authorImage, downloadLink, readingTime } =
+  const { tag, title, authorName, authorImage, downloadLink, readingTime, faq, image } =
     post.data;
+
+  // Generate structured data
+  const publishedDateISO = DateTime.fromFormat(post.data.date, 'dd-MM-yyyy').toISO() || '';
+  const articleUrl = `${BASE_URL}/${MenuItems.PLAYBOOK.toLowerCase()}/insights/${slug}`;
+
+  const articleSchemaJson = generateArticleSchema({
+    title,
+    description: post.data.description,
+    image,
+    datePublished: publishedDateISO,
+    authorName,
+    url: articleUrl,
+  });
+
+  const faqSchemaJson = faq ? generateFAQSchema(faq) : null;
 
   const hashtagRegex = /#[A-Za-z_]+/g;
   const regexFont = /<font color='(.+?)'>(.+?)<\/font>/g;
@@ -173,6 +190,20 @@ export default function InsightsPostPage(props: { params: { slug: string } }) {
 
   return (
     <div className='relative w-full bg-white px-[10px] pb-[30px] tablet:px-[40px] tablet:pb-[40px] desktop:pb-[60px]'>
+      {/* Article Schema */}
+      <Script
+        id="article-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: articleSchemaJson }}
+      />
+      {/* FAQ Schema (if available) */}
+      {faqSchemaJson && (
+        <Script
+          id="faq-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: faqSchemaJson }}
+        />
+      )}
       <ReadingProgressBar />
       <div className='flex'>
         <div className='relative flex-1 pr-[20px]'>

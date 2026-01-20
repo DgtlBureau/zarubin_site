@@ -79,4 +79,4 @@ The design differences between sports apps in North America, Europe and Russia u
 
 ## Need help with your design project?
 
-If you're looking to develop a sports app or other digital solution with a tailored and effective UX/UI design, The Bright Byte can help. Our team specialises in creating user-centred designs that resonate with diverse audiences, increasing engagement and usability. With expertise across multiple geographies and markets, The Bright Byte is ready to bring your project to life with industry-leading design and development practices. Contact us to find out how we can support your design needs.
+If you're looking to develop a sports app or other digital solution with a tailored and effective UX/UI design, The BrightByte can help. Our team specialises in creating user-centred designs that resonate with diverse audiences, increasing engagement and usability. With expertise across multiple geographies and markets, The BrightByte is ready to bring your project to life with industry-leading design and development practices. Contact us to find out how we can support your design needs.

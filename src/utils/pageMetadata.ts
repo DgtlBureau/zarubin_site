@@ -12,7 +12,7 @@ export const pageMetadata = {
       'Technology Consulting',
       'Startup Support',
       'Digital Product Design',
-      'BrightByte',
+      'The BrightByte',
     ],
   },
   playbook: {
@@ -69,7 +69,7 @@ export const pageMetadata = {
   career: {
     title: 'A Quiet Studio for Builders, Thinkers, and Explorers',
     description:
-      'We’re a small team that values independence, clarity, and depth. If you enjoy real work more than buzzwords, BrightByte might be the right fit.',
+      "We're a small team that values independence, clarity, and depth. If you enjoy real work more than buzzwords, The BrightByte might be the right fit.",
     keywords: [
       'Careers',
       'Product Studio',

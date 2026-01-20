@@ -44,8 +44,10 @@ const parse = (conditions: Conditions) =>
 const useMediaQuery = (
   conditions: Conditions,
   joinOperator: 'and' | 'or' = 'and',
+  defaultValue: boolean = false,
 ) => {
-  const [matches, setMatches] = useState<boolean>(false);
+  // Use null to indicate "not yet determined" to prevent hydration mismatch
+  const [matches, setMatches] = useState<boolean | null>(null);
 
   useEffect(() => {
     const query = parse(conditions).join(` ${joinOperator} `);
@@ -59,7 +61,8 @@ const useMediaQuery = (
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [conditions.toString(), joinOperator]);
 
-  return matches;
+  // Return defaultValue during SSR and initial client render to prevent hydration mismatch
+  return matches ?? defaultValue;
 };
 
 export default useMediaQuery;

@@ -7,6 +7,7 @@ import { getAllArticles } from '@/src/utils/getAllArticles';
 import { pageMetadata } from '@/src/utils/pageMetadata';
 import { Seo } from '@/src/utils/Seo/Seo';
 import classNames from 'classnames';
+import { Inter } from 'next/font/google';
 import localFont from 'next/font/local';
 import Script from 'next/script';
 import React from 'react';
@@ -38,6 +39,12 @@ export async function generateMetadata({
     ogType: 'article',
   });
 }
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+});
 
 const Unbound = localFont({
   src: [
@@ -83,7 +90,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const bodyClassname = classNames(Unbound.variable, Proxima.variable);
+  const bodyClassname = classNames(inter.variable, Unbound.variable, Proxima.variable);
 
   return (
     <html lang='en'>
@@ -119,7 +126,7 @@ export default function RootLayout({
           expertiseSubmenu={expertiseSubMenu}
           expertiseMetadata={playbookMetaData}
         />
-        <main className='flex flex-col gap-[40px]'>{children}</main>
+        <main className='flex flex-col'>{children}</main>
         <ToastContainer />
         <Footer />
         <Script id='replain'>

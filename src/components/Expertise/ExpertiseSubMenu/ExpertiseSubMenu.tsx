@@ -16,7 +16,7 @@ export const ExpertiseSubMenu = ({
   return (
     <div className='z-20 mx-auto my-0 flex w-full items-stretch gap-[40px] p-[40px]'>
       <ExpertiseSubMenuList data={expertiseSubMenu} onClick={onClick} />
-      <div className='flex w-[630px] flex-col gap-[20px]'>
+      <div className='flex w-[720px] flex-col gap-[20px]'>
         <div className='mx-0 flex w-full px-0'>
           <ExpertiseSubmenuArticles
             data={expertiseMetadata}
