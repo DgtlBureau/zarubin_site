@@ -1,7 +1,6 @@
 'use client';
 
 import { sendBrief } from '@/src/utils/sendBrief';
-import { sendTelegram } from '@/src/utils/sendTelegram';
 import { useFormik } from 'formik';
 import { useQuestion } from '../Contexts/QuestionContext';
 import { initialData } from './briefData';
@@ -38,14 +37,22 @@ export const BriefClient = () => {
         email,
       );
 
-      const telegramSuccess = await sendTelegram(
-        `Name: ${name}\nEmail: ${email}\nCompany_name: ${company_name}\nIdea: ${idea}\nObjective: ${objective}\nObstacles: ${obstacle}\nBudget: ${budget}\nAbout_business: ${about_business}`
-      );
+      const telegramResponse = await fetch(
+        'https://api.telegram.org/bot6992822983:AAHWVJuwqeVl5kscHuZwcPx5W-IPXJ7mpkk/sendMessage',
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            chat_id: '199942509',
+            text: `Name: ${name}\nEmail: ${email}\nCompany_name: ${company_name}\nIdea: ${idea}\nObjective: ${objective}\nObstacles: ${obstacle}\nBudget: ${budget}\nAbout_business: ${about_business}`,
+          }),
+        }
+      ).then((r) => r.json());
 
-      if (telegramSuccess) {
+      if (telegramResponse.ok) {
         handleSetPage(pageInfo + 1);
       } else {
-        console.error('Error sending message to Telegram');
+        console.error('Error sending message to Telegram:', telegramResponse);
       }
 
       window.open(

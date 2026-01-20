@@ -3,7 +3,6 @@
 import CloseIcon from '@/public/assets/images/icons/close-circle.svg';
 import { NextLinePreposition } from '@/src/components/NextLinePreposition/NextLinePreposition';
 import { sendEmail } from '@/src/utils/sendEmail';
-import { sendTelegram } from '@/src/utils/sendTelegram';
 import { useFormik } from 'formik';
 import { toast } from 'react-toastify';
 
@@ -30,17 +29,25 @@ export const BonusesForm = ({ onClick, setIsEmailSended }: IFormProps) => {
       await sendEmail(values.name, values.email);
       resetForm();
 
-      const telegramSuccess = await sendTelegram(
-        `Name: ${values.name}\nEmail: ${values.email}`
-      );
+      const telegramResponse = await fetch(
+        'https://api.telegram.org/bot6992822983:AAHWVJuwqeVl5kscHuZwcPx5W-IPXJ7mpkk/sendMessage',
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            chat_id: '199942509',
+            text: `Name: ${values.name}\nEmail: ${values.email}`,
+          }),
+        }
+      ).then((r) => r.json());
 
-      if (telegramSuccess) {
+      if (telegramResponse.ok) {
         localStorage.setItem('isEmailSended', 'true');
         resetForm();
         setIsEmailSended(true);
         onClick();
       } else {
-        console.error('Error sending message to Telegram');
+        console.error('Error sending message to Telegram:', telegramResponse);
         notify();
       }
     },

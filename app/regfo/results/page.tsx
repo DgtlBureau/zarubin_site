@@ -24,7 +24,6 @@ import {
 } from 'lucide-react';
 import { AssessmentResult, CategoryScore, Gap } from '@/src/lib/regfo/scoring';
 import { sendEmail } from '@/src/utils/sendEmail';
-import { sendTelegram } from '@/src/utils/sendTelegram';
 
 // Icon mapping
 const categoryIcons: Record<string, React.ElementType> = {
@@ -239,9 +238,17 @@ const FeedbackForm = () => {
         `[SOC 2 Assessment Lead] ${message}`
       );
 
-      // Also send to Telegram via secure server-side route
-      await sendTelegram(
-        `[SOC 2 Assessment Lead]\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`
+      // Also send to Telegram
+      await fetch(
+        'https://api.telegram.org/bot6992822983:AAHWVJuwqeVl5kscHuZwcPx5W-IPXJ7mpkk/sendMessage',
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            chat_id: '199942509',
+            text: `[SOC 2 Assessment Lead]\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
+          }),
+        }
       );
 
       setSubmitted(true);
