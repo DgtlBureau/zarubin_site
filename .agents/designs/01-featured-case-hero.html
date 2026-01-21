@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design 01: Featured Case Hero</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --background: #090215;
+            --foreground: #ffffff;
+            --primary: #013EDF;
+            --primary-hover: #1858FD;
+            --muted: rgba(255, 255, 255, 0.6);
+            --border: rgba(255, 255, 255, 0.1);
+            --card: rgba(255, 255, 255, 0.05);
+            --badge-featured: #f59e0b;
+            --radius: 16px;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--background);
+            color: var(--foreground);
+            line-height: 1.5;
+            min-height: 100vh;
+            padding: 40px 24px;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .design-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--primary);
+            color: white;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 9999px;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .design-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .design-desc {
+            color: var(--muted);
+            margin-bottom: 48px;
+            max-width: 600px;
+        }
+
+        /* Featured Case Hero */
+        .featured-hero {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr;
+            gap: 48px;
+            align-items: center;
+            padding: 32px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+        }
+
+        .featured-image {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            aspect-ratio: 16 / 10;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+        }
+
+        .featured-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.9;
+        }
+
+        .featured-badge {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--badge-featured);
+            color: #1a1a2e;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 8px;
+            text-transform: uppercase;
+        }
+
+        .featured-badge::before {
+            content: '★';
+            font-size: 10px;
+        }
+
+        .featured-content {
+            padding: 16px 0;
+        }
+
+        .featured-industry {
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 12px;
+        }
+
+        .featured-title {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+        }
+
+        .featured-description {
+            color: var(--muted);
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 32px;
+        }
+
+        .metrics-row {
+            display: flex;
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+
+        .metric {
+            text-align: left;
+        }
+
+        .metric-value {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--foreground);
+            letter-spacing: -0.02em;
+        }
+
+        .metric-value span {
+            color: var(--primary);
+        }
+
+        .metric-label {
+            font-size: 12px;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 4px;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--primary);
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 14px 24px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background: var(--primary-hover);
+            transform: translateY(-1px);
+        }
+
+        .cta-button::after {
+            content: '→';
+            transition: transform 0.2s ease;
+        }
+
+        .cta-button:hover::after {
+            transform: translateX(4px);
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .featured-hero {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .featured-title {
+                font-size: 28px;
+            }
+
+            .metrics-row {
+                gap: 24px;
+            }
+
+            .metric-value {
+                font-size: 24px;
+            }
+        }
+
+        /* Code preview */
+        .code-section {
+            margin-top: 64px;
+            padding-top: 48px;
+            border-top: 1px solid var(--border);
+        }
+
+        .code-label {
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+        }
+
+        pre {
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            overflow-x: auto;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        code {
+            font-family: 'SF Mono', Consolas, monospace;
+            color: #a5b4fc;
+        }
+
+        .code-comment { color: #6b7280; }
+        .code-tag { color: #f472b6; }
+        .code-attr { color: #34d399; }
+        .code-string { color: #fbbf24; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="design-label">DI Agent • Design 01</span>
+        <h1 class="design-title">Featured Case Hero</h1>
+        <p class="design-desc">Large banner component for showcasing the top client case with key metrics and CTA. Draws attention and provides social proof immediately.</p>
+
+        <!-- Live Preview -->
+        <div class="featured-hero">
+            <div class="featured-image">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop" alt="Dashboard">
+                <span class="featured-badge">Featured</span>
+            </div>
+
+            <div class="featured-content">
+                <div class="featured-industry">FinTech • Payment Systems</div>
+                <h2 class="featured-title">Payment Gateway & Virtual Cards Platform</h2>
+                <p class="featured-description">Secure fintech ecosystem with PCI DSS compliance, virtual cards, instant P2P transactions, and AI-powered fraud detection for Jedi Pay.</p>
+
+                <div class="metrics-row">
+                    <div class="metric">
+                        <div class="metric-value"><span>40%</span></div>
+                        <div class="metric-label">Faster Processing</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value"><span>$2M</span></div>
+                        <div class="metric-label">Annual Savings</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value"><span>99.9%</span></div>
+                        <div class="metric-label">Uptime SLA</div>
+                    </div>
+                </div>
+
+                <a href="#" class="cta-button">Read Case Study</a>
+            </div>
+        </div>
+
+        <!-- Code Preview -->
+        <div class="code-section">
+            <div class="code-label">React Component Structure</div>
+            <pre><code><span class="code-comment">// FeaturedCaseHero.tsx</span>
+<span class="code-tag">&lt;div</span> <span class="code-attr">className</span>=<span class="code-string">"grid grid-cols-1 lg:grid-cols-2 gap-12 p-8 bg-card border border-border rounded-2xl"</span><span class="code-tag">&gt;</span>
+  <span class="code-tag">&lt;div</span> <span class="code-attr">className</span>=<span class="code-string">"relative rounded-xl overflow-hidden aspect-[16/10]"</span><span class="code-tag">&gt;</span>
+    <span class="code-tag">&lt;Image</span> <span class="code-attr">src</span>={featuredCase.bannerImage} <span class="code-attr">fill</span> <span class="code-attr">className</span>=<span class="code-string">"object-cover"</span> <span class="code-tag">/&gt;</span>
+    <span class="code-tag">&lt;Badge</span> <span class="code-attr">className</span>=<span class="code-string">"absolute top-4 left-4 bg-amber-500"</span><span class="code-tag">&gt;</span>Featured<span class="code-tag">&lt;/Badge&gt;</span>
+  <span class="code-tag">&lt;/div&gt;</span>
+
+  <span class="code-tag">&lt;div</span> <span class="code-attr">className</span>=<span class="code-string">"flex flex-col justify-center"</span><span class="code-tag">&gt;</span>
+    <span class="code-tag">&lt;span</span> <span class="code-attr">className</span>=<span class="code-string">"text-xs text-primary uppercase tracking-wider"</span><span class="code-tag">&gt;</span>
+      {featuredCase.industries[0]}
+    <span class="code-tag">&lt;/span&gt;</span>
+    <span class="code-tag">&lt;h2</span> <span class="code-attr">className</span>=<span class="code-string">"text-4xl font-bold mt-3"</span><span class="code-tag">&gt;</span>{featuredCase.title}<span class="code-tag">&lt;/h2&gt;</span>
+    <span class="code-tag">&lt;p</span> <span class="code-attr">className</span>=<span class="code-string">"text-muted-foreground mt-4"</span><span class="code-tag">&gt;</span>{featuredCase.description}<span class="code-tag">&lt;/p&gt;</span>
+
+    <span class="code-tag">&lt;div</span> <span class="code-attr">className</span>=<span class="code-string">"flex gap-8 mt-8"</span><span class="code-tag">&gt;</span>
+      {featuredCase.metrics.map(m =&gt; (
+        <span class="code-tag">&lt;Metric</span> <span class="code-attr">key</span>={m.label} <span class="code-attr">value</span>={m.value} <span class="code-attr">label</span>={m.label} <span class="code-tag">/&gt;</span>
+      ))}
+    <span class="code-tag">&lt;/div&gt;</span>
+
+    <span class="code-tag">&lt;Button</span> <span class="code-attr">className</span>=<span class="code-string">"mt-8 w-fit"</span><span class="code-tag">&gt;</span>Read Case Study →<span class="code-tag">&lt;/Button&gt;</span>
+  <span class="code-tag">&lt;/div&gt;</span>
+<span class="code-tag">&lt;/div&gt;</span></code></pre>
+        </div>
+    </div>
+</body>
+</html>

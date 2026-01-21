@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design 05: Case Study Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --background: #090215;
+            --background-light: #0f0a1f;
+            --foreground: #ffffff;
+            --primary: #013EDF;
+            --muted: rgba(255, 255, 255, 0.6);
+            --border: rgba(255, 255, 255, 0.1);
+            --card: rgba(255, 255, 255, 0.03);
+            --radius: 16px;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--background);
+            color: var(--foreground);
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .case-hero {
+            position: relative;
+            height: 60vh;
+            min-height: 450px;
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+        }
+
+        .case-hero-bg {
+            position: absolute;
+            inset: 0;
+        }
+
+        .case-hero-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.6;
+        }
+
+        .case-hero-bg::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, var(--background) 0%, rgba(9,2,21,0.5) 50%, transparent 100%);
+        }
+
+        .case-hero-content {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+
+        .case-badge {
+            display: inline-flex;
+            background: var(--primary);
+            color: white;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 9999px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 16px;
+        }
+
+        .case-title {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            max-width: 700px;
+        }
+
+        .case-client {
+            font-size: 18px;
+            color: var(--muted);
+            margin-top: 12px;
+        }
+
+        /* Metrics Bar */
+        .metrics-bar {
+            background: var(--background-light);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .metrics-bar-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .metric-block {
+            padding: 32px 24px;
+            text-align: center;
+            border-right: 1px solid var(--border);
+        }
+
+        .metric-block:last-child {
+            border-right: none;
+        }
+
+        .metric-value {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: -0.02em;
+        }
+
+        .metric-label {
+            font-size: 12px;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 4px;
+        }
+
+        /* Content Section */
+        .case-content {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 64px 24px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 64px;
+        }
+
+        .case-main h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            letter-spacing: -0.01em;
+        }
+
+        .case-main p {
+            color: var(--muted);
+            margin-bottom: 24px;
+        }
+
+        .case-main ul {
+            color: var(--muted);
+            margin-bottom: 24px;
+            padding-left: 20px;
+        }
+
+        .case-main li {
+            margin-bottom: 8px;
+        }
+
+        .section-divider {
+            height: 1px;
+            background: var(--border);
+            margin: 40px 0;
+        }
+
+        /* Sidebar */
+        .case-sidebar {
+            position: sticky;
+            top: 24px;
+            height: fit-content;
+        }
+
+        .sidebar-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .sidebar-card h4 {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .sidebar-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 14px;
+        }
+
+        .sidebar-item:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar-item span:first-child {
+            color: var(--muted);
+        }
+
+        .sidebar-item span:last-child {
+            font-weight: 500;
+        }
+
+        .services-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .service-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            background: rgba(1, 62, 223, 0.1);
+            border: 1px solid rgba(1, 62, 223, 0.2);
+            border-radius: 8px;
+            font-size: 13px;
+            color: var(--foreground);
+        }
+
+        .service-tag::before {
+            content: '✓';
+            color: var(--primary);
+            font-size: 12px;
+        }
+
+        /* Related Cases */
+        .related-section {
+            background: var(--background-light);
+            padding: 64px 24px;
+            border-top: 1px solid var(--border);
+        }
+
+        .related-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .related-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 32px;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .related-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .related-card:hover {
+            border-color: rgba(1, 62, 223, 0.4);
+            transform: translateY(-4px);
+        }
+
+        .related-card-image {
+            aspect-ratio: 16/10;
+            overflow: hidden;
+        }
+
+        .related-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .related-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .related-card-content {
+            padding: 20px;
+        }
+
+        .related-card-badge {
+            font-size: 10px;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+        }
+
+        .related-card-title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        /* CTA */
+        .cta-section {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 64px 24px;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, var(--primary) 0%, #1858FD 100%);
+            border-radius: var(--radius);
+            padding: 48px;
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .cta-box p {
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 24px;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: white;
+            color: var(--primary);
+            font-size: 14px;
+            font-weight: 600;
+            padding: 14px 28px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 968px) {
+            .case-title { font-size: 32px; }
+            .metrics-bar-inner { grid-template-columns: repeat(2, 1fr); }
+            .metric-block:nth-child(2) { border-right: none; }
+            .case-content { grid-template-columns: 1fr; }
+            .related-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero -->
+    <section class="case-hero">
+        <div class="case-hero-bg">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1600&h=900&fit=crop" alt="Jedi Pay Dashboard">
+        </div>
+        <div class="case-hero-content">
+            <span class="case-badge">FinTech • Payment Systems</span>
+            <h1 class="case-title">Payment Gateway & Virtual Cards Platform</h1>
+            <p class="case-client">Jedi Pay — Fintech Startup</p>
+        </div>
+    </section>
+
+    <!-- Metrics Bar -->
+    <section class="metrics-bar">
+        <div class="metrics-bar-inner">
+            <div class="metric-block">
+                <div class="metric-value">40%</div>
+                <div class="metric-label">Faster Processing</div>
+            </div>
+            <div class="metric-block">
+                <div class="metric-value">$2M</div>
+                <div class="metric-label">Annual Savings</div>
+            </div>
+            <div class="metric-block">
+                <div class="metric-value">3 mo</div>
+                <div class="metric-label">Time to Market</div>
+            </div>
+            <div class="metric-block">
+                <div class="metric-value">99.9%</div>
+                <div class="metric-label">Uptime SLA</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="case-content">
+        <div class="case-main">
+            <h2>The Challenge</h2>
+            <p>The client aimed to build an independent payment gateway but lacked a clear product structure, flow, and tech architecture. They needed support in defining the system from scratch — from UX logic to technical documentation and implementation roadmap.</p>
+
+            <div class="section-divider"></div>
+
+            <h2>Our Solution</h2>
+            <p>We designed and built a comprehensive fintech ecosystem on Telegram, allowing users to:</p>
+            <ul>
+                <li>Issue virtual cards with instant activation</li>
+                <li>Conduct P2P transactions with zero fees</li>
+                <li>Pay for online services directly within the messenger</li>
+                <li>Manage merchant dashboard with real-time analytics</li>
+            </ul>
+
+            <p>The Payment Gateway API includes tokenized card payments, recurring billing, webhook notifications, customizable checkout widgets, and AI-powered fraud detection.</p>
+
+            <div class="section-divider"></div>
+
+            <h2>Results & Impact</h2>
+            <p>Within 3 months of launch, the platform achieved:</p>
+            <ul>
+                <li><strong>40% faster</strong> transaction processing compared to industry average</li>
+                <li><strong>$2M annual savings</strong> through automated compliance checks</li>
+                <li><strong>99.9% uptime</strong> with zero security incidents</li>
+                <li><strong>PCI DSS Level 1</strong> certification achieved</li>
+            </ul>
+        </div>
+
+        <aside class="case-sidebar">
+            <div class="sidebar-card">
+                <h4>Quick Facts</h4>
+                <div class="sidebar-item">
+                    <span>Industry</span>
+                    <span>FinTech</span>
+                </div>
+                <div class="sidebar-item">
+                    <span>Duration</span>
+                    <span>3 months</span>
+                </div>
+                <div class="sidebar-item">
+                    <span>Team Size</span>
+                    <span>5 engineers</span>
+                </div>
+                <div class="sidebar-item">
+                    <span>Location</span>
+                    <span>Remote</span>
+                </div>
+            </div>
+
+            <div class="sidebar-card">
+                <h4>Tech Stack</h4>
+                <div class="sidebar-item">
+                    <span>Backend</span>
+                    <span>Python, FastAPI</span>
+                </div>
+                <div class="sidebar-item">
+                    <span>Frontend</span>
+                    <span>React, TypeScript</span>
+                </div>
+                <div class="sidebar-item">
+                    <span>Database</span>
+                    <span>PostgreSQL</span>
+                </div>
+                <div class="sidebar-item">
+                    <span>Cloud</span>
+                    <span>AWS</span>
+                </div>
+            </div>
+
+            <div class="sidebar-card">
+                <h4>Services Provided</h4>
+                <div class="services-list">
+                    <span class="service-tag">Custom Development</span>
+                    <span class="service-tag">AI Integration</span>
+                    <span class="service-tag">Compliance Audit</span>
+                    <span class="service-tag">DevOps</span>
+                </div>
+            </div>
+        </aside>
+    </section>
+
+    <!-- Related Cases -->
+    <section class="related-section">
+        <div class="related-inner">
+            <h2 class="related-title">Related Case Studies</h2>
+            <div class="related-grid">
+                <div class="related-card">
+                    <div class="related-card-image">
+                        <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=600&h=375&fit=crop" alt="Grid Capital">
+                    </div>
+                    <div class="related-card-content">
+                        <div class="related-card-badge">Finance</div>
+                        <h3 class="related-card-title">Grid Capital — Investment Platform</h3>
+                    </div>
+                </div>
+                <div class="related-card">
+                    <div class="related-card-image">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&h=375&fit=crop" alt="T-Bank">
+                    </div>
+                    <div class="related-card-content">
+                        <div class="related-card-badge">Banking</div>
+                        <h3 class="related-card-title">T-Bank — Mobile Banking App</h3>
+                    </div>
+                </div>
+                <div class="related-card">
+                    <div class="related-card-image">
+                        <img src="https://images.unsplash.com/photo-1611095564912-5e4c65e4e2d1?w=600&h=375&fit=crop" alt="NIS">
+                    </div>
+                    <div class="related-card-content">
+                        <div class="related-card-badge">Enterprise</div>
+                        <h3 class="related-card-title">NIS — Analytics Platform</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="cta-box">
+            <h3>Have a Similar Project?</h3>
+            <p>Let's discuss how we can help you achieve similar results.</p>
+            <a href="#" class="cta-button">Book a Free Consultation →</a>
+        </div>
+    </section>
+</body>
+</html>

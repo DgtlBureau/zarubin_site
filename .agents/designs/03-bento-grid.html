@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design 03: Bento Grid Layout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --background: #090215;
+            --foreground: #ffffff;
+            --primary: #013EDF;
+            --muted: rgba(255, 255, 255, 0.6);
+            --border: rgba(255, 255, 255, 0.1);
+            --card: rgba(255, 255, 255, 0.03);
+            --card-hover: rgba(255, 255, 255, 0.06);
+            --radius: 16px;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--background);
+            color: var(--foreground);
+            line-height: 1.5;
+            min-height: 100vh;
+            padding: 40px 24px;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .design-label {
+            display: inline-flex;
+            background: var(--primary);
+            color: white;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 9999px;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .design-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .design-desc {
+            color: var(--muted);
+            margin-bottom: 48px;
+            max-width: 600px;
+        }
+
+        /* Bento Grid */
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 200px);
+            gap: 16px;
+        }
+
+        /* Card base */
+        .bento-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .bento-card:hover {
+            background: var(--card-hover);
+            border-color: rgba(1, 62, 223, 0.4);
+            transform: scale(1.02);
+        }
+
+        .bento-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+            transition: all 0.5s ease;
+        }
+
+        .bento-card:hover img {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
+        .bento-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%, transparent 100%);
+        }
+
+        .card-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            z-index: 1;
+        }
+
+        .card-badge {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            font-size: 9px;
+            font-weight: 600;
+            padding: 4px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            margin-bottom: 8px;
+        }
+
+        .card-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .card-metrics {
+            display: flex;
+            gap: 12px;
+            margin-top: 8px;
+        }
+
+        .card-metric {
+            font-size: 11px;
+            color: var(--muted);
+        }
+
+        .card-metric strong {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Large card (2x2) */
+        .bento-large {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .bento-large .card-title {
+            font-size: 24px;
+        }
+
+        .bento-large .card-badge {
+            font-size: 10px;
+            padding: 5px 10px;
+        }
+
+        .bento-large .card-metrics {
+            gap: 20px;
+            margin-top: 12px;
+        }
+
+        .bento-large .card-metric {
+            font-size: 13px;
+        }
+
+        /* Wide card (2x1) */
+        .bento-wide {
+            grid-column: span 2;
+        }
+
+        /* Tall card (1x2) */
+        .bento-tall {
+            grid-row: span 2;
+        }
+
+        /* Layout diagram */
+        .layout-section {
+            margin-top: 64px;
+            padding-top: 48px;
+            border-top: 1px solid var(--border);
+        }
+
+        .layout-title {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 24px;
+        }
+
+        .layout-diagram {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 60px);
+            gap: 8px;
+            max-width: 500px;
+        }
+
+        .layout-cell {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            color: var(--muted);
+        }
+
+        .layout-cell.large {
+            grid-column: span 2;
+            grid-row: span 2;
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .layout-cell.wide {
+            grid-column: span 2;
+        }
+
+        @media (max-width: 968px) {
+            .bento-grid {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+            }
+            .bento-large {
+                grid-column: span 2;
+                grid-row: span 1;
+                min-height: 300px;
+            }
+            .bento-wide {
+                grid-column: span 2;
+            }
+            .bento-tall {
+                grid-row: span 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="design-label">DI Agent • Design 03</span>
+        <h1 class="design-title">Bento Grid Layout</h1>
+        <p class="design-desc">Apple-inspired bento layout with varied card sizes creates visual rhythm and hierarchy. Featured cases get more real estate.</p>
+
+        <!-- Bento Grid -->
+        <div class="bento-grid">
+            <!-- Large Featured Card (2x2) -->
+            <div class="bento-card bento-large">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=800&fit=crop" alt="Jedi Pay">
+                <div class="card-content">
+                    <span class="card-badge">★ Featured • FinTech</span>
+                    <h3 class="card-title">Jedi Pay Payment Gateway</h3>
+                    <div class="card-metrics">
+                        <span class="card-metric"><strong>40%</strong> faster</span>
+                        <span class="card-metric"><strong>$2M</strong> saved</span>
+                        <span class="card-metric"><strong>99.9%</strong> uptime</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Standard Card -->
+            <div class="bento-card">
+                <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&h=400&fit=crop" alt="Avangard">
+                <div class="card-content">
+                    <span class="card-badge">Sports</span>
+                    <h3 class="card-title">Avangard CRM</h3>
+                    <div class="card-metrics">
+                        <span class="card-metric"><strong>50K</strong> users</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Standard Card -->
+            <div class="bento-card">
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop" alt="PersoniWay">
+                <div class="card-content">
+                    <span class="card-badge">HVAC</span>
+                    <h3 class="card-title">PersoniWay</h3>
+                    <div class="card-metrics">
+                        <span class="card-metric"><strong>60%</strong> efficiency</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Standard Card -->
+            <div class="bento-card">
+                <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&h=400&fit=crop" alt="Grid Capital">
+                <div class="card-content">
+                    <span class="card-badge">Finance</span>
+                    <h3 class="card-title">Grid Capital</h3>
+                    <div class="card-metrics">
+                        <span class="card-metric"><strong>5x</strong> ROI</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Standard Card -->
+            <div class="bento-card">
+                <img src="https://images.unsplash.com/photo-1485546246426-74dc88dec4d9?w=400&h=400&fit=crop" alt="Torpedo">
+                <div class="card-content">
+                    <span class="card-badge">Sports</span>
+                    <h3 class="card-title">HC Torpedo</h3>
+                    <div class="card-metrics">
+                        <span class="card-metric"><strong>Arena</strong> mgmt</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wide Card (2x1) -->
+            <div class="bento-card bento-wide">
+                <img src="https://images.unsplash.com/photo-1611095564912-5e4c65e4e2d1?w=800&h=400&fit=crop" alt="NIS">
+                <div class="card-content">
+                    <span class="card-badge">Oil & Gas</span>
+                    <h3 class="card-title">NIS — Enterprise Analytics Platform</h3>
+                    <div class="card-metrics">
+                        <span class="card-metric"><strong>10TB</strong> processed</span>
+                        <span class="card-metric"><strong>Real-time</strong> dashboards</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Layout Diagram -->
+        <div class="layout-section">
+            <div class="layout-title">Grid Structure</div>
+            <div class="layout-diagram">
+                <div class="layout-cell large">2×2</div>
+                <div class="layout-cell">1×1</div>
+                <div class="layout-cell">1×1</div>
+                <div class="layout-cell">1×1</div>
+                <div class="layout-cell">1×1</div>
+                <div class="layout-cell wide">2×1</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

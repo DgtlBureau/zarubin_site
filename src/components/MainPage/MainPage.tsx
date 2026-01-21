@@ -1,3 +1,4 @@
+import { FeaturedCases } from '@/src/components/Main/FeaturedCases';
 import { NewContactForm } from '@/src/components/Main/NewContactForm/NewContactForm';
 import { NewExpertise } from '@/src/components/Main/NewExpertise/NewExpertise';
 import { NewFeedback } from '@/src/components/Main/NewFeedback/NewFeedback';
@@ -12,6 +13,7 @@ export const MainPageComponent = () => {
   return (
     <div className='oveflow-hidden flex flex-col'>
       <NewHero />
+      <FeaturedCases />
       <NewExpertise data={data} />
       <NewInsights />
       <Section>

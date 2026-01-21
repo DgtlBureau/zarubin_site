@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design 04: Filter Pills with Count</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --background: #090215;
+            --foreground: #ffffff;
+            --primary: #013EDF;
+            --muted: rgba(255, 255, 255, 0.6);
+            --border: rgba(255, 255, 255, 0.15);
+            --card: rgba(255, 255, 255, 0.05);
+            --radius: 9999px;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--background);
+            color: var(--foreground);
+            line-height: 1.5;
+            min-height: 100vh;
+            padding: 40px 24px;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .design-label {
+            display: inline-flex;
+            background: var(--primary);
+            color: white;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 9999px;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .design-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .design-desc {
+            color: var(--muted);
+            margin-bottom: 48px;
+            max-width: 600px;
+        }
+
+        /* Filter Section */
+        .filter-section {
+            margin-bottom: 48px;
+        }
+
+        .filter-label {
+            font-size: 12px;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+        }
+
+        /* Filter Pills */
+        .filter-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .filter-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            border-radius: var(--radius);
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 1px solid var(--border);
+            background: transparent;
+            color: var(--foreground);
+        }
+
+        .filter-pill:hover {
+            border-color: var(--primary);
+            background: rgba(1, 62, 223, 0.1);
+        }
+
+        .filter-pill.active {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: white;
+        }
+
+        .filter-pill .count {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 22px;
+            height: 22px;
+            padding: 0 6px;
+            border-radius: var(--radius);
+            font-size: 11px;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .filter-pill.active .count {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        /* Comparison */
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            margin-top: 64px;
+            padding-top: 48px;
+            border-top: 1px solid var(--border);
+        }
+
+        .comparison-item h4 {
+            font-size: 12px;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 20px;
+        }
+
+        /* Old style */
+        .old-pills {
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            padding-bottom: 8px;
+        }
+
+        .old-pill {
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-size: 12px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            white-space: nowrap;
+            opacity: 0.6;
+        }
+
+        .old-pill.active {
+            background: var(--primary);
+            opacity: 1;
+        }
+
+        /* Animation demo */
+        .animation-demo {
+            margin-top: 48px;
+            padding: 32px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+        }
+
+        .demo-label {
+            font-size: 11px;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+        }
+
+        .demo-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .demo-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            border-radius: var(--radius);
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 1px solid var(--border);
+            background: transparent;
+            color: var(--foreground);
+        }
+
+        .demo-pill:hover {
+            border-color: var(--primary);
+            background: rgba(1, 62, 223, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .demo-pill.active {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: white;
+            box-shadow: 0 4px 20px rgba(1, 62, 223, 0.4);
+        }
+
+        .demo-pill .count {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 24px;
+            height: 24px;
+            padding: 0 8px;
+            border-radius: var(--radius);
+            font-size: 12px;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.15);
+            transition: all 0.2s ease;
+        }
+
+        .demo-pill.active .count {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Icon for All */
+        .icon-grid {
+            width: 14px;
+            height: 14px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2px;
+        }
+
+        .icon-grid span {
+            background: currentColor;
+            border-radius: 2px;
+        }
+
+        @media (max-width: 768px) {
+            .comparison {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="design-label">DI Agent • Design 04</span>
+        <h1 class="design-title">Filter Pills with Count</h1>
+        <p class="design-desc">Modern pill-style filters that show how many cases are in each category. Users immediately know what to expect.</p>
+
+        <!-- Live Preview -->
+        <div class="filter-section">
+            <div class="filter-label">Filter by Industry</div>
+            <div class="filter-pills">
+                <button class="filter-pill active">
+                    <span class="icon-grid"><span></span><span></span><span></span><span></span></span>
+                    All
+                    <span class="count">15</span>
+                </button>
+                <button class="filter-pill">
+                    FinTech
+                    <span class="count">4</span>
+                </button>
+                <button class="filter-pill">
+                    Sports
+                    <span class="count">5</span>
+                </button>
+                <button class="filter-pill">
+                    Oil & Gas
+                    <span class="count">2</span>
+                </button>
+                <button class="filter-pill">
+                    Field Service
+                    <span class="count">2</span>
+                </button>
+                <button class="filter-pill">
+                    Enterprise
+                    <span class="count">2</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Comparison -->
+        <div class="comparison">
+            <div class="comparison-item">
+                <h4>❌ Current: Basic Tags</h4>
+                <div class="old-pills">
+                    <span class="old-pill active">All</span>
+                    <span class="old-pill">fintech</span>
+                    <span class="old-pill">sports</span>
+                    <span class="old-pill">oil & gas</span>
+                    <span class="old-pill">field service</span>
+                </div>
+                <p style="color: var(--muted); font-size: 13px; margin-top: 16px;">
+                    • No count indicator<br>
+                    • Lowercase, inconsistent<br>
+                    • Horizontal scroll on mobile<br>
+                    • Small tap targets
+                </p>
+            </div>
+            <div class="comparison-item">
+                <h4>✓ New: Pills with Count</h4>
+                <div class="filter-pills">
+                    <button class="filter-pill active">
+                        All <span class="count">15</span>
+                    </button>
+                    <button class="filter-pill">
+                        FinTech <span class="count">4</span>
+                    </button>
+                    <button class="filter-pill">
+                        Sports <span class="count">5</span>
+                    </button>
+                </div>
+                <p style="color: var(--muted); font-size: 13px; margin-top: 16px;">
+                    • Clear count in badge<br>
+                    • Proper casing<br>
+                    • Wrap on mobile<br>
+                    • Large tap targets
+                </p>
+            </div>
+        </div>
+
+        <!-- Interactive Demo -->
+        <div class="animation-demo">
+            <div class="demo-label">Interactive Demo (hover to see effects)</div>
+            <div class="demo-pills">
+                <button class="demo-pill active">
+                    All <span class="count">15</span>
+                </button>
+                <button class="demo-pill">
+                    FinTech <span class="count">4</span>
+                </button>
+                <button class="demo-pill">
+                    Sports <span class="count">5</span>
+                </button>
+                <button class="demo-pill">
+                    Oil & Gas <span class="count">2</span>
+                </button>
+                <button class="demo-pill">
+                    Enterprise <span class="count">2</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple click handler for demo
+        document.querySelectorAll('.demo-pill').forEach(pill => {
+            pill.addEventListener('click', () => {
+                document.querySelectorAll('.demo-pill').forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

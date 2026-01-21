@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DI Agent — Design System for BrightByte</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --background: #090215;
+            --foreground: #ffffff;
+            --primary: #013EDF;
+            --muted: rgba(255, 255, 255, 0.6);
+            --border: rgba(255, 255, 255, 0.1);
+            --card: rgba(255, 255, 255, 0.03);
+            --card-hover: rgba(255, 255, 255, 0.08);
+            --radius: 16px;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--background);
+            color: var(--foreground);
+            line-height: 1.5;
+            min-height: 100vh;
+            padding: 60px 24px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 24px;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .logo-text {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        .logo-text span {
+            color: var(--muted);
+            font-weight: 400;
+        }
+
+        .header h1 {
+            font-size: 42px;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin-bottom: 16px;
+        }
+
+        .header p {
+            color: var(--muted);
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Design Cards */
+        .designs-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .design-card {
+            display: grid;
+            grid-template-columns: 80px 1fr auto;
+            align-items: center;
+            gap: 24px;
+            padding: 24px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            text-decoration: none;
+            color: var(--foreground);
+            transition: all 0.3s ease;
+        }
+
+        .design-card:hover {
+            background: var(--card-hover);
+            border-color: rgba(1, 62, 223, 0.4);
+            transform: translateX(8px);
+        }
+
+        .design-number {
+            width: 64px;
+            height: 64px;
+            background: var(--primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .design-info h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .design-info p {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .design-arrow {
+            font-size: 24px;
+            color: var(--muted);
+            transition: all 0.3s ease;
+        }
+
+        .design-card:hover .design-arrow {
+            color: var(--primary);
+            transform: translateX(4px);
+        }
+
+        /* Priority Badge */
+        .priority-badge {
+            display: inline-flex;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-left: 12px;
+        }
+
+        .priority-badge.high {
+            background: rgba(239, 68, 68, 0.2);
+            color: #ef4444;
+        }
+
+        .priority-badge.medium {
+            background: rgba(251, 191, 36, 0.2);
+            color: #fbbf24;
+        }
+
+        .priority-badge.low {
+            background: rgba(34, 197, 94, 0.2);
+            color: #22c55e;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 64px;
+            padding-top: 32px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Stats */
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            margin-top: 48px;
+            margin-bottom: 48px;
+            padding: 32px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        @media (max-width: 768px) {
+            .design-card {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .design-number {
+                margin: 0 auto;
+            }
+            .design-arrow {
+                display: none;
+            }
+            .stats {
+                flex-direction: column;
+                gap: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">DI</div>
+                <div class="logo-text">Design Intelligence <span>Agent</span></div>
+            </div>
+            <h1>BrightByte Cases Redesign</h1>
+            <p>6 high-impact design improvements for the Cases page, following shadcn/ui and Apple design principles.</p>
+        </header>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">6</div>
+                <div class="stat-label">Designs</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">P0</div>
+                <div class="stat-label">Priority</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">15+</div>
+                <div class="stat-label">Cases</div>
+            </div>
+        </div>
+
+        <div class="designs-grid">
+            <a href="01-featured-case-hero.html" class="design-card">
+                <div class="design-number">01</div>
+                <div class="design-info">
+                    <h3>Featured Case Hero <span class="priority-badge high">P0</span></h3>
+                    <p>Large banner for top client with metrics, CTA, and social proof</p>
+                </div>
+                <span class="design-arrow">→</span>
+            </a>
+
+            <a href="02-metrics-card.html" class="design-card">
+                <div class="design-number">02</div>
+                <div class="design-info">
+                    <h3>Metrics-First Cards <span class="priority-badge high">P0</span></h3>
+                    <p>Case cards with KPI strip showing outcomes (40% faster, $2M saved)</p>
+                </div>
+                <span class="design-arrow">→</span>
+            </a>
+
+            <a href="03-bento-grid.html" class="design-card">
+                <div class="design-number">03</div>
+                <div class="design-info">
+                    <h3>Bento Grid Layout <span class="priority-badge medium">P1</span></h3>
+                    <p>Apple-style varied card sizes (2x2 featured, 2x1 wide) for visual rhythm</p>
+                </div>
+                <span class="design-arrow">→</span>
+            </a>
+
+            <a href="04-filter-pills.html" class="design-card">
+                <div class="design-number">04</div>
+                <div class="design-info">
+                    <h3>Filter Pills + Count <span class="priority-badge low">P2</span></h3>
+                    <p>Modern pill buttons showing case count per industry</p>
+                </div>
+                <span class="design-arrow">→</span>
+            </a>
+
+            <a href="05-case-page.html" class="design-card">
+                <div class="design-number">05</div>
+                <div class="design-info">
+                    <h3>Case Study Page <span class="priority-badge medium">P1</span></h3>
+                    <p>Full page template: Hero → Metrics Bar → Content → Related Cases</p>
+                </div>
+                <span class="design-arrow">→</span>
+            </a>
+
+            <a href="06-main-cases-original-style.html" class="design-card">
+                <div class="design-number">06</div>
+                <div class="design-info">
+                    <h3>Featured Cases - Insights Style <span class="priority-badge high">P0</span></h3>
+                    <p>OAZIS, Avangard, Torpedo with orange/white tags synced with Insights cards</p>
+                </div>
+                <span class="design-arrow">→</span>
+            </a>
+        </div>
+
+        <footer class="footer">
+            <p>Generated by <strong>DI Agent v1.0</strong> • <a href="https://thebrightbyte.com">thebrightbyte.com</a></p>
+            <p style="margin-top: 8px;">Design philosophy: shadcn/ui + Apple minimalism + 2026 SaaS trends</p>
+        </footer>
+    </div>
+</body>
+</html>

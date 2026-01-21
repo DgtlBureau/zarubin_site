@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design 02: Metrics-First Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --background: #090215;
+            --foreground: #ffffff;
+            --primary: #013EDF;
+            --primary-hover: #1858FD;
+            --muted: rgba(255, 255, 255, 0.6);
+            --border: rgba(255, 255, 255, 0.1);
+            --card: rgba(255, 255, 255, 0.03);
+            --card-hover: rgba(255, 255, 255, 0.06);
+            --radius: 16px;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--background);
+            color: var(--foreground);
+            line-height: 1.5;
+            min-height: 100vh;
+            padding: 40px 24px;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .design-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--primary);
+            color: white;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 9999px;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .design-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .design-desc {
+            color: var(--muted);
+            margin-bottom: 48px;
+            max-width: 600px;
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        /* Case Card */
+        .case-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .case-card:hover {
+            background: var(--card-hover);
+            border-color: rgba(1, 62, 223, 0.5);
+            transform: translateY(-4px);
+        }
+
+        .card-image {
+            position: relative;
+            aspect-ratio: 16 / 10;
+            overflow: hidden;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .case-card:hover .card-image img {
+            transform: scale(1.05);
+        }
+
+        .card-image::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 50%);
+        }
+
+        .card-badge {
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            z-index: 1;
+            display: inline-flex;
+            background: var(--primary);
+            color: white;
+            font-size: 10px;
+            font-weight: 600;
+            padding: 5px 10px;
+            border-radius: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: -0.01em;
+        }
+
+        .card-description {
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 1.5;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* Metrics Strip - THE KEY ADDITION */
+        .metrics-strip {
+            display: flex;
+            gap: 0;
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+        }
+
+        .metric-item {
+            flex: 1;
+            text-align: center;
+            padding: 0 8px;
+        }
+
+        .metric-item:not(:last-child) {
+            border-right: 1px solid var(--border);
+        }
+
+        .metric-value {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: -0.02em;
+        }
+
+        .metric-label {
+            font-size: 10px;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            margin-top: 2px;
+        }
+
+        /* Comparison Section */
+        .comparison {
+            margin-top: 64px;
+            padding-top: 48px;
+            border-top: 1px solid var(--border);
+        }
+
+        .comparison-title {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 24px;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+        }
+
+        .comparison-item h4 {
+            font-size: 12px;
+            color: var(--muted);
+            margin-bottom: 16px;
+        }
+
+        .old-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px;
+            opacity: 0.6;
+        }
+
+        .old-card .card-title {
+            font-size: 16px;
+        }
+
+        .old-card .card-description {
+            font-size: 13px;
+        }
+
+        .arrow-label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: var(--primary);
+            font-size: 12px;
+            font-weight: 500;
+            margin: 24px 0;
+        }
+
+        @media (max-width: 968px) {
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="design-label">DI Agent • Design 02</span>
+        <h1 class="design-title">Metrics-First Card Design</h1>
+        <p class="design-desc">Every case card now includes a metrics strip showing key outcomes. This provides immediate social proof and differentiates cases by impact.</p>
+
+        <!-- Cards Preview -->
+        <div class="cards-grid">
+            <!-- Card 1 -->
+            <div class="case-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=375&fit=crop" alt="Dashboard">
+                    <span class="card-badge">FinTech</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Jedi Pay</h3>
+                    <p class="card-description">Payment gateway with PCI DSS compliance, virtual cards, and fraud detection.</p>
+                    <div class="metrics-strip">
+                        <div class="metric-item">
+                            <div class="metric-value">40%</div>
+                            <div class="metric-label">Faster</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">$2M</div>
+                            <div class="metric-label">Saved</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">3mo</div>
+                            <div class="metric-label">Delivery</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="case-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&h=375&fit=crop" alt="Sports">
+                    <span class="card-badge">Sports</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Avangard CRM</h3>
+                    <p class="card-description">Custom CRM platform for professional hockey club with 50k+ fans.</p>
+                    <div class="metrics-strip">
+                        <div class="metric-item">
+                            <div class="metric-value">50K</div>
+                            <div class="metric-label">Users</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">3x</div>
+                            <div class="metric-label">Engagement</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">6mo</div>
+                            <div class="metric-label">Delivery</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="case-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=375&fit=crop" alt="HVAC">
+                    <span class="card-badge">Field Service</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">PersoniWay</h3>
+                    <p class="card-description">AI-powered workforce management for HVAC field operations.</p>
+                    <div class="metrics-strip">
+                        <div class="metric-item">
+                            <div class="metric-value">60%</div>
+                            <div class="metric-label">Efficiency</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">2x</div>
+                            <div class="metric-label">Capacity</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">4mo</div>
+                            <div class="metric-label">Delivery</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Before/After Comparison -->
+        <div class="comparison">
+            <div class="comparison-title">Before → After</div>
+            <div class="comparison-grid">
+                <div class="comparison-item">
+                    <h4>❌ Old Card (no metrics)</h4>
+                    <div class="old-card">
+                        <h3 class="card-title">Jedi Pay</h3>
+                        <p class="card-description">Payment gateway with PCI DSS compliance, virtual cards, and fraud detection system for fintech platform.</p>
+                    </div>
+                </div>
+                <div class="comparison-item">
+                    <h4>✓ New Card (with metrics strip)</h4>
+                    <div class="case-card" style="max-width: 100%;">
+                        <div class="card-content" style="padding-top: 0;">
+                            <h3 class="card-title">Jedi Pay</h3>
+                            <p class="card-description">Payment gateway with PCI DSS compliance, virtual cards, and fraud detection.</p>
+                            <div class="metrics-strip">
+                                <div class="metric-item">
+                                    <div class="metric-value">40%</div>
+                                    <div class="metric-label">Faster</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-value">$2M</div>
+                                    <div class="metric-label">Saved</div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-value">3mo</div>
+                                    <div class="metric-label">Delivery</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

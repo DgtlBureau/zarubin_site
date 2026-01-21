@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrightByte — Main Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg: #090215;
+            --foreground: #ffffff;
+            --primary: #013EDF;
+            --yellow: #F8AE3C;
+            --muted: rgba(255, 255, 255, 0.6);
+            --border: rgba(255, 255, 255, 0.1);
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --radius: 12px;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--foreground);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ========================================
+           HEADER - Exact match
+           ======================================== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: var(--bg);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 72px;
+            gap: 40px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            display: grid;
+            grid-template-columns: repeat(2, 12px);
+            gap: 3px;
+        }
+
+        .logo-icon span {
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+        }
+
+        .logo-icon span:nth-child(1) { background: #F8AE3C; }
+        .logo-icon span:nth-child(2) { background: #FF6B35; }
+        .logo-icon span:nth-child(3) { background: #FF6B35; }
+        .logo-icon span:nth-child(4) { background: #F8AE3C; }
+
+        .logo-text {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1;
+        }
+
+        .logo-text span {
+            display: block;
+            font-size: 18px;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            flex: 1;
+            justify-content: center;
+        }
+
+        .nav a {
+            color: var(--foreground);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: opacity 0.2s ease;
+        }
+
+        .nav a:hover {
+            opacity: 0.8;
+        }
+
+        .nav-buttons {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .btn-soc {
+            background: var(--yellow);
+            color: #1a1a2e;
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .btn-strategy {
+            border: 1px solid var(--foreground);
+            color: var(--foreground);
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-strategy:hover {
+            background: var(--foreground);
+            color: var(--bg);
+        }
+
+        /* ========================================
+           HERO SLIDER - Exact match
+           ======================================== */
+        .hero {
+            position: relative;
+            height: 400px;
+            margin-top: 72px;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+        }
+
+        .hero-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-bg::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to right, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0.2) 100%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 40px 0;
+        }
+
+        .hero-tag {
+            display: inline-flex;
+            width: fit-content;
+            padding: 6px 14px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 9999px;
+            font-size: 12px;
+            font-weight: 500;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .hero-title {
+            font-size: 40px;
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            line-height: 1.15;
+            max-width: 550px;
+            margin-bottom: 16px;
+        }
+
+        .hero-description {
+            font-size: 14px;
+            color: rgba(255,255,255,0.7);
+            max-width: 420px;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        .hero-btn {
+            display: inline-flex;
+            width: fit-content;
+            padding: 12px 20px;
+            background: white;
+            color: #111;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .hero-btn:hover {
+            background: rgba(255,255,255,0.9);
+        }
+
+        .hero-dots {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 24px;
+        }
+
+        .hero-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .hero-dot.active {
+            width: 20px;
+            border-radius: 3px;
+            background: white;
+        }
+
+        /* ========================================
+           CASES SECTION - NEW (after hero)
+           ======================================== */
+        .cases-section {
+            padding: 64px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+
+        .section-label {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .section-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--foreground);
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+            opacity: 0.7;
+            transition: all 0.2s ease;
+        }
+
+        .section-link:hover {
+            opacity: 1;
+            gap: 10px;
+        }
+
+        .section-title {
+            font-size: 15px;
+            color: var(--muted);
+            margin-bottom: 32px;
+            max-width: 500px;
+        }
+
+        /* Cases Grid - 3 cards */
+        .cases-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        /* Case Card */
+        .case-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .case-card:hover {
+            border-color: rgba(1, 62, 223, 0.4);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+        }
+
+        .card-image {
+            position: relative;
+            aspect-ratio: 16 / 10;
+            overflow: hidden;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .case-card:hover .card-image img {
+            transform: scale(1.05);
+        }
+
+        .card-image::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 50%);
+        }
+
+        .card-badge {
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            z-index: 1;
+            display: inline-flex;
+            background: var(--primary);
+            color: white;
+            font-size: 10px;
+            font-weight: 600;
+            padding: 5px 10px;
+            border-radius: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .card-content {
+            padding: 18px;
+        }
+
+        .card-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            letter-spacing: -0.01em;
+        }
+
+        .card-description {
+            font-size: 13px;
+            color: var(--muted);
+            line-height: 1.5;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* Metrics Strip */
+        .metrics-strip {
+            display: flex;
+            gap: 0;
+            margin-top: 14px;
+            padding-top: 14px;
+            border-top: 1px solid var(--border);
+        }
+
+        .metric-item {
+            flex: 1;
+            text-align: center;
+            padding: 0 6px;
+        }
+
+        .metric-item:not(:last-child) {
+            border-right: 1px solid var(--border);
+        }
+
+        .metric-value {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: -0.02em;
+        }
+
+        .metric-label {
+            font-size: 9px;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            margin-top: 2px;
+        }
+
+        /* ========================================
+           EXPERTISE SECTION - Original design
+           ======================================== */
+        .expertise-section {
+            padding: 64px 0;
+        }
+
+        .expertise-header {
+            margin-bottom: 12px;
+        }
+
+        .expertise-label {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .expertise-title {
+            font-size: 15px;
+            color: var(--muted);
+            margin-bottom: 32px;
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: 1.8fr 1fr;
+            gap: 20px;
+        }
+
+        .expertise-main {
+            background: linear-gradient(135deg, #1a1040 0%, #2d1b69 50%, #1a1040 100%);
+            border-radius: var(--radius);
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            min-height: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .expertise-main::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 60%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(147, 51, 234, 0.3) 0%, transparent 70%);
+        }
+
+        .expertise-main-text {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.5;
+            max-width: 400px;
+            margin-bottom: 24px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .expertise-main-btn {
+            display: inline-flex;
+            width: fit-content;
+            padding: 12px 20px;
+            background: var(--yellow);
+            color: #1a1a2e;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+            position: relative;
+            z-index: 1;
+        }
+
+        .expertise-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+        }
+
+        .expertise-card-image {
+            height: 100px;
+            overflow: hidden;
+        }
+
+        .expertise-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .expertise-card-content {
+            padding: 20px;
+        }
+
+        .expertise-card-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+            font-size: 18px;
+        }
+
+        .expertise-card-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .expertise-card-desc {
+            font-size: 13px;
+            color: var(--muted);
+            line-height: 1.5;
+        }
+
+        /* ========================================
+           RESPONSIVE
+           ======================================== */
+        @media (max-width: 1024px) {
+            .cases-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .cases-grid .case-card:last-child {
+                display: none;
+            }
+            .expertise-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav, .nav-buttons {
+                display: none;
+            }
+            .cases-grid {
+                grid-template-columns: 1fr;
+            }
+            .cases-grid .case-card:last-child {
+                display: block;
+            }
+            .hero {
+                height: 320px;
+            }
+            .hero-title {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <div class="logo-icon">
+                    <span></span><span></span><span></span><span></span>
+                </div>
+                <div class="logo-text">
+                    <span>BRIGHT</span>
+                    <span>BYTE</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="#">Playbook</a>
+                <a href="#">Cases</a>
+                <a href="#">Investments</a>
+                <a href="#">Career</a>
+                <a href="#">Comparison</a>
+            </nav>
+            <div class="nav-buttons">
+                <a href="#" class="btn-soc">SOC 2 Assessment</a>
+                <a href="#" class="btn-strategy">Free strategy session</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Slider -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&h=900&fit=crop" alt="Digital Products">
+        </div>
+        <div class="container hero-content">
+            <span class="hero-tag">Digital Products</span>
+            <h1 class="hero-title">Digital Products With Measurable Business Impact</h1>
+            <p class="hero-description">Data-driven development focused on ROI and tangible business outcomes</p>
+            <a href="#" class="hero-btn">Insights</a>
+            <div class="hero-dots">
+                <span class="hero-dot"></span>
+                <span class="hero-dot"></span>
+                <span class="hero-dot active"></span>
+                <span class="hero-dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases Section - NEW -->
+    <section class="cases-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Featured Cases</span>
+                <a href="/cases" class="section-link">View all cases →</a>
+            </div>
+            <p class="section-title">Real-world projects with measurable results across industries</p>
+
+            <!-- Cases Grid - 3 cards -->
+            <div class="cases-grid">
+                <!-- Card 1: OAZIS -->
+                <a href="/cases/oazis" class="case-card">
+                    <div class="card-image">
+                        <img src="https://thebrightbyte.com/assets/images/case/banner/oasis-case.webp" alt="OAZIS">
+                        <span class="card-badge">ERP Automation</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">OAZIS</h3>
+                        <p class="card-description">Corporate system for managing rotational workers, accommodation, and catering services.</p>
+                        <div class="metrics-strip">
+                            <div class="metric-item">
+                                <div class="metric-value">85%</div>
+                                <div class="metric-label">Automation</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-value">3x</div>
+                                <div class="metric-label">Efficiency</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-value">6mo</div>
+                                <div class="metric-label">Delivery</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 2: Avangard -->
+                <a href="/cases/avangard" class="case-card">
+                    <div class="card-image">
+                        <img src="https://thebrightbyte.com/assets/images/case/banner/avangard-case.webp" alt="Avangard">
+                        <span class="card-badge">Sports</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">HC Avangard</h3>
+                        <p class="card-description">Native mobile app with CRM integration and loyalty rewards for fan experience.</p>
+                        <div class="metrics-strip">
+                            <div class="metric-item">
+                                <div class="metric-value">50K</div>
+                                <div class="metric-label">MAU</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-value">3x</div>
+                                <div class="metric-label">Engagement</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-value">↑LTV</div>
+                                <div class="metric-label">Growth</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 3: Jedi Pay -->
+                <a href="/cases/jedipay" class="case-card">
+                    <div class="card-image">
+                        <img src="https://thebrightbyte.com/assets/images/case/banner/jedipay.webp" alt="Jedi Pay">
+                        <span class="card-badge">FinTech</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Jedi Pay</h3>
+                        <p class="card-description">Secure fintech ecosystem with PCI DSS compliance and fraud detection.</p>
+                        <div class="metrics-strip">
+                            <div class="metric-item">
+                                <div class="metric-value">40%</div>
+                                <div class="metric-label">Faster</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-value">PCI</div>
+                                <div class="metric-label">Compliant</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-value">P2P</div>
+                                <div class="metric-label">Payments</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section - Original -->
+    <section class="expertise-section">
+        <div class="container">
+            <div class="expertise-header">
+                <span class="expertise-label">Expertise</span>
+            </div>
+            <p class="expertise-title">AI-powered solutions that transform operations and drive measurable results</p>
+
+            <div class="expertise-grid">
+                <div class="expertise-main">
+                    <p class="expertise-main-text">The BrightByte delivers AI-powered solutions, ML integrations, RAG systems, and intelligent automation for enterprise.</p>
+                    <a href="/cases" class="expertise-main-btn">Explore our cases</a>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="expertise-card-image">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=300&fit=crop" alt="AI Operations">
+                    </div>
+                    <div class="expertise-card-content">
+                        <div class="expertise-card-icon">🤖</div>
+                        <h3 class="expertise-card-title">AI-Driven Workforce & Operations</h3>
+                        <p class="expertise-card-desc">Intelligent automation for workforce management, scheduling, and operational efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
