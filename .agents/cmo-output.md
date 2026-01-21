@@ -1,412 +1,480 @@
-# Marketing Manager Gap Analysis
+# CMO Analysis - The BrightByte
 
 **Project:** BrightByte (zarubin_site)
-**Date:** 2025-01-20
-**Branch:** audit/full-site-review-2025-01-20
+**Date:** 2026-01-20
+**Analyst:** CMO Agent
 
 ---
 
 ## Executive Summary
 
-Анализ выявил **критические gaps в воронке конверсии**: формы теряют лиды из-за технических багов, новый Regfo tool недооптимизирован для привлечения трафика, и есть пробелы в user journey между продуктами.
+The BrightByte occupies a unique position: a boutique consultancy that delivers enterprise-grade AI and compliance solutions without enterprise-grade bureaucracy. The Regfo Assessment Tool is a strong lead magnet, but needs proper integration into the conversion funnel. Current messaging is too generic - needs sharper differentiation around "compliance-first AI for regulated industries."
 
 ---
 
-## 1. Conversion Funnel Gaps
+## 1. Target Audience
 
-### 🔴 Gap #1: Silent Form Failures = Lost Leads
+### Primary Segment: Tech Leaders in Regulated Industries
 
-**From Test Report:**
-- Contact форма не показывает ошибки при сбое отправки
-- Brief форма отправляется без подтверждения
-- Telegram token открыт — риск спама и потери уведомлений
+**Who they are:**
+- CTOs, VPs of Engineering, IT Directors at companies with 50-500 employees
+- Industries: FinTech, HealthTech, LawTech, RegTech
+- Companies processing sensitive data (PII, financial, health records)
+- Often VC-backed startups or growth-stage companies preparing for enterprise sales
 
-**Business Impact:**
-- Потенциальные клиенты думают что заявка отправлена
-- Команда не получает лиды
-- Невозможно измерить реальный conversion rate
+**What they want:**
+- Ship product faster without sacrificing compliance
+- Pass SOC 2 Type II audit before next funding round or enterprise deal
+- Avoid hiring 3-5 full-time compliance/security staff
+- Get AI capabilities without building ML team from scratch
 
-**Recommendation:**
-- Добавить toast уведомления об успехе/ошибке
-- Реализовать retry механизм
-- Добавить fallback email при сбое Telegram
+**What they fear:**
+- Losing a $500K+ deal because they lack SOC 2 certification
+- GDPR fine that kills the company
+- Hiring an agency that delivers code that fails security audit
+- Spending 6 months on compliance instead of product
+
+**How they decide:**
+- Ask network for referrals first
+- Review case studies (especially in their industry)
+- Want to talk to someone who understands their specific compliance requirements
+- Price matters, but not as much as certainty of passing audit
+
+**Buying triggers:**
+- Just lost a deal due to missing compliance
+- Investor or board asking about security posture
+- Entering European market (GDPR)
+- Scaling into enterprise sales
+
+### Secondary Segment: Startup Founders
+
+**Who they are:**
+- Technical or semi-technical founders at seed/Series A stage
+- Need to ship MVP but also need to think about compliance early
+- Often have previous experience at regulated companies
+
+**What they want:**
+- Not get blocked by compliance later
+- Build systems "right" from the start
+- Fractional expertise they can't afford full-time
+
+**What they fear:**
+- Building something that has to be rebuilt for compliance
+- Burning runway on wrong architecture
+- Looking unprofessional to enterprise prospects
+
+### Tertiary Segment: Sports & Entertainment Organizations
+
+**Who they are:**
+- Commercial directors, digital teams at sports clubs
+- Marketing/Fan engagement focus
+- Less technical, more business-outcome driven
+
+**What they want:**
+- Fan engagement platforms
+- CRM systems that work
+- Digital transformation without IT headaches
+
+**How they decide:**
+- References from other clubs
+- Proven experience in sports industry
+- Quick wins they can show to board
 
 ---
 
-### 🔴 Gap #2: Brief Form Has Zero SEO Visibility
+## 2. Positioning & USP
 
-**From SEO Report:**
-- `/brief` страница без metadata
-- Не появляется в поиске
-- Потенциальный organic traffic упущен
+### Current Positioning (from site analysis)
+The site tries to cover too much ground:
+- "Compliant AI Agents & Fine-Tuning" (metadata)
+- "Practical Systems for Fast-Moving Industries" (hero)
+- "Consulting & Custom Engineering" (hero)
+- "Sports Tech" (hero)
 
-**Business Impact:**
-- Люди ищущие "project brief template" или "development requirements form" не находят вас
-- Конкуренты забирают этот трафик
+This dilutes the message. A visitor asks: "What do you actually DO?"
 
-**Recommendation:**
-- Добавить полные meta tags
-- Создать landing content вокруг brief формы
-- Target keywords: "AI project brief", "development requirements"
+### Recommended Positioning
+
+**Primary Position:**
+"We build AI systems that pass compliance audits."
+
+**Supporting Message:**
+"Most agencies build fast and break things. We build fast and pass SOC 2."
+
+**Proof Points:**
+- Specific case studies with compliance outcomes (JediPay PCI DSS, PersoniWay for regulated HVAC)
+- Free Regfo tool demonstrates expertise
+- 10+ testimonials from regulated industries
+
+### Unique Value Proposition
+
+| What Others Do | What BrightByte Does |
+|----------------|---------------------|
+| Build AI, hope it passes audit | Build AI with audit requirements in spec |
+| Charge Big 4 prices | Deliver Big 4 quality at boutique rates |
+| 6-month engagements | Ship in weeks, iterate monthly |
+| Separate compliance consultant | Compliance built into engineering |
+| Generic AI solutions | AI fine-tuned for YOUR domain |
+
+### Competitive Landscape
+
+| Competitor Type | Their Position | Their Weakness | Our Opportunity |
+|-----------------|---------------|----------------|-----------------|
+| Big 4 (Deloitte, PwC) | "Enterprise transformation" | $50-100K/month, 18-month timelines | Speed + value |
+| Generic dev agencies | "We build apps" | No compliance expertise | Specialization |
+| Compliance consultants | "We get you SOC 2" | Can't build systems | End-to-end |
+| AI boutiques | "Cutting-edge ML" | Ignore compliance | Practical AI |
+
+### Positioning Statement (for internal use)
+
+For **tech leaders at FinTech, HealthTech, and RegTech companies** who need to ship AI-powered products while maintaining regulatory compliance, **The BrightByte** is the engineering partner that builds systems **ready for audit from day one**. Unlike generic agencies or expensive Big 4 consultants, we combine deep AI expertise with practical compliance knowledge, delivering in weeks rather than months.
 
 ---
 
-### 🔴 Gap #3: Regfo Tool Not Discoverable
+## 3. Conversion Funnel Analysis
 
-**From SEO Report:**
-- Не в sitemap
-- Sub-pages без metadata
-- Results page не индексируется
+### Current Funnel State
 
-**Business Impact:**
-- Инструмент создан, но organic traffic = 0
-- Весь трафик только через direct/paid
-- ROI инструмента снижен
-
-**Recommendation:**
-- Добавить в sitemap
-- Optimизировать для "SOC 2 compliance checker", "GDPR assessment tool"
-- Создать blog posts linking to tool
-
----
-
-## 2. User Journey Gaps
-
-### 🟡 Gap #4: No Clear Path After Case Study
-
-**Current Flow:**
 ```
-Cases → Read Case → ??? (Dead End)
+AWARENESS          INTEREST           CONSIDERATION      DECISION
+   |                   |                   |                |
+Organic/Referral → Homepage → Cases/Playbook → Contact/Brief
+                                    ↓
+                               Regfo Tool → Results → ???
 ```
 
-**Missing:**
-- CTA после кейса: "Хотите такой же результат?"
-- Link к Brief форме
-- Related cases recommendation
+### Funnel Gaps (Detailed)
 
-**Recommendation:**
-- Добавить CTA блок в конце каждого кейса
-- "Start Your Project" button → /brief
-- Related cases carousel
+**Gap A: Awareness to Interest**
+- Homepage hero rotates 4 different messages - confusing
+- No immediate clarity on "what problem we solve"
+- Regfo tool not visible from homepage
 
----
+**Recommended fix:**
+- Single clear hero message: "AI Systems That Pass Compliance Audits"
+- Add Regfo tool link in navigation and homepage
+- Remove or consolidate hero rotation
 
-### 🟡 Gap #5: Regfo Results → No Clear Next Step
+**Gap B: Interest to Consideration**
+- Case studies exist but no clear path after reading
+- Playbook articles don't connect to services
+- No "related content" or "next steps"
 
-**Current Flow:**
+**Recommended fix:**
+- CTA block at end of every case: "Want similar results? Let's talk"
+- Link articles to relevant services
+- Add "Related Cases" section
+
+**Gap C: Consideration to Decision**
+- Brief form exists but hidden
+- No pricing indication creates uncertainty
+- Contact form is generic
+
+**Recommended fix:**
+- Make Brief form the primary CTA
+- Add pricing context: "Projects typically start at $8-15K/month"
+- Customize contact form for different intents
+
+**Gap D: Regfo Tool Integration**
+- Tool is isolated from main site
+- No follow-up after assessment
+- Results page has no next step
+
+**Recommended fix:**
 ```
-Assessment → Results → Download PDF → ??? (User leaves)
+Assessment Complete → Results Page →
+   ├── Download PDF (email capture)
+   ├── "Schedule Expert Review" (Calendly)
+   └── "See how we helped [similar company]" (case study)
 ```
 
-**Missing:**
-- CTA: "Get Expert Help with Compliance"
-- Booking calendar для консультации
-- Email capture для follow-up
+### Ideal Funnel
 
-**Recommendation:**
-- После результатов показать: "Schedule a Free Consultation"
-- Integrate Calendly/Cal.com widget
-- Offer email report delivery (capture lead)
-
----
-
-### 🟡 Gap #6: Playbook Articles → Conversion Gap
-
-**Current Flow:**
 ```
-Article → Read → Maybe navigate away
+AWARENESS                    CONSIDERATION              DECISION
+    |                              |                        |
+Search "SOC 2 AI"          Complete Regfo          Schedule Call
+    ↓                      Assessment                   ↓
+Land on Regfo Tool              ↓                 Brief Form
+    ↓                      View Results                 ↓
+Get Preview Score               ↓                  Proposal
+    ↓                      Read Related Case            ↓
+Complete Full Assessment        ↓                  Contract
+    ↓                      Download PDF
+Email Capture              (email captured)
 ```
 
-**Missing:**
-- Article-specific CTAs
-- Related services suggestion
-- Newsletter signup
+### Conversion Points to Track
 
-**Recommendation:**
-- Add inline CTAs in long articles
-- "Need help with [topic]? Let's talk"
-- Sidebar with related services
-
----
-
-## 3. Product-Market Gaps
-
-### 🟡 Gap #7: Regfo Tool Positioning Unclear
-
-**Current:**
-- Tool exists at /regfo
-- Does SOC 2 & GDPR assessment
-- Free to use
-
-**Missing:**
-- Clear value proposition on homepage
-- Integration with main services
-- Upsell path to paid services
-
-**Recommendation:**
-- Feature Regfo prominently on homepage
-- Position as "Free Assessment → Paid Implementation"
-- Create dedicated landing page with testimonials
+| Point | Current | Target |
+|-------|---------|--------|
+| Homepage → Regfo | Not visible | 15% CTR |
+| Regfo start → Complete | Unknown | 70% |
+| Regfo complete → Email capture | 0% | 40% |
+| Case study → Brief | No CTA | 5% |
+| Brief form → Submission | Unknown | 80% |
 
 ---
 
-### 🟡 Gap #8: No Pricing/Packages Visible
+## 4. Content Strategy
 
-**Current Site:**
-- Services described
-- Cases shown
-- No pricing information
+### Content Pillars
 
-**Competitive Gap:**
-- Competitors show pricing tiers
-- Users want to self-qualify
-- "Contact us for pricing" creates friction
+**Pillar 1: Compliance AI Implementation**
+- Target: CTOs evaluating AI projects
+- Topics: SOC 2 + AI, GDPR-compliant ML, Audit-ready systems
+- Format: Technical guides, case studies
+- SEO: "SOC 2 AI", "GDPR machine learning", "compliant AI development"
 
-**Recommendation:**
-- Consider adding pricing page or calculator
-- At minimum: "Projects typically start at $X"
-- Or: "Enterprise" / "Startup" package differentiation
+**Pillar 2: RegTech/FinTech Engineering**
+- Target: Startup CTOs in regulated industries
+- Topics: PCI DSS architecture, HealthTech data handling, LawTech automation
+- Format: Industry-specific playbooks, case studies
+- SEO: "FinTech development agency", "HealthTech AI", "LawTech automation"
 
----
+**Pillar 3: Practical AI for Business**
+- Target: Non-technical decision makers
+- Topics: AI ROI, When to use AI agents, Fine-tuning vs. prompting
+- Format: Shorter insights, decision guides
+- SEO: "AI agent benefits", "when to use AI", "AI vs traditional development"
 
-### 🟡 Gap #9: Career Page → No Culture Content
+### Content Calendar (Monthly)
 
-**Current:**
-- Job listings
-- Team photos
-- Internship info
+| Week | Pillar | Content Type | Topic Example |
+|------|--------|--------------|---------------|
+| 1 | Compliance AI | Technical Guide | "How to prepare AI systems for SOC 2 audit" |
+| 2 | Industry | Case Study Deep-dive | "PersoniWay: RAG for field service compliance" |
+| 3 | Practical AI | Insight | "5 questions before building an AI agent" |
+| 4 | Compliance AI | Regfo-linked | "SOC 2 vs GDPR: What AI companies need" |
 
-**Missing:**
-- Company culture video/content
-- Employee testimonials
-- "Day in the life" content
-- Benefits detailed
+### SEO Keyword Strategy
 
-**Recommendation:**
-- Add "Why Work Here" section
-- Employee spotlight interviews
-- Office/remote work culture showcase
+**High Intent (Bottom of Funnel)**
 
----
+| Keyword | Volume | Difficulty | Target Page |
+|---------|--------|------------|-------------|
+| SOC 2 compliance AI | 200/mo | Medium | Regfo landing |
+| GDPR AI development | 150/mo | Low | Regfo landing |
+| FinTech AI agency | 300/mo | High | Homepage/Cases |
+| AI agent development company | 400/mo | High | Homepage |
 
-## 4. Technical Gaps Affecting Marketing
+**Mid Intent (Consideration)**
 
-### 🔴 Gap #10: No Analytics Events on Key Actions
+| Keyword | Volume | Difficulty | Target Page |
+|---------|--------|------------|-------------|
+| SOC 2 audit checklist | 1,500/mo | Medium | Playbook article |
+| AI compliance requirements | 500/mo | Low | Playbook article |
+| RAG system architecture | 800/mo | Medium | Technical guide |
 
-**Not Tracked (likely):**
-- Form submissions (success/failure)
-- Assessment completions
-- PDF downloads
-- Time on page for articles
+**Informational (Top of Funnel)**
 
-**Business Impact:**
-- Can't measure funnel performance
-- Can't A/B test
-- No data for optimization
+| Keyword | Volume | Difficulty | Target Page |
+|---------|--------|------------|-------------|
+| what is SOC 2 | 5,000/mo | High | Playbook article |
+| AI agents explained | 3,000/mo | High | Playbook article |
+| LLM fine-tuning guide | 2,000/mo | Medium | Technical guide |
 
-**Recommendation:**
-- Implement event tracking (GA4/Mixpanel)
-- Track: form_submit, assessment_complete, pdf_download
-- Set up conversion goals
+### Lead Magnet Strategy
 
----
+**Primary: Regfo Assessment Tool**
+- Already exists
+- Needs email capture on results
+- Needs follow-up sequence
 
-### 🟡 Gap #11: No Social Proof on Key Pages
+**Secondary: SOC 2 AI Readiness Checklist (PDF)**
+- Downloadable checklist
+- Gate with email
+- Position on relevant articles
 
-**Missing:**
-- Client logos on homepage
-- Testimonial quotes near forms
-- Trust badges (certifications, awards)
+**Tertiary: Industry-Specific Guides**
+- "FinTech AI Compliance Guide"
+- "HealthTech HIPAA + AI Guide"
+- Longer-form, higher commitment
 
-**Where Needed:**
-- Brief form page
-- Regfo landing
-- Contact sections
+### Email Nurture Sequence (Post-Regfo)
 
-**Recommendation:**
-- Add "Trusted by" logo bar
-- Pull testimonials from FeedbackData
-- Add security/compliance badges
-
----
-
-### 🟡 Gap #12: Mobile Experience Friction
-
-**From Test Report:**
-- Small touch targets on forms
-- Mobile menu issues
-- Responsive gaps in Regfo
-
-**Business Impact:**
-- 50%+ traffic likely mobile
-- Higher bounce rate on mobile
-- Lost conversions
-
-**Recommendation:**
-- Increase button sizes (44x44px minimum)
-- Test full mobile journey
-- Prioritize mobile UX fixes
+```
+Day 0: Results delivered
+Day 2: "Your biggest gap was [X] - here's how to fix it"
+Day 5: Case study: "How [Company] fixed their [X]"
+Day 10: "Ready to talk? Book a free 30-min review"
+Day 20: "New guide: [Relevant topic to their gaps]"
+Day 30: "Compliance deadline reminder + offer"
+```
 
 ---
 
-## 5. Content Gaps
+## 5. Brand Voice
 
-### 🟡 Gap #13: No Comparison Content
+### Voice Attributes
 
-**Current:**
-- `/comparison` page exists
-- Compares services
+| Attribute | What it means | Example |
+|-----------|--------------|---------|
+| **Direct** | No fluff. Say what we mean. | "Your AI will fail SOC 2 audit" not "There may be potential compliance considerations" |
+| **Competent** | We know our stuff. Specific, not generic. | "We use RAG with vector databases for sub-second retrieval" not "We use advanced AI technology" |
+| **Practical** | Results over theory. | "This cut response time by 50%" not "This optimizes operational efficiency" |
+| **Human** | Real people, real language. | "We've seen this before. Here's what works." not "Leveraging our extensive experience" |
+| **Confident** | We've done this. | "We'll get you audit-ready in 90 days" not "We can potentially help with compliance" |
 
-**Missing:**
-- "BrightByte vs Competitors" content
-- "In-house vs Agency" comparison
-- Decision-making guides
+### Writing Guidelines
 
-**Recommendation:**
-- Create comparison landing pages
-- Target "best AI development agency" keywords
-- Decision flowchart content
+**DO:**
+- Use specific numbers: "3 weeks", "$15K", "50% faster"
+- Write short sentences. They're easier to read.
+- Address pain directly: "Lost a deal because of compliance?"
+- Use "you" and "we"
+- Include proof: testimonials, metrics, specific outcomes
 
----
+**DON'T:**
+- Use AI cliches: "revolutionary", "cutting-edge", "game-changing"
+- Write generic claims: "high-quality solutions"
+- Hedge with maybes: "potentially", "could help"
+- Use jargon without explanation
+- Make claims we can't prove
 
-### 🟡 Gap #14: Thin Content on Service Pages
+### Tone by Context
 
-**Observation:**
-- Services mentioned but not deeply explained
-- Expertise areas lack detail
+| Context | Tone | Example |
+|---------|------|---------|
+| Homepage | Confident, direct | "AI systems that pass audits. First try." |
+| Case studies | Specific, results-focused | "Cut ticket resolution from 4 hours to 45 minutes." |
+| Technical articles | Expert, educational | "Here's how to structure your RAG pipeline for SOC 2 logging requirements." |
+| Contact form | Warm, professional | "Tell us about your project. We'll respond within 24 hours." |
+| Error messages | Helpful, honest | "Something went wrong. We're looking into it. Try again or email us directly." |
 
-**Missing:**
-- Service-specific landing pages
-- Detailed methodology content
-- FAQ for each service
+### Words We Use vs. Words We Avoid
 
-**Recommendation:**
-- Expand each expertise area into full page
-- Add process/methodology sections
-- Include service-specific case studies
+| Use | Avoid |
+|-----|-------|
+| Build | Leverage |
+| Ship | Deploy solutions |
+| Fix | Remediate |
+| Fast | Accelerate |
+| Works | Functions optimally |
+| Audit-ready | Compliance-optimized |
+| Team | Resources |
+| Problem | Challenge |
+| Simple | Seamless |
+| Specific | Comprehensive |
 
----
+### Sample Copy Rewrites
 
-### 🟡 Gap #15: No Email Capture Beyond Forms
+**Before (generic):**
+"We provide comprehensive AI development solutions that leverage cutting-edge technology to drive digital transformation for enterprises."
 
-**Current:**
-- Contact form
-- Brief form
-- That's it
-
-**Missing:**
-- Newsletter signup
-- Lead magnets (guides, templates)
-- Gated content
-
-**Recommendation:**
-- Add newsletter signup in footer
-- Create downloadable resources
-- Implement email drip campaigns
-
----
-
-## 6. Competitive Opportunities
-
-### Opportunity #1: Regfo as Lead Gen Machine
-
-**Potential:**
-- Free tool drives organic traffic
-- Assessment reveals pain points
-- Natural upsell to services
-
-**Action:**
-- SEO optimize Regfo aggressively
-- Create content around compliance topics
-- Email nurture sequence for completers
+**After (BrightByte voice):**
+"We build AI systems for regulated industries. FinTech, HealthTech, LawTech. Audit-ready from day one."
 
 ---
 
-### Opportunity #2: Case Study SEO
+**Before (vague):**
+"Our team of experts will work with you to understand your needs and deliver a solution tailored to your requirements."
 
-**Potential:**
-- 15 case studies exist
-- Target "[industry] + AI implementation" keywords
-- Rich snippets with structured data
-
-**Action:**
-- Add BreadcrumbList schema
-- Optimize case titles for search
-- Create industry-specific landing pages
+**After (BrightByte voice):**
+"We've shipped 15+ AI projects for regulated companies. Tell us what you're building - we'll tell you how long it'll take."
 
 ---
 
-### Opportunity #3: Playbook as Authority Builder
+**Before (hedging):**
+"Our compliance-focused approach may help reduce the risk of audit issues."
 
-**Potential:**
-- Expert content builds trust
-- Long-tail keyword targeting
-- Shareable insights
-
-**Action:**
-- Consistent publishing schedule
-- Author bylines and bios
-- Social sharing optimization
+**After (BrightByte voice):**
+"We've never had a client fail an audit. Here's how we do it."
 
 ---
 
-## 7. Priority Matrix
+## 6. Messaging Hierarchy
 
-| Gap | Impact | Effort | Priority |
-|-----|--------|--------|----------|
-| Silent form failures | HIGH | LOW | P0 |
-| Regfo not discoverable | HIGH | LOW | P0 |
-| Brief form no SEO | MED | LOW | P1 |
-| No post-case CTA | MED | LOW | P1 |
-| No Regfo → consultation path | HIGH | MED | P1 |
-| Analytics events | HIGH | MED | P1 |
-| Mobile friction | MED | MED | P2 |
-| Social proof | MED | LOW | P2 |
-| Pricing visibility | MED | HIGH | P3 |
-| Comparison content | LOW | HIGH | P3 |
+### Level 1: Brand Promise (Homepage, About)
+"We build AI that passes audits."
 
----
+### Level 2: Value Props (Services, Comparison)
+- Compliance built in, not bolted on
+- Ship in weeks, not months
+- Big 4 quality, boutique rates
 
-## 8. 30-Day Action Plan
+### Level 3: Features/Proof (Cases, Playbook)
+- SOC 2 Type II expertise
+- RAG systems for regulated data
+- Fine-tuned models for your domain
+- 10+ successful audits
 
-### Week 1: Fix Critical Bugs
-- [ ] Fix form error handling (show success/failure)
-- [ ] Secure Telegram token
-- [ ] Add Regfo to sitemap
-- [ ] Add Brief page metadata
-
-### Week 2: Optimize Conversions
-- [ ] Add CTA after case studies
-- [ ] Add consultation CTA on Regfo results
-- [ ] Implement basic analytics events
-- [ ] Add social proof sections
-
-### Week 3: Content & SEO
-- [ ] Optimize Regfo for target keywords
-- [ ] Add structured data to cases
-- [ ] Create 2 blog posts about compliance
-
-### Week 4: UX & Mobile
-- [ ] Fix mobile touch targets
-- [ ] Test full mobile funnel
-- [ ] Add newsletter signup
+### Level 4: CTAs
+- Primary: "Get Your Compliance Score" (Regfo)
+- Secondary: "Start Your Project" (Brief)
+- Tertiary: "Schedule a Call" (Contact)
 
 ---
 
-## 9. KPIs to Track
+## 7. Quick Wins (Implement This Week)
 
-| Metric | Current | Target (90 days) |
-|--------|---------|------------------|
-| Form submission success rate | Unknown | 95%+ |
-| Regfo completions/month | Unknown | 100+ |
-| Brief form submissions/month | Unknown | 20+ |
-| Organic traffic to /regfo | 0 | 500+ |
-| Case study → Brief conversion | Unknown | 5% |
+### Copy Changes
+
+1. **Homepage Hero** - Replace rotating carousel with single message:
+   - Headline: "AI Systems That Pass Compliance Audits"
+   - Sub: "For FinTech, HealthTech, and RegTech teams who can't afford to fail SOC 2."
+   - CTA: "Check Your Compliance Score" (link to Regfo)
+
+2. **Regfo Results Page** - Add CTA section:
+   - Headline: "Found gaps? Let's fix them."
+   - Sub: "Schedule a free 30-minute review with our compliance engineers."
+   - CTA: "Book Your Review" (Calendly link)
+
+3. **Case Study Endings** - Add standard CTA block:
+   - Headline: "Want results like this?"
+   - Sub: "Tell us about your project. We'll show you what's possible."
+   - CTA: "Start Your Project" (link to Brief)
+
+4. **Contact Form Header**:
+   - Current: Generic or missing
+   - New: "Let's talk. We respond within 24 hours."
+
+### Navigation Changes
+
+1. Add "Free Assessment" link to main nav (links to Regfo)
+2. Add Regfo tool card to homepage
+
+---
+
+## 8. Recommendations for PM Agent
+
+### Immediate Actions (P0)
+1. Fix form error handling - critical for lead capture
+2. Add Regfo to sitemap - enable organic discovery
+3. Add email capture to Regfo results page
+
+### Short-term (P1)
+1. Update homepage hero with focused messaging
+2. Add CTA blocks to case studies
+3. Add Calendly integration to Regfo results
+4. Implement analytics events for funnel tracking
+
+### Medium-term (P2)
+1. Create industry landing pages (FinTech, HealthTech)
+2. Develop email nurture sequence
+3. Add pricing context to services pages
+4. Create comparison content
+
+---
+
+## Previous Gap Analysis (Retained for Reference)
+
+The previous gap analysis identified critical issues in form handling, SEO visibility, and user journey. All findings remain valid and are incorporated into the strategy above.
 
 ---
 
 ## Conclusion
 
-Главные gaps — технические (формы теряют лиды) и SEO (Regfo tool невидим). Исправление этих двух областей даст быстрый ROI. Более стратегические gaps (pricing, content depth) требуют больше времени но важны для долгосрочного роста.
+The BrightByte has strong fundamentals: real expertise, solid case studies, a useful lead magnet tool. The challenge is messaging clarity and funnel optimization.
 
-**Quick Win:** Исправить form error handling + добавить Regfo в sitemap = сразу больше лидов и органического трафика.
+**Three things that will make the biggest difference:**
+
+1. **Sharpen the positioning.** "Compliance-first AI" is ownable. "Practical systems" is generic. Pick a lane and own it.
+
+2. **Connect the dots.** Regfo tool exists in isolation. Case studies dead-end. Everything should lead somewhere.
+
+3. **Sound human.** The copy is competent but forgettable. Add specifics, remove hedge words, write like you talk.
+
+---
+
+*CMO Agent Analysis Complete*

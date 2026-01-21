@@ -1,0 +1,75 @@
+.formWrapper {
+  padding: 40px 20px;
+  border-radius: 5px;
+  background-color: var(--second-blue);
+  scroll-margin-top: 100px;
+}
+
+.title {
+  font-family: 'Unbounded';
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--main-white);
+}
+
+.form {
+  margin-top: 49px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  font-family: 'Proxima Nova';
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input::placeholder {
+  font-size: 26px;
+  line-height: 1.14;
+  color: var(--main-white);
+  opacity: 50%;
+}
+
+.input:focus {
+  background-color: var(--second-blue);
+}
+
+.formBtn {
+  padding: 13px 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--main-white);
+  background-color: var(--main-blue);
+  transition: all 0.2s ease-in-out;
+}
+
+.formBtn:hover {
+  transform: scale(0.99);
+  background-color: var(--blue-hover);
+}
+
+.arrow {
+  width: 24px;
+  height: 24px;
+}
+
+@media (min-width: 768px) {
+  .formWrapper {
+    padding: 40px;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 1.14;
+  }
+}
