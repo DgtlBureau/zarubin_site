@@ -236,7 +236,7 @@ export default function AssessmentPage() {
 
   // Prefetch results page for faster navigation
   useEffect(() => {
-    router.prefetch('/regfo/results');
+    router.prefetch('/soc2-checker/results');
   }, [router]);
 
   // Get current question based on stage
@@ -355,7 +355,7 @@ export default function AssessmentPage() {
       'complianceAssessmentAnswers',
       JSON.stringify(Object.fromEntries(answers))
     );
-    router.push('/regfo/results');
+    router.push('/soc2-checker/results');
   };
 
   // Complete full assessment
@@ -367,7 +367,7 @@ export default function AssessmentPage() {
       'complianceAssessmentAnswers',
       JSON.stringify(Object.fromEntries(answers))
     );
-    router.push('/regfo/results');
+    router.push('/soc2-checker/results');
   };
 
   // Get risk level color classes
@@ -424,7 +424,7 @@ export default function AssessmentPage() {
           <div className="max-w-4xl mx-auto px-4 py-4">
             <div className="flex items-center justify-between">
               <Link
-                href="/regfo"
+                href="/soc2-checker"
                 className="flex items-center gap-2 text-slate-600 hover:text-regfo-primary typo-body-sm"
               >
                 <ArrowLeft className="w-5 h-5" />
@@ -457,7 +457,7 @@ export default function AssessmentPage() {
         <div className="max-w-4xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link
-              href="/regfo"
+              href="/soc2-checker"
               className="flex items-center gap-2 text-slate-600 hover:text-regfo-primary typo-body-sm"
             >
               <ArrowLeft className="w-5 h-5" />

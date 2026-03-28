@@ -22,8 +22,8 @@ const config = {
       '/policy',
       '/investments',
       '/brief',
-      '/regfo',
-      '/regfo/assessment',
+      '/soc2-checker',
+      '/soc2-checker/assessment',
       '/playbook/expertise/rss.xml',
       '/playbook/insights/rss.xml',
       '/bonuses',
@@ -116,8 +116,6 @@ const config = {
         disallow: [
           '/_next/*',
           '/tpost/*',
-          '/products/*',
-          '/services/*',
           '/search/*',
           '/lander/*',
           '/collections/*',
@@ -127,8 +125,6 @@ const config = {
           '*.md',
           '*.md$',
           '/main/',
-          '/blog',
-          '/about',
           '/_next/static/media/',
           '/assets/video/',
           '/*?target_origin=',
@@ -136,20 +132,32 @@ const config = {
         ],
       },
 
+      // AI bots — full access for AEO visibility
+      { userAgent: 'GPTBot', allow: '/' },
+      { userAgent: 'ChatGPT-User', allow: '/' },
+      { userAgent: 'ClaudeBot', allow: '/' },
+      { userAgent: 'anthropic-ai', allow: '/' },
+      { userAgent: 'PerplexityBot', allow: '/' },
+      { userAgent: 'Google-Extended', allow: '/' },
+
+      // Social media bots
       { userAgent: 'Twitterbot', allow: '/' },
       { userAgent: 'Facebot', allow: '/' },
       { userAgent: 'facebookexternalhit', allow: '/' },
-      { userAgent: 'RookeeBot', disallow: '/' },
+
+      // SEO tools — allow
       { userAgent: 'AhrefsBot', allow: '/' },
       { userAgent: 'SEMrushBot', allow: '/' },
+      { userAgent: 'YandexBot', allow: '/' },
+      { userAgent: 'megaindex.com', allow: '/' },
+
+      // Spam bots — block
+      { userAgent: 'RookeeBot', disallow: '/' },
       { userAgent: 'MJ12bot', disallow: '/' },
       { userAgent: 'DotBot', disallow: '/' },
       { userAgent: 'BLEXBot', disallow: '/' },
-      { userAgent: 'Screaming Frog SEO Spider', disallow: '/' },
       { userAgent: 'PetalBot', disallow: '/' },
-      { userAgent: 'YandexBot', allow: '/' },
       { userAgent: 'DataForSeoBot', disallow: '/' },
-      { userAgent: 'megaindex.com', allow: '/' },
     ],
     additionalSitemaps: ['https://thebrightbyte.com/sitemap.xml'],
   },

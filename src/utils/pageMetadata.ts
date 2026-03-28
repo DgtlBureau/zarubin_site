@@ -16,6 +16,8 @@ export const pageMetadata = {
       'LawTech AI automation',
       'RAG system development',
       'AI agent development',
+      'FDA regulatory compliance software',
+      'biotech compliance automation',
       'The BrightByte',
     ],
   },

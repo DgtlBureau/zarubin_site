@@ -21,7 +21,7 @@ export const menuListLayer = [
   {
     id: 6,
     name: MenuItems.SOC2_ASSESSMENT,
-    link: '/regfo',
+    link: '/soc2-checker',
     isHighlighted: true,
   },
 ];

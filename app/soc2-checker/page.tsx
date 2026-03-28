@@ -40,7 +40,7 @@ export default function RegfoLandingPage() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/regfo/assessment"
+              href="/soc2-checker/assessment"
               className="w-full sm:w-auto bg-regfo-primary text-white px-8 py-4 rounded-lg font-semibold typo-body-lg hover:bg-regfo-primary/90 transition flex items-center justify-center gap-2 shadow-lg shadow-regfo-primary/25"
             >
               Get Your Compliance Score
@@ -284,7 +284,7 @@ export default function RegfoLandingPage() {
 
           <div className="text-center mt-10">
             <Link
-              href="/regfo/assessment"
+              href="/soc2-checker/assessment"
               className="inline-flex items-center gap-2 bg-regfo-primary text-white px-8 py-4 rounded-lg font-semibold typo-body-lg hover:bg-regfo-primary/90 transition shadow-lg shadow-regfo-primary/25"
             >
               Start Quick Assessment
@@ -307,7 +307,7 @@ export default function RegfoLandingPage() {
             asks for your DPA.
           </p>
           <Link
-            href="/regfo/assessment"
+            href="/soc2-checker/assessment"
             className="inline-flex items-center gap-2 bg-white text-red-600 px-6 py-3 rounded-lg font-semibold hover:bg-white/90 transition"
           >
             Find Your Gaps Free

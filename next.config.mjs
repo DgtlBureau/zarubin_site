@@ -60,6 +60,16 @@ const nextConfig = {
         destination: '/insights/:slug',
         permanent: true,
       },
+      {
+        source: '/regfo',
+        destination: '/soc2-checker',
+        permanent: true,
+      },
+      {
+        source: '/regfo/:path*',
+        destination: '/soc2-checker/:path*',
+        permanent: true,
+      },
     ];
   },
 };

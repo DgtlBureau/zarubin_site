@@ -205,7 +205,7 @@ const QuickResultsBanner = () => {
           </p>
         </div>
         <Link
-          href="/regfo/assessment"
+          href="/soc2-checker/assessment"
           className="flex items-center gap-2 bg-yellow-500 text-white px-4 py-2 rounded-lg font-medium hover:bg-yellow-600 transition whitespace-nowrap"
         >
           Continue Full Assessment
@@ -595,7 +595,7 @@ export default function ResultsPage() {
             Please complete the assessment first.
           </p>
           <Link
-            href="/regfo/assessment"
+            href="/soc2-checker/assessment"
             className="inline-flex items-center gap-2 bg-regfo-primary text-white px-6 py-3 rounded-lg font-semibold"
           >
             Start Assessment
@@ -624,7 +624,7 @@ export default function ResultsPage() {
       <div className="bg-white/80 backdrop-blur-sm border-b border-slate-200 regfo-no-print">
         <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
           <Link
-            href="/regfo"
+            href="/soc2-checker"
             className="flex items-center gap-2 text-slate-600 hover:text-regfo-primary typo-body-sm"
           >
             <ArrowLeft className="w-5 h-5" />
@@ -783,7 +783,7 @@ export default function ResultsPage() {
         {/* Retake Assessment */}
         <div className="text-center regfo-no-print">
           <Link
-            href="/regfo/assessment"
+            href="/soc2-checker/assessment"
             className="inline-flex items-center gap-2 text-slate-600 hover:text-regfo-primary typo-body"
           >
             <RefreshCw className="w-4 h-4" />
