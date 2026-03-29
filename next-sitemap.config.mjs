@@ -105,53 +105,53 @@ const config = {
     '/main/*',
     '/about',
     '*.md',
-    '/soltions',
+    '/solutions',
     '/404',
   ],
   robotsTxtOptions: {
     policies: [
       {
         userAgent: '*',
-        allow: ['/', '/*.js', '/*.css', '*tag=*', '*sub-category=*'],
+        allow: ['/', '/*.js', '/*.css', '/_next/static/media/*', '*tag=*', '*sub-category=*'],
         disallow: [
-          '/_next/*',
-          '/tpost/*',
+          '/_next/data/*',
+          '/_next/image*',
           '/search/*',
-          '/lander/*',
-          '/collections/*',
           '*?pr_prod_strat=',
           '*?target_origin=',
           '/account/',
           '*.md',
-          '*.md$',
           '/main/',
-          '/_next/static/media/',
-          '/assets/video/',
           '/*?target_origin=',
           '/*checkout_version=',
         ],
       },
 
-      // AI bots — full access for AEO visibility
+      // AI crawlers — explicitly allowed for AEO visibility
       { userAgent: 'GPTBot', allow: '/' },
       { userAgent: 'ChatGPT-User', allow: '/' },
       { userAgent: 'ClaudeBot', allow: '/' },
+      { userAgent: 'Claude-Web', allow: '/' },
       { userAgent: 'anthropic-ai', allow: '/' },
       { userAgent: 'PerplexityBot', allow: '/' },
       { userAgent: 'Google-Extended', allow: '/' },
+      { userAgent: 'Applebot-Extended', allow: '/' },
+      { userAgent: 'cohere-ai', allow: '/' },
 
-      // Social media bots
+      // Social media crawlers
       { userAgent: 'Twitterbot', allow: '/' },
       { userAgent: 'Facebot', allow: '/' },
       { userAgent: 'facebookexternalhit', allow: '/' },
+      { userAgent: 'LinkedInBot', allow: '/' },
 
-      // SEO tools — allow
+      // SEO tools — allowed
       { userAgent: 'AhrefsBot', allow: '/' },
       { userAgent: 'SEMrushBot', allow: '/' },
+      { userAgent: 'Screaming Frog SEO Spider', allow: '/' },
       { userAgent: 'YandexBot', allow: '/' },
       { userAgent: 'megaindex.com', allow: '/' },
 
-      // Spam bots — block
+      // Bad bots — blocked
       { userAgent: 'RookeeBot', disallow: '/' },
       { userAgent: 'MJ12bot', disallow: '/' },
       { userAgent: 'DotBot', disallow: '/' },
