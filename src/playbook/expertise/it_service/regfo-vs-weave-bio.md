@@ -7,8 +7,8 @@ readingTime: '10 min'
 category: 'Expertise'
 subCategory: 'IT Service'
 tag: 'Regfo, Weave Bio, FDA compliance, regulatory technology, IND submission, biotech compliance, AI RegTech comparison'
-authorName: 'Vitaliy Zarubin'
-authorImage: '/assets/images/author/avatar.png'
+authorName: 'Daniella Mitchell'
+authorImage: '/assets/images/author/daniella_mitchell.jpg'
 faq:
   - question: 'What is the main difference between Regfo and Weave Bio?'
     answer: 'Regfo checks your existing protocols against 1,054 FDA/ICH rules and tells you what is missing. Weave Bio drafts regulatory documents like IND applications from your source data. Regfo is a compliance checker. Weave Bio is a document authoring platform.'
@@ -143,11 +143,11 @@ Series A biotech. $200K/month burn. The difference between $499/mo today and an 
 
 ---
 
-## Why We Built Regfo
+## Why Regfo Was Built
 
-I watched small biotech teams burn months because nobody caught a missing GLP-compliant tox study early enough. The protocol went through three amendment cycles. Each one cost 2-3 months.
-
-The problem wasn't document formatting. People didn't know what FDA actually required until it was too late.
+> "I watched small biotech teams burn months because nobody caught a missing GLP-compliant tox study early enough. The protocol went through three amendment cycles. Each one cost 2-3 months. The problem wasn't document formatting. People didn't know what FDA actually required until it was too late."
+>
+> — [Vitaliy Zarubin](https://www.linkedin.com/in/vitaliy-zarubin-397844102/), Founder of Regfo & The BrightByte
 
 Weave Bio is solving document authoring for large pharma. That's a real problem worth solving. But it's not the problem that kills Series A biotechs. What kills them is submitting an IND and getting a clinical hold because they missed a requirement buried in an ICH guideline footnote.
 
