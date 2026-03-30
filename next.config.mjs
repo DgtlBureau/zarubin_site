@@ -60,16 +60,6 @@ const nextConfig = {
         destination: '/insights/:slug',
         permanent: true,
       },
-      {
-        source: '/regfo',
-        destination: '/soc2-checker',
-        permanent: true,
-      },
-      {
-        source: '/regfo/:path*',
-        destination: '/soc2-checker/:path*',
-        permanent: true,
-      },
       // SEO decanibalization redirect (pair 4: near-duplicate infosec content)
       {
         source: '/playbook/insights/top-10-information-security-practices',

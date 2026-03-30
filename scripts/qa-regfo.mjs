@@ -49,17 +49,17 @@ async function testPageLoads() {
   log.section('Page Load Tests');
 
   await test('RegFO landing page loads (200)', async () => {
-    const { response } = await fetchPage('/regfo');
+    const { response } = await fetchPage('/soc2-checker');
     if (response.status !== 200) throw new Error(`Status: ${response.status}`);
   });
 
   await test('RegFO assessment page loads (200)', async () => {
-    const { response } = await fetchPage('/regfo/assessment');
+    const { response } = await fetchPage('/soc2-checker/assessment');
     if (response.status !== 200) throw new Error(`Status: ${response.status}`);
   });
 
   await test('RegFO results page loads (200)', async () => {
-    const { response } = await fetchPage('/regfo/results');
+    const { response } = await fetchPage('/soc2-checker/results');
     if (response.status !== 200) throw new Error(`Status: ${response.status}`);
   });
 
@@ -80,22 +80,22 @@ async function testNavigation() {
     if (!html.includes('SOC 2 Assessment')) {
       throw new Error('SOC 2 Assessment link not found in navigation');
     }
-    if (!html.includes('href="/regfo"')) {
-      throw new Error('Link to /regfo not found');
+    if (!html.includes('href="/soc2-checker"')) {
+      throw new Error('Link to /soc2-checker not found');
     }
   });
 
   await test('RegFO page has link to assessment', async () => {
-    const { html } = await fetchPage('/regfo');
-    if (!html.includes('href="/regfo/assessment"')) {
-      throw new Error('Link to /regfo/assessment not found');
+    const { html } = await fetchPage('/soc2-checker');
+    if (!html.includes('href="/soc2-checker/assessment"')) {
+      throw new Error('Link to /soc2-checker/assessment not found');
     }
   });
 
   await test('Assessment page has back link to regfo', async () => {
-    const { html } = await fetchPage('/regfo/assessment');
-    if (!html.includes('href="/regfo"')) {
-      throw new Error('Back link to /regfo not found');
+    const { html } = await fetchPage('/soc2-checker/assessment');
+    if (!html.includes('href="/soc2-checker"')) {
+      throw new Error('Back link to /soc2-checker not found');
     }
   });
 }
@@ -108,28 +108,28 @@ async function testContent() {
 
   // RegFO Landing Page
   await test('RegFO landing has hero section with title', async () => {
-    const { html } = await fetchPage('/regfo');
+    const { html } = await fetchPage('/soc2-checker');
     if (!html.includes('SOC 2') || !html.includes('GDPR')) {
       throw new Error('Hero title missing SOC 2 or GDPR');
     }
   });
 
   await test('RegFO landing has "What Your Assessment Covers" section', async () => {
-    const { html } = await fetchPage('/regfo');
+    const { html } = await fetchPage('/soc2-checker');
     if (!html.includes('What Your Assessment Covers')) {
       throw new Error('Assessment covers section not found');
     }
   });
 
   await test('RegFO landing has "How It Works" section', async () => {
-    const { html } = await fetchPage('/regfo');
+    const { html } = await fetchPage('/soc2-checker');
     if (!html.includes('How It Works')) {
       throw new Error('How It Works section not found');
     }
   });
 
   await test('RegFO landing has Two-Stage Assessment section', async () => {
-    const { html } = await fetchPage('/regfo');
+    const { html } = await fetchPage('/soc2-checker');
     if (!html.includes('Two-Stage Assessment')) {
       throw new Error('Two-Stage Assessment section not found');
     }
@@ -137,7 +137,7 @@ async function testContent() {
 
   // Assessment Page
   await test('Assessment page has question content', async () => {
-    const { html } = await fetchPage('/regfo/assessment');
+    const { html } = await fetchPage('/soc2-checker/assessment');
     if (!html.includes('Quick Assessment') && !html.includes('Question')) {
       throw new Error('Assessment question content not found');
     }
@@ -145,7 +145,7 @@ async function testContent() {
 
   // Results Page
   await test('Results page has feedback form or no-results state', async () => {
-    const { html } = await fetchPage('/regfo/results');
+    const { html } = await fetchPage('/soc2-checker/results');
     // Either shows feedback form (with results) or no-results state (without localStorage data)
     const hasForm = html.includes('Your journey to compliance');
     const hasNoResults = html.includes('No Assessment Results');
@@ -155,7 +155,7 @@ async function testContent() {
   });
 
   await test('Results page has PDF button or no-results state', async () => {
-    const { html } = await fetchPage('/regfo/results');
+    const { html } = await fetchPage('/soc2-checker/results');
     // Either shows PDF download (with results) or no-results state
     const hasDownload = html.includes('Download PDF') || html.includes('Download');
     const hasNoResults = html.includes('No Assessment Results');
@@ -166,7 +166,7 @@ async function testContent() {
 
   await test('Results page source has feedback form component', async () => {
     const fs = await import('fs');
-    const content = fs.readFileSync('./app/regfo/results/page.tsx', 'utf8');
+    const content = fs.readFileSync('./app/soc2-checker/results/page.tsx', 'utf8');
     if (!content.includes('FeedbackForm')) {
       throw new Error('FeedbackForm component not found in source');
     }
@@ -186,23 +186,23 @@ async function testFooter() {
     }
   });
 
-  await test('Footer has Startup link to /regfo', async () => {
+  await test('Footer has Startup link to /soc2-checker', async () => {
     const { html } = await fetchPage('/');
-    if (!html.includes('/regfo?size=startup')) {
+    if (!html.includes('/soc2-checker?size=startup')) {
       throw new Error('Startup link not found');
     }
   });
 
-  await test('Footer has Mid-Market link to /regfo', async () => {
+  await test('Footer has Mid-Market link to /soc2-checker', async () => {
     const { html } = await fetchPage('/');
-    if (!html.includes('/regfo?size=mid-market')) {
+    if (!html.includes('/soc2-checker?size=mid-market')) {
       throw new Error('Mid-Market link not found');
     }
   });
 
-  await test('Footer has Enterprise link to /regfo', async () => {
+  await test('Footer has Enterprise link to /soc2-checker', async () => {
     const { html } = await fetchPage('/');
-    if (!html.includes('/regfo?size=enterprise')) {
+    if (!html.includes('/soc2-checker?size=enterprise')) {
       throw new Error('Enterprise link not found');
     }
   });
@@ -256,7 +256,7 @@ async function testTypography() {
   log.section('Typography Tests');
 
   await test('RegFO pages use typo-* classes', async () => {
-    const { html } = await fetchPage('/regfo');
+    const { html } = await fetchPage('/soc2-checker');
     const typoClasses = ['typo-h1', 'typo-h2', 'typo-h3', 'typo-body'];
     const found = typoClasses.some(cls => html.includes(cls));
     if (!found) {
@@ -265,14 +265,14 @@ async function testTypography() {
   });
 
   await test('Assessment page uses typo-* classes', async () => {
-    const { html } = await fetchPage('/regfo/assessment');
+    const { html } = await fetchPage('/soc2-checker/assessment');
     if (!html.includes('typo-')) {
       throw new Error('No typo-* classes found on assessment page');
     }
   });
 
   await test('Results page uses typo-* classes', async () => {
-    const { html } = await fetchPage('/regfo/results');
+    const { html } = await fetchPage('/soc2-checker/results');
     if (!html.includes('typo-')) {
       throw new Error('No typo-* classes found on results page');
     }
@@ -313,21 +313,21 @@ async function testSourceIntegration() {
   const fs = await import('fs');
 
   await test('Results page imports sendEmail utility', async () => {
-    const content = fs.readFileSync('./app/regfo/results/page.tsx', 'utf8');
+    const content = fs.readFileSync('./app/soc2-checker/results/page.tsx', 'utf8');
     if (!content.includes("import { sendEmail }") && !content.includes("from '@/src/utils/sendEmail'")) {
       throw new Error('sendEmail import not found');
     }
   });
 
   await test('Results page calls sendEmail in form handler', async () => {
-    const content = fs.readFileSync('./app/regfo/results/page.tsx', 'utf8');
+    const content = fs.readFileSync('./app/soc2-checker/results/page.tsx', 'utf8');
     if (!content.includes('await sendEmail(')) {
       throw new Error('sendEmail() call not found');
     }
   });
 
   await test('Results page sends to Telegram', async () => {
-    const content = fs.readFileSync('./app/regfo/results/page.tsx', 'utf8');
+    const content = fs.readFileSync('./app/soc2-checker/results/page.tsx', 'utf8');
     if (!content.includes('api.telegram.org')) {
       throw new Error('Telegram integration not found');
     }
@@ -362,14 +362,14 @@ async function testSourceIntegration() {
   });
 
   await test('RegFO layout exists and wraps content', async () => {
-    const content = fs.readFileSync('./app/regfo/layout.tsx', 'utf8');
+    const content = fs.readFileSync('./app/soc2-checker/layout.tsx', 'utf8');
     if (!content.includes('children')) {
       throw new Error('Layout does not render children');
     }
   });
 
   await test('Results page has jsPDF for PDF generation (dynamic import)', async () => {
-    const content = fs.readFileSync('./app/regfo/results/page.tsx', 'utf8');
+    const content = fs.readFileSync('./app/soc2-checker/results/page.tsx', 'utf8');
     if (!content.includes("import('jspdf')")) {
       throw new Error('jsPDF dynamic import not found');
     }
