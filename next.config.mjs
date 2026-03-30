@@ -46,7 +46,7 @@ const nextConfig = {
         has: [
           {
             type: 'host',
-            value: 'thebrightbyte.com',
+            value: 'www.thebrightbyte.com',
           },
         ],
       },
