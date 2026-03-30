@@ -6,7 +6,7 @@ import { GoBackLink } from '@/src/ui-kit/GoBackLink/GoBackLink';
 import { AnchorHamburger } from '@/src/ui-kit/PostAnchors/AnchorHamburger';
 import { PostAnchors } from '@/src/ui-kit/PostAnchors/PostAnchors';
 import { ReadingProgressBar } from '@/src/ui-kit/ReadingProgressBar/ReadingProgressBar';
-import { BASE_URL, SITE_NAME } from '@/src/utils/alias';
+import { BASE_URL, SEO_TITLE_SIZE, SITE_NAME } from '@/src/utils/alias';
 import { cleanMetaTitle } from '@/src/utils/cleanMetaTitle';
 import { contentTrimming } from '@/src/utils/contentTrimming';
 import { MenuItems } from '@/src/utils/enums';
@@ -88,7 +88,7 @@ export async function generateMetadata({
   const { tag, image } = post.data;
   const keywords = tag.split(',');
 
-  const title = contentTrimming(cleanTitle, 105);
+  const title = contentTrimming(cleanTitle, SEO_TITLE_SIZE);
   const description = contentTrimming(post.data.description, 155);
 
   const publishedDateISO = DateTime.fromFormat(

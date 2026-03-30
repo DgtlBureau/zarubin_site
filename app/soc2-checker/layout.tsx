@@ -18,6 +18,13 @@ export const metadata: Metadata = {
     description:
       'Get your compliance score in 2 minutes. Free gap analysis for SOC 2 Type II and GDPR requirements.',
     type: 'website',
+    url: 'https://thebrightbyte.com/soc2-checker',
+    images: [
+      {
+        url: '/assets/images/info/default_image.jpg',
+        alt: 'SOC 2 & GDPR Compliance Checker by The BrightByte',
+      },
+    ],
   },
 };
 

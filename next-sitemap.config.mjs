@@ -107,6 +107,7 @@ const config = {
     '*.md',
     '/solutions',
     '/404',
+    '/test',
   ],
   robotsTxtOptions: {
     policies: [
