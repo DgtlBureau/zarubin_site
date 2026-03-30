@@ -7,8 +7,8 @@ readingTime: ''
 category: 'Expertise'
 subCategory: 'Sport'
 tag: 'sports analytics systems, digital stadium services, digitisation of stadium services, sports venue technology'
-authorName: 'Vitaliy Zarubin'
-authorImage: '/assets/images/author/avatar.png'
+authorName: 'James Crawford'
+authorImage: '/assets/images/author/james_crawford.jpg'
 ---
 
 # Digital Stadium Services: A revolution in sports venue technology

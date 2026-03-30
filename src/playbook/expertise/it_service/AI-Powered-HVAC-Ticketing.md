@@ -1,14 +1,14 @@
 ---
-title: 'AI-Powered HVAC Ticketing System: How to Use RAG'
-description: 'A comprehensive technical deep dive into the architecture of AI-powered HVAC troubleshooting, covering RAG-enhanced knowledge retrieval, AI-assisted diagnostics, and a structured ticketing system for real-time issue resolution.'
+title: 'HVAC Ticketing System with AI: Automate Service Requests'
+description: 'AI-powered HVAC ticketing routes service requests, prioritizes by urgency, and cuts response time. How to automate your helpdesk.'
 image: '/assets/images/expertise/it_service/rag.webp'
 date: '11-03-2025'
 readingTime: '10 minutes'
 category: 'Expertise'
 subCategory: 'IT Service'
-tag: 'AI, HVAC, Ticketing System'
-authorName: 'Vitaliy Zarubin'
-authorImage: '/assets/images/author/avatar.png'
+tag: 'HVAC ticketing system, HVAC customer service automation, AI ticketing, HVAC helpdesk, BMS'
+authorName: 'Daniella Mitchell'
+authorImage: '/assets/images/author/daniella_mitchell.jpg'
 ---
 
 The AI-powered HVAC ticketing system (support center) is an advanced, integrated platform that combines multiple cutting-edge technologies, including Retrieval-Augmented Generation (RAG) with a vector database, an AI-powered assistant based on Claude, a structured business logic built on PHP Laravel for the backend, and React/Next.js for the frontend. This essay delves into the intricate technical details of each component and describes the system’s logic, architecture, and operational flow.

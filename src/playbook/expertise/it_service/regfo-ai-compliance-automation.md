@@ -1,14 +1,14 @@
 ---
-title: 'Regfo: How AI Agents Are Solving the $100B Compliance Bottleneck'
-description: 'Generic AI cannot handle regulatory compliance. Here is how Regfo uses specialized AI agents to automate FDA, HIPAA, and SOC 2 compliance with full traceability.'
+title: 'Regfo: AI-Powered Regulatory Compliance for Biotech and Fintech'
+description: 'Regfo automates FDA, HIPAA, and SOC 2 compliance with AI. Cut audit prep time by 70% and reduce regulatory risk.'
 image: '/assets/images/info/Gemini_Generated_Image_14aor814aor814ao.webp'
 date: '16-01-2026'
 readingTime: '14 min'
 category: 'Expertise'
 subCategory: 'IT Service'
 tag: 'AI compliance automation, regulatory technology, FDA compliance AI, HIPAA automation, SOC 2 tools, Regfo, RegTech'
-authorName: 'Vitaliy Zarubin'
-authorImage: '/assets/images/author/avatar.png'
+authorName: 'Daniella Mitchell'
+authorImage: '/assets/images/author/daniella_mitchell.jpg'
 faq:
   - question: 'What is Regfo?'
     answer: 'Regfo is an AI-driven CI/CD orchestration layer that transforms regulatory compliance into a continuous, automated process for pharma, fintech, and healthcare industries.'

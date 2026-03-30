@@ -8,8 +8,8 @@ readingTime: '2 minutes'
 category: 'Expertise'
 subCategory: 'Sport'
 tag: 'CRM, Sport, Sport Business, Marketing Automation'
-authorName: 'Vitaliy Zarubin'
-authorImage: '/assets/images/author/avatar.png'
+authorName: 'James Crawford'
+authorImage: '/assets/images/author/james_crawford.jpg'
 ---
 
 Simply implementing a CRM system into a sports club's operations will not solve all existing problems on its own. A comprehensive approach is needed to ensure that all services interact correctly with each other and that business processes run smoothly. Let's take a look at the problems clubs encounter when working with CRM, and highlight the top 5 mistakes that management can make when interacting with the system.

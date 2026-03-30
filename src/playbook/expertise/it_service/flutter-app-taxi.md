@@ -7,8 +7,8 @@ readingTime: ''
 category: 'Expertise'
 subCategory: 'IT Service'
 tag: 'Flutter, B2B, Cloud-based App, AWS, Cross-platform'
-authorName: 'Vitaliy Zarubin'
-authorImage: '/assets/images/author/avatar.png'
+authorName: 'Daniella Mitchell'
+authorImage: '/assets/images/author/daniella_mitchell.jpg'
 ---
 
 # Custom Taxi App Development on Flutter: Scalable Solutions for B2C and B2B Markets OR uber-clone

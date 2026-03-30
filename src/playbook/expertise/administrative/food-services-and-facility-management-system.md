@@ -7,8 +7,8 @@ readingTime: ''
 category: 'Expertise'
 subCategory: 'Administrative'
 tag: 'Workflow management, BMS, Food services, Shift Management'
-authorName: 'Vitaliy Zarubin'
-authorImage: '/assets/images/author/avatar.png'
+authorName: 'Daniella Mitchell'
+authorImage: '/assets/images/author/daniella_mitchell.jpg'
 ---
 
 # Facility Management Software: Ways to improve food services in remote workplaces

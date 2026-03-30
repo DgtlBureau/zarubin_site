@@ -7,8 +7,8 @@ readingTime: ''
 category: 'Expertise'
 subCategory: 'Sport'
 tag: 'SAP, Manzana, CRM, sports CRM, sports'
-authorName: 'Vitaliy Zarubin'
-authorImage: '/assets/images/author/avatar.png'
+authorName: 'James Crawford'
+authorImage: '/assets/images/author/james_crawford.jpg'
 ---
 
 # SAP vs. Manzana CRM in 2024: Choosing the right sports CRM software

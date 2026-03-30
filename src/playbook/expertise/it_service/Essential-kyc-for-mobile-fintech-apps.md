@@ -1,12 +1,12 @@
 ---
-title: 'Essential KYC for mobile FinTech apps'
-description: 'This article delves into the importance of KYC for fintech mobile apps, highlighting how compliance enables safe transactions, prevents fraud, and builds trust.'
+title: 'KYC for Fintech: Mobile Identity Verification Guide'
+description: 'Build compliant KYC into your fintech mobile app. Identity verification methods, regulatory requirements, and implementation steps.'
 image: '/assets/images/expertise/it_service/kyc_mobile_apps.jpeg'
 date: '27-11-2024'
 readingTime: ''
 category: 'Expertise'
 subCategory: 'IT Service'
-tag: 'KYC Mobile Apps, Fintech KYC, KYC Compliance Apps, mobile Apps'
+tag: 'KYC fintech, fintech KYC, KYC compliance apps, mobile identity verification, KYC for fintech, fintech compliance'
 authorName: 'Maria Ovseytseva'
 authorImage: '/assets/images/author/maria.webp'
 ---

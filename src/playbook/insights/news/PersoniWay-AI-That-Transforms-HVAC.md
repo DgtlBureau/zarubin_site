@@ -1,12 +1,12 @@
 ---
-title: '🚀 PersoniWay – AI That Transforms HVAC and Building Management'
-description: 'Discover PersoniWay, the AI assistant designed to revolutionize HVAC and building management. Automate diagnostics, accelerate ticket resolution, and minimize errors—all in one intelligent tool. Try it now!'
+title: 'AI for HVAC: How PersoniWay Transforms Field Service Operations'
+description: 'PersoniWay uses AI to cut HVAC troubleshooting time by 40%. Real case study of AI-powered field service automation.'
 image: '/assets/images/expertise/it_service/personiway_banner.png'
 date: '13-03-2025'
 readingTime: ''
 category: 'Insights'
 subCategory: 'News'
-tag: 'PersoniWay, AI, Ticketing system, HVAC'
+tag: 'AI for HVAC, hvac ai assistant, PersoniWay, AI field service, HVAC automation, ticketing system'
 authorName: 'Vitaliy Zarubin'
 authorImage: '/assets/images/author/avatar.png'
 ---

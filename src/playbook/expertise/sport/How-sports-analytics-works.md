@@ -7,8 +7,8 @@ readingTime: ''
 category: 'Expertise'
 subCategory: 'Sport'
 tag: 'sports analytics systems, data collection in schools, college sports data, sports analytics software'
-authorName: 'Vitaliy Zarubin'
-authorImage: '/assets/images/author/avatar.png'
+authorName: 'James Crawford'
+authorImage: '/assets/images/author/james_crawford.jpg'
 ---
 
 # How Sports Analytics and Data Collection Systems Work in Schools and Colleges

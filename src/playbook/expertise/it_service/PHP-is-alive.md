@@ -7,8 +7,8 @@ readingTime: ''
 category: 'Expertise'
 subCategory: 'IT Service'
 tag: 'PHP in 2024, PHP evolution, is PHP still alive, future of PHP development'
-authorName: 'Vitaliy Zarubin'
-authorImage: '/assets/images/author/avatar.png'
+authorName: 'Daniella Mitchell'
+authorImage: '/assets/images/author/daniella_mitchell.jpg'
 ---
 
 # PHP is Still Alive: How it's Evolving in Modern-Day Application

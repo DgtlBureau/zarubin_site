@@ -7,8 +7,8 @@ readingTime: '5 minutes'
 category: 'Expertise'
 subCategory: 'IT Service'
 tag: 'docker, infrastructure, kubernetes, graphana, high-Load Systems, devops'
-authorName: 'Vitaliy Zarubin'
-authorImage: '/assets/images/author/avatar.png'
+authorName: 'Daniella Mitchell'
+authorImage: '/assets/images/author/daniella_mitchell.jpg'
 ---
 
 # Why DevOps Still Matters: Key Benefits for High-Load System Management

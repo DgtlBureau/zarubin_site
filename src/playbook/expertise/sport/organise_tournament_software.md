@@ -7,8 +7,8 @@ readingTime: '5 minutes'
 category: 'Expertise'
 subCategory: 'Sport'
 tag: 'Sport , League, Team Management, Youth Soccer'
-authorName: 'Vitaliy Zarubin'
-authorImage: '/assets/images/author/avatar.png'
+authorName: 'James Crawford'
+authorImage: '/assets/images/author/james_crawford.jpg'
 ---
 
 Let’s say you’ve decided to organize a youth football tournament. Sixteen teams, classic knockout bracket. Easy, right?

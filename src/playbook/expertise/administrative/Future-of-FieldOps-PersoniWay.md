@@ -7,8 +7,8 @@ readingTime: '12 minutes'
 category: 'Expertise'
 subCategory: 'Administrative'
 tag: 'AI, FieldOps, FSM, HVAC, Schematics, Technicians'
-authorName: 'Vitaliy Zarubin'
-authorImage: '/assets/images/author/avatar.png'
+authorName: 'Daniella Mitchell'
+authorImage: '/assets/images/author/daniella_mitchell.jpg'
 ---
 
 The field service management (FSM) and field operations (FieldOps) sectors are undergoing significant transformations, driven by technological advancements, evolving workforce dynamics, and the increasing complexity of infrastructure. This article delves into the current state of the FSM market, the challenges faced by the industry, and how platforms like [PersoniWay Hub](https://hub.personiway.com) are addressing these issues.

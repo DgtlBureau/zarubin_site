@@ -7,8 +7,8 @@ readingTime: ''
 category: 'Expertise'
 subCategory: 'IT Service'
 tag: 'Retail, Delivery, To Go, Mobile App'
-authorName: 'Vitaliy Zarubin'
-authorImage: '/assets/images/author/avatar.png'
+authorName: 'Daniella Mitchell'
+authorImage: '/assets/images/author/daniella_mitchell.jpg'
 ---
 
 # Organise retail food service with bespoke software solutions

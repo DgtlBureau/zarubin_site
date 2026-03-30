@@ -7,8 +7,8 @@ readingTime: ''
 category: 'Expertise'
 subCategory: 'IT Service'
 tag: 'Flutter vs React Native, mobile app development, Flutter for apps, React Native for apps'
-authorName: 'Vitaliy Zarubin'
-authorImage: '/assets/images/author/avatar.png'
+authorName: 'Daniella Mitchell'
+authorImage: '/assets/images/author/daniella_mitchell.jpg'
 ---
 
 # Flutter vs. React Native in 2024: Compare and contrast mobile application development

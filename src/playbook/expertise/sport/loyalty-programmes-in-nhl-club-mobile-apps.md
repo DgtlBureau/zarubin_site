@@ -1,14 +1,14 @@
 ---
-title: 'Loyalty programmes in NHL club mobile apps'
-description: 'Discover how NHL clubs are using mobile apps to create effective loyalty programmes that engage fans and build customer loyalty. Learn the key features of successful loyalty solutions.'
+title: 'Sports Loyalty Programs and Mobile Fan Apps: NHL Case Study'
+description: 'How NHL clubs build loyalty through mobile apps. Points, tiers, experiential rewards, and fan retention strategies that work.'
 image: '/assets/images/expertise/it_service/nhl_banner.webp'
 date: '05-12-2024'
 readingTime: ''
 category: 'Expertise'
 subCategory: 'Sport'
-tag: 'loyalty program, mobile apps, sports, NHL'
-authorName: 'Vitaliy Zarubin'
-authorImage: '/assets/images/author/avatar.png'
+tag: 'sports loyalty programs, fan loyalty technology, NHL mobile apps, fan retention, loyalty program, sports'
+authorName: 'James Crawford'
+authorImage: '/assets/images/author/james_crawford.jpg'
 ---
 
 # How NHL loyalty programmes drive fan engagement through mobile apps

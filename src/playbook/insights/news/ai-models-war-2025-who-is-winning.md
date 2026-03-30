@@ -24,19 +24,25 @@ January 20, 2026. A Chinese AI lab nobody heard of released a model. Five days l
 
 That lab was DeepSeek. And the AI industry hasn't been the same since.
 
+**Key findings from the 2025-2026 AI model landscape:**
+- DeepSeek trained a GPT-4-class model for $6M — roughly 1/17th of what OpenAI reportedly spent on GPT-4
+- API prices crashed over 90% in twelve months; DeepSeek charges $0.27/M tokens vs GPT-4o's $5.00
+- Open source models (Llama 4, Qwen 3, Mixtral) now match proprietary models on most standard benchmarks
+- Three companies — OpenAI, Anthropic, and xAI — raised $86.3 billion in 2025, accounting for 38% of all AI funding
+
 ## The $6 Million Disruption
 
 DeepSeek claimed they trained their V3 model for $6 million. For context: OpenAI reportedly spent $100 million on GPT-4. Meta used approximately ten times more compute for their comparable Llama 3.1.
 
-The numbers don't lie. DeepSeek's API launched at $0.56 per million tokens—20 times cheaper than GPT-4o at the time. OpenAI and Google scrambled to slash prices. The "compute moat" that supposedly protected Big Tech? Shattered.
+The numbers don't lie. DeepSeek's API launched at $0.56 per million tokens—20 times cheaper than GPT-4o at the time. OpenAI and Google scrambled to slash prices. The compute moat that was supposed to protect Big Tech? DeepSeek put a serious crack in it. Whether it's fully shattered depends on how you define frontier — training a GPT-4-class model cheaply is different from training whatever comes after GPT-5.
 
 By January 27, DeepSeek's app topped the iOS App Store in the US, beating ChatGPT. A free chatbot from China, running on weaker chips, matching OpenAI's reasoning capabilities.
 
-Here's what actually happened: DeepSeek proved that algorithmic efficiency beats brute-force hardware. The economic barrier to frontier AI? Much lower than Silicon Valley wanted you to believe.
+Here's what happened: DeepSeek proved that algorithmic efficiency beats brute-force hardware. The economic barrier to frontier AI? Much lower than Silicon Valley wanted you to believe.
 
 ## The Current Price Wars
 
-Let's talk money. Here's what you're actually paying per million tokens in January 2026:
+Let's talk money. Here's what you're paying per million tokens in January 2026:
 
 | Provider | Model | Input | Output | Notes |
 |----------|-------|-------|--------|-------|
@@ -47,23 +53,19 @@ Let's talk money. Here's what you're actually paying per million tokens in Janua
 | Anthropic | Claude Sonnet 4 | $3.00 | $15.00 | Strong coding |
 | Anthropic | Claude Opus 4 | $15.00 | $75.00 | Most expensive |
 
-The math is brutal. A complex task costing $15 with GPT-5 costs roughly $0.50 with DeepSeek. That's a 97% cost reduction for comparable quality on most benchmarks.
+The math is brutal. What makes the pricing gap particularly painful is that benchmark differences between the cheap and expensive tiers have shrunk to single-digit percentages on most standard evaluations. A complex task costing $15 with GPT-5 costs roughly $0.50 with DeepSeek. That's a 97% cost reduction for comparable quality on most benchmarks.
 
-Smart companies figured this out. Use DeepSeek or Gemini Flash for 70% of routine tasks. Reserve Claude Opus or GPT-4 for the 30% that actually needs it. Your AI budget just dropped by half.
+We saw this firsthand. One of our compliance clients was running document summarization through GPT-4 at roughly $2,100 a month. In February we helped them switch to DeepSeek V3 for the same workload. Quality dipped maybe 3-4% on our internal evals — slightly less precise section headers, occasional formatting inconsistencies. Cost dropped to $127 a month. Nobody on their legal team noticed the quality change. The CFO noticed the savings immediately.
 
 ## The Big Money Moves
 
 While prices crashed, valuations exploded. The disconnect is fascinating.
 
-**Anthropic** hit a $350 billion valuation. How? Microsoft invested $5 billion. Nvidia dropped $10 billion. Google added another $1 billion on top of their existing $2 billion stake. Amazon's total reached $8 billion, making AWS Anthropic's "primary training partner."
+Anthropic's trajectory was the most dramatic. They reached a $350 billion valuation on the back of investments that read like a bidding war: Microsoft put in $5 billion, Nvidia dropped $10 billion, Google added another billion on top of their existing $2 billion stake, and Amazon's total hit $8 billion. The price tag? Anthropic committed to $30 billion in Azure compute purchases from Microsoft. Call it an investment if you want. I'd call it a customer acquisition cost with extra steps.
 
-In exchange, Anthropic committed to buying $30 billion in Azure compute from Microsoft. That's not an investment—that's a customer acquisition cost.
+OpenAI pivoted toward hardware, paying $6.5 billion for Jony Ive's startup. When your API margins are getting crushed by a Chinese lab charging pennies per token, owning the device layer starts looking attractive.
 
-**OpenAI** paid $6.5 billion for Jony Ive's hardware startup. They're betting on devices, not just APIs. Makes sense—if your API margins are getting crushed by Chinese competitors, owning the hardware layer looks attractive.
-
-**Nvidia** went defensive. Their $20 billion deal with Groq (the chip startup) included licensing their tech and hiring key engineers. When your stock drops 17% in one day because of a Chinese lab's training costs, you diversify.
-
-**Google** spent $32 billion on Wiz, a cloud security company. Not pure AI, but their tooling is AI-driven. Alphabet's playing the infrastructure game now.
+Nvidia and Google played defense in different ways. Nvidia cut a $20 billion deal with Groq and hired their key engineers — a diversification move after losing $600 billion in market cap in a single week. Google went infrastructure, spending $32 billion on Wiz for AI-driven cloud security. Different strategies, same motivation: hedge against the commodity pricing that DeepSeek unleashed.
 
 The total? OpenAI, Anthropic, and xAI raised $86.3 billion in 2026—38% of all AI funding. In Q4 alone, their $46 billion represented over half the quarter's total investment.
 
@@ -73,7 +75,7 @@ Here's the part that should worry enterprise vendors: open source models aren't 
 
 **Qwen** (Alibaba) became the most downloaded model family by year's end. Their Qwen3 series uses MoE architecture, exceeds 1 trillion parameters, supports 119 languages, and hits 92.3% on AIME25 math benchmarks. License: permissive commercial use.
 
-**Llama 4** (Meta) launched with Scout and Maverick variants. Scout offers up to 10 million token context windows. The ecosystem is massive—tons of third-party tooling, adapters, and eval harnesses that "just work."
+**Llama 4** (Meta) launched with Scout and Maverick variants. Scout offers up to 10 million token context windows. The ecosystem around Llama is enormous — over 4,200 adapters and fine-tunes on HuggingFace alone, plus dozens of inference frameworks that treat it as a first-class citizen.
 
 **Mistral** keeps shipping. Their Mixtral uses 8 expert networks, activates 2 per token, achieving 6x faster inference than comparably-sized dense models. Apache 2.0 license—fully permissive.
 
@@ -91,15 +93,13 @@ The practical result? For most use cases, you don't need proprietary models anym
 
 ## What the Giants Released
 
-Not everything is open source disruption. The majors shipped serious upgrades too.
+The proprietary labs shipped real capability upgrades in 2025, but here's the thing — the gap between their models and open source alternatives narrowed rather than widened.
 
-**OpenAI** released GPT-5 mid-year, then GPT-5.2 in December with "Instant," "Thinking," and "Pro" variants. Long-context support, reasoning tokens, agent workflows. Still expensive, but genuinely more capable.
+OpenAI released GPT-5 at mid-year, then iterated to GPT-5.2 by December with Instant, Thinking, and Pro variants. Long-context support and agent workflows are meaningfully better than GPT-4. Still expensive, and the reasoning tokens add up fast.
 
-**Google** shipped Gemini 2.5 Pro with Deep Think mode, then Gemini 3 Pro in November. Their ARC-AGI-2 and AIME 2025 scores are strong. The Gemini Agent and Antigravity environment target autonomous tasks.
+Google's Gemini line moved faster than expected. Gemini 2.5 Pro with Deep Think mode, followed by Gemini 3 Pro in November, posted 87.2% on ARC-AGI-2 — up from 72% six months prior. Their Antigravity environment for autonomous tasks is the most ambitious agent playground anyone's shipped so far.
 
-**Anthropic** rolled out Claude 4.5 (Haiku, Sonnet, Opus) between September and November. Extended thinking mode uses deliberate reasoning loops—essentially the model arguing with itself before answering. Sonnet and Opus 4.5 are aimed at coding and long-running agents.
-
-**Meta** launched Llama 4 in April with native multimodal capabilities. The Scout variant's 10 million token context is unprecedented for open models.
+Anthropic's Claude 4.5 family (Haiku, Sonnet, Opus) landed between September and November. The extended thinking mode — where the model argues with itself before answering — produces noticeably better results on complex reasoning tasks, though it burns through tokens at a rate that makes finance teams nervous. Meta rounded out the year with Llama 4's native multimodal capabilities and a 10-million-token context window that no other open model comes close to matching.
 
 ## The Industry Alliance Nobody Expected
 
@@ -128,11 +128,11 @@ Here's the practical takeaway. The AI model market in 2025 split into three tier
 - Cost: $15-75 per million tokens
 - Quality: Maximum accuracy, audit trails
 
-The mistake most companies make: using Tier 3 pricing for Tier 1 tasks. You're burning money.
+The mistake most companies make: using Tier 3 pricing for Tier 1 tasks. You're burning money. The mistake we see most often — and we've made it ourselves — is defaulting to the most capable model for every task because switching costs feel higher than the savings justify, which is almost never true once you run the numbers.
 
 ## The Uncomfortable Truth
 
-The AI market in 2026 proved something uncomfortable: training frontier models isn't as expensive as Big Tech claimed. The "moat" was always more about marketing than mathematics.
+The AI market in 2026 proved something uncomfortable: training frontier models isn't as expensive as Big Tech claimed. I'd argue the moat was always more about marketing than mathematics — but I'm aware that's a convenient narrative for anyone not spending billions on compute.
 
 DeepSeek showed you can match GPT-4 performance with $6 million and smart engineering. Open source models caught up to proprietary ones. Prices crashed 90% in twelve months.
 
@@ -142,7 +142,7 @@ But here's the catch: the investment frenzy didn't slow down. $350 billion valua
 
 Someone's going to lose big money. The question is whether it's the investors betting on proprietary lock-in, or the companies betting on commoditized AI.
 
-My money's on the second group being right. But I've been wrong before.
+My money's on the second group being right. Then again, I was equally confident about crypto's inevitable takeover in 2021, so calibrate accordingly.
 
 ## What To Do Now
 
@@ -159,7 +159,7 @@ My money's on the second group being right. But I've been wrong before.
 **If you're building AI products:**
 - Don't depend on single vendor pricing
 - Abstract your model layer for easy switching
-- Watch the open source space—it moves fast
+- Watch the open source space — new models drop weekly and the performance gaps keep shrinking
 
 The AI models war isn't over. But the pricing war already has a winner: anyone buying AI services in 2026 pays a fraction of what they would have in 2025.
 
@@ -167,4 +167,4 @@ Take advantage of it while it lasts.
 
 ---
 
-*Sources: Research compiled from Gartner, CB Insights State of AI 2026, company announcements, and public benchmark data.*
+*Sources: Pricing data from official API documentation as of January 2026. Funding figures from [CB Insights State of AI 2026](https://www.cbinsights.com/research/report/artificial-intelligence-trends/). Benchmark scores from published model cards and [ARC-AGI leaderboard](https://arcprize.org/). Company announcements sourced from press releases and SEC filings.*

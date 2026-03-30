@@ -7,8 +7,8 @@ readingTime: '5 minutes'
 category: 'Expertise'
 subCategory: 'Sport'
 tag: 'Youth Sports, Sport Injuries, Bio-banding, Relative Age Effect, Coaching, Parenting, Talent Development, Child Safety, Junce'
-authorName: 'Vitaliy Zarubin'
-authorImage: '/assets/images/author/avatar.png'
+authorName: 'James Crawford'
+authorImage: '/assets/images/author/james_crawford.jpg'
 ---
 
 Sports are supposed to make kids strong, healthy, and confident. In a perfect world, they’re the ultimate school of life, teaching them how to win, lose, and be part of a team. As parents, we sign our kids up for sports with a simple, noble thought: "I want them to be happy and find their passion." And, of course, deep down, we hope that one day it'll be our kid lifting a championship trophy. There’s nothing wrong with that.

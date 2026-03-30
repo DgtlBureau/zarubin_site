@@ -7,8 +7,8 @@ readingTime: ''
 category: 'Expertise'
 subCategory: 'IT Service'
 tag: 'Data security, Infrastructure, Mobile App encryption'
-authorName: 'Vitaliy Zarubin'
-authorImage: '/assets/images/author/avatar.png'
+authorName: 'Daniella Mitchell'
+authorImage: '/assets/images/author/daniella_mitchell.jpg'
 ---
 
 # Information security in custom digital product development: What you need to know

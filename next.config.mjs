@@ -70,6 +70,27 @@ const nextConfig = {
         destination: '/soc2-checker/:path*',
         permanent: true,
       },
+      // SEO decanibalization redirects
+      {
+        source: '/playbook/insights/how-to-choose-a-crm',
+        destination: '/playbook/expertise/How_to_choose_a_CRM_for_a_sports_club',
+        permanent: true,
+      },
+      {
+        source: '/playbook/expertise/How-sports-analytics-works',
+        destination: '/playbook/expertise/How-AI-is-revolutionising-performance-in-sport',
+        permanent: true,
+      },
+      {
+        source: '/playbook/expertise/Future-of-FieldOps-PersoniWay',
+        destination: '/playbook/insights/PersoniWay-AI-That-Transforms-HVAC',
+        permanent: true,
+      },
+      {
+        source: '/playbook/insights/top-10-information-security-practices',
+        destination: '/playbook/expertise/Information-security-products',
+        permanent: true,
+      },
     ];
   },
 };

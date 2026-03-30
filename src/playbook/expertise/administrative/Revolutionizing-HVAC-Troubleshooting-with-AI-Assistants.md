@@ -1,14 +1,14 @@
 ---
-title: 'Revolutionizing HVAC Troubleshooting with AI-Assistants'
-description: 'Discover how AI-driven solutions are transforming HVAC troubleshooting, cutting training costs, and providing real-time solutions to technicians on-site.'
+title: 'AI Troubleshooting for HVAC Technicians: A Practical Guide'
+description: 'How AI assistants help HVAC technicians diagnose and fix issues faster. Reduce callbacks, speed up repairs, cut training time.'
 image: '/assets/images/expertise/it_service/hvac.jpeg'
 date: '09-03-2025'
 readingTime: '6 minutes'
 category: 'Expertise'
 subCategory: 'Administrative'
-tag: 'AI, HVAC, Ticketing System, BMS, on-site technicians'
-authorName: 'Vitaliy Zarubin'
-authorImage: '/assets/images/author/avatar.png'
+tag: 'AI HVAC troubleshooting, AI for HVAC technicians, HVAC diagnostics AI, on-site technicians, BMS'
+authorName: 'Daniella Mitchell'
+authorImage: '/assets/images/author/daniella_mitchell.jpg'
 ---
 
 It was a freezing Monday morning when Mike, a field technician with over a decade of experience, received an urgent call. A **Distech ECB-650** controller at a commercial building in downtown Chicago had stopped responding. The tenants were already complaining about the failing ventilation system, and Mike had little time to diagnose the issue before the building’s energy management team would demand a solution. 

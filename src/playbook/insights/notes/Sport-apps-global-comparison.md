@@ -1,14 +1,14 @@
 ---
-title: 'Global comparison of UX/UI in sports apps'
-description: 'Discover how UX/UI design in sports apps differs between North America, Europe and Russia. Learn about the regional differences in app design and the tools used to deliver optimised experiences.'
+title: 'Sports Apps Comparison: A Global Market Review'
+description: 'Side-by-side comparison of sports club apps worldwide. UX patterns, features, and engagement metrics across NHL, NBA, and European leagues.'
 image: '/assets/images/post/vegas-banner.jpg'
 date: '11-11-2024'
 readingTime: ''
 category: 'Insights'
 subCategory: 'Notes'
-tag: 'UX/UI, Mobile apps, Sport systems, NHL'
-authorName: 'Vitaliy Zarubin'
-authorImage: '/assets/images/author/avatar.png'
+tag: 'sports apps comparison, sports club apps, mobile sports apps, fan apps review, UX/UI, Sport systems'
+authorName: 'James Crawford'
+authorImage: '/assets/images/author/james_crawford.jpg'
 ---
 
 # Comparing UX/UI approaches in sports apps across three continents: North America, Europe and Russia
