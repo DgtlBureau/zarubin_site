@@ -13,11 +13,11 @@ faq:
   - question: 'What is the main difference between Regfo and Weave Bio?'
     answer: 'Regfo checks your existing protocols against 1,054 FDA/ICH rules and tells you what is missing. Weave Bio drafts regulatory documents like IND applications from your source data. Regfo is a compliance checker. Weave Bio is a document authoring platform.'
   - question: 'Which tool is better for a small biotech?'
-    answer: 'Regfo starts at $499/mo and gives you compliance findings in under 30 seconds. Weave Bio doesn't publish pricing and sells through enterprise sales. If you're a Series A-C biotech with 10-50 people, Regfo is built for you.'
+    answer: 'Regfo starts at $499/mo and gives you compliance findings in under 30 seconds. Weave Bio does not publish pricing and sells through enterprise sales. If you are a Series A-C biotech with 10-50 people, Regfo is built for you.'
   - question: 'Can I use Regfo and Weave Bio together?'
     answer: 'Yes. They solve different problems. Use Regfo to check your study package and protocols for compliance gaps before you start writing. Then use Weave Bio or any authoring tool to draft the actual submission documents.'
   - question: 'Does Weave Bio offer a free trial?'
-    answer: 'No. Weave Bio requires a demo call and doesn't publish pricing. Regfo offers a free trial where you can paste your protocol and get compliance findings immediately.'
+    answer: 'No. Weave Bio requires a demo call and does not publish pricing. Regfo offers a free trial where you can paste your protocol and get compliance findings immediately.'
 ---
 
 # Regfo vs Weave Bio: Two Different Tools for Two Different Problems

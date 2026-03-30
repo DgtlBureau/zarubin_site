@@ -27,7 +27,6 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import { DateTime } from 'luxon';
 import Markdown from 'markdown-to-jsx';
-import Script from 'next/script';
 import path from 'path';
 import styles from './Post.module.css';
 
@@ -247,13 +246,13 @@ export default function ExpertisePostPage(props: { params: { slug: string } }) {
       <AnchorHamburger data={paragraphs} mainAnchorData={mainAnchorData} />
 
       {/* Structured data for SEO */}
-      <Script
+      <script
         id="article-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: articleSchemaJson }}
       />
       {faqSchemaJson && (
-        <Script
+        <script
           id="faq-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: faqSchemaJson }}

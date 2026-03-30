@@ -22,7 +22,6 @@ import matter from 'gray-matter';
 import { DateTime } from 'luxon';
 import Markdown from 'markdown-to-jsx';
 import path from 'path';
-import Script from 'next/script';
 import styles from './Post.module.css';
 
 const findMarkdownFile = (dir: string, slug: string): string | null => {
@@ -191,14 +190,14 @@ export default function InsightsPostPage(props: { params: { slug: string } }) {
   return (
     <div className='relative w-full bg-white px-[10px] pb-[30px] tablet:px-[40px] tablet:pb-[40px] desktop:pb-[60px]'>
       {/* Article Schema */}
-      <Script
+      <script
         id="article-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: articleSchemaJson }}
       />
       {/* FAQ Schema (if available) */}
       {faqSchemaJson && (
-        <Script
+        <script
           id="faq-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: faqSchemaJson }}
