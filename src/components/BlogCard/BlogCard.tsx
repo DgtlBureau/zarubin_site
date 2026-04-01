@@ -44,7 +44,7 @@ export const BlogCard = ({ post }: Props) => {
               tags?.map((item) => (
                 <span
                   key={item}
-                  className='rounded-[2px] bg-white p-[10px] font-proxima text-[20px]'
+                  className='rounded-[2px] bg-white p-[10px] font-inter text-[20px]'
                 >
                   {item}
                 </span>
@@ -53,12 +53,12 @@ export const BlogCard = ({ post }: Props) => {
           <NextLinePreposition
             tag='h3'
             text={post.title}
-            className='font-proxima text-[28px] font-bold leading-[1.14] tablet:text-[36px] tablet:leading-[1.1] desktop:text-[40px]'
+            className='font-inter text-[28px] font-bold leading-[1.14] tablet:text-[36px] tablet:leading-[1.1] desktop:text-[40px]'
           />
-          <p className='line-clamp-2 overflow-hidden font-proxima text-[20px] opacity-[70%]'>
+          <p className='line-clamp-2 overflow-hidden font-inter text-[20px] opacity-[70%]'>
             {post.description}
           </p>
-          <span className='font-proxima text-[16px] text-[#010C2C] opacity-[50%]'>
+          <span className='font-inter text-[16px] text-[#010C2C] opacity-[50%]'>
             {date}
           </span>
         </div>

@@ -42,7 +42,7 @@ export const ExpertiseMenuCard = ({
         <h3 className='line-clamp-3 overflow-hidden font-unbound text-[11px] font-bold uppercase leading-[1.4] text-text-dark'>
           {title}
         </h3>
-        <p className='mt-[8px] line-clamp-3 overflow-hidden font-proxima text-[13px] leading-[1.35] text-text-dark/70'>
+        <p className='mt-[8px] line-clamp-3 overflow-hidden font-inter text-[13px] leading-[1.35] text-text-dark/70'>
           {description}
         </p>
       </div>

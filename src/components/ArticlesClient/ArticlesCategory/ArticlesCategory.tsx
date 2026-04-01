@@ -37,7 +37,7 @@ export const ArticlesCategory = ({
                 setSelectedTag('');
                 setCurrentPage(1);
               }}
-              className={`font-proxima text-[16px] capitalize leading-[1.8] ${selectedCategory.trim().toLowerCase() === 'all' ? 'font-bold' : ''}`}
+              className={`font-inter text-[16px] capitalize leading-[1.8] ${selectedCategory.trim().toLowerCase() === 'all' ? 'font-bold' : ''}`}
             >
               all
             </button>
@@ -57,7 +57,7 @@ export const ArticlesCategory = ({
                   setSelectedTag('');
                   setCurrentPage(1);
                 }}
-                className={`font-proxima text-[16px] capitalize duration-300 ${selectedCategory.trim().toLowerCase() === item.category.trim().toLowerCase() ? 'font-bold' : ''}`}
+                className={`font-inter text-[16px] capitalize duration-300 ${selectedCategory.trim().toLowerCase() === item.category.trim().toLowerCase() ? 'font-bold' : ''}`}
               >
                 {item.category}
               </button>
@@ -65,7 +65,7 @@ export const ArticlesCategory = ({
                 {item.subCategory.map((el) => (
                   <li
                     key={el}
-                    className={`font-proxima text-[16px] leading-[1.8] duration-300 ${selectedSubCategory.trim().toLowerCase() === el?.trim().toLowerCase() ? 'font-bold' : ''}`}
+                    className={`font-inter text-[16px] leading-[1.8] duration-300 ${selectedSubCategory.trim().toLowerCase() === el?.trim().toLowerCase() ? 'font-bold' : ''}`}
                   >
                     <button
                       type='button'

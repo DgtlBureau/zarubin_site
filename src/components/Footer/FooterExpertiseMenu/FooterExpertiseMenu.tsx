@@ -28,7 +28,7 @@ export const FooterExpertiseMenu = ({ expertiseMenu }: IProps) => {
                 <li key={el.nameItem} className='w-fit'>
                   <Link
                     href={`/expertise/${finalLink(el.nameItem)}`}
-                    className='group relative w-fit font-proxima text-[16px] leading-[1.2] text-white'
+                    className='group relative w-fit font-inter text-[16px] leading-[1.2] text-white'
                   >
                     {formatMenuItem(finalLink(el.nameItem))}
                     <div className='absolute h-[2px] w-0 bg-main-blue transition-all duration-200 group-hover:w-full' />

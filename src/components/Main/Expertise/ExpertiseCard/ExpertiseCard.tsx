@@ -41,7 +41,7 @@ export const ExpertiseCard = ({
                 className='flex items-center gap-[19px] hover:underline'
               >
                 <TriangeIcon className='h-[18px] min-h-[18px] w-[18px] min-w-[18px]' />
-                <p className=' font-proxima text-[20px] leading-[1.25] tablet:leading-[1.2] desktop:text-[24px] desktop-hard:leading-[1.25]'>
+                <p className=' font-inter text-[20px] leading-[1.25] tablet:leading-[1.2] desktop:text-[24px] desktop-hard:leading-[1.25]'>
                   {item.title}
                 </p>
               </Link>

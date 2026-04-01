@@ -58,7 +58,7 @@ export const NewForm = () => {
       <NextLinePreposition
         tag='p'
         text='Fill out the form and click the blue button to get in touch with you!'
-        className='mt-[16px] font-proxima text-[18px] font-semibold leading-[1.1] text-light-gray tablet:text-[20px] tablet:leading-[1.2] desktop:leading-[1]'
+        className='mt-[16px] font-inter text-[18px] font-semibold leading-[1.1] text-light-gray tablet:text-[20px] tablet:leading-[1.2] desktop:leading-[1]'
       />
       <form
         className='mt-[30px] flex flex-col gap-[20px] overflow-hidden tablet:mt-[40px] tablet:gap-[30px] desktop:mt-[32px] desktop:gap-[25px]'
@@ -70,7 +70,7 @@ export const NewForm = () => {
           placeholder='Name'
           value={formik.values.name}
           required
-          className='w-full resize-none rounded-[6px] border-[1px] border-white/20 bg-white/20 p-[8px_20px] font-proxima text-[16px] leading-[2.4] text-white placeholder-gray-placeholder outline-none focus:border-main-orange tablet:leading-[1.8] desktop:leading-[1.7]'
+          className='w-full resize-none rounded-[6px] border-[1px] border-white/20 bg-white/20 p-[8px_20px] font-inter text-[16px] leading-[2.4] text-white placeholder-gray-placeholder outline-none focus:border-main-orange tablet:leading-[1.8] desktop:leading-[1.7]'
           onChange={formik.handleChange}
         />
         <input
@@ -78,7 +78,7 @@ export const NewForm = () => {
           name='email'
           value={formik.values.email}
           placeholder='E-mail'
-          className='w-full resize-none rounded-[6px] border-[1px] border-white/20 bg-white/20 p-[8px_20px] font-proxima text-[16px] leading-[2.4] text-white placeholder-gray-placeholder outline-none focus:border-main-orange tablet:leading-[1.8] desktop:leading-[1.7]'
+          className='w-full resize-none rounded-[6px] border-[1px] border-white/20 bg-white/20 p-[8px_20px] font-inter text-[16px] leading-[2.4] text-white placeholder-gray-placeholder outline-none focus:border-main-orange tablet:leading-[1.8] desktop:leading-[1.7]'
           required
           onChange={formik.handleChange}
         />
@@ -91,7 +91,7 @@ export const NewForm = () => {
           }}
           value={formik.values.phone}
           placeholder='Phone'
-          className='w-full resize-none rounded-[6px] border-[1px] border-white/20 bg-white/20 p-[8px_20px] font-proxima text-[16px] leading-[2.4] text-white placeholder-gray-placeholder outline-none focus:border-main-orange tablet:leading-[1.8] desktop:leading-[1.7]'
+          className='w-full resize-none rounded-[6px] border-[1px] border-white/20 bg-white/20 p-[8px_20px] font-inter text-[16px] leading-[2.4] text-white placeholder-gray-placeholder outline-none focus:border-main-orange tablet:leading-[1.8] desktop:leading-[1.7]'
           required
           onChange={formik.handleChange}
         />
@@ -99,12 +99,12 @@ export const NewForm = () => {
           name='details'
           value={formik.values.details}
           placeholder='Request'
-          className='w-full resize-none rounded-[6px] border-[1px] border-white/20 bg-white/20 p-[8px_20px] font-proxima text-[16px] leading-[2.4] text-white placeholder-gray-placeholder outline-none focus:border-main-orange tablet:leading-[1.8] desktop:leading-[1.7]'
+          className='w-full resize-none rounded-[6px] border-[1px] border-white/20 bg-white/20 p-[8px_20px] font-inter text-[16px] leading-[2.4] text-white placeholder-gray-placeholder outline-none focus:border-main-orange tablet:leading-[1.8] desktop:leading-[1.7]'
           rows={1}
           onChange={formik.handleChange}
           required
         />
-        <label className='flex w-fit items-center gap-[8px] font-proxima text-[16px] font-bold text-white'>
+        <label className='flex w-fit items-center gap-[8px] font-inter text-[16px] font-bold text-white'>
           <input
             type='checkbox'
             checked={isChecked}

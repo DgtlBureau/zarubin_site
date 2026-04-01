@@ -29,10 +29,10 @@ export const NewInsightsClient = ({ posts }: Props) => {
         <Container className=''>
           <div className='flex items-start justify-between desktop:items-center'>
             <div className='flex flex-col gap-[12px]'>
-              <h2 className='font-proxima text-[13px] font-semibold uppercase tracking-[0.1em] text-text-muted tablet:text-[14px]'>
+              <h2 className='font-inter text-[13px] font-semibold uppercase tracking-[0.1em] text-text-muted tablet:text-[14px]'>
                 {MenuItems.PLAYBOOK.toLowerCase()}
               </h2>
-              <p className='font-proxima text-[14px] leading-[1.5] text-light-gray tablet:text-[15px]'>
+              <p className='font-inter text-[14px] leading-[1.5] text-light-gray tablet:text-[15px]'>
                 {`${sectionsTitle['main']['insights'].descripton}`}
               </p>
             </div>

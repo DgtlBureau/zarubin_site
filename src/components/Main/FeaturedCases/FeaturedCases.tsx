@@ -45,12 +45,12 @@ export const FeaturedCases = () => {
       <Container>
         {/* Section header */}
         <div className='mb-[16px] flex items-center justify-between'>
-          <span className='font-proxima text-[12px] font-semibold uppercase tracking-[0.05em] text-text-dark/50'>
+          <span className='font-inter text-[12px] font-semibold uppercase tracking-[0.05em] text-text-dark/50'>
             Latest Projects
           </span>
           <Link
             href='/cases'
-            className='group flex items-center gap-[6px] font-proxima text-[13px] font-medium text-text-dark/60 transition-all duration-200 hover:gap-[10px] hover:text-main-orange'
+            className='group flex items-center gap-[6px] font-inter text-[13px] font-medium text-text-dark/60 transition-all duration-200 hover:gap-[10px] hover:text-main-orange'
           >
             View all cases
             <span className='transition-transform duration-200 group-hover:translate-x-1'>

@@ -181,7 +181,7 @@ export const ContactForm = ({
       {/* Header */}
       <h3
         className={cn(
-          'font-proxima font-bold leading-[1.25]',
+          'font-inter font-bold leading-[1.25]',
           variant === 'glass'
             ? 'text-center text-[22px] text-white tablet:text-[26px] tablet:leading-[1.15]'
             : 'text-[22px] text-white mobile-big:text-[32px] mobile-big:leading-[37px]'
@@ -191,7 +191,7 @@ export const ContactForm = ({
       </h3>
 
       {subtitle && variant === 'glass' && (
-        <p className="mt-[12px] text-center font-proxima text-[14px] font-normal leading-[1.4] text-white/80 tablet:text-[16px]">
+        <p className="mt-[12px] text-center font-inter text-[14px] font-normal leading-[1.4] text-white/80 tablet:text-[16px]">
           {subtitle}
         </p>
       )}
@@ -241,7 +241,7 @@ export const ContactForm = ({
           onChange={handleChange}
           required
           className={cn(
-            'flex w-full font-proxima outline-none transition-all duration-200 disabled:cursor-not-allowed disabled:opacity-50',
+            'flex w-full font-inter outline-none transition-all duration-200 disabled:cursor-not-allowed disabled:opacity-50',
             inputVariant === 'glass'
               ? 'rounded-[6px] border border-white/30 bg-white/10 p-[8px_16px] text-[14px] leading-[1.8] text-white placeholder:text-white/60 focus:border-white/60 focus:bg-white/20'
               : 'border-b border-blue-600 bg-transparent pb-2 text-base text-white placeholder:text-gray-500/50 focus:bg-blue-950 mobile-big:text-2xl'
@@ -274,7 +274,7 @@ export const ContactForm = ({
             <div className="flex items-center justify-between">
               <span
                 className={cn(
-                  'font-proxima text-base mobile-big:text-2xl',
+                  'font-inter text-base mobile-big:text-2xl',
                   values.cv?.name ? 'text-white' : 'text-gray-500 opacity-50'
                 )}
               >
@@ -302,7 +302,7 @@ export const ContactForm = ({
 
         {/* Privacy checkbox */}
         {showPrivacyCheckbox && (
-          <label className="flex w-fit items-center gap-[8px] font-proxima text-[14px] font-normal text-white/90">
+          <label className="flex w-fit items-center gap-[8px] font-inter text-[14px] font-normal text-white/90">
             <Checkbox
               checked={isChecked}
               onCheckedChange={setIsChecked}
@@ -346,7 +346,7 @@ export const ContactForm = ({
 
         {/* Footer text */}
         {variant === 'glass' && (
-          <p className="mt-3 text-center font-proxima text-[13px] text-white/70">
+          <p className="mt-3 text-center font-inter text-[13px] text-white/70">
             Free consultation. No commitment required.
           </p>
         )}

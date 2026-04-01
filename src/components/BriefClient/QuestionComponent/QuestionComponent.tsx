@@ -74,7 +74,7 @@ export const QuestionComponent = ({
               {item.label && (
                 <label
                   form={item.id}
-                  className='font-proxima text-[26px] text-text-dark/50'
+                  className='font-inter text-[26px] text-text-dark/50'
                 >
                   {item.label}
                   {item.required && item.label ? (
@@ -93,7 +93,7 @@ export const QuestionComponent = ({
                     onChange={(e) => {
                       handleChange(item.id, e.target.value);
                     }}
-                    className='w-full border-b-[1px] border-main-blue-hover pb-[8px] font-proxima text-[26px] outline-none'
+                    className='w-full border-b-[1px] border-main-blue-hover pb-[8px] font-inter text-[26px] outline-none'
                   />
                   {formik.errors[item.id] && formik.touched[item.id] && (
                     <span className='mt-[8px] block text-[12px] text-main-blue'>
@@ -113,10 +113,10 @@ export const QuestionComponent = ({
                     onChange={(e) => {
                       handleChange(item.id, e.target.value);
                     }}
-                    className='h-[auto] w-full resize-none overflow-hidden border-b-[1px] border-main-blue-hover pb-[8px] font-proxima text-[26px] outline-none'
+                    className='h-[auto] w-full resize-none overflow-hidden border-b-[1px] border-main-blue-hover pb-[8px] font-inter text-[26px] outline-none'
                   />
                   {formik.errors[item.id] && formik.touched[item.id] && (
-                    <span className='mt-[8px] block font-proxima text-[12px] text-main-blue'>
+                    <span className='mt-[8px] block font-inter text-[12px] text-main-blue'>
                       {formik.errors[item.id]}
                     </span>
                   )}
@@ -133,7 +133,7 @@ export const QuestionComponent = ({
                     const target = e.target as HTMLInputElement;
                     handleChange(item.id, target.value);
                   }}
-                  className={`${item.answer === contextValue[item.id] ? 'border-[2px] border-main-blue' : 'border-main-blue/20'} block w-full cursor-pointer rounded-[6px] border-[1px] py-[13px] font-proxima text-[20px] leading-[1.2] text-text-dark hover:border-main-blue-hover`}
+                  className={`${item.answer === contextValue[item.id] ? 'border-[2px] border-main-blue' : 'border-main-blue/20'} block w-full cursor-pointer rounded-[6px] border-[1px] py-[13px] font-inter text-[20px] leading-[1.2] text-text-dark hover:border-main-blue-hover`}
                 />
               )}
             </React.Fragment>

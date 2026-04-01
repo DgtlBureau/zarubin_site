@@ -23,7 +23,7 @@ export const Insights = () => {
             <h3 className='whitespace-nowrap font-unbound text-[44px] font-bold uppercase leading-[1.1] tablet:text-[50px]'>
               2 years
             </h3>
-            <p className='font-proxima text-[20px] leading-[1.2]'>
+            <p className='font-inter text-[20px] leading-[1.2]'>
               create mobile applications and web services for cutting-edge
               companies
             </p>
@@ -32,7 +32,7 @@ export const Insights = () => {
             <h3 className='whitespace-nowrap font-unbound text-[44px] font-bold uppercase leading-[1.1] tablet:text-[50px]'>
               25+
             </h3>
-            <p className='font-proxima text-[20px] leading-[1.2]'>
+            <p className='font-inter text-[20px] leading-[1.2]'>
               implemented digital projects that attracted new users
             </p>
           </li>
@@ -40,7 +40,7 @@ export const Insights = () => {
             <h3 className='whitespace-nowrap font-unbound text-[44px] font-bold uppercase leading-[1.1] tablet:text-[50px]'>
               20+ people
             </h3>
-            <p className='font-proxima text-[20px] leading-[1.2]'>
+            <p className='font-inter text-[20px] leading-[1.2]'>
               work on tasks
             </p>
           </li>

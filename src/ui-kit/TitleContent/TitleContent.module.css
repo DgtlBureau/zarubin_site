@@ -32,7 +32,7 @@
 .tag {
   padding: 10px;
   display: inline-block;
-  font-family: 'Proxima Nova';
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 1.25;
 }

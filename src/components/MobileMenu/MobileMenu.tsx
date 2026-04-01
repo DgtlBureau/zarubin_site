@@ -58,7 +58,7 @@ export const MobileMenu = ({
                   `${MenuItems.PLAYBOOK.toLowerCase()}` ? (
                     <Link
                       href={item.link}
-                      className={`${styles.menuLink} ${styles.dark} font-proxima`}
+                      className={`${styles.menuLink} ${styles.dark} font-inter`}
                       onClick={onClick}
                     >
                       {item.name}
@@ -69,7 +69,7 @@ export const MobileMenu = ({
                       onClick={() =>
                         setIsOpenexpertiseSubmenu(!isOpenExpertiseSubMenu)
                       }
-                      className={`${styles.menuLink} ${styles.dark} font-proxima`}
+                      className={`${styles.menuLink} ${styles.dark} font-inter`}
                     >
                       {item.name}
                     </button>

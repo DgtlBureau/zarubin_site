@@ -33,7 +33,7 @@ export const IndustriesCard = ({ title, data, link }: Props) => {
           {data.map((item) => (
             <li key={item.id} className='flex items-center gap-[20px]'>
               <TriangeIcon className='h-[18px] w-[18px]' />
-              <p className='relative text-nowrap font-proxima text-[20px] leading-[1.2] text-text-dark desktop:text-[28px]'>
+              <p className='relative text-nowrap font-inter text-[20px] leading-[1.2] text-text-dark desktop:text-[28px]'>
                 {item.title}
               </p>
             </li>
@@ -42,7 +42,7 @@ export const IndustriesCard = ({ title, data, link }: Props) => {
       </div>
       <Link
         href={link}
-        className='ml-[5px] flex w-fit items-center justify-center gap-[10px] rounded-[5px] bg-main-blue p-[13px_15px] font-proxima text-[20px] font-bold text-white transition hover:bg-main-blue-hover tablet:mt-[92px] tablet:h-[112px] tablet:min-w-[407px] tablet:text-[40px] desktop:mt-[20px]'
+        className='ml-[5px] flex w-fit items-center justify-center gap-[10px] rounded-[5px] bg-main-blue p-[13px_15px] font-inter text-[20px] font-bold text-white transition hover:bg-main-blue-hover tablet:mt-[92px] tablet:h-[112px] tablet:min-w-[407px] tablet:text-[40px] desktop:mt-[20px]'
       >
         {`${btnTitle} ${MenuItems.CASES.toLowerCase()}`}
         <Arrow className='h-[24px] w-[24px] tablet:h-[auto] tablet:w-[44px]' />

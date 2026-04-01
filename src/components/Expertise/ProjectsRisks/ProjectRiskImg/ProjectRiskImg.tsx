@@ -11,7 +11,7 @@ export const ProjectRiskImg = () => {
         <NextLinePreposition
           tag='p'
           text='Analyzing the current situation'
-          className='z-10 font-proxima text-[18px] font-bold leading-[1.3] text-slate-900 tablet:text-[36px]'
+          className='z-10 font-inter text-[18px] font-bold leading-[1.3] text-slate-900 tablet:text-[36px]'
         />
         <Image
           src={img1}
@@ -25,7 +25,7 @@ export const ProjectRiskImg = () => {
         <NextLinePreposition
           tag='p'
           text='Making an action plan'
-          className='z-10 font-proxima text-[18px] font-bold leading-[1.3] text-white tablet:text-[36px]'
+          className='z-10 font-inter text-[18px] font-bold leading-[1.3] text-white tablet:text-[36px]'
         />
         <Image
           src={img2}

@@ -15,7 +15,7 @@ export const BonusesForm = ({ onClick, setIsEmailSended }: IFormProps) => {
   const notify = () =>
     toast('Something is wrong! Please try later', {
       className:
-        'bg-white font-bold rounded-lg px-4 py-3 shadow-xl text-text-dark text-[16px] font-proxima',
+        'bg-white font-bold rounded-lg px-4 py-3 shadow-xl text-text-dark text-[16px] font-inter',
       progressClassName: 'bg-red-800',
       theme: 'white',
     });
@@ -66,7 +66,7 @@ export const BonusesForm = ({ onClick, setIsEmailSended }: IFormProps) => {
       <NextLinePreposition
         tag='p'
         text='Enter your work email and receive a PDF with actionable tips within minutes'
-        className='mt-[16px] font-proxima text-[18px] font-semibold leading-[1.1] text-light-gray tablet:text-[20px] tablet:leading-[1.2] desktop:leading-[1]'
+        className='mt-[16px] font-inter text-[18px] font-semibold leading-[1.1] text-light-gray tablet:text-[20px] tablet:leading-[1.2] desktop:leading-[1]'
       />
       <form
         className='mt-[30px] flex flex-col gap-[20px] overflow-hidden tablet:mt-[40px] tablet:gap-[30px] desktop:mt-[32px] desktop:gap-[25px]'
@@ -78,7 +78,7 @@ export const BonusesForm = ({ onClick, setIsEmailSended }: IFormProps) => {
           placeholder='Name'
           value={formik.values.name}
           required
-          className='w-full resize-none rounded-[6px] border-[1px] border-white/20 bg-white/20 p-[8px_20px] font-proxima text-[16px] leading-[2.4] text-white placeholder-gray-placeholder outline-none focus:border-main-orange tablet:leading-[1.8] desktop:leading-[1.7]'
+          className='w-full resize-none rounded-[6px] border-[1px] border-white/20 bg-white/20 p-[8px_20px] font-inter text-[16px] leading-[2.4] text-white placeholder-gray-placeholder outline-none focus:border-main-orange tablet:leading-[1.8] desktop:leading-[1.7]'
           onChange={formik.handleChange}
         />
         <input
@@ -86,7 +86,7 @@ export const BonusesForm = ({ onClick, setIsEmailSended }: IFormProps) => {
           name='email'
           value={formik.values.email}
           placeholder='E-mail'
-          className='w-full resize-none rounded-[6px] border-[1px] border-white/20 bg-white/20 p-[8px_20px] font-proxima text-[16px] leading-[2.4] text-white placeholder-gray-placeholder outline-none focus:border-main-orange tablet:leading-[1.8] desktop:leading-[1.7]'
+          className='w-full resize-none rounded-[6px] border-[1px] border-white/20 bg-white/20 p-[8px_20px] font-inter text-[16px] leading-[2.4] text-white placeholder-gray-placeholder outline-none focus:border-main-orange tablet:leading-[1.8] desktop:leading-[1.7]'
           required
           onChange={formik.handleChange}
         />

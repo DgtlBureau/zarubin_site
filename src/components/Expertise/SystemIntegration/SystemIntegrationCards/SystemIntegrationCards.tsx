@@ -31,7 +31,7 @@ export const SystemIntegrationCards = () => {
               <path d='M0 0H176L0 154V0Z' fill='#013EDF' />
             </svg>
           </div>
-          <div className='font-proxima text-[26px] font-bold desktop-big:text-[40px]'>
+          <div className='font-inter text-[26px] font-bold desktop-big:text-[40px]'>
             {text}
           </div>
         </div>

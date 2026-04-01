@@ -76,7 +76,6 @@ const config: Config = {
         manrope: ['Manrope', 'sans-serif'],
         bebas: ['Bebas Neue', 'sans-serif'],
         unbound: ['Unbounded', 'sans-serif'],
-        proxima: ['var(--font-inter)', 'Inter', 'Proxima Nova', 'sans-serif'],
       },
       borderRadius: {
         lg: 'var(--radius)',

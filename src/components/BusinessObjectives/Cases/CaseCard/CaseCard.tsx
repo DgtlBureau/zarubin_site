@@ -58,7 +58,7 @@ export const CaseCard = ({ data }: { data: Case }) => {
             text={data.title}
             className='font-unbound text-[18px] font-bold leading-[1.15] text-gray-400'
           />
-          <p className='leading-1 font-proxima text-[16px]'>
+          <p className='leading-1 font-inter text-[16px]'>
             {data.description}
           </p>
         </div>

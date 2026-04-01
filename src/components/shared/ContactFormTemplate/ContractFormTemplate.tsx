@@ -18,18 +18,18 @@ export const ContractFormTemplate = ({
               alt='fonuder'
             />
             <div className='flex max-w-full flex-col gap-1 laptop:max-w-[291px]'>
-              <div className='font-proxima text-[22px] font-bold leading-9 text-slate-900'>
+              <div className='font-inter text-[22px] font-bold leading-9 text-slate-900'>
                 Vitaly Z.
               </div>
-              <div className='font-proxima text-[16px] font-normal leading-[29.77px] text-slate-900'>
+              <div className='font-inter text-[16px] font-normal leading-[29.77px] text-slate-900'>
                 «The road arises under the steps of walking»
               </div>
-              <div className='inline font-proxima text-[18px] font-bold leading-9 text-slate-900 laptop:hidden'>
+              <div className='inline font-inter text-[18px] font-bold leading-9 text-slate-900 laptop:hidden'>
                 access@thebrightbyte.com
               </div>
             </div>
           </div>
-          <div className='hidden font-proxima text-[18px] font-bold leading-9 text-slate-900 laptop:inline'>
+          <div className='hidden font-inter text-[18px] font-bold leading-9 text-slate-900 laptop:inline'>
             access@thebrightbyte.com
           </div>
         </div>

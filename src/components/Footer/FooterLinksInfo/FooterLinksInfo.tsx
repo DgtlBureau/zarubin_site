@@ -28,7 +28,7 @@ export const FooterLinksInfo = () => {
         <div className='mt-[24px] grid w-full grid-cols-1 tablet:mt-[40px] laptop:mt-[80px] laptop:grid-cols-2'>
           <Link
             href='mailto:access@thebrightbyte.com'
-            className='flex h-full w-full items-center font-proxima text-[18px] font-bold text-white tablet:text-[20px] laptop:order-last laptop:justify-end desktop:text-[26px]'
+            className='flex h-full w-full items-center font-inter text-[18px] font-bold text-white tablet:text-[20px] laptop:order-last laptop:justify-end desktop:text-[26px]'
           >
             access@thebrightbyte.com
           </Link>

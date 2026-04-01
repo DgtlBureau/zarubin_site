@@ -32,16 +32,16 @@ export const NewFeedbackCard = ({ data }: Props) => {
           />
           <div className='relative '>
             <div className='flex h-full flex-col items-center justify-center gap-[6px] transition-opacity duration-500'>
-              <h3 className='font-proxima text-[16px] font-bold text-text-dark'>
+              <h3 className='font-inter text-[16px] font-bold text-text-dark'>
                 {data.name}
               </h3>
-              <span className='font-proxima text-[12px] text-text-dark mobile-big:text-[13px]'>
+              <span className='font-inter text-[12px] text-text-dark mobile-big:text-[13px]'>
                 {data.job}
               </span>
             </div>
           </div>
         </div>
-        <p className='mt-[16px] font-proxima text-[13px] leading-[1.5] text-text-dark'>
+        <p className='mt-[16px] font-inter text-[13px] leading-[1.5] text-text-dark'>
           {data.feedback}
         </p>
       </div>
@@ -54,7 +54,7 @@ export const NewFeedbackCard = ({ data }: Props) => {
           loading='lazy'
         />
         {data?.date && (
-          <span className='font-proxima text-[13px] text-text-dark opacity-50 mobile-big:text-[14px] tablet:text-[14px]'>
+          <span className='font-inter text-[13px] text-text-dark opacity-50 mobile-big:text-[14px] tablet:text-[14px]'>
             {formattedDate(data.date)}
           </span>
         )}

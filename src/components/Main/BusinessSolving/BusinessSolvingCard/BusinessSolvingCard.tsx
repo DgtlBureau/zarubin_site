@@ -29,21 +29,21 @@ export const BusinessSolvingCard = ({
           <NextLinePreposition
             tag='span'
             text={industries[0]}
-            className={`flex max-w-fit items-center justify-start rounded-[5px] bg-white p-[10px] font-proxima text-[18px] font-bold uppercase leading-[0.8] text-text-dark laptop:text-[21px] [&:nth-child(even)]:bg-main-gray [&:nth-child(even)]:text-white `}
+            className={`flex max-w-fit items-center justify-start rounded-[5px] bg-white p-[10px] font-inter text-[18px] font-bold uppercase leading-[0.8] text-text-dark laptop:text-[21px] [&:nth-child(even)]:bg-main-gray [&:nth-child(even)]:text-white `}
           />
-          <span className='flex items-center justify-start rounded-[5px] bg-main-gray p-[10px] font-proxima text-[18px] font-bold uppercase leading-[0.8] text-white laptop:text-[21px]'>
+          <span className='flex items-center justify-start rounded-[5px] bg-main-gray p-[10px] font-inter text-[18px] font-bold uppercase leading-[0.8] text-white laptop:text-[21px]'>
             #{joinTag}
           </span>
         </div>
         <NextLinePreposition
           tag='h3'
           text={title}
-          className='mt-[58px] flex-1 font-proxima text-[28px] font-bold leading-[1.14] tablet:mt-[46px] laptop:text-[36px] desktop:text-[40px] desktop-big:mt-[56px]'
+          className='mt-[58px] flex-1 font-inter text-[28px] font-bold leading-[1.14] tablet:mt-[46px] laptop:text-[36px] desktop:text-[40px] desktop-big:mt-[56px]'
         />
         <NextLinePreposition
           tag='p'
           text={description}
-          className='mb-[32px] mt-[10px] flex-1 font-proxima text-[20px] leading-[1.2]'
+          className='mb-[32px] mt-[10px] flex-1 font-inter text-[20px] leading-[1.2]'
         />
         <div className='h-fit w-fit'>
           <LinkArrow title='Go to the solution' link={link} />

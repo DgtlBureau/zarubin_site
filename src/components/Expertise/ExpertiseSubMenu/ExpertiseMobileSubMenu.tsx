@@ -40,11 +40,11 @@ export const ExpertiseMobileSubMenu = ({
             {item.folderItems.map((el) => (
               <li
                 key={el.nameItem}
-                className={`inline-block w-[200px] font-proxima leading-[1.87]`}
+                className={`inline-block w-[200px] font-inter leading-[1.87]`}
               >
                 <Link
                   onClick={onMenuClose}
-                  className='relative border-b-[2px] border-solid border-transparent py-[5px] font-proxima text-[16px] hover:border-main-blue'
+                  className='relative border-b-[2px] border-solid border-transparent py-[5px] font-inter text-[16px] hover:border-main-blue'
                   href={`/expertise/${finalLink(el.nameItem)}`}
                 >
                   {formatMenuItem(finalLink(el.nameItem))}

@@ -61,7 +61,7 @@ export const NewInsightsCard = ({
             {tags?.slice(0, 2).map((item, idx) => (
               <span
                 key={idx}
-                className={`w-fit rounded-[5px] p-[4px_8px] font-proxima text-[12px] font-bold uppercase text-text-dark ${idx === 0 ? 'bg-main-orange' : 'bg-white'}`}
+                className={`w-fit rounded-[5px] p-[4px_8px] font-inter text-[12px] font-bold uppercase text-text-dark ${idx === 0 ? 'bg-main-orange' : 'bg-white'}`}
               >
                 {item}
               </span>
@@ -77,7 +77,7 @@ export const NewInsightsCard = ({
           <NextLinePreposition
             tag='p'
             text={description}
-            className='mt-[8px] line-clamp-3 overflow-hidden font-proxima text-[12px] leading-[1.4] text-text-dark/60 tablet:text-[13px]'
+            className='mt-[8px] line-clamp-3 overflow-hidden font-inter text-[12px] leading-[1.4] text-text-dark/60 tablet:text-[13px]'
           />
           {date && (
             <span className='mt-[8px] text-[12px] text-text-dark/60'>

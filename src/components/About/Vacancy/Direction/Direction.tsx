@@ -18,8 +18,8 @@ export const Direction = () => {
       <ul className={styles.directionWrapper}>
         <li onClick={scrollToContacts} className='cursor-pointer'>
           <div className={classNames(styles.directionBox, styles.partner)}>
-            <h3 className={`${styles.tag} font-proxima`}>To the Partner</h3>
-            <p className={`${styles.description} font-proxima`}>
+            <h3 className={`${styles.tag} font-inter`}>To the Partner</h3>
+            <p className={`${styles.description} font-inter`}>
               Do you want to work with us? Leave a request or send an e-mail{' '}
             </p>
             <p className='mt-[32px] hidden w-fit'>
@@ -29,8 +29,8 @@ export const Direction = () => {
         </li>
         <li onClick={scrollToContacts} className='cursor-pointer'>
           <div className={classNames(styles.directionBox, styles.expert)}>
-            <h3 className={`${styles.tag} font-proxima`}>To the expert</h3>
-            <p className={`${styles.description} font-proxima`}>
+            <h3 className={`${styles.tag} font-inter`}>To the expert</h3>
+            <p className={`${styles.description} font-inter`}>
               {`Read about how to get to us and what jobs are available on the
               'Careers' link`}
             </p>

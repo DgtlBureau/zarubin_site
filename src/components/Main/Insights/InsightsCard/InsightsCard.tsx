@@ -58,7 +58,7 @@ export const InsightsCard = ({
             {tags.map((item, idx) => (
               <span
                 key={idx}
-                className='block w-fit rounded-[5px] bg-gray-200 p-[10px] font-proxima text-[21px] font-bold uppercase leading-none text-text-dark'
+                className='block w-fit rounded-[5px] bg-gray-200 p-[10px] font-inter text-[21px] font-bold uppercase leading-none text-text-dark'
               >
                 {item}
               </span>
@@ -73,7 +73,7 @@ export const InsightsCard = ({
         <NextLinePreposition
           tag='p'
           text={description}
-          className='mt-[19px] line-clamp-3 overflow-hidden font-proxima text-[16px] leading-[1.25] text-text-dark tablet:text-[20px]'
+          className='mt-[19px] line-clamp-3 overflow-hidden font-inter text-[16px] leading-[1.25] text-text-dark tablet:text-[20px]'
         />
         {subCategory === 'Research' && downloadLink && (
           <div className='mt-[25px]'>

@@ -69,7 +69,7 @@ export const TeamClient = ({ team }: ITeamProps) => {
                 <h3 className='mt-[12px] font-unbound text-[24px] font-bold uppercase leading-[1.16] desktop:mt-[20px] desktop:text-[28px]'>
                   {post.name}
                 </h3>
-                <p className='mt-[8px] font-proxima text-[20px] leading-[1.2] desktop:mt-[12px] desktop:text-[24px]'>
+                <p className='mt-[8px] font-inter text-[20px] leading-[1.2] desktop:mt-[12px] desktop:text-[24px]'>
                   {post.job}
                 </p>
               </SwiperSlide>

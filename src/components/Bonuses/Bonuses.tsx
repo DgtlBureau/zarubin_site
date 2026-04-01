@@ -58,7 +58,7 @@ export const Bonuses = ({ data }: IBonuseProps) => {
                 >
                   {isEmailSended ? 'Your File is on its way!' : firstData.title}
                 </h1>
-                <p className='fon-regular mt-[20px] font-proxima text-[20px] leading-[1.2]'>
+                <p className='fon-regular mt-[20px] font-inter text-[20px] leading-[1.2]'>
                   {isEmailSended
                     ? "We've just sent it to your inbox. If you don't see the email in a few minutes, check your spam or promotions folder."
                     : firstData.description}
@@ -79,7 +79,7 @@ export const Bonuses = ({ data }: IBonuseProps) => {
                         title={firstData.btnInfo}
                         description={firstData.btnSubinfo}
                       />
-                      <div className='font-regular flex items-center gap-[12px] font-proxima text-[16px]'>
+                      <div className='font-regular flex items-center gap-[12px] font-inter text-[16px]'>
                         <span className='block h-[12px] w-[12px] rounded-[100%] bg-orange-light' />
                         <span>Available until {parsedData}</span>
                       </div>
@@ -108,7 +108,7 @@ export const Bonuses = ({ data }: IBonuseProps) => {
                       <h2 className='font-unbound text-[28px] font-bold uppercase leading-[1.14] text-main-bg desktop:text-[38px]'>
                         {firstData.secondSectionTitle}
                       </h2>
-                      <p className='font-proxima text-[16px] leading-[1.25]'>
+                      <p className='font-inter text-[16px] leading-[1.25]'>
                         {firstData.secondSectionDescr}
                       </p>
                       <div className='flex flex-col items-center gap-[12px] desktop:flex-row desktop:gap-[32px]'>
@@ -117,7 +117,7 @@ export const Bonuses = ({ data }: IBonuseProps) => {
                           title={firstData.btnInfo}
                           description={firstData.btnSubinfo}
                         />
-                        <div className='font-regular flex items-center gap-[12px] font-proxima text-[16px]'>
+                        <div className='font-regular flex items-center gap-[12px] font-inter text-[16px]'>
                           <span className='block h-[12px] w-[12px] rounded-[100%] bg-orange-light' />
                           <span>Available until {parsedData}</span>
                         </div>

@@ -22,19 +22,19 @@ export const VacanciesCard = ({
           {tags.map((tag, idx) => (
             <span
               key={idx}
-              className={`flex h-[38px] items-center justify-center rounded-[5px] bg-white px-[10px] font-proxima text-[21px] font-bold uppercase leading-[0.8] text-text-dark [&:nth-child(even)]:bg-main-gray [&:nth-child(even)]:text-white `}
+              className={`flex h-[38px] items-center justify-center rounded-[5px] bg-white px-[10px] font-inter text-[21px] font-bold uppercase leading-[0.8] text-text-dark [&:nth-child(even)]:bg-main-gray [&:nth-child(even)]:text-white `}
             >
               {tag}
             </span>
           ))}
         </div>
         <div className='flex flex-col gap-2.5'>
-          <h3 className='mt-[58px] flex-1 font-proxima text-[28px] font-bold leading-[1.14] tablet:mt-[46px] tablet:text-[36px] desktop:text-[40px] desktop-big:mt-[56px]'>
+          <h3 className='mt-[58px] flex-1 font-inter text-[28px] font-bold leading-[1.14] tablet:mt-[46px] tablet:text-[36px] desktop:text-[40px] desktop-big:mt-[56px]'>
             {title}
           </h3>
           <div className='mb-[32px] mt-[10px] flex-1'>
             {description.split('\n').map((line, index) => (
-              <p key={index} className='font-proxima text-[20px] leading-[1.2]'>
+              <p key={index} className='font-inter text-[20px] leading-[1.2]'>
                 {line}
               </p>
             ))}

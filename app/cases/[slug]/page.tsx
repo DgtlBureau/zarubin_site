@@ -120,7 +120,7 @@ export default async function CasePage(props: { params: { slug: string } }) {
               className='flex items-center gap-[4px]'
             >
               <Icon width={30} height={30} />{' '}
-              <span className='font-proxima text-[14px] font-semibold'>
+              <span className='font-inter text-[14px] font-semibold'>
                 {name}
               </span>
             </div>
@@ -183,7 +183,7 @@ export default async function CasePage(props: { params: { slug: string } }) {
               </div>
             </ScrollAnimationWrapper>
             <ScrollAnimationWrapper showOnLoad>
-              <p className='font-proxima text-[16px] text-text-dark'>
+              <p className='font-inter text-[16px] text-text-dark'>
                 {description}
               </p>
             </ScrollAnimationWrapper>
@@ -194,7 +194,7 @@ export default async function CasePage(props: { params: { slug: string } }) {
               {paragraphs.slice(1).map((p, index) => (
                 <Markdown
                   key={index}
-                  className={`${styles.markdown} flex w-full flex-col gap-[20px] font-proxima`}
+                  className={`${styles.markdown} flex w-full flex-col gap-[20px] font-inter`}
                 >
                   {p.content}
                 </Markdown>

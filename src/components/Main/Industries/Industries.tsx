@@ -48,7 +48,7 @@ export const Industries = () => {
               </div>
               <button
                 type='button'
-                className={`text-left font-proxima text-[20px] font-bold leading-[1] group-hover:text-text-dark ${index === selectedIndex ? 'text-text-dark' : 'text-main-disabled'}`}
+                className={`text-left font-inter text-[20px] font-bold leading-[1] group-hover:text-text-dark ${index === selectedIndex ? 'text-text-dark' : 'text-main-disabled'}`}
                 onClick={() => {
                   swiper?.slideTo(index);
                 }}

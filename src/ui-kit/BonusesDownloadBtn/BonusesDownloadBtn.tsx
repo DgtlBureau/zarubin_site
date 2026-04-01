@@ -18,7 +18,7 @@ export const BonusesDownloadBtn = ({
       onClick={onClick}
     >
       <DownloadIcon />
-      <div className='flex flex-col items-start gap-[4px] font-proxima text-text-dark'>
+      <div className='flex flex-col items-start gap-[4px] font-inter text-text-dark'>
         <p className='text-start text-[20px] font-bold leading-[1]'>
           File: {title}
         </p>

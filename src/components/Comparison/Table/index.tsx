@@ -243,7 +243,7 @@ const TableHeader = () => (
       <th className='w-[25%] px-4 py-5 text-left font-unbound text-[14px] font-bold leading-[1.2] text-white/60 tablet:px-5 tablet:text-[16px] desktop:text-[18px]'>
         Criteria
       </th>
-      <th className='w-[25%] px-4 py-5 text-left font-proxima text-[14px] font-semibold leading-[1.2] text-white/60 tablet:px-5 tablet:text-[16px] desktop:text-[18px]'>
+      <th className='w-[25%] px-4 py-5 text-left font-inter text-[14px] font-semibold leading-[1.2] text-white/60 tablet:px-5 tablet:text-[16px] desktop:text-[18px]'>
         In-House Team
       </th>
       <th className='w-[25%] bg-main-blue/10 px-4 pb-5 pt-3 text-center tablet:px-5'>
@@ -251,12 +251,12 @@ const TableHeader = () => (
           <span className='whitespace-nowrap rounded-full bg-main-blue px-4 py-1 text-[10px] font-bold uppercase tracking-wider text-white tablet:text-[11px]'>
             Best Value
           </span>
-          <span className='font-proxima text-[14px] font-bold leading-[1.2] text-main-blue tablet:text-[16px] desktop:text-[18px]'>
+          <span className='font-inter text-[14px] font-bold leading-[1.2] text-main-blue tablet:text-[16px] desktop:text-[18px]'>
             The BrightByte
           </span>
         </div>
       </th>
-      <th className='w-[25%] px-4 py-5 text-left font-proxima text-[14px] font-semibold leading-[1.2] text-white/60 tablet:px-5 tablet:text-[16px] desktop:text-[18px]'>
+      <th className='w-[25%] px-4 py-5 text-left font-inter text-[14px] font-semibold leading-[1.2] text-white/60 tablet:px-5 tablet:text-[16px] desktop:text-[18px]'>
         Big 4 Consultancy
       </th>
     </tr>
@@ -271,13 +271,13 @@ const TableRow = ({
   isEven: boolean;
 }) => (
   <tr className={isEven ? 'bg-white/[0.03]' : ''}>
-    <td className='w-[25%] px-4 py-4 font-proxima text-[12px] font-semibold leading-[1.3] text-white tablet:px-5 tablet:text-[14px] desktop:text-[16px]'>
+    <td className='w-[25%] px-4 py-4 font-inter text-[12px] font-semibold leading-[1.3] text-white tablet:px-5 tablet:text-[14px] desktop:text-[16px]'>
       {row.task}
     </td>
     <td className='w-[25%] px-4 py-4 tablet:px-5'>
       <div className='flex items-center gap-2'>
         {getIcon(row.inhouse.type)}
-        <span className='font-proxima text-[12px] leading-[1.3] text-white/50 tablet:text-[14px] desktop:text-[16px]'>
+        <span className='font-inter text-[12px] leading-[1.3] text-white/50 tablet:text-[14px] desktop:text-[16px]'>
           {row.inhouse.text}
         </span>
       </div>
@@ -285,7 +285,7 @@ const TableRow = ({
     <td className='w-[25%] bg-main-blue/10 px-4 py-4 tablet:px-5'>
       <div className='flex items-center justify-center gap-2'>
         {getIcon(row.brightbyte.type)}
-        <span className='font-proxima text-[12px] font-medium leading-[1.3] text-white tablet:text-[14px] desktop:text-[16px]'>
+        <span className='font-inter text-[12px] font-medium leading-[1.3] text-white tablet:text-[14px] desktop:text-[16px]'>
           {row.brightbyte.text}
         </span>
       </div>
@@ -293,7 +293,7 @@ const TableRow = ({
     <td className='w-[25%] px-4 py-4 tablet:px-5'>
       <div className='flex items-center gap-2'>
         {getIcon(row.bigfour.type)}
-        <span className='font-proxima text-[12px] leading-[1.3] text-white/50 tablet:text-[14px] desktop:text-[16px]'>
+        <span className='font-inter text-[12px] leading-[1.3] text-white/50 tablet:text-[14px] desktop:text-[16px]'>
           {row.bigfour.text}
         </span>
       </div>
@@ -357,10 +357,10 @@ export default function Table() {
         {/* Client's Choice Badge */}
         <div className='border-t border-main-blue/20 bg-main-blue/5 py-6'>
           <div className='flex flex-col items-center gap-2'>
-            <span className='rounded-full bg-main-blue px-6 py-2 font-proxima text-[16px] font-bold text-white tablet:text-[18px] desktop:text-[20px]'>
+            <span className='rounded-full bg-main-blue px-6 py-2 font-inter text-[16px] font-bold text-white tablet:text-[18px] desktop:text-[20px]'>
               Client&apos;s Choice
             </span>
-            <span className='font-proxima text-[14px] text-white/60'>
+            <span className='font-inter text-[14px] text-white/60'>
               Enterprise quality. Startup agility. Smart investment.
             </span>
           </div>

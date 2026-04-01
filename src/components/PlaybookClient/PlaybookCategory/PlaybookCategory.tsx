@@ -32,7 +32,7 @@ export const PlaybookCategory = ({ category }: ICategoryProps) => {
           <li className=''>
             <Link
               href={`/${MenuItems.PLAYBOOK.toLowerCase()}`}
-              className={`font-proxima text-[16px] capitalize leading-[1.8] ${pathname === `/${MenuItems.PLAYBOOK.toLowerCase()}` ? 'font-bold' : ''}`}
+              className={`font-inter text-[16px] capitalize leading-[1.8] ${pathname === `/${MenuItems.PLAYBOOK.toLowerCase()}` ? 'font-bold' : ''}`}
             >
               {MenuItems.PLAYBOOK.toLowerCase()}
             </Link>
@@ -44,7 +44,7 @@ export const PlaybookCategory = ({ category }: ICategoryProps) => {
             >
               <Link
                 href={`/${MenuItems.PLAYBOOK.toLowerCase()}/${item.category}${item.subCategory.length > 1 ? '?' : `?sub-category=${paramsCorrect(item.subCategory[0]).toLowerCase()}`}`}
-                className={`font-proxima text-[16px] capitalize duration-300 ${pathname.includes(item.category.trim().toLowerCase()) ? 'font-bold' : ''}`}
+                className={`font-inter text-[16px] capitalize duration-300 ${pathname.includes(item.category.trim().toLowerCase()) ? 'font-bold' : ''}`}
               >
                 {item.category}
               </Link>
@@ -53,7 +53,7 @@ export const PlaybookCategory = ({ category }: ICategoryProps) => {
                   item.subCategory.map((el) => (
                     <li
                       key={el}
-                      className={`font-proxima text-[16px] leading-[1.8] duration-300 ${el && subCategory && subCategory === underscopeFormatter(el.trim().toLowerCase()) ? 'font-bold' : ''}`}
+                      className={`font-inter text-[16px] leading-[1.8] duration-300 ${el && subCategory && subCategory === underscopeFormatter(el.trim().toLowerCase()) ? 'font-bold' : ''}`}
                     >
                       <Link
                         href={`/${MenuItems.PLAYBOOK.toLowerCase()}/${item.category}?sub-category=${underscopeFormatter(el).toLowerCase()}`}

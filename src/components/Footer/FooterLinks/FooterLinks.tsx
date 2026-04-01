@@ -29,19 +29,19 @@ export const FooterLinks = () => {
 
           return (
             <li key={item.id}>
-              <p className='font-proxima text-[20px] font-bold'>{item.title}</p>
+              <p className='font-inter text-[20px] font-bold'>{item.title}</p>
               <ul className='mt-[20px] flex flex-col gap-[12px]'>
                 {firstLinks.map((el, idx) => (
                   <li key={`${item.id}-${idx}`}>
                     {el.link ? (
                       <Link
                         href={el.link}
-                        className={`font-regular font-proxima text-[16px] leading-[1.2] text-white/60 duration-300 hover:text-white`}
+                        className={`font-regular font-inter text-[16px] leading-[1.2] text-white/60 duration-300 hover:text-white`}
                       >
                         {el.name}
                       </Link>
                     ) : (
-                      <p className='font-regular font-proxima text-[16px] leading-[1.2] text-white/20'>
+                      <p className='font-regular font-inter text-[16px] leading-[1.2] text-white/20'>
                         {el.name}
                       </p>
                     )}
@@ -64,12 +64,12 @@ export const FooterLinks = () => {
                           {el.link ? (
                             <Link
                               href={el.link}
-                              className={`font-regular font-proxima text-[16px] leading-[1.2] text-white/60 duration-300 hover:text-white`}
+                              className={`font-regular font-inter text-[16px] leading-[1.2] text-white/60 duration-300 hover:text-white`}
                             >
                               {el.name}
                             </Link>
                           ) : (
-                            <p className='font-regular font-proxima text-[16px] leading-[1.2] text-white/20'>
+                            <p className='font-regular font-inter text-[16px] leading-[1.2] text-white/20'>
                               {el.name}
                             </p>
                           )}

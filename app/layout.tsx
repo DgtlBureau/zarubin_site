@@ -68,29 +68,12 @@ const Unbound = localFont({
   adjustFontFallback: false,
 });
 
-const Proxima = localFont({
-  src: [
-    {
-      path: '../public/fonts/proxima-nova/proxima_nova_regular.woff',
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: '../public/fonts/proxima-nova/proxima_nova_bold.woff',
-      weight: '700',
-      style: 'normal',
-    },
-  ],
-  variable: '--font-proxima',
-  adjustFontFallback: false,
-});
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const bodyClassname = classNames(inter.variable, Unbound.variable, Proxima.variable);
+  const bodyClassname = classNames(inter.variable, Unbound.variable);
 
   return (
     <html lang='en'>

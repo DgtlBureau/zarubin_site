@@ -34,7 +34,7 @@ export const Welcome = () => {
           I am glad to welcome you! <br />{' '}
           <span className='text-text-dark'>My name is Vitaly Zarubin</span>
         </h2>
-        <p className={`${styles.description} font-proxima`}>
+        <p className={`${styles.description} font-inter`}>
           10+ years of software development and management, Ex CTO at a sports
           hockey club, head of the IT platform at Gazpromneft.
         </p>

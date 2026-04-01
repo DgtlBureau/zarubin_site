@@ -9,7 +9,7 @@ export const Internship = () => {
     <div className={styles.mainContainer}>
       <div className={styles.InternContainer}>
         <h3 className={styles.title}>internship for students</h3>
-        <p className='mt-[19px] font-proxima text-[20px] leading-[1.2]'>
+        <p className='mt-[19px] font-inter text-[20px] leading-[1.2]'>
           We are looking for motivated and ambitious students or graduates who
           are passionate about IT development and strive to develop their
           skills. Regardless of your level of experience, we welcome everyone
@@ -27,7 +27,7 @@ export const Internship = () => {
               <h3 className={classNames(styles.title, styles.blackTitle)}>
                 Look at the vacancies
               </h3>
-              <span className={`${styles.tag} font-proxima`}>
+              <span className={`${styles.tag} font-inter`}>
                 #WeAreAlwaysInSearch
               </span>
             </div>
@@ -38,7 +38,7 @@ export const Internship = () => {
               <h3 className={classNames(styles.title, styles.blackTitle)}>
                 Read our articles
               </h3>
-              <span className={`${styles.tag} font-proxima`}>
+              <span className={`${styles.tag} font-inter`}>
                 #DevelopingSportsEntertainment
               </span>
             </div>
@@ -49,7 +49,7 @@ export const Internship = () => {
               <h3 className={classNames(styles.title, styles.blackTitle)}>
                 Send a CV
               </h3>
-              <span className={`${styles.tag} font-proxima`}>
+              <span className={`${styles.tag} font-inter`}>
                 #EveryGoldPiece
               </span>
             </div>

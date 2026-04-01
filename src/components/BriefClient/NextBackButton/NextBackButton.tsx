@@ -11,7 +11,7 @@ export const NextBackButton = ({ step, nextClick, backClick }: IBtnProps) => {
 
   return (
     <div
-      className={`mt-[40px] flex w-full items-center font-proxima text-[20px] font-bold leading-[1] ${isStarted ? 'justify-between' : 'justify-center'}`}
+      className={`mt-[40px] flex w-full items-center font-inter text-[20px] font-bold leading-[1] ${isStarted ? 'justify-between' : 'justify-center'}`}
     >
       {isStarted && (
         <button

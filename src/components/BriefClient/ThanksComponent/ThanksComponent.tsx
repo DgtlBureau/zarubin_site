@@ -20,13 +20,13 @@ export const ThanksComponent = () => {
         <span>You are one step</span>
         <span>closer!</span>
       </h2>
-      <p className='text-center font-proxima text-[16px] leading-[1.2] text-text-dark'>
+      <p className='text-center font-inter text-[16px] leading-[1.2] text-text-dark'>
         {"But it's still a lot of work to do. We will come back ASAP."}
       </p>
       <button
         type='button'
         onClick={handleExit}
-        className='rounded-[6px] bg-main-blue p-[13px_32px] font-proxima text-[22px] font-bold leading-[1.1] text-white duration-300 hover:bg-main-blue-hover'
+        className='rounded-[6px] bg-main-blue p-[13px_32px] font-inter text-[22px] font-bold leading-[1.1] text-white duration-300 hover:bg-main-blue-hover'
       >
         Go Bright
       </button>

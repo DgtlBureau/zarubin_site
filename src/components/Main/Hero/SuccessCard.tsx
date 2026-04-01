@@ -10,10 +10,10 @@ export const SuccessCard = () => {
       <h2 className='font-unbound text-[24px] font-bold uppercase leading-[1.16]'>
         Success {MenuItems.CASES}
       </h2>
-      <p className='mt-[12px] font-proxima text-[20px] leading-[1.2] opacity-80'>{`The stories of solving our client's cases`}</p>
+      <p className='mt-[12px] font-inter text-[20px] leading-[1.2] opacity-80'>{`The stories of solving our client's cases`}</p>
       <Link
         href={`/${MenuItems.CASES.toLowerCase()}`}
-        className='mt-[40px] flex h-[30px] w-fit items-center justify-center gap-[10px] rounded-[6px] bg-main-blue px-[10px] font-proxima text-[18px] font-bold leading-[1.33] hover:bg-main-blue-hover tablet:h-[50px]'
+        className='mt-[40px] flex h-[30px] w-fit items-center justify-center gap-[10px] rounded-[6px] bg-main-blue px-[10px] font-inter text-[18px] font-bold leading-[1.33] hover:bg-main-blue-hover tablet:h-[50px]'
       >
         Go to {MenuItems.CASES.toLowerCase()}
         <LinkArrowIcon className='h-[18px] w-[18px]' />

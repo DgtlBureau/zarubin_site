@@ -44,13 +44,13 @@ export const ArticleCard = ({
             {data.title}
           </Link>
         </h2>
-        <p className='w-full font-proxima text-[16px] leading-[1.2] text-text-dark'>
+        <p className='w-full font-inter text-[16px] leading-[1.2] text-text-dark'>
           <Link href={`/${data.category.toLowerCase()}/${data.slug}`}>
             {data.description}
           </Link>
         </p>
         <div className='flex w-full flex-col-reverse items-start gap-[20px] '>
-          <span className='whitespace-nowrap font-proxima text-[14px] text-text-dark/60'>
+          <span className='whitespace-nowrap font-inter text-[14px] text-text-dark/60'>
             {formatedDate.toUpperCase()}
           </span>
           {tags && tags.length !== 0 && (
@@ -65,7 +65,7 @@ export const ArticleCard = ({
                       onClick(target.name.trim());
                       setCurrentPage(1);
                     }}
-                    className={`border-text-text-dark/60 block rounded-[4px] border-[1px] p-[10px] font-proxima text-[12px] font-bold capitalize transition-transform 
+                    className={`border-text-text-dark/60 block rounded-[4px] border-[1px] p-[10px] font-inter text-[12px] font-bold capitalize transition-transform 
                       duration-300 ease-in-out hover:bg-gray-300 focus:outline-none active:scale-95 tablet:text-[16px] ${selectedTag.trim().toLowerCase() === item.trim().toLowerCase() ? 'bg-gray-300' : 'bg-gray-200'}`}
                   >
                     {item}

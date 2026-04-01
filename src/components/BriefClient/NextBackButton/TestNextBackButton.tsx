@@ -12,7 +12,7 @@ export const TestNextBackButton = ({ onClick, pageInfo, length }: IButton) => {
 
   return (
     <div
-      className={`mt-[40px] flex w-full items-center justify-between font-proxima text-[20px] font-bold leading-[1]`}
+      className={`mt-[40px] flex w-full items-center justify-between font-inter text-[20px] font-bold leading-[1]`}
     >
       <button
         type='button'
@@ -25,7 +25,7 @@ export const TestNextBackButton = ({ onClick, pageInfo, length }: IButton) => {
 
       <button
         type='submit'
-        className={`flex items-center gap-[10px] rounded-[6px] bg-main-blue font-proxima ${isLastQuestion ? 'p-[13px_15px]' : 'p-[13px_32px]'} text-[20px] leading-[1] text-white duration-300 hover:bg-main-blue-hover`}
+        className={`flex items-center gap-[10px] rounded-[6px] bg-main-blue font-inter ${isLastQuestion ? 'p-[13px_15px]' : 'p-[13px_32px]'} text-[20px] leading-[1] text-white duration-300 hover:bg-main-blue-hover`}
       >
         {isLastQuestion ? 'Book a meeting' : 'Next'}
         {isLastQuestion && <LinkArrowIcon className='h-[22px] w-[22px]' />}

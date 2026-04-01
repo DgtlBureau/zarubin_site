@@ -18,7 +18,7 @@ export const GoBackLink = () => {
     <div className='sticky left-0 top-[70%] flex w-fit'>
       <button
         onClick={() => router.push(`/${MenuItems.PLAYBOOK.toLowerCase()}`)}
-        className=' z-[5] h-fit w-fit items-center gap-[10px] font-proxima text-[20px] font-bold text-text-dark desktop:flex'
+        className=' z-[5] h-fit w-fit items-center gap-[10px] font-inter text-[20px] font-bold text-text-dark desktop:flex'
       >
         <Back className='w-[24px]' />
         Back

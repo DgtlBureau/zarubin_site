@@ -13,7 +13,7 @@ export const ImprovingMetrcsCard = () => {
         <NextLinePreposition
           tag='p'
           text='Implement it in order to increase metrics and change the attitude of the audience to the brand'
-          className='mt-[12px] font-proxima text-[20px] leading-[1.2] text-text-dark desktop:mt-[19px]'
+          className='mt-[12px] font-inter text-[20px] leading-[1.2] text-text-dark desktop:mt-[19px]'
         />
       </div>
       <div className='mt-[20px] flex flex-col gap-[25px] tablet:flex-row desktop:mt-[25px]'>

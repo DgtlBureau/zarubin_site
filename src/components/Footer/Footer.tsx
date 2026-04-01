@@ -20,13 +20,13 @@ export const Footer = () => {
               <li>
                 <Link
                   href='/policy'
-                  className='font-proxima text-[16px] leading-[1.1] text-white opacity-50 desktop:text-[18px]'
+                  className='font-inter text-[16px] leading-[1.1] text-white opacity-50 desktop:text-[18px]'
                 >
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <span className='font-proxima text-[16px] leading-[1.1] text-white opacity-50 desktop:text-[18px]'>
+                <span className='font-inter text-[16px] leading-[1.1] text-white opacity-50 desktop:text-[18px]'>
                   The BrightByte Capital LLC &copy; 2026. All rights reserved.
                 </span>
               </li>

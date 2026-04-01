@@ -30,7 +30,7 @@ export const Items = () => {
   return (
     <ul className='grid grid-cols-2'>
       {expertiseData.map((expertise) => (
-        <li key={expertise.id} className={`${styles.item} font-proxima`}>
+        <li key={expertise.id} className={`${styles.item} font-inter`}>
           <h3 className={styles.title}>{expertise.title}</h3>
           <ul className={styles.subList}>
             {expertise.items.map((item, idx) => (

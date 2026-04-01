@@ -54,7 +54,7 @@ export const PlaybookCategoryDropDown = ({ categories }: ICategoryProps) => {
         type='button'
         name='categoriesBtn'
         onClick={() => setIsCategoryOpen(!isCategoryOpen)}
-        className='flex appearance-none items-center gap-[8px] font-proxima text-[12px] leading-[1.6] outline-none'
+        className='flex appearance-none items-center gap-[8px] font-inter text-[12px] leading-[1.6] outline-none'
       >
         Categories:{' '}
         {pathname && pathnameArr.length === 1 ? (
@@ -80,7 +80,7 @@ export const PlaybookCategoryDropDown = ({ categories }: ICategoryProps) => {
         }}
       >
         <ul
-          className={`flex flex-col gap-[10px] overflow-hidden p-[4px] font-proxima capitalize`}
+          className={`flex flex-col gap-[10px] overflow-hidden p-[4px] font-inter capitalize`}
         >
           <li className={`relative`}>
             <Link

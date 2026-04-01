@@ -212,13 +212,13 @@ export default function InsightsPostPage(props: { params: { slug: string } }) {
         <div className='mx-[auto] h-auto max-w-[869px] overflow-hidden pb-[30px]'>
           <div className='mt-[60px]'>
             {readingTime && (
-              <span className='mb-[10px] block font-proxima text-[16px] leading-[1.25] text-text-dark opacity-[50%]'>
+              <span className='mb-[10px] block font-inter text-[16px] leading-[1.25] text-text-dark opacity-[50%]'>
                 Reading time: {readingTime}
               </span>
             )}
             <h1
               id={'title'}
-              className={`font-proxima text-[28px] font-bold leading-[1.1] text-text-dark`}
+              className={`font-inter text-[28px] font-bold leading-[1.1] text-text-dark`}
             >
               {title}
             </h1>
@@ -236,7 +236,7 @@ export default function InsightsPostPage(props: { params: { slug: string } }) {
           <article
             className={`prose w-full max-w-[100%] pb-[30px] text-white prose-p:text-[16px] prose-p:text-text-dark/80 prose-li:text-[16px] prose-li:text-text-dark/80 tablet:pb-[40px] desktop:pb-[60px]`}
           >
-            <Markdown className={`${styles.markdown} z-20 w-full font-proxima`}>
+            <Markdown className={`${styles.markdown} z-20 w-full font-inter`}>
               {allPosts}
             </Markdown>
           </article>

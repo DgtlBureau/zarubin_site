@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const CalendarContent = () => {
   return (
-    <div className='flex h-full gap-[20px] font-proxima laptop-big:max-w-[306px] laptop-big:flex-col laptop-big:justify-between'>
+    <div className='flex h-full gap-[20px] font-inter laptop-big:max-w-[306px] laptop-big:flex-col laptop-big:justify-between'>
       <div className='flex w-full flex-col items-center py-[10px] tablet:py-[55px] laptop-big:p-0'>
         <h3 className='text-center text-[20px] font-bold leading-[1] text-text-dark'>
           40-Minute Blueprint Creation Session

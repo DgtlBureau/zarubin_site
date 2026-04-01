@@ -21,7 +21,7 @@ export const Featured = ({ slug, posts }: Props) => {
     <div className='flex flex-col gap-[40px] border-t-[1px] border-text-dark'>
       <div className='relative flex items-center justify-between border-text-dark pt-[20px] before:absolute before:left-0 before:top-0 before:h-[1px] before:w-full before:bg-text-gray'>
         {slug && (
-          <p className='font-proxima text-[14px] font-semibold uppercase tracking-[0.05em] text-text-dark tablet:text-[15px]'>
+          <p className='font-inter text-[14px] font-semibold uppercase tracking-[0.05em] text-text-dark tablet:text-[15px]'>
             Featured
           </p>
         )}

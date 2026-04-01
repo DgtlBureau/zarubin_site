@@ -20,7 +20,7 @@ export const Breadcrumbs = ({
 }: IBreadProps) => {
   return (
     <div
-      className={`z-10 flex flex-wrap items-center gap-x-[20px] gap-y-[10px] font-proxima text-[20px]  ${light ? 'text-text-dark' : 'text-white'}`}
+      className={`z-10 flex flex-wrap items-center gap-x-[20px] gap-y-[10px] font-inter text-[20px]  ${light ? 'text-text-dark' : 'text-white'}`}
     >
       {breadcrumbs.map(({ title, link }, index) => (
         <>

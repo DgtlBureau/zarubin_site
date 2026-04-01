@@ -16,7 +16,7 @@ export const Hero = () => {
         <br />
         The BrightByte
       </h1>
-      <p className='z-[5] max-w-[900px] font-proxima text-[16px] font-normal leading-[1.2] tablet:text-[20px] desktop:text-[20px] desktop-hard:text-[20px]'>
+      <p className='z-[5] max-w-[900px] font-inter text-[16px] font-normal leading-[1.2] tablet:text-[20px] desktop:text-[20px] desktop-hard:text-[20px]'>
         We deliver Big 4 consultancy expertise with the speed and efficiency
         of a dedicated in-house team — without the overhead of either.
         See how The BrightByte stands apart.

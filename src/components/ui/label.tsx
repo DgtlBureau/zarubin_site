@@ -3,7 +3,7 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import * as React from 'react';
 
 const labelVariants = cva(
-  'font-proxima text-[14px] font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70'
+  'font-inter text-[14px] font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70'
 );
 
 export interface LabelProps

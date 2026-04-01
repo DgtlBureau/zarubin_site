@@ -31,16 +31,16 @@ export const FeedbackCard = ({ data }: Props) => {
           />
           <div className='relative flex-col justify-between gap-[75px] tablet:pt-[25px]'>
             <div className='transition-opacity duration-500'>
-              <h3 className='font-proxima text-[28px] font-bold text-text-dark mobile-big:text-[40px]'>
+              <h3 className='font-inter text-[28px] font-bold text-text-dark mobile-big:text-[40px]'>
                 {data.name}
               </h3>
-              <span className='font-proxima text-[16px] text-text-dark mobile-big:text-[20px] tablet:text-[24px]'>
+              <span className='font-inter text-[16px] text-text-dark mobile-big:text-[20px] tablet:text-[24px]'>
                 {data.job}
               </span>
             </div>
           </div>
         </div>
-        <p className='mt-[40px] font-proxima text-[16px] leading-[24px] text-text-dark mobile-big:text-[20px]'>
+        <p className='mt-[40px] font-inter text-[16px] leading-[24px] text-text-dark mobile-big:text-[20px]'>
           {data.feedback}
         </p>
       </div>
@@ -52,7 +52,7 @@ export const FeedbackCard = ({ data }: Props) => {
           className='h-auto max-h-[50px] max-w-[120px] w-auto object-contain'
           loading='lazy'
         />
-        <span className='font-proxima text-text-dark opacity-50 mobile-big:text-[16px] tablet:text-[20px]'>
+        <span className='font-inter text-text-dark opacity-50 mobile-big:text-[16px] tablet:text-[20px]'>
           {data.date}
         </span>
       </div>

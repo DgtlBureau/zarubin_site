@@ -42,11 +42,11 @@ export const ExpertiseSubMenuList = ({ data, onClick }: IProps) => {
                       .map((el) => (
                         <li
                           key={el.nameItem}
-                          className='w-full overflow-hidden font-proxima leading-[1.4]'
+                          className='w-full overflow-hidden font-inter leading-[1.4]'
                           onClick={onClick}
                         >
                           <Link
-                            className='block truncate border-b-[2px] border-solid border-transparent py-[4px] font-proxima text-[14px] leading-[1.2] text-link-gray hover:text-white'
+                            className='block truncate border-b-[2px] border-solid border-transparent py-[4px] font-inter text-[14px] leading-[1.2] text-link-gray hover:text-white'
                             href={`/${MenuItems.PLAYBOOK.toLowerCase()}/expertise${formatLink(el.link)}`}
                             title={formatMenuItem(formatLink(el.nameItem))}
                           >
@@ -60,7 +60,7 @@ export const ExpertiseSubMenuList = ({ data, onClick }: IProps) => {
               <Link
                 href={`/${MenuItems.PLAYBOOK.toLowerCase()}/expertise?sub-category=${item.name}`}
                 onClick={onClick}
-                className='group mt-[10px] flex items-center gap-[8px] whitespace-nowrap font-proxima text-[14px] font-bold leading-[1] text-link-gray hover:text-white laptop-big:mt-[12px]'
+                className='group mt-[10px] flex items-center gap-[8px] whitespace-nowrap font-inter text-[14px] font-bold leading-[1] text-link-gray hover:text-white laptop-big:mt-[12px]'
               >
                 Go to {formatMenuTitle(item.name)}
                 <LinkArrow className='h-[auto] w-[18px] fill-link-gray group-hover:fill-white' />

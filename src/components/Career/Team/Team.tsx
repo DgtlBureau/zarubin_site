@@ -60,7 +60,7 @@ const TeamCard = ({ data }: { data: TeamCard }) => {
       <NextLinePreposition
         tag='p'
         text={data.description}
-        className={classNames('font-proxima text-[20px] leading-[1.2]', {
+        className={classNames('font-inter text-[20px] leading-[1.2]', {
           'max-w-[75%]': data.alt,
         })}
       />

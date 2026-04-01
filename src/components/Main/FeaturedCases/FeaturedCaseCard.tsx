@@ -42,7 +42,7 @@ export const FeaturedCaseCard = ({ data, className }: FeaturedCaseCardProps) => 
               <span
                 key={idx}
                 className={cn(
-                  'w-fit rounded-[5px] px-[10px] py-[6px] font-proxima text-[13px] font-bold uppercase text-text-dark',
+                  'w-fit rounded-[5px] px-[10px] py-[6px] font-inter text-[13px] font-bold uppercase text-text-dark',
                   idx === 0 ? 'bg-main-orange' : 'bg-white'
                 )}
               >
@@ -55,7 +55,7 @@ export const FeaturedCaseCard = ({ data, className }: FeaturedCaseCardProps) => 
         {/* Content */}
         <div className='flex h-full w-full flex-1 flex-col items-stretch rounded-b-[5px] bg-card-bg px-[16px] py-[16px] tablet:px-[20px]'>
           {/* Name */}
-          <span className='font-proxima text-[11px] font-semibold uppercase tracking-[0.05em] text-text-dark/50'>
+          <span className='font-inter text-[11px] font-semibold uppercase tracking-[0.05em] text-text-dark/50'>
             {data.name}
           </span>
 
@@ -70,7 +70,7 @@ export const FeaturedCaseCard = ({ data, className }: FeaturedCaseCardProps) => 
           <NextLinePreposition
             tag='p'
             text={data.description}
-            className='mt-[8px] line-clamp-2 overflow-hidden font-proxima text-[13px] leading-[1.4] text-text-dark/60'
+            className='mt-[8px] line-clamp-2 overflow-hidden font-inter text-[13px] leading-[1.4] text-text-dark/60'
           />
         </div>
       </div>

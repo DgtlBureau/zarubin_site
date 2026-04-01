@@ -21,20 +21,20 @@ export const ContactForm = () => {
               className='h-[119px] w-[119px] rounded-full border-2 border-blue-600'
             />
             <div className='flex max-w-full flex-col gap-1 laptop:max-w-[291px]'>
-              <p className='font-proxima text-[22px] font-bold leading-9 text-slate-900'>
+              <p className='font-inter text-[22px] font-bold leading-9 text-slate-900'>
                 Vitaly Z.
               </p>
-              <span className='font-proxima text-[16px] font-normal leading-[29.77px] text-slate-900'>
+              <span className='font-inter text-[16px] font-normal leading-[29.77px] text-slate-900'>
                 «The road arises under the steps of walking»
               </span>
-              <div className='inline font-proxima text-[18px] font-bold leading-9 text-slate-900 laptop:hidden'>
+              <div className='inline font-inter text-[18px] font-bold leading-9 text-slate-900 laptop:hidden'>
                 access@thebrightbyte.com
               </div>
             </div>
           </div>
           <Link
             href='mailto:access@thebrightbyte.com '
-            className='hidden font-proxima text-[18px] font-bold leading-9 text-slate-900 laptop:inline'
+            className='hidden font-inter text-[18px] font-bold leading-9 text-slate-900 laptop:inline'
           >
             access@thebrightbyte.com
           </Link>

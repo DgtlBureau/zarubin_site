@@ -46,7 +46,7 @@ export const AnchorList = ({ data, mainAnchorData }: IPostAnchorProps) => {
           <button
             type='button'
             onClick={() => handleSetHush(mainAnchorData?.anchor)}
-            className={`${activeAnchor === mainAnchorData?.anchor ? 'font-bold' : 'font-regular text-anchor-gray hover:text-text-dark'} text-left font-proxima text-[16px] leading-[1.25] duration-300`}
+            className={`${activeAnchor === mainAnchorData?.anchor ? 'font-bold' : 'font-regular text-anchor-gray hover:text-text-dark'} text-left font-inter text-[16px] leading-[1.25] duration-300`}
           >
             {mainAnchorData.title}
           </button>
@@ -59,7 +59,7 @@ export const AnchorList = ({ data, mainAnchorData }: IPostAnchorProps) => {
             <button
               type='button'
               onClick={() => handleSetHush(item.anchor)}
-              className={`${activeAnchor === item?.anchor ? 'font-bold' : 'font-regular text-anchor-gray hover:text-text-dark'} text-left font-proxima text-[16px] leading-[1.25] duration-300`}
+              className={`${activeAnchor === item?.anchor ? 'font-bold' : 'font-regular text-anchor-gray hover:text-text-dark'} text-left font-inter text-[16px] leading-[1.25] duration-300`}
             >
               {item.title}
             </button>

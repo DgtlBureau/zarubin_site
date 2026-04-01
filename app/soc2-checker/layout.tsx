@@ -76,7 +76,7 @@ export default function Soc2CheckerLayout({
   const schemaHtml = JSON.stringify(faqSchema);
 
   return (
-    <div className="regfo-wrapper min-h-[calc(100vh-100px)] bg-gradient-to-br from-slate-50 to-blue-50 font-proxima">
+    <div className="regfo-wrapper min-h-[calc(100vh-100px)] bg-gradient-to-br from-slate-50 to-blue-50 font-inter">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: schemaHtml }}

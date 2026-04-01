@@ -48,7 +48,7 @@ export const SmallBlogCard = ({
             {tags?.slice(0, 2).map((item, idx) => (
               <span
                 key={idx}
-                className={`w-fit rounded-[5px] p-[6px_10px] font-proxima text-[16px] font-bold uppercase text-text-dark ${idx === 0 ? 'bg-main-orange' : 'bg-white'}`}
+                className={`w-fit rounded-[5px] p-[6px_10px] font-inter text-[16px] font-bold uppercase text-text-dark ${idx === 0 ? 'bg-main-orange' : 'bg-white'}`}
               >
                 {item}
               </span>
@@ -59,12 +59,12 @@ export const SmallBlogCard = ({
           <NextLinePreposition
             tag='h3'
             text={title}
-            className='mt-[12px] line-clamp-3 overflow-hidden font-proxima text-[16px] font-bold leading-[1.25] text-text-dark duration-300 group-hover:underline tablet:text-[18px]'
+            className='mt-[12px] line-clamp-3 overflow-hidden font-inter text-[16px] font-bold leading-[1.25] text-text-dark duration-300 group-hover:underline tablet:text-[18px]'
           />
           <NextLinePreposition
             tag='p'
             text={description}
-            className='mb-auto mt-[12px] line-clamp-2 overflow-hidden font-proxima text-[14px] leading-[1.4] text-text-dark/60 tablet:text-[16px]'
+            className='mb-auto mt-[12px] line-clamp-2 overflow-hidden font-inter text-[14px] leading-[1.4] text-text-dark/60 tablet:text-[16px]'
           />
           {date && (
             <span className='mt-[14px] text-text-dark/60'>{formatDate}</span>

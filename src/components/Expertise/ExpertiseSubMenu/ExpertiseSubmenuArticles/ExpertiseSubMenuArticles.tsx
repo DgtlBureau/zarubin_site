@@ -23,7 +23,7 @@ export const ExpertiseSubmenuArticles = ({ data, onClick }: IData) => {
   return (
     <div className='flex w-full flex-col gap-[16px]'>
       <div className='group flex items-center justify-between'>
-        <p className='font-proxima text-[12px] font-semibold uppercase tracking-[0.08em] text-white/80'>
+        <p className='font-inter text-[12px] font-semibold uppercase tracking-[0.08em] text-white/80'>
           The latest in {MenuItems.PLAYBOOK}
         </p>
       </div>

@@ -16,7 +16,7 @@ export const NotFound = () => {
       <h2 className='font-unbound text-[100px] font-bold tablet:text-[120px] desktop:text-[150px]'>
         404
       </h2>
-      <h3 className='font-proxima text-[18px] tablet:text-[24px] desktop:text-[28px]'>
+      <h3 className='font-inter text-[18px] tablet:text-[24px] desktop:text-[28px]'>
         The page <span className='text-main-blue'>{pathname}</span> does not
         exist!
       </h3>

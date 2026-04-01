@@ -78,7 +78,7 @@ export const Industries = () => {
           <h2 className='font-unbound text-[45px] font-bold uppercase leading-[1] tablet:text-[50px] tablet:leading-[1.3] desktop:text-[70px]'>
             Industries
           </h2>
-          <p className='mt-[12px] font-proxima text-[20px] leading-[1.2] tablet:text-[24px] desktop:mt-[24px] desktop:w-[532px]'>
+          <p className='mt-[12px] font-inter text-[20px] leading-[1.2] tablet:text-[24px] desktop:mt-[24px] desktop:w-[532px]'>
             Our expertise covers all industries. We have the most experience in
             the sports, FMCG, E-commerce industries
           </p>

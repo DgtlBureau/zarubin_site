@@ -41,7 +41,7 @@ export const MainList = ({
           {item.isHighlighted ? (
             <Link
               href={item.link}
-              className='rounded-lg bg-gradient-to-r from-regfo-secondary to-regfo-accent px-4 py-2 font-proxima text-[14px] font-medium text-white transition-all duration-200 hover:opacity-90 hover:shadow-lg hover:shadow-regfo-secondary/25'
+              className='rounded-lg bg-gradient-to-r from-regfo-secondary to-regfo-accent px-4 py-2 font-inter text-[14px] font-medium text-white transition-all duration-200 hover:opacity-90 hover:shadow-lg hover:shadow-regfo-secondary/25'
             >
               {item.name}
             </Link>
@@ -49,7 +49,7 @@ export const MainList = ({
             <Link
               href={item.link}
               className={classNames(
-                `group relative border-b-[2px] border-transparent font-proxima leading-[1.87]`,
+                `group relative border-b-[2px] border-transparent font-inter leading-[1.87]`,
                 dark
                   ? 'text-[16px] text-white desktop:text-[16px]'
                   : 'text-[16px] text-[black]',

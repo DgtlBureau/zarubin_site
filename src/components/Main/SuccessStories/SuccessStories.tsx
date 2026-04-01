@@ -69,14 +69,14 @@ export const SuccessStories = ({ cases }: SuccessStoriesProps) => {
           <div className="flex items-start justify-between desktop:items-center">
             <div className="flex flex-col gap-[12px]">
               <Link href="/cases" className="group flex items-center gap-2">
-                <h2 className="font-proxima text-[13px] font-semibold uppercase tracking-[0.1em] text-text-muted transition-colors group-hover:text-text-dark tablet:text-[14px]">
+                <h2 className="font-inter text-[13px] font-semibold uppercase tracking-[0.1em] text-text-muted transition-colors group-hover:text-text-dark tablet:text-[14px]">
                   {sectionsTitle['main']['successStories'].title}
                 </h2>
-                <span className="font-proxima text-[13px] text-text-muted opacity-0 transition-all group-hover:translate-x-1 group-hover:opacity-100">
+                <span className="font-inter text-[13px] text-text-muted opacity-0 transition-all group-hover:translate-x-1 group-hover:opacity-100">
                   &rarr;
                 </span>
               </Link>
-              <p className="font-proxima text-[14px] leading-[1.5] text-light-gray tablet:text-[15px]">
+              <p className="font-inter text-[14px] leading-[1.5] text-light-gray tablet:text-[15px]">
                 {sectionsTitle['main']['successStories'].descripton}
               </p>
             </div>
