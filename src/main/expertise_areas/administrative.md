@@ -1,6 +1,6 @@
 ---
-title: 'AI-Driven Workforce & Operations'
-description: 'Intelligent automation for workforce management, scheduling, and operational efficiency. Optimize resource allocation, predict staffing needs, and streamline processes with machine learning-powered solutions.'
+title: 'AI Agents for Regulated Workflows'
+description: 'Document processing with audit trails. KYC checks that satisfy regulators. Workflow automation that your compliance team actually signs off on.'
 logo: '/assets/images/main/icons/constellation.svg'
 type: 'card'
 image: '/assets/images/main/cards-image/tabledesk.webp'

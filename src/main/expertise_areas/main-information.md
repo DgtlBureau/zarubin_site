@@ -1,5 +1,5 @@
 ---
-title: 'The BrightByte delivers AI-powered solutions, ML integrations, RAG systems, and intelligent automation for enterprise.'
+title: "We build AI that works in industries where a bug isn't just a bug — it's a compliance violation."
 description: ''
 logo: ''
 link: 'cases'

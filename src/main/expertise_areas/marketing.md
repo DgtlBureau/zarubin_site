@@ -1,6 +1,6 @@
 ---
-title: 'RAG Systems & AI Assistants'
-description: 'Build intelligent knowledge bases and AI assistants powered by retrieval-augmented generation. Transform your documentation into conversational interfaces that provide accurate, contextual answers to complex queries.'
+title: 'FinTech & RegTech AI'
+description: 'KYC/AML automation, transaction monitoring, fraud detection. PCI DSS and DORA compliance built into the architecture, not bolted on after.'
 logo: '/assets/images/main/icons/circles.svg'
 type: 'card'
 image: '/assets/images/main/cards-image/scissors.webp'

@@ -15,7 +15,7 @@ export const sectionsTitle: ISectionsTitle = {
     },
     expertise: {
       title: 'Expertise',
-      descripton: 'AI-powered solutions that transform operations and drive measurable results',
+      descripton: 'AI systems for industries where compliance isn\u2019t optional',
     },
     insights: {
       title: 'Insights',
