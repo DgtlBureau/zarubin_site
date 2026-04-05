@@ -1,7 +1,7 @@
 ---
 title: 'Generative AI for learning'
 description: 'The possibilities of using generative AI in learning. Discover how generative AI is being used to predict events in educational institutions, from student performance to operational challenges, helping schools and universities make data-driven decisions for improved outcomes.'
-image: '/assets/images/expertise/it_service/AI_education.webp'
+image: '/assets/images/expertise/it_service/ai_education_new.webp'
 date: '11-12-2024'
 readingTime: ''
 category: 'Expertise'

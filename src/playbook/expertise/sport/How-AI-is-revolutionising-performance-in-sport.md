@@ -1,7 +1,7 @@
 ---
 title: 'AI in Sports Analytics: How Data-Driven Decisions Change Team Performance'
 description: 'How AI analytics helps sports teams prevent injuries, recruit smarter, and win more. Cases from Liverpool FC, Warriors, and Bayern Munich.'
-image: '/assets/images/expertise/it_service/ai_in_sport.jpeg'
+image: '/assets/images/expertise/it_service/ai_in_sport_new.webp'
 date: '30-03-2026'
 readingTime: '11 min'
 category: 'Expertise'

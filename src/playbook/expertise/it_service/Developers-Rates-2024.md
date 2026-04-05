@@ -1,7 +1,7 @@
 ---
 title: 'Developer Rates in 2026: What Software Engineers Actually Cost'
 description: 'Real developer rates by technology and seniority in 2026. Flutter, PHP, AI, and full-stack — hire smart without overpaying.'
-image: '/assets/images/expertise/it_service/generative-ai-services-hero-banner.webp'
+image: '/assets/images/expertise/it_service/developer_rates_new.webp'
 date: '01-11-2024'
 readingTime: '5 minutes'
 category: 'Expertise'

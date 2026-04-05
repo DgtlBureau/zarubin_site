@@ -1,7 +1,7 @@
 ---
 title: 'Regfo vs Weave Bio: AI Regulatory Tools for Biotech Compared'
 description: 'Regfo checks your protocols against FDA/ICH rules for $499/mo. Weave Bio drafts eCTD dossiers for enterprise pharma. Which one fits your team?'
-image: '/assets/images/info/Gemini_Generated_Image_14aor814aor814ao.webp'
+image: '/assets/images/info/regfo_vs_weave_new.webp'
 date: '30-03-2026'
 readingTime: '10 min'
 category: 'Expertise'

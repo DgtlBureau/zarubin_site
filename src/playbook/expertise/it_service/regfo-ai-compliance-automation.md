@@ -1,7 +1,7 @@
 ---
 title: 'Regfo: AI-Powered Regulatory Compliance for Biotech and Fintech'
 description: 'Regfo automates FDA, HIPAA, and SOC 2 compliance with AI. Cut audit prep time by 70% and reduce regulatory risk.'
-image: '/assets/images/info/Gemini_Generated_Image_14aor814aor814ao.webp'
+image: '/assets/images/info/regfo_compliance_new.webp'
 date: '16-01-2026'
 readingTime: '14 min'
 category: 'Expertise'
