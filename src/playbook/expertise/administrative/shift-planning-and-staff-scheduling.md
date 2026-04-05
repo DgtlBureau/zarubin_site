@@ -1,7 +1,7 @@
 ---
 title: 'Best Shift Planning Software in 2026: Honest Comparison with Pricing'
 description: '7 shift planning tools compared by pricing, pros, cons, and team fit. Find the best employee scheduling software for your industry.'
-image: '/assets/images/expertise/it_service/shift_planning.webp'
+image: '/assets/images/expertise/it_service/shift_planning_new.webp'
 date: '30-03-2026'
 readingTime: '13 min'
 category: 'Expertise'

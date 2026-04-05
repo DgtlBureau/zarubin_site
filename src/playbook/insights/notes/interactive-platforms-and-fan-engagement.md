@@ -1,7 +1,7 @@
 ---
 title: 'Fan Engagement Platforms for Sports Teams: What Works in 2026'
 description: 'Digital fan engagement strategies that deliver results. Case studies from Manchester City, NBA, Bundesliga, and FC Barcelona.'
-image: '/assets/images/post/interactive_platform.webp'
+image: '/assets/images/post/interactive_platform_new.webp'
 date: '30-03-2026'
 readingTime: '12 min'
 category: 'Insights'
