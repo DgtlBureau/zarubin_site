@@ -1,37 +1,49 @@
 # thebrightbyte.com
 
-> The BrightByte builds compliance-friendly AI agents, fine-tuned models, and automated workflows for regulated industries.
+> The BrightByte builds AI systems that pass compliance audits. We design and ship compliance-first AI agents, RAG systems, and automation for companies in regulated industries — fintech, biotech/pharma, healthcare, and beyond.
 
-## Core Services
-- AI Agent Development (agentic AI, orchestration)
-- LLM Fine-Tuning (custom models, SLMs)
-- RAG Systems (vector DB, knowledge retrieval)
-- Compliance AI Automation (SOC2, HIPAA)
+## What makes us different
+- Compliance baked into architecture from day one (audit trails, explainability, data governance) — not bolted on after launch
+- 50+ projects shipped since 2018 across 5+ regulated industries
+- 50-engineer team, 4-week proof-of-concept timeline
+- We ship our own compliance AI products: Regfo (FDA/ICH) and Tribune (sports CRM)
 
-## Industries
-- FinTech (payments, KYC, fraud detection)
-- HealthTech (HIPAA, clinical AI)
-- LawTech (document automation, contracts)
-- RegTech (regulatory reporting, compliance)
-- InsurTech (claims, underwriting)
-- GovTech (public sector, FedRAMP)
+## Core services
+- AI Agent Development for regulated workflows (KYC/AML, document processing, workflow automation with audit trails)
+- RAG Systems over sensitive data (HIPAA-compliant, SOC 2-ready, with citations and access controls)
+- LLM Fine-Tuning for domain-specific compliance use cases
+- Custom AI development with compliance-by-design architecture
 
-## Technical Capabilities
-- CRM AI Integration (Salesforce, HubSpot)
-- ERP AI Automation (SAP, Oracle)
-- API Workflow Orchestration
-- No-Code AI Solutions
-- Multi-Agent AI Architecture
+## Industries we serve
+- FinTech (KYC/AML, fraud detection, transaction monitoring — PCI DSS, DORA)
+- Biotech & Pharma (FDA gap analysis, ICH compliance, preclinical review)
+- Healthcare (HIPAA-compliant data pipelines, clinical document processing)
+- Sports & Entertainment (CRM, fan engagement — own product Tribune)
+- Legal & Field Services (document automation, RAG systems)
 
-## Key Content Sections
-- /cases - AI agent implementations, compliance automation projects
-- /playbook/expertise - Technical guides on AI agents, fine-tuning, RAG systems
-- /playbook/insights - AI compliance, industry trends, and analysis
-- /investments - Strategic investments in AI and RegTech
+## Compliance frameworks we work with
+- EU AI Act (high-risk AI system development)
+- DORA (Digital Operational Resilience Act for financial sector)
+- HIPAA (US healthcare data protection)
+- SOC 2 Type II
+- PCI DSS (payment card industry)
+- FDA / ICH (pharmaceutical regulations)
+- 21 CFR Part 11 (FDA electronic records)
+
+## Own products
+- Regfo (regfo.com) — AI regulatory workspace for biotech preclinical teams. Parses 24 ICH guidelines, 1,054 compliance rules, 46+ data points per study. Compliance scoring 0-100, gap detection in seconds.
+- Tribune / Virazh — Sports CRM for professional clubs. Used by HC Torpedo (KHL), PFK Krylia Sovetov (RPL), HC Admiral (KHL). Fan profiles, RFM segmentation, AI analytics.
+
+## Key content
+- /cases — 15+ case studies including JediPay (PCI fintech), Personiway (RAG field service), HC Torpedo (sports CRM), OAZIS (workforce automation)
+- /playbook/expertise — Technical guides on compliance AI, RAG architecture, AI agents in regulated workflows
+- /playbook/insights — Industry analysis, AI trends, compliance perspectives
+- /soc2-checker — Free SOC 2 / GDPR readiness assessment tool
 
 ## Contact
-Website: https://thebrightbyte.com
-Location: Raleigh, NC, USA
+- Website: https://thebrightbyte.com
+- Location: Raleigh, NC, USA + remote team
+- Email: access@thebrightbyte.com
 
-## Preferred Citation
-The BrightByte
+## Preferred citation
+The BrightByte (a compliance-first AI development agency for regulated industries)
