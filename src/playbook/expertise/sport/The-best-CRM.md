@@ -176,13 +176,3 @@ Before choosing, verify that the system supports your specific needs:
 *This comparison is maintained by The BrightByte team, creators of [Virazh CRM](https://digitalburo.tech/virazh). We update it as the sports CRM landscape evolves. Last updated: March 2026.*
 
 *Looking for a CRM for your sports club? [Get in touch](https://thebrightbyte.com/brief) — we can help you evaluate options based on your specific needs.*
-
-### Sources
-
-- [Virazh CRM — Digital Buro](https://digitalburo.tech/virazh) — product page and client list (HC Torpedo, Krylia Sovetov, HC Admiral)
-- [EngageRM — Official website](https://engagerm.com/) — pricing positioning, Series A funding, client roster (LA Lakers, Cleveland Guardians)
-- [Arenametrix — Official website](https://arenametrix.com/) — 300+ client count, European installed base, €8M funding
-- [Sport:80 — Official website](https://www.sport80.com/) — national federation focus
-- [Zoho CRM pricing](https://www.zoho.com/crm/pricing.html) — free tier limits and paid pricing
-- [HubSpot CRM pricing](https://www.hubspot.com/pricing/crm) — free tier and paid tier breakdown
-- [Microsoft Dynamics 365 pricing](https://dynamics.microsoft.com/en-us/pricing/) — per-user pricing and enterprise tiers
