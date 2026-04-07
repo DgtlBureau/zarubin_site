@@ -18,19 +18,25 @@ faq:
     answer: 'Yes. They solve different problems. Use Regfo to check your study package and protocols for compliance gaps before you start writing. Then use Weave Bio or any authoring tool to draft the actual submission documents.'
   - question: 'Does Weave Bio offer a free trial?'
     answer: 'No. Weave Bio requires a demo call and does not publish pricing. Regfo offers a free trial where you can paste your protocol and get compliance findings immediately.'
+  - question: 'Can Regfo replace a full RIM platform like Veeva Vault?'
+    answer: 'No. Veeva Vault is a regulatory information management system for document storage, workflow, and submission lifecycle. Regfo checks compliance upstream — before documents are written. They solve different parts of the pipeline. Think of Regfo as the gap-detection layer that runs before Vault ever sees the document.'
+  - question: 'What compliance frameworks does Regfo support?'
+    answer: 'Regfo covers 24 ICH guidelines (M2, M3, M4, Q-series, S-series) and FDA requirements under 21 CFR Part 11, 21 CFR 312 (IND), and relevant preclinical GLP guidance. EMA guidance is partially supported. PMDA and NMPA are on the roadmap.'
+  - question: 'How accurate is AI-powered FDA gap analysis?'
+    answer: 'Every finding in Regfo points to the exact ICH or FDA section it flags. There are no black-box outputs. If Regfo says your cardiovascular safety pharmacology package is missing a hERG assay, it tells you which ICH guideline requires it and which section of your package it would live in. Auditable by design.'
 ---
 
 # Regfo vs Weave Bio: Two Different Tools for Two Different Problems
 
 Both Regfo and Weave Bio use AI for regulatory compliance in biotech. That's about it for what they share.
 
-Weave Bio writes your regulatory documents. Regfo checks whether your studies and protocols actually meet FDA requirements before you start writing anything.
+Weave Bio writes your regulatory documents. Regfo checks whether your studies and protocols actually meet FDA requirements before you start writing anything. People keep asking me which one "wins" — well, not exactly. They solve different problems, and a Series A biotech trying to clear a first IND needs one of them much more than the other.
 
-If you're a Series A biotech trying to figure out whether your preclinical package has gaps, these tools do very different things for you.
+If you're a 10-person biotech trying to figure out whether your preclinical package has gaps before you spend another $200K on the next study, keep reading.
 
 ---
 
-## The Short Version
+## What's the difference between Regfo and Weave Bio in one sentence?
 
 | | Regfo | Weave Bio |
 |---|---|---|
@@ -47,7 +53,7 @@ If you're a Series A biotech trying to figure out whether your preclinical packa
 
 ---
 
-## What Regfo Does
+## What does Regfo actually do for preclinical compliance?
 
 Regfo is a compliance checker. Upload your protocol or configure your study package, and it tells you what's missing according to FDA and ICH guidelines.
 
@@ -75,7 +81,7 @@ Priced for small biotech teams: $499/mo to start, $1,499/mo for the full platfor
 
 ---
 
-## What Weave Bio Does
+## What does Weave Bio focus on?
 
 Weave Bio is a document authoring platform. It helps regulatory teams draft IND applications and other eCTD submissions using AI.
 
@@ -91,17 +97,17 @@ They've raised $36M through their Series A in October 2025, led by USVP. Advisor
 - Enterprise-grade for large pharma teams
 
 **Where it falls short:**
-- No public pricing. You need a demo call to find out what it costs.
+- No public pricing. You need a demo call to find out what it costs. This drives me crazy — it's 2026.
 - Strongest for IND applications. NDA, BLA, and international (EMA, PMDA) support is still developing.
-- No public reviews on G2, Capterra, or TrustRadius yet.
+- No public reviews on G2, Capterra, or TrustRadius yet. (Worth noting: that might just mean they're still early, not that the product is bad.)
 - Takes weeks to set up. Not a paste-and-go tool.
-- Main proof point is one pilot with Takeda (97% time savings on drafting tasks).
+- Main proof point is one pilot with Takeda — 97% time savings on drafting tasks, but drafting is only part of the regulatory workflow.
 
 ---
 
-## When to Use Which
+## Which tool is right for your stage?
 
-Not about which is better. Different problems.
+This isn't about which is better. Different tools, different problems. Here's the honest breakdown.
 
 ### Use Regfo when:
 
@@ -127,9 +133,9 @@ You check first, then write. One comes before the other.
 
 ---
 
-## Pricing
+## How does pricing compare — Regfo vs Weave Bio?
 
-Weave Bio doesn't publish pricing. Based on their enterprise positioning and Takeda/Gilead/Boehringer advisory board, expect six figures annually with multi-month implementation.
+Weave Bio doesn't publish pricing. Based on their enterprise positioning and Takeda/Gilead/Boehringer advisory board, expect six figures annually with multi-month implementation. (I've asked. They won't say. This is a pattern with enterprise regulatory SaaS.)
 
 Regfo is transparent:
 
@@ -143,7 +149,7 @@ Series A biotech. $200K/month burn. The difference between $499/mo today and an 
 
 ---
 
-## Why Regfo Was Built
+## Why did we build Regfo when Weave Bio already existed?
 
 > "I watched small biotech teams burn months because nobody caught a missing GLP-compliant tox study early enough. The protocol went through three amendment cycles. Each one cost 2-3 months. The problem wasn't document formatting. People didn't know what FDA actually required until it was too late."
 >
@@ -154,3 +160,13 @@ Weave Bio is solving document authoring for large pharma. That's a real problem 
 That's what Regfo catches. 1,054 rules. 24 guidelines. Specific citations for every finding. In 30 seconds.
 
 [Check your protocol at regfo.com](https://regfo.com)
+
+---
+
+### Sources
+
+- [Weave Bio $36M Series A announcement — USVP](https://www.usvp.com/portfolio/weave-bio/) — October 2025 funding round details
+- [Parexel and Weave Bio partnership announcement](https://www.parexel.com/news-events/press-releases/2024/parexel-and-weave-bio-partnership) — exclusive CRO partnership
+- [ICH Guidelines portal](https://www.ich.org/page/quality-guidelines) — the 24 guidelines referenced by Regfo's rules engine
+- [FDA 21 CFR 312 — Investigational New Drug Application](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/CFRSearch.cfm?CFRPart=312) — U.S. regulatory baseline for IND submissions
+- [FDA Clinical Hold Statistics — Annual IND Review Report](https://www.fda.gov/drugs/investigational-new-drug-ind-application/ind-annual-reports) — context on why missed preclinical requirements matter
