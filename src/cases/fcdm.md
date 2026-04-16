@@ -39,4 +39,4 @@ The FCDM online store faced several issues related to outdated website design, l
 - Cart and Checkout Process: Designing the shopping cart, checkout pages, order confirmation, and payment pages.
 - Ensuring the store displays correctly across various devices (mobile phones, tablets, computers).
 
-<p>This comprehensive approach aimed to enhance user experience, increase engagement, and improve conversion rates by modernizing the website's design and functionality to meet contemporary standards and user expectations in the sports retail sector.</p>
+This comprehensive approach aimed to enhance user experience, increase engagement, and improve conversion rates by modernizing the website's design and functionality to meet contemporary standards and user expectations in the sports retail sector.

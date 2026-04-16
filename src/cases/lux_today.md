@@ -21,7 +21,6 @@ We organized the development process and launched a website for a startup focuse
 ## Main Goals
 
 1. **Requirements Gathering & Planning**
-   <br/>
    Collaborating with the client to identify the core features and functionalities for the portal, prioritizing those needed for the MVP (minimum viable product) within a limited time frame.
 
 2. **UI/UX Design**  

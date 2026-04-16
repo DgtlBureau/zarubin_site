@@ -9,7 +9,6 @@ import { useState } from 'react';
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { Container } from '../../shared/Container/Container';
 import { Section } from '../../shared/Section/Section';
-import useMediaQuery from '@/src/utils/useMediaQuery';
 
 interface SuccessStoriesProps {
   cases: Case[];
@@ -49,13 +48,14 @@ const getCaseKPI = (slug: string): { value: string; label: string } | null => {
   return kpis[slug] || null;
 };
 
+const successStoriesBreakpoints = {
+  0: { slidesPerView: 1.1, spaceBetween: 16 },
+  768: { slidesPerView: 2, spaceBetween: 16 },
+  1200: { slidesPerView: 3, spaceBetween: 24 },
+};
+
 export const SuccessStories = ({ cases }: SuccessStoriesProps) => {
   const [swiper, setSwiper] = useState<SwiperClass | null>(null);
-
-  const mobile = useMediaQuery('<tablet');
-  const tablet = useMediaQuery('<laptop');
-  const isStillTablet = useMediaQuery('>mobile');
-  const isTablet = tablet === isStillTablet;
 
   // Take 6 most recent cases
   const displayCases = cases.slice(0, 6);
@@ -92,8 +92,9 @@ export const SuccessStories = ({ cases }: SuccessStoriesProps) => {
 
         <Container className="flex max-w-full pr-0 tablet:pr-0">
           <Swiper
-            spaceBetween={mobile || isTablet ? 16 : 24}
-            slidesPerView={mobile ? 1.1 : isTablet ? 2 : 3}
+            spaceBetween={24}
+            slidesPerView={3}
+            breakpoints={successStoriesBreakpoints}
             onSwiper={setSwiper}
           >
             {displayCases.map((caseItem) => {

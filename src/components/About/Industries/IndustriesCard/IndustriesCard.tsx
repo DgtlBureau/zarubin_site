@@ -1,7 +1,6 @@
 'use client';
 
 import Arrow from '@/public/assets/images/icons/link_arrow.svg';
-import useMediaQuery from '@/src/utils/useMediaQuery';
 import classNames from 'classnames';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -17,7 +16,6 @@ interface Data {
 export const IndustriesCard = ({ data, activeId, setActiveId }: Data) => {
   const { description, title, link, id, image, activeImage } = data;
   const topValue = id === 1 ? 0 : (id - 1) * 60;
-  const isDesktop = useMediaQuery('>=desktop');
 
   const handleClick = () => {
     setActiveId(activeId === id ? null : id);
@@ -31,7 +29,9 @@ export const IndustriesCard = ({ data, activeId, setActiveId }: Data) => {
       style={{
         top: `${topValue}px`,
         zIndex: id,
-        left: `${isDesktop ? `${topValue}px` : 0}`,
+        // Mobile: left 0, Desktop: offset left by topValue
+        // Using CSS custom property to avoid SSR/client mismatch
+        ['--card-left-offset' as string]: `${topValue}px`,
       }}
       onClick={handleClick}
     >

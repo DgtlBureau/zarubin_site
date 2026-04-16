@@ -6,7 +6,6 @@ import { Container } from '@/src/components/shared/Container/Container';
 import { NextPrevBtn } from '@/src/ui-kit/NextPrevBtn/NextPrevBtn';
 import { MenuItems } from '@/src/utils/enums';
 import { Case } from '@/src/utils/getCaseMetadata';
-import useMediaQuery from '@/src/utils/useMediaQuery';
 import { useState } from 'react';
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { BusinessSolvingCard } from '../BusinessSolvingCard/BusinessSolvingCard';
@@ -15,13 +14,14 @@ interface IData {
   data: Case[];
 }
 
+const businessSolvingBreakpoints = {
+  0: { slidesPerView: 1.1, spaceBetween: 20 },
+  768: { slidesPerView: 1, spaceBetween: 40 },
+  1200: { slidesPerView: 2, spaceBetween: 40 },
+};
+
 export const BusinessSolvingSlider = ({ data }: IData) => {
   const [swiper, setSwiper] = useState<SwiperClass | null>();
-
-  const mobile = useMediaQuery('<tablet');
-  const tablet = useMediaQuery('<laptop');
-  const isStilTablet = useMediaQuery('>mobile');
-  const isTablet = tablet === isStilTablet;
 
   const sliceData = [...data].slice(0, 4);
 
@@ -46,8 +46,9 @@ export const BusinessSolvingSlider = ({ data }: IData) => {
       </Container>
       <Container className='max-w-full desktop-hard:px-[80px]'>
         <Swiper
-          spaceBetween={mobile ? 20 : 40}
-          slidesPerView={mobile ? 1.1 : isTablet ? 1 : 2}
+          spaceBetween={40}
+          slidesPerView={2}
+          breakpoints={businessSolvingBreakpoints}
           onSwiper={setSwiper}
           wrapperClass='items-stretch'
         >

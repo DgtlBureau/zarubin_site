@@ -25,9 +25,7 @@ financial investment startup.
 - Audit of business processes
 - The work included a brief overview of activities concerning back-end, front-end, backlog creation, etc.
 
-<p>
 The audit was based on completed and pending tasks in the backlog. As part of the solution:
-</p>
 
 - A technical director was identified for the company
 - Current repositories with the latest working version were restored

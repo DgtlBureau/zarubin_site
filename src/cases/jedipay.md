@@ -26,7 +26,7 @@ The client aimed to build an independent payment gateway but lacked a clear prod
 
 ## Scope of Work
 
-<p><strong>Merchant Dashboard</strong> was designed to provide business clients with a unified interface to:</p>
+**Merchant Dashboard** was designed to provide business clients with a unified interface to:
 
 - manage invoices and incoming payments,
 - generate and track payment links or QR codes,
@@ -34,12 +34,7 @@ The client aimed to build an independent payment gateway but lacked a clear prod
 - view transaction logs, statuses, and reconciliation reports,
 - manage account settings, KYC data, and withdrawal methods.
 
-<br>
-<br>
-
-<p><strong>Payment Gateway API</strong> allows integration with online stores, platforms, and third-party services. Features include:</p>
-
-<br>
+**Payment Gateway API** allows integration with online stores, platforms, and third-party services. Features include:
 
 - tokenized card payments,
 - recurring billing,
@@ -47,19 +42,11 @@ The client aimed to build an independent payment gateway but lacked a clear prod
 - customizable checkout widgets,
 - fraud detection and transaction scoring.
 
-<br>
-<br>
-
-<p><strong>User Wallet Interface</strong> (optional module) enables end users to:</p>
-
-<br>
+**User Wallet Interface** (optional module) enables end users to:
 
 - link cards or bank accounts,
 - store balance or loyalty points,
 - pay via mobile number, QR code, or in-app tokens,
 - view transaction history and manage settings.
 
-<br>
-<br>
-
-<p>Jedipay was built with a modular architecture, supporting scalable microservices, secure data encryption, and real-time processing to ensure compliance with industry standards such as PCI DSS.</p>
+Jedipay was built with a modular architecture, supporting scalable microservices, secure data encryption, and real-time processing to ensure compliance with industry standards such as PCI DSS.

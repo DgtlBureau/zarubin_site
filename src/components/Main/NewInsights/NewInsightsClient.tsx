@@ -5,7 +5,6 @@ import { NextPrevBtn } from '@/src/ui-kit/NextPrevBtn/NextPrevBtn';
 import { MenuItems } from '@/src/utils/enums';
 import { sectionsTitle } from '@/src/utils/sectionsTitle/sectionsTitle';
 import { Post } from '@/src/utils/types';
-import useMediaQuery from '@/src/utils/useMediaQuery';
 import { useState } from 'react';
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { Container } from '../../shared/Container/Container';
@@ -15,13 +14,14 @@ interface Props {
   posts: Post[];
 }
 
+const newInsightsBreakpoints = {
+  0: { slidesPerView: 1, spaceBetween: 10 },
+  768: { slidesPerView: 1.56, spaceBetween: 10 },
+  1200: { slidesPerView: 3, spaceBetween: 20 },
+};
+
 export const NewInsightsClient = ({ posts }: Props) => {
   const [swiper, setSwiper] = useState<SwiperClass | null>(null);
-
-  const mobile = useMediaQuery('<tablet');
-  const tablet = useMediaQuery('<laptop');
-  const isStilTablet = useMediaQuery('>mobile');
-  const isTablet = tablet === isStilTablet;
 
   return (
     <Section light>
@@ -47,8 +47,9 @@ export const NewInsightsClient = ({ posts }: Props) => {
         </Container>
         <Container className='flex max-w-full pr-0 tablet:pr-0'>
           <Swiper
-            spaceBetween={mobile || isTablet ? 10 : 20}
-            slidesPerView={mobile ? 1 : isTablet ? 1.56 : 3}
+            spaceBetween={20}
+            slidesPerView={3}
+            breakpoints={newInsightsBreakpoints}
             onSwiper={setSwiper}
           >
             {posts.map((post, idx) => (

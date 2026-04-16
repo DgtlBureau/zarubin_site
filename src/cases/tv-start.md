@@ -25,26 +25,20 @@ The client had a strong brand and vision but lacked the technical expertise to d
 
 ## Scope of Work
 
-<p><strong>Web platform</strong> serves as the central hub for content management, user access, event scheduling, and analytics. Admins can upload broadcasts, monitor stream performance, manage paywall settings, and generate performance reports.</p> <p>The <strong>Smart TV application</strong> is optimized for large-screen viewing and remote control interaction. It allows users to:</p>
+**Web platform** serves as the central hub for content management, user access, event scheduling, and analytics. Admins can upload broadcasts, monitor stream performance, manage paywall settings, and generate performance reports.
+
+The **Smart TV application** is optimized for large-screen viewing and remote control interaction. It allows users to:
 
 - browse upcoming sports events,
 - watch live streams or replays,
 - subscribe to premium packages,
 - access multi-language commentary and statistics.
 
-<br>
-<br>
-
-<p>The <strong>mobile application</strong> is tailored for users on the go. It provides:</p>
-
-<br>
+The **mobile application** is tailored for users on the go. It provides:
 
 - personalized notifications about upcoming matches and streaming availability,
 - live chat and fan interaction during matches,
 - payment system integration for subscriptions and one-time events,
 - user account and watch history sync across platforms.
 
-<br>
-<br>
-
-<p>The platform architecture ensures scalability, low-latency streaming, and a smooth user experience, regardless of the device used.</p>
+The platform architecture ensures scalability, low-latency streaming, and a smooth user experience, regardless of the device used.

@@ -1,32 +1,38 @@
-'use client';
-
 import founderImg from '@/public/assets/images/about/vitaly.webp';
 import founderMImg from '@/public/assets/images/about/vitaly_m.webp';
 import founderTImg from '@/public/assets/images/about/vitaly_t.webp';
-import useMediaQuery from '@/src/utils/useMediaQuery';
 import Image from 'next/image';
 import styles from './Welcome.module.css';
 
 export const Welcome = () => {
-  const isMobile = useMediaQuery('<tablet');
-  const isTablet = useMediaQuery('<desktop');
-  const isDesktop = useMediaQuery('>=desktop');
-
   return (
     <div className='relative mt-[46px] flex h-[316px] bg-white p-[20px_12px] tablet:mt-[88px] tablet:h-fit tablet:p-[74px_14px] laptop:p-[74px_180px_74px_0] desktop:p-[120px_238px_120px_0]   desktop-big:p-[168px_238px_139px_0]'>
+      {/* Mobile image */}
       <Image
-        src={
-          isDesktop
-            ? founderImg
-            : isTablet && isMobile
-              ? founderMImg
-              : founderTImg
-        }
+        src={founderMImg}
         width={600}
         height={500}
         quality={80}
         alt='founder'
-        className={styles.image}
+        className={`${styles.image} tablet:!hidden`}
+      />
+      {/* Tablet image */}
+      <Image
+        src={founderTImg}
+        width={600}
+        height={500}
+        quality={80}
+        alt='founder'
+        className={`${styles.image} !hidden tablet:!block desktop:!hidden`}
+      />
+      {/* Desktop image */}
+      <Image
+        src={founderImg}
+        width={600}
+        height={500}
+        quality={80}
+        alt='founder'
+        className={`${styles.image} !hidden desktop:!block`}
       />
       <div className='ml-[135px] flex flex-col justify-center gap-[12px] tablet:ml-[291px] tablet:gap-[28px] desktop:ml-[auto] desktop:max-w-[867px]'>
         {' '}

@@ -2,12 +2,16 @@
 
 import { NextPrevBtn } from '@/src/ui-kit/NextPrevBtn/NextPrevBtn';
 import { VacanciesData } from '@/src/utils/DataLayers/VacanciesData';
-import useMediaQuery from '@/src/utils/useMediaQuery';
 import { useState } from 'react';
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { Tag } from '../../shared/Tag/Tag';
 import styles from './Vacanices.module.css';
 import { VacanciesCard } from './VacanicesCard/VacanciesCard';
+
+const vacanciesBreakpoints = {
+  0: { slidesPerView: 1, spaceBetween: 20 },
+  1440: { slidesPerView: 2, spaceBetween: 20 },
+};
 
 export const Vacancies = ({
   withFilter = true,
@@ -16,8 +20,6 @@ export const Vacancies = ({
   isSwipe = true,
 }) => {
   const [swiper, setSwiper] = useState<SwiperClass | null>(null);
-
-  const tablet = useMediaQuery('<desktop');
 
   const [selectedTag, setSelectedTag] = useState('All');
 
@@ -77,7 +79,8 @@ export const Vacancies = ({
       ) : (
         <Swiper
           spaceBetween={20}
-          slidesPerView={tablet ? 1 : 2}
+          slidesPerView={2}
+          breakpoints={vacanciesBreakpoints}
           onSwiper={setSwiper}
           className='max-w-full'
           wrapperClass={`items-stretch `}

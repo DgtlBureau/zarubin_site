@@ -27,36 +27,25 @@ Technicians often face issues while on-site without access to relevant documenta
 
 ## Scope of Work
 
-<p><strong>AI Chat Assistant</strong> is the core of the system, trained on technical documentation, diagrams, and previous tickets. It helps technicians on-site to:</p>
+**AI Chat Assistant** is the core of the system, trained on technical documentation, diagrams, and previous tickets. It helps technicians on-site to:
 
 - troubleshoot equipment issues based on symptoms,
 - auto-categorize the problem and initiate a support ticket,
 - retrieve wiring diagrams, manuals, and part numbers instantly,
 - log and voice-record incidents with minimal effort.
 
-<br>
-<br>
-
-<p><strong>Ticketing System</strong> enables dispatchers and support teams to:</p>
+**Ticketing System** enables dispatchers and support teams to:
 
 - monitor technician requests in real-time,
 - assign specialists or escalate issues to supervisors,
 - attach internal notes, files, and responses,
 - analyze incident types and technician performance across regions.
 
-<br>
-<br>
-
-<p><strong>Admin Dashboard</strong> provides managers with operational insights. They can:</p>
-
-<br>
+**Admin Dashboard** provides managers with operational insights. They can:
 
 - upload and manage the knowledge base and documentation,
 - configure AI prompts and data sources,
 - track resolution times, team workloads, and failure patterns,
 - export analytics and reports for quality assurance.
 
-<br>
-<br>
- 
-<p>The system supports mobile-first use, voice-to-text input, and multi-device syncing, ensuring field readiness. It’s built on top of retrieval-augmented generation (RAG) architecture and uses vector databases to query technical information rapidly and contextually.</p>
+The system supports mobile-first use, voice-to-text input, and multi-device syncing, ensuring field readiness. It’s built on top of retrieval-augmented generation (RAG) architecture and uses vector databases to query technical information rapidly and contextually.

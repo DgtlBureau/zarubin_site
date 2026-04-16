@@ -31,9 +31,7 @@ The lack of business processes led to the company missing deadlines, experiencin
 - Identified at which stages systemic problems were arising
 - Investigated why the final IT solution was not being delivered on time
 
-<p>
 As part of the solution, we conducted research and created a list of business processes. Within these business processes, we developed a matrix of employees with specific business task responsibilities. We designed the business process for developing the IT system for mobile applications and implemented task flow management systems (Scrum, Kanban).
-</p>
 
 ## Business Process Management
 

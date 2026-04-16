@@ -1,7 +1,6 @@
 'use client';
 
 import { NextPrevBtn } from '@/src/ui-kit/NextPrevBtn/NextPrevBtn';
-import useMediaQuery from '@/src/utils/useMediaQuery';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -20,9 +19,13 @@ interface ITeamProps {
   team: ITeam[];
 }
 
+const teamBreakpoints = {
+  0: { spaceBetween: 20 },
+  1440: { spaceBetween: 41 },
+};
+
 export const TeamClient = ({ team }: ITeamProps) => {
   const [swiper, setSwiper] = useState<SwiperClass | null>(null);
-  const mediaQuery = useMediaQuery('<desktop');
   return (
     <div className='flex flex-col gap-[40px] desktop:flex-row desktop:justify-between desktop:gap-[auto]'>
       <div className='flex items-center justify-between desktop:flex-col desktop:items-start'>
@@ -49,8 +52,9 @@ export const TeamClient = ({ team }: ITeamProps) => {
         </div>
         <Container className={styles.swiperWrapper}>
           <Swiper
-            spaceBetween={mediaQuery ? 20 : 41}
+            spaceBetween={41}
             slidesPerView='auto'
+            breakpoints={teamBreakpoints}
             onSwiper={setSwiper}
             className={styles.mainSwiper}
           >

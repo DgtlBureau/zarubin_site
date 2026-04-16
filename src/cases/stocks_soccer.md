@@ -37,10 +37,10 @@ Clubs struggle because fans at the latter two levels rarely engage in referral p
 - Designed and developed a <strong>clickable prototype</strong> in Figma.
 - Developed backend and multiple versions of a <strong>pilot web application</strong>.
 
-<p>The system itself was conceptualized as a white-label implementation of specific engagement mechanics, featuring:</p>
+The system itself was conceptualized as a white-label implementation of specific engagement mechanics, featuring:
 
 - Quizzes
 - Competitions between players
 - Onboarding processes
 
-<p>This approach aimed to enhance fan interaction and retention through interactive and competitive elements tailored to sports club environments.</p>
+This approach aimed to enhance fan interaction and retention through interactive and competitive elements tailored to sports club environments.

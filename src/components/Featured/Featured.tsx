@@ -3,7 +3,6 @@
 import Arrow from '@/public/assets/images/icons/arrow.svg';
 import { ArticleCard } from '@/src/ui-kit/ArticleCard/ArticleCard';
 import { Post } from '@/src/utils/types';
-import useMediaQuery from '@/src/utils/useMediaQuery';
 import { useState } from 'react';
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 
@@ -12,10 +11,13 @@ interface Props {
   posts: Post[];
 }
 
+const featuredBreakpoints = {
+  0: { slidesPerView: 1, spaceBetween: 16 },
+  768: { slidesPerView: 2, spaceBetween: 24 },
+};
+
 export const Featured = ({ slug, posts }: Props) => {
   const [swiper, setSwiper] = useState<SwiperClass | null>(null);
-
-  const isMobile = useMediaQuery('<tablet');
 
   return (
     <div className='flex flex-col gap-[40px] border-t-[1px] border-text-dark'>
@@ -44,8 +46,9 @@ export const Featured = ({ slug, posts }: Props) => {
       </div>
       <Swiper
         onSwiper={setSwiper}
-        slidesPerView={isMobile ? 1 : 2}
+        slidesPerView={2}
         spaceBetween={24}
+        breakpoints={featuredBreakpoints}
         className='max-w-full'
         wrapperClass='items-stretch'
       >

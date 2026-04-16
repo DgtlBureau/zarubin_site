@@ -21,15 +21,12 @@ showcase electric vehicle technologies at exhibitions.
 
 ## Scope of Work
 
-<p>
-<strong>Development of a test stand</strong> on which tests, <strong>UX/UI solutions</strong>, and hypotheses are verified.
-Creation of <strong>tablet applications</strong> for iPad and Android, which are mounted on the steering wheel and used to conduct various tests, such as:
-</p>
+**Development of a test stand** on which tests, **UX/UI solutions**, and hypotheses are verified. Creation of **tablet applications** for iPad and Android, which are mounted on the steering wheel and used to conduct various tests, such as:
 
 - Changing the display when turning the steering wheel
 - Development of an interface that allows changing colors, fonts, and UX/UI elements during testing, adjusting screen backlight with changes in daylight, etc.
 
-  <br/>Creation of several key elements of the multimedia entertainment system:
+Creation of several key elements of the multimedia entertainment system:
 
 - Development of a media player
 - Development of navigation maps

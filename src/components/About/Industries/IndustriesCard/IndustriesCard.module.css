@@ -62,6 +62,7 @@
   .mainContainer {
     width: 520px;
     height: 380px;
+    left: var(--card-left-offset, 0);
   }
 
   .imageBox {

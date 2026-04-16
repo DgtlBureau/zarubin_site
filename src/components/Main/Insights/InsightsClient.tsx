@@ -4,7 +4,6 @@ import { ArticleCard } from '@/src/ui-kit/ArticleCard/ArticleCard';
 import { NextPrevBtn } from '@/src/ui-kit/NextPrevBtn/NextPrevBtn';
 import { MenuItems } from '@/src/utils/enums';
 import { Post } from '@/src/utils/types';
-import useMediaQuery from '@/src/utils/useMediaQuery';
 import { useState } from 'react';
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { Container } from '../../shared/Container/Container';
@@ -13,13 +12,14 @@ interface Props {
   posts: Post[];
 }
 
+const insightsBreakpoints = {
+  0: { slidesPerView: 1.13, spaceBetween: 20 },
+  768: { slidesPerView: 1.56, spaceBetween: 40 },
+  1200: { slidesPerView: 3, spaceBetween: 40 },
+};
+
 export const InsightsClient = ({ posts }: Props) => {
   const [swiper, setSwiper] = useState<SwiperClass | null>(null);
-
-  const mobile = useMediaQuery('<tablet');
-  const tablet = useMediaQuery('<laptop');
-  const isStilTablet = useMediaQuery('>mobile');
-  const isTablet = tablet === isStilTablet;
 
   return (
     <div className='h-600 relative z-10 flex flex-col gap-[40px] pb-20'>
@@ -38,8 +38,9 @@ export const InsightsClient = ({ posts }: Props) => {
       </Container>
       <Container className='flex max-w-full p-0 pl-[10px] tablet:p-0 tablet:pl-[40px] laptop:px-[40px] desktop-big:px-[80px]'>
         <Swiper
-          spaceBetween={mobile ? 20 : 40}
-          slidesPerView={mobile ? 1.13 : isTablet ? 1.56 : 3}
+          spaceBetween={40}
+          slidesPerView={3}
+          breakpoints={insightsBreakpoints}
           onSwiper={setSwiper}
         >
           {posts.slice(0, 6).map((post, idx) => (

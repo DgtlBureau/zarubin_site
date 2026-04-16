@@ -1,7 +1,6 @@
 import { ArticleCard } from '@/src/ui-kit/ArticleCard/ArticleCard';
 import { MenuItems } from '@/src/utils/enums';
 import { Post } from '@/src/utils/types';
-import useMediaQuery from '@/src/utils/useMediaQuery';
 import { DateTime } from 'luxon';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -10,10 +9,13 @@ interface IData {
   onClick: () => void;
 }
 
-export const ExpertiseSubmenuArticles = ({ data, onClick }: IData) => {
-  const isMobile = useMediaQuery('<tablet');
-  const isTablen = useMediaQuery('<laptop');
+const swiperBreakpoints = {
+  0: { slidesPerView: 1.2, spaceBetween: 16 },
+  768: { slidesPerView: 1.5, spaceBetween: 24 },
+  1200: { slidesPerView: 2, spaceBetween: 24 },
+};
 
+export const ExpertiseSubmenuArticles = ({ data, onClick }: IData) => {
   const sortedData = data.sort(
     (a, b) =>
       DateTime.fromFormat(b.date, 'dd-MM-yyyy').toMillis() -
@@ -29,8 +31,9 @@ export const ExpertiseSubmenuArticles = ({ data, onClick }: IData) => {
       </div>
       <div className='mx-0 flex w-full px-0'>
         <Swiper
-          spaceBetween={isMobile ? 16 : 24}
-          slidesPerView={isMobile ? 1.2 : isTablen && !isMobile ? 1.5 : 2}
+          spaceBetween={24}
+          slidesPerView={2}
+          breakpoints={swiperBreakpoints}
         >
           {sortedData.slice(0, 2).map((post, idx) => (
             <SwiperSlide key={idx} className='w-full'>

@@ -26,6 +26,7 @@ export const GenerateIcon = ({
     <div
       dangerouslySetInnerHTML={{ __html: svgContent }}
       className='h-[40px] w-[40px] stroke-white'
+      suppressHydrationWarning
     />
   );
 };
