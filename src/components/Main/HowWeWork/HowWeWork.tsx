@@ -4,28 +4,28 @@ const steps = [
   {
     number: '01',
     title: 'Discovery Call',
-    description: 'You talk about your problem. We tell you if we can solve it.',
-    detail: '30 min. Free. No commitment.',
+    description: 'You describe the problem and your compliance requirements. We tell you if we can solve it.',
+    detail: '30 min. Free.',
   },
   {
     number: '02',
     title: 'Technical Scope',
     description:
-      'We map your compliance requirements, pick the architecture, and estimate the build.',
+      'We map data sources, pick the right model architecture, design the inference pipeline, define access controls, and spec the audit trail before writing code.',
     detail: '~1 week',
   },
   {
     number: '03',
-    title: 'Working PoC',
+    title: 'Working Prototype',
     description:
-      'A working prototype you can show your compliance team. Fixed scope, no surprises.',
-    detail: '~4 weeks',
+      'A working system on your real data in a tenant-isolated environment. Your team reviews AI outputs and the audit log. Fixed scope.',
+    detail: '~2 weeks',
   },
   {
     number: '04',
-    title: 'Production',
+    title: 'Production & Compliance',
     description:
-      'Scale, integrate, hand off to your team \u2014 or we stay on retainer. Your call.',
+      'Scale, integrate, hand off with full documentation for your compliance team. Or we stay on retainer.',
     detail: 'Ongoing',
   },
 ];
@@ -34,11 +34,11 @@ export const HowWeWork = () => {
   return (
     <section className='bg-white py-[40px] tablet:py-[60px]'>
       <Container>
-        <span className='font-inter text-[13px] font-semibold uppercase tracking-[0.1em] text-text-dark/50 tablet:text-[14px]'>
+        <h2 className='font-inter text-[13px] font-semibold uppercase tracking-[0.1em] text-text-dark/50 tablet:text-[14px]'>
           How We Work
-        </span>
+        </h2>
         <p className='mt-[8px] font-inter text-[14px] leading-[1.5] text-text-dark/60 tablet:text-[15px]'>
-          From first call to production in weeks, not quarters
+          From first call to production in weeks.
         </p>
 
         <div className='mt-[32px] grid grid-cols-1 gap-[20px] tablet:mt-[40px] tablet:grid-cols-2 desktop:grid-cols-4 desktop:gap-[32px]'>

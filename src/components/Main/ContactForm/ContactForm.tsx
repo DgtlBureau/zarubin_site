@@ -8,7 +8,7 @@ export const ContactForm = () => {
       title={
         <NextLinePreposition
           tag='h2'
-          text=' We are always glad to have new partners and ambitious tasks.'
+          text=' Tell us what you are building.'
           className='section-headings font-unbound font-bold uppercase leading-[1.1] text-slate-900'
         />
       }
@@ -17,7 +17,7 @@ export const ContactForm = () => {
         variant='dark'
         showDetails={true}
         showPrivacyCheckbox={false}
-        title='Fill out the form and click the blue button to get in touch with you!'
+        title='Describe your project. We will tell you if we can help.'
         submitText='Blue button'
       />
     </ContractFormTemplate>

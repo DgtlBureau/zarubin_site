@@ -2,9 +2,9 @@ import { Container } from '../../shared/Container/Container';
 
 const stats = [
   { value: '50+', label: 'Projects shipped' },
-  { value: '50', label: 'Engineers' },
-  { value: '4 weeks', label: 'To a working PoC' },
-  { value: 'SOC 2', label: 'Ready' },
+  { value: '99.8%', label: 'Uptime' },
+  { value: '2 weeks', label: 'To prototype' },
+  { value: '0', label: 'Data breaches' },
 ];
 
 export const StatsBar = () => {

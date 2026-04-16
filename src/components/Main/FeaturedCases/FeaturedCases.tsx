@@ -7,35 +7,35 @@ import { FeaturedCaseCard, FeaturedCaseData } from './FeaturedCaseCard';
 
 /**
  * Featured cases data for the main page.
- * OAZIS, Avangard, Torpedo - latest projects showcasing key capabilities.
+ * Regfo, PersoniWay, JediPay - AI & compliance projects that prove our positioning.
  */
 const FEATURED_CASES: FeaturedCaseData[] = [
   {
-    slug: 'oazis',
-    name: 'OAZIS',
-    title: 'Workforce Management Platform',
+    slug: 'regfo',
+    name: 'Regfo',
+    title: 'AI Regulatory Workspace',
     description:
-      'Corporate system for managing rotational workers, accommodation, and catering services.',
-    tags: ['Workflow Automation', 'Management'],
-    bannerImage: '/assets/images/case/banner/oasis-case.webp',
+      '1,000+ compliance rules · FDA, ICH & CFTC · Minutes instead of weeks',
+    tags: ['FDA Compliance', 'RAG', 'Inference'],
+    bannerImage: '/assets/images/case/banner/regfo-case.png',
   },
   {
-    slug: 'avangard',
-    name: 'HC Avangard',
-    title: 'Fan Engagement & Loyalty Platform',
+    slug: 'personiway',
+    name: 'PersoniWay',
+    title: 'AI Field Service & Ticketing',
     description:
-      'Native mobile application with CRM integration and loyalty rewards for personalized fan experience.',
-    tags: ['CRM Integration', 'Mobile Apps'],
-    bannerImage: '/assets/images/case/banner/avangard-case.webp',
+      '85% faster issue resolution · RAG-powered · Real-time routing',
+    tags: ['AI Agents', 'RAG Systems'],
+    bannerImage: '/assets/images/case/banner/personiway.webp',
   },
   {
-    slug: 'torpedo',
-    name: 'HC Torpedo',
-    title: 'Digital Fan Engagement Ecosystem',
+    slug: 'jedipay',
+    name: 'JediPay',
+    title: 'PCI-Compliant Payment Gateway',
     description:
-      'Digital ecosystem with mobile app, CRM, and analytics for fan interaction, ticket sales, and loyalty programs.',
-    tags: ['AI Integration', 'Security'],
-    bannerImage: '/assets/images/case/banner/torpedo-case.webp',
+      'Automated campaigns · Real-time sync · Trigger-based engagement',
+    tags: ['FinTech', 'PCI DSS'],
+    bannerImage: '/assets/images/case/banner/jedipay.webp',
   },
 ];
 

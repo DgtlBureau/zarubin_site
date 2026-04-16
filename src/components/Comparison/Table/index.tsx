@@ -71,19 +71,19 @@ const comparisonData: SectionData[] = [
       {
         task: 'Requirement Analysis',
         inhouse: { text: 'Deep domain knowledge', type: 'positive' },
-        brightbyte: { text: 'Strategic partnership approach', type: 'positive' },
+        brightbyte: { text: 'Full process audit in week one', type: 'positive' },
         bigfour: { text: 'Comprehensive but prolonged', type: 'neutral' },
       },
       {
         task: 'Technical Architecture',
         inhouse: { text: 'Limited by team expertise', type: 'neutral' },
-        brightbyte: { text: 'Best-in-class solutions', type: 'positive' },
+        brightbyte: { text: '50+ projects across fintech, sports, healthcare', type: 'positive' },
         bigfour: { text: 'Enterprise-grade complexity', type: 'neutral' },
       },
       {
         task: 'Strategic Consulting',
         inhouse: { text: 'Internal perspective only', type: 'neutral' },
-        brightbyte: { text: 'Cross-industry insights', type: 'positive' },
+        brightbyte: { text: 'Patterns from 50+ production deployments', type: 'positive' },
         bigfour: { text: 'Premium advisory services', type: 'positive' },
       },
     ],
@@ -94,13 +94,13 @@ const comparisonData: SectionData[] = [
       {
         task: 'UX Research & Design',
         inhouse: { text: 'Resource-constrained', type: 'neutral' },
-        brightbyte: { text: 'User-centric methodology', type: 'positive' },
+        brightbyte: { text: 'UI ships with the prototype', type: 'positive' },
         bigfour: { text: 'Process-heavy approach', type: 'neutral' },
       },
       {
         task: 'Visual Identity',
         inhouse: { text: 'Consistency challenges', type: 'neutral' },
-        brightbyte: { text: 'Award-winning design', type: 'positive' },
+        brightbyte: { text: 'Design system included', type: 'positive' },
         bigfour: { text: 'Corporate standards', type: 'neutral' },
       },
     ],
@@ -111,20 +111,79 @@ const comparisonData: SectionData[] = [
       {
         task: 'Code Quality',
         inhouse: { text: 'Varies by talent', type: 'neutral' },
-        brightbyte: { text: 'Senior-level standards', type: 'positive' },
+        brightbyte: { text: 'Code review on every PR', type: 'positive' },
         bigfour: { text: 'Rigorous but slower', type: 'positive' },
       },
       {
         task: 'Technology Stack',
         inhouse: { text: 'Legacy constraints', type: 'negative' },
-        brightbyte: { text: 'Modern & scalable', type: 'positive' },
+        brightbyte: { text: 'Python, TypeScript, Next.js, FastAPI', type: 'positive' },
         bigfour: { text: 'Enterprise ecosystems', type: 'neutral' },
       },
       {
         task: 'System Integration',
         inhouse: { text: 'Internal systems focus', type: 'neutral' },
-        brightbyte: { text: 'Seamless connectivity', type: 'positive' },
+        brightbyte: { text: 'API-first integration', type: 'positive' },
         bigfour: { text: 'Complex implementations', type: 'neutral' },
+      },
+    ],
+  },
+  {
+    title: 'Compliance & AI',
+    rows: [
+      {
+        task: 'Compliance Integration',
+        inhouse: { text: 'Figured out after launch', type: 'negative' },
+        brightbyte: {
+          text: 'Audit trails from week one',
+          type: 'positive',
+        },
+        bigfour: { text: 'Thorough but 6-month process', type: 'neutral' },
+      },
+      {
+        task: 'AI Model Selection',
+        inhouse: { text: 'Whatever the team knows', type: 'neutral' },
+        brightbyte: {
+          text: 'Model selected per task, no vendor lock-in',
+          type: 'positive',
+        },
+        bigfour: { text: 'Vendor-locked enterprise stack', type: 'negative' },
+      },
+      {
+        task: 'Audit Trails & Explainability',
+        inhouse: { text: 'Rarely a priority', type: 'negative' },
+        brightbyte: {
+          text: 'Full audit trail on every AI decision',
+          type: 'positive',
+        },
+        bigfour: { text: 'Documented but generic', type: 'neutral' },
+      },
+      {
+        task: 'Data Encryption & Isolation',
+        inhouse: { text: 'Depends on team security skills', type: 'neutral' },
+        brightbyte: {
+          text: 'AES-256, tenant isolation, zero shared pipelines',
+          type: 'positive',
+        },
+        bigfour: { text: 'Enterprise-grade but 6-month setup', type: 'neutral' },
+      },
+      {
+        task: 'AI Hallucination Prevention',
+        inhouse: { text: 'Often discovered in production', type: 'negative' },
+        brightbyte: {
+          text: 'Structured validation, confidence scoring, human escalation',
+          type: 'positive',
+        },
+        bigfour: { text: 'Documented procedures', type: 'neutral' },
+      },
+      {
+        task: 'Regulatory Framework Mapping',
+        inhouse: { text: 'Requires separate compliance consultant', type: 'negative' },
+        brightbyte: {
+          text: 'SOC 2, HIPAA, GDPR, PCI DSS, FDA built into architecture',
+          type: 'positive',
+        },
+        bigfour: { text: 'Deep but expensive', type: 'positive' },
       },
     ],
   },
@@ -134,7 +193,7 @@ const comparisonData: SectionData[] = [
       {
         task: 'Testing Coverage',
         inhouse: { text: 'Often deprioritized', type: 'negative' },
-        brightbyte: { text: 'Comprehensive QA', type: 'positive' },
+        brightbyte: { text: 'Automated + manual QA', type: 'positive' },
         bigfour: { text: 'Extensive protocols', type: 'positive' },
       },
       {
@@ -151,19 +210,19 @@ const comparisonData: SectionData[] = [
       {
         task: 'Time to Market',
         inhouse: { text: 'Hiring bottlenecks', type: 'negative' },
-        brightbyte: { text: 'Rapid deployment', type: 'positive' },
+        brightbyte: { text: '2 weeks to working prototype', type: 'positive' },
         bigfour: { text: 'Methodical rollout', type: 'neutral' },
       },
       {
         task: 'Ongoing Partnership',
         inhouse: { text: 'Always available', type: 'positive' },
-        brightbyte: { text: 'Dedicated success team', type: 'positive' },
+        brightbyte: { text: 'Same engineer from prototype to production', type: 'positive' },
         bigfour: { text: 'Retainer-based', type: 'neutral' },
       },
       {
         task: 'Scalability',
         inhouse: { text: 'Recruitment dependent', type: 'negative' },
-        brightbyte: { text: 'Flexible team scaling', type: 'positive' },
+        brightbyte: { text: 'Scale from 1 to 5 engineers per sprint', type: 'positive' },
         bigfour: { text: 'Resource availability', type: 'neutral' },
       },
     ],
@@ -174,19 +233,19 @@ const comparisonData: SectionData[] = [
       {
         task: 'Agile Execution',
         inhouse: { text: 'Culture dependent', type: 'neutral' },
-        brightbyte: { text: 'Proven methodology', type: 'positive' },
+        brightbyte: { text: '2-week sprint cycles', type: 'positive' },
         bigfour: { text: 'Structured frameworks', type: 'neutral' },
       },
       {
         task: 'Transparency',
         inhouse: { text: 'Full visibility', type: 'positive' },
-        brightbyte: { text: 'Real-time dashboards', type: 'positive' },
+        brightbyte: { text: 'Weekly demo, shared repo access', type: 'positive' },
         bigfour: { text: 'Formal reporting', type: 'neutral' },
       },
       {
         task: 'Risk Management',
         inhouse: { text: 'Single point of failure', type: 'negative' },
-        brightbyte: { text: 'Proactive mitigation', type: 'positive' },
+        brightbyte: { text: 'Fixed scope, weekly risk review', type: 'positive' },
         bigfour: { text: 'Comprehensive coverage', type: 'positive' },
       },
     ],
@@ -197,13 +256,13 @@ const summaryData: RowData[] = [
   {
     task: 'Overall Excellence',
     inhouse: { text: 'Team dependent', type: 'neutral' },
-    brightbyte: { text: 'Consistently exceptional', type: 'positive' },
+    brightbyte: { text: 'Average 5+ years AI experience', type: 'positive' },
     bigfour: { text: 'Premium tier', type: 'positive' },
   },
   {
     task: 'Speed to Value',
     inhouse: { text: 'Slow ramp-up', type: 'negative' },
-    brightbyte: { text: 'Immediate impact', type: 'positive' },
+    brightbyte: { text: 'Working prototype in 2 weeks', type: 'positive' },
     bigfour: { text: 'Extended timelines', type: 'negative' },
   },
   {
@@ -221,7 +280,7 @@ const summaryData: RowData[] = [
   {
     task: 'Strategic Value',
     inhouse: { text: 'Operational focus', type: 'neutral' },
-    brightbyte: { text: 'Growth acceleration', type: 'positive' },
+    brightbyte: { text: 'Audit trails built in, prototype in 2 weeks', type: 'positive' },
     bigfour: { text: 'Transformation expertise', type: 'positive' },
   },
 ];

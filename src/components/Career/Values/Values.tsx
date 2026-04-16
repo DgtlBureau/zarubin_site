@@ -4,33 +4,34 @@ import { ValueItemMobile } from './ValueItemMobile/ValueItemMobile';
 
 const VALUES_ITEMS = [
   {
-    title: 'Openness',
+    title: 'Compliance by default',
     description:
-      'Got a question? Ask away. Facing challenges with a project? Let us know immediately. This principle is at the heart of our business processes: we value openness and transparency.',
+      'Audit trails, data governance, and regulatory guardrails go in at the architecture stage. Not after launch. Not in v2. The first build your compliance team sees is the one that passes.',
   },
   {
-    title: 'freedom',
+    title: 'Ship, then polish',
     description:
-      'Our ideal team member voices their opinions, shares ideas on projects, and looks for ways to improve work outcomes. We support freedom of choice, career goals, and new initiatives.',
+      'A working prototype in 2 weeks beats a perfect plan in 4 months. We get real AI outputs in front of your team fast, then iterate based on what actually matters.',
   },
   {
-    title: 'Growth',
+    title: 'Transparency',
     description:
-      "We're constantly evolving and we appreciate the desire for professional growth in our team. We're focused on both professional and personal development. We take part in international projects and dive into interesting challenges.",
+      'Stuck on something? Say it. Found a problem with the approach? Raise it now, not at the demo. We would rather have an uncomfortable conversation on Monday than a failed audit on Friday.',
   },
   {
-    title: 'Adaptation',
+    title: 'Own the outcome',
     description:
-      "We're constantly evolving and we appreciate the desire for professional growth in our team. We're focused on both professional and personal development. We take part in international projects and dive into interesting challenges.",
+      "We don't hand off a repo and disappear. If the agent hallucinates in production, that's our problem too. We stay on retainer because we care about what happens after launch.",
   },
   {
-    title: 'Always in touch',
-    description: 'Our energized leadership is just a call away.',
+    title: 'Always learning',
+    description:
+      'The tooling changes every quarter. Our team runs experiments, publishes what we learn, and brings new patterns into client projects.',
   },
   {
-    title: 'Care',
+    title: 'Builder culture',
     description:
-      "We care about what's happening on the project and with our clients. We always think about how to make the world around us better. At The BrightByte, we encourage initiative.",
+      'We built Regfo to prove our own compliance AI works. We use AI-native dev tools daily. We write code, ship products, and fix things at 2am when it matters.',
   },
 ];
 export const Values = () => {

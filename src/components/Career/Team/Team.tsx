@@ -11,18 +11,19 @@ type TeamCard = {
 
 const TEAM_CARDS: TeamCard[] = [
   {
-    title: 'Tons of cases',
+    title: 'Multi-Agent Systems',
     description:
-      'We have been researching and applying the best practices in the industries',
+      'Production models, open-source models. We pick what fits the task. MCP servers, tool use, orchestration. Production systems, not conference demos.',
   },
   {
-    title: 'We solve complex cases',
-    description: 'We find growth points in non-obvious moments',
+    title: 'Compliance-First AI',
+    description:
+      'Audit trails and regulatory guardrails go in at the architecture stage. SOC2, HIPAA, FDA 21 CFR Part 11. Your compliance team reviews the first build, not the last.',
   },
   {
-    title: '15+ experts',
+    title: 'AI Engineers',
     description:
-      'They find solutions to the most difficult business problems and apply them in practice',
+      'We ship with AI-native dev tools daily. Fine-tuning, RAG, vector search. The team has done this enough times that the path from prototype to production takes weeks.',
     alt: true,
   },
 ];
@@ -32,7 +33,7 @@ export const Team = () => {
     <div className='flex flex-col gap-[60px]'>
       <NextLinePreposition
         tag='h2'
-        text='a team of experienced pro`s, charged with results'
+        text='an AI agent studio building for regulated industries'
         className='section-headings break-words font-unbound font-bold uppercase leading-[1] tablet:leading-[1.3] desktop:leading-[1.1]'
       />
       <div className='grid grid-cols-1 gap-10 desktop:grid-cols-3'>

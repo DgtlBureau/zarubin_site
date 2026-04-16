@@ -9,7 +9,7 @@ export function generateOrganizationSchema() {
     url: BASE_URL,
     logo: `${BASE_URL}/assets/images/icons/favicon.svg`,
     description:
-      'AI agents, fine-tuned models, and automated workflows for FinTech, HealthTech, LawTech, and RegTech. SOC2-ready. HIPAA-compliant. Audit-proof.',
+      'AI agents, fine-tuned models, and automated workflows for FinTech, HealthTech, and RegTech. Full audit trails. Production-ready in 2 weeks.',
     foundingDate: '2018',
     founder: {
       '@type': 'Person',
@@ -39,6 +39,18 @@ export function generateOrganizationSchema() {
       'HIPAA Compliance',
       'FDA Regulatory Compliance',
       'Biotech Regulatory Affairs',
+      'Claude API',
+      'Anthropic SDK',
+      'Gemini API',
+      'MCP Servers',
+      'Multi-Agent Systems',
+      'Agentic Workflows',
+      'Claude Code',
+      'Cursor AI',
+      'LLM Fine-Tuning',
+      'Vector Databases',
+      'Embeddings',
+      'LangChain',
     ],
     areaServed: 'Worldwide',
     serviceType: [
@@ -47,6 +59,9 @@ export function generateOrganizationSchema() {
       'RAG System Development',
       'Compliance AI Automation',
       'Enterprise AI Integration',
+      'Multi-Agent System Development',
+      'MCP Server Infrastructure',
+      'Compliance AI Consulting',
     ],
     makesOffer: {
       '@type': 'Offer',
@@ -56,7 +71,7 @@ export function generateOrganizationSchema() {
         url: 'https://regfo.com',
         applicationCategory: 'BusinessApplication',
         description:
-          'AI-powered regulatory workspace for biotech. Analyzes preclinical study reports against FDA/ICH requirements, generates compliance scores, and identifies gaps.',
+          'AI-powered regulatory workspace for biotech. Analyzes preclinical study reports against FDA, ICH, and CFTC requirements, generates compliance scores, and identifies gaps.',
         operatingSystem: 'Web',
       },
     },

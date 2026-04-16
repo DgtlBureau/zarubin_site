@@ -1,6 +1,6 @@
 ---
-title: 'Pharma & Healthcare AI'
-description: 'FDA gap analysis, HIPAA-compliant data pipelines, clinical document review. We built Regfo to prove we could do it — now we build it for you.'
+title: 'Fine-Tuned Models'
+description: 'Custom classification and scoring models trained on your domain data. Higher accuracy than general-purpose APIs, lower inference cost at scale.'
 logo: '/assets/images/main/icons/star.svg'
 type: 'card'
 image: '/assets/images/main/cards-image/keyboard.webp'

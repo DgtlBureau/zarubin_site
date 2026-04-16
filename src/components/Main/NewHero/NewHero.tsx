@@ -51,9 +51,9 @@ export const NewHero = () => {
                     {hero.tag}
                   </span>
                 )}
-                <h1 className='max-w-[90%] font-inter text-[22px] font-semibold leading-[1.2] tracking-[-0.02em] text-white mobile-big:max-w-[500px] mobile-big:text-[24px] tablet:max-w-[600px] tablet:text-[32px] desktop:max-w-[700px] desktop:text-[38px]'>
+                <h2 className='max-w-[90%] font-inter text-[22px] font-semibold leading-[1.2] tracking-[-0.02em] text-white mobile-big:max-w-[500px] mobile-big:text-[24px] tablet:max-w-[600px] tablet:text-[32px] desktop:max-w-[700px] desktop:text-[38px]'>
                   {hero.title}
-                </h1>
+                </h2>
                 {hero?.description && (
                   <p className='mt-[10px] max-w-[90%] font-inter text-[13px] leading-[1.5] text-white/70 mobile-big:max-w-[400px] tablet:mt-[12px] tablet:max-w-[480px] tablet:text-[14px]'>
                     {hero.description}
