@@ -3,7 +3,7 @@ export const pageMetadata = {
     title:
       'The BrightByte | Compliant AI Agents & Fine-Tuning for Regulated Industries',
     description:
-      'AI agents, fine-tuned models, and automated workflows for FinTech, HealthTech, and RegTech. Full audit trails. Production-ready in 2 weeks.',
+      'AI agents, fine-tuned models, and automated workflows for FinTech, HealthTech, and RegTech. Full audit trails. Working prototype in 2 weeks.',
     keywords: [
       'compliance-friendly AI agents',
       'AI fine-tuning services',

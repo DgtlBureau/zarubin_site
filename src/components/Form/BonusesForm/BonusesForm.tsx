@@ -29,17 +29,13 @@ export const BonusesForm = ({ onClick, setIsEmailSended }: IFormProps) => {
       await sendEmail(values.name, values.email);
       resetForm();
 
-      const telegramResponse = await fetch(
-        'https://api.telegram.org/bot6992822983:AAHWVJuwqeVl5kscHuZwcPx5W-IPXJ7mpkk/sendMessage',
-        {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            chat_id: '199942509',
-            text: `Name: ${values.name}\nEmail: ${values.email}`,
-          }),
-        }
-      ).then((r) => r.json());
+      const telegramResponse = await fetch('/api/telegram', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: `Name: ${values.name}\nEmail: ${values.email}`,
+        }),
+      });
 
       if (telegramResponse.ok) {
         localStorage.setItem('isEmailSended', 'true');

@@ -37,17 +37,13 @@ export const BriefClient = () => {
         email,
       );
 
-      const telegramResponse = await fetch(
-        'https://api.telegram.org/bot6992822983:AAHWVJuwqeVl5kscHuZwcPx5W-IPXJ7mpkk/sendMessage',
-        {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            chat_id: '199942509',
-            text: `Name: ${name}\nEmail: ${email}\nCompany_name: ${company_name}\nIdea: ${idea}\nObjective: ${objective}\nObstacles: ${obstacle}\nBudget: ${budget}\nAbout_business: ${about_business}`,
-          }),
-        }
-      ).then((r) => r.json());
+      const telegramResponse = await fetch('/api/telegram', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: `Name: ${name}\nEmail: ${email}\nCompany_name: ${company_name}\nIdea: ${idea}\nObjective: ${objective}\nObstacles: ${obstacle}\nBudget: ${budget}\nAbout_business: ${about_business}`,
+        }),
+      });
 
       if (telegramResponse.ok) {
         handleSetPage(pageInfo + 1);

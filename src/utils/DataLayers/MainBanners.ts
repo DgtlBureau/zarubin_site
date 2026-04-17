@@ -21,7 +21,7 @@ export const mainBanners: IMainBanners[] = [
     tag: 'AI Automation Studio',
     title: 'Past the prototype. Your AI is in production.',
     description:
-      'Fine-tuned models, RAG pipelines, multi-agent systems. From first call to working product in 2 weeks.',
+      'Fine-tuned models, RAG pipelines, multi-agent systems. From first call to working prototype in 2 weeks.',
     image: buildings,
     date: '15-03-2025',
     link: '/brief',
@@ -58,7 +58,7 @@ export const mainBanners: IMainBanners[] = [
     image: '/assets/images/info/nelson-ndongala-j9a3Y1Vd9hc-unsplash.webp',
     date: '14-03-2025',
     link: '/comparison',
-    linkName: 'How we work',
+    linkName: 'See the comparison',
   },
   {
     id: 5,

@@ -19,8 +19,8 @@ export const NewContactForm = () => {
             variant='glass'
             showDetails={true}
             showPrivacyCheckbox={true}
-            title='Build Your Next Project with Expert Guidance'
-            subtitle='Our team helps ambitious companies implement scalable software solutions that drive business growth'
+            title='Tell us what your AI needs to do.'
+            subtitle='Describe the problem. We will tell you if we can solve it and how fast.'
             submitText='Schedule a Free Consultation'
           />
         </Container>

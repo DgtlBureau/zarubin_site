@@ -12,8 +12,6 @@ import { Checkbox } from '../ui/checkbox';
 import { Input } from '../ui/input';
 import { Textarea } from '../ui/textarea';
 
-const TELEGRAM_BOT_TOKEN = '6992822983:AAHWVJuwqeVl5kscHuZwcPx5W-IPXJ7mpkk';
-const TELEGRAM_CHAT_ID = '199942509';
 
 const formWrapperVariants = cva('w-full scroll-mt-[100px]', {
   variants: {
@@ -118,50 +116,39 @@ export const ContactForm = ({
         values.cv || undefined
       );
 
-      // Send to Telegram
+      // Send to Telegram via server-side API route
       if (showCV && values.cv) {
-        const telegramFormData = new FormData();
-        telegramFormData.append('chat_id', TELEGRAM_CHAT_ID);
-        telegramFormData.append(
-          'caption',
-          `Name: ${values.name}\nEmail: ${values.email}\nPhone: ${values.phone}`
-        );
-        telegramFormData.append('document', values.cv, values.cv.name);
+        const formData = new FormData();
+        formData.append('caption', `Name: ${values.name}\nEmail: ${values.email}\nPhone: ${values.phone}`);
+        formData.append('document', values.cv, values.cv.name);
 
-        const telegramResponse = await fetch(
-          `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendDocument`,
-          {
-            method: 'POST',
-            body: telegramFormData,
-          }
-        ).then((r) => r.json());
+        const res = await fetch('/api/telegram/document', {
+          method: 'POST',
+          body: formData,
+        });
 
-        if (telegramResponse.ok) {
+        if (res.ok) {
           resetForm();
           alert(successMessage);
           onSuccess?.();
         } else {
-          console.error('Error sending document to Telegram:', telegramResponse);
+          console.error('Error sending document');
         }
       } else {
-        const telegramResponse = await fetch(
-          `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`,
-          {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              chat_id: TELEGRAM_CHAT_ID,
-              text: `Name: ${values.name}\nEmail: ${values.email}\nPhone: ${values.phone}${values.details ? `\nDetails: ${values.details}` : ''}`,
-            }),
-          }
-        ).then((r) => r.json());
+        const message = `Name: ${values.name}\nEmail: ${values.email}\nPhone: ${values.phone}${values.details ? `\nDetails: ${values.details}` : ''}`;
 
-        if (telegramResponse.ok) {
+        const res = await fetch('/api/telegram', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message }),
+        });
+
+        if (res.ok) {
           resetForm();
           alert(successMessage);
           onSuccess?.();
         } else {
-          console.error('Error sending message to Telegram:', telegramResponse);
+          console.error('Error sending message');
         }
       }
     } catch (error) {

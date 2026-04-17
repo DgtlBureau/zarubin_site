@@ -10,13 +10,13 @@ export const Internship = () => {
       <div className={styles.InternContainer}>
         <h3 className={styles.title}>internship for students</h3>
         <p className='mt-[19px] font-inter text-[20px] leading-[1.2]'>
-          We are looking for motivated and ambitious students or graduates who
-          are passionate about IT development and strive to develop their
-          skills. Regardless of your level of experience, we welcome everyone
-          who is ready to take on the challenge and move forward with us.
+          We are looking for motivated engineers and researchers passionate
+          about AI agents, large language models, and compliance automation.
+          Whether you have experience with Claude API, RAG systems, or are
+          just starting your AI journey — we welcome builders ready to ship.
         </p>
         <div className='mt-[auto] w-fit'>
-          <LinkArrow title='Submit an Application' link='#' />
+          <LinkArrow title='Submit an Application' link='/career#contact-form' />
         </div>
       </div>
       <div className={styles.listContainer}>
@@ -28,7 +28,7 @@ export const Internship = () => {
                 Look at the vacancies
               </h3>
               <span className={`${styles.tag} font-inter`}>
-                #WeAreAlwaysInSearch
+                #FindYourRole
               </span>
             </div>
           </li>
@@ -39,7 +39,7 @@ export const Internship = () => {
                 Read our articles
               </h3>
               <span className={`${styles.tag} font-inter`}>
-                #DevelopingSportsEntertainment
+                #LearnFromShipping
               </span>
             </div>
           </li>
@@ -50,7 +50,7 @@ export const Internship = () => {
                 Send a CV
               </h3>
               <span className={`${styles.tag} font-inter`}>
-                #EveryGoldPiece
+                #JoinTheTeam
               </span>
             </div>
           </li>
@@ -58,7 +58,7 @@ export const Internship = () => {
       </div>
       <div className={styles.finalContainer}>
         <h3 className={styles.title}>
-          We are looking for motivated and loving people
+          We are looking for people who build AI agents, not just talk about them
         </h3>
         <Image
           src={teamImage}

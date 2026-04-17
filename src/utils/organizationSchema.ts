@@ -9,7 +9,7 @@ export function generateOrganizationSchema() {
     url: BASE_URL,
     logo: `${BASE_URL}/assets/images/icons/favicon.svg`,
     description:
-      'AI agents, fine-tuned models, and automated workflows for FinTech, HealthTech, and RegTech. Full audit trails. Production-ready in 2 weeks.',
+      'AI agents, fine-tuned models, and automated workflows for FinTech, HealthTech, and RegTech. Full audit trails. Working prototype in 2 weeks.',
     foundingDate: '2018',
     founder: {
       '@type': 'Person',

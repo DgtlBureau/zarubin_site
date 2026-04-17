@@ -20,21 +20,13 @@ export const NewForm = () => {
       await sendEmail(values.name, values.email, values.phone, values.details);
       resetForm();
 
-      const telegramResponse = await fetch(
-        'https://api.telegram.org/bot6992822983:AAHWVJuwqeVl5kscHuZwcPx5W-IPXJ7mpkk/sendMessage',
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            chat_id: '199942509',
-            text: `
-              Name: ${values.name}\nEmail: ${values.email}\nPhone: ${values.phone}\nDetails: ${values.details}
-            `,
-          }),
-        },
-      ).then((r) => r.json());
+      const telegramResponse = await fetch('/api/telegram', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: `Name: ${values.name}\nEmail: ${values.email}\nPhone: ${values.phone}\nDetails: ${values.details}`,
+        }),
+      });
 
       if (telegramResponse.ok) {
         resetForm();

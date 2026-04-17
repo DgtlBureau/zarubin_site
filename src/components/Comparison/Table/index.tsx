@@ -100,7 +100,7 @@ const comparisonData: SectionData[] = [
       {
         task: 'Visual Identity',
         inhouse: { text: 'Consistency challenges', type: 'neutral' },
-        brightbyte: { text: 'Design system included', type: 'positive' },
+        brightbyte: { text: 'Design system included', type: 'neutral' },
         bigfour: { text: 'Corporate standards', type: 'neutral' },
       },
     ],
@@ -222,7 +222,7 @@ const comparisonData: SectionData[] = [
       {
         task: 'Scalability',
         inhouse: { text: 'Recruitment dependent', type: 'negative' },
-        brightbyte: { text: 'Scale from 1 to 5 engineers per sprint', type: 'positive' },
+        brightbyte: { text: 'Scale from 1 to 5 engineers per sprint', type: 'neutral' },
         bigfour: { text: 'Resource availability', type: 'neutral' },
       },
     ],
@@ -256,7 +256,7 @@ const summaryData: RowData[] = [
   {
     task: 'Overall Excellence',
     inhouse: { text: 'Team dependent', type: 'neutral' },
-    brightbyte: { text: 'Average 5+ years AI experience', type: 'positive' },
+    brightbyte: { text: 'Senior engineers, small team', type: 'neutral' },
     bigfour: { text: 'Premium tier', type: 'positive' },
   },
   {

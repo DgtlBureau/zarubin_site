@@ -46,8 +46,8 @@ export const ContactForm = () => {
           showCV={true}
           showDetails={false}
           showPrivacyCheckbox={false}
-          title='Fill out the form and click the blue button to get in touch with you!'
-          submitText='Blue button'
+          title='Send us your resume and we will get back to you.'
+          submitText='Send application'
         />
       </div>
     </div>

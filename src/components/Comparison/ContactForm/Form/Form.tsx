@@ -38,19 +38,16 @@ export const Form = () => {
         telegramFormData.append('document', values.cv, values.cv.name);
       }
 
-      const telegramResponse = await fetch(
-        'https://api.telegram.org/bot6992822983:AAHWVJuwqeVl5kscHuZwcPx5W-IPXJ7mpkk/sendDocument',
-        {
-          method: 'POST',
-          body: telegramFormData,
-        },
-      ).then((r) => r.json());
+      const res = await fetch('/api/telegram/document', {
+        method: 'POST',
+        body: telegramFormData,
+      });
 
-      if (telegramResponse.ok) {
+      if (res.ok) {
         resetForm();
         alert('Thank you! We will contact you soon');
       } else {
-        console.error('Error sending document to Telegram:', telegramResponse);
+        console.error('Error sending document');
       }
     },
   });

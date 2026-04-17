@@ -18,7 +18,7 @@ export const ContactForm = () => {
         showDetails={true}
         showPrivacyCheckbox={false}
         title='Describe your project. We will tell you if we can help.'
-        submitText='Blue button'
+        submitText='Send message'
       />
     </ContractFormTemplate>
   );
