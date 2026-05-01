@@ -6,6 +6,7 @@ import { getExpertiseMetadata } from '@/src/utils/getExpertiseMetadata';
 import './globals.css';
 
 const expertiseSubMenu = getArticlesList('expertise');
+const insightsSubMenu = getArticlesList('insights');
 const expertiseMetadata = getExpertiseMetadata();
 
 export default function NotFoundPage() {
@@ -19,6 +20,7 @@ export default function NotFoundPage() {
         <Header
           expertiseMetadata={expertiseMetadata}
           expertiseSubmenu={expertiseSubMenu}
+          insightsSubmenu={insightsSubMenu}
         />
         <main>
           <NotFound />

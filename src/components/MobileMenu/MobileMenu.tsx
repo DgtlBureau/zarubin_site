@@ -14,6 +14,7 @@ interface Props {
   isOpen: boolean;
   onClick: () => void;
   expertiseSubMenu: ISubmenu[];
+  insightsSubMenu: ISubmenu[];
   data: Post[];
 }
 
@@ -21,6 +22,7 @@ export const MobileMenu = ({
   isOpen,
   onClick,
   expertiseSubMenu,
+  insightsSubMenu,
   data,
 }: Props) => {
   const [isOpenExpertiseSubMenu, setIsOpenexpertiseSubmenu] = useState(isOpen);
@@ -91,8 +93,17 @@ export const MobileMenu = ({
               <Arrow className='h-[26px] w-[26px] rotate-[180deg] fill-white' />
               Playbook
             </button>
-            <div className='mt-[24px]'>
-              <ExpertiseSubMenuList data={expertiseSubMenu} onClick={onClick} />
+            <div className='mt-[24px] flex flex-col gap-[24px]'>
+              <ExpertiseSubMenuList
+                data={expertiseSubMenu}
+                onClick={onClick}
+                category='expertise'
+              />
+              <ExpertiseSubMenuList
+                data={insightsSubMenu}
+                onClick={onClick}
+                category='insights'
+              />
             </div>
           </div>
           <ExpertiseSubmenuArticles data={data} onClick={onClick} />

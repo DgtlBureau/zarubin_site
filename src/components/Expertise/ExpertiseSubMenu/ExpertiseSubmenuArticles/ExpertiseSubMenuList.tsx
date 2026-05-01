@@ -12,9 +12,10 @@ import Link from 'next/link';
 interface IProps {
   data: ISubmenu[];
   onClick: () => void;
+  category: 'expertise' | 'insights';
 }
 
-export const ExpertiseSubMenuList = ({ data, onClick }: IProps) => {
+export const ExpertiseSubMenuList = ({ data, onClick, category }: IProps) => {
   return (
     <div>
       <div className='flex w-full flex-col gap-[16px] laptop-big:w-[560px]'>
@@ -47,7 +48,7 @@ export const ExpertiseSubMenuList = ({ data, onClick }: IProps) => {
                         >
                           <Link
                             className='block truncate border-b-[2px] border-solid border-transparent py-[4px] font-inter text-[14px] leading-[1.2] text-link-gray hover:text-white'
-                            href={`/${MenuItems.PLAYBOOK.toLowerCase()}/expertise${formatLink(el.link)}`}
+                            href={`/${MenuItems.PLAYBOOK.toLowerCase()}/${category}${formatLink(el.link)}`}
                             title={formatMenuItem(formatLink(el.nameItem))}
                           >
                             {formatMenuItem(formatLink(el.nameItem))}
@@ -58,7 +59,7 @@ export const ExpertiseSubMenuList = ({ data, onClick }: IProps) => {
                 </ul>
               </div>
               <Link
-                href={`/${MenuItems.PLAYBOOK.toLowerCase()}/expertise?sub-category=${item.name}`}
+                href={`/${MenuItems.PLAYBOOK.toLowerCase()}/${category}?sub-category=${item.name}`}
                 onClick={onClick}
                 className='group mt-[10px] flex items-center gap-[8px] whitespace-nowrap font-inter text-[14px] font-bold leading-[1] text-link-gray hover:text-white laptop-big:mt-[12px]'
               >

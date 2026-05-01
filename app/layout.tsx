@@ -16,6 +16,7 @@ import 'swiper/css';
 import './globals.css';
 
 const expertiseSubMenu = getArticlesList('expertise');
+const insightsSubMenu = getArticlesList('insights');
 const playbookMetaData = getAllArticles();
 
 const title = pageMetadata.main.title;
@@ -107,6 +108,7 @@ export default function RootLayout({
       <body className={`flex flex-col bg-main-bg text-white ${bodyClassname}`}>
         <Header
           expertiseSubmenu={expertiseSubMenu}
+          insightsSubmenu={insightsSubMenu}
           expertiseMetadata={playbookMetaData}
         />
         <main className='flex flex-col'>{children}</main>

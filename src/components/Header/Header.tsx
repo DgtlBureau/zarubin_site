@@ -25,11 +25,13 @@ const DynamicExpertiseMenu = dynamic(() =>
 
 interface Props {
   expertiseSubmenu: ISubmenu[];
+  insightsSubmenu: ISubmenu[];
   expertiseMetadata: Post[];
 }
 
 export const Header = ({
   expertiseSubmenu = [],
+  insightsSubmenu = [],
   expertiseMetadata = [],
 }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -78,6 +80,7 @@ export const Header = ({
                   isOpen={isOpen}
                   onClick={() => setIsOpen(false)}
                   expertiseSubMenu={expertiseSubmenu}
+                  insightsSubMenu={insightsSubmenu}
                   data={expertiseMetadata}
                 />
                 <BurgerIcon isOpen={isOpen} setIsOpen={handleOpen} />
@@ -96,6 +99,7 @@ export const Header = ({
           <DynamicExpertiseMenu
             onClick={() => handleChangeActiveMenu(false)}
             expertiseSubMenu={expertiseSubmenu}
+            insightsSubMenu={insightsSubmenu}
             expertiseMetadata={expertiseMetadata}
           />
         </div>
