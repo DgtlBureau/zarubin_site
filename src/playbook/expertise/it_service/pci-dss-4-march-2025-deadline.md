@@ -4,9 +4,9 @@ description: 'PCI DSS 4.0.1 went live 31 March 2025. MFA expansion, e-skimming c
 image: '/assets/images/info/rupixen-Q59HmzK38eQ-unsplash.webp'
 date: '01-05-2026'
 readingTime: '11 min'
-category: 'Insights'
-subCategory: 'Notes'
-tag: 'PCI DSS 4.0, PCI DSS 4.0.1, MFA, e-skimming, customised approach, requirement 6.4.3, requirement 11.6.1, fintech compliance, payment security'
+category: 'Expertise'
+subCategory: 'IT Service'
+tag: 'PCI DSS 4.0.1, MFA, e-skimming, customised approach, payment security, fintech compliance'
 authorName: 'Daniella Mitchell'
 authorImage: '/assets/images/author/daniella_mitchell.jpg'
 faq:

@@ -4,9 +4,9 @@ description: 'How the XZ Utils backdoor, polyfill.io, and Solana web3.js comprom
 image: '/assets/images/info/aida-l-6y5iySR_UXc-unsplash.webp'
 date: '01-05-2026'
 readingTime: '12 min'
-category: 'Insights'
-subCategory: 'Notes'
-tag: 'Supply chain attacks, XZ Utils backdoor, CVE-2024-3094, npm malware, PyPI typosquatting, SBOM, SLSA framework, Sigstore, dependency confusion'
+category: 'Expertise'
+subCategory: 'IT Service'
+tag: 'Supply chain attacks, XZ Utils, npm malware, PyPI typosquatting, SBOM, SLSA, Sigstore'
 authorName: 'Daniella Mitchell'
 authorImage: '/assets/images/author/daniella_mitchell.jpg'
 faq:

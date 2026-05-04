@@ -4,9 +4,9 @@ description: 'AI coding agents promise 10x productivity. In regulated industries
 image: '/assets/images/info/chris-barbalis-5-mmzR1H3ng-unsplash.webp'
 date: '27-04-2026'
 readingTime: '10 min'
-category: 'Insights'
-subCategory: 'Notes'
-tag: 'AI engineering productivity, compliance review, AI-SDLC, regulated industries, change management, banking pharma fintech'
+category: 'Expertise'
+subCategory: 'IT Service'
+tag: 'AI engineering productivity, compliance review, AI-SDLC, change management, regulated industries'
 authorName: 'Daniella Mitchell'
 authorImage: '/assets/images/author/daniella_mitchell.jpg'
 faq:
@@ -96,7 +96,7 @@ Finally, instrument the right metrics from week one. The wrong metrics will make
 
 The AI productivity story in regulated industries is not the same story as in unregulated SaaS. It is a real story, and the numbers can be good. They just require the operating model to move with the tool, not behind it.
 
-If you need help mapping the bottleneck migration in your specific environment, this is exactly what we do. The control patterns differ between banking, insurance, and pharma, but the diagnostic framework is the same. Our companion guide on [AI coding agents and SOC 2](/playbook/insights/ai-coding-agents-soc2) walks through the rollout controls, and the [audit trail architecture](/playbook/expertise/ai-audit-trail-architecture-compliance) piece covers the logging side. Get in touch and we can run a 2-week assessment.
+If you need help mapping the bottleneck migration in your specific environment, this is exactly what we do. The control patterns differ between banking, insurance, and pharma, but the diagnostic framework is the same. Our companion guide on [AI coding agents and SOC 2](/playbook/expertise/ai-coding-agents-soc2) walks through the rollout controls, and the [audit trail architecture](/playbook/expertise/ai-audit-trail-architecture-compliance) piece covers the logging side. Get in touch and we can run a 2-week assessment.
 
 ---
 

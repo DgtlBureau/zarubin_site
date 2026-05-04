@@ -6,7 +6,7 @@ date: '04-05-2026'
 readingTime: '11 min'
 category: 'Insights'
 subCategory: 'Notes'
-tag: 'Vibe coding agency, AI-native dev shop, due diligence, RLS Supabase, threat modeling, SOC 2, vendor risk, contract clauses'
+tag: 'Vibe coding agency, due diligence, vendor risk, threat modeling, SOC 2, contract clauses'
 authorName: 'Daniella Mitchell'
 authorImage: '/assets/images/author/daniella_mitchell.jpg'
 faq:

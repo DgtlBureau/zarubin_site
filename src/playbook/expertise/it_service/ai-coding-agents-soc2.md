@@ -4,9 +4,9 @@ description: 'Rolling out Cursor, Claude Code, or Copilot under SOC 2? The contr
 image: '/assets/images/info/lukas-zischke-xuAGP8r6jOI-unsplash.webp'
 date: '27-04-2026'
 readingTime: '11 min'
-category: 'Insights'
-subCategory: 'Notes'
-tag: 'AI coding agents, SOC 2 compliance, AI-SDLC, secure software development, regulated industries, AI governance'
+category: 'Expertise'
+subCategory: 'IT Service'
+tag: 'AI coding agents, SOC 2 compliance, AI-SDLC, secure development, AI governance, regulated industries'
 authorName: 'Daniella Mitchell'
 authorImage: '/assets/images/author/daniella_mitchell.jpg'
 faq:

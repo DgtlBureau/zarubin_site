@@ -4,9 +4,9 @@ description: 'EU CRA hits 11 Dec 2027. Fines up to €15M, mandatory SBOMs, 24h 
 image: '/assets/images/info/christian-lue-8Yw6tsB8tnc-unsplash.webp'
 date: '01-05-2026'
 readingTime: '10 min'
-category: 'Insights'
-subCategory: 'Notes'
-tag: 'EU Cyber Resilience Act, CRA 2027, CE marking software, SBOM compliance, vulnerability disclosure, Regulation 2024/2847, NIS2, fintech compliance'
+category: 'Expertise'
+subCategory: 'IT Service'
+tag: 'EU Cyber Resilience Act, CRA 2027, CE marking, SBOM compliance, vulnerability disclosure, NIS2, fintech compliance'
 authorName: 'Daniella Mitchell'
 authorImage: '/assets/images/author/daniella_mitchell.jpg'
 faq:

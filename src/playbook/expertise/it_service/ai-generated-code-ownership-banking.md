@@ -4,9 +4,9 @@ description: 'IP ownership, audit trail, and liability for AI-generated code in 
 image: '/assets/images/info/unma-desai-slfuNqxoBHk-unsplash.webp'
 date: '27-04-2026'
 readingTime: '10 min'
-category: 'Insights'
-subCategory: 'Notes'
-tag: 'AI-generated code, IP ownership, banking compliance, software liability, audit trail, AI-SDLC, regulated industries'
+category: 'Expertise'
+subCategory: 'IT Service'
+tag: 'AI-generated code, IP ownership, banking compliance, software liability, audit trail, AI-SDLC'
 authorName: 'Daniella Mitchell'
 authorImage: '/assets/images/author/daniella_mitchell.jpg'
 faq:

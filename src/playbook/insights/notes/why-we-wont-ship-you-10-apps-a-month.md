@@ -6,7 +6,7 @@ date: '04-05-2026'
 readingTime: '10 min'
 category: 'Insights'
 subCategory: 'Notes'
-tag: 'Vibe coding, AI-native agency, fintech compliance, CVE-2025-48757, Lovable breach, Tea App, software security, slow software'
+tag: 'Vibe coding, AI-native agency, fintech security, software craft, vibe coding risks'
 authorName: 'Daniella Mitchell'
 authorImage: '/assets/images/author/daniella_mitchell.jpg'
 faq:
