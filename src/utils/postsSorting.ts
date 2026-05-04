@@ -15,14 +15,13 @@ interface Post {
   downloadLink?: string | undefined;
 }
 
-export const postsSorting = (posts: Post[]) => {
-  const sortedPosts = posts.sort((a, b) => {
-    const dateA = DateTime.fromFormat(a.date, 'dd-MM-yyyy');
-    const dateB = DateTime.fromFormat(b.date, 'dd-MM-yyyy');
-    if (dateA > dateB) return -1;
-    if (dateA < dateB) return 1;
-    return 0;
-  });
+const toSortableMillis = (date: string): number => {
+  const ms = DateTime.fromFormat(date, 'dd-MM-yyyy').toMillis();
+  return Number.isNaN(ms) ? Number.NEGATIVE_INFINITY : ms;
+};
 
-  return sortedPosts;
+export const postsSorting = (posts: Post[]) => {
+  return posts.sort(
+    (a, b) => toSortableMillis(b.date) - toSortableMillis(a.date),
+  );
 };

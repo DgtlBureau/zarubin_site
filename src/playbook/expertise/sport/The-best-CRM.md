@@ -2,7 +2,7 @@
 title: 'Best Sports CRM Software 2026: Full Comparison'
 description: 'Compare 7 sports CRM platforms side by side. Pricing, features, and real club examples to help you pick the right sports CRM software.'
 image: '/assets/images/expertise/sport/cover.webp'
-date: '03-28-2026'
+date: '28-03-2026'
 readingTime: '10 minutes'
 category: 'Expertise'
 subCategory: 'Sport'
