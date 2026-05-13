@@ -73,7 +73,7 @@ export async function generateMetadata({
       type: 'website',
       locale: 'en_US',
       siteName: SITE_NAME,
-      ...openGraphImage,
+      ...openGraphImage(),
       title,
       description,
       url: `${BASE_URL}/${MenuItems.CASES.toLowerCase()}/${slug}`,
@@ -158,8 +158,33 @@ export default async function CasePage(props: { params: { slug: string } }) {
       content: '## ' + p.replace(regexImage, '').replace(/(^[ \t]*\n)/gm, ''),
     }));
 
+  const caseStudySchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description: description,
+    url: `${BASE_URL}/${MenuItems.CASES.toLowerCase()}/${slug}`,
+    author: {
+      '@type': 'Organization',
+      name: 'The BrightByte',
+      url: BASE_URL,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'The BrightByte',
+      url: BASE_URL,
+    },
+    keywords: industries?.join(', ') || '',
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(caseStudySchema),
+        }}
+      />
       <Section id='hero' className='relative py-0 tablet:py-0 desktop:pb-0'>
         <Container className='flex flex-col gap-[12px]'>
           <Hero

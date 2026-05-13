@@ -1,42 +1,52 @@
 export const VacanciesData = [
   {
     id: 1,
-    title: 'Middle+ Project Manager',
+    title: 'AI Agent Engineer',
     description: `
-• Be ready to negotiate with clients who refuse to negotiate with you \n
-• Find a common language with the team, set a positive mood
+• Build multi-agent systems with Claude API, Anthropic SDK, and MCP servers \n
+• Design agentic workflows for compliance automation in FinTech and HealthTech
     `,
-    tags: ['Management'],
-    link: '#',
+    tags: ['AI Engineering'],
+    link: '#contacts',
   },
   {
     id: 2,
-    title: 'B2B Sales Manager',
+    title: 'LLM Fine-Tuning Engineer',
     description: `
-• To attract and develop new clients of Medium and Large Businesses \n
-• Identify customer needs in digital communications
+• Fine-tune large language models for regulated industries using domain-specific datasets \n
+• Build RAG pipelines, embeddings, and vector search with Pinecone, Weaviate, ChromaDB
     `,
-    tags: ['Management'],
-    link: '#',
+    tags: ['AI Engineering'],
+    link: '#contacts',
   },
   {
     id: 3,
-    title: 'Middle PHP Laravel Web Developer',
+    title: 'Compliance AI Developer',
     description: `
-• Be ready to negotiate with clients who refuse to negotiate with you \n
-• Find a common language with the team, set a positive mood
-        `,
-    tags: ['Development'],
-    link: '#',
+• Build AI systems for FinTech and HealthTech that pass SOC2, HIPAA, and FDA audits \n
+• Implement audit trails, data governance, and automated risk scoring pipelines
+    `,
+    tags: ['AI Engineering'],
+    link: '#contacts',
   },
   {
     id: 4,
-    title: 'Flutter-developer',
+    title: 'Full-Stack AI Product Engineer',
     description: `
-• Participation in the team development of the project \n
-• Participation in writing the code and designing the solution
+• Ship AI-powered products end-to-end: Next.js + FastAPI + LLM integrations \n
+• Use Cursor, Claude Code, and Anthropic SDK as daily development tools
     `,
-    tags: ['Development'],
-    link: '#',
+    tags: ['Product Engineering'],
+    link: '#contacts',
+  },
+  {
+    id: 5,
+    title: 'AI Solutions Architect',
+    description: `
+• Design architecture for enterprise AI agent deployments at scale \n
+• Multi-model orchestration (Claude, GPT, Gemini) and MCP server infrastructure
+    `,
+    tags: ['AI Engineering'],
+    link: '#contacts',
   },
 ];

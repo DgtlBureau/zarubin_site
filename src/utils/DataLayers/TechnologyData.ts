@@ -7,24 +7,26 @@ interface ITechnology {
 export const TechnologyData: ITechnology[] = [
   {
     id: 1,
-    title: 'front',
+    title: 'AI & LLMs',
     description:
-      'VueJS, ReactJS, CSS3, HTML5, Less, SASS/SCSS, Stylus, Nuxt, TreeJS, WebGL',
+      'Claude API, Anthropic SDK, OpenAI API, Gemini API, LangChain, LlamaIndex, Hugging Face, Fine-Tuning, RAG',
   },
   {
     id: 2,
-    title: 'back',
-    description: 'PHP: Bitrix, Symfony, Laravel, NodeJS, Python, Golang',
+    title: 'Agent Frameworks',
+    description:
+      'Claude Code, Cursor, MCP Servers, Tool Use, CrewAI, AutoGen, Multi-Agent Systems, Agentic Workflows',
   },
   {
     id: 3,
-    title: 'mobile',
-    description: 'IOS (Flutter), Android (Kotlin, Java)',
+    title: 'Engineering',
+    description:
+      'Python, TypeScript, Next.js, FastAPI, React, Node.js, PostgreSQL, Pinecone, Weaviate, ChromaDB',
   },
   {
     id: 4,
-    title: 'devops',
+    title: 'MLOps & Compliance',
     description:
-      'Git/GitLab, Docker, CI/CD Jenkins, Kubernetes, ELK, PostgreSQL, MS SQL, RabbitMQ, Kafka, Zabbix, Grafana',
+      'Docker, Kubernetes, CI/CD, GitHub Actions, SOC2, HIPAA, FDA 21 CFR Part 11, Audit Trails, Grafana, Prometheus',
   },
 ];

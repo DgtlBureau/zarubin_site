@@ -24,6 +24,7 @@ export async function generateMetadata() {
     description,
     keywords,
     ogUrlPath: 'comparison',
+    canonicalPath: 'comparison',
   });
 }
 

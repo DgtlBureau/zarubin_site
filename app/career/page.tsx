@@ -9,6 +9,7 @@ import { Section } from '@/src/components/shared/Section/Section';
 import { SEO_DESCRIPTION_SIZE } from '@/src/utils/alias';
 import { contentTrimming } from '@/src/utils/contentTrimming';
 import { pageMetadata } from '@/src/utils/pageMetadata';
+import { generateJobPostingSchema } from '@/src/utils/jobPostingSchema';
 import { Seo } from '@/src/utils/Seo/Seo';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
@@ -36,12 +37,21 @@ export async function generateMetadata() {
     description,
     keywords,
     ogUrlPath: 'career',
+    canonicalPath: 'career',
   });
 }
 
 export default async function CareerPage() {
+  const jobPostingSchema = generateJobPostingSchema();
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jobPostingSchema),
+        }}
+      />
       <Section
         id='hero'
         className={`${styles.heroContainer} relative tablet:px-0`}
