@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
+    "generate-redirect-stubs": "node scripts/generate-redirect-stubs.mjs",
     "start": "next start",
     "lint": "next lint",
     "knip": "knip",

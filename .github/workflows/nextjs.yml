@@ -87,6 +87,8 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
+      - name: Generate redirect stubs
+        run: npm run generate-redirect-stubs
       - name: Generate sitemap
         run: npm run generate-sitemap
       - name: Upload artifact
