@@ -4,7 +4,9 @@
  *
  * Context: this site deploys as a Next.js static export to GitHub Pages, which
  * does not honor next.config.mjs redirects(). To preserve SEO equity from old
- * URLs, we write a static <source>/index.html stub at each redirect source path.
+ * URLs, we write a static <source>.html stub at each redirect source path.
+ * Flat .html (not <source>/index.html) — GH Pages 301s directory paths to add
+ * a trailing slash, which combined with HTTPS enforcement loops infinitely.
  *
  * Stub contents:
  *  - <meta http-equiv="refresh" content="0; url=DESTINATION">
@@ -69,10 +71,29 @@ function main() {
   let skippedCollision = 0;
 
   for (const { source, destination } of redirects) {
-    // source is an absolute path like /playbook/expertise/foo
+    // source is an absolute path like /playbook/expertise/foo.
+    // Write as a flat .html file (out/playbook/expertise/foo.html), NOT as a
+    // directory with index.html. GH Pages 301s /foo -> /foo/ for directory
+    // index.html, which combined with HTTPS enforcement loops infinitely.
     const relative = source.replace(/^\/+/, '');
-    const dir = path.join(OUT_DIR, relative);
-    const file = path.join(dir, 'index.html');
+    const file = path.join(OUT_DIR, `${relative}.html`);
+    const dir = path.dirname(file);
+    const orphanDir = path.join(OUT_DIR, relative);
+    const orphanIndex = path.join(orphanDir, 'index.html');
+
+    // Also check for and clean up legacy <source>/index.html stubs from prior builds.
+    if (fs.existsSync(orphanIndex)) {
+      const existing = fs.readFileSync(orphanIndex, 'utf8');
+      if (isStub(existing)) {
+        fs.rmSync(orphanDir, { recursive: true, force: true });
+      } else {
+        console.warn(
+          `[redirect-stubs] SKIP collision: real page exists at ${path.relative(ROOT, orphanIndex)} (source: ${source})`,
+        );
+        skippedCollision += 1;
+        continue;
+      }
+    }
 
     if (fs.existsSync(file)) {
       const existing = fs.readFileSync(file, 'utf8');
