@@ -62,3 +62,5 @@ One report replaces what used to take a regulatory team 2-3 weeks of manual revi
 The system then loads the right regulatory framework for your exact situation. A small molecule oncology program in Phase 2 has different requirements than a gene therapy rare disease program in Phase 1 — Regfo knows the difference and adjusts what it checks.
 
 The platform runs on Next.js with a Python/FastAPI backend. Claude API handles the document analysis and question answering. Vector search (embeddings over the regulatory corpus) enables fast, contextual retrieval. The entire system is designed for sensitive pharmaceutical data — no training on user documents, audit logs on every query.
+
+Regfo is live at [regfo.com](https://regfo.com).
