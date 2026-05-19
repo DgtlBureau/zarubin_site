@@ -61,7 +61,7 @@ const INDUSTRIES: IIndustries[] = [
   },
   {
     id: 5,
-    title: 'Sport',
+    title: 'Sports',
     description: 'digital products for sports business',
     link: '/expertise',
     image: sportImage,
