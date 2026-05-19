@@ -17,7 +17,7 @@ const FEATURED_CASES: FeaturedCaseData[] = [
     description:
       '1,000+ compliance rules · FDA, ICH & CFTC · Minutes instead of weeks',
     tags: ['FDA Compliance', 'RAG', 'Inference'],
-    bannerImage: '/assets/images/info/regfo-homepage.png',
+    bannerImage: '/assets/images/info/regfo_compliance_new.webp',
   },
   {
     slug: 'personiway',
