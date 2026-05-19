@@ -1,12 +1,12 @@
 ---
-title: 'The EU AI Act Just Got 16 Months Slower. Here Is Why That Is a Trap.'
-description: 'Brussels pushed AI Act high-risk obligations from August 2026 to December 2027. Sixteen extra months sounds like breathing room. For most regulated clients it is a budgeting trap.'
+title: 'EU AI Act Delay to December 2027: Why It Is a Trap'
+description: 'Brussels pushed EU AI Act high-risk obligations from August 2026 to December 2027. Sixteen extra months looks like breathing room. It is a budgeting trap.'
 image: '/assets/images/info/christian-lue-8Yw6tsB8tnc-unsplash.webp'
 date: '18-05-2026'
 readingTime: '7 min'
 category: 'Compliance'
 subCategory: 'Compliance'
-tag: 'EU AI Act, Digital Omnibus, AI compliance, high-risk AI, audit trail, vertical AI agent, regulated industries, fintech compliance, healthtech compliance'
+tag: 'EU AI Act, Digital Omnibus, AI compliance, high-risk AI, audit trail, vertical AI agent, regulated industries, fintech compliance, healthtech compliance, compliance, DORA'
 authorName: 'Vitaliy Zarubin'
 authorImage: '/assets/images/author/avatar.png'
 faq:
@@ -46,13 +46,13 @@ Three things shift against you when the deadline moves out.
 
 **Two: bolt-on is the most expensive thing you can do.** Wiring an audit trail at commit time, when the engineer building the agent is in the file, costs almost nothing. Adding it six months after the agent is in production costs you a refactor, a regression test campaign, and an ugly compliance argument with a buyer who notices it was not there yesterday. Every month you delay the compliance work, the unit economics of the eventual compliance work get worse, not better.
 
-**Three: the buy-side does not wait for Brussels.** Enterprise procurement teams in regulated industries already ask for the things Article 9 through 14 will require. Risk management documentation. Logging. Human oversight. Data governance. Vendor questionnaires from a German Sparkasse or a Dutch insurer in 2026 do not say "we will ask in 2027." They ask now, because their own auditors ask now. A dev shop that cannot answer those questions in May 2026 loses the deal in May 2026, regardless of what the Act enforces.
+**Three: the buy-side does not wait for Brussels.** Enterprise procurement teams in regulated industries already ask for the things Article 9 through 14 will require. Risk management documentation. Logging. Human oversight. Data governance. Vendor questionnaires from a German Sparkasse or a Dutch insurer in 2026 do not say "we will ask in 2027." They ask now, because their own auditors ask now. A dev shop that cannot answer those questions in May 2026 loses the deal in May 2026, regardless of what the Act enforces. The control list those buyers work from is the [EU AI Act compliance checklist for AI agents](/playbook/compliance/eu-ai-act-compliance-ai-agents).
 
 ## What changes in our build process this week
 
 Nothing. That is the point.
 
-We still wire structured logging at the action level, with a separate audit channel that captures the agent's reasoning trace, the human override events, the data sources it touched, and the timestamps. We still scope human-in-the-loop checkpoints into every agent that touches a regulated decision. We still write the technical documentation in the same sprint we ship the system, not after.
+We still wire structured logging at the action level, with a separate audit channel that captures the agent's reasoning trace, the human override events, the data sources it touched, and the timestamps. We still scope human-in-the-loop checkpoints into every agent that touches a regulated decision. We still write the technical documentation in the same sprint we ship the system, not after. For fintech clients the same controls double as [DORA compliance](/playbook/compliance/dora-compliance-ai-fintech) artifacts.
 
 The change is not in the build. The change is in how we talk to clients who read the news and ask if they can save money by deprioritizing the compliance workstream. The answer is the same answer it was on May 6, the day before the Council agreement. You cannot save money on this by waiting. You can only spend that money later, with worse leverage, and with a smaller chance of clearing procurement at the company you wanted to sell to.
 
@@ -67,3 +67,5 @@ If you are a founder building an AI agent for a regulated client, here is the co
 Both are defensible business decisions. Only one of them survives December 2, 2027 with the customer still on the contract.
 
 The next cliff is December 2, 2027.
+
+More on adjacent regimes in our [compliance playbook](/playbook/compliance).

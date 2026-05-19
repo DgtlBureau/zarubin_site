@@ -65,3 +65,57 @@ export function generateArticleSchema({
 
   return JSON.stringify(schema);
 }
+
+export interface CollectionPageItem {
+  title: string;
+  description: string;
+  url: string;
+  datePublished?: string;
+  image?: string;
+}
+
+export function generateCollectionPageSchema({
+  name,
+  description,
+  url,
+  items,
+}: {
+  name: string;
+  description: string;
+  url: string;
+  items: CollectionPageItem[];
+}): string {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name,
+    description,
+    url,
+    publisher: {
+      '@type': 'Organization',
+      name: 'The BrightByte',
+      logo: {
+        '@type': 'ImageObject',
+        url: '/assets/images/info/default_logo.png',
+      },
+    },
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListElement: items.map((item, idx) => ({
+        '@type': 'ListItem',
+        position: idx + 1,
+        url: item.url,
+        item: {
+          '@type': 'Article',
+          headline: item.title,
+          description: item.description,
+          url: item.url,
+          datePublished: item.datePublished,
+          image: item.image,
+        },
+      })),
+    },
+  };
+
+  return JSON.stringify(schema);
+}

@@ -1,12 +1,12 @@
 ---
-title: 'AI Agent Audit Trail Architecture: Logging for HIPAA, GDPR, and DORA'
-description: 'How to build immutable audit logging for AI agents that satisfies HIPAA, GDPR, and DORA. Schemas, architecture patterns, and real tools.'
+title: 'AI Audit Trail Architecture: HIPAA, GDPR, DORA'
+description: 'How to build immutable AI audit logs that satisfy HIPAA, GDPR, and DORA at once. Schemas, retention rules, and tools that survive a real audit.'
 image: '/assets/images/info/ai-audit-trail-architecture.webp'
 date: '16-04-2026'
 readingTime: '15 min'
 category: 'Compliance'
 subCategory: 'Compliance'
-tag: 'AI audit trail, HIPAA compliance logging, GDPR audit architecture, DORA ICT logging, AI agent observability, immutable logging, compliance engineering'
+tag: 'AI audit trail, HIPAA compliance logging, GDPR audit architecture, DORA ICT logging, AI agent observability, immutable logging, compliance engineering, compliance, regulated industries, SOC 2'
 authorName: 'Daniella Mitchell'
 authorImage: '/assets/images/author/daniella_mitchell.jpg'
 faq:
@@ -60,7 +60,7 @@ HIPAA is the most prescriptive about *what* to log. The regulation spells out au
 
 GDPR is the most demanding about *why* you logged it and what you can explain back to the data subject. Articles 13(2)(f), 14(2)(g), and 15(1)(h) require "meaningful information about the logic involved" in automated decisions. This does not mean you have to expose your model weights or prompts. It means you must be able to explain the method: what input features influenced the decision, how the model version was selected, what the confidence score was. SHAP values or counterfactual explanations ("if your income had been X, the result would have been Y") satisfy this requirement.
 
-DORA is the most demanding about *what happens after something goes wrong*. Article 19 requires a three-stage incident reporting process: initial notification within hours of classifying an incident as major, intermediate reports when circumstances change, and a final report with root cause analysis. For AI systems, this means your audit trail must support rapid investigation, which is the argument for SIEM integration rather than just archival storage.
+DORA is the most demanding about *what happens after something goes wrong*. Article 19 requires a three-stage incident reporting process: initial notification within hours of classifying an incident as major, intermediate reports when circumstances change, and a final report with root cause analysis. For AI systems, this means your audit trail must support rapid investigation, which is the argument for SIEM integration rather than just archival storage. We unpack the fintech-specific obligations in our [DORA compliance guide for AI in financial services](/playbook/compliance/dora-compliance-ai-fintech).
 
 The cumulative GDPR fines since 2018 now exceed EUR 7.1 billion. Healthcare breaches cost $7.42 million on average in 2025 according to IBM, with containment taking 279 days. These are not hypothetical risks.
 
@@ -329,9 +329,9 @@ The hard part is organizational.
 
 Engineering teams build agents fast and add logging as an afterthought, if at all. Compliance teams write policies that describe what should be logged but lack the technical specificity to be implemented directly. The gap between "we need audit trails" and "here is the JSON schema, the storage architecture, and the RBAC model" is where most organizations stall.
 
-The EU AI Act's transparency provisions take effect August 2, 2026. The proposed HIPAA Security Rule update is expected to become final around the same time. DORA has been in full force since January 17, 2025. The regulatory window for treating AI audit trails as a future problem is closing.
+The EU AI Act's transparency provisions take effect August 2, 2026. The proposed HIPAA Security Rule update is expected to become final around the same time. DORA has been in full force since January 17, 2025. The regulatory window for treating AI audit trails as a future problem is closing. For the AI Act side specifically, [the EU AI Act compliance checklist for AI agents](/playbook/compliance/eu-ai-act-compliance-ai-agents) maps the same logging requirements to Articles 9-14.
 
-If you are building AI agents for regulated industries today, the audit trail is not a feature you add later. It is part of the architecture from day one. Start with the JSON schema above, implement the storage tiers, integrate with your SIEM, and test the whole chain by running a mock audit before a real one finds the gaps for you.
+If you are building AI agents for regulated industries today, the audit trail is not a feature you add later. It is part of the architecture from day one. Start with the JSON schema above, implement the storage tiers, integrate with your SIEM, and test the whole chain by running a mock audit before a real one finds the gaps for you. For the wider control story under SOC 2, see our [SOC 2 field guide for AI coding agents](/playbook/compliance/ai-coding-agents-soc2), and browse the full [compliance playbook](/playbook/compliance) for adjacent regimes.
 
 ---
 

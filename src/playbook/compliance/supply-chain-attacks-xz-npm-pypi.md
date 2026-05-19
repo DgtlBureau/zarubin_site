@@ -1,12 +1,12 @@
 ---
 title: 'Supply Chain Attacks 2024-2026: XZ, npm, and PyPI Lessons'
-description: 'How the XZ Utils backdoor, polyfill.io, and Solana web3.js compromises worked — and the SBOM, SLSA, Sigstore controls that would catch them.'
+description: 'How the XZ Utils backdoor, polyfill.io, and Solana web3.js compromises worked, plus the SBOM, SLSA, and Sigstore controls that would catch them.'
 image: '/assets/images/info/aida-l-6y5iySR_UXc-unsplash.webp'
 date: '01-05-2026'
 readingTime: '12 min'
 category: 'Compliance'
 subCategory: 'Compliance'
-tag: 'Supply chain attacks, XZ Utils, npm malware, PyPI typosquatting, SBOM, SLSA, Sigstore'
+tag: 'Supply chain attacks, XZ Utils, npm malware, PyPI typosquatting, SBOM, SLSA, Sigstore, PCI DSS, EU CRA, compliance, regulated industries, audit trail'
 authorName: 'Daniella Mitchell'
 authorImage: '/assets/images/author/daniella_mitchell.jpg'
 faq:
@@ -48,7 +48,7 @@ While XZ was the headline, the JavaScript ecosystem absorbed a steady drumbeat o
 
 **Polyfill.io (June 2024).** The polyfill.io domain had been, for years, a quiet piece of plumbing on roughly 100,000 websites — including JSTOR, Intuit, and the World Economic Forum. In February 2024 a Chinese company called Funnull bought the domain. By June, [Sansec reported](https://sansec.io/research/polyfill-supply-chain-attack) that the new owners were injecting malware that redirected mobile users to gambling and scam sites. Cloudflare and Fastly responded within hours by auto-rewriting requests to safe mirrors, which is the only reason the damage was limited. The sites that linked to `cdn.polyfill.io` directly — a script tag, no SRI, no fallback — were silently compromised the moment Funnull flipped the switch.
 
-The lesson here is uncomfortable. A `<script src>` to a third-party domain is a permanent trust delegation. If the domain changes hands, your site changes hands. SRI hashes would have stopped this dead. Strict CSP would have stopped this dead. Almost nobody had either.
+The lesson here is uncomfortable. A `<script src>` to a third-party domain is a permanent trust delegation. If the domain changes hands, your site changes hands. SRI hashes would have stopped this dead. Strict CSP would have stopped this dead. Almost nobody had either. The PCI DSS 4.0.1 requirements 6.4.3 and 11.6.1 exist for exactly this attack class — see our writeup on [what changed at the March 2025 PCI DSS deadline](/playbook/compliance/pci-dss-4-march-2025-deadline).
 
 **Lottie-Player (October 2024).** [GHSA-7v68-3pr5-h3cr](https://github.com/advisories/GHSA-7v68-3pr5-h3cr): `@lottiefiles/lottie-player` versions 2.0.5, 2.0.6, and 2.0.7 were compromised via a stolen npm token. The injected payload was a wallet-draining script targeting Web3 sites. Within hours of the publish, a developer at a crypto firm noticed an unusual transaction, traced it back to a Lottie animation, and the chain was unwound. The stolen-token vector keeps recurring — same story as `event-stream` in 2018, same story as `ua-parser-js` in 2021, same story now. The fix is not novel: enforce 2FA for publish, scope tokens to specific packages, sign packages with sigstore, and verify signatures on install. The npm ecosystem has all of this available. Most projects use none of it.
 
@@ -88,7 +88,7 @@ I am going to keep this list ordered by what to do first, not by what is most fa
 4. **Restrict postinstall scripts in CI base images.** `npm config set ignore-scripts true` for build agents. Yes, it breaks some packages. The packages that need install-time arbitrary code execution are exactly the ones you should review by hand anyway.
 5. **Run an internal package proxy.** Verdaccio, JFrog, or Sonatype Nexus. Allowlist mode. Quarantine new versions for a cooling period — even seven days catches most flash-malicious-publish events.
 6. **Behavioural scanning.** Socket.dev for npm and PyPI, OSV-Scanner for cross-ecosystem CVE matching, Phylum if you have the budget. These look at install scripts, network calls, filesystem access — the things SCA does not.
-7. **Adopt SLSA Level 3 for production builds.** Hermetic builds, two-party review, signed provenance. The OpenSSF [SLSA framework](https://slsa.dev) gives you the rubric. GitHub Actions has native support via the artifact attestations beta.
+7. **Adopt SLSA Level 3 for production builds.** Hermetic builds, two-party review, signed provenance. The OpenSSF [SLSA framework](https://slsa.dev) gives you the rubric. GitHub Actions has native support via the artifact attestations beta. The EU is about to make most of this list mandatory under the [EU Cyber Resilience Act in 2027](/playbook/compliance/eu-cyber-resilience-act-2027).
 8. **Sign everything you ship with Sigstore/cosign.** Keyless signing via OIDC. No long-lived keys to leak. Verify on deploy.
 9. **Treat your maintainer accounts like production credentials.** Hardware-backed 2FA, scoped tokens per package, named ownership, rotation on departure. The Lottie and Solana attacks both rode on stolen credentials. Stop making it easy.
 10. **Subscribe to OSV and ecosystem advisories.** When a malicious package lands, the window between disclosure and your runtime impact is hours, not days. Build the muscle to ship a dependency rev fast.
@@ -104,3 +104,5 @@ Tools narrow the attack surface. They do not eliminate it. The thing engineering
 Patch your dependencies. Sign your artifacts. And give your senior engineers a slack budget for "weird stuff in the build."
 
 That is how the next XZ gets caught.
+
+More on adjacent regimes in our [compliance playbook](/playbook/compliance).

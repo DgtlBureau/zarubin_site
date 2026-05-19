@@ -1,12 +1,12 @@
 ---
 title: 'EU Cyber Resilience Act 2027: What Software Vendors Must Do'
-description: 'EU CRA hits 11 Dec 2027. Fines up to €15M, mandatory SBOMs, 24h vuln reports, CE marking. The compliance clock that nobody is taking seriously.'
+description: 'EU CRA lands 11 Dec 2027. Fines up to EUR 15M, mandatory SBOMs, 24-hour vulnerability reports, CE marking. The clock nobody is taking seriously.'
 image: '/assets/images/info/christian-lue-8Yw6tsB8tnc-unsplash.webp'
 date: '01-05-2026'
 readingTime: '10 min'
 category: 'Compliance'
 subCategory: 'Compliance'
-tag: 'EU Cyber Resilience Act, CRA 2027, CE marking, SBOM compliance, vulnerability disclosure, NIS2, fintech compliance'
+tag: 'EU Cyber Resilience Act, EU CRA, CRA 2027, CE marking, SBOM compliance, vulnerability disclosure, NIS2, fintech compliance, compliance, regulated industries, EU AI Act'
 authorName: 'Daniella Mitchell'
 authorImage: '/assets/images/author/daniella_mitchell.jpg'
 faq:
@@ -74,7 +74,7 @@ If you build infrastructure software, network gear, or anything that touches aut
 
 Under the surface of all the legal text, there are exactly four things engineering needs to ship.
 
-**1. Software Bill of Materials.** Machine-readable, covering at least top-level dependencies (Annex I, §2). CycloneDX and SPDX both satisfy the format. The hard part is not generating the SBOM — it is keeping it accurate across CI, release, and the inevitable patch builds. Use Syft or `cyclonedx-cli` in the build pipeline, attach the SBOM as a release artifact, sign it with cosign. If you cannot answer "what version of which library shipped in build 4.2.1" in under thirty seconds, you fail this control.
+**1. Software Bill of Materials.** Machine-readable, covering at least top-level dependencies (Annex I, §2). CycloneDX and SPDX both satisfy the format. The hard part is not generating the SBOM — it is keeping it accurate across CI, release, and the inevitable patch builds. Use Syft or `cyclonedx-cli` in the build pipeline, attach the SBOM as a release artifact, sign it with cosign. If you cannot answer "what version of which library shipped in build 4.2.1" in under thirty seconds, you fail this control. The attack patterns this is designed to catch live in our [supply chain attacks 2024-2026 breakdown](/playbook/compliance/supply-chain-attacks-xz-npm-pypi).
 
 **2. Vulnerability handling and reporting.** A documented coordinated disclosure policy, a security contact, and a process that turns "we got a CVE report" into "we shipped a fix" inside the regulation's clocks. The reporting obligations from September 2026 are tight: 24h early warning to ENISA on actively exploited vulnerabilities, 72h follow-up, 14 days after fix for the final report. If your current vuln response runbook lives in a Slack channel and nobody owns it, that is a four-month project, not a four-week one.
 
@@ -95,7 +95,7 @@ If you are a fintech with any of: a hardware token, a connected ATM, an IoT devi
 - **DORA** for your operational resilience as a financial entity (in force since [17 January 2025](https://www.eiopa.europa.eu/digital-operational-resilience-act-dora_en))
 - **RED Delegated Act 2022/30** for the wireless aspects (applicable since 1 August 2025, eventually superseded by CRA)
 
-Each has its own incident reporting clock. NIS2 wants 24h early warning. DORA wants 4h for major ICT-related incidents. CRA wants 24h for actively exploited vulns. They overlap, but they are not the same trigger. Build one incident response playbook with a routing table — do not try to merge the regulations into a single procedure.
+Each has its own incident reporting clock. NIS2 wants 24h early warning. DORA wants 4h for major ICT-related incidents. CRA wants 24h for actively exploited vulns. They overlap, but they are not the same trigger. Build one incident response playbook with a routing table — do not try to merge the regulations into a single procedure. If you ship AI features inside that connected product, the [EU AI Act compliance checklist](/playbook/compliance/eu-ai-act-compliance-ai-agents) stacks on top of all of this.
 
 Worth a separate mention: the open source carve-out. Individual contributors and non-commercial projects are out. Foundations may qualify as "open source software stewards" with a lighter regime. The moment money flows — paid support, enterprise editions, SaaS-on-top — full obligations apply. This is going to reshape how commercial OSS vendors structure their entities. Watch the [OpenSSF policy work](https://openssf.org/public-policy/eu-cyber-resilience-act/) on this. The implementing guidance is still being drafted.
 
@@ -116,4 +116,4 @@ The CRA is not GDPR all over again. It is more specific, more technical, and the
 
 That kickoff in Berlin? We rewrote the Notion page that afternoon. Six tickets, owners, dates that work backwards from September 2026. Not Q3 2027.
 
-Start there.
+Start there. Browse the full [compliance playbook](/playbook/compliance) for adjacent regimes.

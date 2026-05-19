@@ -1,12 +1,12 @@
 ---
-title: 'Who Owns AI-Generated Code in a Bank?'
-description: 'IP ownership, audit trail, and liability for AI-generated code in banks, insurers, and pharma. The contract clauses and controls that survive scrutiny.'
+title: 'Who Owns AI-Generated Code in a Bank? IP and Liability'
+description: 'IP ownership, audit trail, and liability for AI-generated code in banks, insurers, and pharma. The contract clauses and controls that hold up.'
 image: '/assets/images/info/unma-desai-slfuNqxoBHk-unsplash.webp'
 date: '27-04-2026'
 readingTime: '10 min'
 category: 'Compliance'
 subCategory: 'Compliance'
-tag: 'AI-generated code, IP ownership, banking compliance, software liability, audit trail, AI-SDLC'
+tag: 'AI-generated code, IP ownership, banking compliance, software liability, audit trail, AI-SDLC, compliance, regulated industries, DORA, EU AI Act'
 authorName: 'Daniella Mitchell'
 authorImage: '/assets/images/author/daniella_mitchell.jpg'
 faq:
@@ -36,9 +36,9 @@ Ownership is settled. What is not settled is provenance, liability, and audit tr
 
 **Provenance.** Your model occasionally reproduces training data verbatim. The rate is low, but it is non-zero. GitHub's own published research and the underlying class-action complaint in *Doe v. GitHub* both establish that some completions match training-set code closely enough to raise license questions. When that happens, the snippet may carry an open-source license your legal team would not have signed off on. GPL is the famous case. Affero GPL is worse. Even Apache 2.0 has attribution requirements that nobody enforces in CI, until somebody does. For a bank shipping a proprietary trading system, an AGPL contamination event is a recall-grade defect.
 
-**Liability.** When AI-generated code causes a customer-facing failure, the regulator does not care that an AI wrote it. Under [DORA Article 28](https://eur-lex.europa.eu/eli/reg/2022/2554/oj), the financial entity carries the ICT third-party risk for the model vendor. The pattern across the ECB, BaFin, FCA, and US prudential regulators in 2024-2026 is consistent: the duty of care for production code does not transfer to the model provider. If your AI-assisted KYC pipeline rejects a sanctions-listed entity incorrectly, the answer *Cursor wrote that branch* will not work in the consent decree. (We covered the broader DORA architecture in our [DORA compliance guide](/playbook/expertise/dora-compliance-ai-fintech).)
+**Liability.** When AI-generated code causes a customer-facing failure, the regulator does not care that an AI wrote it. Under [DORA Article 28](https://eur-lex.europa.eu/eli/reg/2022/2554/oj), the financial entity carries the ICT third-party risk for the model vendor. The pattern across the ECB, BaFin, FCA, and US prudential regulators in 2024-2026 is consistent: the duty of care for production code does not transfer to the model provider. If your AI-assisted KYC pipeline rejects a sanctions-listed entity incorrectly, the answer *Cursor wrote that branch* will not work in the consent decree. (We covered the broader DORA architecture in our [DORA compliance guide for AI in financial services](/playbook/compliance/dora-compliance-ai-fintech).)
 
-**Audit trail.** This is the one I get asked about most. When the [FFIEC](https://ithandbook.ffiec.gov/) examiner pulls a sample of production commits from your audit window, you need to be able to identify which were AI-assisted, who reviewed them, what data the prompt contained, and what model version produced the suggestion. If you cannot answer those four questions for any commit in the sample, the examiner will widen the sample. That is bad. The architectural pattern that makes this answerable is in our [AI agent audit trail architecture](/playbook/expertise/ai-audit-trail-architecture-compliance) deep dive.
+**Audit trail.** This is the one I get asked about most. When the [FFIEC](https://ithandbook.ffiec.gov/) examiner pulls a sample of production commits from your audit window, you need to be able to identify which were AI-assisted, who reviewed them, what data the prompt contained, and what model version produced the suggestion. If you cannot answer those four questions for any commit in the sample, the examiner will widen the sample. That is bad. The architectural pattern that makes this answerable is in our [AI audit trail architecture deep dive](/playbook/compliance/ai-audit-trail-architecture-compliance). The throughput side of the same problem is covered in [the compliance cost of 10x AI engineering](/playbook/compliance/compliance-cost-10x-ai-engineering).
 
 ## What the contract actually says
 
@@ -70,7 +70,7 @@ Those four elements together give you something defensible. They do not give you
 
 ## A note on pharma, which is different
 
-The article so far has been bank-flavored. Pharma is structurally similar but with one twist: [21 CFR Part 11](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/part-11-electronic-records-electronic-signatures-scope-and-application) and the GxP world require *predicate rule compliance* for any system involved in regulated decisions. AI-generated code that touches a clinical trial pipeline, a batch record system, or an electronic submission has to be qualified the same as any other software in scope. That means risk assessment, validation, change control, the whole IQ/OQ/PQ song. (For the broader EU regulatory layer that sits over agentic systems in pharma and finance, see our [EU AI Act compliance checklist](/playbook/expertise/eu-ai-act-compliance-ai-agents).)
+The article so far has been bank-flavored. Pharma is structurally similar but with one twist: [21 CFR Part 11](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/part-11-electronic-records-electronic-signatures-scope-and-application) and the GxP world require *predicate rule compliance* for any system involved in regulated decisions. AI-generated code that touches a clinical trial pipeline, a batch record system, or an electronic submission has to be qualified the same as any other software in scope. That means risk assessment, validation, change control, the whole IQ/OQ/PQ song. (For the broader EU regulatory layer that sits over agentic systems in pharma and finance, see our [EU AI Act compliance checklist for AI agents](/playbook/compliance/eu-ai-act-compliance-ai-agents).)
 
 The audit trail expectations are stricter than banking. Specifically, FDA inspectors will ask whether you can reconstruct the exact state of any system that produced regulated data, going back to the original source of every change. AI-generated code without a logged prompt and a named reviewer fails this test the same way a developer hand-edit on a production server fails it. Same control, different vocabulary.
 
@@ -82,7 +82,7 @@ When I get asked the GC question (the one that started this article), my short a
 
 The fix is not to ban the tools. That ship sailed sometime in 2024. The fix is to deploy them in a way that is auditable, contractually sound, and aligned with the segregation-of-duties controls you already have. It is six weeks of work for a mid-size bank. It is a lot less than the cost of a single MRA.
 
-If your team needs help mapping AI-SDLC controls onto your existing risk framework, that is the work we do across banking, insurance, and pharma. We have built reference control matrices for FFIEC, DORA, and FDA Part 11 environments. Reach out and we can share the relevant template for your scope.
+If your team needs help mapping AI-SDLC controls onto your existing risk framework, that is the work we do across banking, insurance, and pharma. We have built reference control matrices for FFIEC, DORA, and FDA Part 11 environments. Reach out and we can share the relevant template for your scope. Or browse the full [compliance playbook](/playbook/compliance) for adjacent regimes.
 
 ---
 

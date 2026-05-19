@@ -1,12 +1,12 @@
 ---
-title: 'Regfo: AI-Powered Regulatory Compliance for Biotech and Fintech'
-description: 'Regfo automates FDA, HIPAA, and SOC 2 compliance with AI. Cut audit prep time by 70% and reduce regulatory risk.'
+title: 'Regfo: AI Regulatory Compliance for Biotech, Fintech'
+description: 'Regfo automates FDA, HIPAA, and SOC 2 compliance with AI. Cut audit prep time by 70%, reduce regulatory risk, and ship submissions in days.'
 image: '/assets/images/info/regfo_compliance_new.webp'
 date: '16-01-2026'
 readingTime: '14 min'
 category: 'Compliance'
 subCategory: 'Compliance'
-tag: 'AI compliance automation, regulatory technology, FDA compliance AI, HIPAA automation, SOC 2 tools, Regfo, RegTech'
+tag: 'AI compliance automation, regulatory technology, FDA compliance AI, HIPAA automation, SOC 2 tools, SOC 2, Regfo, RegTech, compliance, regulated industries, EU AI Act'
 authorName: 'Daniella Mitchell'
 authorImage: '/assets/images/author/daniella_mitchell.jpg'
 faq:
@@ -62,7 +62,7 @@ Every compliance decision must be auditable. When an FDA inspector asks why a cl
 
 General-purpose LLMs cannot provide this traceability. They generate plausible-sounding text based on statistical patterns, but they cannot prove their reasoning derived from specific regulatory clauses. Claude might accurately summarize FDA guidance, but it cannot cryptographically verify that its recommendations align with 21 CFR Part 312.23(a)(6)(iii)(a).
 
-The EU AI Act, passed in 2024, now treats compliance AI as "high-risk," requiring companies to document how their models work, how they control for bias, and how results can be explained to auditors. Generic AI models were never designed to meet these requirements.
+The EU AI Act, passed in 2024, now treats compliance AI as "high-risk," requiring companies to document how their models work, how they control for bias, and how results can be explained to auditors. Generic AI models were never designed to meet these requirements. The technical obligations land in Articles 9-14 — we mapped them in [the EU AI Act compliance checklist for AI agents](/playbook/compliance/eu-ai-act-compliance-ai-agents).
 
 ### The Hallucination Risk
 
@@ -102,7 +102,7 @@ Each template enforces output structures that match regulatory expectations. A p
 
 ### Cryptographic Evidence Mapping
 
-Every Regfo output includes cryptographic links to source regulatory documents. When the system recommends a specific patient exclusion criterion, the recommendation includes verifiable references to the FDA guidance documents, precedent approvals, and safety databases that informed the decision.
+Every Regfo output includes cryptographic links to source regulatory documents. When the system recommends a specific patient exclusion criterion, the recommendation includes verifiable references to the FDA guidance documents, precedent approvals, and safety databases that informed the decision. The hash-chained logging pattern behind this is covered in our [AI audit trail architecture guide](/playbook/compliance/ai-audit-trail-architecture-compliance).
 
 This evidence mapping serves two purposes. First, it enables immediate auditor verification. An FDA inspector can trace any protocol decision to its regulatory justification within seconds. Second, it provides institutional memory. When regulations change, the system identifies all previous outputs that referenced the modified guidance and flags them for review.
 
@@ -206,7 +206,7 @@ Privacy regulations require documented data processing activities, consent manag
 
 ### AML and KYC
 
-Financial institutions must maintain robust anti-money laundering programs including customer due diligence, transaction monitoring, and suspicious activity reporting. Regfo automates customer risk assessments, monitors transactions against regulatory thresholds, and generates SAR documentation with complete evidentiary support.
+Financial institutions must maintain robust anti-money laundering programs including customer due diligence, transaction monitoring, and suspicious activity reporting. Regfo automates customer risk assessments, monitors transactions against regulatory thresholds, and generates SAR documentation with complete evidentiary support. For the broader operational-resilience layer, see our [DORA compliance guide for AI in financial services](/playbook/compliance/dora-compliance-ai-fintech).
 
 ---
 
@@ -276,7 +276,7 @@ The pharmaceutical companies that bring drugs to market faster. The banks that o
 
 The question is not whether AI will transform compliance. The question is whether your organization will lead that transformation or be disrupted by it.
 
-Explore how [The BrightByte](https://thebrightbyte.com) can help you implement Regfo and transform your compliance operations.
+Explore how [The BrightByte](https://thebrightbyte.com) can help you implement Regfo and transform your compliance operations. Or browse the full [compliance playbook](/playbook/compliance) for adjacent regimes.
 
 ---
 

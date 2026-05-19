@@ -1,12 +1,12 @@
 ---
 title: 'PCI DSS 4.0: What Changed at the March 2025 Deadline'
-description: 'PCI DSS 4.0.1 went live 31 March 2025. MFA expansion, e-skimming controls (6.4.3 and 11.6.1), customised approach. What teams who missed it must fix.'
+description: 'PCI DSS 4.0.1 went live 31 March 2025. MFA expansion, e-skimming controls 6.4.3 and 11.6.1, customised approach. What teams who missed it must fix.'
 image: '/assets/images/info/rupixen-Q59HmzK38eQ-unsplash.webp'
 date: '01-05-2026'
 readingTime: '11 min'
 category: 'Compliance'
 subCategory: 'Compliance'
-tag: 'PCI DSS 4.0.1, MFA, e-skimming, customised approach, payment security, fintech compliance'
+tag: 'PCI DSS 4.0.1, PCI DSS, MFA, e-skimming, customised approach, payment security, fintech compliance, compliance, regulated industries, audit trail'
 authorName: 'Daniella Mitchell'
 authorImage: '/assets/images/author/daniella_mitchell.jpg'
 faq:
@@ -98,7 +98,7 @@ First, tougher line on script inventory completeness. QSAs that previously accep
 
 Second, tighter scrutiny on remote access MFA. The expansion to all non-console CDE access is being verified through walkthroughs — the QSA logs in as a hypothetical user and sees whether MFA prompts. Excuses about VPN coverage are not landing the way they did before.
 
-Behind the scenes, the [Verizon Data Breach Investigations Report 2024](https://www.verizon.com/business/resources/reports/dbir/) confirmed that web application attacks remain the top vector for retail breaches, and Magecart-style e-skimming continues to be a primary technique. The standard is responding to a real and current attack pattern. The compliance is not theatre.
+Behind the scenes, the [Verizon Data Breach Investigations Report 2024](https://www.verizon.com/business/resources/reports/dbir/) confirmed that web application attacks remain the top vector for retail breaches, and Magecart-style e-skimming continues to be a primary technique. The standard is responding to a real and current attack pattern. The compliance is not theatre. For the upstream story on how those attackers reach payment pages in the first place, see our breakdown of [supply chain attacks from XZ to npm and PyPI](/playbook/compliance/supply-chain-attacks-xz-npm-pypi).
 
 ## The actual takeaway
 
@@ -110,4 +110,4 @@ The retail client from the opening? They got the script inventory down from fort
 
 Most compliance work is like that. Boring, methodical, and eventually done.
 
-Start with the inventory.
+Start with the inventory. For the logging side that QSAs increasingly ask about, see our [AI audit trail architecture guide](/playbook/compliance/ai-audit-trail-architecture-compliance). Or browse the full [compliance playbook](/playbook/compliance) for adjacent regimes.

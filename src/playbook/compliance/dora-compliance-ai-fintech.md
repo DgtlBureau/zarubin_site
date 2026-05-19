@@ -1,12 +1,12 @@
 ---
-title: 'DORA Compliance for AI in Financial Services: What Your System Needs to Pass the Audit'
-description: 'DORA treats AI as ICT risk. 4-hour incident reporting, third-party audits, logging for 5 years. Here is what CTOs must build now.'
+title: 'DORA Compliance for AI in Financial Services'
+description: 'DORA treats AI as ICT risk. 4-hour incident reports, third-party audits, 5-year logs. The technical checklist CTOs in fintech must build now.'
 image: '/assets/images/info/dora-compliance-ai-fintech.webp'
 date: '16-04-2026'
 readingTime: '13 min'
 category: 'Compliance'
 subCategory: 'Compliance'
-tag: 'DORA compliance, AI in financial services, ICT risk management, EU AI Act, RegTech, fintech compliance, third-party risk, BaFin AI guidance'
+tag: 'DORA compliance, DORA, AI in financial services, ICT risk management, EU AI Act, RegTech, fintech compliance, third-party risk, BaFin AI guidance, compliance, regulated industries'
 authorName: 'Daniella Mitchell'
 authorImage: '/assets/images/author/daniella_mitchell.jpg'
 faq:
@@ -135,7 +135,7 @@ Financial institutions deploying AI face overlapping regulatory pressure. DORA b
 | Transparency | Incident reporting to regulators | Explainability to individuals and regulators |
 | Penalties | Up to 2% global turnover or EUR 10M | Up to 3% global turnover or EUR 15M |
 
-Credit scoring AI is a good example of where both regulations collide. The EU AI Act classifies it as high-risk under Annex III, requiring explainability, bias testing, data governance documentation, and human oversight. DORA adds ICT risk management, incident reporting, resilience testing, and third-party oversight on top. Your credit scoring model needs to be explainable, auditable, resilient, continuously monitored, and contractually controlled. That is a lot of infrastructure for a single model.
+Credit scoring AI is a good example of where both regulations collide. The EU AI Act classifies it as high-risk under Annex III, requiring explainability, bias testing, data governance documentation, and human oversight. DORA adds ICT risk management, incident reporting, resilience testing, and third-party oversight on top. Your credit scoring model needs to be explainable, auditable, resilient, continuously monitored, and contractually controlled. That is a lot of infrastructure for a single model. We walked through the Articles 9-14 side of that stack in [the EU AI Act compliance checklist for AI agents](/playbook/compliance/eu-ai-act-compliance-ai-agents).
 
 The European Commission recognized this overlap and introduced the Digital Omnibus proposal in November 2025, aiming to consolidate reporting under DORA, the AI Act, NIS2, and GDPR into a single incident reporting point. This simplification is welcome, but it is still in the legislative process. Plan for full dual compliance now, and treat any simplification as a future bonus.
 
@@ -164,7 +164,7 @@ This is the foundation. Every AI inference must capture:
 - Timestamp from a synchronized clock source
 - User or system that triggered the inference
 
-All of this stored for a minimum of 5 years, encrypted, tamper-proof, with access controls and an audit trail showing who accessed the logs. Clock synchronization is required across all ICT systems. I have seen teams overlook this last point. If your AI system runs on AWS and your logging runs on Azure, their clocks need to agree.
+All of this stored for a minimum of 5 years, encrypted, tamper-proof, with access controls and an audit trail showing who accessed the logs. Clock synchronization is required across all ICT systems. I have seen teams overlook this last point. If your AI system runs on AWS and your logging runs on Azure, their clocks need to agree. For the deeper schema and tamper-evidence patterns, see our [AI audit trail architecture guide](/playbook/compliance/ai-audit-trail-architecture-compliance).
 
 ### Model Monitoring That Enables 4-Hour Reporting
 
@@ -232,7 +232,7 @@ If you are a CTO or compliance officer presenting AI governance to your board, t
 7. What is your documented fallback if your primary AI provider goes down for 48 hours?
 8. Do you have an AI strategy document, as BaFin recommends, that your board has reviewed and approved?
 
-If you cannot answer all eight, you have compliance gaps. The grace period is over. 2026 is when regulators expect to see functioning systems, not project plans.
+If you cannot answer all eight, you have compliance gaps. The grace period is over. 2026 is when regulators expect to see functioning systems, not project plans. More on adjacent regimes in our [compliance playbook](/playbook/compliance).
 
 ---
 
