@@ -1,7 +1,7 @@
 ---
 title: 'The Pit Crew Model: How One Senior Engineer Runs Three Parallel Workstreams'
 description: 'Pair programming was two humans at one workstation. The pit crew model is one senior engineer running multiple parallel workstreams with scoped tooling — and a named human reviewer on every merge.'
-image: '/assets/images/info/ai-audit-trail-architecture.webp'
+image: '/assets/images/info/fraud-detection-7-layers-stack.webp'
 date: '18-05-2026'
 readingTime: '8 min'
 category: 'Insights'
@@ -92,4 +92,4 @@ That feels like the honest version of bringing this into a services business. We
 
 We bring this model into every engagement now, by default. It is not a separate offering. If you want to see what it looks like applied to your codebase, we will scope a two-week paid pilot, run it, and walk you through the diff at the end. You will see exactly who wrote what, who reviewed what, and what the audit trail looks like. That is the only honest way to evaluate a claim like this.
 
-[Book a discovery call](/contact)
+[Book a discovery call](/#contacts)

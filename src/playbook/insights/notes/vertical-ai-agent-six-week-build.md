@@ -1,7 +1,7 @@
 ---
 title: 'AI SDR at $80K vs Human at $120K: The Six-Week Vertical Agent Build'
 description: 'CFOs are asking why a custom vertical AI agent costs less than a human SDR. Here is the six-week build, the math behind FTE-replacement pricing, and where it breaks.'
-image: '/assets/images/info/eu-ai-act-compliance-agents.webp'
+image: '/assets/images/info/ai-audit-trail-architecture.webp'
 date: '18-05-2026'
 readingTime: '9 min'
 category: 'Insights'
@@ -102,4 +102,4 @@ We tell clients up front: if you cannot have an honest conversation with your te
 
 Book a 30-minute call. We will tell you whether your workflow is stable enough to encode, whether the outcome math works at your volume, and whether we should even quote a build. About half the calls end with "not yet, here is what to fix first." That is fine. We would rather lose the deal than ship an agent that misses the number.
 
-[Book a discovery call](/contact)
+[Book a discovery call](/#contacts)
