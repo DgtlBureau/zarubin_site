@@ -4,8 +4,8 @@ description: 'Your best person makes decisions nobody documented. Workflow captu
 image: '/assets/images/info/ai-audit-trail-architecture.webp'
 date: '18-05-2026'
 readingTime: '8 min'
-category: 'Insights'
-subCategory: 'Notes'
+category: 'Expertise'
+subCategory: 'IT Service'
 tag: 'workflow capture, AI agents, vertical AI agent, forward-deployed engineer, human-in-the-loop, agent training, institutional knowledge, AI labor'
 authorName: 'Vitaliy Zarubin'
 authorImage: '/assets/images/author/avatar.png'
@@ -90,4 +90,4 @@ If a team is already building you an agent and they skipped or rushed this phase
 
 We run workflow capture as a standalone two-week engagement, fixed fee. At the end of it you decide whether to keep building with us or take the artifacts to your in-house team. Either way, the capture is what determines the outcome.
 
-[Book a discovery call](/contact)
+[Book a discovery call](/#contacts)

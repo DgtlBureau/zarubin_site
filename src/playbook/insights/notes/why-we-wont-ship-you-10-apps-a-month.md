@@ -72,7 +72,7 @@ If that sounds like the antithesis of a one-page Notion proposal, it is. It also
 
 ## What this means if you are buying
 
-I want to give you something useful before you go. There is a checklist that separates the good shops from the marketing-only ones, and I am [publishing it as a separate post](/playbook/insights/vibe-coding-agency-buyers-guide), because it is its own beast. The short version, before you sign anything: ask the vendor for the exact CVE list of their five most recent shipped projects. Ask for the threat model artifact. Ask who reviewed the auth flow and what their compliance background is. If you get marketing-deck answers to any of those three, walk.
+I want to give you something useful before you go. There is a checklist that separates the good shops from the marketing-only ones, and I am [publishing it as a separate post](/playbook/expertise/vibe-coding-agency-buyers-guide), because it is its own beast. The short version, before you sign anything: ask the vendor for the exact CVE list of their five most recent shipped projects. Ask for the threat model artifact. Ask who reviewed the auth flow and what their compliance background is. If you get marketing-deck answers to any of those three, walk.
 
 There are good vibe coding agencies. They will not flinch at those questions. The bad ones will tell you their AI has it covered. That is the tell.
 
