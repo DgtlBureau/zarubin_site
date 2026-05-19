@@ -4,7 +4,7 @@ description: 'AI coding agents promise 10x productivity. In regulated industries
 image: '/assets/images/info/chris-barbalis-5-mmzR1H3ng-unsplash.webp'
 date: '27-04-2026'
 readingTime: '10 min'
-category: 'Compliance'
+category: 'Expertise'
 subCategory: 'Compliance'
 tag: 'AI engineering productivity, compliance review, AI-SDLC, change management, regulated industries, compliance, SOC 2, DORA, audit trail'
 authorName: 'Daniella Mitchell'
@@ -50,9 +50,9 @@ Across the engagements I have seen in the past year, four bottlenecks recur.
 
 **Change Advisory Board (CAB) latency.** Banks and insurers run CAB meetings weekly or biweekly. The meeting agenda has a fixed slot count. More changes means more deferrals, not faster meetings.
 
-**Regression coverage on safety paths.** In pharma, any change to GxP-scoped code triggers a validation re-run under [21 CFR Part 11](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/part-11-electronic-records-electronic-signatures-scope-and-application). In banking, changes to settlement, KYC, or AML logic trigger a regression suite that takes hours. AI doubles the rate of changes that hit these paths but does not speed up the validation. That is straightforwardly more total wait time per feature. (We covered the EU regulatory layer over agentic systems in our [EU AI Act compliance checklist for AI agents](/playbook/compliance/eu-ai-act-compliance-ai-agents).)
+**Regression coverage on safety paths.** In pharma, any change to GxP-scoped code triggers a validation re-run under [21 CFR Part 11](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/part-11-electronic-records-electronic-signatures-scope-and-application). In banking, changes to settlement, KYC, or AML logic trigger a regression suite that takes hours. AI doubles the rate of changes that hit these paths but does not speed up the validation. That is straightforwardly more total wait time per feature. (We covered the EU regulatory layer over agentic systems in our [EU AI Act compliance checklist for AI agents](/playbook/expertise/eu-ai-act-compliance-ai-agents).)
 
-**Documentation debt.** SOC 2, [DORA compliance for AI in financial services](/playbook/compliance/dora-compliance-ai-fintech), FDA submissions, ISO 27001 audits, all of them require written evidence that changes were tested, reviewed, and approved. AI-generated code does not write its own change ticket. The IP and liability angle on that documentation lives in [who owns AI-generated code in a bank](/playbook/compliance/ai-generated-code-ownership-banking). The doc burden grows linearly with throughput, and somebody has to absorb it. Usually that somebody is the same senior engineer who is now reviewing twice the code.
+**Documentation debt.** SOC 2, [DORA compliance for AI in financial services](/playbook/expertise/dora-compliance-ai-fintech), FDA submissions, ISO 27001 audits, all of them require written evidence that changes were tested, reviewed, and approved. AI-generated code does not write its own change ticket. The IP and liability angle on that documentation lives in [who owns AI-generated code in a bank](/playbook/expertise/ai-generated-code-ownership-banking). The doc burden grows linearly with throughput, and somebody has to absorb it. Usually that somebody is the same senior engineer who is now reviewing twice the code.
 
 The pattern is universal: AI accelerates the parts of the SDLC that were never the constraint, while the actual constraint sits untouched. This is Goldratt's Theory of Constraints applied to AI tooling, and it is shocking how rarely the conversation gets framed that way.
 
@@ -96,7 +96,7 @@ Finally, instrument the right metrics from week one. The wrong metrics will make
 
 The AI productivity story in regulated industries is not the same story as in unregulated SaaS. It is a real story, and the numbers can be good. They just require the operating model to move with the tool, not behind it.
 
-If you need help mapping the bottleneck migration in your specific environment, this is exactly what we do. The control patterns differ between banking, insurance, and pharma, but the diagnostic framework is the same. Our companion guide on [AI coding agents and SOC 2](/playbook/compliance/ai-coding-agents-soc2) walks through the rollout controls, and the [AI audit trail architecture](/playbook/compliance/ai-audit-trail-architecture-compliance) piece covers the logging side. Browse the full [compliance playbook](/playbook/compliance) or get in touch for a 2-week assessment.
+If you need help mapping the bottleneck migration in your specific environment, this is exactly what we do. The control patterns differ between banking, insurance, and pharma, but the diagnostic framework is the same. Our companion guide on [AI coding agents and SOC 2](/playbook/expertise/ai-coding-agents-soc2) walks through the rollout controls, and the [AI audit trail architecture](/playbook/expertise/ai-audit-trail-architecture-compliance) piece covers the logging side. Browse the full [compliance playbook](/playbook/expertise?sub-category=compliance) or get in touch for a 2-week assessment.
 
 ---
 

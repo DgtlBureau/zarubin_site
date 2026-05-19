@@ -4,7 +4,7 @@ description: 'Rolling out Cursor, Claude Code, or Copilot under SOC 2? The CC6.1
 image: '/assets/images/info/lukas-zischke-xuAGP8r6jOI-unsplash.webp'
 date: '27-04-2026'
 readingTime: '11 min'
-category: 'Compliance'
+category: 'Expertise'
 subCategory: 'Compliance'
 tag: 'AI coding agents, SOC 2 compliance, SOC 2, AI-SDLC, secure development, AI governance, regulated industries, compliance, audit trail'
 authorName: 'Daniella Mitchell'
@@ -80,7 +80,7 @@ A biotech Series B I worked with had standardized on the Cursor pro tier, not th
 
 A fintech in the Visa scope let Cursor index the full repository, including a `.env.staging` file with a live test card token. The token left their environment. Visa noticed. The fix was a credential rotation, a forensics report, and a very awkward call with their acquirer. Again, the tool did exactly what it was sold to do.
 
-A pharma R&D group connected Claude Code to an MCP server that exposed their internal Confluence. A clever prompt injection in a public Confluence page (left by a contractor two years prior) caused the agent to exfiltrate internal study protocols to an attacker-controlled domain. This one was theoretical until it was not. The MCP threat model is real, and it is underbaked. (We covered the broader logging design for this case in our deep dive on [AI agent audit trail architecture for HIPAA, GDPR, and DORA](/playbook/compliance/ai-audit-trail-architecture-compliance).)
+A pharma R&D group connected Claude Code to an MCP server that exposed their internal Confluence. A clever prompt injection in a public Confluence page (left by a contractor two years prior) caused the agent to exfiltrate internal study protocols to an attacker-controlled domain. This one was theoretical until it was not. The MCP threat model is real, and it is underbaked. (We covered the broader logging design for this case in our deep dive on [AI agent audit trail architecture for HIPAA, GDPR, and DORA](/playbook/expertise/ai-audit-trail-architecture-compliance).)
 
 The pattern in all three: the tool worked correctly. The control gap was the deployment.
 
@@ -92,7 +92,7 @@ A sanctioned, proxied, logged deployment of one tool, with the six-step rollout 
 
 The companies that are going to lose this cycle are the ones who pretend the tools are not in use, the ones who buy three tools instead of one, and the ones who confuse the vendor SOC 2 report with their own.
 
-If you want help mapping your existing SOC 2 controls onto an AI-SDLC rollout, this is exactly the work my team does. We have done it for fintechs in PCI scope, biotechs under HIPAA, and a couple of insurers under [DORA](/playbook/compliance/dora-compliance-ai-fintech). The throughput trade-off these controls create is its own topic — see [the compliance cost of 10x AI engineering](/playbook/compliance/compliance-cost-10x-ai-engineering) for the numbers. The control matrix is similar across verticals; the data classification rules are not. For a broader baseline of the security controls we expect any vendor in this space to have in place, see our [top 10 information security practices](/playbook/insights/top-10-information-security-practices). Get in touch and we can walk through your specific scope, or browse the full [compliance playbook](/playbook/compliance) for adjacent regimes.
+If you want help mapping your existing SOC 2 controls onto an AI-SDLC rollout, this is exactly the work my team does. We have done it for fintechs in PCI scope, biotechs under HIPAA, and a couple of insurers under [DORA](/playbook/expertise/dora-compliance-ai-fintech). The throughput trade-off these controls create is its own topic — see [the compliance cost of 10x AI engineering](/playbook/expertise/compliance-cost-10x-ai-engineering) for the numbers. The control matrix is similar across verticals; the data classification rules are not. For a broader baseline of the security controls we expect any vendor in this space to have in place, see our [top 10 information security practices](/playbook/insights/top-10-information-security-practices). Get in touch and we can walk through your specific scope, or browse the full [compliance playbook](/playbook/expertise?sub-category=compliance) for adjacent regimes.
 
 ---
 

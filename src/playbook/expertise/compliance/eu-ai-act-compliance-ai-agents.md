@@ -4,7 +4,7 @@ description: 'EU AI Act compliance checklist for AI agents. Articles 9-14, loggi
 image: '/assets/images/info/eu-ai-act-compliance-agents.webp'
 date: '16-04-2026'
 readingTime: '14 min'
-category: 'Compliance'
+category: 'Expertise'
 subCategory: 'Compliance'
 tag: 'EU AI Act compliance, EU AI Act, AI agents, high-risk AI systems, AI Act checklist 2026, AI agent logging, human oversight AI, AI Act penalties, GDPR AI Act, compliance, regulated industries'
 authorName: 'Daniella Mitchell'
@@ -108,7 +108,7 @@ Worth knowing: SMEs and micro-enterprises can use a simplified documentation for
 
 This is the one that keeps engineering teams up at night. High-risk AI systems must support automatic recording of events over the system's lifetime. Logs must be retained for a minimum of 6 months, and longer if sector-specific law requires it.
 
-I will cover the specifics of what to log in the next section because this deserves its own treatment. For the deeper architectural patterns — schemas, retention, tamper-evidence — see our [AI audit trail architecture guide for HIPAA, GDPR, and DORA](/playbook/compliance/ai-audit-trail-architecture-compliance).
+I will cover the specifics of what to log in the next section because this deserves its own treatment. For the deeper architectural patterns — schemas, retention, tamper-evidence — see our [AI audit trail architecture guide for HIPAA, GDPR, and DORA](/playbook/expertise/ai-audit-trail-architecture-compliance).
 
 ### Article 13: Transparency
 
@@ -177,7 +177,7 @@ The appropriate pattern depends on risk level, autonomy, and context per Article
 
 ## How do the AI Act and GDPR interact?
 
-If your AI agent processes personal data of EU residents, you are subject to both regimes. They complement each other in some areas and create tension in others. Financial-services teams should also read our [DORA compliance guide for AI in financial services](/playbook/compliance/dora-compliance-ai-fintech), which treats AI as ICT risk alongside the AI Act obligations.
+If your AI agent processes personal data of EU residents, you are subject to both regimes. They complement each other in some areas and create tension in others. Financial-services teams should also read our [DORA compliance guide for AI in financial services](/playbook/expertise/dora-compliance-ai-fintech), which treats AI as ICT risk alongside the AI Act obligations.
 
 | Aspect | GDPR | AI Act | Watch out for |
 |--------|------|--------|---------------|
@@ -211,7 +211,7 @@ Compare those numbers to the penalty ceiling. A company with EUR 1 billion in an
 - Tier 2 (high-risk obligations): up to EUR 30 million (3%)
 - Tier 3 (misleading information): up to EUR 10 million (1%)
 
-The math is straightforward. Compliance for a single high-risk system costs EUR 200,000-500,000. A Tier 2 violation for that same system could cost EUR 15 million. The return on compliance investment is hard to argue with. The other cost surprise is internal: review throughput, which we unpack in [the compliance cost of 10x AI engineering](/playbook/compliance/compliance-cost-10x-ai-engineering).
+The math is straightforward. Compliance for a single high-risk system costs EUR 200,000-500,000. A Tier 2 violation for that same system could cost EUR 15 million. The return on compliance investment is hard to argue with. The other cost surprise is internal: review throughput, which we unpack in [the compliance cost of 10x AI engineering](/playbook/expertise/compliance-cost-10x-ai-engineering).
 
 Global AI governance spending is projected to hit $492 million in 2026 according to Gartner, with the broader enterprise AI governance market expected to grow from $2.2 billion in 2025 to over $11 billion by 2036 at a 15.8% CAGR. Companies are spending. The question is whether they are spending in the right places.
 
@@ -277,7 +277,7 @@ The August 2026 deadline may shift to December 2027. It may not. Either way, the
 
 ## How BrightByte approaches AI agent compliance
 
-We build AI agents for regulated industries, specifically fintech and compliance-heavy sectors. Every agent we ship includes Article 12 logging, human oversight interfaces, and the technical documentation the Act requires. For the full body of work, see our [compliance playbook](/playbook/compliance). If you are staring at the checklist above and thinking "we need help," [reach out for a compliance architecture review](/contact).
+We build AI agents for regulated industries, specifically fintech and compliance-heavy sectors. Every agent we ship includes Article 12 logging, human oversight interfaces, and the technical documentation the Act requires. For the full body of work, see our [compliance playbook](/playbook/expertise?sub-category=compliance). If you are staring at the checklist above and thinking "we need help," [reach out for a compliance architecture review](/contact).
 
 ---
 

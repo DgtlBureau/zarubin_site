@@ -1,6 +1,5 @@
 export enum MenuItems {
   PLAYBOOK = 'Playbook',
-  COMPLIANCE = 'Compliance',
   CASES = 'Cases',
   INVESTMENTS = 'Investments',
   CAREER = 'Career',

@@ -9,70 +9,74 @@
   },
   {
     "source": "/playbook/insights/eu-cyber-resilience-act-2027",
-    "destination": "/playbook/compliance/eu-cyber-resilience-act-2027"
+    "destination": "/playbook/expertise/eu-cyber-resilience-act-2027"
   },
   {
     "source": "/playbook/insights/pci-dss-4-march-2025-deadline",
-    "destination": "/playbook/compliance/pci-dss-4-march-2025-deadline"
+    "destination": "/playbook/expertise/pci-dss-4-march-2025-deadline"
   },
   {
     "source": "/playbook/insights/supply-chain-attacks-xz-npm-pypi",
-    "destination": "/playbook/compliance/supply-chain-attacks-xz-npm-pypi"
+    "destination": "/playbook/expertise/supply-chain-attacks-xz-npm-pypi"
   },
   {
     "source": "/playbook/insights/ai-coding-agents-soc2",
-    "destination": "/playbook/compliance/ai-coding-agents-soc2"
+    "destination": "/playbook/expertise/ai-coding-agents-soc2"
   },
   {
     "source": "/playbook/insights/ai-generated-code-ownership-banking",
-    "destination": "/playbook/compliance/ai-generated-code-ownership-banking"
+    "destination": "/playbook/expertise/ai-generated-code-ownership-banking"
   },
   {
     "source": "/playbook/insights/compliance-cost-10x-ai-engineering",
-    "destination": "/playbook/compliance/compliance-cost-10x-ai-engineering"
-  },
-  {
-    "source": "/playbook/expertise/eu-ai-act-compliance-ai-agents",
-    "destination": "/playbook/compliance/eu-ai-act-compliance-ai-agents"
-  },
-  {
-    "source": "/playbook/expertise/pci-dss-4-march-2025-deadline",
-    "destination": "/playbook/compliance/pci-dss-4-march-2025-deadline"
-  },
-  {
-    "source": "/playbook/expertise/regfo-ai-compliance-automation",
-    "destination": "/playbook/compliance/regfo-ai-compliance-automation"
-  },
-  {
-    "source": "/playbook/expertise/ai-coding-agents-soc2",
-    "destination": "/playbook/compliance/ai-coding-agents-soc2"
-  },
-  {
-    "source": "/playbook/expertise/ai-audit-trail-architecture-compliance",
-    "destination": "/playbook/compliance/ai-audit-trail-architecture-compliance"
-  },
-  {
-    "source": "/playbook/expertise/dora-compliance-ai-fintech",
-    "destination": "/playbook/compliance/dora-compliance-ai-fintech"
-  },
-  {
-    "source": "/playbook/expertise/eu-cyber-resilience-act-2027",
-    "destination": "/playbook/compliance/eu-cyber-resilience-act-2027"
-  },
-  {
-    "source": "/playbook/expertise/supply-chain-attacks-xz-npm-pypi",
-    "destination": "/playbook/compliance/supply-chain-attacks-xz-npm-pypi"
-  },
-  {
-    "source": "/playbook/expertise/compliance-cost-10x-ai-engineering",
-    "destination": "/playbook/compliance/compliance-cost-10x-ai-engineering"
-  },
-  {
-    "source": "/playbook/expertise/ai-generated-code-ownership-banking",
-    "destination": "/playbook/compliance/ai-generated-code-ownership-banking"
+    "destination": "/playbook/expertise/compliance-cost-10x-ai-engineering"
   },
   {
     "source": "/playbook/insights/eu-ai-act-delay-december-2027-trap",
-    "destination": "/playbook/compliance/eu-ai-act-delay-december-2027-trap"
+    "destination": "/playbook/expertise/eu-ai-act-delay-december-2027-trap"
+  },
+  {
+    "source": "/playbook/compliance/eu-ai-act-compliance-ai-agents",
+    "destination": "/playbook/expertise/eu-ai-act-compliance-ai-agents"
+  },
+  {
+    "source": "/playbook/compliance/pci-dss-4-march-2025-deadline",
+    "destination": "/playbook/expertise/pci-dss-4-march-2025-deadline"
+  },
+  {
+    "source": "/playbook/compliance/regfo-ai-compliance-automation",
+    "destination": "/playbook/expertise/regfo-ai-compliance-automation"
+  },
+  {
+    "source": "/playbook/compliance/ai-coding-agents-soc2",
+    "destination": "/playbook/expertise/ai-coding-agents-soc2"
+  },
+  {
+    "source": "/playbook/compliance/ai-audit-trail-architecture-compliance",
+    "destination": "/playbook/expertise/ai-audit-trail-architecture-compliance"
+  },
+  {
+    "source": "/playbook/compliance/dora-compliance-ai-fintech",
+    "destination": "/playbook/expertise/dora-compliance-ai-fintech"
+  },
+  {
+    "source": "/playbook/compliance/eu-cyber-resilience-act-2027",
+    "destination": "/playbook/expertise/eu-cyber-resilience-act-2027"
+  },
+  {
+    "source": "/playbook/compliance/supply-chain-attacks-xz-npm-pypi",
+    "destination": "/playbook/expertise/supply-chain-attacks-xz-npm-pypi"
+  },
+  {
+    "source": "/playbook/compliance/compliance-cost-10x-ai-engineering",
+    "destination": "/playbook/expertise/compliance-cost-10x-ai-engineering"
+  },
+  {
+    "source": "/playbook/compliance/ai-generated-code-ownership-banking",
+    "destination": "/playbook/expertise/ai-generated-code-ownership-banking"
+  },
+  {
+    "source": "/playbook/compliance/eu-ai-act-delay-december-2027-trap",
+    "destination": "/playbook/expertise/eu-ai-act-delay-december-2027-trap"
   }
 ]
