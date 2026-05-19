@@ -7,12 +7,11 @@ type: 'Biotech / Pharma'
 tag: 'Regfo'
 instruments: ['claude', 'react', 'next', 'python']
 logo: '/assets/images/case/svg/default-case-logo.svg'
-bannerImage: '/assets/images/case/banner/regfo-case.png'
+bannerImage: '/assets/images/info/regfo_compliance_new.webp'
 images:
   [
-    '/assets/images/case/regfo-chat.png',
-    '/assets/images/case/regfo-compliance-report.png',
-    '/assets/images/case/regfo-onboarding.png',
+    '/assets/images/info/regfo-homepage.png',
+    '/assets/images/info/regfo-compliance-report.png',
   ]
 date: '01-04-2026'
 metriks: '1,000+ compliance rules · FDA, ICH & CFTC · Minutes instead of weeks'
@@ -21,7 +20,7 @@ link: 'https://regfo.com'
 
 ## About
 
-Regfo is our own product. We built it because we got tired of watching biotech teams spend weeks manually cross-referencing FDA guidance documents with their study data — and still missing things.
+[Regfo](https://regfo.com) is our own product. We built it because we got tired of watching biotech teams spend weeks manually cross-referencing FDA guidance documents with their study data — and still missing things.
 
 The platform ingests preclinical study reports, parses them against FDA, ICH, and CFTC requirements, and produces a compliance score from 0 to 100. Not a vague "you're mostly fine" — a structured breakdown by study category: toxicology, pharmacodynamics, immunotoxicity, carcinogenicity. Each gap gets flagged with the specific regulatory reference it violates.
 
