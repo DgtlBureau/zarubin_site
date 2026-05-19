@@ -62,8 +62,12 @@ export const CategoryComponent = ({ category }: ICategory) => {
     () => getUniqueArticlesSubCategory(category, 'insights'),
     [category],
   );
+  const complianceCategory = useMemo(
+    () => getUniqueArticlesSubCategory(category, 'compliance'),
+    [category],
+  );
 
-  const articlesCategory = [expertiseCategory, insightsCategory];
+  const articlesCategory = [expertiseCategory, complianceCategory, insightsCategory];
 
   useEffect(() => {
     const query = new URLSearchParams();

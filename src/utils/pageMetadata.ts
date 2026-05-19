@@ -47,6 +47,20 @@ export const pageMetadata = {
       'Enterprise AI integration',
     ],
   },
+  compliance: {
+    title: 'AI Compliance for Regulated Industries | EU AI Act, DORA, SOC 2',
+    description:
+      'Compliance-grade AI engineering for FinTech, HealthTech, and biotech. EU AI Act, DORA, PCI DSS 4.0, SOC 2, and audit trail architecture playbooks.',
+    keywords: [
+      'AI compliance',
+      'EU AI Act',
+      'DORA compliance',
+      'PCI DSS 4.0',
+      'SOC 2 AI',
+      'AI audit trail',
+      'regulated industries AI',
+    ],
+  },
   solutions: {
     title: 'Solutions | AI Agents, Fine-Tuning & Compliance Automation',
     description:

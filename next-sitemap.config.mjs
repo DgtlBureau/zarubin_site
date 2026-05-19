@@ -18,6 +18,7 @@ const config = {
       '/playbook',
       '/playbook/expertise',
       '/playbook/insights',
+      '/playbook/compliance',
       '/cases',
       '/policy',
       '/investments',
@@ -26,6 +27,7 @@ const config = {
       '/soc2-checker/assessment',
       '/playbook/expertise/rss.xml',
       '/playbook/insights/rss.xml',
+      '/playbook/compliance/rss.xml',
       '/bonuses',
     ];
 
@@ -60,6 +62,14 @@ const config = {
       return `/playbook/insights/${fileName}`;
     });
 
+    const complianceDir = path.join(process.cwd(), 'src/playbook/compliance');
+    const complianceFiles = getAllMarkdownFiles(complianceDir);
+
+    const dynamicCompliancePages = complianceFiles.map((file) => {
+      const fileName = path.basename(file, '.md');
+      return `/playbook/compliance/${fileName}`;
+    });
+
     const solutionsDir = path.join(process.cwd(), 'src/cases');
     const solutionsFiles = getAllMarkdownFiles(solutionsDir);
 
@@ -83,6 +93,11 @@ const config = {
         loc,
         changefreq: 'daily',
         priority: 0.8,
+      })),
+      ...dynamicCompliancePages.map((loc) => ({
+        loc,
+        changefreq: 'daily',
+        priority: 0.9,
       })),
       ...dynamicSolutionsPages.map((loc) => ({
         loc,

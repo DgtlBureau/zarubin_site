@@ -1,0 +1,159 @@
+.markdown {
+  width: 100%;
+  color: var(--text-dark);
+}
+
+.markdown h1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.markdown h2 {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 1.2em;
+  margin-bottom: 0.6em;
+}
+
+.markdown h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.markdown h4 {
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 0.8em;
+  margin-bottom: 0.4em;
+}
+
+.markdown hr {
+  margin: 2em 0;
+}
+
+.research.markdown h2::before {
+  margin-right: 12px;
+  content: '';
+  width: 22px;
+  height: 1px;
+  background-color: var(--text-dark);
+  border-radius: 2px;
+}
+
+.authorImg {
+  margin: 0;
+  width: 36px;
+  height: auto;
+  border-radius: 100%;
+}
+
+.markdown img {
+  max-width: 90%;
+  max-height: 650px;
+  display: block;
+  margin: auto;
+}
+
+.markdown strong {
+  font-size: inherit;
+  font-weight: 700;
+}
+
+.tagList {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+}
+
+.tagItem {
+  margin: 0;
+  padding: 0;
+}
+
+.tag {
+  padding: 6px 8px;
+  border-radius: 8px;
+  color: var(--main-white);
+  font-size: 12px;
+  background-color: #1a1621;
+}
+
+.tag::before {
+  content: '#';
+}
+
+.markdown hr {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+@media (min-width: 768px) {
+  .markdown h1 {
+    font-size: 24px;
+  }
+
+  .markdown h2 {
+    font-size: 18px;
+  }
+
+  .markdown h3 {
+    font-size: 16px;
+  }
+
+  .markdown h4 {
+    font-size: 14px;
+  }
+
+  .research.markdown h2::before {
+    margin-right: 16px;
+  }
+
+  .authorImg {
+    width: 54px;
+  }
+
+  .markdown li,
+  .markdown p {
+    font-size: 16px;
+  }
+
+  .tag {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .markdown h1 {
+    font-size: 28px;
+  }
+
+  .markdown h2 {
+    font-size: 20px;
+  }
+
+  .markdown h3 {
+    font-size: 18px;
+  }
+
+  .markdown h4 {
+    font-size: 16px;
+  }
+
+  .research.markdown h2::before {
+    width: 100px;
+    margin-right: 16px;
+  }
+
+  .markdown li,
+  .markdown p {
+    font-size: 16px;
+  }
+}

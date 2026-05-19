@@ -6,6 +6,11 @@ export const menuListLayer = [
     name: MenuItems.PLAYBOOK,
     link: `/${MenuItems.PLAYBOOK.toLowerCase()}`,
   },
+  {
+    id: 7,
+    name: MenuItems.COMPLIANCE,
+    link: `/${MenuItems.PLAYBOOK.toLowerCase()}/${MenuItems.COMPLIANCE.toLowerCase()}`,
+  },
   { id: 2, name: MenuItems.CASES, link: `/${MenuItems.CASES.toLowerCase()}` },
   {
     id: 3,
