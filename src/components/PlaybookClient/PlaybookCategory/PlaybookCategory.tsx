@@ -50,6 +50,11 @@ export const PlaybookCategory = ({ category }: ICategoryProps) => {
               </Link>
               <ul className='ml-[10px] flex flex-col gap-[2px]'>
                 {item.subCategory &&
+                  !(
+                    item.subCategory.length === 1 &&
+                    item.subCategory[0]?.trim().toLowerCase() ===
+                      item.category.trim().toLowerCase()
+                  ) &&
                   item.subCategory.map((el) => (
                     <li
                       key={el}

@@ -103,7 +103,12 @@ export const PlaybookCategoryDropDown = ({ categories }: ICategoryProps) => {
                 {item.category}
               </Link>
               <ul>
-                {item.subCategory.map((el) => (
+                {!(
+                  item.subCategory.length === 1 &&
+                  item.subCategory[0]?.trim().toLowerCase() ===
+                    item.category.trim().toLowerCase()
+                ) &&
+                  item.subCategory.map((el) => (
                   <li key={el} className={`flex flex-col gap-[2px]`}>
                     <Link
                       href={`/${MenuItems.PLAYBOOK.toLowerCase()}/${item.category}?sub-category=${underscopeFormatter(el).toLowerCase()}`}
