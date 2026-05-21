@@ -20,7 +20,6 @@ faq:
     answer: 'Networks like Ethoca (Mastercard) and Verifi (Visa, with RDR and CDRN) notify the merchant when a cardholder initiates a dispute, before it becomes a formal chargeback. The merchant has a short window (typically 24-72 hours) to refund the transaction directly. The refund is recorded as a normal credit, not a chargeback, which keeps the chargeback ratio clean and avoids the network fines.'
 ---
 
-# Chargeback Prevention is Not Fraud Prevention: Stop Buying the Wrong Tool
 
 *A casino client called me in February. Their fraud spend had gone up 40% year on year, their fraud catch rate looked solid in the dashboard, and they were one month away from being placed on Visa's monitoring programme for excessive chargebacks. They had bought the wrong tool.*
 

@@ -11,7 +11,6 @@ authorName: 'Vitaliy Zarubin'
 authorImage: '/assets/images/author/avatar.png'
 ---
 
-# The nightmare of a server breach: How our game project almost crashed
 
 We were working on an exciting **web-based gaming project**. Our infrastructure was cloud-based, a carefully integrated setup of **CMS**, **Firebase** and a **web application** that fed data into a larger mobile application. The exchange of data between all these components was serious. Every move, every user action - everything had to be synchronised in real time to give our users the best possible gaming experience.
 

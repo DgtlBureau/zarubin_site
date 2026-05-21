@@ -20,7 +20,6 @@ faq:
     answer: 'No, and we do not let them. The model amplifies whoever is at the center. A senior gets faster without losing quality. A junior gets faster while losing quality, because they have not built the review instincts yet to catch what tooling gets wrong. We pair juniors with seniors and grow them into pit crew work over six to twelve months. Skipping that ramp produces bad code at speed, which is the worst possible outcome.'
 ---
 
-# The Pit Crew Model: How One Senior Engineer Runs Three Parallel Workstreams
 
 *A founder asked me last month why our cycle time was three to four times faster than her previous agency, and what we were actually doing differently. The honest answer was uncomfortably specific. We had stopped working in pairs and started working in pit crews. One senior engineer on her project was running three coordinated workstreams at once, each one supported by tightly-scoped tooling, all converging on the same release. She thought I was describing chaos. It is the opposite of chaos.*
 

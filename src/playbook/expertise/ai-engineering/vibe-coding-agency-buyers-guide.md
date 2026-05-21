@@ -22,7 +22,6 @@ faq:
     answer: 'Get read-access to one existing repository before you sign. Inspect the auth flow, the migrations folder for RLS policies, the dependency tree against npm or pip-audit, the CI workflow for security gates, and the error tracking integration. The aesthetic to look for is competence under pressure, not pretty code.'
 ---
 
-# What to Ask a Vibe Coding Agency Before You Sign
 
 *A founder I advise sent me a 23-question due diligence sheet last month. She had three vibe-coding agencies in her pipeline, all of them quoting between $8K and $14K for an MVP, all of them promising delivery within three weeks. Her sheet was thorough on the wrong things. It asked about hourly rates, team headcount, and whether they used Cursor or Claude. None of the questions on it would have told her if she was about to inherit a CVE.*
 

@@ -22,7 +22,6 @@ faq:
     answer: 'A chatbot MVP runs $50K to $200K and ships in 6 to 10 weeks. A personalized highlights pipeline runs $40K to $150K plus $5K monthly. Dynamic pricing requires API access to the ticketing system and runs $80K to $300K. Real-time push personalization is $150K to $500K depending on data foundation. A serious end-to-end engagement stack lands between $300K and $1.2M in Year 1 for a mid-sized club. The Pacers, F1, and Real Madrid spend low seven figures, but most clubs reach 80% of the value at 20% of that cost.'
 ---
 
-# AI Rewrote the Math of Fan Engagement in Pro Sports
 
 _It is 7:42 PM in Indianapolis. The Pacers are down two with 11 seconds left. Forty-three thousand fans in the arena hold their breath. Three million more watch on screens around the country. Pascal Siakam takes the inbound, drives the lane, draws the foul. He hits both free throws. Pacers win by one._
 

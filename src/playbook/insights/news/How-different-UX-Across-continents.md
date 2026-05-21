@@ -11,7 +11,6 @@ authorName: 'Maria Ovseytseva, Irina Filatova'
 authorImage: '/assets/images/author/maria.webp'
 ---
 
-# Key Considerations for Effective UX Development Across Continents
 
 _Did you know that what works in UX for one region may not work for users from another? While a great UX is the bedrock of any digital product, businesses often lose sight of the fact that user needs and expectations vary dramatically along regional and cultural lines._
 

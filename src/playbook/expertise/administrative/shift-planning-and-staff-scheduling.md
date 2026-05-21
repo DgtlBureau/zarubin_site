@@ -20,7 +20,6 @@ faq:
     answer: '7shifts is purpose-built for food service — it handles tip pooling, labor percentage targets, and integrates with Toast, Square, and Lightspeed. Deputy is a strong alternative if you run a multi-location group with varied demand.'
 ---
 
-# Shift Planning Software Compared: Pricing, Pros, Cons, and What Actually Works
 
 _Scheduling shifts by hand eats 5-8 hours per week for most managers. That time adds up to over 300 hours a year -- hours you could spend on actual operations. This guide breaks down seven popular scheduling tools with real pricing, honest trade-offs, and clear recommendations based on team size and industry._
 

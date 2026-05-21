@@ -16,7 +16,6 @@ faq:
     answer: 'Veeva Vault is a regulatory information management system for document storage and submission workflow. Weave Bio focuses on document authoring for large pharma. Regfo checks compliance upstream — before documents are written — and cites every finding. The three tools complement rather than replace each other.'
 ---
 
-# Regfo: How AI Agents Are Solving the $100B Compliance Bottleneck
 
 *Regulatory compliance costs financial institutions over $206 billion annually. In pharma, 85% of experiments fail due to regulatory misalignment. These are not efficiency problems. They are existential threats to innovation. Regfo is the first AI platform purpose-built to transform compliance from a bottleneck into a continuous, auditable process.*
 

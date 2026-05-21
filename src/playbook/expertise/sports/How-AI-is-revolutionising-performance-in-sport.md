@@ -11,7 +11,6 @@ authorName: 'James Crawford'
 authorImage: '/assets/images/author/james_crawford.jpg'
 ---
 
-# How AI Analytics Changed the Way Sports Teams Win
 
 _A coach watches his striker drift wide right for the fifth time this half. His gut says: keep him there, that's his position. But the tracking data tells a different story -- over the past three months, this player created 63% more scoring chances from a central role. The coach moves him. Two assists and a goal follow. That gap between instinct and evidence is where modern sports analytics lives._
 

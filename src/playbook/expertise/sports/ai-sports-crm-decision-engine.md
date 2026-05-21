@@ -22,7 +22,6 @@ faq:
     answer: 'A pilot on an existing CDP costs $30K to $80K and runs 8 to 12 weeks. Building from scratch — identity resolution, real-time data pipeline, agent layer — costs $250K to $500K over 6 to 9 months. Top clubs like F1 and Warriors invest seven figures, but the curve is not linear: 80% of the value sits in the first two layers (predictive scoring and generative content), which most organizations can deploy in a quarter.'
 ---
 
-# Sports CRM Is Becoming an AI Agent: From Database to Decision Engine
 
 _On a Tuesday morning in March 2026, a marketing director at an NBA franchise opens her CRM. There are no campaigns to approve. No segments to build. Overnight, the system sent 47,000 different emails — each one written for a specific season ticket holder, each one citing a different stat from that fan's last visit. The same system flagged 312 accounts at risk of cancelling, called the top 50 itself, and rescheduled the rest for the sales team. Her job today is to set goals for next week. That is the entire morning._
 

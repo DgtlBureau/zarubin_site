@@ -20,7 +20,6 @@ faq:
     answer: 'At minimum: prompt content (or a hash plus retention reference), model name and version, reviewer identity, timestamp, and the diff of accepted vs suggested. SOX-style log immutability is enough; you do not need a blockchain. Store it for the same retention window as your other engineering audit logs, typically seven years for banks under FFIEC.'
 ---
 
-# Who Owns AI-Generated Code in a Bank?
 
 *A general counsel at a top-50 US bank asked me this question in February. The bank had been quietly piloting AI coding tools across two teams for nine months. The CEO had just read a Bloomberg piece about Copilot reproducing GPL code, and the GC had a board meeting on Thursday. He wanted a one-page memo. I wrote three pages. He sent the three pages.*
 

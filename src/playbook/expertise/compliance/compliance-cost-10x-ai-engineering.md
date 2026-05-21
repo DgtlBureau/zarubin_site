@@ -20,7 +20,6 @@ faq:
     answer: 'Yes. Lines of code or PR count are misleading metrics in regulated work. Track time-to-production-ready (including review and documentation), audit findings per release, and rework rate after compliance review. A team shipping 30% more code with 50% more rework is not faster.'
 ---
 
-# The Compliance Cost of 10x AI Engineering
 
 *A VP of Engineering at a European insurer told me last quarter that her team had doubled commit velocity since rolling out Cursor. Then she told me their release cadence had not changed. Same monthly release window, same number of features in production. The doubled output was sitting in a queue waiting for security and compliance review.*
 

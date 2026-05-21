@@ -10,7 +10,6 @@ tag: 'AI, Data Integrity, News'
 authorName: 'Maria Ovseytseva'
 authorImage: '/assets/images/author/maria.webp'
 ---
-# The Risks Point to the Need for Greater Regulation of AI, Says Gary Marcus
 
 AI expert Gary Marcus recently called on policymakers to establish comprehensive AI guidelines to ensure integrity and safety.  
 

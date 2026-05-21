@@ -40,7 +40,7 @@ But is it worth dividing the importance of technology based on any criteria? We 
 
 ![women-football](/assets/images/postPicture/women_football.webp)
 
-# Innovations in Data Analysis and Preparation 🚀
+## Innovations in Data Analysis and Preparation 🚀
 
 Artificial Intelligence (AI) in women's sports demonstrates its strengths in analyzing vast amounts of data. Tracking biometric indicators, training techniques, and physical preparation based on data analysis helps identify individual characteristics of each athlete. This allows coaches and medical specialists to develop more personalized training programs and enhance training effectiveness.
 

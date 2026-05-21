@@ -11,7 +11,6 @@ authorName: 'Daniella Mitchell'
 authorImage: '/assets/images/author/daniella_mitchell.jpg'
 ---
 
-# Facility Management Software: Ways to improve food services in remote workplaces
 
 _Food services and facility management systems are both types of high-end software designed specifically to streamline the functional and logistical processes of food services. These systems are particularly useful where projects are isolated and in hard-to-reach locations such as manufacturing, mining and large construction projects. Overall, they address the challenges of coordination, monitoring and optimisation and improve daily operations without significant expenditure._
 

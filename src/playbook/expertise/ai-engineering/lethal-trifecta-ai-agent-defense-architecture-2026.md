@@ -23,7 +23,6 @@ faq:
     answer: 'Model-level robustness has improved significantly. Anthropic reports Claude Opus 4.5 blocking around 99% of injection attempts in browser-agent settings. That is good but not enough. A 1% pass-through rate on an agent doing 10,000 actions per day is 100 successful injections. For high-value endpoints (financial, medical, customer data, legal) the model alone is the floor of your defence, not the ceiling.'
 ---
 
-# The Lethal Trifecta: A 2026 Defence Architecture for AI Agents
 
 *A senior engineer at a fintech client asked me last month whether they could "just turn on the prompt injection filter." I knew what they meant. They wanted a single product, a single config flag, a single line item on the security review. What they had built was an agent that fetched the user's bank statements, read incoming PDFs from suppliers, and could initiate payments through a back-office API. Three powers in one process. There is no filter you flip to make that safe.*
 

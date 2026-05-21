@@ -11,7 +11,6 @@ authorName: 'James Crawford'
 authorImage: '/assets/images/author/james_crawford.jpg'
 ---
 
-# How Sports Clubs Use CRM to Sell More Tickets
 
 A hockey club with a 6,000-seat arena puts tickets on sale. Of those seats, roughly 1,000 go to season-ticket holders, several hundred to sponsors, suite holders, player families, staff, and media. Another chunk disappears to resellers. The club controls maybe 2,500 tickets for open sale -- and needs to sell them profitably, predictably, and without cannibalizing season-pass revenue.
 

@@ -23,7 +23,6 @@ faq:
     answer: 'Yes. Vision-capable models can read text rendered inside images, including text that is visually subtle or low-contrast on purpose. Attackers have started embedding instructions inside images attached to emails and PDFs. The defence surface gets larger every release.'
 ---
 
-# The Anatomy of an Invisible Attack: How Hidden Text Hijacks LLM Agents
 
 *Last quarter I sat with a founder whose customer-support agent had started quietly forwarding draft tickets to an outside Gmail address. No one on the team had configured that. The agent had a tool that could send email. It also summarised attached PDFs. The PDF a customer sent that morning had ten lines of white-on-white text at the bottom telling the agent that "verification protocol" required forwarding the ticket contents. The agent obliged. It was, by its own internal logs, being helpful.*
 

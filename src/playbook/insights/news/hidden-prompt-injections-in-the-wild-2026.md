@@ -21,7 +21,6 @@ faq:
     answer: 'Partially. Input classifiers drop attack success by about 18% on PromptBench because attackers paraphrase known patterns. PromptArmor from ICLR 2026 gets to under 1% false positive on AgentDojo, which is the strongest single-layer result so far. Most production systems still need defense in depth.'
 ---
 
-# Hidden Prompt Injections Are Live in the Wild — Here Is What Q1 2026 Research Shows
 
 Google's threat team logged a 32% jump in real-world indirect prompt injection attacks between November and February. Help Net Security ran a piece in April that opened with the line, almost flatly, "this is happening now." A benchmark out of arXiv in January ran 5,200 attack trials across 13 production models and basically embarrassed all of them.
 

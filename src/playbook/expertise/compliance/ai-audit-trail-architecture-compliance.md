@@ -18,7 +18,6 @@ faq:
     answer: 'Langfuse captures full LLM traces including inputs, outputs, tool calls, and latency, which covers the observability layer. Its Enterprise Edition adds immutable audit logs and supports self-hosting within your VPC for data residency control. It is a strong starting point, but you will still need WORM storage, hash chaining, and SIEM integration to meet the full tamper-evidence requirements of HIPAA and DORA.'
 ---
 
-# AI Agent Audit Trail Architecture: How to Build Logging That Satisfies HIPAA, GDPR, and DORA
 
 *A Kiteworks survey from 2025 found that 97% of organizations reporting AI-related breaches had no proper AI access controls in place. Across the industry, 72% of organizations already run AI in production, yet only 9% have mature AI governance. This article covers the architecture you need to close that gap: what to log, how to store it, and how to prove it has not been tampered with.*
 

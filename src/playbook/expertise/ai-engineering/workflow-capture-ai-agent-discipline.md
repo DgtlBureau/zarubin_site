@@ -20,7 +20,6 @@ faq:
     answer: 'They are not stupid. They know what the project is for. If they believe the agent is replacing them, you will get the marketing version of their job and nothing useful. Two options that work: give them the agent supervisor role at a pay bump, or accept that workflow capture has to start somewhere else first. Forcing the issue produces a bad capture and a worse agent.'
 ---
 
-# Workflow Capture: How to Get Your Best Employee's Brain Into an Agent
 
 *A claims manager at a regional insurer once told me her job was "knowing which forms never to trust on Wednesdays." She was half joking. The other half was the most expensive piece of institutional knowledge in the company, and it lived in exactly one head. When we started building an agent to take over the routine 70% of her work, the first six weeks were not about the agent. They were about her.*
 

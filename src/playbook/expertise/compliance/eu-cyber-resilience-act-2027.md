@@ -22,7 +22,6 @@ faq:
     answer: 'Yes. Manufacturers must produce a machine-readable SBOM covering at least top-level dependencies (Annex I, §2). CycloneDX or SPDX both satisfy the format requirement. Auditors will ask to see one before they ask anything else.'
 ---
 
-# EU Cyber Resilience Act 2027: What Software Vendors Must Do
 
 *Last quarter I sat in a kickoff with a Series B IoT vendor in Berlin. The CTO had a Notion page titled "CRA — Q3 2027" and a Jira epic with three tickets. None of them were started. I asked him about the September 2026 reporting deadline. He blinked. "Wait — there's a 2026 deadline?"*
 

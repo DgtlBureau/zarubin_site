@@ -22,7 +22,6 @@ faq:
     answer: 'Internal tools where breach impact is low. Marketing landing pages. Founder-mode prototypes for product discovery. Anything you would be comfortable rebuilding from scratch in three months if it failed. The agency model fits perfectly there. The trouble starts when the same shop pitches the same throughput for a customer-facing fintech app. Match the vendor to the failure mode.'
 ---
 
-# Why We Won't Ship You 10 Apps a Month
 
 *A fintech CTO sent me a Slack message at 11pm last week. He had been pitched by an AI-native dev shop that promised ten apps a month at $4K per app, "production-ready" delivery in two weeks. Their landing page had video testimonials, a Notion-style portfolio, and a Cal.com link. He wanted to know if the math worked. I asked him one question back: did the agency mention RLS, audit trails, or evidence of pen testing? He sent a screenshot of their pricing page. None of those words appeared anywhere.*
 

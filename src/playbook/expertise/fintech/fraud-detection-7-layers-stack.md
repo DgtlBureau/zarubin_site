@@ -20,7 +20,6 @@ faq:
     answer: 'Industrial-grade platforms operating across multiple merchants and several years of labelled data run at 90-95% catch. Internal tools at a single merchant typically peak at 80-85% after 18-24 months of investment. The 100% catch rate is marketing copy. No production fraud system reaches it, and the few vendors that claim it are either narrowing the definition of fraud or hiding their false-positive rate.'
 ---
 
-# The 7 Layers of Real Fraud Detection: A Practical Stack for High-Risk Merchants
 
 *A founder of an iGaming operator told me last quarter that they had spent $400,000 on fraud tooling in two years and their chargeback ratio was higher than when they started. They had bought four products that all sat in the same layer, leaving four other layers untouched. This is the framework for what to build, what to buy, and what to skip, ordered by what actually catches fraud at scale.*
 

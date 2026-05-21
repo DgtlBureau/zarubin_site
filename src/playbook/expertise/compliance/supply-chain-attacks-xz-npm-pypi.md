@@ -22,7 +22,6 @@ faq:
     answer: 'Typosquatting publishes a package with a name close to a popular one (requets vs requests) and waits for typos. Dependency confusion publishes a public package that shares a name with a private internal package — and many package managers default to pulling the higher version, even if it is the public one. Different vector, same outcome: malicious code runs in your build.'
 ---
 
-# Supply Chain Attacks 2024-2026: XZ, npm, and PyPI Lessons
 
 *On 29 March 2024, a Microsoft engineer named Andres Freund posted to oss-security with a subject line that read like a Friday afternoon thought experiment: "backdoor in upstream xz/liblzma leading to ssh server compromise." He had been benchmarking PostgreSQL changes. He noticed sshd was burning unusual CPU and that logins took an extra 500 milliseconds. He pulled on the thread.*
 

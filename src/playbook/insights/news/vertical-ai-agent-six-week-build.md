@@ -20,7 +20,6 @@ faq:
     answer: 'Some headcount conversion is real. Roles do not get backfilled, planned hires get paused. The better outcome we have seen: existing reps move into agent supervision and outcome-ownership roles, sometimes at a pay bump for fewer hours. If you cannot have that conversation honestly with your team, do not buy this from anyone. The agents work too well to pretend otherwise.'
 ---
 
-# AI SDR at $80K vs Human at $120K: The Six-Week Vertical Agent Build
 
 *Last quarter a CFO emailed me at 11pm. Subject line: "Are we paying 120k for someone an agent can replace?" The attachment was a vendor deck quoting $200k a year for an AI SDR seat. He wanted a second opinion. By the time we got on a call the next morning, his head of sales had already forwarded three competing decks and one Reddit thread questioning all of them. That conversation became the template for this article.*
 

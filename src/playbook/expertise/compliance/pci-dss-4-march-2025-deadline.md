@@ -22,7 +22,6 @@ faq:
     answer: 'Yes. Requirement 8.4.2 expanded MFA from administrative and remote access to all non-console access into the cardholder data environment. That includes regular users on the internal network. The grandfathering window closed 31 March 2025.'
 ---
 
-# PCI DSS 4.0: What Changed at the March 2025 Deadline
 
 *A retail client called me in mid-April 2025 — about two weeks after the future-dated PCI DSS 4.0.1 requirements went live. They had just failed an interim review on requirement 6.4.3. The QSA asked for an inventory of every JavaScript file loaded on their checkout page. The team produced a list of seventeen scripts. The actual count, after we ran a fresh audit through the browser DevTools, was forty-one. The other twenty-four had been added by a tag manager that the marketing team owned and engineering had no visibility into.*
 

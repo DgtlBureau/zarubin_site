@@ -11,7 +11,6 @@ authorName: 'James Crawford'
 authorImage: '/assets/images/author/james_crawford.jpg'
 ---
 
-# Comparing UX/UI approaches in sports apps across three continents: North America, Europe and Russia
 
 As digital products become increasingly localised, understanding regional differences in user experience (UX) and user interface (UI) design is essential, especially in the sports industry. Each continent has its own approach to app design, shaped by cultural preferences, user expectations and functional priorities. This article explores the nuances of UX/UI design in sports applications in North America, Europe and Russia, using specific examples from hockey apps in each region.
 

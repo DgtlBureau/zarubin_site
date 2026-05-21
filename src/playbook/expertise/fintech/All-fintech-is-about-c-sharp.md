@@ -11,7 +11,6 @@ authorName: 'Daniella Mitchell'
 authorImage: '/assets/images/author/daniella_mitchell.jpg'
 ---
 
-# Why C# Dominates Fintech Trading Terminal Development
 
 Open a trading floor in London, New York, or Singapore. Look at the screens. The software running on those terminals — the charting engines, order management systems, and real-time data feeds — was probably built in C#.
 

@@ -20,7 +20,6 @@ faq:
     answer: 'Three layers: a pre-commit hook that scans for PII patterns and blocks the prompt, an org-level proxy that rewrites or rejects payloads, and a contract clause with the model vendor confirming zero retention plus no training on submitted content. Anthropic and OpenAI both offer this on their enterprise tiers. Verify the contract, do not assume the default.'
 ---
 
-# AI Coding Agents and SOC 2: A Field Guide
 
 *Last month I sat in on an audit prep call where a Series C fintech was three weeks from their first SOC 2 Type II. The CTO mentioned that the team had standardized on Cursor in January. The auditor went very quiet. Then she asked a question nobody had a written answer to: when an engineer pastes a stack trace into the AI, where does that stack trace go?*
 

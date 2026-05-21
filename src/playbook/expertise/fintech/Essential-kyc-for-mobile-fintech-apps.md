@@ -24,7 +24,6 @@ faq:
     answer: 'For startups prioritizing speed and cost: Sumsub, Veriff, and Onfido offer strong API-first tools with transparent pricing. For higher-volume or enterprise needs: Jumio, Trulioo, and LexisNexis Risk Solutions. Choose based on your target geography, budget, and whether you need full KYC plus transaction monitoring or just identity verification.'
 ---
 
-# KYC for mobile applications in FinTech
 
 *In the fast-paced world of financial technology (fintech), Know Your Customer (KYC) processes have emerged as a cornerstone of secure, efficient, and trustworthy mobile applications. As businesses navigate an increasingly digital landscape, robust KYC systems are essential for ensuring regulatory compliance, safeguarding user data, and fostering customer confidence.*
 

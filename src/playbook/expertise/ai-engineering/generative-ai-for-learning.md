@@ -11,7 +11,6 @@ authorName: 'Maria Ovseytseva'
 authorImage: '/assets/images/author/maria.webp'
 ---
 
-# Generative AI in education: How learning and predicting events is revolutionising educational institutions
 
 _It is now well known that generative AI trends have spread to the field of education. Value is added by generative AI's ability to process large amounts of data, create content, adapt learning models, speed up administrative work and improve prediction._
 

@@ -22,7 +22,6 @@ faq:
     answer: 'The ceiling stays €15 million or 3% of global annual turnover, whichever is higher. Same teeth, longer fuse. A pre-IND biotech that ships an AI triage tool into a German hospital network in 2028 and gets fined under the AI Act does not get a discount because the rules took longer to phase in.'
 ---
 
-# The EU AI Act Just Got 16 Months Slower. Here Is Why That Is a Trap.
 
 *A client called me on May 8 with a one-line message: "Saw the Brussels news. Do we pause?" The answer was no, and the reasons matter more than the news.*
 

@@ -11,7 +11,6 @@ authorName: 'James Crawford'
 authorImage: '/assets/images/author/james_crawford.jpg'
 ---
 
-# Digital Stadium Services: A revolution in sports venue technology
 
 _Digital stadium services have brought a new era in fans and operators view and identified significant opportunities for business. Taking into consideration possibilities of stadium-linked applications and proper technologies of contemporary sports venues one can identify that stadiums are evolving into smarter, more efficient and more customer-oriented perspective. We should look into many-splendored aspects of this digital revolution – from fans’ personalization to innovations in sustainability – with real-world use cases in mind._
 

@@ -11,7 +11,6 @@ authorName: 'James Crawford'
 authorImage: '/assets/images/author/james_crawford.jpg'
 ---
 
-# How NHL loyalty programmes drive fan engagement through mobile apps
 
 What is more, included fans imply the use of more tools that will fit the technological world of the fans better. Many NHL teams have adopted mobile app loyalty programmes as a way of enhancing involvement and monetization of the fan base. These programmes provide fans with incentives, entertainment, and special interactions, also reap rich benefits to teams on rich data.
 

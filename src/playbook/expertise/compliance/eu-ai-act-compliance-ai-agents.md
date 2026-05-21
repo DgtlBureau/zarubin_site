@@ -22,7 +22,6 @@ faq:
     answer: 'No. The AI Act does not create new legal bases for data processing. If your AI agent processes personal data of EU residents, you must comply with both GDPR and the AI Act simultaneously. The most practical approach is to integrate your DPIA (GDPR) and FRIA (AI Act Article 27) into a single assessment process.'
 ---
 
-# EU AI Act Compliance for AI Agents: The Technical Checklist for August 2026
 
 Last month, a fintech CTO I work with asked their legal team a straightforward question: "Are our AI agents high-risk under the EU AI Act?" The lawyers came back three weeks later with a 40-page memo that boiled down to "probably, but it depends." Meanwhile, the August 2, 2026 compliance deadline kept getting closer.
 

@@ -11,7 +11,6 @@ authorName: 'Daniella Mitchell'
 authorImage: '/assets/images/author/daniella_mitchell.jpg'
 ---
 
-# Information security in custom digital product development: What you need to know
 
 When developing custom digital products, **security** often takes a back seat to **visual appeal** and **user experience**. While the design and functionality of a product are critical to delivering value to the customer, **data security** is equally, if not more, important. Many companies overlook security during development, only to realise the consequences after a security breach or data leak.
 
@@ -66,7 +65,7 @@ This C# example demonstrates how to encrypt sensitive data before storing it in 
 
 ![](https://imgur.com/bhFu12s.jpg)
 
-# 3. Password management and data transfer
+### 3. Password management and data transfer
 
 One of the most critical areas of security is the handling of passwords and data transmission. Developers should implement secure methods for storing, transmitting and encrypting passwords. Some best practices include
 

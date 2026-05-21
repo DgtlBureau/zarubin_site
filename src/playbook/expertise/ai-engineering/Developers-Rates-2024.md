@@ -11,7 +11,6 @@ authorName: 'Daniella Mitchell'
 authorImage: '/assets/images/author/daniella_mitchell.jpg'
 ---
 
-# Custom Software Development Rates by Country
 
 In the world of software development, the temptation to go for cheaper solutions is a constant challenge, especially for companies trying to manage tight budgets. However, data shows that cutting costs often comes at a high price: **more than 50% of IT projects fail or experience significant problems** due to factors such as inadequate skills, misaligned expectations or technical debt that accumulates over time. In this article, I'll outline why hiring low-cost developers can be risky and explore the factors that make it difficult to balance cost, quality and speed.
 

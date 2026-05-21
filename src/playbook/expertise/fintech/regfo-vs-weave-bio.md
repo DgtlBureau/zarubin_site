@@ -26,7 +26,6 @@ faq:
     answer: 'Every finding in Regfo points to the exact ICH or FDA section it flags. There are no black-box outputs. If Regfo says your cardiovascular safety pharmacology package is missing a hERG assay, it tells you which ICH guideline requires it and which section of your package it would live in. Auditable by design.'
 ---
 
-# Regfo vs Weave Bio: Two Different Tools for Two Different Problems
 
 Both Regfo and Weave Bio use AI for regulatory compliance in biotech. That's about it for what they share.
 

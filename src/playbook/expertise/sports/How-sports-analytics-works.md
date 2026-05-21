@@ -11,7 +11,6 @@ authorName: 'James Crawford'
 authorImage: '/assets/images/author/james_crawford.jpg'
 ---
 
-# How Sports Analytics and Data Collection Systems Work in Schools and Colleges
 
 The integration of sports analytics and data collection systems into schools and colleges is revolutionizing how athletic programs operate, manage player performance, and strategize for future success. What was once the domain of professional sports teams has now trickled down into academic settings, empowering student-athletes and coaching staff with precise, data-driven insights. This advancement is transforming the way sports programs are designed, making them more competitive, efficient, and tailored to individual and team growth.
 

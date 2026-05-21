@@ -11,7 +11,6 @@ authorName: 'Daniella Mitchell'
 authorImage: '/assets/images/author/daniella_mitchell.jpg'
 ---
 
-# Why DevOps Still Matters: Key Benefits for High-Load System Management
 
 ## Introduction
 

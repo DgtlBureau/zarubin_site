@@ -18,7 +18,6 @@ faq:
     answer: 'Yes. While OpenAI and Anthropic are not yet designated as Critical ICT Third-Party Providers (CTPPs), BaFin December 2025 guidance explicitly names foundation model providers like OpenAI, Anthropic, and Google as ICT third-party providers. Financial entities must have DORA-compliant contracts with them, including audit rights and exit strategies.'
 ---
 
-# DORA Compliance for AI Agents in Financial Services: What Your AI System Needs to Pass the Audit
 
 *The Digital Operational Resilience Act became enforceable in January 2025, and by end of that year, only half the financial sector had reached full compliance. Now regulators are shifting from paperwork to proof. If your institution runs AI for fraud detection, KYC, credit scoring, or transaction monitoring, here is what you need to know about passing an audit in 2026.*
 

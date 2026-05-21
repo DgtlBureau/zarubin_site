@@ -11,7 +11,6 @@ authorName: 'Daniella Mitchell'
 authorImage: '/assets/images/author/daniella_mitchell.jpg'
 ---
 
-# Organise retail food service with bespoke software solutions
 
 At **The BrightByte**, we specialise in delivering bespoke digital solutions that help businesses streamline operations and improve the customer experience. One of our key clients, [**Oazis**](https://thebrightbyte.com/solutions/oazis), required a comprehensive system to manage **shift workers** and deliver essential services while they were at remote sites. Our expertise enabled us to develop a bespoke system that integrates **food ordering** and **meal planning** directly into their **shift management application**. This system not only increases efficiency but also improves the overall experience for remote workers.
 

@@ -20,7 +20,6 @@ faq:
     answer: 'Because attackers can fake any single field cheaply. Cross-correlating IP country, BIN country, timezone offset, and browser language exposes mismatches that no single field would surface. A real customer hits four-for-four. A carder running stolen UK credentials through a Czech proxy hits two-for-four, and that delta is the signal.'
 ---
 
-# Why Browser Data Alone Will Not Catch Fraud: A Look Inside the 3DS Payload
 
 *We pulled the actual payload an acquirer ships per transaction, and read it field by field. Most of what is positioned as AI-powered fraud detection is built on a public dataset that costs $200 a month to defeat.*
 

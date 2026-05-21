@@ -22,7 +22,6 @@ faq:
     answer: 'Expected Threat (xT) measures how a players action increases the probability of scoring by tracking ball movement across pitch zones. Unlike traditional stats, xT values every action that moves the ball into dangerous areas, helping coaches identify players who create chances even without goals or assists on their record.'
 ---
 
-# How AI is Transforming Real-Time Coaching: The Future of Sports Analytics
 
 _A coach glances at their tablet during halftime. The screen shows a player's fatigue index climbing toward the red zone, their sprint recovery time 12% slower than baseline, and a recommendation to substitute them before the 65th minute. This is not science fiction. This is how elite sports teams make decisions in 2025._
 
