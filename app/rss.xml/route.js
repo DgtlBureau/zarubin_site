@@ -22,6 +22,8 @@ const insightsData = insights.map((item) => {
 });
 const allData = [...expertiseData, ...insightsData];
 
+export const dynamic = 'force-static';
+
 export async function GET() {
   const feed = new RSS({
     title: 'The BrightByte Expertise and Insights',

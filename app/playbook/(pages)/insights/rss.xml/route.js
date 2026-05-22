@@ -6,6 +6,8 @@ import RSS from 'rss';
 
 const allInsights = getInsightsMetadata();
 
+export const dynamic = 'force-static';
+
 export async function GET() {
   const feed = new RSS({
     title: 'The BrightByte Insights',
