@@ -1,5 +1,8 @@
 import { MainPageComponent } from '@/src/components/MainPage/MainPage';
-import { generateOrganizationSchema } from '@/src/utils/organizationSchema';
+import {
+  generateLocalBusinessSchema,
+  generateOrganizationSchema,
+} from '@/src/utils/organizationSchema';
 import { pageMetadata } from '@/src/utils/pageMetadata';
 import { Seo } from '@/src/utils/Seo/Seo';
 
@@ -15,6 +18,7 @@ export async function generateMetadata() {
 
 export default async function Home() {
   const organizationSchema = generateOrganizationSchema();
+  const professionalServiceSchema = generateLocalBusinessSchema();
 
   return (
     <>
@@ -22,6 +26,12 @@ export default async function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(organizationSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(professionalServiceSchema),
         }}
       />
       <MainPageComponent />

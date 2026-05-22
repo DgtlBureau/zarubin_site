@@ -27,6 +27,15 @@ export function generateOrganizationSchema() {
       'https://www.linkedin.com/company/thebrightbyte/',
     ],
     knowsAbout: [
+      'AI Agent Security',
+      'AI Red Teaming',
+      'Prompt Injection Defense',
+      'Indirect Prompt Injection',
+      'MCP Server Security',
+      'LLM Security Audit',
+      'AI Governance Audit Trail',
+      'Immutable AI Logging',
+      'AI Compliance Audit',
       'Compliance-Friendly AI Agents',
       'AI Fine-Tuning',
       'RAG Systems',
@@ -38,6 +47,10 @@ export function generateOrganizationSchema() {
       'SOC2 Compliance',
       'HIPAA Compliance',
       'FDA Regulatory Compliance',
+      'FDA 21 CFR Part 11',
+      'EU AI Act Compliance',
+      'DORA Compliance',
+      'PCI DSS 4.0',
       'Biotech Regulatory Affairs',
       'Claude API',
       'Anthropic SDK',
@@ -54,6 +67,10 @@ export function generateOrganizationSchema() {
     ],
     areaServed: 'Worldwide',
     serviceType: [
+      'AI Agent Security Audit',
+      'AI Compliance Audit',
+      'MCP Security Audit',
+      'LLM Red Teaming',
       'AI Agent Development',
       'LLM Fine-Tuning',
       'RAG System Development',
@@ -82,11 +99,13 @@ export function generateLocalBusinessSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
+    '@id': `${BASE_URL}/#service`,
     name: 'The BrightByte',
     url: BASE_URL,
     logo: `${BASE_URL}/assets/images/icons/favicon.svg`,
+    image: `${BASE_URL}/assets/images/icons/favicon.svg`,
     description:
-      'AI agents, fine-tuning, and compliance automation for regulated industries.',
+      'AI agent security, compliance audits, and custom AI development for fintech, biotech, and healthcare. SOC 2, HIPAA, FDA 21 CFR Part 11, EU AI Act, DORA.',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Raleigh',
@@ -95,5 +114,61 @@ export function generateLocalBusinessSchema() {
     },
     priceRange: '$$$',
     openingHours: 'Mo-Fr 09:00-18:00',
+    areaServed: [
+      { '@type': 'Country', name: 'United States' },
+      { '@type': 'Country', name: 'United Kingdom' },
+      { '@type': 'Place', name: 'European Union' },
+    ],
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'AI Security and Compliance Services',
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'AI Agent Security Audit',
+            description:
+              'Threat modeling, prompt-injection testing, MCP server review, and remediation roadmap for production AI agents.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'AI Compliance Audit',
+            description:
+              'Gap analysis against SOC 2, HIPAA, FDA 21 CFR Part 11, EU AI Act, and DORA. Audit-trail review, documentation, and remediation plan.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'LLM Red Teaming',
+            description:
+              'Adversarial testing of LLM-based products for prompt injection, jailbreaks, data exfiltration, and the lethal-trifecta agent pattern.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'MCP Security Audit',
+            description:
+              'Security review of Model Context Protocol servers and clients used by Claude Code, Cursor, and other AI development workflows.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Custom AI Development',
+            description:
+              'Compliance-first AI agents, RAG systems, and fine-tuned models for regulated industries. 4-8 week prototype.',
+          },
+        },
+      ],
+    },
   };
 }
