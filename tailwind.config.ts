@@ -7,9 +7,7 @@ const config: Config = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx,md}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './node_modules/tw-elements-react/dist/js/**/*.js',
   ],
-  safelist: ['animate-slide-in', 'animate-fade-in', 'animate-fade-out'],
   theme: {
     extend: {
       boxShadow: {
@@ -189,9 +187,6 @@ const config: Config = {
       'fade-out': 'fade 1s ease-in-out reverse',
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-    require('tw-elements-react/dist/plugin.cjs'),
-  ],
+  plugins: [require('@tailwindcss/typography')],
 };
 export default config;
