@@ -1,6 +1,6 @@
 ---
-title: 'DORA Compliance for AI in Financial Services'
-description: 'DORA treats AI as ICT risk. 4-hour incident reports, third-party audits, 5-year logs. The technical checklist CTOs in fintech must build now.'
+title: 'DORA Compliance for AI Systems: 2026 Fintech CTO Checklist'
+description: 'DORA treats AI as ICT risk. 4-hour incident windows, 5-year logs, vendor exit clauses, audit tools. The technical checklist fintech CTOs build in 2026.'
 image: '/assets/images/info/dora-compliance-ai-fintech.webp'
 date: '16-04-2026'
 readingTime: '13 min'

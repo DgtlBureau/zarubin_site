@@ -1,6 +1,6 @@
 ---
-title: 'AI Audit Trail Architecture: HIPAA, GDPR, DORA'
-description: 'How to build immutable AI audit logs that satisfy HIPAA, GDPR, and DORA at once. Schemas, retention rules, and tools that survive a real audit.'
+title: 'AI Governance Audit Trail: Immutable Ledger for HIPAA & DORA'
+description: 'Build immutable audit trails for AI agents that pass HIPAA, DORA, and GDPR review. Merkle-chain schemas, retention rules, logging that survives a real audit.'
 image: '/assets/images/info/ai-audit-trail-architecture.webp'
 date: '16-04-2026'
 readingTime: '15 min'
