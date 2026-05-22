@@ -68,11 +68,12 @@ export const generateStaticParams = async () => {
   return posts.map((post) => ({ slug: post.slug }));
 };
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}) {
+export async function generateMetadata(
+  props: {
+    params: Promise<{ slug: string }>;
+  }
+) {
+  const params = await props.params;
   const post = getPostContent(params.slug);
 
   if (!post) {
@@ -117,8 +118,8 @@ export async function generateMetadata({
   };
 }
 
-export default function InsightsPostPage(props: { params: { slug: string } }) {
-  const slug = props.params.slug;
+export default async function InsightsPostPage(props: { params: Promise<{ slug: string }> }) {
+  const slug = (await props.params).slug;
   const post = getPostContent(slug);
 
   if (!post) {

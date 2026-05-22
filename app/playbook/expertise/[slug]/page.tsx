@@ -78,11 +78,12 @@ const getPostContent = (slug: string) => {
   }
 };
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}) {
+export async function generateMetadata(
+  props: {
+    params: Promise<{ slug: string }>;
+  }
+) {
+  const params = await props.params;
   const post = getPostContent(params.slug);
 
   if (!post) {
@@ -130,8 +131,8 @@ export async function generateMetadata({
   };
 }
 
-export default function ExpertisePostPage(props: { params: { slug: string } }) {
-  const { slug } = props.params;
+export default async function ExpertisePostPage(props: { params: Promise<{ slug: string }> }) {
+  const { slug } = (await props.params);
   const post = getPostContent(slug);
 
   if (!post) {

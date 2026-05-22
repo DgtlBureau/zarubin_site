@@ -26,11 +26,12 @@ const description = contentTrimming(
 );
 const keywords = pageMetadata.main.keywords;
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { category: string; slug: string };
-}) {
+export async function generateMetadata(
+  props: {
+    params: Promise<{ category: string; slug: string }>;
+  }
+) {
+  const params = await props.params;
   return Seo({
     title,
     description,

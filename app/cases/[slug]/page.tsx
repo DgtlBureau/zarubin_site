@@ -43,11 +43,12 @@ export const generateStaticParams = async () => {
   return posts.map((post) => ({ slug: post.slug }));
 };
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}) {
+export async function generateMetadata(
+  props: {
+    params: Promise<{ slug: string }>;
+  }
+) {
+  const params = await props.params;
   const post = getCaseContent(params.slug);
 
   if (!post) {
@@ -81,8 +82,8 @@ export async function generateMetadata({
   };
 }
 
-export default async function CasePage(props: { params: { slug: string } }) {
-  const slug = props.params.slug;
+export default async function CasePage(props: { params: Promise<{ slug: string }> }) {
+  const slug = (await props.params).slug;
   const post = getCaseContent(slug);
 
   if (!post) {
