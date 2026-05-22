@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 
 interface IPreposition {
   text: string;
-  tag: keyof JSX.IntrinsicElements;
+  tag: keyof React.JSX.IntrinsicElements;
   className: string;
   children?: ReactNode;
 }
