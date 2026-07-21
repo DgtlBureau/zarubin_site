@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Revanta Academy — Sports School Management: Payments, Subscriptions &amp; Scheduling</title>
+<meta name="description" content="Revanta Academy is a management platform for sports schools and academies — online payments, subscription plans, a shared calendar, attendance, player development and parent-coach communication in one system." />
+<meta name="keywords" content="sports school software, sports academy management, club subscription billing, training schedule software, sports club payments, attendance tracking, youth sports CRM, parent portal" />
+<meta name="author" content="Revanta" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content="#07080a" />
+<link rel="canonical" href="/revanta_academy" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Revanta" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="https://thebrightbyte.com/revanta_academy" />
+<meta property="og:title" content="Revanta Academy — Sports School Management: Payments, Subscriptions &amp; Scheduling" />
+<meta property="og:description" content="Online payments, subscription plans, a shared calendar, attendance and parent-coach communication — one platform for sports schools and academies." />
+<meta property="og:image" content="https://thebrightbyte.com/revanta/assets/img/academy/og-academy.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Revanta Academy parent dashboard" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Revanta Academy — Sports School Management: Payments, Subscriptions &amp; Scheduling" />
+<meta name="twitter:description" content="Online payments, subscription plans, a shared calendar, attendance and parent-coach communication — one platform for sports schools and academies." />
+<meta name="twitter:image" content="https://thebrightbyte.com/revanta/assets/img/academy/og-academy.jpg" />
+<meta name="twitter:image:alt" content="Revanta Academy parent dashboard" />
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://thebrightbyte.com/revanta#organization",
+      "name": "Revanta",
+      "url": "https://thebrightbyte.com/revanta",
+      "logo": "https://thebrightbyte.com/revanta/assets/img/revanta-logo.png",
+      "description": "Intelligent loyalty and CRM-marketing platform for retail.",
+      "email": "welcome@revanta.tech"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Revanta Academy",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Sports School Management Platform",
+      "operatingSystem": "Web",
+      "url": "https://thebrightbyte.com/revanta_academy",
+      "image": "https://thebrightbyte.com/revanta/assets/img/academy/og-academy.jpg",
+      "description": "Management platform for sports schools and academies: online payments, subscription plans, shared calendar, attendance, player development and communication.",
+      "publisher": { "@id": "https://thebrightbyte.com/revanta#organization" },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Book a personalized demo"
+      }
+    }
+  ]
+}
+</script>
+
+<link rel="icon" type="image/x-icon" href="/revanta/favicon.ico" />
+<link rel="icon" type="image/png" sizes="32x32" href="/revanta/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/revanta/favicon-16x16.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/revanta/apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          bg:'#07080a', surface:'#0c0e12', card:'#10141b', line:'#23262e',
+          ink:'#f5f7fa', mute:'#8a929e', brand:'#7fe7ff', brand2:'#b69dff', mint:'#8affc1', ok:'#8affc1',
+        },
+        fontFamily: {
+          sans: ['Geist','Inter','system-ui','-apple-system','Segoe UI','sans-serif'],
+          mono: ['"Geist Mono"','ui-monospace','SFMono-Regular','Menlo','monospace'],
+        },
+        boxShadow: { glow:'0 0 50px rgba(127,231,255,.25)' },
+      },
+    },
+  };
+</script>
+<link rel="stylesheet" href="/revanta/assets/css/styles.css" />
+<noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
+</head>
+<body class="relative overflow-x-hidden font-sans text-ink antialiased selection:bg-brand/30">
+
+<!-- Page-top ambient glow — spans behind the header AND hero so they read as one block -->
+<div class="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[820px]" style="background:radial-gradient(58% 48% at 50% 0%, rgba(127,231,255,.20), rgba(182,157,255,.11) 42%, transparent 72%)"></div>
+
+<!-- HEADER -->
+<header id="siteHeader" class="sticky top-0 z-50">
+  <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
+    <a href="/revanta" class="flex items-center gap-3" aria-label="Revanta — home">
+      <img src="/revanta/assets/img/revanta-logo.png" alt="Revanta" class="h-7 w-auto sm:h-8" />
+      <span class="rounded-full border border-brand/40 bg-brand/10 px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-[.14em] text-brand">Academy</span>
+    </a>
+    <div class="flex items-center gap-6">
+      <nav class="hidden items-center gap-7 text-sm text-mute md:flex">
+        <a href="#product" class="transition hover:text-ink">Product</a>
+        <a href="#roles" class="transition hover:text-ink">For every role</a>
+        <a href="#mvp" class="transition hover:text-ink">How it works</a>
+        <a href="/revanta" class="transition hover:text-ink">Revanta Retail</a>
+      </nav>
+      <a href="#demo" class="rounded-full bg-white px-5 py-2 text-sm font-semibold text-bg transition hover:bg-white/90">Book a demo</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="hero" class="relative overflow-hidden">
+  <div class="relative mx-auto max-w-7xl px-5 pt-6 pb-24 text-center sm:pt-10">
+    <!-- Headline -->
+    <h1 class="fade-up mx-auto max-w-5xl font-extrabold leading-[1.05] tracking-[-.04em]" style="animation-delay:.05s; font-size:clamp(2.1rem, 4.8vw, 5.25rem)">
+      <span class="block">Run your <span class="gradient-text">sports school</span></span>
+      <span class="block">without the spreadsheets</span>
+    </h1>
+    <p class="fade-up mx-auto mt-6 max-w-2xl text-base leading-relaxed text-mute sm:text-lg" style="animation-delay:.15s">
+      Subscriptions, online payments, a shared training calendar and a parent portal — Revanta Academy puts the whole academy in one system, for admins, coaches and families.
+    </p>
+    <div class="fade-up mt-9 flex flex-wrap items-center justify-center gap-3" style="animation-delay:.22s">
+      <a href="#demo" class="rounded-full btn-primary px-7 py-3 text-sm font-semibold shadow-glow transition">Book a demo</a>
+      <a href="#product" class="rounded-full border border-line bg-surface/60 px-7 py-3 text-sm font-semibold text-ink transition hover:border-brand/50">See the product</a>
+    </div>
+
+    <!-- Hero media — product screenshot in a window mockup -->
+    <div class="fade-up relative mx-auto mt-14 max-w-4xl" style="animation-delay:.3s">
+      <div class="absolute -inset-10 -z-10 rounded-[2.5rem] bg-brand/20 blur-3xl"></div>
+      <div class="absolute -inset-4 -z-10 rounded-[2rem] bg-brand2/15 blur-2xl"></div>
+      <div class="overflow-hidden rounded-2xl border border-line bg-card text-left shadow-2xl ring-line">
+        <img src="/revanta/assets/img/academy/academy-home.jpg" alt="Revanta Academy parent dashboard — attendance, homework, payments due and upcoming events" class="w-full" width="1600" height="962" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT — screenshot feature rows -->
+<section id="product" class="mx-auto max-w-7xl px-5 py-24">
+  <div class="reveal mx-auto mb-16 max-w-2xl text-center">
+    <p class="mb-3 text-sm font-semibold uppercase tracking-[.2em] text-brand">The product</p>
+    <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">Everything a school runs on, in one place</h2>
+    <p class="mt-4 text-mute">Real screens from Revanta Academy — payments, scheduling, plans and communication.</p>
+  </div>
+
+  <div class="space-y-20">
+    <!-- Payments -->
+    <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
+      <div class="reveal">
+        <p class="eyebrow mb-3 text-brand">Payments</p>
+        <h3 class="text-2xl font-extrabold tracking-tight sm:text-3xl">Get paid on time, every month</h3>
+        <p class="mt-4 leading-relaxed text-mute">Parents see exactly what's due and pay by card in two clicks — memberships, match entry fees and one-off charges, with the full payment history.</p>
+        <ul class="mt-5 space-y-2.5 text-sm text-mute">
+          <li class="flex items-start gap-2.5"><i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-ok"></i> Online card payments with due, pending and overdue statuses</li>
+          <li class="flex items-start gap-2.5"><i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-ok"></i> Competition sign-up with entry-fee payment and application status</li>
+          <li class="flex items-start gap-2.5"><i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-ok"></i> Auto-generated payment links and debt reports with Excel export</li>
+        </ul>
+      </div>
+      <div class="reveal overflow-hidden rounded-2xl border border-line bg-card shadow-2xl ring-line">
+        <img src="/revanta/assets/img/academy/academy-payments.jpg" alt="Revanta Academy payments — memberships, match fees and payment history with online card payment" class="w-full" width="1600" height="962" loading="lazy" />
+      </div>
+    </div>
+
+    <!-- Calendar -->
+    <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
+      <div class="reveal lg:order-2">
+        <p class="eyebrow mb-3 text-brand">Scheduling</p>
+        <h3 class="text-2xl font-extrabold tracking-tight sm:text-3xl">One calendar for the whole club</h3>
+        <p class="mt-4 leading-relaxed text-mute">Trainings, matches and tournaments across all groups and venues. Coaches create, move or cancel sessions — families see changes instantly and sync to their own calendars.</p>
+        <ul class="mt-5 space-y-2.5 text-sm text-mute">
+          <li class="flex items-start gap-2.5"><i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-ok"></i> Club-wide calendar with hall and pitch allocation</li>
+          <li class="flex items-start gap-2.5"><i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-ok"></i> Google and Apple calendar sync for parents and players</li>
+          <li class="flex items-start gap-2.5"><i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-ok"></i> Attendance marking per session, visible to families</li>
+        </ul>
+      </div>
+      <div class="reveal overflow-hidden rounded-2xl border border-line bg-card shadow-2xl ring-line lg:order-1">
+        <img src="/revanta/assets/img/academy/academy-calendar.jpg" alt="Revanta Academy calendar — trainings and matches across groups and venues" class="w-full" width="1600" height="962" loading="lazy" />
+      </div>
+    </div>
+
+    <!-- Plans -->
+    <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
+      <div class="reveal">
+        <p class="eyebrow mb-3 text-brand">Subscriptions</p>
+        <h3 class="text-2xl font-extrabold tracking-tight sm:text-3xl">Flexible plans for every group</h3>
+        <p class="mt-4 leading-relaxed text-mute">Monthly memberships, trial sessions and one-off charges — set the price per group or per player, and let families pick and pay for a plan right in their account.</p>
+        <ul class="mt-5 space-y-2.5 text-sm text-mute">
+          <li class="flex items-start gap-2.5"><i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-ok"></i> Membership tiers with active-subscriber counts</li>
+          <li class="flex items-start gap-2.5"><i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-ok"></i> Registration form builder — enroll new students with payment</li>
+          <li class="flex items-start gap-2.5"><i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-ok"></i> Parent invitations via link or code</li>
+        </ul>
+      </div>
+      <div class="reveal overflow-hidden rounded-2xl border border-line bg-card shadow-2xl ring-line">
+        <img src="/revanta/assets/img/academy/academy-plans.jpg" alt="Revanta Academy plans — membership fees and one-off charges with active subscriptions" class="w-full" width="1600" height="962" loading="lazy" />
+      </div>
+    </div>
+
+    <!-- Communication -->
+    <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
+      <div class="reveal lg:order-2">
+        <p class="eyebrow mb-3 text-brand">Communication</p>
+        <h3 class="text-2xl font-extrabold tracking-tight sm:text-3xl">Keep every family in the loop</h3>
+        <p class="mt-4 leading-relaxed text-mute">Team chats, direct messages with the coach and a club news feed — plus notifications for charges, payment deadlines, schedule changes and match results.</p>
+        <ul class="mt-5 space-y-2.5 text-sm text-mute">
+          <li class="flex items-start gap-2.5"><i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-ok"></i> Group chats per team and coach-parent direct messages</li>
+          <li class="flex items-start gap-2.5"><i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-ok"></i> News and announcements for the club or selected groups</li>
+          <li class="flex items-start gap-2.5"><i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-ok"></i> In-app notifications: billing, schedule changes, results</li>
+        </ul>
+      </div>
+      <div class="reveal overflow-hidden rounded-2xl border border-line bg-card shadow-2xl ring-line lg:order-1">
+        <img src="/revanta/assets/img/academy/academy-messages.jpg" alt="Revanta Academy messages — team chats and direct messages" class="w-full" width="1600" height="962" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROLES -->
+<section id="roles" class="mx-auto max-w-7xl px-5 py-24">
+  <div class="reveal mx-auto max-w-2xl text-center">
+    <p class="mb-3 text-sm font-semibold uppercase tracking-[.2em] text-brand">For every role</p>
+    <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">One platform, three workspaces</h2>
+    <p class="mt-4 text-mute">Parents, coaches and administrators each get their own view — connected by the same data.</p>
+  </div>
+  <div class="mt-14 grid gap-5 md:grid-cols-3">
+    <div class="reveal glass glass-hover sheen group relative h-full overflow-hidden rounded-3xl p-8">
+      <div class="pointer-events-none absolute -left-16 -bottom-16 h-48 w-48 rounded-full opacity-40 blur-3xl transition-opacity duration-500 group-hover:opacity-70" style="background:rgba(127,231,255,0.20)"></div>
+      <span class="relative z-10 grid h-11 w-11 place-items-center rounded-xl bg-brand/10 text-brand"><i data-lucide="users-round"></i></span>
+      <h3 class="relative z-10 mt-4 text-lg font-semibold text-white">Player &amp; Parent</h3>
+      <p class="relative z-10 mt-1.5 text-sm text-[var(--muted)]">A personal account for everything around the child's training.</p>
+      <ul class="relative z-10 mt-4 space-y-2 text-sm text-[var(--muted)]">
+        <li class="flex items-start gap-2.5"><span class="mt-[0.5em] h-1.5 w-1.5 shrink-0 rounded-full" style="background:var(--accent)"></span> Pick a plan and pay dues online, full payment history</li>
+        <li class="flex items-start gap-2.5"><span class="mt-[0.5em] h-1.5 w-1.5 shrink-0 rounded-full" style="background:var(--accent)"></span> Attendance, calendar with Google/Apple sync</li>
+        <li class="flex items-start gap-2.5"><span class="mt-[0.5em] h-1.5 w-1.5 shrink-0 rounded-full" style="background:var(--accent)"></span> Match scores, standings and player statistics</li>
+        <li class="flex items-start gap-2.5"><span class="mt-[0.5em] h-1.5 w-1.5 shrink-0 rounded-full" style="background:var(--accent)"></span> Development plan, progress and video highlights</li>
+        <li class="flex items-start gap-2.5"><span class="mt-[0.5em] h-1.5 w-1.5 shrink-0 rounded-full" style="background:var(--accent)"></span> Chats with the coach, team chat and club news</li>
+      </ul>
+    </div>
+    <div class="reveal glass glass-hover sheen group relative h-full overflow-hidden rounded-3xl p-8">
+      <div class="pointer-events-none absolute -left-16 -bottom-16 h-48 w-48 rounded-full opacity-40 blur-3xl transition-opacity duration-500 group-hover:opacity-70" style="background:rgba(127,231,255,0.20)"></div>
+      <span class="relative z-10 grid h-11 w-11 place-items-center rounded-xl bg-brand/10 text-brand"><i data-lucide="clipboard-list"></i></span>
+      <h3 class="relative z-10 mt-4 text-lg font-semibold text-white">Coach</h3>
+      <p class="relative z-10 mt-1.5 text-sm text-[var(--muted)]">The training process, from session plans to season stats.</p>
+      <ul class="relative z-10 mt-4 space-y-2 text-sm text-[var(--muted)]">
+        <li class="flex items-start gap-2.5"><span class="mt-[0.5em] h-1.5 w-1.5 shrink-0 rounded-full" style="background:var(--accent)"></span> Group calendar: create, move and cancel sessions</li>
+        <li class="flex items-start gap-2.5"><span class="mt-[0.5em] h-1.5 w-1.5 shrink-0 rounded-full" style="background:var(--accent)"></span> Attendance marking and group debt overview</li>
+        <li class="flex items-start gap-2.5"><span class="mt-[0.5em] h-1.5 w-1.5 shrink-0 rounded-full" style="background:var(--accent)"></span> Matches and tournaments: rosters, scores, match stats</li>
+        <li class="flex items-start gap-2.5"><span class="mt-[0.5em] h-1.5 w-1.5 shrink-0 rounded-full" style="background:var(--accent)"></span> Exercise library and individual development plans</li>
+        <li class="flex items-start gap-2.5"><span class="mt-[0.5em] h-1.5 w-1.5 shrink-0 rounded-full" style="background:var(--accent)"></span> Match video uploads linked to players</li>
+      </ul>
+    </div>
+    <div class="reveal glass glass-hover sheen group relative h-full overflow-hidden rounded-3xl p-8">
+      <div class="pointer-events-none absolute -left-16 -bottom-16 h-48 w-48 rounded-full opacity-40 blur-3xl transition-opacity duration-500 group-hover:opacity-70" style="background:rgba(127,231,255,0.20)"></div>
+      <span class="relative z-10 grid h-11 w-11 place-items-center rounded-xl bg-brand/10 text-brand"><i data-lucide="settings-2"></i></span>
+      <h3 class="relative z-10 mt-4 text-lg font-semibold text-white">Administrator</h3>
+      <p class="relative z-10 mt-1.5 text-sm text-[var(--muted)]">Billing, enrollment and operations for the whole club.</p>
+      <ul class="relative z-10 mt-4 space-y-2 text-sm text-[var(--muted)]">
+        <li class="flex items-start gap-2.5"><span class="mt-[0.5em] h-1.5 w-1.5 shrink-0 rounded-full" style="background:var(--accent)"></span> Fee plans per group or player, payment gateway, pay links</li>
+        <li class="flex items-start gap-2.5"><span class="mt-[0.5em] h-1.5 w-1.5 shrink-0 rounded-full" style="background:var(--accent)"></span> Payment and debt reports with Excel export</li>
+        <li class="flex items-start gap-2.5"><span class="mt-[0.5em] h-1.5 w-1.5 shrink-0 rounded-full" style="background:var(--accent)"></span> Enrollment form builder and parent invitations</li>
+        <li class="flex items-start gap-2.5"><span class="mt-[0.5em] h-1.5 w-1.5 shrink-0 rounded-full" style="background:var(--accent)"></span> Club calendar with hall and pitch allocation</li>
+        <li class="flex items-start gap-2.5"><span class="mt-[0.5em] h-1.5 w-1.5 shrink-0 rounded-full" style="background:var(--accent)"></span> Club-wide news, notifications and a shared exercise library</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- MVP / HOW IT WORKS -->
+<section id="mvp" class="relative overflow-hidden bg-bg">
+  <div class="pointer-events-none absolute -right-20 -top-24 h-80 w-80 rounded-full bg-brand/20 blur-3xl"></div>
+  <div class="pointer-events-none absolute -bottom-24 -left-16 h-72 w-72 rounded-full bg-brand2/15 blur-3xl"></div>
+  <div class="pointer-events-none absolute inset-x-0 top-0 h-32" style="background:linear-gradient(to bottom,#07080a,transparent)"></div>
+  <div class="pointer-events-none absolute inset-x-0 bottom-0 h-32" style="background:linear-gradient(to top,#07080a,transparent)"></div>
+  <div class="relative mx-auto max-w-7xl px-5 py-28 text-white">
+    <div class="reveal mx-auto max-w-2xl text-center">
+      <p class="text-sm font-semibold uppercase tracking-[.2em] text-white/70">How it works</p>
+      <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-white sm:text-5xl">Start simple, grow with your club</h2>
+      <p class="mx-auto mt-4 max-w-xl text-white/80">Launch with the essentials — payments, calendar and the parent portal — then switch on the rest when you're ready.</p>
+    </div>
+    <div class="relative mt-16 grid gap-6 md:grid-cols-3">
+      <div class="absolute left-[16%] right-[16%] top-7 hidden h-px bg-white/25 md:block"></div>
+      <div class="reveal glass glass-hover sheen group relative h-full overflow-hidden rounded-3xl p-8 text-center">
+        <div class="pointer-events-none absolute -left-16 -bottom-16 h-48 w-48 rounded-full opacity-40 blur-3xl transition-opacity duration-500 group-hover:opacity-70" style="background:rgba(127,231,255,0.20)"></div>
+        <div class="relative z-10 mx-auto grid h-14 w-14 place-items-center rounded-2xl bg-white/15 text-white"><i data-lucide="credit-card"></i></div>
+        <span class="relative z-10 mt-4 inline-block text-xs font-bold tracking-widest text-white/70">01</span>
+        <h3 class="relative z-10 mt-1 text-lg font-semibold text-white">Accept payments</h3>
+        <p class="relative z-10 mt-2 text-sm text-white/75">Set up plans and the payment gateway — families pay dues and fees online from day one</p>
+      </div>
+      <div class="reveal glass glass-hover sheen group relative h-full overflow-hidden rounded-3xl p-8 text-center">
+        <div class="pointer-events-none absolute -left-16 -bottom-16 h-48 w-48 rounded-full opacity-40 blur-3xl transition-opacity duration-500 group-hover:opacity-70" style="background:rgba(127,231,255,0.20)"></div>
+        <div class="relative z-10 mx-auto grid h-14 w-14 place-items-center rounded-2xl bg-white/15 text-white"><i data-lucide="calendar-days"></i></div>
+        <span class="relative z-10 mt-4 inline-block text-xs font-bold tracking-widest text-white/70">02</span>
+        <h3 class="relative z-10 mt-1 text-lg font-semibold text-white">Fill the calendar</h3>
+        <p class="relative z-10 mt-2 text-sm text-white/75">Groups, venues, trainings and matches — one schedule the whole club lives by</p>
+      </div>
+      <div class="reveal glass glass-hover sheen group relative h-full overflow-hidden rounded-3xl p-8 text-center">
+        <div class="pointer-events-none absolute -left-16 -bottom-16 h-48 w-48 rounded-full opacity-40 blur-3xl transition-opacity duration-500 group-hover:opacity-70" style="background:rgba(127,231,255,0.20)"></div>
+        <div class="relative z-10 mx-auto grid h-14 w-14 place-items-center rounded-2xl bg-white/15 text-white"><i data-lucide="heart-handshake"></i></div>
+        <span class="relative z-10 mt-4 inline-block text-xs font-bold tracking-widest text-white/70">03</span>
+        <h3 class="relative z-10 mt-1 text-lg font-semibold text-white">Invite families</h3>
+        <p class="relative z-10 mt-2 text-sm text-white/75">Parents get their own portal — events, groups, attendance and one-click payment</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA / FORM -->
+<section id="demo" class="mx-auto max-w-7xl px-5 py-24">
+  <div class="relative overflow-hidden rounded-3xl border border-line bg-gradient-to-br from-surface to-card">
+    <div class="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-brand/20 blur-3xl"></div>
+    <div class="relative grid items-center gap-10 p-8 sm:p-12 lg:grid-cols-2">
+      <div>
+        <p class="mb-3 text-sm font-semibold uppercase tracking-[.2em] text-brand">Demo</p>
+        <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">Spend the season coaching,<br><span class="gradient-text">not chasing payments</span></h2>
+        <p class="mt-4 max-w-md text-mute">Leave your contacts — we'll walk you through Revanta Academy on your club's structure and set up a pilot for one group.</p>
+        <ul class="mt-6 space-y-2.5 text-sm text-mute">
+          <li class="flex items-center gap-2"><i data-lucide="check" class="h-4 w-4 text-ok"></i> Personal demo in 30 minutes</li>
+          <li class="flex items-center gap-2"><i data-lucide="check" class="h-4 w-4 text-ok"></i> Pilot with one of your groups</li>
+          <li class="flex items-center gap-2"><i data-lucide="check" class="h-4 w-4 text-ok"></i> Payments live from week one</li>
+        </ul>
+      </div>
+      <form id="demoForm" novalidate class="rounded-2xl border border-line bg-bg/60 p-6 backdrop-blur">
+        <div class="space-y-4">
+          <div>
+            <label for="demoName" class="mb-1.5 block text-xs font-medium text-mute">Full name *</label>
+            <input id="demoName" name="name" type="text" required autocomplete="name" placeholder="John Smith" class="w-full rounded-lg border border-line bg-surface px-3 py-2.5 text-sm outline-none placeholder:text-mute/60 focus:border-brand" />
+          </div>
+          <div>
+            <label for="demoPhone" class="mb-1.5 block text-xs font-medium text-mute">Work phone *</label>
+            <input id="demoPhone" name="phone" type="tel" required inputmode="tel" autocomplete="tel" placeholder="+1 555 000 0000" class="w-full rounded-lg border border-line bg-surface px-3 py-2.5 text-sm outline-none placeholder:text-mute/60 focus:border-brand" />
+          </div>
+          <div>
+            <label for="demoEmail" class="mb-1.5 block text-xs font-medium text-mute">Work email *</label>
+            <input id="demoEmail" name="email" type="email" required autocomplete="email" placeholder="john@academy.com" class="w-full rounded-lg border border-line bg-surface px-3 py-2.5 text-sm outline-none placeholder:text-mute/60 focus:border-brand" />
+          </div>
+          <div>
+            <label for="demoCompany" class="mb-1.5 block text-xs font-medium text-mute">School / club</label>
+            <input id="demoCompany" name="company" type="text" autocomplete="organization" placeholder="Academy name" class="w-full rounded-lg border border-line bg-surface px-3 py-2.5 text-sm outline-none placeholder:text-mute/60 focus:border-brand" />
+          </div>
+          <div>
+            <label class="flex items-start gap-2 text-xs text-mute">
+              <input id="demoConsent" type="checkbox" required class="mt-0.5 accent-brand" /> <span>I agree to the processing of my data in accordance with the <a href="/revanta/privacy" class="text-brand underline underline-offset-2 hover:text-ink">Privacy Policy</a></span>
+            </label>
+            <p id="consentError" class="field-error" role="alert"></p>
+          </div>
+          <button type="submit" class="w-full rounded-xl btn-primary py-3 text-sm font-semibold shadow-glow transition">Request a demo</button>
+          <p id="demoHint" class="hidden text-center text-xs text-ok">Thanks! Opening your email client…</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="mx-auto max-w-7xl px-5 py-14">
+    <div class="grid gap-10 md:grid-cols-4">
+      <div>
+        <div class="flex items-center gap-2.5">
+          <a href="/revanta" aria-label="Revanta — home"><img src="/revanta/assets/img/revanta-logo.png" alt="Revanta" class="h-8 w-auto" /></a>
+        </div>
+        <p class="mt-4 max-w-xs text-sm text-mute">Revanta Academy — the management platform for sports schools and academies</p>
+      </div>
+      <div>
+        <p class="mb-4 text-sm font-semibold">Product</p>
+        <ul class="space-y-2.5 text-sm text-mute">
+          <li><a href="#product" class="hover:text-ink">Features</a></li>
+          <li><a href="#roles" class="hover:text-ink">For every role</a></li>
+          <li><a href="#mvp" class="hover:text-ink">How it works</a></li>
+          <li><a href="#demo" class="hover:text-ink">Demo</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="mb-4 text-sm font-semibold">Revanta</p>
+        <ul class="space-y-2.5 text-sm text-mute">
+          <li><a href="/revanta" class="hover:text-ink">Revanta Retail</a></li>
+          <li><a href="/revanta_academy" class="hover:text-ink">Revanta Academy</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="mb-4 text-sm font-semibold">Contact</p>
+        <ul class="space-y-2.5 text-sm text-mute">
+          <li><a href="mailto:welcome@revanta.tech" class="hover:text-ink">welcome@revanta.tech</a></li>
+          <li>Worldwide</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-line/60 pt-6 text-xs text-mute sm:flex-row">
+      <p>© Revanta, 2026. All rights reserved</p>
+      <div class="flex gap-5">
+        <a href="/revanta/privacy" class="hover:text-ink">Privacy Policy</a>
+        <a href="/revanta/terms" class="hover:text-ink">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="/revanta/assets/js/main.js"></script>
+</body>
+</html>

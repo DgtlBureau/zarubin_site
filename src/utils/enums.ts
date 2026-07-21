@@ -4,5 +4,5 @@ export enum MenuItems {
   INVESTMENTS = 'Investments',
   CAREER = 'Career',
   COMPARISON = 'Comparison',
-  SOC2_ASSESSMENT = 'SOC 2 Assessment',
+  REVANTA_SPORTS = 'Revanta Sports',
 }

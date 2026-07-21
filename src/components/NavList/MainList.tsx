@@ -16,6 +16,7 @@ interface List {
   name: string;
   link: string;
   isHighlighted?: boolean;
+  isExternal?: boolean;
 }
 
 export const MainList = ({
@@ -39,12 +40,21 @@ export const MainList = ({
           className='flex items-center justify-center gap-[10px]'
         >
           {item.isHighlighted ? (
-            <Link
-              href={item.link}
-              className='rounded-lg bg-gradient-to-r from-regfo-secondary to-regfo-accent px-4 py-2 font-inter text-[14px] font-medium text-white transition-all duration-200 hover:opacity-90 hover:shadow-lg hover:shadow-regfo-secondary/25'
-            >
-              {item.name}
-            </Link>
+            item.isExternal ? (
+              <a
+                href={item.link}
+                className='rounded-lg bg-gradient-to-r from-regfo-secondary to-regfo-accent px-4 py-2 font-inter text-[14px] font-medium text-white transition-all duration-200 hover:opacity-90 hover:shadow-lg hover:shadow-regfo-secondary/25'
+              >
+                {item.name}
+              </a>
+            ) : (
+              <Link
+                href={item.link}
+                className='rounded-lg bg-gradient-to-r from-regfo-secondary to-regfo-accent px-4 py-2 font-inter text-[14px] font-medium text-white transition-all duration-200 hover:opacity-90 hover:shadow-lg hover:shadow-regfo-secondary/25'
+              >
+                {item.name}
+              </Link>
+            )
           ) : (
             <Link
               href={item.link}

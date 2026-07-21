@@ -58,13 +58,23 @@ export const MobileMenu = ({
                 <div className='w-100 flex items-center justify-between gap-[10px]'>
                   {item.name.toLowerCase() !==
                   `${MenuItems.PLAYBOOK.toLowerCase()}` ? (
-                    <Link
-                      href={item.link}
-                      className={`${styles.menuLink} ${styles.dark} font-inter`}
-                      onClick={onClick}
-                    >
-                      {item.name}
-                    </Link>
+                    item.isExternal ? (
+                      <a
+                        href={item.link}
+                        className={`${styles.menuLink} ${styles.dark} font-inter`}
+                        onClick={onClick}
+                      >
+                        {item.name}
+                      </a>
+                    ) : (
+                      <Link
+                        href={item.link}
+                        className={`${styles.menuLink} ${styles.dark} font-inter`}
+                        onClick={onClick}
+                      >
+                        {item.name}
+                      </Link>
+                    )
                   ) : (
                     <button
                       type='button'

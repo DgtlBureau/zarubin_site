@@ -1,6 +1,14 @@
 import { MenuItems } from './enums';
 
-export const menuListLayer = [
+interface MenuListItem {
+  id: number;
+  name: string;
+  link: string;
+  isHighlighted?: boolean;
+  isExternal?: boolean;
+}
+
+export const menuListLayer: MenuListItem[] = [
   {
     id: 1,
     name: MenuItems.PLAYBOOK,
@@ -20,8 +28,10 @@ export const menuListLayer = [
   },
   {
     id: 6,
-    name: MenuItems.SOC2_ASSESSMENT,
-    link: '/soc2-checker',
+    name: MenuItems.REVANTA_SPORTS,
+    link: '/revanta',
     isHighlighted: true,
+    // Static page in /public — needs a full page load, not client-side routing
+    isExternal: true,
   },
 ];

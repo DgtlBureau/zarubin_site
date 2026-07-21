@@ -14,15 +14,25 @@ export const FooterNavMenu = () => {
           key={item.id}
           className='flex h-[30px] w-fit flex-col items-center justify-center'
         >
-          <Link
-            href={item.link}
-            className='group relative border-b-[2px] border-transparent font-inter text-[16px] leading-[1.87] text-white desktop:leading-[1.2]'
-          >
-            {item.name}
-            <div
-              className={`absolute h-[2px] bg-main-blue transition-all duration-200 group-hover:w-full ${pathname.startsWith(item.link) ? 'w-full' : 'w-0'}`}
-            />
-          </Link>
+          {item.isExternal ? (
+            <a
+              href={item.link}
+              className='group relative border-b-[2px] border-transparent font-inter text-[16px] leading-[1.87] text-white desktop:leading-[1.2]'
+            >
+              {item.name}
+              <div className='absolute h-[2px] w-0 bg-main-blue transition-all duration-200 group-hover:w-full' />
+            </a>
+          ) : (
+            <Link
+              href={item.link}
+              className='group relative border-b-[2px] border-transparent font-inter text-[16px] leading-[1.87] text-white desktop:leading-[1.2]'
+            >
+              {item.name}
+              <div
+                className={`absolute h-[2px] bg-main-blue transition-all duration-200 group-hover:w-full ${pathname.startsWith(item.link) ? 'w-full' : 'w-0'}`}
+              />
+            </Link>
+          )}
         </li>
       ))}
     </ul>
