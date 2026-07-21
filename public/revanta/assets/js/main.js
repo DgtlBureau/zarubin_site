@@ -291,7 +291,7 @@
       if (hint) hint.classList.remove("hidden");
 
       window.location.href =
-        "mailto:welcome@revanta.tech?subject=" +
+        "mailto:hello@revantasports.com?subject=" +
         encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
     });
   })();
