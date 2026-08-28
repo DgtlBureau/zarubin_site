@@ -100,7 +100,7 @@ The strongest sports platforms combine both: they resolve fan identity across so
 
 Bitrix, Salesforce, or Dynamics 365 can theoretically do anything. In practice, adapting a generic CRM for sports means months of custom development, ongoing maintenance costs, and a system that still does not understand concepts like "season ticket holder" or "match-day attendance."
 
-Purpose-built sports platforms (EngageRM, Sport:80, Arenametrix, Virazh) ship with these concepts out of the box.
+Purpose-built sports platforms (EngageRM, Sport:80, Arenametrix, Revanta) ship with these concepts out of the box.
 
 ### Mistake 2: Ignoring Data Ownership
 

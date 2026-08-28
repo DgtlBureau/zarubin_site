@@ -13,44 +13,44 @@ faq:
   - question: 'What is the best free CRM for a small sports club?'
     answer: 'Zoho CRM and HubSpot both offer free tiers. Zoho supports up to 3 users with basic contact management and automation. HubSpot gives you email marketing and landing pages for free, but caps contacts. Neither has ticket integration or stadium features — you will need to build those workflows yourself.'
   - question: 'How much does a sports CRM cost?'
-    answer: 'Prices range from free (Zoho, HubSpot basic) to $65-162 per user per month (Microsoft Dynamics 365). Purpose-built sports CRMs like Virazh, EngageRM, and Arenametrix use custom pricing based on club size and features — expect mid-market rates for clubs with 10,000-50,000 fans in their database.'
+    answer: 'Prices range from free (Zoho, HubSpot basic) to $65-162 per user per month (Microsoft Dynamics 365). Purpose-built sports CRMs like Revanta, EngageRM, and Arenametrix use custom pricing based on club size and features — expect mid-market rates for clubs with 10,000-50,000 fans in their database.'
   - question: 'What features should a sports CRM have?'
     answer: 'Five essentials: ticketing integration (connect to your ticket provider), unified fan profiles (aggregate data from tickets, merch, app, social), RFM segmentation (recency, frequency, monetary value), campaign automation (trigger emails based on fan behavior), and ROI reporting (measure revenue impact, not just open rates).'
   - question: 'Can you use Salesforce or HubSpot for a sports club?'
-    answer: 'You can, but you will spend months customizing them. Generic CRMs lack ticket integration, stadium seat maps, match-day workflows, and fan lifecycle tools. Small clubs with tight budgets may find Zoho or HubSpot adequate. Professional clubs with 10,000+ fans typically need purpose-built platforms like Virazh, EngageRM, or Arenametrix.'
-  - question: 'Virazh vs EngageRM vs Arenametrix — which one should I pick?'
-    answer: 'Virazh is built for professional clubs in Russia and CIS (HC Torpedo, Krylia Sovetov use it). EngageRM serves major franchises like LA Lakers and runs on Microsoft Dynamics at enterprise pricing. Arenametrix has the largest European installed base with 300+ clients across sports and cultural venues. Pick by region and scale: local CIS → Virazh, top-tier franchise → EngageRM, European club or multi-venue → Arenametrix.'
+    answer: 'You can, but you will spend months customizing them. Generic CRMs lack ticket integration, stadium seat maps, match-day workflows, and fan lifecycle tools. Small clubs with tight budgets may find Zoho or HubSpot adequate. Professional clubs with 10,000+ fans typically need purpose-built platforms like Revanta, EngageRM, or Arenametrix.'
+  - question: 'Revanta vs EngageRM vs Arenametrix — which one should I pick?'
+    answer: 'Revanta is built for professional hockey and football clubs in the KHL and in European leagues such as the Serbian SuperLiga and the Czech Fortuna Liga. EngageRM serves major franchises like LA Lakers and runs on Microsoft Dynamics at enterprise pricing. Arenametrix has the largest European installed base with 300+ clients across sports and cultural venues. Pick by profile and scale: club-level fan and match-day operations → Revanta, top-tier franchise → EngageRM, European multi-venue operator → Arenametrix.'
   - question: 'How long does it take to implement a sports CRM?'
-    answer: 'Generic tools like Zoho or HubSpot can be up and running in 1-2 weeks, but you will spend months building sports-specific workflows on top. Purpose-built sports CRMs (Virazh, EngageRM, Arenametrix) typically take 2-4 months for full deployment including data migration, ticketing integration, and staff training. EngageRM on Dynamics can stretch to 6 months for enterprise franchises.'
+    answer: 'Generic tools like Zoho or HubSpot can be up and running in 1-2 weeks, but you will spend months building sports-specific workflows on top. Purpose-built sports CRMs (Revanta, EngageRM, Arenametrix) typically take 2-4 months for full deployment including data migration, ticketing integration, and staff training. EngageRM on Dynamics can stretch to 6 months for enterprise franchises.'
 ---
 
 Most clubs still manage fan relationships through spreadsheets, scattered email lists, and disconnected ticketing systems. The result: missed upsell opportunities, generic marketing that fans ignore, and zero visibility into who actually fills the seats.
 
 A **sports CRM** solves this by connecting ticketing, fan data, marketing, and venue operations in one system. But not every CRM works for clubs. Generic platforms like Salesforce or HubSpot lack ticket connections, stadium maps, and fan lifecycle tools that teams actually need.
 
-We built [Virazh](https://digitalburo.tech/virazh), a CRM for professional sports clubs, so we know the space well. I've sat through demos of most of these tools, negotiated pricing with their sales teams, and tested how they handle real match-day scenarios. This guide compares 7 CRM systems that actually work for sports organizations, from purpose-built platforms to adaptable general-purpose tools.
+We built [Revanta](https://thebrightbyte.com/revanta), a CRM for professional sports clubs, so we know the space well. I've sat through demos of most of these tools, negotiated pricing with their sales teams, and tested how they handle real match-day scenarios. This guide compares 7 CRM systems that actually work for sports organizations, from purpose-built platforms to adaptable general-purpose tools.
 
 ## How do the top sports CRMs compare side by side?
 
 | CRM | Best For | Built for Sports | Price Range | Notable Clients |
 |-----|----------|:---------------:|-------------|-----------------|
-| **Virazh** | Professional clubs in Russia & CIS | Yes | Custom pricing | HC Torpedo (KHL), PFK Krylia Sovetov (RPL), HC Admiral (KHL) |
+| **Revanta** | Professional hockey & football clubs | Yes | Custom pricing | KHL clubs, Serbian SuperLiga and Czech Fortuna Liga football clubs |
 | **EngageRM** | Large franchises & leagues | Yes | Enterprise | LA Lakers, Cleveland Guardians, Collingwood FC |
 | **Arenametrix** | European clubs & cultural venues | Yes | Mid-market | 300+ clients, Stade Français, Swiss & Belgian leagues |
-| **Sport:80** | National federations & governing bodies | Yes | Custom pricing | UK Sport, British Cycling |
+| **Sport:80** | National federations & governing bodies | Yes | Custom pricing | Swim England, British Fencing, Archery GB |
 | **Zoho CRM** | Small clubs on a budget | No (adaptable) | Free — $65/user/mo | General-purpose |
 | **Microsoft Dynamics 365** | Large franchises with Microsoft stack | No (adaptable) | $65 — $162/user/mo | Leicester City FC |
 | **HubSpot** | Marketing-first organizations | No (adaptable) | Free — $1,200/mo | General-purpose |
 
-## 1. Virazh
+## 1. Revanta
 
-[Virazh](https://digitalburo.tech/virazh) is a CRM built specifically for professional clubs and arenas in Russia and CIS. Unlike generic CRMs adapted for sports, Virazh was designed from day one around the realities of running a team: season tickets, match-day operations, fan segmentation, and venue access control.
+[Revanta](https://thebrightbyte.com/revanta) is a CRM built specifically for professional clubs and arenas. Unlike generic CRMs adapted for sports, Revanta was designed from day one around the realities of running a team: season tickets, match-day operations, fan segmentation, and venue access control.
 
-Used by **HC Torpedo (KHL)**, **PFK Krylia Sovetov (RPL)**, and **HC Admiral (KHL)**.
+Used by clubs in the **KHL** and by football clubs in the **Serbian SuperLiga** and the **Czech Fortuna Liga**.
 
-![Virazh CRM dashboard](/assets/images/expertise/sport/crm-virazh.webp)
+![Revanta CRM for professional clubs](/assets/images/expertise/sport/crm-revanta.jpg)
 
-When HC Torpedo moved off their spreadsheet-and-email setup, their marketing team could finally see which fans bought season tickets, which ones came to three games and stopped, and which ones only showed up for derby matches. That visibility changed how they planned promotions — targeted offers to lapsed fans brought back roughly 15% of them the following season. Before Virazh, those fans were invisible. They just stopped showing up and nobody followed up because nobody knew.
+When one KHL club moved off their spreadsheet-and-email setup, their marketing team could finally see which fans bought season tickets, which ones came to three games and stopped, and which ones only showed up for derby matches. That visibility changed how they planned promotions — targeted offers to lapsed fans brought back roughly 15% of them the following season. Before Revanta, those fans were invisible. They just stopped showing up and nobody followed up because nobody knew.
 
 That story matters because it shows what a purpose-built CRM actually changes in day-to-day operations. It is not about having fancier software. It is about seeing patterns you were blind to before, and acting on them before the season ends.
 
@@ -59,14 +59,14 @@ That story matters because it shows what a purpose-built CRM actually changes in
 - **Designed for professional sports:** Templates for hockey, football, and multi-sport clubs. Stadium maps, season ticket management, and event-based workflows come standard — no configuration needed
 - **Golden Record:** A single fan profile that pulls data from tickets, merchandise, app usage, and venue visits, so your marketing team sees the complete picture instead of fragments scattered across five systems
 - **AI-powered marketing:** Predicts which fans are likely to buy season tickets, recommends promotions based on attendance patterns, and automates RFM segmentation. The model improves over time as it ingests more match-day data
-- **Free integrations:** Connects with major Russian ticketing operators, turnstile systems, payment services, and 1C accounting without additional fees
+- **Free integrations:** Connects with major ticketing operators, turnstile systems, payment services, and accounting systems without additional fees
 - **Mobile-first fan cabinet:** Fans get a personal account with calendar, merchandise store, stadium maps, and loyalty rewards — accessible on any device
 
 ### Limitations
 
 - Rich functionality requires onboarding — teams benefit from having a technical specialist during setup
 - No free tier; implementation requires investment
-- Currently focused on the Russian and CIS market
+- Focused on hockey and football clubs rather than multi-sport federations
 - Our AI-powered segmentation needs at least six months of historical ticket data before it starts producing useful predictions. Fresh clubs that just migrated from spreadsheets should expect a ramp-up period
 
 ## 2. EngageRM
@@ -79,7 +79,7 @@ Clients include the **LA Lakers**, **LA Clippers**, **Cleveland Guardians**, **N
 
 - **Microsoft partnership:** Deep connection with Dynamics 365, Power BI, and Azure gives SOC 2 compliant analytics and security that handles 50,000+ concurrent users on match day
 - **Proven at scale:** Used by NBA, MLB, and NFL franchises with stadiums seating 50,000+
-- **Sponsorship management:** Tools for tracking sponsor deliverables, activation, and ROI — a feature most CRMs for clubs ignore entirely. Credit where it's due: their sponsorship management is the one feature we studied carefully when building Virazh. Tracking sponsor deliverables and activation ROI in the same system as fan data is something most CRMs ignore. We're still working on matching that capability.
+- **Sponsorship management:** Tools for tracking sponsor deliverables, activation, and ROI — a feature most CRMs for clubs ignore entirely. Credit where it's due: their sponsorship management is the one feature we studied carefully when building Revanta. Tracking sponsor deliverables and activation ROI in the same system as fan data is something most CRMs ignore. We're still working on matching that capability.
 - **Global presence:** Offices in the US and Australia with support for multiple sports codes
 
 ### Limitations
@@ -90,11 +90,11 @@ Clients include the **LA Lakers**, **LA Clippers**, **Cleveland Guardians**, **N
 
 ## 3. Arenametrix
 
-[Arenametrix](https://arenametrix.com/) carved out a strong niche in Europe by serving both sports and cultural venues — a combination that makes sense when your stadium also hosts concerts. With **€8M in funding** and **300+ clients** including Stade Français and leagues in Switzerland and Belgium, they have the largest installed base of any CRM designed for sports in Europe. Their deep ticketing analytics are solid, connecting with European ticketing systems for attendance tracking and revenue analysis. The AI/ML features lag behind EngageRM and Virazh, though the gap is narrowing. If your club is based in Western Europe and needs a CRM that handles sporting events and cultural programming, Arenametrix is worth evaluating.
+[Arenametrix](https://arenametrix.com/) carved out a strong niche in Europe by serving both sports and cultural venues — a combination that makes sense when your stadium also hosts concerts. With **€8M in funding** and **300+ clients** including Stade Français and leagues in Switzerland and Belgium, they have the largest installed base of any CRM designed for sports in Europe. Their deep ticketing analytics are solid, connecting with European ticketing systems for attendance tracking and revenue analysis. The AI/ML features lag behind EngageRM and Revanta, though the gap is narrowing. If your club is based in Western Europe and needs a CRM that handles sporting events and cultural programming, Arenametrix is worth evaluating.
 
 ## 4. Sport:80
 
-[Sport:80](https://www.sport80.com/) serves a different market entirely — national federations and governing bodies, not professional clubs. If you're managing membership databases, coaching certifications, and competition results for British Cycling or similar organizations, it's purpose-built for that. Used by UK Sport and other national governing bodies. But if you're running a commercial team selling tickets and building fan relationships, Sport:80 isn't the right tool. Not every club needs this.
+[Sport:80](https://www.sport80.com/) serves a different market entirely — national federations and governing bodies, not professional clubs. If you're managing membership databases, coaching certifications, and competition results for a national governing body, it's purpose-built for that. Used by Swim England, British Fencing, Archery GB, and other national governing bodies. But if you're running a commercial team selling tickets and building fan relationships, Sport:80 isn't the right tool. Not every club needs this.
 
 ## 5. Zoho CRM
 
@@ -154,7 +154,7 @@ The right CRM depends on your organization type, size, and primary use case:
 
 | If you are... | Consider |
 |---------------|----------|
-| A **professional club** in Russia/CIS needing fan management + ticketing | **Virazh** — purpose-built, AI-powered, connects with local systems |
+| A **professional hockey or football club** needing fan management + ticketing | **Revanta** — purpose-built, AI-powered, connects with local ticketing systems |
 | A **major franchise** (NBA, NFL, AFL) needing tools that handle 50,000 fans on match day | **EngageRM** — proven at scale, Microsoft-backed |
 | A **European club or venue** hosting sports + cultural events | **Arenametrix** — 300+ clients, deep ticketing analytics |
 | A **national federation** managing members and competitions | **Sport:80** — built for governing bodies |
@@ -173,6 +173,6 @@ Before choosing, verify that the system supports your specific needs:
 
 ---
 
-*This comparison is maintained by The BrightByte team, creators of [Virazh CRM](https://digitalburo.tech/virazh). We update it as the sports CRM landscape evolves. Last updated: March 2026.*
+*This comparison is maintained by The BrightByte team, creators of [Revanta CRM](https://thebrightbyte.com/revanta). We update it as the sports CRM landscape evolves. Last updated: March 2026.*
 
 *Looking for a CRM for your sports club? [Get in touch](https://thebrightbyte.com/brief) — we can help you evaluate options based on your specific needs.*
