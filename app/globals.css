@@ -605,3 +605,24 @@ input:-webkit-autofill:active {
     }
   }
 }
+
+/* Hero slider: slow camera push on the background image, as on digitalburo.tech */
+@keyframes hero-zoom {
+  from {
+    transform: scale(1.08);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.swiper-slide-active .hero-media {
+  animation: hero-zoom 9s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .swiper-slide-active .hero-media {
+    animation: none;
+  }
+}

@@ -17,6 +17,14 @@ enum Hide {
   BONUSES = '/bonuses',
 }
 
+const DynamicRevantaMenu = dynamic(() =>
+  import('../Revanta/RevantaSubMenu/RevantaSubMenu').then(
+    (mod) => mod.RevantaSubMenu,
+  ),
+);
+
+export type SubmenuKind = 'expertise' | 'revanta';
+
 const DynamicExpertiseMenu = dynamic(() =>
   import('../Expertise/ExpertiseSubMenu/ExpertiseSubMenu').then(
     (mod) => mod.ExpertiseSubMenu,
@@ -36,15 +44,28 @@ export const Header = ({
 }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSubmenu, setActiveSubmenu] = useState(false);
+  const [submenuKind, setSubmenuKind] = useState<SubmenuKind>('expertise');
   const pathname = usePathname();
 
   const isBonusePage = pathname === Hide.BONUSES;
 
-  const handleChangeActiveMenu = (isActive: boolean) => {
+  const handleChangeActiveMenu = (isActive: boolean, kind?: SubmenuKind) => {
+    if (kind) setSubmenuKind(kind);
     setActiveSubmenu(isActive);
   };
 
   const isMobile = useMediaQuery('<laptop-big');
+
+  // BCT-style header: transparent over the home hero, solid once scrolled or a menu is open
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 80);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+  const transparent =
+    pathname === '/' && !scrolled && !activeSubmenu && !isOpen;
 
   const handleOpen = () => {
     setIsOpen((prev) => !prev);
@@ -58,11 +79,13 @@ export const Header = ({
   return (
     <header
       onMouseLeave={() => handleChangeActiveMenu(false)}
-      className={`${isBonusePage ? 'absolute' : 'sticky bg-main-bg'} top-0 z-50 mx-auto h-[100px] w-full`}
+      className={`${isBonusePage ? 'absolute' : 'sticky'} top-0 z-50 mx-auto h-[100px] w-full border-b transition-colors duration-300 ${
+        isBonusePage || transparent
+          ? 'border-transparent bg-transparent'
+          : 'border-white/10 bg-main-bg/95 backdrop-blur-md'
+      }`}
     >
-      <Container
-        className={`relative z-50 flex h-full items-center overflow-hidden ${isBonusePage ? '' : 'bg-main-bg'} `}
-      >
+      <Container className='relative z-50 flex h-full items-center overflow-hidden'>
         <Logo />
         {!isBonusePage && (
           <>
@@ -92,16 +115,23 @@ export const Header = ({
 
       {!isBonusePage && (
         <div
-          className={`scrollbar-thin relative z-20 mx-[auto] max-h-[600px] w-fit transform overflow-y-scroll bg-main-bg px-[20px] transition-all duration-300 ease-in-out ${
-            activeSubmenu ? 'translate-y-0' : '-translate-y-full'
+          onMouseEnter={() => handleChangeActiveMenu(true)}
+          className={`scrollbar-thin fixed left-0 right-0 top-[100px] z-40 flex max-h-[600px] justify-center overflow-y-auto border-b border-white/10 bg-main-bg px-[20px] shadow-[0_24px_48px_-24px_rgba(0,0,0,0.8)] transition-all duration-300 ease-in-out ${
+            activeSubmenu
+              ? 'translate-y-0 opacity-100'
+              : 'pointer-events-none -translate-y-4 opacity-0'
           } ${isMobile ? 'hidden' : 'visible'}`}
         >
-          <DynamicExpertiseMenu
-            onClick={() => handleChangeActiveMenu(false)}
-            expertiseSubMenu={expertiseSubmenu}
-            insightsSubMenu={insightsSubmenu}
-            expertiseMetadata={expertiseMetadata}
-          />
+          {submenuKind === 'revanta' ? (
+            <DynamicRevantaMenu onClick={() => handleChangeActiveMenu(false)} />
+          ) : (
+            <DynamicExpertiseMenu
+              onClick={() => handleChangeActiveMenu(false)}
+              expertiseSubMenu={expertiseSubmenu}
+              insightsSubMenu={insightsSubmenu}
+              expertiseMetadata={expertiseMetadata}
+            />
+          )}
         </div>
       )}
     </header>

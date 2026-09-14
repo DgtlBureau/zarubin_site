@@ -1,6 +1,7 @@
 import Arrow from '@/public/assets/images/icons/arrow.svg';
 import { MenuItems } from '@/src/utils/enums';
 import classNames from 'classnames';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -8,7 +9,7 @@ interface Props {
   list: List[];
   dark?: boolean;
   activeSubmenu: boolean;
-  onMenuItemHover: (isActive: boolean) => void;
+  onMenuItemHover: (isActive: boolean, kind?: 'expertise' | 'revanta') => void;
 }
 
 interface List {
@@ -32,14 +33,39 @@ export const MainList = ({
       {list.map((item) => (
         <li
           onMouseEnter={
-            item.name.toLowerCase() === `${MenuItems.PLAYBOOK.toLowerCase()}`
-              ? () => onMenuItemHover(true)
-              : () => onMenuItemHover(false)
+            item.name === MenuItems.REVANTA_SPORTS
+              ? () => onMenuItemHover(true, 'revanta')
+              : item.name.toLowerCase() ===
+                  `${MenuItems.PLAYBOOK.toLowerCase()}`
+                ? () => onMenuItemHover(true, 'expertise')
+                : () => onMenuItemHover(false)
           }
           key={item.id}
           className='flex items-center justify-center gap-[10px]'
         >
-          {item.isHighlighted ? (
+          {item.name === MenuItems.REVANTA_SPORTS ? (
+            // Revanta is shown as its wordmark, not a button; hovering opens the product menu
+            <a
+              href={item.link}
+              className='group relative block h-[14px] w-[96px]'
+            >
+              {/* Hover crossfades to the blue wordmark instead of swapping src — no blank frame on first hover */}
+              <Image
+                src='/revanta/assets/images/products/virazh/revanta-wordmark-white-v4.webp'
+                alt='Revanta'
+                fill
+                sizes='96px'
+                className='object-contain transition-opacity duration-200 group-hover:opacity-0'
+              />
+              <Image
+                src='/assets/images/brand/revanta-wordmark-blue.webp'
+                alt=''
+                fill
+                sizes='96px'
+                className='object-contain opacity-0 drop-shadow-[0_0_10px_rgba(59,91,246,0.6)] transition-opacity duration-200 group-hover:opacity-100'
+              />
+            </a>
+          ) : item.isHighlighted ? (
             item.isExternal ? (
               <a
                 href={item.link}
@@ -61,7 +87,7 @@ export const MainList = ({
               className={classNames(
                 `group relative border-b-[2px] border-transparent font-inter leading-[1.87]`,
                 dark
-                  ? 'text-[16px] text-white desktop:text-[16px]'
+                  ? 'text-[18px] text-white'
                   : 'text-[16px] text-[black]',
                 {
                   'border-b-[2px] !border-main-blue': pathname.startsWith(

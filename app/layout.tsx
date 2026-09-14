@@ -13,6 +13,7 @@ import localFont from 'next/font/local';
 import Script from 'next/script';
 import React from 'react';
 import 'swiper/css';
+import 'swiper/css/effect-fade';
 import './globals.css';
 
 const expertiseSubMenu = getArticlesList('expertise');
