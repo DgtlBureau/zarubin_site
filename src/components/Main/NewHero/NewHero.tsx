@@ -53,15 +53,15 @@ export const NewHero = () => {
 
               <Container className='relative z-10 flex h-full w-full flex-col justify-end pb-[48px] tablet:pb-[72px] desktop:pb-[96px]'>
                 {hero.tag && (
-                  <span className='mb-[12px] w-fit rounded-full border border-white/20 bg-white/10 px-[12px] py-[5px] font-inter text-[10px] font-medium text-white/90 backdrop-blur-sm tablet:text-[11px]'>
+                  <span className='mb-[18px] w-fit rounded-full border border-white/20 bg-white/10 px-[16px] py-[7px] font-inter text-[13px] font-medium text-white/90 backdrop-blur-sm tablet:text-[15px]'>
                     {hero.tag}
                   </span>
                 )}
-                <h2 className='max-w-[90%] font-inter text-[22px] font-semibold leading-[1.2] tracking-[-0.02em] text-white mobile-big:max-w-[500px] mobile-big:text-[24px] tablet:max-w-[600px] tablet:text-[32px] desktop:max-w-[700px] desktop:text-[38px]'>
+                <h2 className='max-w-[90%] font-inter text-[36px] font-semibold leading-[1.08] tracking-[-0.02em] text-white mobile-big:max-w-[560px] mobile-big:text-[44px] tablet:max-w-[760px] tablet:text-[60px] desktop:max-w-[960px] desktop:text-[76px]'>
                   {hero.title}
                 </h2>
                 {hero?.description && (
-                  <p className='mt-[10px] max-w-[90%] font-inter text-[13px] leading-[1.5] text-white/70 mobile-big:max-w-[400px] tablet:mt-[12px] tablet:max-w-[480px] tablet:text-[14px]'>
+                  <p className='mt-[16px] max-w-[90%] font-inter text-[17px] leading-[1.5] text-white/75 mobile-big:max-w-[520px] tablet:mt-[20px] tablet:max-w-[640px] tablet:text-[20px]'>
                     {hero.description}
                   </p>
                 )}
@@ -69,30 +69,30 @@ export const NewHero = () => {
                   // Revanta lives as static files in /public — needs a full page load
                   <a
                     href={hero.link}
-                    className='mt-[18px] w-fit rounded-[6px] bg-white px-[16px] py-[8px] font-inter text-[12px] font-semibold text-gray-900 transition-all duration-200 hover:bg-white/90 tablet:mt-[20px] tablet:px-[20px] tablet:py-[10px] tablet:text-[13px]'
+                    className='mt-[28px] w-fit rounded-[8px] bg-white px-[24px] py-[13px] font-inter text-[15px] font-semibold text-gray-900 transition-all duration-200 hover:bg-white/90 tablet:mt-[36px] tablet:px-[30px] tablet:py-[15px] tablet:text-[17px]'
                   >
                     {hero.linkName}
                   </a>
                 ) : (
                   <Link
                     href={hero.link || `/${MenuItems.CASES.toLowerCase()}`}
-                    className='mt-[18px] w-fit rounded-[6px] bg-white px-[16px] py-[8px] font-inter text-[12px] font-semibold text-gray-900 transition-all duration-200 hover:bg-white/90 tablet:mt-[20px] tablet:px-[20px] tablet:py-[10px] tablet:text-[13px]'
+                    className='mt-[28px] w-fit rounded-[8px] bg-white px-[24px] py-[13px] font-inter text-[15px] font-semibold text-gray-900 transition-all duration-200 hover:bg-white/90 tablet:mt-[36px] tablet:px-[30px] tablet:py-[15px] tablet:text-[17px]'
                   >
                     {hero.linkName || MenuItems.CASES}
                   </Link>
                 )}
 
                 {/* Dots below button, aligned left */}
-                <div className='mt-[14px] flex gap-[6px]'>
+                <div className='mt-[28px] flex gap-[8px]'>
                   {mainBanners.map((_, idx) => (
                     <button
                       key={idx}
                       type='button'
                       onClick={() => swiper?.slideTo(idx)}
-                      className={`h-[6px] rounded-full transition-all duration-300 ${
+                      className={`h-[8px] rounded-full transition-all duration-300 ${
                         idx === activeIndex
-                          ? 'w-[20px] bg-white'
-                          : 'w-[6px] bg-white/40 hover:bg-white/60'
+                          ? 'w-[32px] bg-white'
+                          : 'w-[8px] bg-white/40 hover:bg-white/60'
                       }`}
                     />
                   ))}
