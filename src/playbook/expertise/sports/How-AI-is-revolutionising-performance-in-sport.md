@@ -185,3 +185,5 @@ The sports organizations that thrive will treat analytics as infrastructure -- n
 - [Oxford Academic — Sport Analytics](https://academic.oup.com/columbia-scholarship-online/book/14198)
 - [The Business Research Company — Sports Market Report](https://blog.tbrc.info/2023/12/sports-market-report/)
 - [Torrens University — Sports Industry Growth](https://www.torrens.edu.au/stories/blog/business/why-sports-industry-is-booming-in-2020-which-key-players-driving-growth)
+
+At the club and academy level, [Revanta SportSchool](/revanta/youth-sports-club-software) records player testing, match stats and coach ratings so progress can be compared season over season.

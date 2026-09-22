@@ -29,7 +29,7 @@ Deloitte's 2024 Annual Review of Football Finance found that clubs with unified 
 
 The industry calls this a "golden record" — one profile per fan that pulls from every touchpoint. Several platforms handle this differently.
 
-**Revanta**, a sports CRM by The BrightByte, merges data from ticket systems, season passes, merchandise purchases, turnstile scans, Wi-Fi usage, call center interactions, and mobile app activity. It uses deterministic matching (phone number, email, customer ID) and probabilistic matching (name + date of birth + behavioral patterns) to deduplicate records. Clubs using Revanta typically clean up their database within two weeks, with automatic deduplication running continuously after that.
+[**Revanta**](/revanta/sports-crm), a sports CRM by The BrightByte, merges data from ticket systems, season passes, merchandise purchases, turnstile scans, Wi-Fi usage, call center interactions, and mobile app activity. It uses deterministic matching (phone number, email, customer ID) and probabilistic matching (name + date of birth + behavioral patterns) to deduplicate records. Clubs using Revanta typically clean up their database within two weeks, with automatic deduplication running continuously after that.
 
 **Salesforce Sports Cloud** takes a broader approach, connecting fan profiles with sponsor data and broadcast metrics. It works well for large multi-sport organizations that need to tie fan engagement back to sponsorship value.
 

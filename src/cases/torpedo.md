@@ -1,11 +1,11 @@
 ---
-title: 'Digital Fan Engagement Ecosystem'
+title: 'Hockey Club Fan Engagement Ecosystem'
 name: 'Hockey Club «Torpedo»'
-description: 'Digital ecosystem with mobile app, CRM, and analytics for fan interaction, ticket sales, and loyalty programs.'
-industries: ['Sports', 'CRM Integration', 'Mobile Apps']
+description: 'Digital ecosystem for a professional hockey club: mobile app, CRM and analytics for fan interaction, ticket sales and loyalty programs.'
+industries: ['Sports', 'Hockey', 'CRM Integration', 'Mobile Apps']
 type: 'SPORTS'
 tag: 'HC Torpedo'
-instruments: ['flutter', 'laravel', 'next', 'triboom', 'ml', 'claude']
+instruments: ['flutter', 'laravel', 'next', 'revanta', 'ml', 'claude']
 logo: '/assets/images/case/svg/torpedo.svg'
 bannerImage: '/assets/images/case/banner/torpedo-case.webp'
 images:
@@ -51,5 +51,7 @@ Hockey Club Torpedo's existing digital infrastructure faced several critical cha
 **PROJECT GOALS**
 
 This comprehensive digital transformation aims to enhance fan experience, increase operational efficiency, and establish Torpedo as a technology leader in professional hockey, setting new standards for fan engagement in the sports industry.
+
+The fan CRM, ticketing and loyalty part of this project runs on [Revanta Loyalty, our sports CRM for ticketing, season passes and fan loyalty](/revanta/sports-crm).
 
 _Project developed for Hockey Club Torpedo - Modernizing legendary hockey through cutting-edge technology_

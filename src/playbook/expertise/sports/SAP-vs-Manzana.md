@@ -158,3 +158,5 @@ In general, the evaluation of sports CRM software needs to be based on the scale
 
 - [SAP for Sports](https://www.sap.com/central-asia-caucasus/products/technology-platform/sports-one.html)
 - [Manzana Loyalty](http://www.manzanaloyalty.com/index.html)
+
+For clubs that need a sports CRM rather than a general enterprise suite, see [Revanta Loyalty](/revanta/sports-crm) and our [comparison of CRM software for sports clubs](/playbook/expertise/The-best-CRM).

@@ -37,3 +37,5 @@ Now imagine that the furniture company "Papaya" has grown significantly, opened 
 !['crm-image'](/assets/images/postPicture/crm_1.jpg)
 
 Choosing a system that doesn't suit your needs will make CRM work against you. You may face overload and unnecessary features that only complicate the interaction process. The technical aspect is not as important as the concept and idea. You need to choose a CRM based on the company's business task since the system can serve different purposes. This is what we do at the "Digital Technology Bureau"—product development. We don't just take on the task of "creating a website," but a product that will sell and meet the client's goals. And always in the process of building business models, it is important to clearly see the outcome and predict the desired result, so you make fewer rash decisions.
+
+For sports clubs specifically, see [Revanta Loyalty, a sports CRM with ticketing and season passes](/revanta/sports-crm) and our [comparison of CRM software for sports clubs](/playbook/expertise/The-best-CRM).

@@ -58,3 +58,5 @@ You need a platform that adapts to different tournament formats, integrates paym
 Too much to ask? Maybe. But for now, at least you know: organizing an amateur football event isn’t just fun and games—it’s closer to project management with a whistle.
 
 By Vitaliy Zarubin
+
+For clubs that run in-house leagues and tournaments on their own teams and fields, see [Revanta SportSchool, youth sports club software](/revanta/youth-sports-club-software).

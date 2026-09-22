@@ -97,32 +97,20 @@ export const footerLinks: IFooters[] = [
   },
   {
     id: 5,
-    title: 'Sport CRM',
+    title: 'Revanta',
     links: [
+      { name: 'Sports club software', link: '/revanta' },
       {
-        name: 'CRM for Ticket Sales',
-        link: '/playbook/expertise/How_CRM_helps_increase_ticket',
+        name: 'Youth sports registration',
+        link: '/revanta/youth-sports-club-software',
       },
+      { name: 'Sports CRM & ticketing', link: '/revanta/sports-crm' },
       {
-        name: 'CRM Implementation Mistakes',
-        link: '/playbook/expertise/Top_5_mistakes_when_implementing_CRM',
+        name: 'Ice rink & facility software',
+        link: '/revanta/sports-facility-software',
       },
-      {
-        name: 'Choosing Club CRM',
-        link: '/playbook/expertise/How_to_choose_a_CRM_for_a_sports_club',
-      },
-      {
-        name: 'Best CRM Systems',
-        link: '/playbook/expertise/The-best-CRM',
-      },
-      {
-        name: 'Stadium Management',
-        link: '/playbook/expertise/stadium-management-system',
-      },
-      {
-        name: 'NHL App Loyalty',
-        link: '/playbook/expertise/loyalty-programmes-in-nhl-club-mobile-apps',
-      },
+      { name: 'Club website builder', link: '/revanta/sports-club-website' },
+      { name: 'Club merch store', link: '/revanta/club-merch-store' },
     ],
   },
   {

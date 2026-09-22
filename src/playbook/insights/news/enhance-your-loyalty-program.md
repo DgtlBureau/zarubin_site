@@ -28,3 +28,5 @@ Loyalty programs become appealing to a larger audience if the participation mech
 All these principles form a strategy that goes beyond simply attracting the audience's attention. It's about reaching into the hearts and minds of the participants, fostering a deeper connection. The key takeaway: gamification in loyalty programs is crucial for creating an intuitive, personally significant, and socially engaging experience.
 
 Organizing a loyalty program based on these three key principles can transform customer interaction. It's about fostering a sense of enthusiasm and commitment, turning participants into passionate advocates for your brand.
+
+Points, tiers and achievements for attendance and purchases are built into [Revanta Loyalty, our fan loyalty program software for sports clubs](/revanta/sports-crm).

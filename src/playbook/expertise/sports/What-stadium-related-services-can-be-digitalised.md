@@ -140,3 +140,5 @@ When it comes to digitising stadium operations and enhancing the fan experience,
 The emerging digital services for stadia are enhancing the prospects for the business and venue operators to a remarkable level. From increasing fan interaction with stadium-related applications to harnessing sustainable technologies, everything is possible. Leading the market by embracing these advances will set the pace for fans, operations and the growth of sports venues in the future.
 
 So don't wait, it's high time you earned their loyalty and increased your revenues.
+
+For rinks, arenas and sports complexes, [Revanta Venues, ice rink and sports facility management software](/revanta/sports-facility-software), puts rentals, public sessions with QR tickets and utilization reports on one calendar.

@@ -168,3 +168,5 @@ Picking the CRM is step one. The real work starts with implementation:
 The clubs that get the most from their CRM treat it as the central nervous system of their fan operations — not as "that thing marketing uses." When ticketing, merchandise, stadium operations, and marketing all feed into and act on the same fan data, you stop guessing and start knowing.
 
 ![dashboard](/assets/images/expertise/sport/crm_for_a_sports_two.webp)
+
+If you want to see how these requirements look in a working system, [Revanta Loyalty](/revanta/sports-crm) is our sports CRM with ticketing, season passes and a fan loyalty program on one fan profile.

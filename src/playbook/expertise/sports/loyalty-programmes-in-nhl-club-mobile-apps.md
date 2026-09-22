@@ -90,3 +90,5 @@ For business owners and IT professionals, these are the effective approaches tha
 
 - [Club 1909 - Montreal Canadiens Loyalty Program](https://www.club1909.com)
 - [Canadiens](https://www.nhl.com/canadiens/info/jersey/home)
+
+Clubs below the NHL level can run the same mechanics without a large app budget: [Revanta Loyalty](/revanta/sports-crm) gives junior, minor league and college teams points, tiers and achievements tied to tickets and season passes.

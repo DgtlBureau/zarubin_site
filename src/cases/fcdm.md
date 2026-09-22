@@ -1,8 +1,8 @@
 ---
-title: 'Sports Club Digital Platform & API'
+title: 'Soccer Club Digital Platform & API'
 name: 'Soccer Club «Dynamo»'
-description: 'High-load backend with analytics and integrations ensuring stability for club digital services.'
-industries: ['Sports', 'CRM Integration', 'API Workflow']
+description: 'High-load backend with analytics and integrations that keeps a professional soccer club’s digital services stable.'
+industries: ['Sports', 'Soccer', 'CRM Integration', 'API Workflow']
 type: 'SPORTS'
 tag: 'FCDM'
 instruments: ['react', 'laravel', 'tribloom', 'ml']

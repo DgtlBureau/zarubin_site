@@ -174,3 +174,5 @@ For sports organizations evaluating their CRM today, the decision is not whether
 The cost of personalization fell by two orders of magnitude. The infrastructure to use that drop is finally mature. The teams that recognize the shift and act on it in the next 12 to 18 months will define how the commercial side of professional sports works for the rest of the decade. The teams that wait for "the technology to settle" will discover that the settling happened in 2024, and the bill for catching up grew while they watched.
 
 If you are running a sports CRM today and the words "rules-based segmentation" describe your stack, the conversation is overdue. We help sports organizations audit existing CRM stacks, identify the highest-ROI AI layer to deploy first, and plan the 18-month sequence end to end. Reach out if you want a second opinion on where your CRM sits on the curve.
+
+For the club that wants the base layer first, [Revanta Loyalty](/revanta/sports-crm) holds tickets, season passes, loyalty and campaigns on one fan profile, which is the data an AI layer needs.

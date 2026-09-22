@@ -346,6 +346,8 @@ The age of guesswork really is over. The teams that recognize this reality and a
 
 ---
 
+The groundwork for any of this is clean training data. [Revanta SportSchool, our youth sports club and academy software](/revanta/youth-sports-club-software), keeps practice plans, drills, attendance and fitness tests for every player.
+
 ## Sources
 
 - [WSC Sports - The $2.5B Secret: How AI Coaching is Transforming Elite Sports Performance](https://wsc-sports.com/blog/industry-insights/the-2-5b-secret-how-ai-coaching-is-transforming-elite-sports-performance/)

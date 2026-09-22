@@ -1,8 +1,8 @@
 ---
-title: 'Street Football Event Platform'
+title: 'Street Soccer Event Platform'
 name: 'Sports Event Digital Platform'
-description: 'API-integrated web platform for street football events with user engagement and loyalty features.'
-industries: ['Sports', 'Web', 'API Workflow']
+description: 'API-integrated web platform for a street soccer event, with user engagement and loyalty features.'
+industries: ['Sports', 'Soccer', 'Web', 'API Workflow']
 type: 'SPORTS'
 tag: 't-bank'
 instruments: ['laravel', 'react', 'ml']

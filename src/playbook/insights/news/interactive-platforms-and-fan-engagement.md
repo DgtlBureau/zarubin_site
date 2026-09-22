@@ -150,3 +150,5 @@ Digital fan engagement works when it starts from a simple question: "What would 
 Manchester City built an app that helps fans navigate matchday and rewards their loyalty. The NBA built a platform that lets fans watch basketball however they want. The Bundesliga built tools that make matches more interesting to follow. Each started with the fan's experience and worked backward to the technology.
 
 The clubs that will win the next decade of fan engagement are not the ones with the biggest technology budgets. They're the ones that understand their fans well enough to build something worth opening every day.
+
+If your club sells its own tickets and wants the fan data that comes with them, [Revanta Loyalty](/revanta/sports-crm) combines ticketing, season passes, loyalty and push or email campaigns in one fan engagement platform.

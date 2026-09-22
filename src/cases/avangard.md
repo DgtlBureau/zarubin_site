@@ -1,11 +1,11 @@
 ---
-title: 'Fan Engagement & Loyalty Platform'
+title: 'Hockey Club Fan Engagement & Loyalty App'
 name: 'Hockey Club «Avangard»'
-description: 'Native mobile application with CRM integration and loyalty rewards for personalized fan experience.'
-industries: ['Sports', 'CRM Integration', 'Mobile Apps']
+description: 'Native mobile app for a professional hockey club, with CRM integration and loyalty rewards for a personalized fan experience.'
+industries: ['Sports', 'Hockey', 'CRM Integration', 'Mobile Apps']
 type: 'SPORTS'
 tag: 'Avangard'
-instruments: ['flutter', 'laravel', 'triboom', 'react']
+instruments: ['flutter', 'laravel', 'revanta', 'react']
 logo: '/assets/images/case/svg/avangard.svg'
 bannerImage: '/assets/images/case/banner/avangard-case.webp'
 images: ['/assets/images/case/avangard-1.webp']

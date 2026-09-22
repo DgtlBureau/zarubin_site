@@ -21,7 +21,7 @@ export type InstrumentKey =
   | 'react-native'
   | 'next'
   | 'laravel'
-  | 'triboom'
+  | 'revanta'
   | 'ml'
   | 'claude'
   | 'unity'
@@ -49,5 +49,5 @@ export const InstrumentIcons: InstrumentIconsType = {
   claude: { name: 'Claude', icon: Claude },
   unity: { name: 'Unity', icon: Unity },
   ml: { name: 'TensorFlow', icon: Ml },
-  triboom: { name: 'Triboom', icon: null },
+  revanta: { name: 'Revanta', icon: null },
 };

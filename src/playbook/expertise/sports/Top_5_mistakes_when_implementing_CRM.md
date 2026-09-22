@@ -43,4 +43,6 @@ And lastly, there is no staff training. In America, employees undergo annual pro
 
 ## Results
 
-Most mistakes in CRM integration stem from ignorance. For example, money is not allocated because it is unclear what it will be spent on, or a loyalty program is launched only on promotional codes. It is unheard of that after launching one thing, another is not immediately put into circulation. There should always be a big plan in mind, without which it is impossible to move forward. CRM does not solve these problems, but at their root lies one thing: management and managerial decisions. 
+Most mistakes in CRM integration stem from ignorance. For example, money is not allocated because it is unclear what it will be spent on, or a loyalty program is launched only on promotional codes. It is unheard of that after launching one thing, another is not immediately put into circulation. There should always be a big plan in mind, without which it is impossible to move forward. CRM does not solve these problems, but at their root lies one thing: management and managerial decisions.
+
+We built [Revanta Loyalty](/revanta/sports-crm), a sports CRM with ticketing and season passes, with these mistakes in mind: the club sells tickets in its own system, so fan data lands in one profile from the first sale.

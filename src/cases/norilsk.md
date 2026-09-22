@@ -1,8 +1,8 @@
 ---
-title: 'Sports Club Website & Integrations'
+title: 'Hockey Club Website & Integrations'
 name: 'Hockey Club «Norilsk»'
-description: 'Official club website with backend integrations for real-time stats, media content, and ticketing systems.'
-industries: ['Sports', 'Web', 'API Workflow']
+description: 'Official hockey club website with backend integrations for real-time stats, media content and ticketing.'
+industries: ['Sports', 'Hockey', 'Web', 'API Workflow']
 type: 'SPORTS'
 tag: 'HC Norilsk'
 instruments: ['next', 'laravel']
