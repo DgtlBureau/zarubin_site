@@ -1,5 +1,6 @@
 import { Footer } from '@/src/components/Footer/Footer';
 import { Header } from '@/src/components/Header/Header';
+import { HideOnRevanta } from '@/src/components/SiteChrome/HideOnRevanta';
 import { ToastProvider } from '@/src/components/ToastProvider';
 import { SEO_DESCRIPTION_SIZE } from '@/src/utils/alias';
 import { getArticlesList } from '@/src/utils/articlesMenu';
@@ -108,14 +109,18 @@ export default function RootLayout({
         </style>
       </head>
       <body className={`flex flex-col bg-main-bg text-white ${bodyClassname}`}>
-        <Header
-          expertiseSubmenu={expertiseSubMenu}
-          insightsSubmenu={insightsSubMenu}
-          expertiseMetadata={playbookMetaData}
-        />
+        <HideOnRevanta>
+          <Header
+            expertiseSubmenu={expertiseSubMenu}
+            insightsSubmenu={insightsSubMenu}
+            expertiseMetadata={playbookMetaData}
+          />
+        </HideOnRevanta>
         <main className='flex flex-col'>{children}</main>
         <ToastProvider />
-        <Footer />
+        <HideOnRevanta>
+          <Footer />
+        </HideOnRevanta>
         <Script id='replain'>
           {`window.replainSettings = { id: '07c36061-dbc9-4cb8-85cb-9e69876b9d34' };
             (function(u){var s=document.createElement('script');s.async=true;s.src=u;

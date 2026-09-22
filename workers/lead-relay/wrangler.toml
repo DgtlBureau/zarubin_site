@@ -1,0 +1,14 @@
+name = "thebrightbyte-lead-relay"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+# Runs only on the API paths; the rest of the site stays on GitHub Pages.
+routes = [
+  { pattern = "thebrightbyte.com/api/*", zone_name = "thebrightbyte.com" },
+  { pattern = "www.thebrightbyte.com/api/*", zone_name = "thebrightbyte.com" },
+]
+
+[vars]
+TELEGRAM_CHAT_ID = "199942509"
+
+# Secret, set once with: npx wrangler secret put TELEGRAM_BOT_TOKEN

@@ -1,4 +1,4 @@
-import { RevantaPage } from '@/src/components/Revanta/RevantaPage/RevantaPage';
+import { RevantaLanding } from '@/src/components/Revanta/RevantaLanding/RevantaLanding';
 import { REVANTA_CONTENT } from '@/src/data/revanta/content';
 import { REVANTA_BASE } from '@/src/data/revanta/routes';
 import { generateRevantaSchemas } from '@/src/utils/revantaSchema';
@@ -31,7 +31,7 @@ export default function RevantaHubPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       ))}
-      <RevantaPage content={content} />
+      <RevantaLanding content={content} />
     </>
   );
 }

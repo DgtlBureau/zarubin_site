@@ -5,15 +5,69 @@ export interface RevantaFaq {
   answer: string;
 }
 
+/** Icon keys rendered by src/components/Revanta/RevantaIcons.tsx. */
+export type RevantaIconKey =
+  | 'award'
+  | 'chart'
+  | 'bot'
+  | 'network'
+  | 'ticket'
+  | 'building'
+  | 'calendar'
+  | 'users'
+  | 'shield'
+  | 'mobile'
+  | 'trend'
+  | 'dumbbell'
+  | 'clipboard'
+  | 'map'
+  | 'trophy'
+  | 'wallet'
+  | 'file'
+  | 'message'
+  | 'mail'
+  | 'gift'
+  | 'download'
+  | 'qr'
+  | 'newspaper'
+  | 'megaphone'
+  | 'shirt'
+  | 'package'
+  | 'truck'
+  | 'tag'
+  | 'user'
+  | 'layers'
+  | 'history'
+  | 'zap'
+  | 'workflow'
+  | 'target';
+
 export interface RevantaFeature {
   title: string;
   text: string;
+  icon?: RevantaIconKey;
 }
 
 export interface RevantaScenario {
   title: string;
   text: string;
   video: string;
+  /** Small uppercase label above the scenario title. */
+  tag?: string;
+  icon?: RevantaIconKey;
+  /** Numbered click path shown next to the recording. */
+  steps?: string[];
+}
+
+export interface RevantaBenefit {
+  title: string;
+  text: string;
+}
+
+/** Hub "who it suits" tab: the panel is assembled from that product's content. */
+export interface RevantaAudienceTab {
+  tab: string;
+  product: RevantaProductKey;
 }
 
 export interface RevantaComparisonRow {
@@ -37,6 +91,10 @@ export interface RevantaPageContent {
   audience: {
     heading: string;
     items: string[];
+    /** Portrait photo next to the audience chips on product pages. */
+    image?: string;
+    /** Hub only: segment tabs that open a panel per product. */
+    tabs?: RevantaAudienceTab[];
   };
   problem: {
     heading: string;
@@ -52,9 +110,15 @@ export interface RevantaPageContent {
     heading: string;
     items: RevantaScenario[];
   };
+  benefits?: {
+    heading: string;
+    items: RevantaBenefit[];
+  };
   facts: {
     heading: string;
     items: string[];
+    /** Icons for fact cells, same order as items. */
+    icons?: RevantaIconKey[];
   };
   comparison?: {
     heading: string;

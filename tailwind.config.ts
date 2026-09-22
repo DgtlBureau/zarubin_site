@@ -17,6 +17,7 @@ const config: Config = {
       animation: {
         scroll: 'scroll 10s linear infinite',
         changeAfterBgColor: 'changeAfterBgColor 0.5s ease-in-out forwards',
+        sheen: 'sheen 900ms cubic-bezier(0.22, 0.61, 0.36, 1) forwards',
       },
       keyframes: {
         scroll: {
@@ -27,6 +28,10 @@ const config: Config = {
           '0%': { backgroundColor: 'rgba(255, 255, 255, 0.3)' },
           '50%': { backgroundColor: 'white' },
           '100%': { backgroundColor: 'rgba(255, 255, 255, 0.3)' },
+        },
+        sheen: {
+          '0%': { transform: 'translateX(-70%)' },
+          '100%': { transform: 'translateX(70%)' },
         },
       },
       backgroundImage: {
@@ -122,6 +127,12 @@ const config: Config = {
           accent: '#06b6d4',
           light: '#f0f9ff',
           dark: '#0f172a',
+        },
+        // Revanta product pages (/revanta): navy palette of the original product design
+        revanta: {
+          blue: '#16213E',
+          ink: '#011239',
+          accent: '#3B5BF6',
         },
         'main-beige': '#F7F7F7',
         'main-bg': '#00030C',

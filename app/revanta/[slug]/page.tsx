@@ -1,4 +1,4 @@
-import { RevantaPage } from '@/src/components/Revanta/RevantaPage/RevantaPage';
+import { RevantaProductPage as RevantaProductView } from '@/src/components/Revanta/RevantaProductPage/RevantaProductPage';
 import { REVANTA_CONTENT } from '@/src/data/revanta/content';
 import { REVANTA_PRODUCTS, revantaHref } from '@/src/data/revanta/routes';
 import { generateRevantaSchemas } from '@/src/utils/revantaSchema';
@@ -57,7 +57,7 @@ export default async function RevantaProductPage(props: {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       ))}
-      <RevantaPage content={content} />
+      <RevantaProductView product={product.key} content={content} />
     </>
   );
 }

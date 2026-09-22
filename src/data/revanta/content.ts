@@ -37,9 +37,16 @@ const hub: RevantaPageContent = {
       'Ice rinks and arenas',
       'Sports complexes and rec centers',
     ],
+    tabs: [
+      { tab: 'Clubs and academies', product: 'sportschool' },
+      { tab: 'Spectator clubs', product: 'loyalty' },
+      { tab: 'Rinks and facilities', product: 'venues' },
+      { tab: 'Club website', product: 'sites' },
+      { tab: 'Merch store', product: 'ecom' },
+    ],
   },
   problem: {
-    heading: 'One system instead of five spreadsheets',
+    heading: 'One system for registration, tickets and bookings',
     before:
       'Registration sits in one tool, schedules in a group chat, tickets with a third-party seller and fan emails in a newsletter service. Nobody can see the same person across them, and every report is assembled by hand.',
     after:
@@ -52,26 +59,32 @@ const hub: RevantaPageContent = {
     items: [
       {
         title: 'Sports academy and club management: Revanta SportSchool',
+        icon: 'dumbbell',
         text: 'Registration and fee collection, tryouts and team building, practice and game schedules, field allocation, player development and family communication.',
       },
       {
         title: 'Ticketing, season passes and fan loyalty: Revanta Loyalty',
+        icon: 'award',
         text: 'Tickets and season passes, a fan profile with attendance history, points and tiers, promo codes and vouchers, segments and push or email campaigns.',
       },
       {
         title: 'Rink and sports facility management: Revanta Venues',
+        icon: 'building',
         text: 'Season and event schedules, facility rentals confirmed in one place, public sessions sold online with QR entry, and reports on the hours your venue sits empty.',
       },
       {
         title: 'Sports club website: Revanta Sites',
+        icon: 'newspaper',
         text: 'News, schedules, rosters and stats published from the same system, so the score is updated once.',
       },
       {
         title: 'Club merch store: Revanta e-com',
+        icon: 'shirt',
         text: 'A club store that sees who buys jerseys and who comes to games.',
       },
       {
         title: 'Segments and campaigns',
+        icon: 'target',
         text: 'Build a segment with filters, send an email or push to it, or switch on a ready trigger chain for a missed game, a birthday or expiring points.',
       },
     ],
@@ -83,26 +96,81 @@ const hub: RevantaPageContent = {
         title: 'Segment by purchase history',
         text: 'Pick the fans who buy often and agreed to hear from you. The segment is saved and reused.',
         video: 'segment-orders',
+        tag: 'Segments',
+        icon: 'users',
+        steps: [
+          'Users → Customers',
+          'The Audience segments panel',
+          'Agrees to receive mailings: yes',
+          'Number of orders: more than 4',
+          'Apply and save the segment',
+        ],
       },
       {
         title: 'An email to one segment',
-        text: 'Subject, body and recipients by saved segment. A targeted campaign in a couple of minutes, no developers.',
+        text: 'Pick the subject, body and a saved segment as recipients. The campaign takes a couple of minutes and needs no developers.',
         video: 'email-segment',
+        tag: 'Campaigns',
+        icon: 'mail',
+        steps: [
+          'Mailings → Email → Add mailing',
+          'Subject and the email body',
+          'Recipients: by filter preset',
+          'The saved more-than-3-orders segment',
+          'Create the mailing',
+        ],
       },
       {
         title: 'A ready chain from the template library',
-        text: 'Missed game, birthday, expiring points, welcome to the program: start from a template instead of a blank page.',
+        text: 'Missed game, birthday, expiring points, welcome to the program: start from a ready template.',
         video: 'chains-template',
+        tag: 'Chains',
+        icon: 'workflow',
+        steps: [
+          'Trigger chains → From template',
+          'The catalog of ready scenarios',
+          'The Team win template',
+          'Chain steps: pause, email, button',
+          'The chain is assembled: switch it on',
+        ],
       },
       {
         title: 'A trigger that fires on its own',
         text: 'When a fan moves up a loyalty tier, the chain sends the email and push without anyone touching it.',
         video: 'chains',
+        tag: 'Automation',
+        icon: 'zap',
+        steps: [
+          'Trigger chains → Create chain',
+          'Trigger event: loyalty tier raised',
+          'Audience: the more-than-3-orders segment',
+          'Add a step: a templated email',
+          'Sending time and the chain goal',
+          'Save: the chain is in the list',
+        ],
+      },
+    ],
+  },
+  benefits: {
+    heading: 'Benefits',
+    items: [
+      {
+        title: 'Personalization',
+        text: 'Segments, offers and messages follow what each fan actually does.',
+      },
+      {
+        title: 'Operations',
+        text: 'Registration, schedules, sales and bookings are tracked in one system, so managers see the club’s operations in reports.',
+      },
+      {
+        title: 'Result',
+        text: 'Revenue and retention decisions rest on attendance and purchase data the club already collects.',
       },
     ],
   },
   facts: {
     heading: 'Revanta at a glance',
+    icons: ['building', 'layers', 'user', 'mobile', 'shield', 'calendar'],
     items: [
       'Sports club software made by The BrightByte (The BrightByte Capital LLC, USA).',
       'Five modules: SportSchool, Loyalty, Venues, Sites and e-com. Use one or all of them.',
@@ -201,11 +269,12 @@ const sportschool: RevantaPageContent = {
       'Leagues and associations',
       'Club directors and coaching staff',
     ],
+    image: `${REVANTA_IMAGES}/sportschool-audience.webp`,
   },
   problem: {
-    heading: 'Stop running the club from group chats and paper',
+    heading: 'Club operations in one system',
     before:
-      'Registration comes in through forms and payment links, schedules are built by hand in group chats, attendance and training load live in a coach’s notebook, and fitness tests are written down twice a year. Team decisions are made by eye.',
+      'Registration comes in through forms and payment links, schedules are built by hand in group chats, attendance and training load live in a coach’s notebook, and fitness tests are written down twice a year, and team decisions are made by eye.',
     after:
       'Revanta SportSchool moves the whole cycle into one system: from registration and fees to the season plan, field time, attendance and a player card with test results. Directors see the club as a whole, families see their child’s progress, and your coaching method stays with the club.',
   },
@@ -214,39 +283,48 @@ const sportschool: RevantaPageContent = {
     items: [
       {
         title: 'Youth sports registration and fee collection',
-        text: 'Sign-ups and season fees land in the same place your coaches work. No exports, no chasing checks.',
+        icon: 'clipboard',
+        text: 'Sign-ups and season fees land in the same system your coaches work in, so the office does not export lists or chase checks.',
       },
       {
         title: 'Tryout evaluation and team formation',
+        icon: 'users',
         text: 'Tryout scores become team rosters in one pass, and families get their offers the same day.',
       },
       {
         title: 'Practice and game scheduling',
+        icon: 'calendar',
         text: 'Build the season plan once. Practices, games and ice time follow from it, in one calendar for coaches and families.',
       },
       {
         title: 'Field and rink allocation',
+        icon: 'map',
         text: 'See ice, field and gym use across every team and coach, and place sessions with no double-booked fields.',
       },
       {
         title: 'Player development: practice plans, drills and testing',
+        icon: 'trend',
         text: 'A player’s whole history, from the first tryout to this season’s test results, stays with the club when a coach moves on.',
       },
       {
         title: 'In-house leagues and tournaments',
+        icon: 'trophy',
         text: 'Run your in-house league on the same rosters and fields your club already uses.',
       },
       {
         title: 'Finance and reporting',
-        text: 'Fees, payments and season reports come from the data you already entered, not a separate spreadsheet.',
+        icon: 'wallet',
+        text: 'Fees, payments and season reports come from the data your staff already entered.',
       },
       {
         title: 'Player documents and compliance',
-        text: 'Every waiver and player document is attached to the player, not buried in someone’s inbox.',
+        icon: 'file',
+        text: 'Every waiver and player document is attached to the player’s card.',
       },
       {
         title: 'Family communication',
-        text: 'Parents hear about changes from the system, not from a group chat: attendance, schedule updates and emails to a team or age group.',
+        icon: 'message',
+        text: 'Parents get attendance notices, schedule updates and emails for their child’s team or age group from the system.',
       },
     ],
   },
@@ -256,37 +334,97 @@ const sportschool: RevantaPageContent = {
       {
         title: 'The annual training plan',
         text: 'Ice, dryland, strength and theory hours by month, games and testing sessions. The actual pulls in from the schedule.',
-        video: 'sportschool-training-plan',
+        video: 'sportschool-calendar-plan',
+        tag: 'Season plan',
+        icon: 'calendar',
+        steps: [
+          'Season plan → pick a team',
+          'Hours by month: ice, dryland, strength, theory',
+          'Games, testing and training period',
+          'Save the plan',
+          'Submit for approval',
+        ],
       },
       {
         title: 'Plan approval by the club director',
         text: 'The coach submits the plan, the director approves it or returns it for changes. Approved plans are locked.',
         video: 'sportschool-plan-approve',
+        tag: 'Approval',
+        icon: 'clipboard',
+        steps: [
+          'Season plan → Pending approval',
+          'Open the team plan',
+          'Review hours, periods and notes',
+          'Approve or return for rework',
+        ],
       },
       {
         title: 'A drill with a diagram on the rink',
         text: 'Draw passes, shots and player positions right on the board and save the drill to the club library.',
         video: 'sportschool-exercise-new',
+        tag: 'Drills',
+        icon: 'map',
+        steps: [
+          'Documents → Drills → New drill',
+          'Title and category',
+          'Diagram on the board: arrow to the net, circle',
+          'Description: setup and duration',
+          'Add: the drill is in the library',
+        ],
       },
       {
         title: 'Practice plans from the drill library',
         text: 'Assemble a practice from ready drills with minutes and stations, and reuse it for any team.',
-        video: 'sportschool-exercise-library',
+        video: 'sportschool-training-plan',
+        tag: 'Practice plans',
+        icon: 'layers',
+        steps: [
+          'Documents → Practice plans',
+          'Edit the plan',
+          'Add a drill from the catalog',
+          'Note: venue and duration',
+        ],
       },
       {
         title: 'Attendance in a few taps',
         text: 'Present, sick, excused or absent for every player, saved automatically, with a summary across the club.',
         video: 'sportschool-attendance',
+        tag: 'Attendance',
+        icon: 'users',
+        steps: [
+          'Practices & games → club summary',
+          'Filter by team and status',
+          'Open a practice',
+          'Mark attendance per player',
+          'The list shows the updated count',
+        ],
       },
       {
         title: 'Prospects from season stats',
         text: 'Star a promising player from season stats and see attendance history and fitness tests on one card.',
         video: 'sportschool-prospect',
+        tag: 'Prospects',
+        icon: 'trend',
+        steps: [
+          'Players → season stats by team',
+          'Star the player as a prospect',
+          'The Prospects section',
+          'The card: stats, attendance, fitness tests',
+        ],
       },
       {
         title: 'A game card with score, video and lineup',
         text: 'Open a game from the schedule to see venue, score, game video, the lineup with stats and attendance in one place.',
         video: 'sportschool-event-card',
+        tag: 'Schedule',
+        icon: 'calendar',
+        steps: [
+          'Schedule → pick a game',
+          'Date, time and venue',
+          'Open event details',
+          'Score and game video',
+          'Lineup, stats and attendance',
+        ],
       },
     ],
   },
@@ -407,7 +545,7 @@ const loyalty: RevantaPageContent = {
   },
   eyebrow: 'Revanta Loyalty',
   h1: 'Sports CRM with ticketing, season passes and a fan loyalty program',
-  lead: 'When a third-party ticketing service sells your seats, it keeps your fans. Revanta Loyalty sells them in your system and shows you who comes, who buys and who stopped showing up.',
+  lead: 'When a third-party service sells your tickets, the fan data stays with that service. Revanta Loyalty sells tickets in your own system and shows who comes, who buys and who stopped coming.',
   heroImage: `${REVANTA_IMAGES}/loyalty-hero.webp`,
   heroAlt: 'Fans in the stands at a hockey game',
   audience: {
@@ -432,30 +570,37 @@ const loyalty: RevantaPageContent = {
     items: [
       {
         title: 'Sell tickets and season passes in your own system',
-        text: 'The fan relationship starts with you, not a reseller. Every buyer lands in the club’s own base.',
+        icon: 'ticket',
+        text: 'Every buyer lands in the club’s own base, so the club owns the fan relationship from the first sale.',
       },
       {
         title: 'One fan profile with full attendance and purchase history',
-        text: 'Know who came to every home game and who quietly stopped coming. A season-pass holder who skipped three games shows up in a list before renewal time, not after.',
+        icon: 'user',
+        text: 'Know who came to every home game and who quietly stopped coming. A season-pass holder who skipped three games shows up in a list before renewal time.',
       },
       {
         title: 'A fan loyalty program with points, tiers and achievements',
+        icon: 'award',
         text: 'Reward the fans who show up: points for attendance, tiers that move with each game, achievements the club designs itself.',
       },
       {
         title: 'Promo codes, gift cards and vouchers',
+        icon: 'gift',
         text: 'Issued and redeemed in the same system that holds the fan’s profile.',
       },
       {
         title: 'Segments and personal offers',
-        text: 'Build a segment of lapsed season-pass holders in a minute and send them an offer they will actually open.',
+        icon: 'target',
+        text: 'Build a segment of lapsed season-pass holders in a minute and send them a personal offer.',
       },
       {
         title: 'Push notifications and email',
+        icon: 'mail',
         text: 'Game-day reminders and win-streak offers go out by push and email without anyone pressing send.',
       },
       {
         title: 'Your fan data, exportable any time',
+        icon: 'download',
         text: 'Export any segment or the full base whenever you need it, no ticket to support.',
       },
     ],
@@ -467,31 +612,87 @@ const loyalty: RevantaPageContent = {
         title: 'Earning rates per tier',
         text: 'Starter, Bronze, Silver, Gold: set how many points each tier earns. The rule applies immediately.',
         video: 'loyalty-tiers',
+        tag: 'Tiers',
+        icon: 'award',
+        steps: [
+          'Loyalty → Loyalty program setup',
+          'The Statuses tab',
+          'Edit the Silver tier',
+          'Earning percentage: 7% → 8%',
+          'Save: the table is updated',
+        ],
       },
       {
         title: 'Conditions for moving up a tier',
         text: 'Ten home games, merch purchases or a season pass: pick the condition from a list and set the threshold.',
         video: 'loyalty-rules',
+        tag: 'Tiers',
+        icon: 'award',
+        steps: [
+          'The Transition conditions tab',
+          'Add entry',
+          'Status: Silver',
+          'Condition type: game attendance',
+          'Value — ten home games',
+          'Save: the rule is in the list',
+        ],
       },
       {
         title: 'Achievements with their own rules',
         text: 'Build an achievement for attendance, purchases or registration and set the reward in points.',
         video: 'achievements',
+        tag: 'Achievements',
+        icon: 'trophy',
+        steps: [
+          'Loyalty → Achievements',
+          'New achievement',
+          'Add an earning condition',
+          'Home game attendance, from N',
+          'Reward in loyalty points',
+          'Save — the card is live',
+        ],
       },
       {
         title: 'The whole fan in one profile',
         text: 'Contacts, points, progress to the next tier, rewards and orders on one card.',
         video: 'customer-profile',
+        tag: 'Fan profile',
+        icon: 'user',
+        steps: [
+          'Users → Customers',
+          'Open a customer card',
+          'Loyalty program: points and tier progress',
+          'Points history',
+          'Achievements and orders',
+        ],
       },
       {
         title: 'From a dashboard chart to a segment',
         text: 'Click a column on the chart and land in the customer list with that filter applied.',
         video: 'dashboard-segment',
+        tag: 'Analytics',
+        icon: 'chart',
+        steps: [
+          'Dashboard: the breakdown charts',
+          'Click a column on the chart',
+          'The customer list opens',
+          'Segment applied from the dashboard',
+          'Work with it or reset it',
+        ],
       },
       {
         title: 'A segment exported to Excel',
         text: 'A ready list for a report, a sponsor or a call round, exported from a saved segment.',
         video: 'export-segment',
+        tag: 'Export',
+        icon: 'download',
+        steps: [
+          'Users → Filtering',
+          'Saved segments',
+          'Apply the segment',
+          'Export: the job is queued',
+          'The Export section: download the file',
+        ],
       },
     ],
   },
@@ -510,7 +711,7 @@ const loyalty: RevantaPageContent = {
     heading: 'Revanta Loyalty vs FanMaker',
     competitor: 'FanMaker',
     intro:
-      'FanMaker is an established fan loyalty platform for NFL, NBA, NHL, MLB and college programs. Here is an honest comparison, including what Revanta does not do.',
+      'FanMaker is an established fan loyalty platform for NFL, NBA, NHL, MLB and college programs. Here is how the two compare, including what Revanta does not do.',
     rows: [
       {
         job: 'Selling tickets and season passes',
@@ -576,8 +777,7 @@ const loyalty: RevantaPageContent = {
     },
     {
       question: 'Is this a sportsbook CRM?',
-      answer:
-        'No. Revanta Loyalty is built for clubs and their fans, not for betting operators.',
+      answer: 'No. Revanta Loyalty is built for sports clubs and their fans.',
     },
   ],
   articles: [
@@ -640,34 +840,42 @@ const venues: RevantaPageContent = {
     items: [
       {
         title: 'One calendar for seasons, classes and events',
+        icon: 'calendar',
         text: 'The front desk and the league director see the same ice.',
       },
       {
         title: 'Facility rentals: request, book and confirm',
-        text: 'Rental requests get booked and confirmed in the system, not negotiated in email threads.',
+        icon: 'clipboard',
+        text: 'Renters send a request, and staff book and confirm it in the system.',
       },
       {
         title: 'Customer registration and memberships',
+        icon: 'users',
         text: 'Members register once and keep one profile across every program at your facility.',
       },
       {
         title: 'Leagues at your venue',
+        icon: 'trophy',
         text: 'Build adult and youth leagues on your own ice or courts.',
       },
       {
         title: 'Public skate sessions with time slots and QR tickets',
+        icon: 'ticket',
         text: 'Skaters see how many spots are left, pay online and walk in with a QR ticket.',
       },
       {
         title: 'QR check-in at the door',
+        icon: 'qr',
         text: 'Scan the QR at the door and know exactly who is on the ice.',
       },
       {
         title: 'Emails to the right visitors',
-        text: 'Email the stick-and-puck regulars about the new Tuesday slot, not your whole list.',
+        icon: 'mail',
+        text: 'Send the new Tuesday slot only to the stick-and-puck regulars.',
       },
       {
         title: 'Utilization, revenue and idle-hours reports',
+        icon: 'chart',
         text: 'See which weekday hours sit empty before the month is over, and fill them.',
       },
     ],
@@ -731,7 +939,7 @@ const venues: RevantaPageContent = {
     {
       question: 'Can renters book ice or court time online?',
       answer:
-        'Yes. Rental requests and confirmations happen in one place instead of in email and text threads.',
+        'Yes. Renters send requests and receive confirmations in the system.',
     },
     {
       question: 'Does it handle several sheets of ice or courts?',
@@ -784,39 +992,46 @@ const sites: RevantaPageContent = {
       'Leagues and associations',
       'Arenas and event organizers',
     ],
+    image: `${REVANTA_IMAGES}/sites-audience.webp`,
   },
   problem: {
-    heading: 'Stop retyping the same score in five places',
+    heading: 'Update each score in one place',
     before:
       'Schedules, scores and rosters are typed into page text by hand, a developer is needed for every new section, and each team or academy ends up with its own site from its own contractor.',
     after:
-      'In Revanta Sites, games, players and stats are data, not text. The website assembles them itself, the press office publishes without a developer, and every team shares one platform and one fan profile with ticketing and loyalty.',
+      'In Revanta Sites, games, players and stats are stored as data. The website assembles them itself, the press office publishes without a developer, and every team shares one platform and one fan profile with ticketing and loyalty.',
   },
   features: {
     heading: 'What the website runs on',
     items: [
       {
         title: 'News and media published without a developer',
+        icon: 'newspaper',
         text: 'A news item with a gallery, category, tags and a link to a game. Photo and video galleries in the same place.',
       },
       {
         title: 'Match center: fixtures, scores, streams and ticket links',
+        icon: 'calendar',
         text: 'Calendar, score, venue and game status, with links to the stream and to tickets as separate fields.',
       },
       {
         title: 'Rosters, staff and season player statistics',
+        icon: 'users',
         text: 'Players, coaching staff and roster changes through the season.',
       },
       {
         title: 'Player stats',
+        icon: 'chart',
         text: 'Season stats for every player, including separate goaltender numbers.',
       },
       {
         title: 'Club history',
+        icon: 'history',
         text: 'Eras, championships and achievements, edited like any other section.',
       },
       {
         title: 'Sponsors and banners',
+        icon: 'megaphone',
         text: 'Ad placements, sponsor blocks and ticket calls to action.',
       },
     ],
@@ -824,7 +1039,7 @@ const sites: RevantaPageContent = {
   facts: {
     heading: 'Revanta Sites at a glance',
     items: [
-      'Schedules, scores, rosters and stats are data, not text.',
+      'Schedules, scores, rosters and stats are stored as data.',
       'News with galleries, tags, scheduled publishing and links to games.',
       'One platform for the first team, the academy and other teams.',
       'The same fan profile as ticketing and loyalty.',
@@ -846,7 +1061,7 @@ const sites: RevantaPageContent = {
     {
       question: 'Should we use Wix or a sports-specific website builder?',
       answer:
-        'A general builder is fine for a static page. A club with several teams, schedules, rosters and sponsors saves work with a sports platform where that content is data and not text typed into pages.',
+        'A general builder is fine for a static page. A club with several teams, schedules, rosters and sponsors saves work with a sports platform that stores that content as data.',
     },
     {
       question: 'Can one site cover several teams and the academy?',
@@ -894,7 +1109,7 @@ const ecom: RevantaPageContent = {
     ],
   },
   problem: {
-    heading: 'Merch revenue without a blind spot',
+    heading: 'Merch sales linked to the fan profile',
     before:
       'The store runs on a separate engine, so the club cannot see that the person buying a jersey is also a season pass holder and a newsletter subscriber.',
     after:
@@ -905,26 +1120,32 @@ const ecom: RevantaPageContent = {
     items: [
       {
         title: 'Catalog and variants',
+        icon: 'tag',
         text: 'Categories, SKUs, price and sale price, labels, and size and color variants generated from a matrix.',
       },
       {
         title: 'Stock',
+        icon: 'package',
         text: 'Stock per variant and hiding a product from sale with one toggle.',
       },
       {
         title: 'Orders',
+        icon: 'clipboard',
         text: 'Order list and order card with status, payment and delivery method in one window.',
       },
       {
         title: 'Delivery and pickup',
+        icon: 'truck',
         text: 'Shipping options and click-and-collect at the club store.',
       },
       {
         title: 'Promotions',
+        icon: 'gift',
         text: 'Discounts with start and end dates, store banners and collections built around a game.',
       },
       {
         title: 'One fan profile',
+        icon: 'user',
         text: 'Buyer, ticket holder and subscriber are the same record across Revanta.',
       },
     ],
@@ -936,6 +1157,15 @@ const ecom: RevantaPageContent = {
         title: 'A nested category tree',
         text: 'Categories with images, addresses and parents. Toggles control what shows in the header and footer.',
         video: 'ecom-categories',
+        tag: 'Categories',
+        icon: 'layers',
+        steps: [
+          'Store → Categories',
+          'Add a category or edit an existing one',
+          'Image, name, address, parent category',
+          'Active flag',
+          'Shown in the header and footer, set by toggles',
+        ],
       },
     ],
   },
