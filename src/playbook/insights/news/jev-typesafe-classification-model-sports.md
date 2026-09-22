@@ -54,8 +54,6 @@ The same review found Jev overconfident on questions that need knowledge outside
 
 Jev also gives no reason for a decision. For moderation that is fine. For anything a member might dispute, like a refused refund or a flagged registration, you need to log the input, the question and the probability, so you can explain the decision later. It is the same audit trail discipline we apply to [AI in regulated industries](/playbook/expertise/ai-audit-trail-architecture-compliance).
 
-For now Jev is available only through a waitlist, with a context window of about 32,000 tokens and text input only.
-
 ## What comes next
 
 I expect Anthropic, OpenAI and Google to ship their own typed classification modes within months, because the demand is obvious and their small models can already do most of it. For a club the model choice matters less than the list of decisions it makes by hand every week. Write that list down, pick the ones with a fixed set of answers, and start with the one that has the most volume.
