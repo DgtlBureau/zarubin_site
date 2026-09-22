@@ -5,6 +5,7 @@ import { NewExpertise } from '@/src/components/Main/NewExpertise/NewExpertise';
 import { NewFeedback } from '@/src/components/Main/NewFeedback/NewFeedback';
 import { NewHero } from '@/src/components/Main/NewHero/NewHero';
 import { NewInsights } from '@/src/components/Main/NewInsights/NewInsights';
+import { WhyUs } from '@/src/components/Main/WhyUs/WhyUs';
 import { Section } from '@/src/components/shared/Section/Section';
 import { getExpertiseAreasMetadata } from '@/src/utils/getExpertiseAreasMetadata';
 
@@ -17,6 +18,7 @@ export const MainPageComponent = () => {
         Compliant AI Agents and Fine-Tuning for Regulated Industries
       </h1>
       <NewHero />
+      <WhyUs />
       <FeaturedCases />
       <HowWeWork />
       <NewExpertise data={data} />
