@@ -3,6 +3,7 @@ import { RevantaPageContent } from '@/src/data/revanta/types';
 import { RevantaHeroPhoto } from '../RevantaHero/RevantaHeroPhoto';
 import { RevantaScenarios } from '../RevantaScenarios/RevantaScenarios';
 import { RevantaArticles } from '../RevantaSections/RevantaArticles';
+import { RevantaClientLogos } from '../RevantaSections/RevantaClientLogos';
 import { RevantaComparison } from '../RevantaSections/RevantaComparison';
 import { RevantaContact } from '../RevantaSections/RevantaContact';
 import { RevantaFacts } from '../RevantaSections/RevantaFacts';
@@ -10,6 +11,7 @@ import { RevantaFaq } from '../RevantaSections/RevantaFaq';
 import { RevantaFeatureGrid } from '../RevantaSections/RevantaFeatureGrid';
 import { RevantaIntro } from '../RevantaSections/RevantaIntro';
 import { RevantaOtherProducts } from '../RevantaSections/RevantaOtherProducts';
+import { RevantaTestimonials } from '../RevantaSections/RevantaTestimonials';
 
 /** Product page /revanta/[slug]. */
 export const RevantaProductPage = ({
@@ -26,7 +28,9 @@ export const RevantaProductPage = ({
       image={content.heroImage}
       imageAlt={content.heroAlt}
     />
+    <RevantaClientLogos />
     <RevantaIntro content={content} />
+    <RevantaTestimonials />
     <RevantaFeatureGrid
       heading={content.features.heading}
       intro={content.features.intro}

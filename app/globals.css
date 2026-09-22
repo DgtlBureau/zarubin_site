@@ -626,3 +626,27 @@ input:-webkit-autofill:active {
     animation: none;
   }
 }
+
+/* Infinite logo marquee on Revanta pages */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-left 110s linear infinite;
+  will-change: transform;
+}
+.marquee-row:hover .marquee-track {
+  animation-play-state: paused;
+}
+@keyframes marquee-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}

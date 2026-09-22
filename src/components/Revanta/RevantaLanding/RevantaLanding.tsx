@@ -4,11 +4,13 @@ import { RevantaHeroSplit } from '../RevantaHero/RevantaHeroSplit';
 import { RevantaScenarios } from '../RevantaScenarios/RevantaScenarios';
 import { RevantaArticles } from '../RevantaSections/RevantaArticles';
 import { RevantaBenefits } from '../RevantaSections/RevantaBenefits';
+import { RevantaClientLogos } from '../RevantaSections/RevantaClientLogos';
 import { RevantaContact } from '../RevantaSections/RevantaContact';
 import { RevantaFacts } from '../RevantaSections/RevantaFacts';
 import { RevantaFaq } from '../RevantaSections/RevantaFaq';
 import { RevantaModuleCards } from '../RevantaSections/RevantaModuleCards';
 import { RevantaProblem } from '../RevantaSections/RevantaProblem';
+import { RevantaTestimonials } from '../RevantaSections/RevantaTestimonials';
 import { Reveal } from '../ui/Reveal';
 import { H2_CLASS, RevantaContainer, RevantaSection } from '../ui/layout';
 import {
@@ -20,7 +22,11 @@ import {
 const SCENARIOS_BEFORE_BENEFITS = 3;
 
 /** Hub page /revanta. */
-export const RevantaLanding = ({ content }: { content: RevantaPageContent }) => {
+export const RevantaLanding = ({
+  content,
+}: {
+  content: RevantaPageContent;
+}) => {
   const panels: AudiencePanel[] = (content.audience.tabs ?? []).map((t) => {
     const product = REVANTA_CONTENT[t.product];
     return {
@@ -42,6 +48,8 @@ export const RevantaLanding = ({ content }: { content: RevantaPageContent }) => 
         image={content.heroImage}
         imageAlt={content.heroAlt}
       />
+
+      <RevantaClientLogos />
 
       {/* Who it suits */}
       <RevantaSection className='pt-[60px] tablet:pt-[80px] desktop:pt-[90px]'>
@@ -83,6 +91,8 @@ export const RevantaLanding = ({ content }: { content: RevantaPageContent }) => 
           items={content.benefits.items}
         />
       )}
+
+      <RevantaTestimonials />
 
       <RevantaScenarios
         items={scenarios.slice(SCENARIOS_BEFORE_BENEFITS)}
