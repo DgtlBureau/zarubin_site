@@ -3,6 +3,8 @@
 export const REVANTA_BASE = '/revanta';
 export const REVANTA_IMAGES = '/assets/images/revanta';
 export const REVANTA_VIDEOS = '/assets/videos/revanta';
+export const REVANTA_LINKEDIN =
+  'https://www.linkedin.com/company/revanta-sports';
 
 export type RevantaProductKey =
   | 'sportschool'

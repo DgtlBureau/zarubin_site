@@ -5,6 +5,7 @@
 ## Revanta — sports club software
 Revanta is sports club software by The BrightByte — registration, ticketing, fan loyalty and facility booking for clubs, academies and rinks. It is modular: one profile per person (player, parent, fan, renter) across every product.
 
+- [Revanta on LinkedIn](https://www.linkedin.com/company/revanta-sports)
 - [Revanta platform](https://thebrightbyte.com/revanta): overview of all Revanta products for clubs, academies, spectator clubs and rinks.
 - [Revanta SportSchool — sports academy management software](https://thebrightbyte.com/revanta/sports-academy-software): registration and fee collection, tryouts and team formation, practice and game scheduling, field and rink allocation, player development (season plans, drill library, testing), in-house leagues, player documents, family communication. For youth clubs, academies, leagues and associations.
 - [Revanta Loyalty — sports CRM, ticketing and fan loyalty](https://thebrightbyte.com/revanta/sports-crm): tickets and season passes sold in the club's own system, fan profile with attendance and purchase history, points, tiers and achievements, promo codes, gift cards and vouchers, segments, push and email campaigns, full data export. For professional, semi-pro, minor league and college clubs.

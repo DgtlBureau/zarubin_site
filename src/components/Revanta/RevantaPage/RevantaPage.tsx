@@ -1,5 +1,6 @@
 import {
   REVANTA_BASE,
+  REVANTA_LINKEDIN,
   REVANTA_PRODUCTS,
   REVANTA_VIDEOS,
   revantaHref,
@@ -304,6 +305,17 @@ export const RevantaPage = ({ content }: Props) => {
             </Link>
           ))}
         </div>
+        <p className='mt-[28px] font-inter text-[16px] text-white/60'>
+          Follow Revanta on{' '}
+          <a
+            href={REVANTA_LINKEDIN}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-white/85 underline underline-offset-4 hover:text-white'
+          >
+            LinkedIn
+          </a>
+        </p>
         {content.articles && content.articles.length > 0 && (
           <div className='mt-[40px]'>
             <h3 className='font-inter text-[15px] font-semibold uppercase tracking-[0.1em] text-white/50'>

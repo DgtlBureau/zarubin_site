@@ -87,6 +87,7 @@ export function generateOrganizationSchema() {
         '@type': 'Brand',
         name: 'Revanta',
         url: `${BASE_URL}/revanta`,
+        sameAs: ['https://www.linkedin.com/company/revanta-sports'],
       },
       { '@type': 'Brand', name: 'Regfo', url: 'https://regfo.com' },
     ],

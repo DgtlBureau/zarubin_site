@@ -1,4 +1,4 @@
-import { REVANTA_BASE } from '@/src/data/revanta/routes';
+import { REVANTA_BASE, REVANTA_LINKEDIN } from '@/src/data/revanta/routes';
 import { RevantaPageContent } from '@/src/data/revanta/types';
 import { BASE_URL } from './alias';
 
@@ -24,7 +24,8 @@ export function generateRevantaSchemas(
     applicationSubCategory: 'Sports management software',
     operatingSystem: 'Web',
     image: `${BASE_URL}${content.heroImage}`,
-    brand: { '@type': 'Brand', name: 'Revanta' },
+    brand: { '@type': 'Brand', name: 'Revanta', sameAs: [REVANTA_LINKEDIN] },
+    ...(isHub ? { sameAs: [REVANTA_LINKEDIN] } : {}),
     publisher: { '@id': ORGANIZATION_ID },
     provider: {
       '@type': 'Organization',
