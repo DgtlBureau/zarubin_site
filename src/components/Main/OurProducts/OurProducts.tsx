@@ -42,7 +42,7 @@ export const OurProducts = () => {
                     href={revantaHref(p.slug)}
                     className='font-inter text-[15px] text-white/80 underline-offset-4 hover:text-white hover:underline'
                   >
-                    {p.name}: {p.slogan.toLowerCase()}
+                    {p.name}: {p.slogan}
                   </Link>
                 </li>
               ))}
