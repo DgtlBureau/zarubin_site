@@ -31,7 +31,5 @@ export const menuListLayer: MenuListItem[] = [
     name: MenuItems.REVANTA_SPORTS,
     link: '/revanta',
     isHighlighted: true,
-    // Static page in /public — needs a full page load, not client-side routing
-    isExternal: true,
   },
 ];

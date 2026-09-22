@@ -4,7 +4,9 @@ export function generateOrganizationSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
+    '@id': `${BASE_URL}/#organization`,
     name: 'The BrightByte',
+    legalName: 'The BrightByte Capital LLC',
     alternateName: 'BrightByte',
     url: BASE_URL,
     logo: `${BASE_URL}/assets/images/icons/favicon.svg`,
@@ -80,18 +82,41 @@ export function generateOrganizationSchema() {
       'MCP Server Infrastructure',
       'Compliance AI Consulting',
     ],
-    makesOffer: {
-      '@type': 'Offer',
-      itemOffered: {
-        '@type': 'SoftwareApplication',
-        name: 'Regfo',
-        url: 'https://regfo.com',
-        applicationCategory: 'BusinessApplication',
-        description:
-          'AI-powered regulatory workspace for biotech. Analyzes preclinical study reports against FDA, ICH, and CFTC requirements, generates compliance scores, and identifies gaps.',
-        operatingSystem: 'Web',
+    brand: [
+      {
+        '@type': 'Brand',
+        name: 'Revanta',
+        url: `${BASE_URL}/revanta`,
       },
-    },
+      { '@type': 'Brand', name: 'Regfo', url: 'https://regfo.com' },
+    ],
+    makesOffer: [
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'SoftwareApplication',
+          '@id': `${BASE_URL}/revanta#software`,
+          name: 'Revanta',
+          url: `${BASE_URL}/revanta`,
+          applicationCategory: 'BusinessApplication',
+          description:
+            'Sports club software by The BrightByte: registration and schedules for clubs and academies, ticketing and fan loyalty for spectator clubs, bookings and QR entry for rinks and arenas.',
+          operatingSystem: 'Web',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'SoftwareApplication',
+          name: 'Regfo',
+          url: 'https://regfo.com',
+          applicationCategory: 'BusinessApplication',
+          description:
+            'AI-powered regulatory workspace for biotech. Analyzes preclinical study reports against FDA, ICH, and CFTC requirements, generates compliance scores, and identifies gaps.',
+          operatingSystem: 'Web',
+        },
+      },
+    ],
   };
 }
 

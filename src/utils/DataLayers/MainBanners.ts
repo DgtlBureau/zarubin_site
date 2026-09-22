@@ -1,9 +1,8 @@
-// Фото слайдов — те же, что на главной digitalburo.tech
-import athletes from '@/public/assets/images/main/heroSlide/bct-athletes-hd.webp';
-import conference from '@/public/assets/images/main/heroSlide/bct-conference-room.webp';
-import stands from '@/public/assets/images/main/heroSlide/bct-stands-hd.webp';
-import street from '@/public/assets/images/main/heroSlide/bct-street.webp';
-import arena from '@/public/assets/images/main/heroSlide/bct-virazh-arena.webp';
+import athletes from '@/public/assets/images/main/heroSlide/hero-athletes-hd.webp';
+import conference from '@/public/assets/images/main/heroSlide/hero-conference-room.webp';
+import stands from '@/public/assets/images/main/heroSlide/hero-stands-hd.webp';
+import street from '@/public/assets/images/main/heroSlide/hero-street.webp';
+import arena from '@/public/assets/images/main/heroSlide/hero-revanta-arena.webp';
 import { StaticImageData } from 'next/image';
 import { MenuItems } from '../enums';
 
@@ -19,7 +18,7 @@ interface IMainBanners {
 }
 
 export const mainBanners: IMainBanners[] = [
-  // Slide copy mirrors the digitalburo.tech hero, adapted for Revanta
+  // Slide copy for the Revanta hero
   {
     id: 1,
     tag: 'Sports platform',

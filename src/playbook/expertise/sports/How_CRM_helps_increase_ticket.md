@@ -78,7 +78,7 @@ Dynamic pricing without CRM is just demand-based pricing -- it reacts to aggrega
 
 Example: two fans look at tickets for the same match. Fan A is a 10-year season-ticket holder who let their pass lapse this year. Fan B is a first-time visitor from the website. Both see the same base price, but Fan A receives a loyalty discount code via email, while Fan B receives a first-visit bundle (ticket + drink + parking) at a slight premium.
 
-This approach requires the CRM to integrate with the ticketing platform in real time. Systems like Salesforce (used by several NBA and NHL teams), Microsoft Dynamics 365, and sports-specific CRMs like Tribune or FanThreeSixty handle this integration.
+This approach requires the CRM to integrate with the ticketing platform in real time. Systems like Salesforce (used by several NBA and NHL teams), Microsoft Dynamics 365, and sports-specific CRMs like [Revanta, a sports CRM with ticketing and season passes](https://thebrightbyte.com/revanta/sports-crm), or FanThreeSixty handle this integration.
 
 ### 4. Anti-Scalping Controls
 

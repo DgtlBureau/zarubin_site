@@ -606,7 +606,7 @@ input:-webkit-autofill:active {
   }
 }
 
-/* Hero slider: slow camera push on the background image, as on digitalburo.tech */
+/* Hero slider: slow camera push on the background image */
 @keyframes hero-zoom {
   from {
     transform: scale(1.08);

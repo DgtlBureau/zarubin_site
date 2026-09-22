@@ -78,5 +78,41 @@
   {
     "source": "/playbook/compliance/eu-ai-act-delay-december-2027-trap",
     "destination": "/playbook/expertise/eu-ai-act-delay-december-2027-trap"
+  },
+  {
+    "source": "/playbook/expertise/How-to-use-data-from-the-Tribune-sports-CRM",
+    "destination": "/playbook/expertise/fan-data-analytics-sports-crm"
+  },
+  {
+    "source": "/revanta/en/products/virazh",
+    "destination": "/revanta"
+  },
+  {
+    "source": "/revanta/en/products/virazh-sports-school",
+    "destination": "/revanta/sports-academy-software"
+  },
+  {
+    "source": "/revanta/en/products/virazh-loyalty",
+    "destination": "/revanta/sports-crm"
+  },
+  {
+    "source": "/revanta/en/products/virazh-sites",
+    "destination": "/revanta/sports-club-website"
+  },
+  {
+    "source": "/revanta/en/products/virazh-ecom",
+    "destination": "/revanta/club-merch-store"
+  },
+  {
+    "source": "/revanta_academy",
+    "destination": "/revanta/sports-academy-software"
+  },
+  {
+    "source": "/revanta/privacy",
+    "destination": "/policy"
+  },
+  {
+    "source": "/revanta/terms",
+    "destination": "/policy"
   }
 ]

@@ -31,7 +31,7 @@ To fix it, you need a system that connects everything. It starts with CRM, but d
 
 This UUID works at every contact point. The fan enters the stadium—ticket scan sends data to CRM. Opens the app—a QR is generated and tracked. Buys food—loyalty discount applies automatically. Exits parking—license plate is matched, access is granted via CRM. This is a living system. No manual merging. Everything is already connected.
 
-But a slick interface isn’t enough. You need to connect ticketing systems (e.g. Yandex, Infotech), access control (e.g. Informatika), parking and POS systems, e-store and app, 1C for financial tracking. And all of it tied to one central logic.
+But a slick interface isn’t enough. You need to connect ticketing, access control, parking and POS systems, the e-store and app, and the accounting system for financial tracking. And all of it tied to one central logic.
 
 The calendar is key. Not just for games—also concerts, rentals, maintenance. It needs to show real load, help forecast expenses, schedule staff, and launch promo campaigns in advance.
 
@@ -75,12 +75,14 @@ Step two: map the fan journey. Where they come from, how they buy, how they ente
 
 Step three: prioritize. You don’t need everything at once. Start with CRM + ticketing. Or app + parking. What matters is understanding it’s one system—not many.
 
-Step four: set measurable goals. +10% match retention. +15% average food check. –80% manual input in 1C. These numbers prove value and justify investment.
+Step four: set measurable goals. +10% match retention. +15% average food check. –80% manual input in accounting. These numbers prove value and justify investment.
 
 Step five: treat it like a product. Weekly iterations. Tests. Experiments. Don’t install and forget. Build, test, improve.
 
-Step six: connect finances. Without costs, you can’t measure event ROI. The calendar must tie to sales, costs, staffing, logistics. 1C and financial accounting must be integrated.
+Step six: connect finances. Without costs, you can’t measure event ROI. The calendar must tie to sales, costs, staffing, logistics. The accounting system must be integrated.
 
 Final step: prepare to scale. A good architecture works beyond one club. Concert venues. Hybrid arenas. City spaces. Same logic: UUID, connected systems, shared calendar, CRM + finance core.
 
 When it all connects, clubs make money not only on match days. Marketing becomes precise. Operations become predictable. And every game proves the system works.
+
+If you run a rink or a multi-sport facility rather than a stadium, see [Revanta Venues, rink and sports facility management software](https://thebrightbyte.com/revanta/sports-facility-software): one calendar for rentals, sessions and leagues, public skate sold with QR tickets, and reports on the hours your ice sits empty.

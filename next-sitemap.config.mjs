@@ -68,7 +68,24 @@ const config = {
       return `/cases/${fileName}`;
     });
 
+    // Revanta URLs come from the single source of truth in src/data/revanta/routes.ts
+    const revantaRoutes = fs.readFileSync(
+      path.join(process.cwd(), 'src/data/revanta/routes.ts'),
+      'utf8',
+    );
+    const revantaPages = [
+      '/revanta',
+      ...[...revantaRoutes.matchAll(/slug: '([^']+)'/g)].map(
+        ([, slug]) => `/revanta/${slug}`,
+      ),
+    ];
+
     const allPaths = [
+      ...revantaPages.map((loc) => ({
+        loc,
+        changefreq: 'weekly',
+        priority: 0.9,
+      })),
       ...staticPages.map((loc) => ({
         loc,
         changefreq: 'daily',
@@ -131,6 +148,8 @@ const config = {
       // AI crawlers — explicitly allowed for AEO visibility
       { userAgent: 'GPTBot', allow: '/' },
       { userAgent: 'ChatGPT-User', allow: '/' },
+      { userAgent: 'OAI-SearchBot', allow: '/' },
+      { userAgent: 'Perplexity-User', allow: '/' },
       { userAgent: 'ClaudeBot', allow: '/' },
       { userAgent: 'Claude-Web', allow: '/' },
       { userAgent: 'anthropic-ai', allow: '/' },

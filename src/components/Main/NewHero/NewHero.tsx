@@ -65,22 +65,12 @@ export const NewHero = () => {
                     {hero.description}
                   </p>
                 )}
-                {hero.link.startsWith('/revanta') ? (
-                  // Revanta lives as static files in /public — needs a full page load
-                  <a
-                    href={hero.link}
-                    className='mt-[28px] w-fit rounded-[8px] bg-white px-[24px] py-[13px] font-inter text-[15px] font-semibold text-gray-900 transition-all duration-200 hover:bg-white/90 tablet:mt-[36px] tablet:px-[30px] tablet:py-[15px] tablet:text-[17px]'
-                  >
-                    {hero.linkName}
-                  </a>
-                ) : (
-                  <Link
-                    href={hero.link || `/${MenuItems.CASES.toLowerCase()}`}
-                    className='mt-[28px] w-fit rounded-[8px] bg-white px-[24px] py-[13px] font-inter text-[15px] font-semibold text-gray-900 transition-all duration-200 hover:bg-white/90 tablet:mt-[36px] tablet:px-[30px] tablet:py-[15px] tablet:text-[17px]'
-                  >
-                    {hero.linkName || MenuItems.CASES}
-                  </Link>
-                )}
+                <Link
+                  href={hero.link || `/${MenuItems.CASES.toLowerCase()}`}
+                  className='mt-[28px] w-fit rounded-[8px] bg-white px-[24px] py-[13px] font-inter text-[15px] font-semibold text-gray-900 transition-all duration-200 hover:bg-white/90 tablet:mt-[36px] tablet:px-[30px] tablet:py-[15px] tablet:text-[17px]'
+                >
+                  {hero.linkName || MenuItems.CASES}
+                </Link>
 
                 {/* Dots below button, aligned left */}
                 <div className='mt-[28px] flex gap-[8px]'>

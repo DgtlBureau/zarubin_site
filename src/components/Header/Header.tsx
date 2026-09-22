@@ -56,7 +56,7 @@ export const Header = ({
 
   const isMobile = useMediaQuery('<laptop-big');
 
-  // BCT-style header: transparent over the home hero, solid once scrolled or a menu is open
+  // Header is transparent over the home hero, solid once scrolled or a menu is open
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 80);

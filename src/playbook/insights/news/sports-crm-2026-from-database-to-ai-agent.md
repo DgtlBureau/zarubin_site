@@ -1,13 +1,13 @@
 ---
 title: 'Sports CRM in 2026: When the Database Starts Deciding'
-description: 'Hockey clubs are shifting from CRM-as-database to CRM-as-agent. What a next-gen sports platform must do in 2026, and how Virazh delivers it.'
+description: 'Hockey clubs are shifting from CRM-as-database to CRM-as-agent. What a next-gen sports platform must do in 2026, and how Revanta delivers it.'
 image: '/assets/images/info/carolina-hurricanes-stadium-series.webp'
 imageSource: 'Photo: 1995hoo, 2023 NHL Stadium Series (Capitals vs. Hurricanes, Carter-Finley Stadium), Wikimedia Commons, CC BY-SA 4.0'
 date: '14-06-2026'
 readingTime: '7 min'
 category: 'Insights'
 subCategory: 'News'
-tag: 'sports CRM, hockey CRM, fan engagement, sports marketing AI, loyalty, ticketing, dynamic pricing, Virazh, KHL, Stanley Cup 2026'
+tag: 'sports CRM, hockey CRM, fan engagement, sports marketing AI, loyalty, ticketing, dynamic pricing, Revanta, Stanley Cup 2026'
 authorName: 'Vitaliy Zarubin'
 authorImage: '/assets/images/author/avatar.png'
 faq:
@@ -15,8 +15,8 @@ faq:
     answer: 'An old CRM stores profiles, ticket history, and loyalty tiers, and waits for a marketer to query it. A next-generation system reads the same data and acts: it scores churn risk, writes the personal message, prices the seat, and increasingly decides the next best action per fan on its own. The data is similar. What changed is that the software now does the work instead of holding it.'
   - question: 'Do we need a data science team to use AI in fan engagement?'
     answer: 'No, not for the first wins. The analytical and generative layers (churn scoring, personal emails, dynamic pricing) now run on open-source models and APIs that a platform sets up for you. You need a clean ticketing and loyalty base, not a team of ML engineers. The fully autonomous agent layer does need mature data and trust, which is why it comes last, not first.'
-  - question: 'What can a Russian club actually deploy today given sanctions?'
-    answer: 'Everything in the analytical and generative layers, using Russian infrastructure. Virazh integrates with Я.Билеты and Infotech for ticketing, 1С-Bitrix for the store, Яндекс Плюс for co-brand loyalty, and 1С for inventory and finance. No Western SaaS you cannot pay for or get support on. SaaS deployment takes about two weeks.'
+  - question: 'What can a club actually deploy today?'
+    answer: 'Everything in the analytical and generative layers. Revanta runs ticketing and season passes, loyalty, segmentation, email and push campaigns, a club store and the website CMS on one fan profile. Connections to an existing ticketing or POS system are built per project. SaaS deployment takes about two weeks.'
   - question: 'How fast does a system like this pay for itself?'
     answer: 'The fastest return is usually churn prevention on season tickets. On a 5,000-seat base, holding an extra 15% of renewals is 750 households you keep. Multiply by your average season-ticket price and the model typically covers its cost inside a month. Dynamic pricing and personal offers stack on top of that.'
 ---
@@ -70,13 +70,13 @@ ML trained on your data. Churn, propensity to buy, dynamic pricing. Real Madrid'
 
 An assistant a human can actually use. The kind that says "your MAY25 promo converted at 4.2%, want to A/B test a new one?" and then runs the campaign when you say yes. A dashboard nobody opens does not count.
 
-## Where Virazh fits
+## Where Revanta fits
 
-This is the system we built. Virazh is our sports platform, and it is the Russian answer to the stack above, in production right now.
+This is the system we built. Revanta is our sports club platform, and it covers the stack above in production right now.
 
-One core: ticketing and access (БПС+СКД), loyalty with tiers and points, base segmentation, email/SMS/push with trigger chains, an online store synced to 1С, a full website CMS, and C-level dashboards. The marketing assistant trains an ML model on your data and comes back with recommendations: dynamic pricing, when to open sales, how to enrich the base. Set a goal, get actions.
+One core: ticketing, season passes and QR entry, loyalty with tiers and points, base segmentation, email and push with trigger chains, an online club store, a full website CMS, and C-level dashboards. The marketing assistant trains an ML model on your data and comes back with recommendations: dynamic pricing, when to open sales, how to enrich the base. Set a goal, get actions.
 
-The integrations are the part that matters for a Russian club today. Я.Билеты and Infotech for ticketing, 1С-Bitrix for the store, Яндекс Плюс for co-brand loyalty, 1С for inventory and finance. SaaS deployment takes about two weeks. Pricing runs 85,000 ₽/mo for the CRM core, 135,000 for the full Tribune build with the AI assistant and store, and 295,000 for the works, with a mobile app and custom C-level reporting.
+If a club already sells through another ticketing or POS system, we build that connection as part of the rollout rather than pretend a ready plug-in exists. SaaS deployment takes about two weeks. Pricing depends on the modules: the CRM core, the full build with the AI assistant and store, or the works with a mobile app and custom C-level reporting.
 
 Now the honest part about those three waves. Our analytical and generative layers are live today. The agentic layer, the self-driving "next best action" agent, is where we are building now (RAG, the second iteration of AI responses). I would rather tell you that than sell you a Pacers demo we cannot yet match. Anyone promising a fully autonomous marketing agent for a 5,000-fan club today is selling a slide.
 
@@ -88,7 +88,7 @@ Carolina built a contender by deciding its data was worth treating as a first-cl
 
 Whoever lifts the Cup tonight, the scoreboard that matters off the ice is renewal rate. And that one you can actually move.
 
-Want to see what your data can do? [Book a call.](https://thebrightbyte.com/brief) We will look at your base, your ticketing, and your channels, and name the two or three moves that pay back fastest this quarter.
+Want to see what your data can do? [Book a call.](https://thebrightbyte.com/brief) Or see [how Revanta handles ticketing and fan loyalty](/revanta/sports-crm). We will look at your base, your ticketing, and your channels, and name the two or three moves that pay back fastest this quarter.
 
 ## Sources
 

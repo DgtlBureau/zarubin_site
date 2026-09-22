@@ -45,13 +45,13 @@ export const MainList = ({
         >
           {item.name === MenuItems.REVANTA_SPORTS ? (
             // Revanta is shown as its wordmark, not a button; hovering opens the product menu
-            <a
+            <Link
               href={item.link}
               className='group relative block h-[14px] w-[96px]'
             >
               {/* Hover crossfades to the blue wordmark instead of swapping src — no blank frame on first hover */}
               <Image
-                src='/revanta/assets/images/products/virazh/revanta-wordmark-white-v4.webp'
+                src='/assets/images/revanta/wordmark-white.webp'
                 alt='Revanta'
                 fill
                 sizes='96px'
@@ -64,7 +64,7 @@ export const MainList = ({
                 sizes='96px'
                 className='object-contain opacity-0 drop-shadow-[0_0_10px_rgba(59,91,246,0.6)] transition-opacity duration-200 group-hover:opacity-100'
               />
-            </a>
+            </Link>
           ) : item.isHighlighted ? (
             item.isExternal ? (
               <a
@@ -86,9 +86,7 @@ export const MainList = ({
               href={item.link}
               className={classNames(
                 `group relative border-b-[2px] border-transparent font-inter leading-[1.87]`,
-                dark
-                  ? 'text-[18px] text-white'
-                  : 'text-[16px] text-[black]',
+                dark ? 'text-[18px] text-white' : 'text-[16px] text-[black]',
                 {
                   'border-b-[2px] !border-main-blue': pathname.startsWith(
                     item.link,
