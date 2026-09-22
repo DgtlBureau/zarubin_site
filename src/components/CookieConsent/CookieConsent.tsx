@@ -1,6 +1,29 @@
 'use client';
 
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
+
+const GA_ID = 'G-FXGP2J4QFD';
+const GA_SCRIPT_ID = 'ga-gtag';
+
+const loadGoogleAnalytics = () => {
+  if (document.getElementById(GA_SCRIPT_ID)) return;
+
+  const script = document.createElement('script');
+  script.id = GA_SCRIPT_ID;
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+  script.async = true;
+  document.head.appendChild(script);
+
+  const inlineScript = document.createElement('script');
+  inlineScript.innerHTML = `
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${GA_ID}');
+  `;
+  document.head.appendChild(inlineScript);
+};
 
 export const CookieConsent = () => {
   const [visible, setVisible] = useState(false);
@@ -8,6 +31,11 @@ export const CookieConsent = () => {
   useEffect(() => {
     const localConsent = localStorage.getItem('cookie_consent');
     const sessionConsent = sessionStorage.getItem('cookie_consent');
+
+    if (localConsent === 'true') {
+      loadGoogleAnalytics();
+      return;
+    }
 
     if (!localConsent && !sessionConsent) {
       setVisible(true);
@@ -17,20 +45,7 @@ export const CookieConsent = () => {
   const acceptCookies = () => {
     localStorage.setItem('cookie_consent', 'true');
     setVisible(false);
-
-    const script = document.createElement('script');
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-FXGP2J4QFD';
-    script.async = true;
-    document.head.appendChild(script);
-
-    const inlineScript = document.createElement('script');
-    inlineScript.innerHTML = `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-FXGP2J4QFD');
-    `;
-    document.head.appendChild(inlineScript);
+    loadGoogleAnalytics();
   };
 
   const rejectCookies = () => {
@@ -46,7 +61,13 @@ export const CookieConsent = () => {
         <span className='text-2xl'>🍪</span>
         <div className='flex-1'>
           <p className='mb-3 font-inter text-sm text-white/80'>
-            This site uses cookies to improve your experience.
+            This site uses cookies to improve your experience.{' '}
+            <Link
+              href='/policy'
+              className='text-white underline underline-offset-2 hover:text-white/60'
+            >
+              Privacy Policy
+            </Link>
           </p>
           <div className='flex gap-2'>
             <button

@@ -16,8 +16,16 @@
   gap: 20px;
 }
 
-.sublist {
+.subList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 10px 0;
+}
+
+.description {
   margin-top: 10px;
+  line-height: 1.5;
 }
 
 .item {
