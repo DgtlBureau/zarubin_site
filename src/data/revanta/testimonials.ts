@@ -17,7 +17,7 @@ export const REVANTA_CLIENT_LOGOS: RevantaClientLogo[] = [
   },
   {
     name: 'Norilsk Futsal Club',
-    mark: `${CLIENTS}/mfk-norilsk-mark.webp`,
+    mark: `${CLIENTS}/mfk-norilsk.webp`,
     url: 'https://fcnorilsk.com',
   },
   {
@@ -41,11 +41,6 @@ export const REVANTA_CLIENT_LOGOS: RevantaClientLogo[] = [
     url: 'https://hcadmiral.pro',
   },
   {
-    name: 'BC Tver',
-    mark: `${CLIENTS}/tver.webp`,
-    url: 'https://tverbasket.ru/basketball-club-tver/',
-  },
-  {
     name: 'FC Dynamo Moscow',
     mark: `${CLIENTS}/dinamo-mark.webp`,
     url: 'https://fcdynamo.ru',
@@ -55,7 +50,8 @@ export const REVANTA_CLIENT_LOGOS: RevantaClientLogo[] = [
 export interface RevantaTestimonial {
   name: string;
   role: string;
-  logo: string;
+  /** Club or company mark; omitted when the only available logo has Cyrillic text. */
+  logo?: string;
   quote: string;
 }
 
@@ -94,5 +90,53 @@ export const REVANTA_TESTIMONIALS: RevantaTestimonial[] = [
     logo: `${CLIENTS}/dinamo-mark.webp`,
     quote:
       'We are developing a hockey club project, handling design and support. When I hand a task to Vitaliy’s team, I am fully confident in the result. The team is genuinely engaged and brings its own view to the work. Many contractors need a detailed specification; Vitaliy’s team runs the project on its own and defines its scope itself.',
+  },
+  {
+    name: 'John Cushma',
+    role: 'Founder, 21sports',
+    logo: `${CLIENTS}/sports.webp`,
+    quote:
+      'We are working with The BrightByte on a sports publication website with a relatively simple tech stack and several integrations. Previous developers kept delivering an incomplete product full of bugs and did not respond when we pointed out issues. The BrightByte team has shown a high level of professionalism, a clear business process and a systematic approach at every stage. I highly recommend working with them.',
+  },
+  {
+    name: 'Elena Andreeva',
+    role: 'Chief Product Manager, Go',
+    quote:
+      'The team at The BrightByte helped us turn an idea into a finished product. They gave professional help at every stage and were set on getting results.',
+  },
+  {
+    name: 'Russel Giambrone',
+    role: 'Founder, TIG1 Strategies',
+    logo: `${CLIENTS}/tig1.webp`,
+    quote:
+      'We hired The BrightByte to build PersoniWay, an AI assistant for field technicians. I was impressed with how quickly they understood our domain and got things moving. The scope was clear, the execution fast and my own involvement minimal. They worked independently, asked smart questions when needed and delivered consistently, without bloated timelines or budgets. It is rare to find a team that is both technically sharp and business-savvy. I highly recommend them.',
+  },
+  {
+    name: 'Josh Austin',
+    role: 'Director, Green Way Texas AC',
+    logo: `${CLIENTS}/gw.webp`,
+    quote:
+      'Working with The BrightByte was a turning point for us. They built an AI assistant around our HVAC service workflows, and we cut response time in half and improved accuracy in the field. The team was reliable, sharp and proactive.',
+  },
+  {
+    name: 'Vasiliy Vasiliev',
+    role: 'CEO, IGFT',
+    logo: `${CLIENTS}/oazis-pro-mark.webp`,
+    quote:
+      'We have worked with The BrightByte for two years, and in that time our project has grown a lot. The team pays close attention to detail: they write thorough API documentation, describe every new feature in a separate document and keep suggesting improvements. They also help us skip work we do not need when our plans go beyond what is necessary.',
+  },
+  {
+    name: 'Alexey Sokolov',
+    role: 'Founder, Grid Capital',
+    logo: `${CLIENTS}/gc.webp`,
+    quote:
+      'Vitaliy and his team found us a technical director and audited the project in three weeks. For startups, a quick response and fast decisions matter a lot.',
+  },
+  {
+    name: 'Dmitriy Kibkalo',
+    role: 'Founder, orbita.vc venture fund',
+    logo: `${CLIENTS}/orbita-dark.webp`,
+    quote:
+      'Vitaliy is a very driven entrepreneur and CTO. He has the breadth of experience startups need to make effective decisions quickly.',
   },
 ];

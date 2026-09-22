@@ -66,14 +66,20 @@ export const RevantaTestimonials = () => {
                 key={item.name}
                 className='m-0 flex w-full shrink-0 snap-center flex-col items-center px-[8px] text-center tablet:px-[24px]'
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={item.logo}
-                  alt=''
-                  aria-hidden
-                  loading='lazy'
-                  className='h-[56px] w-auto max-w-[150px] object-contain tablet:h-[64px]'
-                />
+                {item.logo ? (
+                  <>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={item.logo}
+                      alt=''
+                      aria-hidden
+                      loading='lazy'
+                      className='h-[56px] w-auto max-w-[150px] object-contain tablet:h-[64px]'
+                    />
+                  </>
+                ) : (
+                  <span aria-hidden className='h-[56px] tablet:h-[64px]' />
+                )}
                 <blockquote className='mt-[28px] max-w-[46ch] text-pretty font-inter text-[22px] font-light leading-[1.35] tracking-[-0.01em] text-revanta-ink tablet:mt-[36px] tablet:text-[28px] desktop:text-[32px]'>
                   “{item.quote}”
                 </blockquote>
