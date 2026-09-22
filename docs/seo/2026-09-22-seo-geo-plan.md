@@ -132,3 +132,13 @@
 | Конкуренты | teamsnap alternatives, teamsnap free alternative, sportsengine alternatives | engagerm, leagueapps alternative |
 
 По итогу: SportSchool переведён на главную фразу «youth sports registration», slug → `/revanta/youth-sports-club-software`; в title Venues добавлено «Ice Rink», Sites → «Website Builder».
+
+## 8. Сделано 22.09 (вечер)
+
+- Кейсы: вид спорта (hockey / soccer) в title, description и фильтрах industries; Torpedo ссылается на Revanta Loyalty; инструмент Triboom → Revanta.
+- Перелинковка: блок «Our products: Revanta, Regfo» на главной; колонка Revanta в футере (6 страниц); контекстная ссылка на нужный продукт в 16 спортивных статьях.
+- Каннибализация «CRM for sports clubs» разведена по интентам без удаления контента:
+  - `How_to_choose_a_CRM_for_a_sports_club` → «Sports CRM Requirements Checklist: How to Choose a Club CRM» (чек-лист, ссылка на сравнение);
+  - `ai-sports-crm-decision-engine` → «AI in Sports CRM: Pacers, Orlando Magic and F1 Case Studies» (кейсы), перекрёстные ссылки с новостью `sports-crm-2026-…`;
+  - `how-to-choose-a-crm` (общая, 2023) → «How to Choose a CRM: Types, Goals and Warning Signs».
+  Слияние двух AI-CRM статей не делали: у них разный контент (кейсы с затратами против мнения с Revanta), объединение выбросило бы уникальный текст.
