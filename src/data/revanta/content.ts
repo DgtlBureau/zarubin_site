@@ -14,10 +14,12 @@ const hub: RevantaPageContent = {
     keywords: [
       'sports club management software',
       'sports club software',
-      'sports organization management platform',
+      'hockey club software',
+      'youth sports club software',
       'sports CRM',
       'fan loyalty platform',
-      'rink and arena management software',
+      'ice rink management software',
+      'sports facility management software',
     ],
   },
   eyebrow: 'Revanta by The BrightByte',
@@ -28,10 +30,10 @@ const hub: RevantaPageContent = {
   audience: {
     heading: 'Built for',
     items: [
-      'Youth clubs and academies',
+      'Hockey clubs and academies',
+      'Volleyball, soccer and baseball clubs',
       'Leagues and associations',
-      'Professional and semi-pro clubs',
-      'College athletic programs',
+      'Junior, minor league and college teams',
       'Ice rinks and arenas',
       'Sports complexes and rec centers',
     ],
@@ -114,12 +116,18 @@ const hub: RevantaPageContent = {
     {
       question: 'What is Revanta?',
       answer:
-        'Revanta is sports club management software by The BrightByte. It covers registration and schedules for clubs and academies, ticketing and fan loyalty for spectator clubs, and bookings and public sessions for rinks and arenas, all on one member and fan base.',
+        'Revanta is sports club software by The BrightByte. It covers registration and schedules for clubs and academies, ticketing and fan loyalty for spectator clubs, and bookings and public sessions for rinks and arenas, all on one member and fan base.',
     },
     {
-      question: 'Who is Revanta for?',
+      question:
+        'What is the difference between club, team and facility software?',
       answer:
-        'Youth clubs, academies, leagues and associations; professional, semi-pro and college programs that sell tickets; and ice rinks, arenas and sports complexes that rent out time.',
+        'Team apps handle one roster’s schedule and chat. Club software runs many teams: registration, fees, tryouts, field time and player development. Facility software sells time on the ice or court to outside customers. Revanta covers club and facility work in one system, with SportSchool for the club and Venues for the facility.',
+    },
+    {
+      question: 'Which sports does Revanta support?',
+      answer:
+        'Revanta was built with hockey clubs, academies and rinks, and works for any team sport with practices, games and age groups, including volleyball, soccer, basketball, baseball and softball.',
     },
     {
       question: 'Do I have to buy the whole platform?',
@@ -127,14 +135,14 @@ const hub: RevantaPageContent = {
         'No. Revanta is modular. Most organizations start with one module, such as registration or ticketing, and add others later without moving data.',
     },
     {
+      question: 'Can we move from TeamSnap, SportsEngine or spreadsheets?',
+      answer:
+        'Yes. Players, teams, plans and history are moved into Revanta during the rollout: data collection takes 5–10 days and setup about 2 days, and work starts in the current season.',
+    },
+    {
       question: 'Can Revanta work with the systems we already use?',
       answer:
         'Yes, through data export and connections built during the rollout. We do not claim ready-made plug-ins for every US ticketing or POS system; if you need one, we build it as part of the project.',
-    },
-    {
-      question: 'How long does a rollout take?',
-      answer:
-        'A standard SaaS setup takes about two weeks. Work starts in the current season, so you do not need to pause registration, practices or ticket sales.',
     },
     {
       question: 'How is Revanta priced?',
@@ -167,11 +175,13 @@ const sportschool: RevantaPageContent = {
     keywords: [
       'sports academy management software',
       'youth sports club management software',
-      'sports club registration software',
-      'tryout and evaluation software',
-      'practice scheduling software',
+      'hockey club management software',
+      'hockey academy software',
+      'volleyball club management software',
+      'club registration software',
+      'tryout evaluation software',
+      'practice planning software',
       'player development software',
-      'field scheduling software',
     ],
   },
   eyebrow: 'Revanta SportSchool',
@@ -182,9 +192,10 @@ const sportschool: RevantaPageContent = {
   audience: {
     heading: 'Built for',
     items: [
-      'Youth sports clubs',
-      'Academies and development programs',
-      'Travel and competitive teams',
+      'Youth hockey clubs and academies',
+      'Volleyball clubs',
+      'Soccer clubs',
+      'Travel baseball and softball teams',
       'Leagues and associations',
       'Club directors and coaching staff',
     ],
@@ -328,32 +339,43 @@ const sportschool: RevantaPageContent = {
     {
       question: 'What is Revanta SportSchool?',
       answer:
-        'Revanta SportSchool is sports academy and club management software by The BrightByte. It covers registration and fees, tryouts, practice and game schedules, field allocation, player development, documents and family communication.',
+        'Revanta SportSchool is sports academy and club management software by The BrightByte. It covers registration and fees, tryouts and team formation, practice and game schedules, field and rink allocation, player development, player documents and family communication.',
     },
     {
-      question: 'Which sports does it support?',
+      question: 'What is the best software for a hockey club or academy?',
       answer:
-        'It was built with hockey academies and works for any team sport with practices, games and age groups, including soccer, basketball and volleyball. Drill diagrams support rinks and fields.',
+        'Look for one system that handles registration and fees, tryouts and tiering, ice time across shared rinks and player development. Revanta SportSchool was built with hockey academies: coaches draw drills on a rink diagram, plan ice, dryland and theory hours by month, and record fitness tests for every player.',
     },
     {
-      question: 'Can parents register and pay online?',
+      question: 'Does it work for volleyball, soccer or baseball clubs?',
       answer:
-        'Yes. Families register players and pay fees online, and the club office sees payment status per player.',
+        'Yes. The same registration, tryouts, schedules, court or field allocation and player cards work for any team sport with age groups and seasons. Drill diagrams support both rinks and fields.',
     },
     {
-      question: 'Can coaches track player development?',
+      question: 'How can a club run tryouts and team formation in one system?',
       answer:
-        'Yes. Each player has a card with attendance, fitness testing, match statistics and coach ratings, with season-over-season comparison.',
+        'Evaluations are recorded during tryouts, rosters are built from the scores, and families get their offers from the same system that later takes their registration and fees.',
     },
     {
-      question: 'Do we have to wait until the off-season to switch?',
+      question: 'Can a club track player development as well as schedules?',
       answer:
-        'No. The rollout starts with the current season: data collection takes 5–10 days, setup 2 days and staff training about 2 weeks.',
+        'Yes. Each player has a card with attendance, fitness testing, match statistics and coach ratings, with season-over-season comparison and a prospects list for the coaching staff.',
     },
     {
-      question: 'Can we run leagues and tournaments in it?',
+      question:
+        'How do we switch from TeamSnap, SportsEngine or spreadsheets mid-season?',
       answer:
-        'Yes. Internal leagues and tournaments use the same teams, schedules and venues as the rest of the club.',
+        'The rollout starts with the current season: data collection takes 5–10 days, setup 2 days and staff training about 2 weeks. Practices and registration do not stop.',
+    },
+    {
+      question: 'Can we run in-house leagues and tournaments?',
+      answer:
+        'Yes. In-house leagues and tournaments use the same teams, schedules and venues as the rest of the club.',
+    },
+    {
+      question: 'How do parents stay informed?',
+      answer:
+        'Parents get attendance notifications, schedule updates and emails for their child’s team or age group from the system, so changes do not depend on a group chat.',
     },
   ],
   articles: [
@@ -372,11 +394,12 @@ const loyalty: RevantaPageContent = {
       'Sell tickets and season passes in your own system, see each fan’s attendance history, run a loyalty program with promo codes and export fan data.',
     keywords: [
       'sports CRM',
-      'fan loyalty program software',
       'sports ticketing software',
       'season ticket software',
+      'fan loyalty program software',
+      'junior hockey ticketing',
+      'minor league fan loyalty',
       'fan engagement platform',
-      'ticketing for sports clubs',
       'fan data platform',
     ],
   },
@@ -388,8 +411,8 @@ const loyalty: RevantaPageContent = {
   audience: {
     heading: 'Built for',
     items: [
+      'Junior and minor league hockey teams',
       'Professional and semi-pro clubs',
-      'Minor league teams',
       'College athletic programs',
       'Clubs with their own arena',
       'Club marketing and ticketing teams',
@@ -519,24 +542,35 @@ const loyalty: RevantaPageContent = {
         'Revanta Loyalty is a sports CRM and fan loyalty platform by The BrightByte. Clubs sell tickets and season passes, keep each fan’s attendance and purchase history, and run points, tiers, promo codes and campaigns on that data.',
     },
     {
-      question: 'Does Revanta sell tickets itself?',
+      question: 'Do we keep our fan data?',
       answer:
-        'Yes. Tickets and season passes are sold in Revanta, so buyers land in the club’s own fan base. If you keep another ticketing system, we build the connection during the rollout.',
+        'Yes. Tickets and season passes are sold in the club’s own system, so every buyer lands in the club’s base, and any segment or the full base can be exported at any time.',
     },
     {
-      question: 'Who owns the fan data?',
+      question: 'Can Revanta handle season tickets and renewals?',
       answer:
-        'The club. Any segment or the full base can be exported at any time.',
+        'Yes. Season passes are sold in Revanta, and the attendance history shows which holders skipped games, so marketing can reach them before renewal time.',
+    },
+    {
+      question: 'How do fans earn points in a team loyalty program?',
+      answer:
+        'The club sets the rules: points for home-game attendance, merch and ticket purchases, tiers that move with each game, and achievements for streaks. Earning rates and tier conditions change in the admin panel without developers.',
+    },
+    {
+      question:
+        'Is there a loyalty platform for junior and minor league hockey teams?',
+      answer:
+        'Yes. Revanta Loyalty suits junior, minor league and college teams that sell home-game tickets themselves: tickets, season passes, loyalty and merch run in one system, so a small team does not need integrations to start a program.',
+    },
+    {
+      question: 'Does Revanta integrate with Ticketmaster or our POS?',
+      answer:
+        'Not out of the box. Revanta sells tickets and season passes itself. If you keep another ticketing or POS system, we build that connection as part of the rollout.',
     },
     {
       question: 'Is there a mobile wallet or card-linked rewards?',
       answer:
         'Not today. Revanta does not offer a mobile wallet with a balance or card-linked sponsor rewards. If you need them, we can scope them as custom development.',
-    },
-    {
-      question: 'Can we change loyalty rules ourselves?',
-      answer:
-        'Yes. Earning rates, tier conditions and achievements are configured in the admin panel and apply immediately.',
     },
     {
       question: 'Is this a sportsbook CRM?',
@@ -568,11 +602,11 @@ const venues: RevantaPageContent = {
       'Sell public skate sessions with QR tickets, confirm ice and court rentals, run memberships and leagues, and see which hours sit empty at your rink.',
     keywords: [
       'ice rink management software',
+      'ice rink scheduling software',
       'sports facility management software',
-      'ice facility scheduling software',
       'facility rental booking software',
-      'sports facility scheduling software',
-      'public skate ticketing',
+      'stick and puck booking',
+      'public skate tickets',
       'rec center registration software',
     ],
   },
@@ -584,8 +618,8 @@ const venues: RevantaPageContent = {
   audience: {
     heading: 'Built for',
     items: [
-      'Ice rinks',
-      'Arenas and stadiums',
+      'Ice rinks and hockey arenas',
+      'Multi-sheet ice facilities',
       'Sports complexes',
       'Municipal rec centers',
       'Venue and facility managers',
@@ -677,14 +711,19 @@ const venues: RevantaPageContent = {
   },
   faq: [
     {
-      question: 'What is Revanta Venues?',
+      question: 'What is ice rink management software?',
       answer:
-        'Revanta Venues is booking and management software for ice rinks, arenas and sports complexes by The BrightByte. It covers schedules, rentals, memberships, leagues, public sessions with QR tickets and utilization reports.',
+        'It is software that runs a rink’s calendar and sales: ice rentals, public skate and stick and puck sessions, memberships, leagues and reports. Revanta Venues does this for ice rinks, arenas and sports complexes.',
     },
     {
-      question: 'Can we sell public skate sessions online?',
+      question: 'Can skaters book public skate or stick and puck online?',
       answer:
         'Yes. Sessions are sold on a time grid with remaining capacity, online payment and a QR ticket that is scanned at the entrance.',
+    },
+    {
+      question: 'How do we fill empty ice time?',
+      answer:
+        'The utilization report breaks down each hour, so you can see which weekday slots sit empty, then program them as public sessions or offer them to renters and email the right group of customers.',
     },
     {
       question: 'Can renters book ice or court time online?',
@@ -692,14 +731,19 @@ const venues: RevantaPageContent = {
         'Yes. Rental requests and confirmations happen in one place instead of in email and text threads.',
     },
     {
-      question: 'Does it show which hours are empty?',
+      question: 'Does it handle several sheets of ice or courts?',
       answer:
-        'Yes. The utilization report breaks down each hour, so you can see where the venue is empty and price or program those slots.',
+        'Yes. Seasons, classes, rentals, leagues and events for the whole facility sit on one calendar, so the front desk and the league director see the same schedule.',
     },
     {
       question: 'Can the clubs that train at our rink use it too?',
       answer:
         'Yes. Clubs can run registration, schedules and player development in Revanta SportSchool on the same calendar.',
+    },
+    {
+      question: 'How long does it take to switch rink software?',
+      answer:
+        'A standard setup takes about two weeks, and work starts in the current season without closing bookings.',
     },
   ],
   articles: [
@@ -718,10 +762,10 @@ const sites: RevantaPageContent = {
       'A sports club website fed by your club data: news, fixtures and scores, rosters and player stats, sponsors and ticket links, no developer needed.',
     keywords: [
       'sports club website builder',
-      'sports club website platform',
-      'team website with schedules and rosters',
+      'youth sports website builder',
+      'hockey club website',
       'club website CMS',
-      'academy website',
+      'team website with schedules and rosters',
     ],
   },
   eyebrow: 'Revanta Sites',
@@ -791,14 +835,25 @@ const sites: RevantaPageContent = {
         'Revanta Sites is a sports club website platform by The BrightByte. News, schedules, scores, rosters and stats are managed as data and published without developers.',
     },
     {
-      question: 'Can one site cover the first team and the academy?',
+      question:
+        'How do schedules and teams show on the club website automatically?',
+      answer:
+        'Games, rosters and stats live in Revanta as data, and the website pages read them directly. A score updated once shows everywhere.',
+    },
+    {
+      question: 'Should we use Wix or a sports-specific website builder?',
+      answer:
+        'A general builder is fine for a static page. A club with several teams, schedules, rosters and sponsors saves work with a sports platform where that content is data and not text typed into pages.',
+    },
+    {
+      question: 'Can one site cover several teams and the academy?',
       answer:
         'Yes. Content is tied to a club and a team, and permissions are split by section, so several teams run on one platform.',
     },
     {
-      question: 'Do we need a developer to publish?',
+      question: 'How do we promote sponsors on the club website?',
       answer:
-        'No. The press office publishes news, galleries and schedules from the admin panel.',
+        'Revanta Sites has ad placements and sponsor blocks that the club manages from the admin panel.',
     },
     {
       question: 'How long does a new website take?',
