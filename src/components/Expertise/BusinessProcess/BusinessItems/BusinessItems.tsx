@@ -3,7 +3,7 @@ import styles from './BusinessItems.module.css';
 const businessItems = [
   'Marketing',
   'Development',
-  'Сonsistency',
+  'Consistency',
   'Digital',
   'Business',
 ];

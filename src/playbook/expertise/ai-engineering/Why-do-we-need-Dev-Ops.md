@@ -56,7 +56,7 @@ DevOps is crucial during crises. In one scenario, Oasis faced a severe security 
 
 In Oasis, we leveraged **GitHub Actions** to automate the CI/CD process, enabling rapid iterations and maintaining high service quality. With CI/CD in place, we minimize downtime during updates, ensuring that users can access the platform without interruption.
 
-> *Explore CI/CD in action:* [YouTube: CI/CDсг Basics](https://www.youtube.com/watch?v=CI-CD_Link)
+> *Explore CI/CD in action:* [YouTube: CI/CD Basics](https://www.youtube.com/watch?v=CI-CD_Link)
 
 ## Business Process: Server Monitoring in DevOps
 

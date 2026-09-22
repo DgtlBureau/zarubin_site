@@ -21,7 +21,7 @@ export const CardsData: ICard[] = [
   {
     id: 3,
     tag: 'No nonsense',
-    title: 'Only full transparency in reporting and git-е',
+    title: 'Only full transparency in reporting and git',
     image: nonesenseImg,
   },
 ];

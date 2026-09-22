@@ -24,7 +24,7 @@ An overwhelming shift of e-commerce into online platforms has eliminated offline
 
 ## Scope of Work
 
-Development of a mobile application for e-commerce in the fashion industry style. Our client "Nashе Zoloto" manufactures over 5000 accessories and jewelry items. The project included:
+Development of a mobile application for e-commerce in the fashion industry style. Our client "Nashe Zoloto" manufactures over 5000 accessories and jewelry items. The project included:
 
 - Prototyping (FigJam)
 - UX/UI design (Figma)
