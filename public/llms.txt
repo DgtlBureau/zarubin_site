@@ -21,7 +21,7 @@ Revanta is sports club software by The BrightByte — registration, ticketing, f
 
 ### Rollout and pricing
 - Standard SaaS setup takes about two weeks and starts in the current season.
-- Pricing depends on the modules and the size of the organisation; quotes are given after a demo.
+- Pricing depends on the modules and the size of the organization; quotes are given after a demo.
 
 ## Regfo — AI regulatory workspace for biotech
 - [Regfo](https://regfo.com): parses 24 ICH guidelines and 1,054 compliance rules, 46+ data points per study, compliance scoring 0–100 and gap detection for preclinical teams.

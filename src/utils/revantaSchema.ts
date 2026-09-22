@@ -39,7 +39,7 @@ export function generateRevantaSchemas(
       url: `${url}#contact`,
       availability: 'https://schema.org/InStock',
       description:
-        'Pricing depends on the modules and the size of the organisation. Book a demo for a quote.',
+        'Pricing depends on the modules and the size of the organization. Book a demo for a quote.',
     },
   };
 

@@ -44,7 +44,7 @@ const hub: RevantaPageContent = {
       'Players, parents, fans and renters live in one base. Registration, schedules, tickets, loyalty and bookings write into the same profile, so segments, campaigns and reports come out of data you already collect.',
   },
   features: {
-    heading: 'Pick the module your organisation needs',
+    heading: 'Pick the module your organization needs',
     intro:
       'Revanta is modular. Start with the job that hurts most and add the rest on the same fan and member base.',
     items: [
@@ -124,7 +124,7 @@ const hub: RevantaPageContent = {
     {
       question: 'Do I have to buy the whole platform?',
       answer:
-        'No. Revanta is modular. Most organisations start with one module, such as registration or ticketing, and add others later without moving data.',
+        'No. Revanta is modular. Most organizations start with one module, such as registration or ticketing, and add others later without moving data.',
     },
     {
       question: 'Can Revanta work with the systems we already use?',
@@ -139,7 +139,7 @@ const hub: RevantaPageContent = {
     {
       question: 'How is Revanta priced?',
       answer:
-        'Pricing depends on the modules and the size of your organisation. Book a demo and we will send a quote.',
+        'Pricing depends on the modules and the size of your organization. Book a demo and we will send a quote.',
     },
   ],
   articles: [
@@ -284,7 +284,7 @@ const sportschool: RevantaPageContent = {
       'Squad retention: how many selected players stay to the end of the season.',
       'Player progress: the share of players who improved between testing rounds.',
       'Plan versus actual training load across the club and each team.',
-      'Ice, field and gym utilisation: the share of slots taken.',
+      'Ice, field and gym utilization: the share of slots taken.',
       'Rollout: data collection 5–10 days, setup 2 days, staff training 2 weeks, starting mid-season.',
     ],
   },
@@ -596,7 +596,7 @@ const venues: RevantaPageContent = {
     before:
       'Weekday hours stay empty, rentals are negotiated over email and text, and public skate sessions are sold at the box office. Nobody can say which hours earn money and which ones cost it.',
     after:
-      'Revanta Venues puts every booking, class, league and session on one calendar. Renters confirm online, the public buys session tickets with a QR code, and the utilisation report shows where the gaps are.',
+      'Revanta Venues puts every booking, class, league and session on one calendar. Renters confirm online, the public buys session tickets with a QR code, and the utilization report shows where the gaps are.',
   },
   features: {
     heading: 'What a venue runs in Revanta',
@@ -641,7 +641,7 @@ const venues: RevantaPageContent = {
       'One calendar for seasons, classes, rentals, leagues and events.',
       'Public sessions sold online with capacity limits and QR tickets.',
       'QR scanning at the entrance.',
-      'Hour-by-hour utilisation and revenue reporting.',
+      'Hour-by-hour utilization and revenue reporting.',
       'Customers, members and renters on one profile, ready for segments and email.',
       'Works alongside Revanta SportSchool for clubs that train at the venue.',
     ],
@@ -662,7 +662,7 @@ const venues: RevantaPageContent = {
       { job: 'League building', them: 'Yes', us: 'Yes' },
       { job: 'Segments and email', them: 'Yes', us: 'Yes' },
       {
-        job: 'Utilisation and revenue reports',
+        job: 'Utilization and revenue reports',
         them: 'Yes',
         us: 'Yes, hour by hour',
       },
@@ -679,7 +679,7 @@ const venues: RevantaPageContent = {
     {
       question: 'What is Revanta Venues?',
       answer:
-        'Revanta Venues is booking and management software for ice rinks, arenas and sports complexes by The BrightByte. It covers schedules, rentals, memberships, leagues, public sessions with QR tickets and utilisation reports.',
+        'Revanta Venues is booking and management software for ice rinks, arenas and sports complexes by The BrightByte. It covers schedules, rentals, memberships, leagues, public sessions with QR tickets and utilization reports.',
     },
     {
       question: 'Can we sell public skate sessions online?',
@@ -694,7 +694,7 @@ const venues: RevantaPageContent = {
     {
       question: 'Does it show which hours are empty?',
       answer:
-        'Yes. The utilisation report breaks down each hour, so you can see where the venue is empty and price or program those slots.',
+        'Yes. The utilization report breaks down each hour, so you can see where the venue is empty and price or program those slots.',
     },
     {
       question: 'Can the clubs that train at our rink use it too?',
@@ -735,7 +735,7 @@ const sites: RevantaPageContent = {
       'Professional and semi-pro clubs',
       'Academies and youth clubs',
       'Leagues and associations',
-      'Arenas and event organisers',
+      'Arenas and event organizers',
     ],
   },
   problem: {
@@ -832,7 +832,7 @@ const ecom: RevantaPageContent = {
       'Professional clubs',
       'Arenas and stadiums',
       'Academies',
-      'Event organisers',
+      'Event organizers',
     ],
   },
   problem: {
