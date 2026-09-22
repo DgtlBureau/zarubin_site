@@ -1,6 +1,6 @@
 ---
-title: 'How to Choose a CRM for a Sports Club — 2026 Buyer''s Guide'
-description: 'Compare sports CRM platforms by 6 key features. CRM vs CDP, fan engagement, ticketing, and revenue — pick the right tool for your club.'
+title: 'Sports CRM Requirements Checklist: How to Choose a Club CRM'
+description: 'A requirements checklist for choosing a sports CRM: data and ticketing, campaigns, loyalty, CRM vs CDP and the mistakes clubs make. Use it to score vendors.'
 image: '/assets/images/expertise/sport/crm_for_a_sports.webp'
 date: '30-03-2026'
 readingTime: '8 min'
@@ -123,7 +123,7 @@ If this takes more than 30 minutes, the platform is too complex for your team.
 
 ## Evaluation Checklist
 
-Use this checklist when comparing platforms side by side:
+Use this checklist when comparing platforms side by side. For the vendors themselves, see our [comparison of CRM software for sports clubs](/playbook/expertise/The-best-CRM).
 
 **Data & Integration**
 - [ ] Unifies fan data from ticketing, e-commerce, mobile app, and POS

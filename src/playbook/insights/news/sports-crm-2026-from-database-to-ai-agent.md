@@ -90,6 +90,8 @@ Whoever lifts the Cup tonight, the scoreboard that matters off the ice is renewa
 
 Want to see what your data can do? [Book a call.](https://thebrightbyte.com/brief) Or see [how Revanta handles ticketing and fan loyalty](/revanta/sports-crm). We will look at your base, your ticketing, and your channels, and name the two or three moves that pay back fastest this quarter.
 
+The case studies behind these numbers, with costs and the order of operations, are in [AI in Sports CRM: Pacers, Orlando Magic and F1 Case Studies](/playbook/expertise/ai-sports-crm-decision-engine).
+
 ## Sources
 
 - [Pacers Sports & Entertainment × Salesforce Agentforce](https://www.salesforce.com/customer-stories/pacers-sports-entertainment/)

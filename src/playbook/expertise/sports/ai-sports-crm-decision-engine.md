@@ -1,6 +1,6 @@
 ---
-title: 'Sports CRM Is Becoming an AI Agent: From Database to Decision Engine'
-description: 'How modern sports CRM moves from a passive database to an AI decision agent. Real cases: Pacers, F1, Orlando Magic. What changes, what it costs.'
+title: 'AI in Sports CRM: Pacers, Orlando Magic and F1 Case Studies'
+description: 'How the Pacers, Orlando Magic and Formula 1 use AI on top of their CRM: what each system does, what it cost, and the order to build it in.'
 image: '/assets/images/expertise/sport/cmr_in_a_sports_organization.webp'
 date: '13-05-2026'
 readingTime: '11 min'
@@ -176,3 +176,5 @@ The cost of personalization fell by two orders of magnitude. The infrastructure 
 If you are running a sports CRM today and the words "rules-based segmentation" describe your stack, the conversation is overdue. We help sports organizations audit existing CRM stacks, identify the highest-ROI AI layer to deploy first, and plan the 18-month sequence end to end. Reach out if you want a second opinion on where your CRM sits on the curve.
 
 For the club that wants the base layer first, [Revanta Loyalty](/revanta/sports-crm) holds tickets, season passes, loyalty and campaigns on one fan profile, which is the data an AI layer needs.
+
+For our view on what a club system has to do in 2026, and where Revanta fits, read [Sports CRM in 2026: When the Database Starts Deciding](/playbook/insights/sports-crm-2026-from-database-to-ai-agent).
