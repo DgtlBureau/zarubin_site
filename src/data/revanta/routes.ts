@@ -24,7 +24,7 @@ export interface RevantaProductLink {
 export const REVANTA_PRODUCTS: RevantaProductLink[] = [
   {
     key: 'sportschool',
-    slug: 'sports-academy-software',
+    slug: 'youth-sports-club-software',
     name: 'Revanta SportSchool',
     slogan: 'Registration, teams and schedules for clubs and academies',
     image: `${REVANTA_IMAGES}/sportschool-hero.webp`,

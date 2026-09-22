@@ -20,7 +20,7 @@
 | Страница | Было: URL / title | Стало: URL / title | Главный кластер (стало) | Сегмент / конкурент |
 |---|---|---|---|---|
 | Хаб | `/revanta` · «Revanta — platform for sports clubs \| BCT» | `/revanta` · **Revanta: Software for Sports Clubs, Academies & Rinks** | sports club software, sports club management software | все |
-| SportSchool | `/revanta/en/products/virazh-sports-school` · «Revanta SportSchool — sports academy management \| BCT» | `/revanta/sports-academy-software` · **Sports Academy Management Software \| Revanta SportSchool** | sports academy management software; вторичные: youth club registration, tryouts, practice scheduling, player development, field scheduling | клубы, академии, лиги / PlayMetrics |
+| SportSchool | `/revanta/en/products/virazh-sports-school` · «Revanta SportSchool — sports academy management \| BCT» | `/revanta/youth-sports-club-software` · **Sports Academy Management Software \| Revanta SportSchool** | sports academy management software; вторичные: youth club registration, tryouts, practice scheduling, player development, field scheduling | клубы, академии, лиги / PlayMetrics |
 | Loyalty | `/revanta/en/products/virazh-loyalty` · «Revanta Loyalty — CRM for a sports club \| BCT», meta на русском | `/revanta/sports-crm` · **Sports CRM, Ticketing & Fan Loyalty \| Revanta Loyalty** | sports CRM (11k показов уже есть), fan loyalty program software, season ticket software, ticketing for sports clubs | клубы со зрителями, университеты / FanMaker |
 | Venues | — (не было) | `/revanta/sports-facility-software` · **Rink & Sports Facility Management Software \| Revanta** | ice rink management software, sports facility management/scheduling, facility rental booking, public skate tickets | катки, арены, стадионы, рек-центры / Dash Platform |
 | Sites | `/revanta/en/products/virazh-sites` · «Revanta — CMS and websites for sports clubs \| BCT», meta на русском | `/revanta/sports-club-website` · **Sports Club Website Platform & CMS \| Revanta Sites** | sports club website builder / platform, club website CMS | клубы, академии |
@@ -45,7 +45,7 @@
 | fan loyalty / fan engagement | 4 787 / 42,5 | 4 статьи вразнобой | `/revanta/sports-crm` (коммерческий), статьи ссылаются на него (фаза 3) |
 | ticketing / season tickets | 248 / 14,7 | How_CRM_helps_increase_ticket | `/revanta/sports-crm` + статья со ссылкой-анкором |
 | stadium / arena / rink / facility | 1 596 / 41,2 | stadium-management-system | `/revanta/sports-facility-software` + статья со ссылкой |
-| academy / youth / tryouts / practice planning | ≈1 000 / 56,8 | — | `/revanta/sports-academy-software` |
+| academy / youth / tryouts / practice planning | ≈1 000 / 56,8 | — | `/revanta/youth-sports-club-software` |
 | hockey | 58 / 44,6 | — | SportSchool + Venues (хоккейные сценарии). Отдельная `/revanta/hockey` — фаза 4 |
 | sports club website / CMS | 0 | — | `/revanta/sports-club-website` |
 | merch / team store | 226 / 27,1 | — | `/revanta/club-merch-store` |

@@ -89,7 +89,7 @@
   },
   {
     "source": "/revanta/en/products/virazh-sports-school",
-    "destination": "/revanta/sports-academy-software"
+    "destination": "/revanta/youth-sports-club-software"
   },
   {
     "source": "/revanta/en/products/virazh-loyalty",
@@ -105,7 +105,7 @@
   },
   {
     "source": "/revanta_academy",
-    "destination": "/revanta/sports-academy-software"
+    "destination": "/revanta/youth-sports-club-software"
   },
   {
     "source": "/revanta/privacy",
