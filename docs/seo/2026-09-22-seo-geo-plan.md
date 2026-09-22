@@ -20,10 +20,10 @@
 | Страница | Было: URL / title | Стало: URL / title | Главный кластер (стало) | Сегмент / конкурент |
 |---|---|---|---|---|
 | Хаб | `/revanta` · «Revanta — platform for sports clubs \| BCT» | `/revanta` · **Revanta: Software for Sports Clubs, Academies & Rinks** | sports club software, sports club management software | все |
-| SportSchool | `/revanta/en/products/virazh-sports-school` · «Revanta SportSchool — sports academy management \| BCT» | `/revanta/youth-sports-club-software` · **Sports Academy Management Software \| Revanta SportSchool** | sports academy management software; вторичные: youth club registration, tryouts, practice scheduling, player development, field scheduling | клубы, академии, лиги / PlayMetrics |
+| SportSchool | `/revanta/en/products/virazh-sports-school` · «Revanta SportSchool — sports academy management \| BCT» | `/revanta/youth-sports-club-software` · **Youth Sports Registration & Club Software \| Revanta** | youth sports registration software; вторичные: tryout evaluation software, hockey practice plan software, volleyball / soccer club management software, player development | клубы, академии, лиги / PlayMetrics |
 | Loyalty | `/revanta/en/products/virazh-loyalty` · «Revanta Loyalty — CRM for a sports club \| BCT», meta на русском | `/revanta/sports-crm` · **Sports CRM, Ticketing & Fan Loyalty \| Revanta Loyalty** | sports CRM (11k показов уже есть), fan loyalty program software, season ticket software, ticketing for sports clubs | клубы со зрителями, университеты / FanMaker |
-| Venues | — (не было) | `/revanta/sports-facility-software` · **Rink & Sports Facility Management Software \| Revanta** | ice rink management software, sports facility management/scheduling, facility rental booking, public skate tickets | катки, арены, стадионы, рек-центры / Dash Platform |
-| Sites | `/revanta/en/products/virazh-sites` · «Revanta — CMS and websites for sports clubs \| BCT», meta на русском | `/revanta/sports-club-website` · **Sports Club Website Platform & CMS \| Revanta Sites** | sports club website builder / platform, club website CMS | клубы, академии |
+| Venues | — (не было) | `/revanta/sports-facility-software` · **Ice Rink & Sports Facility Management Software \| Revanta** | ice rink management / scheduling software, arena management software, sports complex management software, facility rental software | катки, арены, стадионы, рек-центры / Dash Platform |
+| Sites | `/revanta/en/products/virazh-sites` · «Revanta — CMS and websites for sports clubs \| BCT», meta на русском | `/revanta/sports-club-website` · **Sports Club Website Builder with Live Data \| Revanta Sites** | sports club website builder, youth sports website builder, sports team website | клубы, академии |
 | e-com | `/revanta/en/products/virazh-ecom` · «Revanta e-com — club merchandise store \| BCT», meta на русском | `/revanta/club-merch-store` · **Merch Store Platform for Sports Clubs \| Revanta e-com** | club merchandise store platform, team store software | клубы со зрителями (низкий приоритет) |
 | Academy | `/revanta_academy` (сломанная страница, 9 показов) | редирект → SportSchool | — | — |
 
@@ -46,7 +46,7 @@
 | ticketing / season tickets | 248 / 14,7 | How_CRM_helps_increase_ticket | `/revanta/sports-crm` + статья со ссылкой-анкором |
 | stadium / arena / rink / facility | 1 596 / 41,2 | stadium-management-system | `/revanta/sports-facility-software` + статья со ссылкой |
 | academy / youth / tryouts / practice planning | ≈1 000 / 56,8 | — | `/revanta/youth-sports-club-software` |
-| hockey | 58 / 44,6 | — | SportSchool + Venues (хоккейные сценарии). Отдельная `/revanta/hockey` — фаза 4 |
+| hockey | 58 / 44,6 | — | SportSchool + Venues + Loyalty: хоккей в FAQ, «Built for», ключах (hockey tryout / practice plan software) и кейсах. Отдельных страниц по видам спорта не делаем |
 | sports club website / CMS | 0 | — | `/revanta/sports-club-website` |
 | merch / team store | 226 / 27,1 | — | `/revanta/club-merch-store` |
 | brand «revanta» | 53 / 7,4 | `/revanta` | `/revanta` + Organization.brand + llms.txt |
@@ -104,9 +104,9 @@
 ### Фаза 4 — новые страницы (2–4 недели)
 | # | Задача |
 |---|---|
-| 4.1 | `/revanta/hockey`: SportSchool + Venues + Loyalty для хоккея (главный proof продукта) |
+| 4.1 | Кейсы: в каждом спортивном кейсе явно указать вид спорта (hockey, soccer и т.д.) в title, тегах и тексте |
 | 4.2 | Comparison-страницы: `/revanta/vs/playmetrics`, `/revanta/vs/fanmaker`, `/revanta/vs/dash-platform`, «EngageRM alternatives» |
-| 4.3 | `/revanta/soccer` (football CRM уже даёт 1,7k показов) |
+| 4.3 | Alternative-страницы по автокомплиту: «TeamSnap alternatives», «SportsEngine alternatives» (после ответа по комиссиям и поддержке) |
 | 4.4 | AI-линия: retitle striking-distance статей (audit trail, SOC 2 agents, PCI, CRA, DORA) и service-страницы `/services/ai-agent-development` и т.д. |
 
 ### Фаза 5 — GEO off-site (постоянно)
@@ -120,3 +120,15 @@
 - GSC: regex-сегменты brand / GEO-proxy (промпт-запросы от 10 слов) / off-ICP / аномалии; фильтр Page contains `/revanta`.
 - Через 28 дней после индексации сравнить кластеры: sports CRM, academy, facility, ticketing, website.
 - KPI: показы и клики по кластерам Revanta, доля топ-10, заявки `generate_lead` по продуктам.
+
+## 7. Проверка через Google Autocomplete (22.09.2026, hl=en, gl=us)
+
+| Кластер | Подтверждено | Не подтверждено |
+|---|---|---|
+| SportSchool | youth sports registration software / platform, sports registration software, tryout evaluation software, hockey / volleyball / soccer tryout software, hockey practice plan software, volleyball club management software, soccer club management software | sports academy management software (только free / india), hockey club / academy / association software (0 подсказок) |
+| Loyalty | sports crm software / systems, fan loyalty programs in sports, season ticket management software, fan engagement platform for sports teams | junior hockey tickets (B2C) |
+| Venues | ice rink management / scheduling software, arena management software, sports complex management software, facility rental / reservation software, how much does ice time cost | stick and puck, public skate (локальный B2C) |
+| Sites | sports club website builder, youth sports website builder, sports team website | — |
+| Конкуренты | teamsnap alternatives, teamsnap free alternative, sportsengine alternatives | engagerm, leagueapps alternative |
+
+По итогу: SportSchool переведён на главную фразу «youth sports registration», slug → `/revanta/youth-sports-club-software`; в title Venues добавлено «Ice Rink», Sites → «Website Builder».
