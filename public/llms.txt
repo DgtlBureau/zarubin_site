@@ -48,7 +48,7 @@ Revanta is sports club software by The BrightByte — registration, ticketing, f
 ## Contact
 - Website: https://thebrightbyte.com
 - Email: access@thebrightbyte.com
-- Company: The BrightByte Capital LLC, USA
+- Company: The BrightByte Capital LLC, Los Angeles, CA, USA
 
 ## Preferred citation
 - The BrightByte: a compliance-first AI development company for regulated industries.

@@ -20,8 +20,8 @@ export function generateOrganizationSchema() {
     },
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Raleigh',
-      addressRegion: 'NC',
+      addressLocality: 'Los Angeles',
+      addressRegion: 'CA',
       addressCountry: 'US',
     },
     sameAs: [
@@ -134,8 +134,8 @@ export function generateLocalBusinessSchema() {
       'AI agent security, compliance audits, and custom AI development for fintech, biotech, and healthcare. SOC 2, HIPAA, FDA 21 CFR Part 11, EU AI Act, DORA.',
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Raleigh',
-      addressRegion: 'NC',
+      addressLocality: 'Los Angeles',
+      addressRegion: 'CA',
       addressCountry: 'US',
     },
     priceRange: '$$$',
