@@ -54,6 +54,7 @@ export const InsightsClient = ({ posts }: Props) => {
                 description={post.description}
                 tag={post.tag}
                 image={post.image}
+                imageAspect={post.imageAspect}
                 downloadLink={post.downloadLink}
                 showDownloadLink={post.subCategory === 'Research'}
                 size='md'

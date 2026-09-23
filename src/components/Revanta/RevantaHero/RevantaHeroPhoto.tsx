@@ -1,9 +1,14 @@
 import { REVANTA_BASE } from '@/src/data/revanta/routes';
+import { coverSizes } from '@/src/utils/imageSizes';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Reveal } from '../ui/Reveal';
 import { RevantaContainer } from '../ui/layout';
 import { CtaButton } from './CtaButton';
+
+// Box: 100svh clamped to 600-900px. Hero photos are 1.8-2.0 wide; cover
+// draws them up to 900 x 2 px wide even on phones.
+const HERO_PHOTO_SIZES = coverSizes(2, [{ minWidth: 0, vw: 1, height: 900 }]);
 
 interface Props {
   productName: string;
@@ -29,7 +34,7 @@ export const RevantaHeroPhoto = ({
         src={image}
         alt={imageAlt}
         fill
-        sizes='100vw'
+        sizes={HERO_PHOTO_SIZES}
         priority
         quality={85}
         className='object-cover object-center'

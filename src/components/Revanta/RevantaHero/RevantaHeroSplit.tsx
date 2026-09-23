@@ -61,6 +61,7 @@ export const RevantaHeroSplit = ({
                     height={632}
                     priority
                     quality={95}
+                    sizes='(min-width: 1440px) 143px, (min-width: 768px) 118px, 73px'
                     className={`h-[46px] w-auto tablet:h-[74px] desktop:h-[90px] ${EMBLEM_GLOW_CLASS}`}
                   />
                 </span>
@@ -73,6 +74,7 @@ export const RevantaHeroSplit = ({
                       height={235}
                       priority
                       quality={95}
+                      sizes='(min-width: 1440px) 420px, (min-width: 768px) 340px, 210px'
                       className='h-auto w-[210px] tablet:w-[340px] desktop:w-[420px]'
                     />
                   </span>
@@ -110,7 +112,7 @@ export const RevantaHeroSplit = ({
                       fill
                       priority
                       quality={90}
-                      sizes='(max-width: 767px) 300vw, (max-width: 1279px) 92vw, 1560px'
+                      sizes='(min-width: 1440px) 1330px, (min-width: 1200px) 1010px, 101vw'
                       className='object-cover object-left-top laptop:object-top'
                     />
                   </div>

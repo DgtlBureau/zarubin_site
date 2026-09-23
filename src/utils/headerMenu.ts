@@ -33,8 +33,16 @@ const toMenuArticle = ({
   title,
   description,
   image,
+  imageAspect,
   category,
-}: Post): MenuArticle => ({ slug, title, description, image, category });
+}: Post): MenuArticle => ({
+  slug,
+  title,
+  description,
+  image,
+  imageAspect,
+  category,
+});
 
 /**
  * Server-side projection of the playbook data the header needs. Sorting and

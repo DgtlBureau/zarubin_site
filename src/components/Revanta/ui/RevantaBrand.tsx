@@ -17,6 +17,7 @@ export const RevantaBrand = ({ onClick }: { onClick?: () => void }) => (
       width={1002}
       height={632}
       priority
+      sizes='(min-width: 1440px) 61px, 54px'
       className={`h-[34px] w-auto desktop:h-[38px] ${EMBLEM_GLOW_CLASS}`}
     />
     <Image
@@ -25,6 +26,7 @@ export const RevantaBrand = ({ onClick }: { onClick?: () => void }) => (
       width={1611}
       height={235}
       priority
+      sizes='(min-width: 1440px) 131px, 117px'
       className='h-[17px] w-auto desktop:h-[19px]'
     />
   </Link>

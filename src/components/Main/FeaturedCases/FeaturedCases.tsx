@@ -1,5 +1,4 @@
-'use client';
-
+import { getPublicImageAspect } from '@/src/utils/publicImageSize';
 import Link from 'next/link';
 import { Container } from '../../shared/Container/Container';
 import { Section } from '../../shared/Section/Section';
@@ -65,6 +64,7 @@ export const FeaturedCases = () => {
             <FeaturedCaseCard
               key={caseData.slug}
               data={caseData}
+              bannerAspect={getPublicImageAspect(caseData.bannerImage)}
               className={idx === 2 ? 'hidden tablet:hidden desktop:block' : ''}
             />
           ))}

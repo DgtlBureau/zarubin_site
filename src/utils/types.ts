@@ -3,6 +3,8 @@ export interface Post {
   title: string;
   description: string;
   image: string | undefined;
+  /** width / height of `image` (local files only), for next/image `sizes`. */
+  imageAspect?: number;
   category: string;
   subCategory: string | null | undefined;
   date: string;
@@ -53,7 +55,7 @@ export interface ISubmenu {
 /** Article fields the header menus render (desktop mega menu + mobile menu). */
 export type MenuArticle = Pick<
   Post,
-  'slug' | 'title' | 'description' | 'image' | 'category'
+  'slug' | 'title' | 'description' | 'image' | 'imageAspect' | 'category'
 >;
 
 export interface MenuSectionItem {

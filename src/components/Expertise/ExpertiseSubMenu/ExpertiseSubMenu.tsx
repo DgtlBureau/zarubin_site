@@ -5,6 +5,7 @@ import {
   formatMenuTitle,
 } from '@/src/utils/formattedMenuItem';
 import { MenuArticle, MenuSection } from '@/src/utils/types';
+import { coverSizes, WIDE } from '@/src/utils/imageSizes';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -50,7 +51,9 @@ export const ExpertiseSubMenu = ({
                   src={featured.image}
                   alt={featured.title}
                   fill
-                  sizes='340px'
+                  sizes={coverSizes(featured.imageAspect, [
+                    { minWidth: 0, px: 340, boxAspect: WIDE },
+                  ])}
                   className='object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]'
                 />
               )}
@@ -118,7 +121,9 @@ export const ExpertiseSubMenu = ({
                           src={post.image}
                           alt={post.title}
                           fill
-                          sizes='112px'
+                          sizes={coverSizes(post.imageAspect, [
+                            { minWidth: 0, px: 112, height: 72 },
+                          ])}
                           className='object-cover object-center'
                         />
                       )}

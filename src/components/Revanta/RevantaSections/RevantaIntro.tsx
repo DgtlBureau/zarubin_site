@@ -1,4 +1,6 @@
 import { RevantaPageContent } from '@/src/data/revanta/types';
+import { coverSizes } from '@/src/utils/imageSizes';
+import { getPublicImageAspect } from '@/src/utils/publicImageSize';
 import Image from 'next/image';
 import { Reveal } from '../ui/Reveal';
 import {
@@ -33,7 +35,9 @@ export const RevantaIntro = ({ content }: { content: RevantaPageContent }) => (
                 src={content.audience.image}
                 alt=''
                 fill
-                sizes='340px'
+                sizes={coverSizes(getPublicImageAspect(content.audience.image), [
+                  { minWidth: 0, px: 340, boxAspect: 4 / 5 },
+                ])}
                 quality={80}
                 className='object-cover object-center'
               />

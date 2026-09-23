@@ -1,3 +1,10 @@
+import {
+  CARD_GRID_COLUMNS,
+  coverSizes,
+  WIDE,
+  withBox,
+} from '@/src/utils/imageSizes';
+import { getPublicImageAspect } from '@/src/utils/publicImageSize';
 import { IProduct } from '@/src/utils/types';
 import { DateTime } from 'luxon';
 import Image from 'next/image';
@@ -21,6 +28,8 @@ const formatDate = (date: string) => {
   return parsed.isValid ? parsed.toFormat('LLL yyyy') : '';
 };
 
+const CARD_BOXES = withBox(CARD_GRID_COLUMNS, { boxAspect: WIDE });
+
 const ProductCard = ({ item }: { item: IProduct }) => {
   const card = (
     <>
@@ -30,7 +39,7 @@ const ProductCard = ({ item }: { item: IProduct }) => {
           alt={item.name}
           fill
           quality={80}
-          sizes='(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw'
+          sizes={coverSizes(getPublicImageAspect(item.image), CARD_BOXES)}
           className={`object-cover object-top transition-transform duration-500 ${
             item.open
               ? 'group-hover:scale-[1.04]'

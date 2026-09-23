@@ -5,6 +5,8 @@ import {
   RevantaProductKey,
   revantaHref,
 } from '@/src/data/revanta/routes';
+import { coverSizes, CoverBox, WIDE } from '@/src/utils/imageSizes';
+import { getPublicImageAspect } from '@/src/utils/publicImageSize';
 import Image from 'next/image';
 import Link from 'next/link';
 import { RevantaLockup } from '../ui/RevantaLockup';
@@ -17,6 +19,13 @@ import { productLabel } from './RevantaModuleCards';
 const SCROLL_ID = 'revanta-others-scroll';
 
 /** Carousel of the hub and the other Revanta products. */
+// Card widths: w-[300px] tablet:w-[460px] desktop:w-[520px], 16:10 covers
+const CARD_BOXES: CoverBox[] = [
+  { minWidth: 0, px: 300, boxAspect: WIDE },
+  { minWidth: 768, px: 460, boxAspect: WIDE },
+  { minWidth: 1440, px: 520, boxAspect: WIDE },
+];
+
 export const RevantaOtherProducts = ({
   current,
 }: {
@@ -66,7 +75,10 @@ export const RevantaOtherProducts = ({
                   src={card.image}
                   alt=''
                   fill
-                  sizes='(max-width: 768px) 300px, 520px'
+                  sizes={coverSizes(
+                    getPublicImageAspect(card.image),
+                    CARD_BOXES,
+                  )}
                   quality={80}
                   className='object-cover object-center'
                 />

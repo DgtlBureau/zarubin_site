@@ -8,6 +8,12 @@ import {
     underscopeReverter
 } from '@/src/utils/formatter/underscopeFormatter';
 import { Post } from '@/src/utils/types';
+import {
+  aspectOf,
+  coverSizes,
+  CoverBox,
+  WIDESCREEN,
+} from '@/src/utils/imageSizes';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname, useSearchParams } from 'next/navigation';
@@ -15,6 +21,14 @@ import { usePathname, useSearchParams } from 'next/navigation';
 interface IArticleProps {
   data: Post;
 }
+
+// Thumbnail box: full-width 16:9 below laptop; beside the text from laptop
+// (min 360px, at most 420px wide; up to 1280px it is taller than 16:9).
+const THUMB_BOXES: CoverBox[] = [
+  { minWidth: 0, vw: 1, boxAspect: WIDESCREEN },
+  { minWidth: 1200, px: 420, boxAspect: 1.36 },
+  { minWidth: 1280, px: 420, boxAspect: WIDESCREEN },
+];
 
 export const PlaybookCard = ({ data }: IArticleProps) => {
   const pathname = usePathname();
@@ -40,6 +54,10 @@ export const PlaybookCard = ({ data }: IArticleProps) => {
           width={549}
           height={308}
           alt={data.title}
+          sizes={coverSizes(
+            data.image ? data.imageAspect : aspectOf(defaultImg),
+            THUMB_BOXES,
+          )}
           className='h-full w-full object-cover object-center duration-300'
           quality={80}
           priority

@@ -1,5 +1,13 @@
 import { GenerateIcon } from '@/src/utils/generateIcon/GenerateIgon';
+import { CARD_GRID_COLUMNS, coverSizes, withBox } from '@/src/utils/imageSizes';
 import Image from 'next/image';
+
+// Faded background photo; the card is taller than the photos' ratio, so
+// cover never draws them wider than the card.
+const BACKGROUND_SIZES = coverSizes(
+  undefined,
+  withBox(CARD_GRID_COLUMNS, { boxAspect: 1 }),
+);
 
 interface IExpertiseCard {
   data: {
@@ -21,7 +29,7 @@ export const ExpertiseCard = ({ data, idx }: IExpertiseCard) => {
       {data.image && (
         <Image
           fill
-          sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+          sizes={BACKGROUND_SIZES}
           src={data.image}
           alt={title}
           className='-z-10 opacity-20 object-cover object-center'

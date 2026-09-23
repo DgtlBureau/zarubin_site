@@ -60,6 +60,7 @@ export const NewInsightsClient = ({ posts }: Props) => {
                   description={post.description}
                   tag={post.tag}
                   image={post.image}
+                  imageAspect={post.imageAspect}
                   date={post.date}
                   downloadLink={post.downloadLink}
                   showDownloadLink={post.subCategory === 'Research'}

@@ -4,6 +4,8 @@ import {
   revantaHref,
 } from '@/src/data/revanta/routes';
 import { RevantaFeature } from '@/src/data/revanta/types';
+import { coverSizes, CoverBox, WIDE } from '@/src/utils/imageSizes';
+import { getPublicImageAspect } from '@/src/utils/publicImageSize';
 import Image from 'next/image';
 import Link from 'next/link';
 import { RevantaLockup } from '../ui/RevantaLockup';
@@ -12,6 +14,13 @@ import { Sheen } from '../ui/Sheen';
 import { H2_CLASS, RevantaContainer, RevantaSection } from '../ui/layout';
 
 /** Short product label for the lockup chip: "Revanta Loyalty" -> "Loyalty". */
+// 1 / 2 (tablet) / 3 (laptop) columns of 16:10 covers
+const CARD_BOXES: CoverBox[] = [
+  { minWidth: 0, vw: 1, boxAspect: WIDE },
+  { minWidth: 768, vw: 0.5, boxAspect: WIDE },
+  { minWidth: 1200, vw: 0.34, boxAspect: WIDE },
+];
+
 export const productLabel = (name: string) => name.replace(/^Revanta\s+/, '');
 
 // Hub modules are named after products; the one module without its own page
@@ -64,7 +73,10 @@ export const RevantaModuleCards = ({
                     src={mod.image}
                     alt=''
                     fill
-                    sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+                    sizes={coverSizes(
+                      getPublicImageAspect(mod.image),
+                      CARD_BOXES,
+                    )}
                     quality={80}
                     className='object-cover object-center'
                   />

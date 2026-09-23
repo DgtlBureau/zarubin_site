@@ -236,6 +236,8 @@ export default async function CasePage(props: { params: Promise<{ slug: string }
                   width={700}
                   height={900}
                   quality={80}
+                  // Full container width; right column of two from desktop
+                  sizes='(min-width: 1440px) 48vw, (min-width: 1200px) 97vw, (min-width: 768px) 728px, 100vw'
                   alt={`${slug} project image`}
                   className='h-[auto] w-full'
                 />

@@ -2,6 +2,12 @@
 
 import { cn } from '@/src/lib/utils';
 import { NextLinePreposition } from '@/src/components/NextLinePreposition/NextLinePreposition';
+import {
+  CARD_GRID_COLUMNS,
+  coverSizes,
+  WIDESCREEN,
+  withBox,
+} from '@/src/utils/imageSizes';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -14,12 +20,20 @@ export interface FeaturedCaseData {
   bannerImage: string;
 }
 
+const BANNER_BOXES = withBox(CARD_GRID_COLUMNS, { boxAspect: WIDESCREEN });
+
 interface FeaturedCaseCardProps {
   data: FeaturedCaseData;
+  /** width / height of the banner, for object-cover aware `sizes`. */
+  bannerAspect?: number;
   className?: string;
 }
 
-export const FeaturedCaseCard = ({ data, className }: FeaturedCaseCardProps) => {
+export const FeaturedCaseCard = ({
+  data,
+  bannerAspect,
+  className,
+}: FeaturedCaseCardProps) => {
   return (
     <Link
       href={`/cases/${data.slug}`}
@@ -32,7 +46,7 @@ export const FeaturedCaseCard = ({ data, className }: FeaturedCaseCardProps) => 
             src={data.bannerImage}
             alt={data.name}
             fill
-            sizes='(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw'
+            sizes={coverSizes(bannerAspect, BANNER_BOXES)}
             className='object-cover object-center'
             quality={80}
           />

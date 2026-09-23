@@ -63,6 +63,7 @@ export const Featured = ({ slug, posts }: Props) => {
                 description={item.description}
                 date={item.date}
                 image={item.image}
+                imageAspect={item.imageAspect}
                 size='md'
                 showTagsOverlay={true}
               />

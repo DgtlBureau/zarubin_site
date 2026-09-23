@@ -36,6 +36,7 @@ export const ExpertiseSubmenuArticles = ({ data, onClick }: IData) => {
                 title={post.title}
                 description={post.description}
                 image={post.image}
+                imageAspect={post.imageAspect}
                 size='xs'
                 showTagsOverlay={false}
                 onClick={onClick}

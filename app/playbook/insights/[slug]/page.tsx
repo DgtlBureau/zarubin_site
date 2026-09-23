@@ -1,4 +1,5 @@
 import { Featured } from '@/src/components/Featured/Featured';
+import { articleMarkdownOptions } from '@/src/components/shared/MarkdownImage/MarkdownImage';
 import { SocialFollow } from '@/src/components/SocialFollow/SocialFollow';
 import { AuthorInfo } from '@/src/ui-kit/AuthorInfo/AuthorInfo';
 import { DownloadLink } from '@/src/ui-kit/DownloadLink/DownloadLink';
@@ -15,6 +16,7 @@ import { formattedDate } from '@/src/utils/formattedDate';
 import { getInsightsMetadata } from '@/src/utils/getInsightsMetadata';
 import { ideaMarking } from '@/src/utils/IdeaMarking/ideaMarking';
 import { openGraphImage } from '@/src/utils/openGraphParams';
+import { getMarkdownImageDimensions } from '@/src/utils/publicImageSize';
 import { generateParagraphs } from '@/src/utils/postAnchors/postAnchors';
 import { postsSorting } from '@/src/utils/postsSorting';
 import fs from 'fs';
@@ -181,6 +183,7 @@ export default async function InsightsPostPage(props: { params: Promise<{ slug: 
       return '';
     });
 
+  const imageDimensions = getMarkdownImageDimensions(allPosts);
   const paragraphs = generateParagraphs(allPosts);
 
   const mainAnchorData = {
@@ -237,7 +240,10 @@ export default async function InsightsPostPage(props: { params: Promise<{ slug: 
           <article
             className={`prose w-full max-w-[100%] pb-[30px] text-white prose-p:text-[16px] prose-p:text-text-dark/80 prose-li:text-[16px] prose-li:text-text-dark/80 tablet:pb-[40px] desktop:pb-[60px]`}
           >
-            <Markdown className={`${styles.markdown} z-20 w-full font-inter`}>
+            <Markdown
+              className={`${styles.markdown} z-20 w-full font-inter`}
+              options={articleMarkdownOptions(imageDimensions)}
+            >
               {allPosts}
             </Markdown>
           </article>

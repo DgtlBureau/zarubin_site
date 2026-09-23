@@ -5,6 +5,9 @@ const DynamicCasesCard = dynamic(() =>
   import('../CaseCard/CaseCard').then((mod) => mod.CaseCard),
 );
 
+// Cards visible above the fold at the widest (3-column) layout
+const FIRST_ROW_CARDS = 3;
+
 const sortingCase: Record<string, number> = {
   OAZIS: 1,
   Avangard: 2,
@@ -30,8 +33,12 @@ export const CasesGrid = ({ cases }: { cases: Case[] }) => {
 
   return (
     <div className='grid grid-cols-1 gap-[40px] tablet:grid-cols-2 desktop:grid-cols-3'>
-      {sortedCases.map((item) => (
-        <DynamicCasesCard key={item.title} data={item} />
+      {sortedCases.map((item, index) => (
+        <DynamicCasesCard
+          key={item.title}
+          data={item}
+          eager={index < FIRST_ROW_CARDS}
+        />
       ))}
     </div>
   );

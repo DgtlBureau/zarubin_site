@@ -6,6 +6,9 @@
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
+    "build:export": "NEXT_OUTPUT_EXPORT=true next build && npm run generate-image-variants",
+    "generate-image-variants": "node scripts/generate-image-variants.mjs",
+    "test": "node --test src/lib/imageVariants/imageVariants.test.mjs src/utils/imageSizes.test.mjs",
     "generate-redirect-stubs": "node scripts/generate-redirect-stubs.mjs",
     "start": "next start",
     "lint": "next lint",
@@ -25,6 +28,7 @@
     "framer-motion": "^12.23.6",
     "gray-matter": "^4.0.3",
     "html2canvas": "^1.4.1",
+    "image-size": "^2.0.4",
     "jspdf": "^4.0.0",
     "lucide-react": "^0.562.0",
     "luxon": "^3.4.4",
@@ -74,6 +78,7 @@
     "knip": "^5.27.4",
     "postcss": "^8",
     "prettier": "^3.2.5",
+    "sharp": "^0.34.5",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.5.4"
   }

@@ -8,6 +8,7 @@ import { SEO_DESCRIPTION_SIZE } from '@/src/utils/alias';
 import { contentTrimming } from '@/src/utils/contentTrimming';
 import { pageMetadata } from '@/src/utils/pageMetadata';
 import { Seo } from '@/src/utils/Seo/Seo';
+import { aspectOf, coverSizes } from '@/src/utils/imageSizes';
 import Image from 'next/image';
 import styles from './Comparison.module.css';
 
@@ -40,6 +41,12 @@ export default async function ComparisonPage() {
             src={HeroBg}
             priority
             alt='background image'
+            // Section heights: ~290px (mobile), ~280px (tablet-laptop), up to 380px (desktop)
+            sizes={coverSizes(aspectOf(HeroBg), [
+              { minWidth: 0, vw: 1, height: 290 },
+              { minWidth: 768, vw: 1, height: 280 },
+              { minWidth: 1440, vw: 1, height: 380 },
+            ])}
             objectPosition='top'
             objectFit='cover'
             layout='fill'

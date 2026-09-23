@@ -1,6 +1,13 @@
 import defaultImg from '@/public/assets/images/banner/default_insights.webp';
 import { DownloadLink } from '@/src/ui-kit/DownloadLink/DownloadLink';
 import { formattedDate } from '@/src/utils/formattedDate';
+import {
+  ARTICLE_CARD_COLUMNS,
+  aspectOf,
+  coverSizes,
+  WIDESCREEN,
+  withBox,
+} from '@/src/utils/imageSizes';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -21,6 +28,8 @@ export interface ArticleCardProps {
   title: string;
   description?: string;
   image?: string | null;
+  /** width / height of `image`; lets `sizes` account for object-cover scaling. */
+  imageAspect?: number;
   date?: string;
   tag?: string;
   slug?: string;
@@ -81,6 +90,7 @@ export const ArticleCard = ({
   title,
   description,
   image,
+  imageAspect,
   date,
   tag,
   slug,
@@ -108,6 +118,10 @@ export const ArticleCard = ({
             alt={title}
             width={450}
             height={250}
+            sizes={coverSizes(
+              image ? imageAspect : aspectOf(defaultImg),
+              withBox(ARTICLE_CARD_COLUMNS, { boxAspect: WIDESCREEN }),
+            )}
             className='absolute h-full w-full object-cover object-center'
             quality={80}
           />

@@ -2,14 +2,34 @@
 
 import { mainBanners } from '@/src/utils/DataLayers/MainBanners';
 import { MenuItems } from '@/src/utils/enums';
+import { aspectOf, CoverBox, coverSizes } from '@/src/utils/imageSizes';
 import { useAfterLoadIdle } from '@/src/utils/useAfterLoadIdle';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { Autoplay, EffectFade } from 'swiper/modules';
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { Container } from '../../shared/Container/Container';
 import { Section } from '../../shared/Section/Section';
+
+// Slide box heights per breakpoint (see the slide wrapper classes below);
+// desktop is h-screen capped at 960px.
+const HERO_BOXES: CoverBox[] = [
+  { minWidth: 0, vw: 1, height: 540 },
+  { minWidth: 568, vw: 1, height: 560 },
+  { minWidth: 768, vw: 1, height: 660 },
+  { minWidth: 1440, vw: 1, height: 960 },
+];
+// Widest slide ratio, for string sources without known dimensions
+const FALLBACK_ASPECT = 2;
+
+// object-cover in a box taller than the photo's ratio draws the photo wider
+// than the viewport (e.g. ~1080px on a 390px phone), so sizes follows that.
+const heroSizes = (image: StaticImageData | string) =>
+  coverSizes(
+    typeof image === 'string' ? FALLBACK_ASPECT : aspectOf(image),
+    HERO_BOXES,
+  );
 
 export const NewHero = () => {
   const [swiper, setSwiper] = useState<SwiperClass | null>(null);
@@ -53,7 +73,7 @@ export const NewHero = () => {
                 <Image
                   src={hero.image}
                   fill
-                  sizes='100vw'
+                  sizes={heroSizes(hero.image)}
                   priority={index === 0}
                   fetchPriority={index === 0 ? 'high' : undefined}
                   alt={hero.title}

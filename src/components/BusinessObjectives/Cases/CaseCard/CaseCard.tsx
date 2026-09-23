@@ -3,6 +3,7 @@
 import defaultLogo from '@/public/assets/images/case/svg/default-case-logo.svg';
 import { NextLinePreposition } from '@/src/components/NextLinePreposition/NextLinePreposition';
 import { MenuItems } from '@/src/utils/enums';
+import { CARD_GRID_COLUMNS, coverSizes, withBox } from '@/src/utils/imageSizes';
 import { Case } from '@/src/utils/getCaseMetadata';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -10,7 +11,17 @@ import { useState } from 'react';
 import styles from './CasesCard.module.css';
 import { CaseTag } from './CaseTag/CaseTag';
 
-export const CaseCard = ({ data }: { data: Case }) => {
+// Card box: min-height 423px (CasesCard.module.css); cover scales wide
+// banners past the card width, so sizes follow the banner's aspect ratio.
+const BANNER_BOXES = withBox(CARD_GRID_COLUMNS, { height: 440 });
+
+interface CaseCardProps {
+  data: Case;
+  /** Load the banner eagerly (cards in the first grid row). */
+  eager?: boolean;
+}
+
+export const CaseCard = ({ data, eager = false }: CaseCardProps) => {
   const [logo, setLogo] = useState(data.logo);
 
   const handleMouseEnter = () => {
@@ -26,15 +37,21 @@ export const CaseCard = ({ data }: { data: Case }) => {
     <Link
       href={`/${MenuItems.CASES.toLowerCase()}/${data.slug}`}
       className={styles.mainContainer}
-      style={{
-        backgroundImage: `url(${data.bannerImage})`,
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-      }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
+      {/* Same as the former `background: center / cover no-repeat`, but with
+          srcset. Painted under the ::before overlay (z-index 1). */}
+      {data.bannerImage && (
+        <Image
+          src={data.bannerImage}
+          alt=''
+          fill
+          sizes={coverSizes(data.bannerAspect, BANNER_BOXES)}
+          loading={eager ? 'eager' : 'lazy'}
+          className='object-cover object-center'
+        />
+      )}
       <div
         className={`${styles.contentContainer} relative z-30 flex h-full w-full flex-col justify-between`}
       >

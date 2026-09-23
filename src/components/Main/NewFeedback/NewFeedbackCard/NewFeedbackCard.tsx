@@ -1,5 +1,6 @@
 import { formattedDate } from '@/src/utils/formattedDate';
 import { IImage } from '@/src/utils/types';
+import { aspectOf, coverSizes } from '@/src/utils/imageSizes';
 import Image from 'next/image';
 
 interface Data {
@@ -27,6 +28,10 @@ export const NewFeedbackCard = ({ data }: Props) => {
             src={data.image}
             quality={80}
             alt={data.name}
+            sizes={coverSizes(aspectOf(data.image), [
+              { minWidth: 0, px: 60, height: 60 },
+              { minWidth: 568, px: 80, height: 80 },
+            ])}
             className='h-[60px] w-[60px] rounded-full object-cover transition-opacity duration-500 mobile-big:h-[80px] mobile-big:w-[80px]'
             loading='lazy'
           />
@@ -50,6 +55,7 @@ export const NewFeedbackCard = ({ data }: Props) => {
           src={data.logo}
           quality={80}
           alt='Logo'
+          sizes='120px'
           className='h-auto max-h-[50px] max-w-[120px] w-auto object-contain'
           loading='lazy'
         />

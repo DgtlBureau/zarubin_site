@@ -13,6 +13,17 @@ const WORDMARK: Record<Size, string> = {
   md: 'h-auto w-[136px] tablet:w-[164px]',
   lg: 'h-auto w-[190px] tablet:w-[270px] desktop:w-[340px]',
 };
+// Rendered CSS widths of the classes above (emblem is 1002x632), for `sizes`
+const EMBLEM_SIZES: Record<Size, string> = {
+  sm: '42px',
+  md: '(min-width: 768px) 61px, 51px',
+  lg: '(min-width: 1440px) 124px, (min-width: 768px) 99px, 70px',
+};
+const WORDMARK_SIZES: Record<Size, string> = {
+  sm: '110px',
+  md: '(min-width: 768px) 164px, 136px',
+  lg: '(min-width: 1440px) 340px, (min-width: 768px) 270px, 190px',
+};
 const GAP: Record<Size, string> = {
   sm: 'gap-[8px] px-[12px]',
   md: 'gap-[11px] px-[18px]',
@@ -73,6 +84,7 @@ export const RevantaLockup = ({
               alt=''
               width={1002}
               height={632}
+              sizes={EMBLEM_SIZES[size]}
               className={EMBLEM[size]}
             />
           </span>
@@ -88,6 +100,7 @@ export const RevantaLockup = ({
               alt=''
               width={1611}
               height={235}
+              sizes={WORDMARK_SIZES[size]}
               className={WORDMARK[size]}
             />
           </span>

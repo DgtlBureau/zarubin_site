@@ -71,10 +71,12 @@ jobs:
         with:
           node-version: '20'
           cache: ${{ steps.detect-package-manager.outputs.manager }}
+      # No `static_site_generator: next`: its config injection forces
+      # `images.unoptimized: true`, which disables the srcset image loader.
+      # `output: 'export'` is set in next.config.mjs via NEXT_OUTPUT_EXPORT
+      # (basePath is empty on the custom domain, so nothing else is lost).
       - name: Setup Pages
         uses: actions/configure-pages@v6
-        with:
-          static_site_generator: next
       - name: Restore cache
         uses: actions/cache@v5
         with:
@@ -85,8 +87,9 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      # Static export + resized WebP variants for next/image srcset (into out/_img)
       - name: Build with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        run: npm run build:export
       - name: Generate redirect stubs
         run: npm run generate-redirect-stubs
       - name: Generate sitemap

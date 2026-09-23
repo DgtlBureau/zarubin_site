@@ -2,6 +2,7 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import path from 'path';
 import { MenuItems } from './enums';
+import { getPublicImageAspect } from './publicImageSize';
 import { Post } from './types';
 
 export interface Case {
@@ -51,6 +52,7 @@ export const getExpertiseMetadata = (): Post[] => {
       subCategory: matterResult.data.subCategory,
       slug: path.basename(filePath, '.md'),
       image: matterResult.data.image,
+      imageAspect: getPublicImageAspect(matterResult.data.image),
       authorName: matterResult.data.authorName,
       authorImage: matterResult.data.authorImage,
     };

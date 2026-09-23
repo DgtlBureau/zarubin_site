@@ -1,5 +1,6 @@
 import fs from 'fs';
 import matter from 'gray-matter';
+import { getPublicImageAspect } from './publicImageSize';
 
 export interface Case {
   industries: string[];
@@ -12,6 +13,8 @@ export interface Case {
   logo_hover: string | null | undefined;
   instruments: string[] | [];
   bannerImage: string;
+  /** width / height of `bannerImage`, for next/image `sizes`. */
+  bannerAspect?: number;
   date: string | undefined;
   type: string;
   link: string;
@@ -34,6 +37,7 @@ export const getCaseMetadata = (basePath: string) => {
       tag: matterResult.data.tag,
       slug: filename.replace('.md', ''),
       bannerImage: matterResult.data.bannerImage,
+      bannerAspect: getPublicImageAspect(matterResult.data.bannerImage),
       logo: matterResult.data.logo,
       logo_hover: matterResult.data.logo_hover,
       instruments: matterResult.data.instruments,

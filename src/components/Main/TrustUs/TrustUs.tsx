@@ -1,4 +1,9 @@
-import Image from 'next/image';
+import { aspectOf } from '@/src/utils/imageSizes';
+import Image, { StaticImageData } from 'next/image';
+
+// Logos stretch to the row height (50px, 92px from desktop) with auto width
+const logoSizes = (image: StaticImageData) =>
+  `(min-width: 1440px) ${Math.ceil(92 * aspectOf(image))}px, ${Math.ceil(50 * aspectOf(image))}px`;
 import { imageData } from './imageData';
 
 interface ITrustProps {
@@ -27,6 +32,7 @@ export const TrustUs = ({ whiteBg }: ITrustProps) => {
                 src={item.image}
                 height={70}
                 alt={item.alt}
+                sizes={logoSizes(item.image)}
                 className='w-auto'
               />
             ))}
@@ -38,6 +44,7 @@ export const TrustUs = ({ whiteBg }: ITrustProps) => {
                 height={70}
                 src={item.image}
                 alt={item.alt}
+                sizes={logoSizes(item.image)}
                 className='w-auto'
               />
             ))}

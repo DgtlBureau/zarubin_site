@@ -131,6 +131,7 @@ export const Bonuses = ({ data }: IBonuseProps) => {
                       height={550}
                       alt=''
                       quality={90}
+                      sizes='(min-width: 1440px) 645px, (min-width: 722px) 700px, 97vw'
                       className={`right-0 top-0 object-cover desktop:absolute desktop:h-full desktop:w-auto`}
                     />
                   </div>

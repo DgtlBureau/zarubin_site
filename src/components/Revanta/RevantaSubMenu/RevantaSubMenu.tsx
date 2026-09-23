@@ -5,6 +5,7 @@ import {
   REVANTA_PRODUCTS,
   revantaHref,
 } from '@/src/data/revanta/routes';
+import { aspectOf, coverSizes, WIDE } from '@/src/utils/imageSizes';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -27,7 +28,9 @@ export const RevantaSubMenu = ({ onClick }: Props) => (
             src={arena}
             alt='Revanta'
             fill
-            sizes='340px'
+            sizes={coverSizes(aspectOf(arena), [
+              { minWidth: 0, px: 340, boxAspect: WIDE },
+            ])}
             className='object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]'
           />
           <div className='absolute inset-0 bg-gradient-to-t from-black/75 via-black/30 to-black/10' />
@@ -37,6 +40,7 @@ export const RevantaSubMenu = ({ onClick }: Props) => (
               alt=''
               width={1611}
               height={235}
+              sizes='130px'
               className='h-auto w-[130px]'
             />
           </div>
@@ -70,7 +74,8 @@ export const RevantaSubMenu = ({ onClick }: Props) => (
                   src={branch.image}
                   alt={branch.name}
                   fill
-                  sizes='112px'
+                  // 112x72 box; product covers are up to 2:1, cover draws them 144px wide
+                  sizes='144px'
                   className='object-cover object-center'
                 />
               </div>
