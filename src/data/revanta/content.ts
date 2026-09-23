@@ -1086,7 +1086,7 @@ const ecom: RevantaPageContent = {
   seo: {
     title: 'Merch Store Platform for Sports Clubs | Revanta e-com',
     description:
-      'Sell club merch online with size and color variants, orders, match-day promotions and one customer record shared with tickets and fan loyalty.',
+      'Sell club merch online with size and color variants, orders, game-day promotions and one customer record shared with tickets and fan loyalty.',
     keywords: [
       'club merchandise store platform',
       'team store software',
