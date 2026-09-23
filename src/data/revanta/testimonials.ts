@@ -22,12 +22,12 @@ export const REVANTA_CLIENT_LOGOS: RevantaClientLogo[] = [
   },
   {
     name: 'HC Avangard',
-    mark: `${CLIENTS}/avangard-mark.webp`,
+    mark: `${CLIENTS}/avangard-2026.svg`,
     url: 'https://www.hawk.ru',
   },
   {
     name: 'Shanghai Dragons',
-    mark: `${CLIENTS}/shanghai-dragons.webp`,
+    mark: `${CLIENTS}/shanghai-dragons-2026.webp`,
     url: 'https://hc-dragons.com',
   },
   {
@@ -80,7 +80,7 @@ export const REVANTA_TESTIMONIALS: RevantaTestimonial[] = [
   {
     name: 'Konstantin Klyushev',
     role: 'Commercial Director, HC Avangard',
-    logo: `${CLIENTS}/avangard-mark.webp`,
+    logo: `${CLIENTS}/avangard-2026.svg`,
     quote:
       'Vitaliy always takes a proactive position. He helped the company a great deal in moving from offline to online, and he brought expertise from other industries into sport and made the most of it.',
   },

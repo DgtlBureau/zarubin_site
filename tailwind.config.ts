@@ -206,6 +206,16 @@ const config: Config = {
         to: { clipPath: 'inset(0 0% 0 0)' },
       },
       'enter-slide-x': { from: { transform: 'translateX(-12px)' } },
+      // Орбита возможностей на продуктовых страницах: кольцо едет по кругу,
+      // каждая карточка крутится в обратную сторону и остаётся читаемой.
+      'orbit-spin': {
+        from: { transform: 'rotate(0deg)' },
+        to: { transform: 'rotate(360deg)' },
+      },
+      'orbit-spin-reverse': {
+        from: { transform: 'rotate(0deg)' },
+        to: { transform: 'rotate(-360deg)' },
+      },
     },
     animation: {
       // theme.animation is replaced, not extended: keep `animate-none` (used by motion-reduce:)
@@ -232,6 +242,8 @@ const config: Config = {
       'reveal-fade': 'enter-fade 0.8s cubic-bezier(0.4,0,0.2,1) both',
       // ScrollAnimationWrapper showOnLoad; framer 'easeOut' = cubic-bezier(0, 0, 0.58, 1)
       'fade-up-onload': 'enter-up-40 0.6s cubic-bezier(0,0,0.58,1) both',
+      'orbit-ring': 'orbit-spin 64s linear infinite',
+      'orbit-item': 'orbit-spin-reverse 64s linear infinite',
     },
   },
   plugins: [require('@tailwindcss/typography')],

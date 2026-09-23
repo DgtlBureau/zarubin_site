@@ -3,6 +3,7 @@ import { coverSizes } from '@/src/utils/imageSizes';
 import { getPublicImageAspect } from '@/src/utils/publicImageSize';
 import Image from 'next/image';
 import { Reveal } from '../ui/Reveal';
+import { RevantaFeatureOrbit } from './RevantaFeatureOrbit';
 import { EYEBROW_CLASS, RevantaContainer, RevantaSection } from '../ui/layout';
 
 /**
@@ -19,7 +20,7 @@ export const RevantaIntro = ({ content }: { content: RevantaPageContent }) => {
   const image = content.audience.image;
 
   return (
-    <RevantaSection className='py-[60px] tablet:py-[80px] desktop:py-[100px]'>
+    <RevantaSection className='overflow-x-clip py-[60px] tablet:py-[80px] desktop:py-[100px]'>
       <RevantaContainer>
         <div
           className={`grid grid-cols-1 gap-[40px] ${image ? 'desktop:grid-cols-[1.3fr_0.7fr] desktop:items-stretch desktop:gap-[80px]' : ''}`}
@@ -62,7 +63,26 @@ export const RevantaIntro = ({ content }: { content: RevantaPageContent }) => {
           )}
         </div>
 
-        <Reveal delay={0.12} className='mt-[56px] tablet:mt-[72px]'>
+        {/* На широком экране «было / стало» — это круг: собранная система в
+            центре и разрозненная на фоне. На узком остаются две карточки:
+            девять подписей по окружности туда не помещаются. */}
+        {/* Блок во всю ширину: вырываемся из контейнера страницы, иначе
+            тёмная подложка обрезается по 1600px и полям. */}
+        <div className='relative left-1/2 mt-[56px] hidden w-screen -translate-x-1/2 tablet:mt-[72px] desktop:block'>
+          <RevantaFeatureOrbit
+            heading={content.problem.heading}
+            items={content.features.items}
+            productName={content.eyebrow}
+            before={content.problem.before}
+            after={content.problem.after}
+            headingClassName='text-center font-inter text-[32px] font-medium leading-[1.2] tracking-[-0.01em] text-white'
+          />
+        </div>
+
+        <Reveal
+          delay={0.12}
+          className='mt-[56px] tablet:mt-[72px] desktop:hidden'
+        >
           <h2 className='font-inter text-[26px] font-medium leading-[1.2] tracking-[-0.01em] text-revanta-ink tablet:text-[32px]'>
             {content.problem.heading}
           </h2>
