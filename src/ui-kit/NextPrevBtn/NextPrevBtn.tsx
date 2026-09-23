@@ -24,8 +24,10 @@ export const NextPrevBtn = ({ prevPage, nextPage, bg = BG.DEFAULT }: Props) => {
               : 'bg-main-blue hover:bg-main-blue-hover'
         }`}
         onClick={prevPage}
+        aria-label='Previous'
       >
         <Arrow
+          aria-hidden='true'
           className={`rotate-[180deg] group-hover:fill-main-bg ${bg === BG.LIGHT ? 'fill-main-bg' : bg === BG.DARK ? 'fill-white' : 'fill-white'}`}
         />
       </button>
@@ -39,8 +41,10 @@ export const NextPrevBtn = ({ prevPage, nextPage, bg = BG.DEFAULT }: Props) => {
               : 'bg-main-blue hover:bg-main-blue-hover'
         }`}
         onClick={nextPage}
+        aria-label='Next'
       >
         <Arrow
+          aria-hidden='true'
           className={`group-hover:fill-main-bg ${
             bg === BG.LIGHT
               ? 'fill-main-bg'
