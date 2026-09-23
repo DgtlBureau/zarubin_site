@@ -432,7 +432,7 @@ const sportschool: RevantaPageContent = {
     heading: 'What you start measuring',
     items: [
       'Training attendance by player, team and club for any period.',
-      'Squad retention: how many selected players stay to the end of the season.',
+      'Roster retention: how many selected players stay to the end of the season.',
       'Player progress: the share of players who improved between testing rounds.',
       'Plan versus actual training load across the club and each team.',
       'Ice, field and gym utilization: the share of slots taken.',
@@ -499,7 +499,7 @@ const sportschool: RevantaPageContent = {
     {
       question: 'Can a club track player development as well as schedules?',
       answer:
-        'Yes. Each player has a card with attendance, fitness testing, match statistics and coach ratings, with season-over-season comparison and a prospects list for the coaching staff.',
+        'Yes. Each player has a card with attendance, testing results, game stats and coach ratings, with season-over-season comparison and a prospects list for the coaching staff.',
     },
     {
       question:
@@ -970,7 +970,7 @@ const sites: RevantaPageContent = {
   seo: {
     title: 'Sports Club Website Builder with Live Data | Revanta Sites',
     description:
-      'A sports club website fed by your club data: news, fixtures and scores, rosters and player stats, sponsors and ticket links, no developer needed.',
+      'A sports club website fed by your club data: news, schedules and scores, rosters and player stats, sponsors and ticket links, no developer needed.',
     keywords: [
       'sports club website builder',
       'youth sports website builder',
@@ -983,7 +983,7 @@ const sites: RevantaPageContent = {
   h1: 'A sports club website builder that updates itself from your club data',
   lead: 'Publish news, schedules, scores, rosters and player stats from the same system that runs the club. Update a score once and it changes everywhere.',
   heroImage: `${REVANTA_IMAGES}/sites-hero.webp`,
-  heroAlt: 'A club website match center on desktop and mobile',
+  heroAlt: 'A club website game center on desktop and mobile',
   audience: {
     heading: 'Built for',
     items: [
@@ -999,7 +999,7 @@ const sites: RevantaPageContent = {
     before:
       'Schedules, scores and rosters are typed into page text by hand, a developer is needed for every new section, and each team or academy ends up with its own site from its own contractor.',
     after:
-      'In Revanta Sites, games, players and stats are stored as data. The website assembles them itself, the press office publishes without a developer, and every team shares one platform and one fan profile with ticketing and loyalty.',
+      'In Revanta Sites, games, players and stats are stored as data. The website assembles them itself, the comms team publishes without a developer, and every team shares one platform and one fan profile with ticketing and loyalty.',
   },
   features: {
     heading: 'What the website runs on',
@@ -1010,7 +1010,7 @@ const sites: RevantaPageContent = {
         text: 'A news item with a gallery, category, tags and a link to a game. Photo and video galleries in the same place.',
       },
       {
-        title: 'Match center: fixtures, scores, streams and ticket links',
+        title: 'Game center: schedule, scores, streams and ticket links',
         icon: 'calendar',
         text: 'Calendar, score, venue and game status, with links to the stream and to tickets as separate fields.',
       },
