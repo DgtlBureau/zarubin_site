@@ -27,9 +27,11 @@ const Value = ({
   mine?: boolean;
   edge?: boolean;
 }) => {
-  const negative = value === 'No';
+  const negative = value === 'No' || value.startsWith('No,');
+  // Not confirmed either way on the competitor's public pages: neutral, not a red 'No'.
+  const unknown = value.startsWith('Not shown');
   const weak = QUALIFIED.test(value);
-  const muted = negative || weak || !mine;
+  const muted = negative || unknown || weak || !mine;
 
   return (
     <span className='flex items-start gap-[10px]'>
@@ -37,14 +39,16 @@ const Value = ({
         className={`mt-[2px] shrink-0 ${
           negative && !mine
             ? 'text-[#C2564C]'
-            : muted
+            : unknown
               ? 'text-revanta-ink/30'
-              : mine
-                ? 'text-revanta-accent'
-                : 'text-revanta-blue'
+              : muted
+                ? 'text-revanta-ink/30'
+                : mine
+                  ? 'text-revanta-accent'
+                  : 'text-revanta-blue'
         }`}
       >
-        {negative ? (
+        {negative || unknown ? (
           <Minus
             className='h-[18px] w-[18px]'
             strokeWidth={2}
@@ -64,11 +68,13 @@ const Value = ({
             ? mine
               ? 'text-revanta-ink/40'
               : 'text-[#B44A41]'
-            : weak
-              ? 'text-revanta-ink/50'
-              : mine
-                ? `text-revanta-ink/85 ${edge ? 'font-medium' : ''}`
-                : 'text-revanta-ink/55'
+            : unknown
+              ? 'text-revanta-ink/45'
+              : weak
+                ? 'text-revanta-ink/50'
+                : mine
+                  ? `text-revanta-ink/85 ${edge ? 'font-medium' : ''}`
+                  : 'text-revanta-ink/55'
         }`}
       >
         {value}
@@ -188,7 +194,7 @@ export const RevantaComparison = ({
                     />
                     <span className='font-inter text-[17px] leading-[1.45] text-revanta-ink/85'>
                       <span className='font-medium'>{row.job}</span>
-                      <span className='text-revanta-ink/50'> — {row.us}</span>
+                      <span className='text-revanta-ink/50'>: {row.us}</span>
                     </span>
                   </li>
                 ))}
@@ -251,7 +257,9 @@ export const RevantaComparison = ({
                       className={`border-x border-t border-revanta-ink/[0.08] px-[24px] py-[22px] ${
                         row.them === 'No'
                           ? 'bg-[#C2564C]/[0.06]'
-                          : 'bg-[#f7f8fb]'
+                          : row.edge === 'them'
+                            ? 'bg-revanta-blue/[0.07]'
+                            : 'bg-[#f7f8fb]'
                       }`}
                     >
                       <Value value={row.them} />

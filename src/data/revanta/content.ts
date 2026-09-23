@@ -50,7 +50,7 @@ const hub: RevantaPageContent = {
     before:
       'Registration sits in one tool, schedules in a group chat, tickets with a third-party seller and fan emails in a newsletter service. Nobody can see the same person across them, every report is assembled by hand, and the gaps are patched with workarounds.',
     after:
-      'Players, parents, fans and renters live in one base: one source of truth for staff, coaches and the board. Registration, schedules, tickets, loyalty and bookings write into the same profile, so segments, campaigns and reports come out of data you already collect.',
+      'Players, parents, fans and renters live in one base that staff, coaches and the board all work from. Registration, schedules, tickets, loyalty and bookings write into the same profile, so segments, campaigns and reports come out of data you already collect.',
   },
   features: {
     heading: 'Pick the module your organization needs',
@@ -256,7 +256,7 @@ const sportschool: RevantaPageContent = {
   },
   eyebrow: 'Revanta SportSchool',
   h1: 'Youth sports club and academy software, from registration and tryouts to player development',
-  lead: 'Revanta SportSchool keeps sign-ups, teams, schedules and every player’s progress in one place: one source of truth for directors, coaches and families, instead of a season rebuilt in spreadsheets every year.',
+  lead: 'Revanta SportSchool keeps sign-ups, teams, schedules and every player’s progress in one place for directors, coaches and families, so nobody rebuilds the season in spreadsheets every year.',
   heroImage: `${REVANTA_IMAGES}/sportschool-hero.webp`,
   heroAlt: 'Youth hockey players on the ice at an academy practice',
   audience: {
@@ -447,19 +447,19 @@ const sportschool: RevantaPageContent = {
     rows: [
       {
         job: 'Fitness testing with season-over-season comparison',
-        them: 'No',
+        them: 'Not shown on public product pages',
         us: 'Run testing mode, results on the player card',
         edge: 'us',
       },
       {
         job: 'Plan versus actual training load',
-        them: 'No',
+        them: 'Not shown on public product pages',
         us: 'By ice, dryland, strength and theory hours, club-wide',
         edge: 'us',
       },
       {
         job: 'Prospects list built from season stats',
-        them: 'No',
+        them: 'Not shown on public product pages',
         us: 'Attendance, stats and test history on one card',
         edge: 'us',
       },
@@ -481,7 +481,7 @@ const sportschool: RevantaPageContent = {
       { job: 'Player evaluations', them: 'Yes', us: 'Yes' },
       {
         job: 'Tickets, merch and fan loyalty on the same base',
-        them: 'No',
+        them: 'Not shown on public product pages',
         us: 'Yes, on the rest of the Revanta platform',
         edge: 'us',
       },
@@ -594,7 +594,7 @@ const loyalty: RevantaPageContent = {
       {
         title: 'Points, tiers, challenges and streaks',
         icon: 'award',
-        text: 'Reward the behaviors that matter: showing up, renewing, buying merch. Points for attendance, tiers that move with each game, and challenges the club builds itself — come to five home games, get the reward.',
+        text: 'Reward the behaviors that matter: showing up, renewing, buying merch. Points for attendance, tiers that move with each game, and challenges the club builds itself, such as a reward for five home games.',
       },
       {
         title: 'Promo codes, gift cards and vouchers',
@@ -646,7 +646,7 @@ const loyalty: RevantaPageContent = {
           'Add entry',
           'Status: Silver',
           'Condition type: game attendance',
-          'Value — ten home games',
+          'Value: ten home games',
           'Save: the rule is in the list',
         ],
       },
@@ -662,7 +662,7 @@ const loyalty: RevantaPageContent = {
           'Add an earning condition',
           'Home game attendance, from N',
           'Reward in loyalty points',
-          'Save — the card is live',
+          'Save: the card is live',
         ],
       },
       {
@@ -734,25 +734,23 @@ const loyalty: RevantaPageContent = {
       },
       {
         job: 'Email campaigns alongside push',
-        them: 'No',
+        them: 'Yes',
         us: 'Yes, email and push from the same segment',
-        edge: 'us',
       },
       {
         job: 'Trigger chains from a template library',
-        them: 'No',
+        them: 'Not shown on public product pages',
         us: 'Missed game, birthday, expiring points, welcome, tier raised',
         edge: 'us',
       },
       {
-        job: 'Segment exported to a file by club staff',
-        them: 'No',
+        job: 'Fan data exported by the club',
+        them: 'Yes, transactions flow into the club’s data warehouse',
         us: 'Yes, any saved segment to Excel',
-        edge: 'us',
       },
       {
         job: 'Tier rules edited without developers',
-        them: 'No',
+        them: 'Not shown on public product pages',
         us: 'Earning rates and transition conditions in the admin panel',
         edge: 'us',
       },
@@ -761,10 +759,27 @@ const loyalty: RevantaPageContent = {
       { job: 'Promo codes, gift cards, vouchers', them: 'Yes', us: 'Yes' },
       { job: 'Segments and personal offers', them: 'Yes', us: 'Yes' },
       { job: 'Push notifications', them: 'Yes', us: 'Yes' },
-      { job: 'Fan data available to the club', them: 'Yes', us: 'Yes' },
+      {
+        job: 'Mobile wallet with a stored balance',
+        them: 'Yes',
+        us: 'No, custom development if needed',
+        edge: 'them',
+      },
+      {
+        job: 'Card-linked rewards for sponsor purchases',
+        them: 'Yes',
+        us: 'No, custom development if needed',
+        edge: 'them',
+      },
+      {
+        job: 'Ready integrations with US ticketing and POS systems',
+        them: 'Yes',
+        us: 'Built per project',
+        edge: 'them',
+      },
       {
         job: 'Club, facility and website on the same base',
-        them: 'No',
+        them: 'Not shown on public product pages',
         us: 'Yes, on the rest of the Revanta platform',
         edge: 'us',
       },
@@ -866,7 +881,7 @@ const venues: RevantaPageContent = {
     before:
       'Weekday hours stay empty, rentals are negotiated over email and text, and public skate sessions are sold at the box office. Nobody can say which hours earn money and which ones cost it.',
     after:
-      'Revanta Venues puts every booking, class, league and session on one calendar. Renters confirm online, the public buys session tickets with a QR code, and the utilization report shows where the gaps are — more hours sold, less time spent on the phone.',
+      'Revanta Venues puts every booking, class, league and session on one calendar. Renters confirm online, the public buys session tickets with a QR code, and the utilization report shows where the gaps are, so staff sell more hours and spend less time on the phone.',
   },
   features: {
     heading: 'What a venue runs in Revanta',
@@ -904,7 +919,7 @@ const venues: RevantaPageContent = {
       {
         title: 'The right offer at the right moment',
         icon: 'mail',
-        text: 'Send the new Tuesday slot only to the stick-and-puck regulars, not to your whole list.',
+        text: 'Send the new Tuesday slot only to the stick-and-puck regulars.',
       },
       {
         title: 'Utilization, revenue and idle-hours reports',
@@ -932,19 +947,19 @@ const venues: RevantaPageContent = {
     rows: [
       {
         job: 'Public sessions sold online with a time grid and capacity',
-        them: 'No',
+        them: 'Not shown on public product pages',
         us: 'Yes, remaining spots visible to the skater',
         edge: 'us',
       },
       {
         job: 'QR ticket and scanning at the entrance',
-        them: 'No',
+        them: 'Not shown on public product pages',
         us: 'Yes',
         edge: 'us',
       },
       {
         job: 'Idle hours report, hour by hour',
-        them: 'No',
+        them: 'Not shown on public product pages',
         us: 'Yes, which weekday hours sit empty',
         edge: 'us',
       },
@@ -960,7 +975,7 @@ const venues: RevantaPageContent = {
       { job: 'Revenue and utilization reporting', them: 'Yes', us: 'Yes' },
       {
         job: 'Tickets, fan loyalty and club management on the same base',
-        them: 'No',
+        them: 'Not shown on public product pages',
         us: 'Yes, on the rest of the Revanta platform',
         edge: 'us',
       },

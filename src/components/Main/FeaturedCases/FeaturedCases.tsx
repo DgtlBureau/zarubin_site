@@ -14,7 +14,7 @@ const FEATURED_CASES: FeaturedCaseData[] = [
     name: 'Regfo',
     title: 'AI Regulatory Workspace',
     description:
-      '1,000+ compliance rules · FDA, ICH & CFTC · Minutes instead of weeks',
+      'Checks preclinical study reports against 1,000+ FDA, ICH and CFTC rules in minutes.',
     tags: ['FDA Compliance', 'RAG', 'Inference'],
     bannerImage: '/assets/images/info/regfo_compliance_new.webp',
   },
@@ -23,7 +23,7 @@ const FEATURED_CASES: FeaturedCaseData[] = [
     name: 'PersoniWay',
     title: 'AI Field Service & Ticketing',
     description:
-      '85% faster issue resolution · RAG-powered · Real-time routing',
+      'AI assistant for field technicians with schema recognition, audio calls and job tracking.',
     tags: ['AI Agents', 'RAG Systems'],
     bannerImage: '/assets/images/case/banner/personiway.webp',
   },
@@ -32,7 +32,7 @@ const FEATURED_CASES: FeaturedCaseData[] = [
     name: 'JediPay',
     title: 'PCI-Compliant Payment Gateway',
     description:
-      'Automated campaigns · Real-time sync · Trigger-based engagement',
+      'PCI DSS compliant gateway with virtual cards, instant P2P transfers and fraud detection.',
     tags: ['FinTech', 'PCI DSS'],
     bannerImage: '/assets/images/case/banner/jedipay.webp',
   },
@@ -40,7 +40,10 @@ const FEATURED_CASES: FeaturedCaseData[] = [
 
 export const FeaturedCases = () => {
   return (
-    <Section light className='pb-[30px] pt-[30px] tablet:pb-[40px] tablet:pt-[40px]'>
+    <Section
+      light
+      className='pb-[30px] pt-[30px] tablet:pb-[40px] tablet:pt-[40px]'
+    >
       <Container>
         {/* Section header */}
         <div className='mb-[16px] flex items-center justify-between'>
