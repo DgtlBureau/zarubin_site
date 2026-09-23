@@ -99,4 +99,4 @@ For what it's worth, the founder I advised picked the most expensive of her thre
 
 That is the math the throughput-led pricing model hides. Done well, slow ends up cheaper.
 
-If you want a printable version of this checklist, [send a note to our team](https://thebrightbyte.com/career) and we will mail you the PDF. We use it on inbound calls. You should too.
+If you want a printable version of this checklist, [send a note to our team](https://thebrightbyte.com/brief) and we will mail you the PDF. We use it on inbound calls. You should too.

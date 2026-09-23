@@ -13,7 +13,6 @@ const config = {
   additionalPaths: async () => {
     const staticPages = [
       '/',
-      '/career',
       '/comparison',
       '/playbook',
       '/playbook/expertise',

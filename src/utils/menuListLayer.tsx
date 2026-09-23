@@ -20,7 +20,6 @@ export const menuListLayer: MenuListItem[] = [
     name: MenuItems.INVESTMENTS,
     link: `/${MenuItems.INVESTMENTS.toLowerCase()}`,
   },
-  { id: 4, name: MenuItems.CAREER, link: `/${MenuItems.CAREER.toLowerCase()}` },
   {
     id: 5,
     name: MenuItems.COMPARISON,

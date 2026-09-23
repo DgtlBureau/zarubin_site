@@ -114,5 +114,9 @@
   {
     "source": "/revanta/terms",
     "destination": "/policy"
+  },
+  {
+    "source": "/career",
+    "destination": "/"
   }
 ]

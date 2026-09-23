@@ -41,4 +41,4 @@ What boring hygiene actually moves the needle? Here is the list we ran for our o
 
 There is a longer conversation here about whether IDE marketplaces need real package signing, mandatory code review, and provenance. That is somebody else's fight. While the regulators and platforms argue about it, your job is to make sure that the eleven-minute window between a malicious push and a takedown does not turn into the worst week of your year.
 
-We work with fintech and biotech teams who cannot afford a TeamPCP-style headline. If you want a one-page audit of your dev environment posture against this attack pattern, [we can run that](/career) in a week.
+We work with fintech and biotech teams who cannot afford a TeamPCP-style headline. If you want a one-page audit of your dev environment posture against this attack pattern, [we can run that](/brief) in a week.
