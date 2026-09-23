@@ -74,6 +74,12 @@ export interface RevantaComparisonRow {
   job: string;
   them: string;
   us: string;
+  /**
+   * Кто сильнее в этой работе. Ставится руками и только там, где разница
+   * действительно есть: по нему таблица подсвечивает наши преимущества и
+   * считает итог под заголовком. Без поля — паритет.
+   */
+  edge?: 'us' | 'them';
 }
 
 export interface RevantaPageContent {

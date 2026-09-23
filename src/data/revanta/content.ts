@@ -48,9 +48,9 @@ const hub: RevantaPageContent = {
   problem: {
     heading: 'One system for registration, tickets and bookings',
     before:
-      'Registration sits in one tool, schedules in a group chat, tickets with a third-party seller and fan emails in a newsletter service. Nobody can see the same person across them, and every report is assembled by hand.',
+      'Registration sits in one tool, schedules in a group chat, tickets with a third-party seller and fan emails in a newsletter service. Nobody can see the same person across them, every report is assembled by hand, and the gaps are patched with workarounds.',
     after:
-      'Players, parents, fans and renters live in one base. Registration, schedules, tickets, loyalty and bookings write into the same profile, so segments, campaigns and reports come out of data you already collect.',
+      'Players, parents, fans and renters live in one base: one source of truth for staff, coaches and the board. Registration, schedules, tickets, loyalty and bookings write into the same profile, so segments, campaigns and reports come out of data you already collect.',
   },
   features: {
     heading: 'Pick the module your organization needs',
@@ -256,7 +256,7 @@ const sportschool: RevantaPageContent = {
   },
   eyebrow: 'Revanta SportSchool',
   h1: 'Youth sports club and academy software, from registration and tryouts to player development',
-  lead: 'Revanta SportSchool keeps sign-ups, teams, schedules and every player’s progress in one place, so directors stop rebuilding the season in spreadsheets.',
+  lead: 'Revanta SportSchool keeps sign-ups, teams, schedules and every player’s progress in one place: one source of truth for directors, coaches and families, instead of a season rebuilt in spreadsheets every year.',
   heroImage: `${REVANTA_IMAGES}/sportschool-hero.webp`,
   heroAlt: 'Youth hockey players on the ice at an academy practice',
   audience: {
@@ -274,7 +274,7 @@ const sportschool: RevantaPageContent = {
   problem: {
     heading: 'Club operations in one system',
     before:
-      'Registration comes in through forms and payment links, schedules are built by hand in group chats, attendance and training load live in a coach’s notebook, and fitness tests are written down twice a year, and team decisions are made by eye.',
+      'Registration comes in through forms and payment links, schedules are built by hand in group chats, attendance and training load live in a coach’s notebook, and fitness tests are written down twice a year. Every report is a workaround, and team decisions are made by eye.',
     after:
       'Revanta SportSchool moves the whole cycle into one system: from registration and fees to the season plan, field time, attendance and a player card with test results. Directors see the club as a whole, families see their child’s progress, and your coaching method stays with the club.',
   },
@@ -445,32 +445,45 @@ const sportschool: RevantaPageContent = {
     intro:
       'PlayMetrics is a strong club management platform for youth soccer and multi-sport clubs. Here is how the two compare on the jobs a club director runs.',
     rows: [
+      {
+        job: 'Fitness testing with season-over-season comparison',
+        them: 'No',
+        us: 'Run testing mode, results on the player card',
+        edge: 'us',
+      },
+      {
+        job: 'Plan versus actual training load',
+        them: 'No',
+        us: 'By ice, dryland, strength and theory hours, club-wide',
+        edge: 'us',
+      },
+      {
+        job: 'Prospects list built from season stats',
+        them: 'No',
+        us: 'Attendance, stats and test history on one card',
+        edge: 'us',
+      },
+      {
+        job: 'Season plan',
+        them: 'Season builder with phases and weekly goals',
+        us: 'Hours by month per load type, submitted for director approval',
+        edge: 'us',
+      },
+      {
+        job: 'Practice plans and drill library',
+        them: 'Yes',
+        us: 'Yes, with drill diagrams drawn on a rink or field board',
+        edge: 'us',
+      },
       { job: 'Registration and fees', them: 'Yes', us: 'Yes' },
       { job: 'Tryouts and team formation', them: 'Yes', us: 'Yes' },
+      { job: 'Field, rink and gym allocation', them: 'Yes', us: 'Yes' },
+      { job: 'Player evaluations', them: 'Yes', us: 'Yes' },
       {
-        job: 'Practice and game scheduling',
-        them: 'Yes',
-        us: 'Yes, with season, monthly and weekly training plans',
-      },
-      {
-        job: 'Field allocation',
-        them: 'Yes',
-        us: 'Yes, for ice, fields and gyms',
-      },
-      {
-        job: 'Player development',
-        them: 'Yes',
-        us: 'Player card with testing, stats, coach ratings and prospects',
-      },
-      {
-        job: 'Drill library and practice plans',
-        them: 'Limited',
-        us: 'Drill diagrams on the rink or field, practice plans from the library',
-      },
-      {
-        job: 'Ticketing and fan loyalty on the same base',
+        job: 'Tickets, merch and fan loyalty on the same base',
         them: 'No',
-        us: 'Yes, with Revanta Loyalty',
+        us: 'Yes, on the rest of the Revanta platform',
+        edge: 'us',
       },
     ],
     note: 'Based on public product information as of September 2026.',
@@ -576,12 +589,12 @@ const loyalty: RevantaPageContent = {
       {
         title: 'One fan profile with full attendance and purchase history',
         icon: 'user',
-        text: 'Know who came to every home game and who quietly stopped coming. A season-pass holder who skipped three games shows up in a list before renewal time.',
+        text: 'Every ticket, visit and reward lands on one profile. Know who came to every home game and who quietly stopped: a season-ticket holder who skipped three games shows up in a list before renewal time.',
       },
       {
-        title: 'A fan loyalty program with points, tiers and achievements',
+        title: 'Points, tiers, challenges and streaks',
         icon: 'award',
-        text: 'Reward the fans who show up: points for attendance, tiers that move with each game, achievements the club designs itself.',
+        text: 'Reward the behaviors that matter: showing up, renewing, buying merch. Points for attendance, tiers that move with each game, and challenges the club builds itself — come to five home games, get the reward.',
       },
       {
         title: 'Promo codes, gift cards and vouchers',
@@ -700,7 +713,7 @@ const loyalty: RevantaPageContent = {
     heading: 'Revanta Loyalty at a glance',
     items: [
       'Tickets, season passes, loyalty and campaigns on one fan profile.',
-      'Points, tiers and achievements configured by the club, without developers.',
+      'Points, tiers, challenges and streaks configured by the club, without developers.',
       'Segments by attendance, purchases, tier, age and registration source.',
       'Email and push campaigns plus trigger chains from a template library.',
       'Full data export: the fan base belongs to the club.',
@@ -711,29 +724,49 @@ const loyalty: RevantaPageContent = {
     heading: 'Revanta Loyalty vs FanMaker',
     competitor: 'FanMaker',
     intro:
-      'FanMaker is an established fan loyalty platform for NFL, NBA, NHL, MLB and college programs. Here is how the two compare, including what Revanta does not do.',
+      'FanMaker is an established fan loyalty platform for NFL, NBA, NHL, MLB and college programs. Here is how the two compare on the jobs a club runs around its fans.',
     rows: [
       {
         job: 'Selling tickets and season passes',
         them: 'Through integrations with ticketing systems',
         us: 'Built in',
+        edge: 'us',
+      },
+      {
+        job: 'Email campaigns alongside push',
+        them: 'No',
+        us: 'Yes, email and push from the same segment',
+        edge: 'us',
+      },
+      {
+        job: 'Trigger chains from a template library',
+        them: 'No',
+        us: 'Missed game, birthday, expiring points, welcome, tier raised',
+        edge: 'us',
+      },
+      {
+        job: 'Segment exported to a file by club staff',
+        them: 'No',
+        us: 'Yes, any saved segment to Excel',
+        edge: 'us',
+      },
+      {
+        job: 'Tier rules edited without developers',
+        them: 'No',
+        us: 'Earning rates and transition conditions in the admin panel',
+        edge: 'us',
       },
       { job: 'Fan profile and attendance history', them: 'Yes', us: 'Yes' },
       { job: 'Points, tiers and achievements', them: 'Yes', us: 'Yes' },
       { job: 'Promo codes, gift cards, vouchers', them: 'Yes', us: 'Yes' },
       { job: 'Segments and personal offers', them: 'Yes', us: 'Yes' },
-      { job: 'Push and email', them: 'Yes', us: 'Yes' },
-      { job: 'Data export to the club', them: 'Yes', us: 'Yes' },
-      { job: 'Mobile wallet with a balance', them: 'Yes', us: 'No' },
+      { job: 'Push notifications', them: 'Yes', us: 'Yes' },
+      { job: 'Fan data available to the club', them: 'Yes', us: 'Yes' },
       {
-        job: 'Card-linked rewards for sponsor purchases',
-        them: 'Yes',
-        us: 'No',
-      },
-      {
-        job: 'Ready integrations with US ticketing and POS',
-        them: 'Yes',
-        us: 'Built per project',
+        job: 'Club, facility and website on the same base',
+        them: 'No',
+        us: 'Yes, on the rest of the Revanta platform',
+        edge: 'us',
       },
     ],
     note: 'Based on public product information as of September 2026.',
@@ -815,7 +848,7 @@ const venues: RevantaPageContent = {
   },
   eyebrow: 'Revanta Venues',
   h1: 'Ice rink and sports facility management software that fills empty hours',
-  lead: 'Rentals booked in email threads and public skate sold at the door leave ice empty on weekdays. Revanta Venues puts sessions, rentals and members on one calendar.',
+  lead: 'Rentals booked in email threads and public skate sold at the door leave ice empty on weekdays. Revanta Venues puts sessions, rentals and members on one calendar, so the hours you already own start earning.',
   heroImage: `${REVANTA_IMAGES}/arena.webp`,
   heroAlt: 'An indoor arena with fans in the stands',
   audience: {
@@ -833,7 +866,7 @@ const venues: RevantaPageContent = {
     before:
       'Weekday hours stay empty, rentals are negotiated over email and text, and public skate sessions are sold at the box office. Nobody can say which hours earn money and which ones cost it.',
     after:
-      'Revanta Venues puts every booking, class, league and session on one calendar. Renters confirm online, the public buys session tickets with a QR code, and the utilization report shows where the gaps are.',
+      'Revanta Venues puts every booking, class, league and session on one calendar. Renters confirm online, the public buys session tickets with a QR code, and the utilization report shows where the gaps are — more hours sold, less time spent on the phone.',
   },
   features: {
     heading: 'What a venue runs in Revanta',
@@ -869,9 +902,9 @@ const venues: RevantaPageContent = {
         text: 'Scan the QR at the door and know exactly who is on the ice.',
       },
       {
-        title: 'Emails to the right visitors',
+        title: 'The right offer at the right moment',
         icon: 'mail',
-        text: 'Send the new Tuesday slot only to the stick-and-puck regulars.',
+        text: 'Send the new Tuesday slot only to the stick-and-puck regulars, not to your whole list.',
       },
       {
         title: 'Utilization, revenue and idle-hours reports',
@@ -886,7 +919,7 @@ const venues: RevantaPageContent = {
       'One calendar for seasons, classes, rentals, leagues and events.',
       'Public sessions sold online with capacity limits and QR tickets.',
       'QR scanning at the entrance.',
-      'Hour-by-hour utilization and revenue reporting.',
+      'Hour-by-hour utilization and revenue reporting: which hours earn and which sit empty.',
       'Customers, members and renters on one profile, ready for segments and email.',
       'Works alongside Revanta SportSchool for clubs that train at the venue.',
     ],
@@ -897,6 +930,24 @@ const venues: RevantaPageContent = {
     intro:
       'Dash is a well-known facility management platform for rinks, sports complexes and rec centers. Here is how Revanta compares.',
     rows: [
+      {
+        job: 'Public sessions sold online with a time grid and capacity',
+        them: 'No',
+        us: 'Yes, remaining spots visible to the skater',
+        edge: 'us',
+      },
+      {
+        job: 'QR ticket and scanning at the entrance',
+        them: 'No',
+        us: 'Yes',
+        edge: 'us',
+      },
+      {
+        job: 'Idle hours report, hour by hour',
+        them: 'No',
+        us: 'Yes, which weekday hours sit empty',
+        edge: 'us',
+      },
       { job: 'Season, class and event scheduling', them: 'Yes', us: 'Yes' },
       {
         job: 'Facility booking and rental confirmation',
@@ -906,17 +957,13 @@ const venues: RevantaPageContent = {
       { job: 'Customer registration and memberships', them: 'Yes', us: 'Yes' },
       { job: 'League building', them: 'Yes', us: 'Yes' },
       { job: 'Segments and email', them: 'Yes', us: 'Yes' },
+      { job: 'Revenue and utilization reporting', them: 'Yes', us: 'Yes' },
       {
-        job: 'Utilization and revenue reports',
-        them: 'Yes',
-        us: 'Yes, hour by hour',
+        job: 'Tickets, fan loyalty and club management on the same base',
+        them: 'No',
+        us: 'Yes, on the rest of the Revanta platform',
+        edge: 'us',
       },
-      {
-        job: 'Public sessions with time grid, capacity and QR ticket',
-        them: 'Limited',
-        us: 'Yes',
-      },
-      { job: 'QR entry control', them: 'Limited', us: 'Yes' },
     ],
     note: 'Based on public product information as of September 2026.',
   },
@@ -1096,7 +1143,7 @@ const ecom: RevantaPageContent = {
   },
   eyebrow: 'Revanta e-com',
   h1: 'A merch store platform for sports clubs that knows who your fans are',
-  lead: 'Sell jerseys and gear online and at the club store, and see which buyers also come to games. The store shares one fan profile with tickets and loyalty.',
+  lead: 'Sell jerseys and gear online and at the club store, and stop guessing who the buyer is: the store shares one fan profile with tickets and loyalty, so a jersey sale and a season ticket belong to the same person.',
   heroImage: `${REVANTA_IMAGES}/ecom-hero.webp`,
   heroAlt: 'Club merchandise store on desktop and mobile',
   audience: {
