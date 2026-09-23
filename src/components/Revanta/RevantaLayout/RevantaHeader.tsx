@@ -113,6 +113,8 @@ export const RevantaHeader = () => {
             </ul>
             <a
               href='#contact'
+              data-umami-event='book-demo'
+              data-umami-event-place='mobile-menu'
               onClick={() => setOpen(false)}
               className='mt-[18px] inline-flex w-fit rounded-full bg-white px-[24px] py-[12px] font-inter text-[16px] font-medium text-revanta-ink'
             >

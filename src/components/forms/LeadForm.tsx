@@ -68,6 +68,11 @@ export const LeadForm = ({
 
       if (!res.ok) throw new Error(`Telegram request failed: ${res.status}`);
 
+      window.umami?.track('lead', {
+        page: window.location.pathname,
+        newsletter: newsletter ? 'yes' : 'no',
+      });
+
       setName('');
       setEmail('');
       setPrivacy(true);

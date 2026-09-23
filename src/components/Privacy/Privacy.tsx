@@ -54,7 +54,7 @@ const sections: PolicySection[] = [
       'Job application details you send us: résumé, portfolio links and related information.',
     ],
     after: [
-      'Information collected automatically, only after you accept cookies: pages visited, referring page, approximate location derived from IP address, device and browser type, and interaction events. This is collected through Google Analytics.',
+      'Information collected automatically: pages visited, referring page and campaign (UTM) parameters, country, device and browser type, and actions such as submitting a form. We collect this with Umami, which does not use cookies and does not store IP addresses. If you accept cookies, Google Analytics also collects similar usage data.',
       'We do not knowingly collect sensitive personal information (such as government ID numbers, financial account details, health data or precise geolocation) through the Site. Please do not send it to us.',
     ],
   },
@@ -72,7 +72,7 @@ const sections: PolicySection[] = [
   {
     title: '4. Cookies and analytics',
     paragraphs: [
-      'When you first visit, we ask for your consent before loading analytics cookies. If you click Accept, we load Google Analytics 4 to measure traffic. If you click Decline, no analytics cookies are set. The Site stores your choice in your browser; you can reset it by clearing site data.',
+      'We use Umami for basic, cookieless traffic measurement; it does not set cookies or identify you across sites. When you first visit, we ask for your consent before loading cookie-based analytics. If you click Accept, we also load Google Analytics 4. If you click Decline, no analytics cookies are set. The Site stores your choice in your browser; you can reset it by clearing site data.',
       <>
         Google processes this data under its own terms. You can learn more at{' '}
         <a
@@ -102,7 +102,7 @@ const sections: PolicySection[] = [
       'We do not sell your personal information and we do not share it for cross-context behavioral advertising. We share it only with:',
     ],
     items: [
-      'Service providers that help us run the Site and our business: hosting (GitHub Pages), analytics (Google Analytics), website chat (Re:plain), internal messaging used to route form submissions (Telegram) and email. They may use the data only to provide their services to us.',
+      'Service providers that help us run the Site and our business: hosting (GitHub Pages and Cloudflare), analytics (Umami and Google Analytics), website chat (Re:plain), internal messaging used to route form submissions (Telegram) and email. They may use the data only to provide their services to us.',
       'Professional advisers, such as lawyers and accountants, under confidentiality obligations.',
       'Authorities or other parties when required by law, or to protect our rights, users or the public.',
       'A buyer or successor in a merger, acquisition or sale of assets, subject to this policy.',

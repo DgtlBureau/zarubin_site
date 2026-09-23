@@ -98,6 +98,12 @@ export default function RootLayout({
           <Footer />
         </HideOnRevanta>
         {/* Chat widget is not needed for first paint: load it once the page is idle */}
+        {/* Umami: cookieless analytics (page views, referrers, UTM, events) */}
+        <Script
+          src='https://cloud.umami.is/script.js'
+          data-website-id='b00f1ac6-d382-4187-a2ce-2e885aace8c5'
+          strategy='afterInteractive'
+        />
         <Script id='replain' strategy='lazyOnload'>
           {`window.replainSettings = { id: '07c36061-dbc9-4cb8-85cb-9e69876b9d34' };
             (function(u){var s=document.createElement('script');s.async=true;s.src=u;
