@@ -1,4 +1,5 @@
 import { MenuItems } from '@/src/utils/enums';
+import { preloadUnboundedPageHeading } from '@/src/utils/fontPreload';
 import { Breadcrumb, Breadcrumbs } from '../../shared/Breadcrumbs/Breadcrumbs';
 
 const BREADCRUMBS: Breadcrumb[] = [
@@ -7,6 +8,9 @@ const BREADCRUMBS: Breadcrumb[] = [
 ];
 
 export const Hero = () => {
+  // The H1 is set in Unbounded and sits above the fold
+  preloadUnboundedPageHeading();
+
   return (
     <div className='flex flex-col gap-[20px] break-words'>
       <Breadcrumbs breadcrumbs={BREADCRUMBS} />

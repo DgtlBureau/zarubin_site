@@ -89,22 +89,30 @@
   }
 }
 
+/* Unbounded: single source (used via tailwind `font-unbound`). Latin subset
+   woff2 generated from the TTFs in the same folder with fontTools/pyftsubset. */
 @font-face {
   font-family: 'Unbounded';
-  src: url(/fonts/unbounded/Unbounded-SemiBold.ttf);
+  src: url(/fonts/unbounded/Unbounded-SemiBold.woff2) format('woff2');
   font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Unbounded';
-  src: url(/fonts/unbounded/Unbounded-Bold.ttf);
+  src: url(/fonts/unbounded/Unbounded-Bold.woff2) format('woff2');
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Unbounded';
-  src: url(/fonts/unbounded/Unbounded-Black.ttf);
+  src: url(/fonts/unbounded/Unbounded-Black.woff2) format('woff2');
   font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 

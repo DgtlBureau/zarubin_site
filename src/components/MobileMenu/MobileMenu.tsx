@@ -1,7 +1,7 @@
 import Arrow from '@/public/assets/images/icons/arrow.svg';
 import { MenuItems } from '@/src/utils/enums';
 import { menuListLayer } from '@/src/utils/menuListLayer';
-import { ISubmenu, Post } from '@/src/utils/types';
+import { MenuArticle, MenuSection } from '@/src/utils/types';
 import classNames from 'classnames';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
@@ -13,9 +13,9 @@ import styles from './MobileMenu.module.css';
 interface Props {
   isOpen: boolean;
   onClick: () => void;
-  expertiseSubMenu: ISubmenu[];
-  insightsSubMenu: ISubmenu[];
-  data: Post[];
+  expertiseSubMenu: MenuSection[];
+  insightsSubMenu: MenuSection[];
+  data: MenuArticle[];
 }
 
 export const MobileMenu = ({
@@ -68,6 +68,7 @@ export const MobileMenu = ({
                       </a>
                     ) : (
                       <Link
+                        prefetch={false}
                         href={item.link}
                         className={`${styles.menuLink} ${styles.dark} font-inter`}
                         onClick={onClick}

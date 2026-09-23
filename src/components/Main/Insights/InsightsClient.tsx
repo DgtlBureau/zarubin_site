@@ -7,11 +7,13 @@ import { Post } from '@/src/utils/types';
 import { useState } from 'react';
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { Container } from '../../shared/Container/Container';
+import styles from './InsightsClient.module.css';
 
 interface Props {
   posts: Post[];
 }
 
+// Mirrored in InsightsClient.module.css for the pre-init (SSR) layout.
 const insightsBreakpoints = {
   0: { slidesPerView: 1.13, spaceBetween: 20 },
   768: { slidesPerView: 1.56, spaceBetween: 40 },
@@ -38,6 +40,7 @@ export const InsightsClient = ({ posts }: Props) => {
       </Container>
       <Container className='flex max-w-full p-0 pl-[10px] tablet:p-0 tablet:pl-[40px] laptop:px-[40px] desktop-big:px-[80px]'>
         <Swiper
+          className={styles.slider}
           spaceBetween={40}
           slidesPerView={3}
           breakpoints={insightsBreakpoints}

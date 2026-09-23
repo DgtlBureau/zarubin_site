@@ -19,6 +19,7 @@ export const Footer = () => {
             <ul className='flex flex-col gap-[20px] tablet:flex-row tablet:justify-between'>
               <li>
                 <Link
+                  prefetch={false}
                   href='/policy'
                   className='font-inter text-[16px] leading-[1.1] text-white opacity-50 desktop:text-[18px]'
                 >

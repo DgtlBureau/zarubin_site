@@ -17,6 +17,7 @@ export const RevantaSubMenu = ({ onClick }: Props) => (
   <div className='w-[min(1200px,calc(100vw-40px))] py-[36px]'>
     <div className='grid grid-cols-[minmax(0,340px)_1fr] gap-[48px]'>
       <Link
+        prefetch={false}
         href={REVANTA_BASE}
         onClick={onClick}
         className='group flex flex-col'
@@ -58,6 +59,7 @@ export const RevantaSubMenu = ({ onClick }: Props) => (
         <div className='mt-[18px] grid grid-cols-2 gap-[8px]'>
           {REVANTA_PRODUCTS.map((branch) => (
             <Link
+              prefetch={false}
               key={branch.slug}
               href={revantaHref(branch.slug)}
               onClick={onClick}

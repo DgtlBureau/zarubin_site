@@ -6,20 +6,23 @@ import { SEO_DESCRIPTION_SIZE } from '@/src/utils/alias';
 import { getArticlesList } from '@/src/utils/articlesMenu';
 import { contentTrimming } from '@/src/utils/contentTrimming';
 import { getAllArticles } from '@/src/utils/getAllArticles';
+import { buildHeaderMenuData } from '@/src/utils/headerMenu';
 import { pageMetadata } from '@/src/utils/pageMetadata';
 import { Seo } from '@/src/utils/Seo/Seo';
 import classNames from 'classnames';
 import { Inter } from 'next/font/google';
-import localFont from 'next/font/local';
 import Script from 'next/script';
 import React from 'react';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import './globals.css';
 
-const expertiseSubMenu = getArticlesList('expertise');
-const insightsSubMenu = getArticlesList('insights');
-const playbookMetaData = getAllArticles();
+// Only what the header menus render; computed at build time on the server.
+const headerMenu = buildHeaderMenuData(
+  getArticlesList('expertise'),
+  getArticlesList('insights'),
+  getAllArticles(),
+);
 
 const title = pageMetadata.main.title;
 const description = contentTrimming(
@@ -28,11 +31,9 @@ const description = contentTrimming(
 );
 const keywords = pageMetadata.main.keywords;
 
-export async function generateMetadata(
-  props: {
-    params: Promise<{ category: string; slug: string }>;
-  }
-) {
+export async function generateMetadata(props: {
+  params: Promise<{ category: string; slug: string }>;
+}) {
   const params = await props.params;
   return Seo({
     title,
@@ -50,34 +51,13 @@ const inter = Inter({
   display: 'swap',
 });
 
-const Unbound = localFont({
-  src: [
-    {
-      path: '../public/fonts/unbounded/Unbounded-Bold.ttf',
-      weight: '700',
-      style: 'normal',
-    },
-    {
-      path: '../public/fonts/unbounded/Unbounded-Black.ttf',
-      weight: '900',
-      style: 'normal',
-    },
-    {
-      path: '../public/fonts/unbounded/Unbounded-SemiBold.ttf',
-      weight: '600',
-      style: 'normal',
-    },
-  ],
-  variable: '--font-unbound',
-  adjustFontFallback: false,
-});
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const bodyClassname = classNames(inter.variable, Unbound.variable);
+  // Unbounded is declared once via @font-face in globals.css (tailwind `font-unbound`).
+  const bodyClassname = classNames(inter.variable);
 
   return (
     <html lang='en'>
@@ -110,18 +90,15 @@ export default function RootLayout({
       </head>
       <body className={`flex flex-col bg-main-bg text-white ${bodyClassname}`}>
         <HideOnRevanta>
-          <Header
-            expertiseSubmenu={expertiseSubMenu}
-            insightsSubmenu={insightsSubMenu}
-            expertiseMetadata={playbookMetaData}
-          />
+          <Header {...headerMenu} />
         </HideOnRevanta>
         <main className='flex flex-col'>{children}</main>
         <ToastProvider />
         <HideOnRevanta>
           <Footer />
         </HideOnRevanta>
-        <Script id='replain'>
+        {/* Chat widget is not needed for first paint: load it once the page is idle */}
+        <Script id='replain' strategy='lazyOnload'>
           {`window.replainSettings = { id: '07c36061-dbc9-4cb8-85cb-9e69876b9d34' };
             (function(u){var s=document.createElement('script');s.async=true;s.src=u;
             var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);

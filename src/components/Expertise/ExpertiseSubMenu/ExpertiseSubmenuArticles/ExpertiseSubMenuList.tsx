@@ -1,16 +1,16 @@
 import LinkArrow from '@/public/assets/images/icons/link_arrow.svg';
 import { MenuItems } from '@/src/utils/enums';
 import {
-    formatLink,
-    formatMenuItem,
-    formatMenuTitle
+  formatLink,
+  formatMenuItem,
+  formatMenuTitle,
 } from '@/src/utils/formattedMenuItem';
-import { ISubmenu } from '@/src/utils/types';
-import { DateTime } from 'luxon';
+import { MenuSection } from '@/src/utils/types';
 import Link from 'next/link';
 
 interface IProps {
-  data: ISubmenu[];
+  /** Items are newest first and trimmed on the server (see buildHeaderMenuData). */
+  data: MenuSection[];
   onClick: () => void;
   category: 'expertise' | 'insights';
 }
@@ -20,7 +20,7 @@ export const ExpertiseSubMenuList = ({ data, onClick, category }: IProps) => {
     <div>
       <div className='flex w-full flex-col gap-[16px] laptop-big:w-[560px]'>
         {data.map((item) => {
-          if (item.folderItems.length === 0) return null;
+          if (item.articlesCount === 0) return null;
           return (
             <div key={item.name} className={`flex flex-col p-[5px] text-white`}>
               <h3 className='flex w-full flex-1 items-center justify-between text-left font-unbound text-[16px] font-bold uppercase'>
@@ -33,32 +33,27 @@ export const ExpertiseSubMenuList = ({ data, onClick, category }: IProps) => {
                   className={`relative grid w-full grid-cols-1 gap-x-[32px] gap-y-[8px] tablet:grid-cols-2 laptop:gap-x-[48px]`}
                 >
                   {item.folderItems.length !== 0 &&
-                    item.folderItems
-                      .sort(
-                        (a, b) =>
-                          DateTime.fromFormat(b.date, 'dd-MM-yyyy').toMillis() -
-                          DateTime.fromFormat(a.date, 'dd-MM-yyyy').toMillis(),
-                      )
-                      .slice(0, 6)
-                      .map((el) => (
-                        <li
-                          key={el.nameItem}
-                          className='w-full overflow-hidden font-inter leading-[1.4]'
-                          onClick={onClick}
+                    item.folderItems.map((el) => (
+                      <li
+                        key={el.nameItem}
+                        className='w-full overflow-hidden font-inter leading-[1.4]'
+                        onClick={onClick}
+                      >
+                        <Link
+                          prefetch={false}
+                          className='block truncate border-b-[2px] border-solid border-transparent py-[4px] font-inter text-[14px] leading-[1.2] text-link-gray hover:text-white'
+                          href={`/${MenuItems.PLAYBOOK.toLowerCase()}/${category}${formatLink(el.link)}`}
+                          title={formatMenuItem(formatLink(el.nameItem))}
                         >
-                          <Link
-                            className='block truncate border-b-[2px] border-solid border-transparent py-[4px] font-inter text-[14px] leading-[1.2] text-link-gray hover:text-white'
-                            href={`/${MenuItems.PLAYBOOK.toLowerCase()}/${category}${formatLink(el.link)}`}
-                            title={formatMenuItem(formatLink(el.nameItem))}
-                          >
-                            {formatMenuItem(formatLink(el.nameItem))}
-                          </Link>
-                        </li>
-                      ))}
+                          {formatMenuItem(formatLink(el.nameItem))}
+                        </Link>
+                      </li>
+                    ))}
                   <span className='absolute left-[calc(50%-20px)] hidden h-full w-[1px] translate-x-[-50%] bg-[#001450] tablet:block laptop:left-[50%]' />
                 </ul>
               </div>
               <Link
+                prefetch={false}
                 href={`/${MenuItems.PLAYBOOK.toLowerCase()}/${category}?sub-category=${item.name}`}
                 onClick={onClick}
                 className='group mt-[10px] flex items-center gap-[8px] whitespace-nowrap font-inter text-[14px] font-bold leading-[1] text-link-gray hover:text-white laptop-big:mt-[12px]'

@@ -1,0 +1,26 @@
+/*
+ * Before Swiper initialises (SSR HTML, until hydration) slides fall back to
+ * `width: 100%`, so the cards render full-width and very tall, then shrink on
+ * init: a big layout shift. These rules give the uninitialised slider the same
+ * slide widths and gaps Swiper computes from `insightsBreakpoints` in
+ * InsightsClient.tsx: width = (100% - (slidesPerView - 1) * spaceBetween) / slidesPerView.
+ * Keep the two in sync.
+ */
+.slider:not(:global(.swiper-initialized)) :global(.swiper-slide) {
+  width: calc((100% - 0.13 * 20px) / 1.13);
+  margin-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .slider:not(:global(.swiper-initialized)) :global(.swiper-slide) {
+    width: calc((100% - 0.56 * 40px) / 1.56);
+    margin-right: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slider:not(:global(.swiper-initialized)) :global(.swiper-slide) {
+    width: calc((100% - 2 * 40px) / 3);
+    margin-right: 40px;
+  }
+}

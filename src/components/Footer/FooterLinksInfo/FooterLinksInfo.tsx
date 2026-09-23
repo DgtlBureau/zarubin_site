@@ -12,7 +12,7 @@ export const FooterLinksInfo = () => {
     <div className='flex w-full flex-col justify-between'>
       <div className='flex flex-col text-white'>
         <div className='flex items-center justify-between'>
-          <Link aria-label='Go to the main page' href='/'>
+          <Link aria-label='Go to the main page' href='/' prefetch={false}>
             <LightMainLogo className='h-[54px] w-[auto] tablet:h-[80px] desktop:h-[71px]' />
           </Link>
           {isMobile && (

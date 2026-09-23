@@ -4,7 +4,8 @@ import { BurgerIcon } from '@/src/ui-kit/BurgerIcon/BurgerIcon';
 import { ContactUsBtn } from '@/src/ui-kit/LeagueLink/ContactUsBtn';
 import { Logo } from '@/src/ui-kit/LogoIcon/Logo';
 import { menuListLayer } from '@/src/utils/menuListLayer';
-import { ISubmenu, Post } from '@/src/utils/types';
+import { HeaderMenuData } from '@/src/utils/types';
+import { useAfterLoadIdle } from '@/src/utils/useAfterLoadIdle';
 import useMediaQuery from '@/src/utils/useMediaQuery';
 import dynamic from 'next/dynamic';
 import { usePathname } from 'next/navigation';
@@ -17,40 +18,53 @@ enum Hide {
   BONUSES = '/bonuses',
 }
 
+const loadRevantaMenu = () =>
+  import('../Revanta/RevantaSubMenu/RevantaSubMenu');
+const loadExpertiseMenu = () =>
+  import('../Expertise/ExpertiseSubMenu/ExpertiseSubMenu');
+
 const DynamicRevantaMenu = dynamic(() =>
-  import('../Revanta/RevantaSubMenu/RevantaSubMenu').then(
-    (mod) => mod.RevantaSubMenu,
-  ),
+  loadRevantaMenu().then((mod) => mod.RevantaSubMenu),
 );
 
 export type SubmenuKind = 'expertise' | 'revanta';
 
 const DynamicExpertiseMenu = dynamic(() =>
-  import('../Expertise/ExpertiseSubMenu/ExpertiseSubMenu').then(
-    (mod) => mod.ExpertiseSubMenu,
-  ),
+  loadExpertiseMenu().then((mod) => mod.ExpertiseSubMenu),
 );
 
-interface Props {
-  expertiseSubmenu: ISubmenu[];
-  insightsSubmenu: ISubmenu[];
-  expertiseMetadata: Post[];
-}
+/**
+ * Downloads the mega-menu JS once the page is idle so the first hover renders
+ * without waiting for the chunk. Only code is fetched; the menu (and its
+ * images) is not mounted until the visitor reaches for it.
+ */
+const warmMegaMenuChunks = () => {
+  void loadExpertiseMenu();
+  void loadRevantaMenu();
+};
+
+type Props = Partial<HeaderMenuData>;
 
 export const Header = ({
   expertiseSubmenu = [],
   insightsSubmenu = [],
-  expertiseMetadata = [],
+  latestArticles = [],
 }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSubmenu, setActiveSubmenu] = useState(false);
   const [submenuKind, setSubmenuKind] = useState<SubmenuKind>('expertise');
+  // The mega menu stays unmounted (no DOM, no image requests) until the first
+  // hover or keyboard focus in the header; after that it stays mounted so the
+  // open/close transition works exactly as before.
+  const [megaMenuMounted, setMegaMenuMounted] = useState(false);
+  useAfterLoadIdle(warmMegaMenuChunks);
   const pathname = usePathname();
 
   const isBonusePage = pathname === Hide.BONUSES;
 
   const handleChangeActiveMenu = (isActive: boolean, kind?: SubmenuKind) => {
     if (kind) setSubmenuKind(kind);
+    if (isActive) setMegaMenuMounted(true);
     setActiveSubmenu(isActive);
   };
 
@@ -79,6 +93,7 @@ export const Header = ({
   return (
     <header
       onMouseLeave={() => handleChangeActiveMenu(false)}
+      onFocus={() => setMegaMenuMounted(true)}
       className={`${isBonusePage ? 'absolute' : 'sticky'} top-0 z-50 mx-auto h-[100px] w-full border-b transition-colors duration-300 ${
         isBonusePage || transparent
           ? 'border-transparent bg-transparent'
@@ -104,7 +119,7 @@ export const Header = ({
                   onClick={() => setIsOpen(false)}
                   expertiseSubMenu={expertiseSubmenu}
                   insightsSubMenu={insightsSubmenu}
-                  data={expertiseMetadata}
+                  data={latestArticles}
                 />
                 <BurgerIcon isOpen={isOpen} setIsOpen={handleOpen} />
               </>
@@ -122,16 +137,19 @@ export const Header = ({
               : 'pointer-events-none -translate-y-4 opacity-0'
           } ${isMobile ? 'hidden' : 'visible'}`}
         >
-          {submenuKind === 'revanta' ? (
-            <DynamicRevantaMenu onClick={() => handleChangeActiveMenu(false)} />
-          ) : (
-            <DynamicExpertiseMenu
-              onClick={() => handleChangeActiveMenu(false)}
-              expertiseSubMenu={expertiseSubmenu}
-              insightsSubMenu={insightsSubmenu}
-              expertiseMetadata={expertiseMetadata}
-            />
-          )}
+          {megaMenuMounted &&
+            (submenuKind === 'revanta' ? (
+              <DynamicRevantaMenu
+                onClick={() => handleChangeActiveMenu(false)}
+              />
+            ) : (
+              <DynamicExpertiseMenu
+                onClick={() => handleChangeActiveMenu(false)}
+                expertiseSubMenu={expertiseSubmenu}
+                insightsSubMenu={insightsSubmenu}
+                latestArticles={latestArticles}
+              />
+            ))}
         </div>
       )}
     </header>

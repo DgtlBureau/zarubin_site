@@ -191,11 +191,47 @@ const config: Config = {
         '0%': { opacity: '0' },
         '100%': { opacity: '100%' },
       },
+      // Entrance keyframes for above-the-fold content. Only the start state is
+      // given, so they end on the element's own styles. Pure CSS: they play
+      // from first paint instead of waiting for hydration (was framer-motion).
+      'enter-fade': { from: { opacity: '0' } },
+      'enter-up-10': { from: { opacity: '0', transform: 'translateY(10px)' } },
+      'enter-up-18': { from: { opacity: '0', transform: 'translateY(18px)' } },
+      'enter-up-40': { from: { opacity: '0', transform: 'translateY(40px)' } },
+      'enter-emblem': {
+        from: { opacity: '0', transform: 'scale(0.94) rotate(-2deg)' },
+      },
+      'enter-clip-x': {
+        from: { clipPath: 'inset(0 100% 0 0)' },
+        to: { clipPath: 'inset(0 0% 0 0)' },
+      },
+      'enter-slide-x': { from: { transform: 'translateX(-12px)' } },
     },
     animation: {
+      // theme.animation is replaced, not extended: keep `animate-none` (used by motion-reduce:)
+      none: 'none',
       'slide-in': 'slide-in 1s ease-in-out',
       'fade-in': 'fade 1s ease-in-out',
       'fade-out': 'fade 1s ease-in-out reverse',
+      // Revanta hub hero (RevantaHeroSplit); easing = framer [0.16, 1, 0.3, 1]
+      'hero-fade': 'enter-fade 1s cubic-bezier(0.16,1,0.3,1) both',
+      'hero-emblem': 'enter-emblem 1.15s cubic-bezier(0.16,1,0.3,1) both',
+      'hero-wordmark-clip':
+        'enter-clip-x 1.35s cubic-bezier(0.16,1,0.3,1) 0.18s both',
+      'hero-wordmark-slide':
+        'enter-slide-x 1.35s cubic-bezier(0.16,1,0.3,1) 0.18s both',
+      'hero-rise-sm-300':
+        'enter-up-10 1.1s cubic-bezier(0.16,1,0.3,1) 0.3s both',
+      'hero-rise-sm-400':
+        'enter-up-10 1.1s cubic-bezier(0.16,1,0.3,1) 0.4s both',
+      'hero-rise-lg-500':
+        'enter-up-18 1.3s cubic-bezier(0.16,1,0.3,1) 0.5s both',
+      'hero-rise-lg-680':
+        'enter-up-18 1.3s cubic-bezier(0.16,1,0.3,1) 0.68s both',
+      // Reveal onLoad; easing = framer [0.4, 0, 0.2, 1]
+      'reveal-fade': 'enter-fade 0.8s cubic-bezier(0.4,0,0.2,1) both',
+      // ScrollAnimationWrapper showOnLoad; framer 'easeOut' = cubic-bezier(0, 0, 0.58, 1)
+      'fade-up-onload': 'enter-up-40 0.6s cubic-bezier(0,0,0.58,1) both',
     },
   },
   plugins: [require('@tailwindcss/typography')],

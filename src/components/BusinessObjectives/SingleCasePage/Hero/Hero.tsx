@@ -3,6 +3,7 @@ import {
   Breadcrumbs,
 } from '@/src/components/shared/Breadcrumbs/Breadcrumbs';
 import { MenuItems } from '@/src/utils/enums';
+import { preloadUnboundedPageHeading } from '@/src/utils/fontPreload';
 import { CaseTag } from '../../Cases/CaseCard/CaseTag/CaseTag';
 
 export const Hero = ({
@@ -17,6 +18,9 @@ export const Hero = ({
   type: string;
   link: string;
 }) => {
+  // The H1 is set in Unbounded and sits above the fold
+  preloadUnboundedPageHeading();
+
   const BREADCRUMBS: Breadcrumb[] = [
     { title: 'Main', link: '/' },
     { title: MenuItems.CASES, link: `/${MenuItems.CASES.toLowerCase()}` },

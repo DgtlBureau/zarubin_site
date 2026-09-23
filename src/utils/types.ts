@@ -49,3 +49,27 @@ export interface ISubmenu {
   name: string;
   folderItems: ISubmenuData[];
 }
+
+/** Article fields the header menus render (desktop mega menu + mobile menu). */
+export type MenuArticle = Pick<
+  Post,
+  'slug' | 'title' | 'description' | 'image' | 'category'
+>;
+
+export interface MenuSectionItem {
+  nameItem: string;
+  link: string;
+}
+
+/** A playbook sub-category as the header menus show it: newest items first. */
+export interface MenuSection {
+  name: string;
+  articlesCount: number;
+  folderItems: MenuSectionItem[];
+}
+
+export interface HeaderMenuData {
+  expertiseSubmenu: MenuSection[];
+  insightsSubmenu: MenuSection[];
+  latestArticles: MenuArticle[];
+}

@@ -34,7 +34,7 @@ type Props = {
 };
 
 /**
- * Admin-panel recording in a browser frame. The source is attached only when
+ * Admin-panel recording in a browser frame. The source (and poster) is attached only when
  * the clip scrolls into view, and it plays only while visible, so a page with
  * eight scenarios does not download or decode them all at once.
  */
@@ -48,12 +48,16 @@ export const ScenarioVideo = ({
   const videoRef = useRef<HTMLVideoElement>(null);
   const inView = useInView(rootRef);
 
+  // Poster and source are attached together, when the clip nears the
+  // viewport: an eager `poster` attribute would download every poster on
+  // page load. Until then the frame shows its white placeholder background.
   useEffect(() => {
     const v = videoRef.current;
     if (!v || !inView || v.getAttribute('src')) return;
+    v.poster = poster;
     v.src = video;
     v.load();
-  }, [inView, video]);
+  }, [inView, video, poster]);
 
   useEffect(() => {
     const v = videoRef.current;
@@ -86,7 +90,6 @@ export const ScenarioVideo = ({
           loop
           playsInline
           preload='none'
-          poster={poster}
           aria-label={title}
         />
       </div>

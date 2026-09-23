@@ -1,11 +1,11 @@
 import { ArticleCard } from '@/src/ui-kit/ArticleCard/ArticleCard';
 import { MenuItems } from '@/src/utils/enums';
-import { Post } from '@/src/utils/types';
-import { DateTime } from 'luxon';
+import { MenuArticle } from '@/src/utils/types';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 interface IData {
-  data: Post[];
+  /** Newest first, already sorted on the server (see buildHeaderMenuData). */
+  data: MenuArticle[];
   onClick: () => void;
 }
 
@@ -16,12 +16,6 @@ const swiperBreakpoints = {
 };
 
 export const ExpertiseSubmenuArticles = ({ data, onClick }: IData) => {
-  const sortedData = data.sort(
-    (a, b) =>
-      DateTime.fromFormat(b.date, 'dd-MM-yyyy').toMillis() -
-      DateTime.fromFormat(a.date, 'dd-MM-yyyy').toMillis(),
-  );
-
   return (
     <div className='flex w-full flex-col gap-[16px]'>
       <div className='group flex items-center justify-between'>
@@ -35,7 +29,7 @@ export const ExpertiseSubmenuArticles = ({ data, onClick }: IData) => {
           slidesPerView={2}
           breakpoints={swiperBreakpoints}
         >
-          {sortedData.slice(0, 2).map((post, idx) => (
+          {data.slice(0, 2).map((post, idx) => (
             <SwiperSlide key={idx} className='w-full'>
               <ArticleCard
                 href={`/${MenuItems.PLAYBOOK.toLowerCase()}/${post.category?.toLowerCase()}/${post.slug}`}

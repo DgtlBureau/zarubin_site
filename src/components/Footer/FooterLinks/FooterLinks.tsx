@@ -35,6 +35,7 @@ export const FooterLinks = () => {
                   <li key={`${item.id}-${idx}`}>
                     {el.link ? (
                       <Link
+                        prefetch={false}
                         href={el.link}
                         className={`font-regular font-inter text-[16px] leading-[1.2] text-white/60 duration-300 hover:text-white`}
                       >
@@ -63,6 +64,7 @@ export const FooterLinks = () => {
                         <li key={index}>
                           {el.link ? (
                             <Link
+                              prefetch={false}
                               href={el.link}
                               className={`font-regular font-inter text-[16px] leading-[1.2] text-white/60 duration-300 hover:text-white`}
                             >

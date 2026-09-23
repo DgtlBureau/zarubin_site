@@ -1,4 +1,3 @@
-import insightBg from '@/public/assets/images/main/insight_bg.png';
 import { Cases } from '@/src/components/BusinessObjectives/Cases/Cases';
 import { Hero } from '@/src/components/BusinessObjectives/Hero/Hero';
 import { ContactForm } from '@/src/components/Main/ContactForm/ContactForm';
@@ -14,7 +13,6 @@ import { Seo } from '@/src/utils/Seo/Seo';
 import { DateTime } from 'luxon';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
-import { Suspense } from 'react';
 
 const DynamicInsights = dynamic(() =>
   import('@/src/components/Main/Insights/Insights').then((mod) => mod.Insights),
@@ -61,9 +59,9 @@ export default async function BusinessObjectivesPage() {
       </Section>
       <Section className='!pt-0'>
         <Container>
-          <Suspense>
-            <Cases cases={sortedCases} />
-          </Suspense>
+          {/* No Suspense here: it made the grid stream in after first paint.
+              The ?industry= bailout has its own boundary inside Cases. */}
+          <Cases cases={sortedCases} />
         </Container>
       </Section>
       <Section id='insights'>
@@ -71,11 +69,16 @@ export default async function BusinessObjectivesPage() {
           <DynamicInsights />
         </ScrollAnimationWrapper>
         <div className='absolute inset-0'>
-          <Image
-            src={insightBg}
-            className='absolute inset-0'
-            alt='background image'
-          />
+          {/* Full-width band at the top of the section, height from the image's aspect ratio (5760x1767) */}
+          <div className='absolute inset-x-0 top-0 aspect-[5760/1767]'>
+            <Image
+              src='/assets/images/main/insight_bg.webp'
+              fill
+              sizes='100vw'
+              className='object-cover'
+              alt='background image'
+            />
+          </div>
         </div>
       </Section>
       <Section

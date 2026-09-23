@@ -3,11 +3,14 @@ import { Header } from '@/src/components/Header/Header';
 import { NotFound } from '@/src/components/NotFound/NotFound';
 import { getArticlesList } from '@/src/utils/articlesMenu';
 import { getExpertiseMetadata } from '@/src/utils/getExpertiseMetadata';
+import { buildHeaderMenuData } from '@/src/utils/headerMenu';
 import './globals.css';
 
-const expertiseSubMenu = getArticlesList('expertise');
-const insightsSubMenu = getArticlesList('insights');
-const expertiseMetadata = getExpertiseMetadata();
+const headerMenu = buildHeaderMenuData(
+  getArticlesList('expertise'),
+  getArticlesList('insights'),
+  getExpertiseMetadata(),
+);
 
 export default function NotFoundPage() {
   return (
@@ -17,11 +20,7 @@ export default function NotFoundPage() {
         <link rel='icon' href='/assets/images/icons/favicon.svg' sizes='any' />
       </head>
       <body className='flex flex-col gap-[60px] bg-main-bg text-white'>
-        <Header
-          expertiseMetadata={expertiseMetadata}
-          expertiseSubmenu={expertiseSubMenu}
-          insightsSubmenu={insightsSubMenu}
-        />
+        <Header {...headerMenu} />
         <main>
           <NotFound />
         </main>

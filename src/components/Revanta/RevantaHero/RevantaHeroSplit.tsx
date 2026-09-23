@@ -1,12 +1,7 @@
-'use client';
-
 import { REVANTA_IMAGES } from '@/src/data/revanta/routes';
-import { motion, useReducedMotion } from 'framer-motion';
 import Image from 'next/image';
 import { EMBLEM_GLOW_CLASS } from '../ui/layout';
 import { CtaButton } from './CtaButton';
-
-const EASE_OUT: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
 interface Props {
   eyebrow: string;
@@ -21,7 +16,9 @@ interface Props {
  * it, lead and CTA on the right, then the admin panel in a desktop window
  * with a phone on top, cut by the bottom edge of the section. Entrance:
  * emblem fades in, the wordmark slides out from under it, text follows,
- * screens rise last.
+ * screens rise last. The entrance is CSS keyframes (tailwind.config.ts
+ * `hero-*` animations), so it plays from first paint without waiting for JS;
+ * `motion-reduce:animate-none` skips it for reduced-motion users.
  */
 export const RevantaHeroSplit = ({
   eyebrow,
@@ -30,8 +27,6 @@ export const RevantaHeroSplit = ({
   image,
   imageAlt,
 }: Props) => {
-  const reduce = Boolean(useReducedMotion());
-
   return (
     <section className='relative flex flex-col overflow-hidden bg-black tablet:min-h-[min(100svh,1000px)]'>
       <div
@@ -51,26 +46,14 @@ export const RevantaHeroSplit = ({
         <div className='mx-auto w-full max-w-[1600px] px-[16px] tablet:px-[40px]'>
           <div className='grid grid-cols-1 gap-[28px] laptop:grid-cols-[1.3fr_1fr] laptop:items-start laptop:gap-[40px]'>
             <div className='relative z-10'>
-              <motion.span
-                className='mb-[26px] inline-block w-fit rounded-full border border-white/20 bg-white/10 px-[14px] py-[6px] font-inter text-[12px] font-medium uppercase tracking-[0.05em] text-white/80 backdrop-blur-sm tablet:text-[13px]'
-                initial={reduce ? false : { opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, ease: EASE_OUT }}
-              >
+              <span className='mb-[26px] inline-block w-fit animate-hero-fade rounded-full border border-white/20 bg-white/10 px-[14px] py-[6px] font-inter text-[12px] font-medium uppercase tracking-[0.05em] text-white/80 backdrop-blur-sm motion-reduce:animate-none tablet:text-[13px]'>
                 {eyebrow}
-              </motion.span>
+              </span>
               <div
                 aria-hidden='true'
                 className='flex items-center gap-[12px] tablet:gap-[18px] desktop:gap-[22px]'
               >
-                <motion.span
-                  className='block shrink-0'
-                  initial={
-                    reduce ? false : { opacity: 0, scale: 0.94, rotate: -2 }
-                  }
-                  animate={{ opacity: 1, scale: 1, rotate: 0 }}
-                  transition={{ duration: 1.15, ease: EASE_OUT }}
-                >
+                <span className='block shrink-0 animate-hero-emblem motion-reduce:animate-none'>
                   <Image
                     src={`${REVANTA_IMAGES}/emblem-white.webp`}
                     alt=''
@@ -80,23 +63,9 @@ export const RevantaHeroSplit = ({
                     quality={95}
                     className={`h-[46px] w-auto tablet:h-[74px] desktop:h-[90px] ${EMBLEM_GLOW_CLASS}`}
                   />
-                </motion.span>
-                <motion.span
-                  className='block shrink-0 overflow-hidden'
-                  initial={reduce ? false : { clipPath: 'inset(0 100% 0 0)' }}
-                  animate={{ clipPath: 'inset(0 0% 0 0)' }}
-                  transition={{ duration: 1.35, delay: 0.18, ease: EASE_OUT }}
-                >
-                  <motion.span
-                    className='block'
-                    initial={reduce ? false : { x: -12 }}
-                    animate={{ x: 0 }}
-                    transition={{
-                      duration: 1.35,
-                      delay: 0.18,
-                      ease: EASE_OUT,
-                    }}
-                  >
+                </span>
+                <span className='block shrink-0 animate-hero-wordmark-clip overflow-hidden motion-reduce:animate-none'>
+                  <span className='block animate-hero-wordmark-slide motion-reduce:animate-none'>
                     <Image
                       src={`${REVANTA_IMAGES}/wordmark-white.webp`}
                       alt=''
@@ -106,33 +75,23 @@ export const RevantaHeroSplit = ({
                       quality={95}
                       className='h-auto w-[210px] tablet:w-[340px] desktop:w-[420px]'
                     />
-                  </motion.span>
-                </motion.span>
+                  </span>
+                </span>
               </div>
-              <motion.h1
-                className='mt-[26px] max-w-[640px] font-inter text-[22px] font-light leading-[1.3] tracking-[-0.01em] text-white tablet:text-[28px] desktop:text-[32px]'
-                initial={reduce ? false : { opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1.1, delay: 0.3, ease: EASE_OUT }}
-              >
+              <h1 className='mt-[26px] max-w-[640px] animate-hero-rise-sm-300 font-inter text-[22px] font-light leading-[1.3] tracking-[-0.01em] text-white motion-reduce:animate-none tablet:text-[28px] desktop:text-[32px]'>
                 {h1}
-              </motion.h1>
+              </h1>
             </div>
-            <motion.div
-              className='relative z-10 flex flex-col items-start gap-[24px] laptop:items-end laptop:pt-[60px]'
-              initial={reduce ? false : { opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.1, delay: 0.4, ease: EASE_OUT }}
-            >
+            <div className='relative z-10 flex animate-hero-rise-sm-400 flex-col items-start gap-[24px] motion-reduce:animate-none laptop:items-end laptop:pt-[60px]'>
               <p className='max-w-[480px] font-inter text-[17px] leading-[1.55] text-white/65 tablet:text-[19px] laptop:text-right'>
                 {lead}
               </p>
               <CtaButton />
-            </motion.div>
+            </div>
           </div>
         </div>
 
-        <div className='relative z-10 mt-[40px] -mb-[16px] pt-[20px] tablet:mt-auto tablet:-mb-[28px] tablet:pt-[32px] desktop:-mb-[40px] desktop:pt-[44px]'>
+        <div className='relative z-10 -mb-[16px] mt-[40px] pt-[20px] tablet:-mb-[28px] tablet:mt-auto tablet:pt-[32px] desktop:-mb-[40px] desktop:pt-[44px]'>
           <div
             aria-hidden='true'
             className='pointer-events-none absolute inset-x-0 bottom-[-120px] z-0 h-[420px]'
@@ -141,12 +100,7 @@ export const RevantaHeroSplit = ({
             <div className='absolute left-1/2 top-[60px] h-[300px] w-[52%] -translate-x-1/2 rounded-full bg-[#5B7BFF]/20 blur-[90px]' />
           </div>
           <div className='relative z-10 mx-auto aspect-[10/7] w-full max-w-full overflow-hidden px-[16px] tablet:aspect-[3/2] tablet:max-w-[900px] tablet:px-[40px] laptop:aspect-[9/4] laptop:max-w-[1040px] desktop:aspect-[1389/540] desktop:max-w-[1360px]'>
-            <motion.div
-              className='absolute inset-x-0 top-[22%]'
-              initial={reduce ? false : { opacity: 0, y: 18 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.3, delay: 0.5, ease: EASE_OUT }}
-            >
+            <div className='absolute inset-x-0 top-[22%] animate-hero-rise-lg-500 motion-reduce:animate-none'>
               <div className='rounded-t-[26px] bg-[linear-gradient(180deg,rgba(150,180,255,0.95)_0%,rgba(59,91,246,0.55)_18%,rgba(36,52,107,0.35)_48%,transparent_100%)] p-[1.5px] shadow-[0_-1px_24px_rgba(99,132,255,0.35)] tablet:rounded-t-[30px] tablet:p-[2px] desktop:rounded-t-[38px]'>
                 <div className='overflow-hidden rounded-t-[24px] border-[10px] border-b-0 border-[#12141c] bg-[#12141c] shadow-[0_60px_120px_-40px_rgba(0,0,0,0.9)] ring-1 ring-inset ring-white/[0.06] tablet:rounded-t-[28px] tablet:border-[14px] desktop:rounded-t-[36px] desktop:border-[18px]'>
                   <div className='relative aspect-[2400/1200] w-full overflow-hidden rounded-t-[14px] bg-[#F7F8FB] tablet:rounded-t-[16px] laptop:aspect-[2400/900] desktop:aspect-[2400/1000] desktop:rounded-t-[20px]'>
@@ -162,13 +116,8 @@ export const RevantaHeroSplit = ({
                   </div>
                 </div>
               </div>
-            </motion.div>
-            <motion.div
-              className='absolute left-[61%] top-[1%] hidden w-[17%] max-w-[232px] tablet:block'
-              initial={reduce ? false : { opacity: 0, y: 18 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.3, delay: 0.68, ease: EASE_OUT }}
-            >
+            </div>
+            <div className='absolute left-[61%] top-[1%] hidden w-[17%] max-w-[232px] animate-hero-rise-lg-680 motion-reduce:animate-none tablet:block'>
               <div className='rounded-[34px] bg-[linear-gradient(180deg,rgba(150,180,255,0.9)_0%,rgba(59,91,246,0.5)_22%,rgba(36,52,107,0.3)_55%,transparent_100%)] p-[1.5px] shadow-[0_-1px_20px_rgba(99,132,255,0.3)] tablet:rounded-[38px]'>
                 <div className='overflow-hidden rounded-[32px] border-[6px] border-[#12141c] bg-[#12141c] shadow-[0_50px_100px_-30px_rgba(0,0,0,0.9)] ring-1 ring-inset ring-white/[0.06] tablet:rounded-[36px] tablet:border-[8px]'>
                   <div className='relative aspect-[780/1694] overflow-hidden bg-[#F7F8FB]'>
@@ -183,7 +132,7 @@ export const RevantaHeroSplit = ({
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>

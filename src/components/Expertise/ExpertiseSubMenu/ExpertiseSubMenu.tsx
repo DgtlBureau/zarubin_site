@@ -4,45 +4,42 @@ import {
   formatMenuItem,
   formatMenuTitle,
 } from '@/src/utils/formattedMenuItem';
-import { ISubmenu, Post } from '@/src/utils/types';
-import { DateTime } from 'luxon';
+import { MenuArticle, MenuSection } from '@/src/utils/types';
 import Image from 'next/image';
 import Link from 'next/link';
 
 interface IExpertiseProps {
-  expertiseSubMenu: ISubmenu[];
-  insightsSubMenu: ISubmenu[];
+  expertiseSubMenu: MenuSection[];
+  insightsSubMenu: MenuSection[];
   onClick: () => void;
-  expertiseMetadata: Post[];
+  /** Newest first, already sorted and trimmed on the server. */
+  latestArticles: MenuArticle[];
 }
 
 const PLAYBOOK = `/${MenuItems.PLAYBOOK.toLowerCase()}`;
-const byDate = (a: { date: string }, b: { date: string }) =>
-  DateTime.fromFormat(b.date, 'dd-MM-yyyy').toMillis() -
-  DateTime.fromFormat(a.date, 'dd-MM-yyyy').toMillis();
 
 /** Playbook mega menu in the same layout as the Revanta menu: featured article on the left, sections and latest reads on the right. */
 export const ExpertiseSubMenu = ({
   expertiseSubMenu,
   insightsSubMenu,
   onClick,
-  expertiseMetadata,
+  latestArticles,
 }: IExpertiseProps) => {
-  const posts = [...expertiseMetadata].sort(byDate);
-  const [featured, ...rest] = posts;
-  const postHref = (p: Post) =>
+  const [featured, ...rest] = latestArticles;
+  const postHref = (p: MenuArticle) =>
     `${PLAYBOOK}/${p.category?.toLowerCase()}/${p.slug}`;
 
   const sections = [
     ...expertiseSubMenu.map((s) => ({ ...s, category: 'expertise' })),
     ...insightsSubMenu.map((s) => ({ ...s, category: 'insights' })),
-  ].filter((s) => s.folderItems.length > 0);
+  ].filter((s) => s.articlesCount > 0);
 
   return (
     <div className='w-[min(1200px,calc(100vw-40px))] py-[36px]'>
       <div className='grid grid-cols-[minmax(0,340px)_1fr] gap-[48px]'>
         {featured ? (
           <Link
+            prefetch={false}
             href={postHref(featured)}
             onClick={onClick}
             className='group flex flex-col'
@@ -79,9 +76,10 @@ export const ExpertiseSubMenu = ({
             </span>
             <div className='mt-[14px] grid grid-cols-3 gap-[8px]'>
               {sections.map((s) => {
-                const latest = [...s.folderItems].sort(byDate)[0];
+                const latest = s.folderItems[0];
                 return (
                   <Link
+                    prefetch={false}
                     key={`${s.category}-${s.name}`}
                     href={`${PLAYBOOK}/${s.category}?sub-category=${s.name}`}
                     onClick={onClick}
@@ -91,7 +89,7 @@ export const ExpertiseSubMenu = ({
                       {formatMenuTitle(s.name)}
                     </span>
                     <span className='mt-[3px] truncate font-inter text-[13px] leading-[1.3] text-white/50'>
-                      {s.folderItems.length} articles ·{' '}
+                      {s.articlesCount} articles ·{' '}
                       {formatMenuItem(formatLink(latest.nameItem))}
                     </span>
                   </Link>
@@ -108,6 +106,7 @@ export const ExpertiseSubMenu = ({
               <div className='mt-[14px] grid grid-cols-2 gap-[8px]'>
                 {rest.slice(0, 4).map((post) => (
                   <Link
+                    prefetch={false}
                     key={post.slug}
                     href={postHref(post)}
                     onClick={onClick}
