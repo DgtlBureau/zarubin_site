@@ -1098,6 +1098,39 @@ const sites: RevantaPageContent = {
       },
     ],
   },
+  scenarios: {
+    heading: 'How it works in the admin panel',
+    items: [
+      {
+        title: 'A news item from headline to publication',
+        text: 'Headline, address, summary and body in one form. The item is linked to a category, a club and a game, so it shows up in the game centre on its own.',
+        video: 'sites-news',
+        tag: 'News',
+        icon: 'newspaper',
+        steps: [
+          'Site → News → Create news item',
+          'Headline, address, summary',
+          'Body text and images',
+          'Category, club, link to a game',
+          'Publish now or schedule by date',
+        ],
+      },
+      {
+        title: 'Roster pulled from the league registry',
+        text: 'The roster is not typed in by hand: players come from the league registry with one button, and a repeat run updates the official fields without touching club data.',
+        video: 'sites-khl',
+        tag: 'Roster',
+        icon: 'users',
+        steps: [
+          'Site → Players',
+          'Sync with the league',
+          'The roster is pulled from the registry',
+          'Extend the card with club data',
+          'A repeat run updates the official fields',
+        ],
+      },
+    ],
+  },
   facts: {
     heading: 'Revanta Sites at a glance',
     items: [
@@ -1215,6 +1248,34 @@ const ecom: RevantaPageContent = {
   scenarios: {
     heading: 'How it works for the merch team',
     items: [
+      {
+        title: 'A new product with a size matrix',
+        text: 'A position is created once: the basics, SKU and VAT rate, category and images. Sizes and colours are not entered one by one — variants are generated from a matrix, each with its own price and stock.',
+        video: 'ecom-product',
+        tag: 'Catalog',
+        icon: 'tag',
+        steps: [
+          'Store → Products → New product',
+          'Name, SKU, description, VAT rate',
+          'Category, Bestseller or Sale label, images',
+          'Product variants: generated from a matrix',
+          'Price, old price and stock per variant',
+        ],
+      },
+      {
+        title: 'From an order to a shipment',
+        text: 'A summary by status and revenue for the period on top, the orders below: customer, delivery method, total and date. The status changes straight from the list.',
+        video: 'ecom-delivery',
+        tag: 'Orders',
+        icon: 'truck',
+        steps: [
+          'Store → Orders',
+          'Summary by status and revenue for the period',
+          'Filter by status, delivery and dates',
+          'Open an order — contents, customer, payment',
+          'Change status straight from the list',
+        ],
+      },
       {
         title: 'A nested category tree',
         text: 'Categories with images, addresses and parents. Toggles control what shows in the header and footer.',
