@@ -1102,20 +1102,6 @@ const sites: RevantaPageContent = {
     heading: 'How it works in the admin panel',
     items: [
       {
-        title: 'A news item from headline to publication',
-        text: 'Headline, address, summary and body in one form. The item is linked to a category, a club and a game, so it shows up in the game centre on its own.',
-        video: 'sites-news',
-        tag: 'News',
-        icon: 'newspaper',
-        steps: [
-          'Site → News → Create news item',
-          'Headline, address, summary',
-          'Body text and images',
-          'Category, club, link to a game',
-          'Publish now or schedule by date',
-        ],
-      },
-      {
         title: 'Roster pulled from the league registry',
         text: 'The roster is not typed in by hand: players come from the league registry with one button, and a repeat run updates the official fields without touching club data.',
         video: 'sites-khl',
@@ -1266,7 +1252,7 @@ const ecom: RevantaPageContent = {
         title: 'From an order to a shipment',
         text: 'A summary by status and revenue for the period on top, the orders below: customer, delivery method, total and date. The status changes straight from the list.',
         video: 'ecom-delivery',
-        tag: 'Orders',
+        tag: 'Delivery',
         icon: 'truck',
         steps: [
           'Store → Orders',
@@ -1274,6 +1260,20 @@ const ecom: RevantaPageContent = {
           'Filter by status, delivery and dates',
           'Open an order — contents, customer, payment',
           'Change status straight from the list',
+        ],
+      },
+      {
+        title: 'Orders with filters by status and delivery',
+        text: 'Total orders, revenue and average check on top; below the list with filters by status, product type, delivery method and promo code.',
+        video: 'ecom-orders',
+        tag: 'Orders',
+        icon: 'clipboard',
+        steps: [
+          'Store → Orders',
+          'Summary: orders, revenue, average check',
+          'Filter by status and product type',
+          'Filter by delivery method and promo code',
+          'Open an order from the list',
         ],
       },
       {
