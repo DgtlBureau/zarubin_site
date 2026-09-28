@@ -97,7 +97,7 @@ const COMPETITOR_LOGOS: Record<
   { Svg?: typeof PlayMetricsLogo; src?: string; height: string; mobile: string }
 > = {
   PlayMetrics: { Svg: PlayMetricsLogo, height: 'h-[15px]', mobile: 'h-[10px]' },
-  'Dash Platform': { Svg: DashLogo, height: 'h-[26px]', mobile: 'h-[18px]' },
+  Dash: { Svg: DashLogo, height: 'h-[26px]', mobile: 'h-[18px]' },
   FanMaker: {
     src: '/assets/images/revanta/competitors/fanmaker-white.png',
     height: 'h-[16px]',
