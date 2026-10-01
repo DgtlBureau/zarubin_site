@@ -39,9 +39,8 @@ const hub: RevantaPageContent = {
     ],
     tabs: [
       { tab: 'Spectator clubs', product: 'loyalty' },
-      { tab: 'Clubs selling tickets', product: 'ticketing' },
+      { tab: 'Tickets, sessions and rentals', product: 'ticketing' },
       { tab: 'Clubs and academies', product: 'sportschool' },
-      { tab: 'Rinks and facilities', product: 'venues' },
       { tab: 'Merch store', product: 'ecom' },
       { tab: 'Club website', product: 'sites' },
     ],
@@ -64,19 +63,14 @@ const hub: RevantaPageContent = {
         text: 'One fan profile with attendance and purchase history, points and tiers the club configures, promo codes and vouchers, segments and push or email campaigns.',
       },
       {
-        title: 'Ticketing and season tickets: Revanta Ticketing',
+        title: 'Ticketing, sessions and rentals: Revanta Ticketing',
         icon: 'ticket',
-        text: 'Seat maps with price zones, season tickets and game packages, QR validation at the gate and sales by zone and game.',
+        text: 'Seat maps with price zones, season tickets, public sessions on a time grid, facility rentals, QR entry and reports on sales and empty hours.',
       },
       {
         title: 'Sports academy and club management: Revanta SportSchool',
         icon: 'dumbbell',
         text: 'Registration and fee collection, tryouts and team building, practice and game schedules, field allocation, player development and family communication.',
-      },
-      {
-        title: 'Rink and sports facility management: Revanta Venues',
-        icon: 'building',
-        text: 'Season and event schedules, facility rentals confirmed in one place, public sessions sold online with QR entry, and reports on the hours your venue sits empty.',
       },
       {
         title: 'Sports club website: Revanta Sites',
@@ -880,21 +874,23 @@ const loyalty: RevantaPageContent = {
 const ticketing: RevantaPageContent = {
   key: 'ticketing',
   seo: {
-    title: 'Sports Ticketing & Season Ticket Software | Revanta Ticketing',
+    title: 'Sports Ticketing & Rink Management Software | Revanta',
     description:
-      'Sell tickets and season tickets in the club’s own system: seat maps with price zones, QR entry at the gate and sales by zone and game.',
+      'Sell game tickets, season tickets and public skate sessions in your own system, confirm ice and court rentals and see which hours sit empty.',
     keywords: [
       'sports ticketing software',
       'season ticket management software',
       'online ticket sales for sports clubs',
-      'box office software for sports teams',
       'arena ticketing system',
-      'QR ticket validation',
+      'ice rink management software',
+      'sports facility management software',
+      'facility rental software',
+      'public skate and stick and puck booking',
     ],
   },
   eyebrow: 'Revanta Ticketing',
-  h1: 'Ticketing for clubs that want to own the buyer',
-  lead: 'When a third-party service sells your tickets, the buyer belongs to that service. Revanta Ticketing sells seats and season tickets in the club’s own system, so every purchase lands in the club’s fan base.',
+  h1: 'Ticketing and venue management: seats, sessions and ice time in one system',
+  lead: 'A seat at the game, a spot at public skate and an hour of ice rented to a club are all the same job: sell the time you own and know who showed up. Revanta Ticketing runs all three in the club’s own system.',
   heroImage: `${REVANTA_IMAGES}/ticketing-hero.webp`,
   heroAlt: 'Fans arriving at a game with tickets on their phones',
   audience: {
@@ -902,17 +898,17 @@ const ticketing: RevantaPageContent = {
     items: [
       'Clubs that sell home-game tickets themselves',
       'Teams with their own arena',
-      'Junior and minor league hockey teams',
-      'College athletic programs',
-      'Box office and ticketing teams',
+      'Ice rinks and hockey arenas',
+      'Sports complexes and municipal rec centers',
+      'Box office, ticketing and facility managers',
     ],
   },
   problem: {
-    heading: 'The seat is sold, but who bought it',
+    heading: 'The seat is sold, the hour is empty',
     before:
-      'Tickets go through an outside service. The club sees payouts and totals, not people: no way to tell a first-time buyer from a ten-year regular, and no way to reach either of them before the next home game.',
+      'Game tickets go through an outside service, rentals are negotiated over email, and public skate is sold at the door. The club sees totals, not people, and nobody can say which hours earn money and which ones cost it.',
     after:
-      'Revanta Ticketing puts the seat map, the price zones and the checkout in the club’s own system. The buyer gets a profile from the first purchase, and the club can look at a game and see who is coming.',
+      'Seats, sessions and rentals sit on one calendar in the club’s own system. Every buyer gets a profile from the first purchase, entry is scanned at the door, and the reports show both how a game is selling and which weekday hours sit empty.',
   },
   features: {
     heading: 'What the club runs in Revanta Ticketing',
@@ -933,167 +929,57 @@ const ticketing: RevantaPageContent = {
         text: 'Price a game by opponent, demand and how full the arena already is, rather than running one price all season.',
       },
       {
-        title: 'QR tickets and entry control',
+        title: 'Public sessions with time slots and capacity',
+        icon: 'calendar',
+        text: 'Public skate and stick and puck sold on a time grid: skaters see how many spots are left and pay online.',
+      },
+      {
+        title: 'Facility rentals: request, book and confirm',
+        icon: 'building',
+        text: 'Renters send a request and staff confirm it in the system, so ice and court time stops living in email threads.',
+      },
+      {
+        title: 'One calendar for games, sessions, rentals and events',
+        icon: 'layers',
+        text: 'The box office and the facility manager look at the same hours, so nothing is sold twice.',
+      },
+      {
+        title: 'Customer registration and memberships',
+        icon: 'users',
+        text: 'Members register once and keep one profile across every program and every purchase at your venue.',
+      },
+      {
+        title: 'QR entry at the gate and at the door',
         icon: 'qr',
-        text: 'Every ticket carries a QR code that is validated at the gate, so a ticket cannot be used twice.',
+        text: 'Game tickets and session passes carry a QR code that is validated at entry, so nothing is used twice.',
       },
       {
-        title: 'Every purchase on the fan profile',
+        title: 'Every purchase on one profile',
         icon: 'user',
-        text: 'Tickets, season tickets and gate entries land on the same profile the club uses for loyalty and campaigns.',
+        text: 'Tickets, sessions, rentals and entries land on the same profile the club uses for loyalty and campaigns.',
       },
       {
-        title: 'Sales by zone, game and day',
+        title: 'Sales, utilization and idle hours',
         icon: 'chart',
-        text: 'See how a game is selling while it is still selling: by zone, by day and against the games before it.',
+        text: 'See how a game is selling while it is still selling, and which weekday hours sit empty before the month is over.',
       },
       {
         title: 'Promo codes and gift certificates',
         icon: 'gift',
-        text: 'Issue a code for a segment, a partner or a win-back campaign and watch it redeem against real seats.',
+        text: 'Issue a code for a segment, a partner or a win-back campaign and watch it redeem against real seats and slots.',
       },
     ],
   },
   facts: {
     heading: 'Revanta Ticketing at a glance',
-    icons: ['map', 'ticket', 'qr', 'user', 'chart', 'wallet'],
+    icons: ['map', 'ticket', 'calendar', 'qr', 'chart', 'user'],
     items: [
       'Seat maps with price zones, edited by the club.',
       'Season tickets, packages and single-game sales in one place.',
-      'QR validation at the gate, with entries written to the profile.',
-      'Buyers land in the club’s own fan base from the first sale.',
-      'Sales and fill rate by zone, game and day.',
+      'One calendar for games, sessions, classes, rentals and events.',
+      'QR validation at entry, with visits written to the profile.',
+      'Sales by zone and game, plus hour-by-hour utilization and idle hours.',
       'Connections to an existing ticketing or POS system are built per project.',
-    ],
-  },
-  faq: [
-    {
-      question: 'Can the club sell tickets without a third-party operator?',
-      answer:
-        'Yes. Revanta Ticketing is the seller: the club builds the seat map, sets the price zones and takes the payment, and the buyer stays in the club’s own base.',
-    },
-    {
-      question: 'How do season tickets work?',
-      answer:
-        'A season ticket is sold against the same seat map as single games and stays on the holder’s profile, so the club can see who is up for renewal and who skipped games during the season.',
-    },
-    {
-      question: 'How are tickets checked at the gate?',
-      answer:
-        'Each ticket carries a QR code that is validated at entry. The scan is written to the fan profile, so attendance history builds itself from real entries rather than from ticket sales.',
-    },
-    {
-      question: 'Does Revanta integrate with Ticketmaster or our POS?',
-      answer:
-        'Not out of the box. Revanta sells tickets itself. If you keep another ticketing or POS system, we build that connection as part of the rollout.',
-    },
-    {
-      question: 'Is there a mobile wallet pass?',
-      answer:
-        'Not today. Revanta does not offer a mobile wallet pass with a stored balance. If you need one, we can scope it as custom development.',
-    },
-  ],
-  articles: [
-    {
-      title: 'How a CRM helps increase ticket sales',
-      href: '/playbook/expertise/How_CRM_helps_increase_ticket',
-    },
-  ],
-};
-
-const venues: RevantaPageContent = {
-  key: 'venues',
-  seo: {
-    title: 'Ice Rink & Sports Facility Management Software | Revanta',
-    description:
-      'Sell public skate sessions with QR tickets, confirm ice and court rentals, run memberships and leagues, and see which hours sit empty at your rink.',
-    keywords: [
-      'ice rink management software',
-      'ice rink scheduling software',
-      'arena management software',
-      'sports complex management software',
-      'sports facility management software',
-      'facility rental software',
-      'facility reservation software',
-      'public skate and stick and puck booking',
-    ],
-  },
-  eyebrow: 'Revanta Venues',
-  h1: 'Ice rink and sports facility management software that fills empty hours',
-  lead: 'Rentals booked in email threads and public skate sold at the door leave ice empty on weekdays. Revanta Venues puts sessions, rentals and members on one calendar, so the hours you already own start earning.',
-  heroImage: `${REVANTA_IMAGES}/arena.webp`,
-  heroAlt: 'An indoor arena with fans in the stands',
-  audience: {
-    heading: 'Built for',
-    items: [
-      'Ice rinks and hockey arenas',
-      'Multi-sheet ice facilities',
-      'Sports complexes',
-      'Municipal rec centers',
-      'Venue and facility managers',
-    ],
-  },
-  problem: {
-    heading: 'Fill the empty hours',
-    before:
-      'Weekday hours stay empty, rentals are negotiated over email and text, and public skate sessions are sold at the box office. Nobody can say which hours earn money and which ones cost it.',
-    after:
-      'Revanta Venues puts every booking, class, league and session on one calendar. Renters confirm online, the public buys session tickets with a QR code, and the utilization report shows where the gaps are, so staff sell more hours and spend less time on the phone.',
-  },
-  features: {
-    heading: 'What a venue runs in Revanta',
-    items: [
-      {
-        title: 'One calendar for seasons, classes and events',
-        icon: 'calendar',
-        text: 'The front desk and the league director see the same ice.',
-      },
-      {
-        title: 'Facility rentals: request, book and confirm',
-        icon: 'clipboard',
-        text: 'Renters send a request, and staff book and confirm it in the system.',
-      },
-      {
-        title: 'Customer registration and memberships',
-        icon: 'users',
-        text: 'Members register once and keep one profile across every program at your facility.',
-      },
-      {
-        title: 'Leagues at your venue',
-        icon: 'trophy',
-        text: 'Build adult and youth leagues on your own ice or courts.',
-      },
-      {
-        title: 'Public skate sessions with time slots and QR tickets',
-        icon: 'ticket',
-        text: 'Skaters see how many spots are left, pay online and walk in with a QR ticket.',
-      },
-      {
-        title: 'QR check-in at the door',
-        icon: 'qr',
-        text: 'Scan the QR at the door and know exactly who is on the ice.',
-      },
-      {
-        title: 'The right offer at the right moment',
-        icon: 'mail',
-        text: 'Send the new Tuesday slot only to the stick-and-puck regulars.',
-      },
-      {
-        title: 'Utilization, revenue and idle-hours reports',
-        icon: 'chart',
-        text: 'See which weekday hours sit empty before the month is over, and fill them.',
-      },
-    ],
-  },
-  facts: {
-    heading: 'Revanta Venues at a glance',
-    items: [
-      'One calendar for seasons, classes, rentals, leagues and events.',
-      'Public sessions sold online with capacity limits and QR tickets.',
-      'QR scanning at the entrance.',
-      'Hour-by-hour utilization and revenue reporting: which hours earn and which sit empty.',
-      'Customers, members and renters on one profile, ready for segments and email.',
-      'Works alongside Revanta SportSchool for clubs that train at the venue.',
     ],
   },
   comparison: {
@@ -1174,42 +1060,56 @@ const venues: RevantaPageContent = {
   },
   faq: [
     {
-      question: 'What is ice rink management software?',
+      question: 'Can the club sell tickets without a third-party operator?',
       answer:
-        'It is software that runs a rink’s calendar and sales: ice rentals, public skate and stick and puck sessions, memberships, leagues and reports. Revanta Venues does this for ice rinks, arenas and sports complexes.',
+        'Yes. Revanta Ticketing is the seller: the club builds the seat map, sets the price zones and takes the payment, and the buyer stays in the club’s own base.',
+    },
+    {
+      question: 'How do season tickets work?',
+      answer:
+        'A season ticket is sold against the same seat map as single games and stays on the holder’s profile, so the club can see who is up for renewal and who skipped games during the season.',
     },
     {
       question: 'Can skaters book public skate or stick and puck online?',
       answer:
-        'Yes. Sessions are sold on a time grid with remaining capacity, online payment and a QR ticket that is scanned at the entrance.',
-    },
-    {
-      question: 'How do we fill empty ice time?',
-      answer:
-        'The utilization report breaks down each hour, so you can see which weekday slots sit empty, then program them as public sessions or offer them to renters and email the right group of customers.',
+        'Yes. Sessions are sold on a time grid with remaining capacity, online payment and a QR pass that is scanned at the entrance.',
     },
     {
       question: 'Can renters book ice or court time online?',
       answer:
-        'Yes. Renters send requests and receive confirmations in the system.',
+        'Renters send a request for the time they need and staff confirm it in the system, so bookings stop living in email threads and the calendar stays the single source of truth.',
+    },
+    {
+      question: 'How do we fill empty ice time?',
+      answer:
+        'The utilization report shows which weekday hours sit empty, and a segment of the regulars for that slot can be emailed the new session before it is published.',
     },
     {
       question: 'Does it handle several sheets of ice or courts?',
       answer:
-        'Yes. Seasons, classes, rentals, leagues and events for the whole facility sit on one calendar, so the front desk and the league director see the same schedule.',
+        'Yes. Every sheet, court and room is its own resource on the same calendar, with its own schedule, price and capacity.',
+    },
+    {
+      question: 'How are tickets checked at the gate?',
+      answer:
+        'Each ticket and session pass carries a QR code that is validated at entry. The scan is written to the profile, so attendance history builds itself from real entries rather than from sales.',
+    },
+    {
+      question: 'Does Revanta integrate with Ticketmaster or our POS?',
+      answer:
+        'Not out of the box. Revanta sells tickets itself. If you keep another ticketing or POS system, we build that connection as part of the rollout.',
     },
     {
       question: 'Can the clubs that train at our rink use it too?',
       answer:
-        'Yes. Clubs can run registration, schedules and player development in Revanta SportSchool on the same calendar.',
-    },
-    {
-      question: 'How long does it take to switch rink software?',
-      answer:
-        'A standard setup takes about two weeks, and work starts in the current season without closing bookings.',
+        'Yes. Revanta SportSchool runs on the same base, so a club training at your venue keeps its teams and schedules in the system your facility already books.',
     },
   ],
   articles: [
+    {
+      title: 'How a CRM helps increase ticket sales',
+      href: '/playbook/expertise/How_CRM_helps_increase_ticket',
+    },
     {
       title: 'Stadium management systems explained',
       href: '/playbook/expertise/stadium-management-system',
@@ -1515,7 +1415,6 @@ export const REVANTA_CONTENT = {
   sportschool,
   loyalty,
   ticketing,
-  venues,
   sites,
   ecom,
 } satisfies Record<string, RevantaPageContent>;

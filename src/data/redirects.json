@@ -129,7 +129,7 @@
   },
   {
     "source": "/revanta/sports-facility-software",
-    "destination": "/revanta/venues"
+    "destination": "/revanta/ticketing"
   },
   {
     "source": "/revanta/club-merch-store",
@@ -138,5 +138,9 @@
   {
     "source": "/revanta/sports-club-website",
     "destination": "/revanta/sites"
+  },
+  {
+    "source": "/revanta/venues",
+    "destination": "/revanta/ticketing"
   }
 ]

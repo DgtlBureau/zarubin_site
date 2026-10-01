@@ -107,7 +107,7 @@ export const footerLinks: IFooters[] = [
       { name: 'Sports CRM & ticketing', link: '/revanta/loyalty' },
       {
         name: 'Ice rink & facility software',
-        link: '/revanta/venues',
+        link: '/revanta/ticketing',
       },
       { name: 'Club website builder', link: '/revanta/sites' },
       { name: 'Club merch store', link: '/revanta/ecom' },

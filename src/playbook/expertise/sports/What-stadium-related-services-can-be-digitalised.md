@@ -141,4 +141,4 @@ The emerging digital services for stadia are enhancing the prospects for the bus
 
 So don't wait, it's high time you earned their loyalty and increased your revenues.
 
-For rinks, arenas and sports complexes, [Revanta Venues, ice rink and sports facility management software](/revanta/venues), puts rentals, public sessions with QR tickets and utilization reports on one calendar.
+For rinks, arenas and sports complexes, [Revanta Venues, ice rink and sports facility management software](/revanta/ticketing), puts rentals, public sessions with QR tickets and utilization reports on one calendar.

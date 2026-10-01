@@ -10,7 +10,6 @@ export type RevantaProductKey =
   | 'loyalty'
   | 'ticketing'
   | 'sportschool'
-  | 'venues'
   | 'ecom'
   | 'sites';
 
@@ -34,7 +33,7 @@ export const REVANTA_PRODUCTS: RevantaProductLink[] = [
     key: 'ticketing',
     slug: 'ticketing',
     name: 'Revanta Ticketing',
-    slogan: 'Tickets and season tickets sold in the club’s own system',
+    slogan: 'Tickets, sessions and rentals sold in the club’s own system',
     image: `${REVANTA_IMAGES}/ticketing-cover.webp`,
   },
   {
@@ -43,13 +42,6 @@ export const REVANTA_PRODUCTS: RevantaProductLink[] = [
     name: 'Revanta SportSchool',
     slogan: 'Registration, teams and schedules for clubs and academies',
     image: `${REVANTA_IMAGES}/sportschool-hero.webp`,
-  },
-  {
-    key: 'venues',
-    slug: 'venues',
-    name: 'Revanta Venues',
-    slogan: 'Rentals, public sessions and QR entry for rinks and facilities',
-    image: `${REVANTA_IMAGES}/arena.webp`,
   },
   {
     key: 'ecom',
