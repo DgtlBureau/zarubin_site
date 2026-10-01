@@ -169,4 +169,4 @@ The clubs that get the most from their CRM treat it as the central nervous syste
 
 ![dashboard](/assets/images/expertise/sport/crm_for_a_sports_two.webp)
 
-If you want to see how these requirements look in a working system, [Revanta Loyalty](/revanta/sports-crm) is our sports CRM with ticketing, season passes and a fan loyalty program on one fan profile.
+If you want to see how these requirements look in a working system, [Revanta Loyalty](/revanta/loyalty) is our sports CRM with ticketing, season passes and a fan loyalty program on one fan profile.

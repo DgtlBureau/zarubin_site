@@ -7,11 +7,12 @@ export const REVANTA_LINKEDIN =
   'https://www.linkedin.com/company/revanta-sports';
 
 export type RevantaProductKey =
-  | 'sportschool'
   | 'loyalty'
+  | 'ticketing'
+  | 'sportschool'
   | 'venues'
-  | 'sites'
-  | 'ecom';
+  | 'ecom'
+  | 'sites';
 
 export interface RevantaProductLink {
   key: RevantaProductKey;
@@ -23,39 +24,46 @@ export interface RevantaProductLink {
 
 export const REVANTA_PRODUCTS: RevantaProductLink[] = [
   {
+    key: 'loyalty',
+    slug: 'loyalty',
+    name: 'Revanta Loyalty',
+    slogan: 'One fan profile, loyalty tiers and campaigns the club owns',
+    image: `${REVANTA_IMAGES}/loyalty-cover.webp`,
+  },
+  {
+    key: 'ticketing',
+    slug: 'ticketing',
+    name: 'Revanta Ticketing',
+    slogan: 'Tickets and season tickets sold in the club’s own system',
+    image: `${REVANTA_IMAGES}/ticketing-cover.webp`,
+  },
+  {
     key: 'sportschool',
-    slug: 'youth-sports-club-software',
+    slug: 'sportschool',
     name: 'Revanta SportSchool',
     slogan: 'Registration, teams and schedules for clubs and academies',
     image: `${REVANTA_IMAGES}/sportschool-hero.webp`,
   },
   {
-    key: 'loyalty',
-    slug: 'sports-crm',
-    name: 'Revanta Loyalty',
-    slogan: 'Tickets, season passes and fan loyalty in one CRM',
-    image: `${REVANTA_IMAGES}/loyalty-cover.webp`,
-  },
-  {
     key: 'venues',
-    slug: 'sports-facility-software',
+    slug: 'venues',
     name: 'Revanta Venues',
     slogan: 'Rentals, public sessions and QR entry for rinks and facilities',
     image: `${REVANTA_IMAGES}/arena.webp`,
   },
   {
-    key: 'sites',
-    slug: 'sports-club-website',
-    name: 'Revanta Sites',
-    slogan: 'A club website fed by live schedules, rosters and stats',
-    image: `${REVANTA_IMAGES}/sites-cover.webp`,
-  },
-  {
     key: 'ecom',
-    slug: 'club-merch-store',
+    slug: 'ecom',
     name: 'Revanta e-com',
     slogan: 'A merch store that knows your fan',
     image: `${REVANTA_IMAGES}/ecom-cover.webp`,
+  },
+  {
+    key: 'sites',
+    slug: 'sites',
+    name: 'Revanta Sites',
+    slogan: 'A club website fed by live schedules, rosters and stats',
+    image: `${REVANTA_IMAGES}/sites-cover.webp`,
   },
 ];
 

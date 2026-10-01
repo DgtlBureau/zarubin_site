@@ -346,7 +346,7 @@ The age of guesswork really is over. The teams that recognize this reality and a
 
 ---
 
-The groundwork for any of this is clean training data. [Revanta SportSchool, our youth sports club and academy software](/revanta/youth-sports-club-software), keeps practice plans, drills, attendance and fitness tests for every player.
+The groundwork for any of this is clean training data. [Revanta SportSchool, our youth sports club and academy software](/revanta/sportschool), keeps practice plans, drills, attendance and fitness tests for every player.
 
 ## Sources
 

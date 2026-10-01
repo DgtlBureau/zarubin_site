@@ -59,4 +59,4 @@ Too much to ask? Maybe. But for now, at least you know: organizing an amateur fo
 
 By Vitaliy Zarubin
 
-For clubs that run in-house leagues and tournaments on their own teams and fields, see [Revanta SportSchool, youth sports club software](/revanta/youth-sports-club-software).
+For clubs that run in-house leagues and tournaments on their own teams and fields, see [Revanta SportSchool, youth sports club software](/revanta/sportschool).

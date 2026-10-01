@@ -102,15 +102,15 @@ export const footerLinks: IFooters[] = [
       { name: 'Sports club software', link: '/revanta' },
       {
         name: 'Youth sports registration',
-        link: '/revanta/youth-sports-club-software',
+        link: '/revanta/sportschool',
       },
-      { name: 'Sports CRM & ticketing', link: '/revanta/sports-crm' },
+      { name: 'Sports CRM & ticketing', link: '/revanta/loyalty' },
       {
         name: 'Ice rink & facility software',
-        link: '/revanta/sports-facility-software',
+        link: '/revanta/venues',
       },
-      { name: 'Club website builder', link: '/revanta/sports-club-website' },
-      { name: 'Club merch store', link: '/revanta/club-merch-store' },
+      { name: 'Club website builder', link: '/revanta/sites' },
+      { name: 'Club merch store', link: '/revanta/ecom' },
     ],
   },
   {

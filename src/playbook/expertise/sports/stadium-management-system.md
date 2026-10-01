@@ -85,4 +85,4 @@ Final step: prepare to scale. A good architecture works beyond one club. Concert
 
 When it all connects, clubs make money not only on match days. Marketing becomes precise. Operations become predictable. And every game proves the system works.
 
-If you run a rink or a multi-sport facility rather than a stadium, see [Revanta Venues, rink and sports facility management software](https://thebrightbyte.com/revanta/sports-facility-software): one calendar for rentals, sessions and leagues, public skate sold with QR tickets, and reports on the hours your ice sits empty.
+If you run a rink or a multi-sport facility rather than a stadium, see [Revanta Venues, rink and sports facility management software](https://thebrightbyte.com/revanta/venues): one calendar for rentals, sessions and leagues, public skate sold with QR tickets, and reports on the hours your ice sits empty.

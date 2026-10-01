@@ -38,11 +38,12 @@ const hub: RevantaPageContent = {
       'Sports complexes and rec centers',
     ],
     tabs: [
-      { tab: 'Clubs and academies', product: 'sportschool' },
       { tab: 'Spectator clubs', product: 'loyalty' },
+      { tab: 'Clubs selling tickets', product: 'ticketing' },
+      { tab: 'Clubs and academies', product: 'sportschool' },
       { tab: 'Rinks and facilities', product: 'venues' },
-      { tab: 'Club website', product: 'sites' },
       { tab: 'Merch store', product: 'ecom' },
+      { tab: 'Club website', product: 'sites' },
     ],
   },
   problem: {
@@ -58,14 +59,19 @@ const hub: RevantaPageContent = {
       'Revanta is modular. Start with the job that hurts most and add the rest on the same fan and member base.',
     items: [
       {
+        title: 'Fan CRM and loyalty: Revanta Loyalty',
+        icon: 'award',
+        text: 'One fan profile with attendance and purchase history, points and tiers the club configures, promo codes and vouchers, segments and push or email campaigns.',
+      },
+      {
+        title: 'Ticketing and season tickets: Revanta Ticketing',
+        icon: 'ticket',
+        text: 'Seat maps with price zones, season tickets and game packages, QR validation at the gate and sales by zone and game.',
+      },
+      {
         title: 'Sports academy and club management: Revanta SportSchool',
         icon: 'dumbbell',
         text: 'Registration and fee collection, tryouts and team building, practice and game schedules, field allocation, player development and family communication.',
-      },
-      {
-        title: 'Ticketing, season passes and fan loyalty: Revanta Loyalty',
-        icon: 'award',
-        text: 'Tickets and season passes, a fan profile with attendance history, points and tiers, promo codes and vouchers, segments and push or email campaigns.',
       },
       {
         title: 'Rink and sports facility management: Revanta Venues',
@@ -574,13 +580,11 @@ const sportschool: RevantaPageContent = {
 const loyalty: RevantaPageContent = {
   key: 'loyalty',
   seo: {
-    title: 'Sports CRM, Ticketing & Fan Loyalty | Revanta Loyalty',
+    title: 'Sports CRM & Fan Loyalty Program Software | Revanta Loyalty',
     description:
-      'Sell tickets and season passes in your own system, see each fan’s attendance history, run a loyalty program with promo codes and export fan data.',
+      'One profile per fan with attendance and purchase history, points and tiers the club configures, segments, campaigns and a full data export.',
     keywords: [
       'sports CRM software',
-      'season ticket management software',
-      'sports ticketing software',
       'fan loyalty programs in sports',
       'fan engagement platform for sports teams',
       'fan loyalty program software',
@@ -589,8 +593,8 @@ const loyalty: RevantaPageContent = {
     ],
   },
   eyebrow: 'Revanta Loyalty',
-  h1: 'Sports CRM with ticketing, season passes and a fan loyalty program',
-  lead: 'When a third-party service sells your tickets, the fan data stays with that service. Revanta Loyalty sells tickets in your own system and shows who comes, who buys and who stopped coming.',
+  h1: 'Sports CRM with one fan profile and a loyalty program you control',
+  lead: 'Tickets, visits, merch and rewards land on one profile, so the club can see who comes, who buys and who quietly stopped — and act on it before renewal time.',
   heroImage: `${REVANTA_IMAGES}/loyalty-hero.webp`,
   heroAlt: 'Fans in the stands at a hockey game',
   audience: {
@@ -600,23 +604,23 @@ const loyalty: RevantaPageContent = {
       'Professional and semi-pro clubs',
       'College athletic programs',
       'Clubs with their own arena',
-      'Club marketing and ticketing teams',
+      'Club marketing and CRM teams',
     ],
   },
   problem: {
     heading: 'Know who buys, who comes and who stopped',
     before:
-      'Tickets are sold through a third-party service and the fan data stays with it. The club does not know who comes to games, who has quietly stopped, or who buys merch but never buys a ticket.',
+      'Purchases sit in one tool, gate entries in another and the mailing list in a third. Nobody can say who comes to every home game, who quietly stopped, or who buys merch but never buys a ticket.',
     after:
-      'Revanta Loyalty sells tickets and season passes into the club’s own fan base. Every purchase, visit and reward lands on one profile, so marketing can segment, reward and win back fans with data the club owns.',
+      'Every purchase, visit and reward lands on one profile the club owns, so marketing can segment, reward and win back fans without exporting anything or asking anyone.',
   },
   features: {
     heading: 'What the club runs in Revanta Loyalty',
     items: [
       {
-        title: 'Sell tickets and season passes in your own system',
+        title: 'Ticket and season-ticket history, fed by Revanta Ticketing',
         icon: 'ticket',
-        text: 'Every buyer lands in the club’s own base, so the club owns the fan relationship from the first sale.',
+        text: 'Sales and gate entries arrive from Revanta Ticketing, so the loyalty program runs on what fans actually bought and attended.',
       },
       {
         title: 'One fan profile with full attendance and purchase history',
@@ -749,7 +753,7 @@ const loyalty: RevantaPageContent = {
       'Segments by attendance, purchases, tier, age and registration source.',
       'Email and push campaigns plus trigger chains from a template library.',
       'Full data export: the fan base belongs to the club.',
-      'Connections to an existing ticketing or POS system are built per project.',
+      'Segments, campaigns and the full fan base export belong to the club.',
     ],
   },
   comparison: {
@@ -832,9 +836,9 @@ const loyalty: RevantaPageContent = {
         'Yes. Tickets and season passes are sold in the club’s own system, so every buyer lands in the club’s base, and any segment or the full base can be exported at any time.',
     },
     {
-      question: 'Can Revanta handle season tickets and renewals?',
+      question: 'Can we see which season-ticket holders stopped coming?',
       answer:
-        'Yes. Season passes are sold in Revanta, and the attendance history shows which holders skipped games, so marketing can reach them before renewal time.',
+        'Yes. The profile keeps every gate entry, so a holder who skipped the last three home games shows up in a segment before renewal time.',
     },
     {
       question: 'How do fans earn points in a team loyalty program?',
@@ -846,11 +850,6 @@ const loyalty: RevantaPageContent = {
         'Is there a loyalty platform for junior and minor league hockey teams?',
       answer:
         'Yes. Revanta Loyalty suits junior, minor league and college teams that sell home-game tickets themselves: tickets, season passes, loyalty and merch run in one system, so a small team does not need integrations to start a program.',
-    },
-    {
-      question: 'Does Revanta integrate with Ticketmaster or our POS?',
-      answer:
-        'Not out of the box. Revanta sells tickets and season passes itself. If you keep another ticketing or POS system, we build that connection as part of the rollout.',
     },
     {
       question: 'Is there a mobile wallet or card-linked rewards?',
@@ -874,6 +873,130 @@ const loyalty: RevantaPageContent = {
     {
       title: 'Fan data analytics: turning CRM data into revenue',
       href: '/playbook/expertise/fan-data-analytics-sports-crm',
+    },
+  ],
+};
+
+const ticketing: RevantaPageContent = {
+  key: 'ticketing',
+  seo: {
+    title: 'Sports Ticketing & Season Ticket Software | Revanta Ticketing',
+    description:
+      'Sell tickets and season tickets in the club’s own system: seat maps with price zones, QR entry at the gate and sales by zone and game.',
+    keywords: [
+      'sports ticketing software',
+      'season ticket management software',
+      'online ticket sales for sports clubs',
+      'box office software for sports teams',
+      'arena ticketing system',
+      'QR ticket validation',
+    ],
+  },
+  eyebrow: 'Revanta Ticketing',
+  h1: 'Ticketing for clubs that want to own the buyer',
+  lead: 'When a third-party service sells your tickets, the buyer belongs to that service. Revanta Ticketing sells seats and season tickets in the club’s own system, so every purchase lands in the club’s fan base.',
+  heroImage: `${REVANTA_IMAGES}/ticketing-hero.webp`,
+  heroAlt: 'Fans arriving at a game with tickets on their phones',
+  audience: {
+    heading: 'Built for',
+    items: [
+      'Clubs that sell home-game tickets themselves',
+      'Teams with their own arena',
+      'Junior and minor league hockey teams',
+      'College athletic programs',
+      'Box office and ticketing teams',
+    ],
+  },
+  problem: {
+    heading: 'The seat is sold, but who bought it',
+    before:
+      'Tickets go through an outside service. The club sees payouts and totals, not people: no way to tell a first-time buyer from a ten-year regular, and no way to reach either of them before the next home game.',
+    after:
+      'Revanta Ticketing puts the seat map, the price zones and the checkout in the club’s own system. The buyer gets a profile from the first purchase, and the club can look at a game and see who is coming.',
+  },
+  features: {
+    heading: 'What the club runs in Revanta Ticketing',
+    items: [
+      {
+        title: 'Seat maps and price zones',
+        icon: 'map',
+        text: 'An interactive map of the arena with zones priced separately, and seat availability that updates as people buy.',
+      },
+      {
+        title: 'Season tickets and game packages',
+        icon: 'ticket',
+        text: 'Sell a full season, a half season or a package of games, and carry the holder across to next season at renewal time.',
+      },
+      {
+        title: 'Flexible pricing per game',
+        icon: 'tag',
+        text: 'Price a game by opponent, demand and how full the arena already is, rather than running one price all season.',
+      },
+      {
+        title: 'QR tickets and entry control',
+        icon: 'qr',
+        text: 'Every ticket carries a QR code that is validated at the gate, so a ticket cannot be used twice.',
+      },
+      {
+        title: 'Every purchase on the fan profile',
+        icon: 'user',
+        text: 'Tickets, season tickets and gate entries land on the same profile the club uses for loyalty and campaigns.',
+      },
+      {
+        title: 'Sales by zone, game and day',
+        icon: 'chart',
+        text: 'See how a game is selling while it is still selling: by zone, by day and against the games before it.',
+      },
+      {
+        title: 'Promo codes and gift certificates',
+        icon: 'gift',
+        text: 'Issue a code for a segment, a partner or a win-back campaign and watch it redeem against real seats.',
+      },
+    ],
+  },
+  facts: {
+    heading: 'Revanta Ticketing at a glance',
+    icons: ['map', 'ticket', 'qr', 'user', 'chart', 'wallet'],
+    items: [
+      'Seat maps with price zones, edited by the club.',
+      'Season tickets, packages and single-game sales in one place.',
+      'QR validation at the gate, with entries written to the profile.',
+      'Buyers land in the club’s own fan base from the first sale.',
+      'Sales and fill rate by zone, game and day.',
+      'Connections to an existing ticketing or POS system are built per project.',
+    ],
+  },
+  faq: [
+    {
+      question: 'Can the club sell tickets without a third-party operator?',
+      answer:
+        'Yes. Revanta Ticketing is the seller: the club builds the seat map, sets the price zones and takes the payment, and the buyer stays in the club’s own base.',
+    },
+    {
+      question: 'How do season tickets work?',
+      answer:
+        'A season ticket is sold against the same seat map as single games and stays on the holder’s profile, so the club can see who is up for renewal and who skipped games during the season.',
+    },
+    {
+      question: 'How are tickets checked at the gate?',
+      answer:
+        'Each ticket carries a QR code that is validated at entry. The scan is written to the fan profile, so attendance history builds itself from real entries rather than from ticket sales.',
+    },
+    {
+      question: 'Does Revanta integrate with Ticketmaster or our POS?',
+      answer:
+        'Not out of the box. Revanta sells tickets itself. If you keep another ticketing or POS system, we build that connection as part of the rollout.',
+    },
+    {
+      question: 'Is there a mobile wallet pass?',
+      answer:
+        'Not today. Revanta does not offer a mobile wallet pass with a stored balance. If you need one, we can scope it as custom development.',
+    },
+  ],
+  articles: [
+    {
+      title: 'How a CRM helps increase ticket sales',
+      href: '/playbook/expertise/How_CRM_helps_increase_ticket',
     },
   ],
 };
@@ -1391,6 +1514,7 @@ export const REVANTA_CONTENT = {
   hub,
   sportschool,
   loyalty,
+  ticketing,
   venues,
   sites,
   ecom,

@@ -29,4 +29,4 @@ All these principles form a strategy that goes beyond simply attracting the audi
 
 Organizing a loyalty program based on these three key principles can transform customer interaction. It's about fostering a sense of enthusiasm and commitment, turning participants into passionate advocates for your brand.
 
-Points, tiers and achievements for attendance and purchases are built into [Revanta Loyalty, our fan loyalty program software for sports clubs](/revanta/sports-crm).
+Points, tiers and achievements for attendance and purchases are built into [Revanta Loyalty, our fan loyalty program software for sports clubs](/revanta/loyalty).

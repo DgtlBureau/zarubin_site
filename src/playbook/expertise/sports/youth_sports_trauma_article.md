@@ -87,6 +87,6 @@ Maybe it's time to stop? To stop seeing children as machines for winning medals 
 
 Otherwise, one day we will look back and realize that we have built the world's largest graveyard of athletic talent. Right on the ruins of childhood dreams.
 
-Tracking development over trophies is easier when each player's attendance, load and test results are recorded. [Revanta SportSchool](/revanta/youth-sports-club-software) does this for youth clubs and academies.
+Tracking development over trophies is easier when each player's attendance, load and test results are recorded. [Revanta SportSchool](/revanta/sportschool) does this for youth clubs and academies.
 
 By Vitaliy Zarubin

@@ -151,4 +151,4 @@ Manchester City built an app that helps fans navigate matchday and rewards their
 
 The clubs that will win the next decade of fan engagement are not the ones with the biggest technology budgets. They're the ones that understand their fans well enough to build something worth opening every day.
 
-If your club sells its own tickets and wants the fan data that comes with them, [Revanta Loyalty](/revanta/sports-crm) combines ticketing, season passes, loyalty and push or email campaigns in one fan engagement platform.
+If your club sells its own tickets and wants the fan data that comes with them, [Revanta Loyalty](/revanta/loyalty) combines ticketing, season passes, loyalty and push or email campaigns in one fan engagement platform.

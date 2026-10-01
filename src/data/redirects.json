@@ -118,5 +118,25 @@
   {
     "source": "/career",
     "destination": "/"
+  },
+  {
+    "source": "/revanta/sports-crm",
+    "destination": "/revanta/loyalty"
+  },
+  {
+    "source": "/revanta/youth-sports-club-software",
+    "destination": "/revanta/sportschool"
+  },
+  {
+    "source": "/revanta/sports-facility-software",
+    "destination": "/revanta/venues"
+  },
+  {
+    "source": "/revanta/club-merch-store",
+    "destination": "/revanta/ecom"
+  },
+  {
+    "source": "/revanta/sports-club-website",
+    "destination": "/revanta/sites"
   }
 ]

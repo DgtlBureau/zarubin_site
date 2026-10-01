@@ -175,6 +175,6 @@ The cost of personalization fell by two orders of magnitude. The infrastructure 
 
 If you are running a sports CRM today and the words "rules-based segmentation" describe your stack, the conversation is overdue. We help sports organizations audit existing CRM stacks, identify the highest-ROI AI layer to deploy first, and plan the 18-month sequence end to end. Reach out if you want a second opinion on where your CRM sits on the curve.
 
-For the club that wants the base layer first, [Revanta Loyalty](/revanta/sports-crm) holds tickets, season passes, loyalty and campaigns on one fan profile, which is the data an AI layer needs.
+For the club that wants the base layer first, [Revanta Loyalty](/revanta/loyalty) holds tickets, season passes, loyalty and campaigns on one fan profile, which is the data an AI layer needs.
 
 For our view on what a club system has to do in 2026, and where Revanta fits, read [Sports CRM in 2026: When the Database Starts Deciding](/playbook/insights/sports-crm-2026-from-database-to-ai-agent).

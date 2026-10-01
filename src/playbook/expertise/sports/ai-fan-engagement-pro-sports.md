@@ -197,4 +197,4 @@ The decision in front of every sports organization in 2026 is not whether to dep
 
 If you are evaluating where AI sits in your fan engagement stack today, we work with sports organizations to audit current capabilities, prioritize the 2 to 3 use cases with the highest near-term ROI, and design the 12 to 18 month sequence to compound from there. Reach out if you want a second opinion on where to begin.
 
-The data layer this depends on is a fan profile with attendance and purchase history. That is what [Revanta Loyalty, our sports CRM with ticketing and fan loyalty](/revanta/sports-crm) keeps for a club.
+The data layer this depends on is a fan profile with attendance and purchase history. That is what [Revanta Loyalty, our sports CRM with ticketing and fan loyalty](/revanta/loyalty) keeps for a club.

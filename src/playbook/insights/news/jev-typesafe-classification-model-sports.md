@@ -40,7 +40,7 @@ A club makes the same small decisions thousands of times a season, and the possi
 
 **Moderation in the club app.** Comments and chat during a live game need a decision before the post appears. Toxicity, spam and self-harm checks come first in [early write-ups about Jev](https://www.cloudraft.io/blog/top-use-cases-of-jev-typesafe-ai-model), with typical moderation around 100 milliseconds.
 
-**Renewal risk for season-ticket holders.** If the fan profile in the CRM is turned into a short text (games attended, purchases, last contact, complaints), Jev can return a churn score for every holder every night. The marketing team gets a ranked list before renewal time. A sports CRM such as [Revanta](/revanta/sports-crm) already holds the attendance and purchase history this needs.
+**Renewal risk for season-ticket holders.** If the fan profile in the CRM is turned into a short text (games attended, purchases, last contact, complaints), Jev can return a churn score for every holder every night. The marketing team gets a ranked list before renewal time. A sports CRM such as [Revanta](/revanta/loyalty) already holds the attendance and purchase history this needs.
 
 **Registration and documents for youth clubs.** For clubs and academies, Jev can check each registration form for a missing waiver, a wrong age group or an incomplete medical note, and send only the flagged forms to a person.
 

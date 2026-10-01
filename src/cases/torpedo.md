@@ -52,6 +52,6 @@ Hockey Club Torpedo's existing digital infrastructure faced several critical cha
 
 This comprehensive digital transformation aims to enhance fan experience, increase operational efficiency, and establish Torpedo as a technology leader in professional hockey, setting new standards for fan engagement in the sports industry.
 
-The fan CRM, ticketing and loyalty part of this project runs on [Revanta Loyalty, our sports CRM for ticketing, season passes and fan loyalty](/revanta/sports-crm).
+The fan CRM, ticketing and loyalty part of this project runs on [Revanta Loyalty, our sports CRM for ticketing, season passes and fan loyalty](/revanta/loyalty).
 
 _Project developed for Hockey Club Torpedo - Modernizing legendary hockey through cutting-edge technology_

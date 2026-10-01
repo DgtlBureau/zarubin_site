@@ -28,7 +28,7 @@ Most clubs still manage fan relationships through spreadsheets, scattered email 
 
 A **sports CRM** solves this by connecting ticketing, fan data, marketing, and venue operations in one system. But not every CRM works for clubs. Generic platforms like Salesforce or HubSpot lack ticket connections, stadium maps, and fan lifecycle tools that teams actually need.
 
-We built [Revanta](https://thebrightbyte.com/revanta), sports club software with a [sports CRM for ticketing, season passes and fan loyalty](https://thebrightbyte.com/revanta/sports-crm), so we know the space well. I've sat through demos of most of these tools, negotiated pricing with their sales teams, and tested how they handle real match-day scenarios. This guide compares 7 CRM systems that actually work for sports organizations, from purpose-built platforms to adaptable general-purpose tools.
+We built [Revanta](https://thebrightbyte.com/revanta), sports club software with a [sports CRM for ticketing, season passes and fan loyalty](https://thebrightbyte.com/revanta/loyalty), so we know the space well. I've sat through demos of most of these tools, negotiated pricing with their sales teams, and tested how they handle real match-day scenarios. This guide compares 7 CRM systems that actually work for sports organizations, from purpose-built platforms to adaptable general-purpose tools.
 
 ## How do the top sports CRMs compare side by side?
 
@@ -44,7 +44,7 @@ We built [Revanta](https://thebrightbyte.com/revanta), sports club software with
 
 ## 1. Revanta
 
-[Revanta Loyalty](https://thebrightbyte.com/revanta/sports-crm) is a sports CRM built specifically for professional clubs and arenas. Unlike generic CRMs adapted for sports, Revanta was designed from day one around the realities of running a team: season tickets, match-day operations, fan segmentation, and venue access control.
+[Revanta Loyalty](https://thebrightbyte.com/revanta/loyalty) is a sports CRM built specifically for professional clubs and arenas. Unlike generic CRMs adapted for sports, Revanta was designed from day one around the realities of running a team: season tickets, match-day operations, fan segmentation, and venue access control.
 
 Used by professional hockey clubs and by football clubs in the **Serbian SuperLiga** and the **Czech Fortuna Liga**.
 
@@ -154,7 +154,7 @@ The right CRM depends on your organization type, size, and primary use case:
 
 | If you are... | Consider |
 |---------------|----------|
-| A **professional hockey or football club** needing fan management + ticketing | **[Revanta](https://thebrightbyte.com/revanta/sports-crm)** — purpose-built, sells tickets and season passes natively, other ticketing systems connected per project |
+| A **professional hockey or football club** needing fan management + ticketing | **[Revanta](https://thebrightbyte.com/revanta/loyalty)** — purpose-built, sells tickets and season passes natively, other ticketing systems connected per project |
 | A **major franchise** (NBA, NFL, AFL) needing tools that handle 50,000 fans on match day | **EngageRM** — proven at scale, Microsoft-backed |
 | A **European club or venue** hosting sports + cultural events | **Arenametrix** — 300+ clients, deep ticketing analytics |
 | A **national federation** managing members and competitions | **Sport:80** — built for governing bodies |
