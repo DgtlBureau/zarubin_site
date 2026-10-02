@@ -52,13 +52,11 @@ In Europe, UX/UI design is often **functional and accessible**, using colour sch
 
 In Russia, sports apps are highly **immersive and loyalty-driven**, emphasising a strong connection between fans and their teams. Russian sports fans, especially in hockey, show strong loyalty to their local teams, and apps are designed to reinforce this connection.
 
-For example, in the **KHL (Kontinental Hockey League)**, apps such as **Avangard Omsk**:
+For example, in the **KHL (Kontinental Hockey League)**, club apps share a common pattern:
 
 - **Team branding and personalisation**: Russian sports apps use vibrant colours, team logos and visual themes that reflect each team's identity. This personalisation fosters a sense of loyalty and pride among users.
 - **Storytelling Elements**: Russian sports apps often include storytelling elements such as exclusive player interviews, fan content and behind-the-scenes videos. This helps fans feel connected to the team beyond the match data.
 - Gamification and engagement features\*\*: KHL apps often include features such as polls, live voting and fan games. These elements tap into the communal spirit of Russian fans and make the app a hub for ongoing engagement and loyalty building.
-
-![Avangard Hockey Club](https://imgur.com/pVpO2I5.jpg)
 
 ### Design philosophy and tools
 
@@ -68,7 +66,7 @@ Russian sports apps tend to have **visually rich interfaces** that are immersive
 
 In all regions, maintaining **high performance and stability** during peak usage times is critical. Monitoring tools such as **Zabbix** or **Datadog** are often used to ensure that servers can handle spikes in traffic, especially during major events.
 
-In the **KHL app Avangard**, for example, a comprehensive monitoring system checks uptime every minute. If an issue arises, such as a server crash, automated alerts are triggered and the DevOps team can roll back or spin up additional resources within minutes to minimise downtime.
+In one of the KHL club apps, for example, a comprehensive monitoring system checks uptime every minute. If an issue arises, such as a server crash, automated alerts are triggered and the DevOps team can roll back or spin up additional resources within minutes to minimise downtime.
 
 Similarly, the **NHL app** uses a combination of **auto-scaling Kubernetes clusters** and **load balancers** to manage heavy multimedia content and ensure a seamless user experience. This type of infrastructure design helps sports apps meet the high expectations of fans, regardless of location.
 

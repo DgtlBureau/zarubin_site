@@ -40,7 +40,6 @@ const getCaseKPI = (slug: string): { value: string; label: string } | null => {
     jedipay: { value: '99.9%', label: 'Uptime SLA' },
     grid_capital: { value: '3 weeks', label: 'To MVP' },
     fcdm: { value: '2.1M', label: 'Active Users' },
-    avangard: { value: '+340%', label: 'Engagement' },
     nis: { value: '-40%', label: 'Process Time' },
     torpedo: { value: '85K+', label: 'App Users' },
     norilsk: { value: '+120%', label: 'Digital Sales' },

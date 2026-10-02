@@ -21,11 +21,6 @@ export const REVANTA_CLIENT_LOGOS: RevantaClientLogo[] = [
     url: 'https://fcnorilsk.com',
   },
   {
-    name: 'HC Avangard',
-    mark: `${CLIENTS}/avangard-2026.svg`,
-    url: 'https://www.hawk.ru',
-  },
-  {
     name: 'Shanghai Dragons',
     mark: `${CLIENTS}/shanghai-dragons-2026.webp`,
     url: 'https://hc-dragons.com',
@@ -76,13 +71,6 @@ export const REVANTA_TESTIMONIALS: RevantaTestimonial[] = [
     logo: `${CLIENTS}/tractor-mark.webp`,
     quote:
       'Our market is very conservative, and it is great to see young, energetic people like Vitaliy and his team come into it and shake things up. Their solution helped us automate our processes and gave us fresh ideas on how to grow the brand and engage fans.',
-  },
-  {
-    name: 'Konstantin Klyushev',
-    role: 'Commercial Director, HC Avangard',
-    logo: `${CLIENTS}/avangard-2026.svg`,
-    quote:
-      'Vitaliy always takes a proactive position. He helped the company a great deal in moving from offline to online, and he brought expertise from other industries into sport and made the most of it.',
   },
   {
     name: 'Vitaliy Pozdnev',

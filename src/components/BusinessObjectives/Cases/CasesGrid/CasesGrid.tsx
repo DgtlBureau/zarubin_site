@@ -10,7 +10,6 @@ const FIRST_ROW_CARDS = 3;
 
 const sortingCase: Record<string, number> = {
   OAZIS: 1,
-  Avangard: 2,
   'HC Torpedo': 3,
   FCDM: 4,
   'STOCKS SOCCER': 5,

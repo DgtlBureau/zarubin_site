@@ -142,5 +142,9 @@
   {
     "source": "/revanta/venues",
     "destination": "/revanta/ticketing"
+  },
+  {
+    "source": "/cases/avangard",
+    "destination": "/cases"
   }
 ]

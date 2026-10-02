@@ -113,7 +113,7 @@ A Tuesday night match against the weakest team in the league can outsell a Satur
 
 CRM makes this work by identifying which fans respond to which types of events. Segment A (families with children) gets the family-day promotion. Segment B (18-25 year olds) gets the student night with post-game DJ. Segment C (corporate groups) gets the networking-event package.
 
-The Siberian Derby between Avangard Omsk and Sibir Novosibirsk sells out not because either team dominates the KHL standings, but because the cities are 600 kilometers apart and the rivalry is cultural. The same dynamic applies to matches between Admiral Vladivostok and Amur Khabarovsk in Russia's Far East. Geography and identity drive demand more than standings.
+The Siberian derby between Omsk and Novosibirsk sells out not because either team dominates the KHL standings, but because the cities are 600 kilometers apart and the rivalry is cultural. The same dynamic applies to matches between Admiral Vladivostok and Amur Khabarovsk in Russia's Far East. Geography and identity drive demand more than standings.
 
 Clubs that understand this -- and use CRM to act on it -- stop leaving money on the table during "weak" matchdays.
 

@@ -3,13 +3,11 @@ import dmitryPhoto from '@/public/assets/images/main/feedbacks/dmitriy.webp';
 import elenaPhoto from '@/public/assets/images/main/feedbacks/elena.webp';
 import johnPhoto from '@/public/assets/images/main/feedbacks/john.webp';
 import joshPhoto from '@/public/assets/images/main/feedbacks/JoshPhoto.jpg';
-import konstantinPhoto from '@/public/assets/images/main/feedbacks/konstantin.webp';
 import russPhoto from '@/public/assets/images/main/feedbacks/russPhoto.jpg';
 import sergeyPhoto from '@/public/assets/images/main/feedbacks/sergey.webp';
 import vasiliyPhoto from '@/public/assets/images/main/feedbacks/vasiliy.webp';
 import vitaliyPhoto from '@/public/assets/images/main/feedbacks/vitaliy.webp';
 
-import avangard from '@/public/assets/images/clients/avangard.webp';
 import dinamo from '@/public/assets/images/clients/dinamo.webp';
 import gc from '@/public/assets/images/clients/gc.webp';
 import gw from '@/public/assets/images/clients/gw.webp';
@@ -91,21 +89,11 @@ export const FeedbackDataMain = [
       'Our market is very conservative, and it is great to see young, energetic people like Vitaliy and his team come into it and shake things up. Their solution helped us automate our processes and gave us fresh ideas on how to grow the brand and engage fans.',
   },
   {
-    id: 8,
-    name: 'Konstantin Klyushev',
-    job: 'Commercial Director, HC Avangard',
-    image: konstantinPhoto,
-    logo: avangard,
-    date: '12-10-2023',
-    feedback:
-      'Vitaliy always takes a proactive position. He helped the company a great deal in moving from offline to online, and he brought expertise from other industries into sport and made the most of it.',
-  },
-  {
     id: 9,
     name: 'Vitaliy Pozdnev',
     job: 'IT Director, FC Dynamo Moscow',
     image: vitaliyPhoto,
-    logo: avangard,
+    logo: dinamo,
     date: '21-08-2023',
     feedback:
       'We are developing a hockey club project, handling design and support. When I hand a task to Vitaliy’s team, I am fully confident in the result. The team is genuinely engaged and brings its own view to the work. Many contractors need a detailed specification; Vitaliy’s team runs the project on its own and defines its scope itself.',

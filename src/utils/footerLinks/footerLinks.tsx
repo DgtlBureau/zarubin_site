@@ -46,7 +46,7 @@ export const footerLinks: IFooters[] = [
     links: [
       { name: 'Finance & Fintech', link: '/cases/jedipay' },
       { name: 'HVAC & Field Service', link: '/cases/personiway' },
-      { name: 'Sports & Entertainment', link: '/cases/avangard' },
+      { name: 'Sports & Entertainment', link: '/cases/torpedo' },
       { name: 'Automotive', link: '/cases/kama' },
       { name: 'Enterprise & B2B', link: '/cases/oazis' },
       { name: 'Oil & Gas', link: '/cases/nis' },
@@ -59,7 +59,7 @@ export const footerLinks: IFooters[] = [
     links: [
       { name: 'AI Workforce Management', link: '/cases/oazis' },
       { name: 'RAG-Powered Field Ops', link: '/cases/personiway' },
-      { name: 'Sports CRM Platform', link: '/cases/avangard' },
+      { name: 'Sports CRM Platform', link: '/cases/norilsk' },
       { name: 'Custom Development', link: '/cases/fcdm' },
       { name: 'Mobile App', link: '/cases/stocks_soccer' },
       { name: 'IT Consulting', link: '/cases/grid_capital' },
