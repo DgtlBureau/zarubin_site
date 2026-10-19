@@ -13,6 +13,17 @@ const json = (body, status = 200) =>
     headers: { 'Content-Type': 'application/json' },
   });
 
+const ALLOWED_ORIGINS = new Set([
+  'https://thebrightbyte.com',
+  'https://www.thebrightbyte.com',
+]);
+
+// Browsers always send Origin on cross-site and same-site POSTs; scanners and curl usually don't.
+const isAllowedOrigin = (request) => {
+  const origin = request.headers.get('Origin');
+  return Boolean(origin) && ALLOWED_ORIGINS.has(origin);
+};
+
 const clip = (value, max = 500) =>
   String(value ?? '')
     .slice(0, max)
@@ -69,7 +80,9 @@ async function handleDocument(request, env) {
 
 async function handleBrief(request, env) {
   const b = await request.json().catch(() => null);
-  if (!b) return json({ error: 'Invalid body' }, 400);
+  if (!b || typeof b !== 'object') return json({ error: 'Invalid body' }, 400);
+  // Name is the only field the /brief UI always requires; email is optional there.
+  if (!clip(b.name, 200)) return json({ error: 'Name is required' }, 400);
   const lines = [
     'Project brief from thebrightbyte.com',
     '',
@@ -92,6 +105,9 @@ export default {
 
     if (request.method !== 'POST') {
       return json({ error: 'Method not allowed' }, 405);
+    }
+    if (!isAllowedOrigin(request)) {
+      return json({ error: 'Forbidden' }, 403);
     }
     if (!env.TELEGRAM_BOT_TOKEN || !env.TELEGRAM_CHAT_ID) {
       return json({ error: 'Telegram not configured' }, 500);
