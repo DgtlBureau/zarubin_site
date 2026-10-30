@@ -146,5 +146,17 @@
   {
     "source": "/cases/avangard",
     "destination": "/cases"
+  },
+  {
+    "source": "/soc2-checker",
+    "destination": "/"
+  },
+  {
+    "source": "/soc2-checker/assessment",
+    "destination": "/"
+  },
+  {
+    "source": "/soc2-checker/results",
+    "destination": "/"
   }
 ]

@@ -43,7 +43,6 @@ Revanta is sports club software by The BrightByte — registration, ticketing, f
 - [AI audit trail architecture](https://thebrightbyte.com/playbook/expertise/ai-audit-trail-architecture-compliance)
 - [EU AI Act compliance for AI agents](https://thebrightbyte.com/playbook/expertise/eu-ai-act-compliance-ai-agents)
 - [Case studies](https://thebrightbyte.com/cases)
-- [Free SOC 2 / GDPR readiness checker](https://thebrightbyte.com/soc2-checker)
 
 ## Contact
 - Website: https://thebrightbyte.com

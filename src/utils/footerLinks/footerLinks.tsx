@@ -28,7 +28,7 @@ export const footerLinks: IFooters[] = [
       },
       {
         name: 'AI Agents',
-        link: '/playbook/expertise/regfo-ai-compliance-automation',
+        link: '/playbook/insights/sports-crm-2026-from-database-to-ai-agent',
       },
       {
         name: 'Fine-tuning & ML',
@@ -90,8 +90,8 @@ export const footerLinks: IFooters[] = [
         link: '/playbook/expertise/building-projects-that-scale',
       },
       {
-        name: 'Regfo: AI Compliance Automation',
-        link: '/playbook/expertise/regfo-ai-compliance-automation',
+        name: 'Hockey Fan App on Game Day',
+        link: '/playbook/insights/fan-app-game-day-load-vibe-coded-prototype',
       },
     ],
   },
@@ -138,18 +138,9 @@ export const footerLinks: IFooters[] = [
         link: '/playbook/expertise/Developers-Rates-2024',
       },
       {
-        name: 'C# for Fintech',
-        link: '/playbook/expertise/All-fintech-is-about-c-sharp',
+        name: 'Fan Data Analytics',
+        link: '/playbook/expertise/fan-data-analytics-sports-crm',
       },
-    ],
-  },
-  {
-    id: 7,
-    title: 'Company Size',
-    links: [
-      { name: 'Startup', link: '/soc2-checker?size=startup' },
-      { name: 'Mid-Market', link: '/soc2-checker?size=mid-market' },
-      { name: 'Enterprise', link: '/soc2-checker?size=enterprise' },
     ],
   },
 ];

@@ -21,8 +21,6 @@ const config = {
       '/policy',
       '/investments',
       '/brief',
-      '/soc2-checker',
-      '/soc2-checker/assessment',
       '/playbook/expertise/rss.xml',
       '/playbook/insights/rss.xml',
       '/bonuses',
