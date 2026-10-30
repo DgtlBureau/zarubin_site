@@ -4,9 +4,9 @@ import { ValueItemMobile } from './ValueItemMobile/ValueItemMobile';
 
 const VALUES_ITEMS = [
   {
-    title: 'Compliance by default',
+    title: 'Built for match day',
     description:
-      'Audit trails, data governance, and regulatory guardrails go in at the architecture stage. Not after launch. Not in v2. The first build your compliance team sees is the one that passes.',
+      'Ticketing, loyalty and apps get their heaviest load in the hour before a game. We design for that hour from the first build and test under it before release.',
   },
   {
     title: 'Ship, then polish',
@@ -16,7 +16,7 @@ const VALUES_ITEMS = [
   {
     title: 'Transparency',
     description:
-      'Stuck on something? Say it. Found a problem with the approach? Raise it now, not at the demo. We would rather have an uncomfortable conversation on Monday than a failed audit on Friday.',
+      'Stuck on something? Say it. Found a problem with the approach? Raise it now, not at the demo. We would rather have an uncomfortable conversation on Monday than a broken launch on Saturday.',
   },
   {
     title: 'Own the outcome',
@@ -31,7 +31,7 @@ const VALUES_ITEMS = [
   {
     title: 'Builder culture',
     description:
-      'We built Regfo to prove our own compliance AI works. We use AI-native dev tools daily. We write code, ship products, and fix things at 2am when it matters.',
+      'We built Revanta to run our own sports products on it. We use AI-native dev tools daily. We write code, ship products, and fix things at 2am when it matters.',
   },
 ];
 export const Values = () => {

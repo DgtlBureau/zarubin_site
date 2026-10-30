@@ -16,9 +16,9 @@ const TEAM_CARDS: TeamCard[] = [
       'Production models, open-source models. We pick what fits the task. MCP servers, tool use, orchestration. Production systems, not conference demos.',
   },
   {
-    title: 'Compliance-First AI',
+    title: 'Sports and Entertainment',
     description:
-      'Audit trails and regulatory guardrails go in at the architecture stage. SOC2, HIPAA, FDA 21 CFR Part 11. Your compliance team reviews the first build, not the last.',
+      'Fan loyalty, ticketing, CRM and mobile apps for clubs, leagues and venues since 2018. We know how a club earns money on a match day and build around that.',
   },
   {
     title: 'AI Engineers',
@@ -33,7 +33,7 @@ export const Team = () => {
     <div className='flex flex-col gap-[60px]'>
       <NextLinePreposition
         tag='h2'
-        text='an AI agent studio building for regulated industries'
+        text='a software and AI studio for sports and entertainment'
         className='section-headings break-words font-unbound font-bold uppercase leading-[1] tablet:leading-[1.3] desktop:leading-[1.1]'
       />
       <div className='grid grid-cols-1 gap-10 desktop:grid-cols-3'>

@@ -10,10 +10,10 @@ export const Internship = () => {
       <div className={styles.InternContainer}>
         <h3 className={styles.title}>internship for students</h3>
         <p className='mt-[19px] font-inter text-[20px] leading-[1.2]'>
-          We are looking for motivated engineers and researchers passionate
-          about AI agents, large language models, and compliance automation.
-          Whether you have experience with Claude API, RAG systems, or are
-          just starting your AI journey — we welcome builders ready to ship.
+          We are looking for engineers and researchers who want to build
+          fan apps, ticketing, CRM integrations and AI agents for sports
+          clubs. Experience with Claude API or RAG systems helps, and people
+          at the start of their path are welcome if they are ready to ship.
         </p>
         <div className='mt-[auto] w-fit'>
           <LinkArrow title='Submit an Application' link='/career#contact-form' />

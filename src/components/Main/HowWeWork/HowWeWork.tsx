@@ -4,28 +4,28 @@ const steps = [
   {
     number: '01',
     title: 'Discovery Call',
-    description: 'You describe the problem and your compliance requirements. We tell you if we can solve it.',
+    description: 'You describe the club, the problem and the systems already in place. We tell you if we can solve it.',
     detail: '30 min. Free.',
   },
   {
     number: '02',
     title: 'Technical Scope',
     description:
-      'We map data sources, pick the right model architecture, design the inference pipeline, define access controls, and spec the audit trail before writing code.',
+      'We map ticketing, CRM and payment systems, pick the architecture and define the integrations before writing code.',
     detail: '~1 week',
   },
   {
     number: '03',
     title: 'Working Prototype',
     description:
-      'A working system on your real data in a tenant-isolated environment. Your team reviews AI outputs and the audit log. Fixed scope.',
+      'A working system on your real data in a separate environment. Your team tries it before a match day. Fixed scope.',
     detail: '~2 weeks',
   },
   {
     number: '04',
-    title: 'Production & Compliance',
+    title: 'Production & Support',
     description:
-      'Scale, integrate, hand off with full documentation for your compliance team. Or we stay on retainer.',
+      'Scale, integrate, hand off with full documentation. Or we stay on retainer through the season.',
     detail: 'Ongoing',
   },
 ];

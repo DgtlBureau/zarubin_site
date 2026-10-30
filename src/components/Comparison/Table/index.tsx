@@ -129,13 +129,13 @@ const comparisonData: SectionData[] = [
     ],
   },
   {
-    title: 'Compliance & AI',
+    title: 'Integrations & AI',
     rows: [
       {
-        task: 'Compliance Integration',
+        task: 'Ticketing, CRM and Payment Integrations',
         inhouse: { text: 'Figured out after launch', type: 'negative' },
         brightbyte: {
-          text: 'Audit trails from week one',
+          text: 'Mapped in week one, built before the first release',
           type: 'positive',
         },
         bigfour: { text: 'Thorough but 6-month process', type: 'neutral' },
@@ -150,10 +150,10 @@ const comparisonData: SectionData[] = [
         bigfour: { text: 'Vendor-locked enterprise stack', type: 'negative' },
       },
       {
-        task: 'Audit Trails & Explainability',
-        inhouse: { text: 'Rarely a priority', type: 'negative' },
+        task: 'Match Day Load',
+        inhouse: { text: 'Rarely tested before the season', type: 'negative' },
         brightbyte: {
-          text: 'Full audit trail on every AI decision',
+          text: 'Load-tested for the hour before kickoff',
           type: 'positive',
         },
         bigfour: { text: 'Documented but generic', type: 'neutral' },
@@ -177,10 +177,10 @@ const comparisonData: SectionData[] = [
         bigfour: { text: 'Documented procedures', type: 'neutral' },
       },
       {
-        task: 'Regulatory Framework Mapping',
-        inhouse: { text: 'Requires separate compliance consultant', type: 'negative' },
+        task: 'Fan Data and Payments',
+        inhouse: { text: 'Requires a separate security review', type: 'negative' },
         brightbyte: {
-          text: 'SOC 2, HIPAA, GDPR, PCI DSS, FDA built into architecture',
+          text: 'GDPR and PCI DSS handled in the architecture',
           type: 'positive',
         },
         bigfour: { text: 'Deep but expensive', type: 'positive' },
@@ -280,7 +280,7 @@ const summaryData: RowData[] = [
   {
     task: 'Strategic Value',
     inhouse: { text: 'Operational focus', type: 'neutral' },
-    brightbyte: { text: 'Audit trails built in, prototype in 2 weeks', type: 'positive' },
+    brightbyte: { text: 'Sports experience since 2018, prototype in 2 weeks', type: 'positive' },
     bigfour: { text: 'Transformation expertise', type: 'positive' },
   },
 ];

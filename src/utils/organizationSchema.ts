@@ -11,7 +11,7 @@ export function generateOrganizationSchema() {
     url: BASE_URL,
     logo: `${BASE_URL}/assets/images/icons/favicon.svg`,
     description:
-      'AI agents, fine-tuned models, and automated workflows for FinTech, HealthTech, and RegTech. Full audit trails. Working prototype in 2 weeks.',
+      'Fan loyalty programs, ticketing, apps and CRM for sports clubs, leagues and venues. Integrations and automation from a team in sports tech since 2018.',
     foundingDate: '2018',
     founder: {
       '@type': 'Person',
@@ -29,58 +29,46 @@ export function generateOrganizationSchema() {
       'https://www.linkedin.com/company/thebrightbyte/',
     ],
     knowsAbout: [
+      'Fan Loyalty Programs',
+      'Sports Ticketing',
+      'Sports Club CRM',
+      'Fan Engagement Apps',
+      'Facility and Rink Booking',
+      'RFM Segmentation',
+      'Push and SMS Campaigns',
+      'Sports Data Platforms',
+      'Payment and Ticketing Integrations',
+      'Workflow Automation',
+      'AI Agents',
+      'Multi-Agent Systems',
+      'Agentic Workflows',
       'AI Agent Security',
-      'AI Red Teaming',
       'Prompt Injection Defense',
-      'Indirect Prompt Injection',
-      'MCP Server Security',
-      'LLM Security Audit',
-      'AI Governance Audit Trail',
-      'Immutable AI Logging',
-      'AI Compliance Audit',
-      'Compliance-Friendly AI Agents',
-      'AI Fine-Tuning',
+      'MCP Servers',
+      'LLM Fine-Tuning',
       'RAG Systems',
-      'Automated Workflows',
-      'FinTech AI',
-      'HealthTech AI',
-      'LawTech AI',
-      'RegTech Solutions',
-      'SOC2 Compliance',
-      'HIPAA Compliance',
-      'FDA Regulatory Compliance',
-      'FDA 21 CFR Part 11',
-      'EU AI Act Compliance',
-      'DORA Compliance',
-      'PCI DSS 4.0',
-      'Biotech Regulatory Affairs',
+      'Vector Databases',
+      'Embeddings',
       'Claude API',
       'Anthropic SDK',
       'Gemini API',
-      'MCP Servers',
-      'Multi-Agent Systems',
-      'Agentic Workflows',
       'Claude Code',
       'Cursor AI',
-      'LLM Fine-Tuning',
-      'Vector Databases',
-      'Embeddings',
       'LangChain',
     ],
     areaServed: 'Worldwide',
     serviceType: [
-      'AI Agent Security Audit',
-      'AI Compliance Audit',
-      'MCP Security Audit',
-      'LLM Red Teaming',
+      'Fan Loyalty Program Development',
+      'Ticketing Platform Development',
+      'Sports Club CRM Implementation',
+      'Mobile App Development',
+      'System Integration and Automation',
       'AI Agent Development',
       'LLM Fine-Tuning',
       'RAG System Development',
-      'Compliance AI Automation',
-      'Enterprise AI Integration',
       'Multi-Agent System Development',
       'MCP Server Infrastructure',
-      'Compliance AI Consulting',
+      'AI Agent Security Audit',
     ],
     brand: [
       {
@@ -131,7 +119,7 @@ export function generateLocalBusinessSchema() {
     logo: `${BASE_URL}/assets/images/icons/favicon.svg`,
     image: `${BASE_URL}/assets/images/icons/favicon.svg`,
     description:
-      'AI agent security, compliance audits, and custom AI development for fintech, biotech, and healthcare. SOC 2, HIPAA, FDA 21 CFR Part 11, EU AI Act, DORA.',
+      'Fan loyalty, ticketing, CRM, mobile apps and AI agents for sports clubs, leagues and entertainment venues. Integrations and automation since 2018.',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Los Angeles',
@@ -147,51 +135,60 @@ export function generateLocalBusinessSchema() {
     ],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'AI Security and Compliance Services',
+      name: 'Sports Software and AI Services',
       itemListElement: [
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Fan Loyalty Program',
+            description:
+              'Loyalty mechanics, points and rewards, RFM segmentation, push and SMS campaigns, tied to the ticketing and CRM of the club.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Ticketing Platform',
+            description:
+              'Ticket sales, season passes, QR entry and payments, integrated with the CRM and loyalty program of the club.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Sports Club CRM and Integrations',
+            description:
+              'CRM setup and integration with ticketing, payments, access control and marketing tools. Data syncs and automation on top.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Fan and Club Mobile Apps',
+            description:
+              'iOS and Android apps for fans, academies and venues: schedules, tickets, loyalty, bookings and content.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'AI Agents and Automation',
+            description:
+              'AI agents, RAG systems and fine-tuned models for club operations, support and content. Working prototype in weeks.',
+          },
+        },
         {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
             name: 'AI Agent Security Audit',
             description:
-              'Threat modeling, prompt-injection testing, MCP server review, and remediation roadmap for production AI agents.',
-          },
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: 'AI Compliance Audit',
-            description:
-              'Gap analysis against SOC 2, HIPAA, FDA 21 CFR Part 11, EU AI Act, and DORA. Audit-trail review, documentation, and remediation plan.',
-          },
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: 'LLM Red Teaming',
-            description:
-              'Adversarial testing of LLM-based products for prompt injection, jailbreaks, data exfiltration, and the lethal-trifecta agent pattern.',
-          },
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: 'MCP Security Audit',
-            description:
-              'Security review of Model Context Protocol servers and clients used by Claude Code, Cursor, and other AI development workflows.',
-          },
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: 'Custom AI Development',
-            description:
-              'Compliance-first AI agents, RAG systems, and fine-tuned models for regulated industries. 4-8 week prototype.',
+              'Threat modeling, prompt-injection testing, MCP server review and remediation plan for production AI agents.',
           },
         },
       ],

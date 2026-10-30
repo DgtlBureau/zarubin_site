@@ -15,7 +15,7 @@ export const MainPageComponent = () => {
   return (
     <div className='oveflow-hidden flex flex-col'>
       <h1 className='sr-only'>
-        Compliant AI Agents and Fine-Tuning for Regulated Industries
+        Fan loyalty programs, ticketing and software for sports clubs and entertainment
       </h1>
       <NewHero />
       <WhyUs />

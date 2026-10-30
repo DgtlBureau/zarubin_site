@@ -11,11 +11,11 @@ export const sectionsTitle: ISectionsTitle = {
   main: {
     successStories: {
       title: 'Success Stories',
-      descripton: 'Real results from AI-powered projects we delivered',
+      descripton: 'Results from sports and AI projects we delivered',
     },
     expertise: {
       title: 'Expertise',
-      descripton: 'AI systems for industries where compliance isn\u2019t optional',
+      descripton: 'Software and AI for sports clubs, leagues and venues',
     },
     insights: {
       title: 'Insights',

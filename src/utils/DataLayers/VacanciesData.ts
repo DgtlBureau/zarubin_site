@@ -4,7 +4,7 @@ export const VacanciesData = [
     title: 'AI Agent Engineer',
     description: `
 • Build multi-agent systems with Claude API, Anthropic SDK, and MCP servers \n
-• Design agentic workflows for compliance automation in FinTech and HealthTech
+• Design agentic workflows for sports clubs, ticketing and fan engagement
     `,
     tags: ['AI Engineering'],
     link: '#contacts',
@@ -13,7 +13,7 @@ export const VacanciesData = [
     id: 2,
     title: 'LLM Fine-Tuning Engineer',
     description: `
-• Fine-tune large language models for regulated industries using domain-specific datasets \n
+• Fine-tune large language models on club, ticketing and fan data \n
 • Build RAG pipelines, embeddings, and vector search with Pinecone, Weaviate, ChromaDB
     `,
     tags: ['AI Engineering'],
@@ -21,10 +21,10 @@ export const VacanciesData = [
   },
   {
     id: 3,
-    title: 'Compliance AI Developer',
+    title: 'Integrations Engineer',
     description: `
-• Build AI systems for FinTech and HealthTech that pass SOC2, HIPAA, and FDA audits \n
-• Implement audit trails, data governance, and automated risk scoring pipelines
+• Connect ticketing, payments, CRM and loyalty systems for sports clubs and venues \n
+• Build automation pipelines, data syncs and reporting on top of them
     `,
     tags: ['AI Engineering'],
     link: '#contacts',

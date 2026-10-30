@@ -25,8 +25,8 @@ export const TechnologyData: ITechnology[] = [
   },
   {
     id: 4,
-    title: 'MLOps & Compliance',
+    title: 'DevOps & Integrations',
     description:
-      'Docker, Kubernetes, CI/CD, GitHub Actions, SOC2, HIPAA, FDA 21 CFR Part 11, Audit Trails, Grafana, Prometheus',
+      'Docker, Kubernetes, CI/CD, GitHub Actions, REST and webhook integrations, payment and ticketing APIs, Grafana, Prometheus',
   },
 ];

@@ -10,7 +10,7 @@ const JOB_POSTINGS: JobPostingData[] = [
   {
     title: 'AI Agent Engineer',
     description:
-      'Build multi-agent systems with Claude API, Anthropic SDK, and MCP servers. Design agentic workflows for compliance automation in FinTech and HealthTech. Work with tool use, multi-model orchestration, and production-grade agent infrastructure.',
+      'Build multi-agent systems with Claude API, Anthropic SDK, and MCP servers. Design agentic workflows for sports clubs, ticketing and fan engagement. Work with tool use, multi-model orchestration, and production-grade agent infrastructure.',
     skills: [
       'Claude API',
       'Anthropic SDK',
@@ -24,7 +24,7 @@ const JOB_POSTINGS: JobPostingData[] = [
   {
     title: 'LLM Fine-Tuning Engineer',
     description:
-      'Fine-tune large language models for regulated industries using domain-specific datasets. Build RAG pipelines, embeddings, and vector search with Pinecone, Weaviate, and ChromaDB. Evaluate models with domain-specific benchmarks and compliance requirements.',
+      'Fine-tune large language models on club, ticketing and fan data. Build RAG pipelines, embeddings, and vector search with Pinecone, Weaviate, and ChromaDB. Evaluate models on domain benchmarks.',
     skills: [
       'LLM Fine-Tuning',
       'RAG Systems',
@@ -36,16 +36,16 @@ const JOB_POSTINGS: JobPostingData[] = [
     ],
   },
   {
-    title: 'Compliance AI Developer',
+    title: 'Integrations Engineer',
     description:
-      'Build AI systems for FinTech and HealthTech that pass SOC2, HIPAA, and FDA audits. Implement audit trails, data governance, and automated risk scoring pipelines. Ensure AI agent outputs meet regulatory standards.',
+      'Connect ticketing, payments, CRM and loyalty systems for sports clubs and venues. Build automation pipelines, data syncs and reporting on top of them. Keep integrations stable through the season.',
     skills: [
-      'SOC2',
-      'HIPAA',
-      'FDA 21 CFR Part 11',
-      'Audit Trails',
-      'Data Governance',
-      'AI Compliance',
+      'REST APIs',
+      'Webhooks',
+      'Payment Integrations',
+      'Ticketing Systems',
+      'CRM Integration',
+      'Data Pipelines',
       'Python',
     ],
   },
@@ -66,7 +66,7 @@ const JOB_POSTINGS: JobPostingData[] = [
   {
     title: 'AI Solutions Architect',
     description:
-      'Design architecture for enterprise AI agent deployments at scale. Multi-model orchestration across Claude, GPT, and Gemini. Build MCP server infrastructure and define compliance patterns for regulated industries.',
+      'Design architecture for enterprise AI agent deployments at scale. Multi-model orchestration across Claude, GPT, and Gemini. Build MCP server infrastructure and integration patterns for sports clubs and venues.',
     skills: [
       'System Architecture',
       'Claude API',
@@ -74,7 +74,7 @@ const JOB_POSTINGS: JobPostingData[] = [
       'MCP Servers',
       'Enterprise AI',
       'Multi-Agent Systems',
-      'Compliance',
+      'System Integration',
     ],
   },
 ];
@@ -101,7 +101,7 @@ export function generateJobPostingSchema() {
       logo: `${BASE_URL}/assets/images/icons/favicon.svg`,
     },
     skills: job.skills.join(', '),
-    industry: 'Artificial Intelligence, FinTech, HealthTech, RegTech',
+    industry: 'Sports Technology, Entertainment, Artificial Intelligence',
     url: `${BASE_URL}/career`,
   }));
 }
